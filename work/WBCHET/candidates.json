@@ -470,5 +470,39 @@
     "path": "work/WBCHET/cand/d08_kangbashi_4.jpg"
    }
   ]
+ },
+ "d07_region_hohhot": {
+  "subject": "Hohhot Dazhao Temple old town 呼和浩特大召寺",
+  "region": "Inner Mongolia China",
+  "candidates": [
+   {
+    "n": 1,
+    "source": "pexels",
+    "title": "A vibrant temple in Hohhot, Inner Mongolia with visitors gathered for prayer.",
+    "url": "https://images.pexels.com/photos/35891465/pexels-photo-35891465.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "path": "work/WBCHET/cand/d07_region_hohhot_1.jpg"
+   },
+   {
+    "n": 2,
+    "source": "pexels",
+    "title": "Vibrant traditional Chinese temple facade in Hohhot, capturing intricate details",
+    "url": "https://images.pexels.com/photos/35905576/pexels-photo-35905576.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "path": "work/WBCHET/cand/d07_region_hohhot_2.jpg"
+   },
+   {
+    "n": 3,
+    "source": "pexels",
+    "title": "Vibrant prayer flags flutter beneath a traditional temple roof in Hohhot, Inner ",
+    "url": "https://images.pexels.com/photos/35891610/pexels-photo-35891610.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "path": "work/WBCHET/cand/d07_region_hohhot_3.jpg"
+   },
+   {
+    "n": 4,
+    "source": "pexels",
+    "title": "Detailed view of the ornate rooftop of a traditional Chinese building in Hohhot,",
+    "url": "https://images.pexels.com/photos/35905571/pexels-photo-35905571.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "path": "work/WBCHET/cand/d07_region_hohhot_4.jpg"
+   }
+  ]
  }
 }
