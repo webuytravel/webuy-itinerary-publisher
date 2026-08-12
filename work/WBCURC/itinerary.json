@@ -1,0 +1,500 @@
+{
+  "type_code": "WBCURC",
+  "travel_days": 13,
+  "product_name": {
+    "en": "13D11N Follow My Altay to Explore Northern Xinjiang (Charter Flight)",
+    "zh": "13天11晚跟着我的阿勒泰探索北疆（包机）"
+  },
+  "highlights": [
+    {
+      "en": "11 Breakfasts · 10 Lunches · 8 Dinners",
+      "zh": "11早餐 · 10午餐 · 8晚餐"
+    },
+    {
+      "en": "Chinese Group Meal",
+      "zh": "中式团体合菜"
+    },
+    {
+      "en": "Xinjiang Big Plate Chicken",
+      "zh": "大盘鸡风味"
+    },
+    {
+      "en": "Xinjiang Hand-Pulled Rice",
+      "zh": "新疆手抓饭"
+    },
+    {
+      "en": "Nang Pit-Roasted Meat",
+      "zh": "馕坑肉"
+    },
+    {
+      "en": "Xinjiang Lamb Skewer Cuisine",
+      "zh": "新疆羊肉串风味"
+    },
+    {
+      "en": "Xinjiang Mini Hot Pot",
+      "zh": "新疆小火锅风味"
+    },
+    {
+      "en": "Whole Roasted Lamb Feast",
+      "zh": "烤全羊风味宴"
+    },
+    {
+      "en": "Xinjiang Song-and-Dance Banquet",
+      "zh": "新疆歌舞宴"
+    },
+    {
+      "en": "Local 3+4 Diamond hotels",
+      "zh": "住宿安排全程当地3+4钻酒店"
+    },
+    {
+      "en": "Urumqi — Uyghur Family Visit, Traditional Naan-Making Experience",
+      "zh": "乌鲁木齐 — 维吾尔族家访、传统打馕体验"
+    },
+    {
+      "en": "Fuyun — Kalamaili Nature Reserve Scenic Drive, Keketuohai Scenic Area",
+      "zh": "富蕴 — 卡拉麦里自然保护区沿途风光、可可托海景区"
+    },
+    {
+      "en": "Burqin — Burqin Riverside Night Market, Colourful Beach",
+      "zh": "布尔津 — 布尔津河堤夜市、五彩滩"
+    },
+    {
+      "en": "Kanas — Kanas Lake, Kanas Scenic Shuttle Ride, Kanas Three Bays, Pristine Alpine Lake & Forests",
+      "zh": "喀纳斯 — 喀纳斯湖、喀纳斯景区区间车、喀纳斯三湾、高山湖泊与原始森林"
+    },
+    {
+      "en": "Hemu — Hemu Village",
+      "zh": "禾木 — 禾木村"
+    },
+    {
+      "en": "Urho — Urho Ghost City, Yadan Landform",
+      "zh": "乌尔禾 — 乌尔禾魔鬼城、雅丹地貌"
+    },
+    {
+      "en": "Sayram Lake — Guozigou Bridge, Lavender Museum, Alpine Lake & Mountain Scenery",
+      "zh": "赛里木湖 — 果子沟大桥、薰衣草博物馆、高山湖泊风光"
+    },
+    {
+      "en": "Kokdala — Border Reclamation City Experience",
+      "zh": "可可达拉 — 边疆新城体验"
+    },
+    {
+      "en": "Nalati — Nalati Sky Grassland, Nalati Scenic Shuttle Ride, Grassland Bonfire Party, Kazakh Grassland Culture",
+      "zh": "那拉提 — 那拉提空中草原、那拉提景区区间车、草原篝火晚会、哈萨克草原文化"
+    },
+    {
+      "en": "Duku Highway — Duku Highway Scenic Drive, Tianshan Mountain Road, Seasonal Highway Experience",
+      "zh": "独库公路 — 独库公路景观之旅、天山公路风光、季节限定公路体验"
+    },
+    {
+      "en": "Turpan — Karez Well, Flaming Mountains, Uyghur Family Visit, Traditional Naan-Making Experience",
+      "zh": "吐鲁番 — 坎儿井、火焰山、维吾尔族家访、传统打馕体验"
+    }
+  ],
+  "sections": [
+    {
+      "day": 1,
+      "name": {"en": "DAY 1", "zh": "第一天"},
+      "title": {"en": "Singapore > Kuala Lumpur > Urumqi", "zh": "新加坡 > 吉隆坡 > 乌鲁木齐"},
+      "location": {"en": "Urumqi", "zh": "乌鲁木齐"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {
+          "title": {"en": "Depart for Urumqi via Kuala Lumpur", "zh": "经吉隆坡飞往乌鲁木齐"},
+          "description": {
+            "en": "Depart from Singapore via Kuala Lumpur on a flight to Urumqi. Upon arrival, meet your local guide and transfer by coach to the hotel for check-in and rest.",
+            "zh": "搭乘航班从新加坡途中经过吉隆坡飞往乌鲁木齐。抵达后由专业导游接机，乘坐旅游巴士前往酒店办理入住并休息。"
+          },
+          "photo_subject": ""
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "name": {"en": "DAY 2", "zh": "第二天"},
+      "title": {"en": "Urumqi > Fuyun", "zh": "乌鲁木齐 > 富蕴"},
+      "location": {"en": "Fuyun", "zh": "富蕴"},
+      "description": {"en": "Breakfast / Lunch / Dinner", "zh": "早餐 / 午餐 / 晚餐"},
+      "trip_items": [
+        {
+          "title": {"en": "Coach to Fuyun", "zh": "前往富蕴"},
+          "description": {
+            "en": "After breakfast, travel by coach to Fuyun.",
+            "zh": "早餐后乘车前往富蕴。"
+          },
+          "photo_subject": ""
+        },
+        {
+          "title": {"en": "Kalamaili Nature Reserve", "zh": "卡拉麦里自然保护区"},
+          "description": {
+            "en": "Pass through the Kalamaili Nature Reserve and admire Northern Xinjiang’s vast desert, Gobi and protected wildlife landscapes.",
+            "zh": "沿途经过【卡拉麦里自然保护区】，欣赏北疆辽阔荒漠、戈壁及野生动物自然保护区景观。"
+          },
+          "photo_subject": "Kalamaili Nature Reserve 卡拉麦里自然保护区"
+        },
+        {
+          "title": {"en": "Hotel Check-In in Fuyun", "zh": "抵达富蕴入住酒店"},
+          "description": {
+            "en": "Check in to the hotel upon arrival.",
+            "zh": "抵达富蕴后入住酒店休息。"
+          },
+          "photo_subject": ""
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "name": {"en": "DAY 3", "zh": "第三天"},
+      "title": {"en": "Fuyun > Burqin", "zh": "富蕴 > 布尔津"},
+      "location": {"en": "Burqin", "zh": "布尔津"},
+      "description": {"en": "Breakfast / Lunch / -", "zh": "早餐 / 午餐 / -"},
+      "trip_items": [
+        {
+          "title": {"en": "Keketuohai Scenic Area", "zh": "可可托海景区"},
+          "description": {
+            "en": "Visit Keketuohai Scenic Area and admire its dramatic mountains, river valleys and forest landscapes.",
+            "zh": "游览【可可托海景区】，欣赏峡谷、河流、森林及雄伟山峦交织而成的自然景观。"
+          },
+          "photo_subject": "Keketuohai Scenic Area 可可托海景区"
+        },
+        {
+          "title": {"en": "Coach to Burqin", "zh": "前往布尔津"},
+          "description": {
+            "en": "Continue by coach to Burqin.",
+            "zh": "随后乘车前往布尔津。"
+          },
+          "photo_subject": ""
+        },
+        {
+          "title": {"en": "Burqin Riverside Night Market", "zh": "布尔津河堤夜市"},
+          "description": {
+            "en": "In the evening, explore the Burqin Riverside Night Market and discover local Xinjiang snacks at your own leisure.",
+            "zh": "晚上前往【河堤夜市】，自由感受当地夜市气氛并品尝新疆特色小吃。"
+          },
+          "photo_subject": "Burqin Riverside Night Market 布尔津河堤夜市"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "name": {"en": "DAY 4", "zh": "第四天"},
+      "title": {"en": "Burqin > Jiadengyu", "zh": "布尔津 > 贾登峪"},
+      "location": {"en": "Jiadengyu", "zh": "贾登峪"},
+      "description": {"en": "Breakfast / Lunch / Dinner", "zh": "早餐 / 午餐 / 晚餐"},
+      "trip_items": [
+        {
+          "title": {"en": "Coach to Jiadengyu", "zh": "前往贾登峪"},
+          "description": {
+            "en": "Travel to Jiadengyu after breakfast.",
+            "zh": "早餐后乘车前往贾登峪。"
+          },
+          "photo_subject": ""
+        },
+        {
+          "title": {"en": "Kanas Lake", "zh": "喀纳斯湖"},
+          "description": {
+            "en": "Visit the magnificent Kanas Lake, surrounded by mountains and pristine forests.",
+            "zh": "游览著名的【喀纳斯湖】，欣赏湖泊、雪山及原始森林组成的北疆经典风景。"
+          },
+          "photo_subject": "Kanas Lake 喀纳斯湖"
+        },
+        {
+          "title": {"en": "Three Bays of Kanas", "zh": "喀纳斯三湾"},
+          "description": {
+            "en": "Explore the famous Three Bays of Kanas and admire the river winding through the valleys and forest landscapes.",
+            "zh": "游览【喀纳斯三湾】，感受河流在森林与山谷间蜿蜒而过的壮丽景观。"
+          },
+          "photo_subject": "Kanas Three Bays 喀纳斯三湾"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "name": {"en": "DAY 5", "zh": "第五天"},
+      "title": {"en": "Jiadengyu > Hemu > Burqin", "zh": "贾登峪 > 禾木 > 布尔津"},
+      "location": {"en": "Burqin", "zh": "布尔津"},
+      "description": {"en": "Breakfast / Lunch / Dinner", "zh": "早餐 / 午餐 / 晚餐"},
+      "trip_items": [
+        {
+          "title": {"en": "Hemu Village", "zh": "禾木村"},
+          "description": {
+            "en": "Visit Hemu Village, one of China’s most beautiful mountain villages.",
+            "zh": "早餐后前往有“中国最美村落”之称的【禾木村】。"
+          },
+          "photo_subject": "Hemu Village 禾木村"
+        },
+        {
+          "title": {"en": "Electric Cart into Hemu Village", "zh": "乘电瓶车进入禾木村"},
+          "description": {
+            "en": "Enter the village by electric cart and admire its traditional wooden houses, forests, rivers and mountain scenery.",
+            "zh": "乘坐景区电瓶车进入村落，欣赏图瓦木屋、森林、河流及雪山交织而成的宁静景色。"
+          },
+          "photo_subject": "Hemu Village Tuvan Wooden Houses 禾木村图瓦木屋"
+        },
+        {
+          "title": {"en": "Colourful Beach", "zh": "五彩滩"},
+          "description": {
+            "en": "Continue to Colourful Beach, renowned for its colourful rock formations beside the Irtysh River.",
+            "zh": "随后游览【五彩滩】，欣赏多彩雅丹地貌与额尔齐斯河形成的独特自然景观。"
+          },
+          "photo_subject": "Colourful Beach Burqin 布尔津五彩滩"
+        },
+        {
+          "title": {"en": "Return to Burqin", "zh": "返回布尔津"},
+          "description": {
+            "en": "Return to Burqin and check in to the hotel.",
+            "zh": "返回布尔津入住酒店。"
+          },
+          "photo_subject": ""
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "name": {"en": "DAY 6", "zh": "第六天"},
+      "title": {"en": "Burqin > Kuitun", "zh": "布尔津 > 奎屯"},
+      "location": {"en": "Kuitun", "zh": "奎屯"},
+      "description": {"en": "Breakfast / Lunch / Dinner", "zh": "早餐 / 午餐 / 晚餐"},
+      "trip_items": [
+        {
+          "title": {"en": "Coach to Kuitun", "zh": "前往奎屯"},
+          "description": {
+            "en": "Travel to Kuitun after breakfast.",
+            "zh": "早餐后乘车前往奎屯。"
+          },
+          "photo_subject": ""
+        },
+        {
+          "title": {"en": "Urho Ghost City", "zh": "乌尔禾魔鬼城"},
+          "description": {
+            "en": "Visit Urho Ghost City, a spectacular Yadan landform shaped by centuries of wind erosion.",
+            "zh": "途中游览【乌尔禾魔鬼城】，欣赏长期受风力侵蚀形成的雅丹地貌及奇特岩石景观。"
+          },
+          "photo_subject": "Urho Ghost City 乌尔禾魔鬼城"
+        },
+        {
+          "title": {"en": "Hotel Check-In in Kuitun", "zh": "抵达奎屯入住酒店"},
+          "description": {
+            "en": "Continue to Kuitun and check in to the hotel upon arrival.",
+            "zh": "游览结束后继续前往奎屯，抵达后入住酒店。"
+          },
+          "photo_subject": ""
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "name": {"en": "DAY 7", "zh": "第七天"},
+      "title": {
+        "en": "Kuitun > Sayram Lake > Guozigou > Kokdala",
+        "zh": "奎屯 > 赛里木湖 > 果子沟 > 可可达拉"
+      },
+      "location": {"en": "Kokdala", "zh": "可可达拉"},
+      "description": {"en": "Breakfast / Lunch / Dinner", "zh": "早餐 / 午餐 / 晚餐"},
+      "trip_items": [
+        {
+          "title": {"en": "Sayram Lake", "zh": "赛里木湖"},
+          "description": {
+            "en": "Visit Sayram Lake, famously known as the “Last Tear of the Atlantic”, and admire its brilliant blue waters surrounded by mountains and grasslands.",
+            "zh": "前往被誉为“大西洋最后一滴眼泪”的【赛里木湖】，欣赏高山、草原及湛蓝湖水。"
+          },
+          "photo_subject": "Sayram Lake 赛里木湖"
+        },
+        {
+          "title": {"en": "Guozigou Bridge", "zh": "果子沟大桥"},
+          "description": {
+            "en": "Pass the spectacular Guozigou Bridge and enjoy the valley scenery.",
+            "zh": "途经壮观的【果子沟大桥】，欣赏伊犁河谷山谷景色。"
+          },
+          "photo_subject": "Guozigou Bridge 果子沟大桥"
+        },
+        {
+          "title": {"en": "Lavender Museum", "zh": "薰衣草博物馆"},
+          "description": {
+            "en": "Visit the Lavender Museum to learn about Ili’s lavender-growing culture.",
+            "zh": "参观【薰衣草博物馆】，了解伊犁薰衣草种植及加工文化。"
+          },
+          "photo_subject": "Ili Lavender Museum 伊犁薰衣草博物馆"
+        },
+        {
+          "title": {"en": "On to Kokdala", "zh": "前往可可达拉"},
+          "description": {
+            "en": "Continue to Kokdala and check in to the hotel.",
+            "zh": "随后前往可可达拉入住酒店。"
+          },
+          "photo_subject": ""
+        }
+      ]
+    },
+    {
+      "day": 8,
+      "name": {"en": "DAY 8", "zh": "第八天"},
+      "title": {"en": "Kokdala > Nalati", "zh": "可可达拉 > 那拉提"},
+      "location": {"en": "Nalati", "zh": "那拉提"},
+      "description": {"en": "Breakfast / Lunch / Dinner", "zh": "早餐 / 午餐 / 晚餐"},
+      "_note": "英文 4 条 ✦、中文 3 条 ✦：中文第 2 条把英文第 2 条(乘区间车进入草原腹地)与第 3 条(欣赏雪山森林河谷草原)合并成一句，故此处按语义合并为 3 个 trip_items。",
+      "trip_items": [
+        {
+          "title": {"en": "Coach to Nalati", "zh": "前往那拉提"},
+          "description": {
+            "en": "Travel to Nalati after breakfast.",
+            "zh": "早餐后乘车前往那拉提。"
+          },
+          "photo_subject": ""
+        },
+        {
+          "title": {"en": "Nalati Sky Grassland (incl. scenic shuttle)", "zh": "那拉提空中草原（含景区区间车）"},
+          "description": {
+            "en": "Visit the magnificent Nalati Sky Grassland and take a scenic shuttle into the heart of the grassland. Admire the surrounding mountains, forests, valleys and open grasslands.",
+            "zh": "游览【那拉提空中草原】，乘坐景区区间车进入草原腹地，欣赏雪山、森林、河谷及广阔草原。"
+          },
+          "photo_subject": "Nalati Sky Grassland 那拉提空中草原"
+        },
+        {
+          "title": {"en": "Grassland Bonfire Party", "zh": "草原篝火晚会"},
+          "description": {
+            "en": "In the evening, enjoy a lively Grassland Bonfire Party featuring local music and dance.",
+            "zh": "晚上参加【草原篝火晚会】，感受新疆少数民族歌舞与热情氛围。"
+          },
+          "photo_subject": "Xinjiang Grassland Bonfire Party 新疆草原篝火晚会"
+        }
+      ]
+    },
+    {
+      "day": 9,
+      "name": {"en": "DAY 9", "zh": "第九天"},
+      "title": {"en": "Nalati > Duku Highway > Kuitun", "zh": "那拉提 > 独库公路 > 奎屯"},
+      "location": {"en": "Kuitun", "zh": "奎屯"},
+      "description": {"en": "Breakfast / Lunch / -", "zh": "早餐 / 午餐 / -"},
+      "trip_items": [
+        {
+          "title": {"en": "Duku Highway Scenic Drive", "zh": "独库公路景观之旅"},
+          "description": {
+            "en": "When the Duku Highway is open, transfer to a smaller vehicle and travel approximately six hours along the scenic highway to Kuitun.",
+            "zh": "若独库公路开放，将换乘小型车辆，沿独库公路行驶约6小时返回奎屯。"
+          },
+          "photo_subject": "Duku Highway 独库公路"
+        },
+        {
+          "title": {"en": "Tianshan Mountain Scenery", "zh": "天山沿途风光"},
+          "description": {
+            "en": "Enjoy views of the Tianshan Mountains, valleys and grasslands along the way.",
+            "zh": "沿途欣赏天山山脉、峡谷、草原及季节性公路风光。"
+          },
+          "photo_subject": "Tianshan Mountains 天山山脉"
+        }
+      ]
+    },
+    {
+      "day": 10,
+      "name": {"en": "DAY 10", "zh": "第十天"},
+      "title": {"en": "Kuitun > Turpan", "zh": "奎屯 > 吐鲁番"},
+      "location": {"en": "Turpan", "zh": "吐鲁番"},
+      "description": {"en": "Breakfast / Lunch / Dinner", "zh": "早餐 / 午餐 / 晚餐"},
+      "trip_items": [
+        {
+          "title": {"en": "Coach to Turpan", "zh": "前往吐鲁番"},
+          "description": {
+            "en": "Under the Duku Highway route, travel approximately 440 kilometres from Kuitun to Turpan.",
+            "zh": "则从奎屯乘车约440公里、6小时前往吐鲁番。"
+          },
+          "photo_subject": ""
+        },
+        {
+          "title": {"en": "Karez Well", "zh": "坎儿井"},
+          "description": {
+            "en": "Visit the historic Karez Well upon arrival.",
+            "zh": "抵达后游览【坎儿井】。"
+          },
+          "photo_subject": "Karez Well Turpan 吐鲁番坎儿井"
+        }
+      ]
+    },
+    {
+      "day": 11,
+      "name": {"en": "DAY 11", "zh": "第十一天"},
+      "title": {"en": "Turpan > Urumqi", "zh": "吐鲁番 > 乌鲁木齐"},
+      "location": {"en": "Urumqi", "zh": "乌鲁木齐"},
+      "description": {"en": "Breakfast / Lunch / Dinner", "zh": "早餐 / 午餐 / 晚餐"},
+      "trip_items": [
+        {
+          "title": {"en": "Flaming Mountains", "zh": "火焰山"},
+          "description": {
+            "en": "Visit the famous Flaming Mountains and admire their dramatic red desert landscape.",
+            "zh": "早餐后游览吐鲁番著名景点【火焰山】，欣赏独特的红色山体及荒漠地貌。"
+          },
+          "photo_subject": "Flaming Mountains Turpan 吐鲁番火焰山"
+        },
+        {
+          "title": {"en": "Uyghur Family Visit", "zh": "维吾尔族家访"},
+          "description": {
+            "en": "Enjoy a Uyghur Family Visit and learn about local customs and daily life.",
+            "zh": "参加【维吾尔族家访】，了解当地家庭生活及民族文化。"
+          },
+          "photo_subject": "Uyghur Family Home Visit Turpan 吐鲁番维吾尔族家访"
+        },
+        {
+          "title": {"en": "Traditional Naan-Making Experience", "zh": "传统打馕体验"},
+          "description": {
+            "en": "Take part in a traditional Naan-Making Experience.",
+            "zh": "体验传统【打馕活动】，亲手了解新疆馕饼的制作过程。"
+          },
+          "photo_subject": "Xinjiang Naan Making 新疆打馕"
+        },
+        {
+          "title": {"en": "Return to Urumqi", "zh": "返回乌鲁木齐"},
+          "description": {
+            "en": "Return to Urumqi by coach.",
+            "zh": "随后乘车返回乌鲁木齐。"
+          },
+          "photo_subject": ""
+        }
+      ]
+    },
+    {
+      "day": 12,
+      "name": {"en": "DAY 12", "zh": "第十二天"},
+      "title": {
+        "en": "Urumqi Free Time > Kuala Lumpur > Singapore",
+        "zh": "乌鲁木齐自由活动 > 吉隆坡 > 新加坡"
+      },
+      "location": {"en": "Urumqi", "zh": "乌鲁木齐"},
+      "description": {"en": "Breakfast / - / -", "zh": "早餐 / - / -"},
+      "trip_items": [
+        {
+          "title": {"en": "Free Time in Urumqi", "zh": "乌鲁木齐自由活动"},
+          "description": {
+            "en": "Enjoy free time in Urumqi after breakfast.",
+            "zh": "早餐后于乌鲁木齐自由活动。"
+          },
+          "photo_subject": ""
+        },
+        {
+          "title": {"en": "Transfer to Airport", "zh": "前往机场"},
+          "description": {
+            "en": "Transfer to the airport in the evening for the return flight.",
+            "zh": "晚上前往机场，搭乘返程航班。"
+          },
+          "photo_subject": ""
+        }
+      ]
+    },
+    {
+      "day": 13,
+      "name": {"en": "DAY 13", "zh": "第十三天"},
+      "title": {"en": "Kuala Lumpur > Singapore", "zh": "吉隆坡 > 新加坡"},
+      "location": {"en": "Singapore", "zh": "新加坡"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {
+          "title": {"en": "Homeward Bound", "zh": "返回新加坡"},
+          "description": {
+            "en": "Carrying sweet memories of Xinjiang.",
+            "zh": "带着满满的新疆回忆返回新加坡。"
+          },
+          "photo_subject": ""
+        }
+      ]
+    }
+  ]
+}
