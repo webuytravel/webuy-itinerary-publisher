@@ -16,3 +16,11 @@ venv/
 
 # Build
 *.plugin
+
+# working artefacts: extracted rasters, downloaded candidates, materialised crops
+work/**/raw/
+work/**/cat/
+work/**/norm/
+work/**/out/
+work/**/out_mobile/
+work/_probe_imgs/

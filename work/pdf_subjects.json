@@ -1,0 +1,32 @@
+{
+  "_note": "主体由多模态看图判定,不采信 caption_hint。caption 实测会错(见 lib/pdf_images.py 模块 docstring)。verdict: real=可用真实照片, generic=真实但泛用无辨识度, cgi_suspect=疑似渲染图/CGI, asset=非景点素材",
+  "WBCKWE": [
+    {"ref": "p2#1", "subject": "itinerary route map", "kind": "route_map", "verdict": "asset"},
+    {"ref": "p2#2", "subject": "Cultural performance 民族歌舞表演", "verdict": "real", "note": "非景点,可用作体验类配图;721x335 过窄"},
+    {"ref": "p3#0", "subject": "Huangguoshu Waterfall 黄果树大瀑布", "verdict": "real", "caption_was_right": true},
+    {"ref": "p3#1", "subject": "Jiaxiu Pavilion 甲秀楼", "verdict": "real", "caption_was_right": true},
+    {"ref": "p3#2", "subject": "Wanfenglin & Bagua Field 万峰林八卦田", "verdict": "real", "caption_was_right": false, "caption_said": "Jiaxiu Pavilion 甲秀楼"},
+    {"ref": "p4#0", "subject": "Gorge with stone arch bridge 峡谷石拱桥(疑似荔波小七孔/铜仁大峡谷)", "verdict": "real", "note": "主体待再确认;744x385 低于 section 下限"},
+    {"ref": "p4#1", "subject": "Mount Fanjing Hongyun Golden Summit 梵净山红云金顶", "verdict": "real", "caption_was_right": true},
+    {"ref": "p4#2", "subject": "Xijiang Qianhu Miao Village 西江千户苗寨", "verdict": "real"}
+  ],
+  "WBCURC": [
+    {"ref": "p2#1", "subject": "Guozigou Bridge 果子沟大桥", "verdict": "real", "caption_was_right": false, "caption_said": "可可达拉"},
+    {"ref": "p2#2", "subject": "Sayram Lake 赛里木湖", "verdict": "real", "caption_was_right": false, "caption_said": "Urho Ghost City 乌尔禾魔鬼城"},
+    {"ref": "p3#0", "subject": "itinerary route map", "kind": "route_map", "verdict": "asset"},
+    {"ref": "p3#1", "subject": "Song and dance show 歌舞演出", "verdict": "real", "note": "非景点"},
+    {"ref": "p4#0", "subject": "Kalamaili Nature Reserve wildlife 卡拉麦里野生动物", "verdict": "real"},
+    {"ref": "p4#1", "subject": "Kanas Three Bays 喀纳斯三湾(卧龙湾/月亮湾)", "verdict": "real"},
+    {"ref": "p5#0", "subject": "Hemu Village 禾木村", "verdict": "real"},
+    {"ref": "p5#1", "subject": "Nalati Sky Grassland 那拉提空中草原", "verdict": "real", "caption_was_right": true},
+    {"ref": "p6#0", "subject": "Flaming Mountains 火焰山", "verdict": "real", "caption_was_right": false, "caption_said": "Tongren Grand Canyon 铜仁大峡谷", "note": "文档里记载的那处经典错标"},
+    {"ref": "p6#1", "subject": "Duku Highway / Haxilegen Pass 独库公路·哈希勒根达坂", "verdict": "real"}
+  ],
+  "WBCHET": [
+    {"ref": "p2#1", "subject": "itinerary route map 新加坡-内蒙古路线图", "kind": "route_map", "verdict": "asset", "note": "图上显示经吉隆坡中转,与航司 OD 一致"},
+    {"ref": "p3#0", "subject": "A single tree on grassland 草地孤树", "verdict": "generic", "note": "之前被标为鄂尔多斯草原,实为无辨识度泛用风景,不宜代表景点"},
+    {"ref": "p3#2", "subject": "Xiangshawan desert resort 响沙湾莲花酒店", "verdict": "cgi_suspect", "note": "航拍构图过于平滑规整,像建筑效果图而非实拍"},
+    {"ref": "p4#0", "subject": "Hanging Temple 悬空寺", "verdict": "real", "note": "本册唯一确凿的真实景点照"},
+    {"ref": "p4#3", "subject": "Wannian Ice Cave 万年冰洞", "verdict": "cgi_suspect", "note": "蓝调过于均匀对称,质感可疑"}
+  ]
+}
