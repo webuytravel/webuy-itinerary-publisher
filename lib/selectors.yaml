@@ -1,0 +1,452 @@
+# Skybear UI selectors (Phase 0 inventory)
+# Coordinates / refs are hints — Phase 1 必须实地调通后再固化
+# Tested against UAT: https://test01.travel.webuy.ren
+
+env:
+  uat:
+    base_url: "https://test01.travel.webuy.ren"
+  prod:
+    base_url: "https://travel.webuysg.com"
+
+routes:
+  login: "/#/login"
+  dashboard: "/#/dashboard/index"
+  package_list: "/#/packageAirlineMaintenance/packageList"
+  edit_package: "/#/packageAirlineMaintenance/editPackage?id={tour_id}&type=edit"
+  package_content_mgmt: "/#/packageDisplayMgmt/packageContentMgmt"
+  edit_display_detail: "/#/packageDisplayMgmt/editDisplayDetail?id={travel_id}&type=edit"
+
+# SPA hash routing 注意：直接 navigate 改 URL 不会触发重渲染
+# 必须 location.reload() 强制刷新
+spa_navigate_workaround: |
+  navigate(url) → location.reload()
+
+login:
+  username_input:
+    placeholder: "Username"
+    selector: 'input[placeholder="Username"]'
+  password_input:
+    placeholder: "Password"
+    selector: 'input[type="password"][placeholder="Password"]'
+  login_button:
+    text: "Login"
+    selector: 'form button:has-text("Login"), document.querySelector("form button[type=button]")'
+
+package_list_search_form:
+  tour_code:
+    placeholder: "Tour Code"
+    selector: 'input[placeholder="Tour Code"]'
+    note: "autocomplete dropdown; 可能不显示 WBMXMN，需直接 click Search 而非依赖 dropdown"
+  tour_type:
+    placeholder: "Tour Type/Tour Type Name"
+  airline:
+    placeholder: "Airline/Airline Name"
+  tr_status:
+    placeholder: "Tr Status"
+  pax_type:
+    placeholder: "Pax Type"
+  search_button:
+    text: "Search"
+    selector: '[...document.querySelectorAll("button")].find(b => b.textContent.trim()==="Search")'
+  create_package_button:
+    text: "Create Package"
+    note: "点击弹 Modal 'New Tour Code'"
+  row_modify_link:
+    text: "Modify"
+    note: "点击新开 tab 跳到 editPackage?id=<wt_tour.id>"
+
+create_package_modal:
+  title: "New Tour Code"
+  fields:
+    tour_code_mm:
+      label: "Tour Code"
+      ui: "select"
+      values: ["01", "02", ..., "12"]
+      maps_to: "wt_tour.tour_code [前 2 位]"
+    tour_code_type_input:
+      label: "Tour Code"
+      placeholder: "Tour Type"
+      ui: "autocomplete"
+      maps_to: "wt_tour.tour_type_id (lookup by type_code)"
+      side_effects: "联动填 tour_type_name + region + pax_type"
+    tour_code_suffix:
+      label: "Tour Code"
+      ui: "text"
+      hint: "TrCode Format MMTTTTTTTTTXXXXXXX"
+      maps_to: "wt_tour.tour_code [尾部，例如 10/26MF]"
+    tour_name:
+      label: "Tour Name"
+      required: true
+      ui: "text"
+      maps_to: "wt_tour.tour_name"
+    description_1:
+      label: "Description"
+      ui: "text"
+      maps_to: "wt_tour.tour_remark"
+    description_2:
+      ui: "text"
+      maps_to: "wt_tour.tour_remark1"
+    departure_date:
+      label: "Departure Date"
+      required: true
+      ui: "date DD/MM/YYYY"
+      maps_to: "wt_tour.departure_time"
+    travel_days:
+      label: "Travel Days"
+      required: true
+      ui: "number"
+      maps_to: "wt_tour.travel_days"
+      default_from: "wt_tour_type.travel_days"
+    return_date:
+      label: "Return Date"
+      required: true
+      ui: "date DD/MM/YYYY"
+      maps_to: "wt_tour.return_time"
+    pax_type:
+      label: "Pax Type"
+      readonly: true
+      maps_to: "wt_tour_type.pax_type (联动)"
+    quantity:
+      label: "Quantity"
+      required: true
+      ui: "number"
+      maps_to: "wt_tour.inventory_num"
+    paym_due_days:
+      label: "Paym Due Days"
+      ui: "number"
+      default: 21
+      maps_to: "wt_tour.pam_due_days"
+    paym_due_date:
+      label: "Paym Due Date"
+      ui: "date"
+      maps_to: "wt_tour.paym_due_date"
+    tm_tl:
+      label: "TM/TL"
+      ui: "text"
+      maps_to: "wt_tour.tl_tm_name"
+      note: "自由文本，不是下拉选 leader 表"
+    tr_remarks_1:
+      label: "Tr Remarks"
+      ui: "text"
+      maps_to: "wt_tour.tour_remark"
+    tr_remarks_2:
+      maps_to: "wt_tour.tour_remark1"
+    tr_remarks_3:
+      maps_to: "wt_tour.tour_remark2"
+    op_remark_1:
+      label: "OP Remark"
+      ui: "text"
+      maps_to: "wt_tour.op_remark1"
+    op_remark_2:
+      maps_to: "wt_tour.op_remark2"
+  buttons:
+    save:
+      text: "Save"
+      side_effect: "保存并跳转到 editPackage?id=<新 wt_tour.id>"
+    cancel:
+      text: "Cancel"
+
+edit_package_page:
+  url_pattern: "/#/packageAirlineMaintenance/editPackage?id={tour_id}&type=edit"
+  sections:
+    tour_code_basic:
+      fields_readonly: [tour_code, tour_type, region, pax_type]
+      fields_editable:
+        tr_status:
+          ui: select
+          options: [Pending, Confirmed, Departured, Canceled]
+          default: Pending
+          maps_to: "wt_tour.tr_status (0/1/2/3)"
+        tour_name: text
+        description: 2 行 textbox
+        departure_date: date
+        travel_days: number
+        return_date: date
+        quantity: number
+    flight_itinerary:
+      ui: "动态多行表格"
+      row_fields: [date, flight_no, from, to, departure_time, arriving_time, arrival_day, seat_code, flights_status]
+      defaults:
+        seat_code: G
+        flights_status: RQ
+      maps_to: "wt_tour_flight_itinerary 多行"
+    tour_fare:
+      price_type: 1
+      columns: [SGLfare, TWNfare, TRPFare, ChdHfTwn, ChdWEbed, ChdWOBed, InfFare]
+      each_column: [sellPrice, costPrice]
+      maps_to: "wt_tour_price (price_type=1)"
+      v1_use:
+        - TWNfare.sellPrice  # twin_price
+        - SGLfare.sellPrice  # twin + supplement
+        - ChdWEbed.sellPrice
+        - ChdWOBed.sellPrice
+    land_tour:
+      price_type: 2
+      columns: [GroundSGLFare, GroundTWNFare, GroundTRPFare, GroundChdHfTwn, GrChdWEBed, GrChdWOBed]
+      v1_use: []  # 全留 0
+    additional_charges:
+      price_type: 3
+      columns: [AirportTaxes/FuelSurcharge]
+      v1_use: [AirportTaxes/FuelSurcharge]
+      maps_to: "wt_tour.airport_tax_price + wt_tour_price (price_type=3)"
+    waiver_of_charges:
+      price_type: 4
+      columns: [AduDiscAmt, Voucher, Credit Card Promo, Loyal Discount]
+      v1_use: []  # 全留 0
+    estimated_cost:
+      required_fields: [Air Ticket, Airport Taxes, Land Tour Cost, Tour Leader Cost, Celebrity Cost, Referral Cost, Sales Commission, Back Office Commission, Celebrity Commission]
+      v1_strategy: "全填 0 (Sales Commission 默认 30 留着即可)"
+      maps_to: "wt_tour_estimated_cost"
+  buttons:
+    submit:
+      text: Submit
+      side_effect: "保存所有字段并跳回 Package List"
+    back:
+      text: Back
+
+edit_display_detail_page:
+  url_pattern: "/#/packageDisplayMgmt/editDisplayDetail?id={travel_id}&type=edit"
+  sections:
+    basic_display_information:
+      fields:
+        tour_type_readonly:
+          maps_to: "wt_travel.tour_type_id"
+        product_name:
+          ui: "双语并排 textbox"
+          maps_to: ["wt_travel.product_name", "wt_travel.product_name_cn"]
+        highlight:
+          ui: "动态多行 双语并排"
+          maps_to: "wt_travel_highlights 多行 [highlights, highlights_cn]"
+        list_thumbnail:
+          ui: "单图上传"
+          maps_to: "wt_travel.list_thumbneil"  # schema 拼错
+          v1: skip
+        image_carousel:
+          ui: "最多 10 张图"
+          constraints: "JPG/PNG, ≤6MB each, 1920×1080 (16:9)"
+          maps_to: "wt_travel_image (image_type=1)"
+          v1: skip
+        cover_video_asset:
+          ui: "单图"
+          constraints: "986×1752 (493:876 竖屏)"
+          maps_to: "wt_travel.video_cover_url"
+          v1: skip
+        cover_video:
+          ui: "MP4"
+          constraints: "≤60s, ≤50MB"
+          maps_to: "wt_travel.video_url"
+          v1: skip
+        route_map:
+          ui: "单图"
+          maps_to: "wt_travel.route_map_url"
+          v1: skip
+    sections:
+      ui: "动态多个 Section，可折叠"
+      label_pattern: "Section {n} - DAY {n}"
+      sort_num: "DAY 1 对应 sort_num=0 (待 Phase 1 验证)"
+      per_section_fields:
+        section_name:
+          ui: "双语并排"
+          maps_to: ["wt_travel_section.section_name", "section_name_cn"]
+        section_title:
+          ui: "双语并排"
+          maps_to: ["section_title", "section_title_cn"]
+        section_location:
+          ui: "双语并排"
+          maps_to: ["section_location", "section_location_cn"]
+        section_description:
+          ui: "双语并排"
+          maps_to: ["section_description", "section_description_cn"]
+        image_grid:
+          ui: "最多 10 图"
+          maps_to: "wt_travel_section_image"
+          v1: skip
+        trip_item:
+          button: "+ Add Trip Item"
+          structure: "待 Phase 1 探查"
+      buttons:
+        add_section:
+          text: "+ Add Section"
+        delete_section:
+          text: "Delete Section"
+    dep_date_and_price:
+      ui: "聚合 readonly 表格"
+      columns: [Dep Date, Flight Info, Tour Fare, Selling Price, Cost Price, Airport Tax, Qty]
+      data_source: "wt_travel_tour 关联到此 travel_id 的所有 wt_tour"
+      flag: "WBMXMN id=149 当前显示 'No Data' —— 6 个 wt_tour 没绑过来"
+      v1_action: "插件 Step 3 必须显式写 wt_travel_tour (travel_id, tour_type_id, tour_id) 关联记录"
+    product_status:
+      ui: "复选框"
+      label: "Publish for sale"
+      maps_to: "wt_travel.travel_status (0=Not for sale 草稿, 1=publish for sale)"
+      v1_rule: "永不勾选；保持草稿态"
+  buttons:
+    save: "Save"
+    cancel: "Cancel"
+
+# Phase 3 实地走通 12WBMXMN10/26MF 后修订的发现（全部已验证）
+phase_3_findings:
+  modal_save_no_redirect:
+    description: "Modal 'New Tour Code' Save 后 **不自动跳转** Edit 页，留在 packageList。"
+    impact: "插件必须用 RO MySQL 查 new tour_id (where tour_code=...) 再 navigate 到 editPackage?id=NNN"
+    confirmed: true
+
+  modal_save_double_confirm:
+    description: "Modal Save 后弹 .el-message-box-wrapper 二次确认: 'Tour code cannot be changed after saving. Confirm save?'"
+    selectors:
+      confirm_button: '.el-message-box button.el-button--primary  // text "Confirm"'
+    confirmed: true
+
+  datepicker_needs_keyboard:
+    description: "Element UI datepicker 不接受 native value setter (JS Object.getOwnPropertyDescriptor.set)。v-model 不更新，Submit 报 'Cannot be empty'。"
+    workaround: "JS focus + computer.type 真实键盘输入 + Tab/Escape 触发 blur"
+    confirmed: true
+    affected_fields: [Departure Date, Return Date, Paym Due Date, Flight Itinerary 各行 Date]
+
+  number_input_js_setter_works:
+    description: "Element UI 普通 number input (Tour Fare, Estimated Cost) **接受** native value setter + dispatch input/change events."
+    workaround_alt: "triple_click + computer.type 也工作（更稳）"
+    confirmed: true
+
+  text_input_picker_disguised:
+    description: "TM/TL 字段虽然渲染为普通 input，但绑了 leader-picker 弹窗逻辑。click + type / form_input / JS setter 均不生效。"
+    workaround_v1: "v1 跳过；wt_tour.tl_tm_name 留 NULL，Planner 在 Skybear 后期手动填"
+    workaround_v2: "Phase 4 调研 leader-picker 弹窗的 click 路径"
+    confirmed: true
+
+  airline_code_via_main_airline:
+    description: "wt_tour.airline_code 来自 Edit Page 的 'Main Airline' 字段，**不是** 从 tour_code 后缀自动推断。"
+    note: "Modal 不输入 Main Airline，Edit Page 也未默认拉，需要插件显式设置。"
+    confirmed: true
+    impact: "Phase 3 测试 wt_tour 11571 的 airline_code 是空字符串，因为没填 Main Airline。"
+
+  tr_closed_required_default_no:
+    description: "Edit Package 有 Tr Closed 必填字段，默认 'No' (closed_status=0)，v1 不动。"
+    confirmed: true
+
+  trip_item_inside_section:
+    description: "Edit Display Detail 每个 Section 内可加多个 Trip Items。"
+    fields:
+      trip_type: "下拉 (Attractions, ...)，必填"
+      trip_title: "双语并排 textbox，必填"
+      trip_description: "双语并排 textarea"
+      trip_photos: "多图上传 (≤10 张, ≤6MB each)"
+    db_table: "推测是 wt_travel_section 的子表 (待 RO MySQL 查 schema 验证表名)"
+    v1_decision: "v1 不创建 Trip Items；如必须，可把景点列表拼接到 section_description"
+
+  wt_travel_tour_binding:
+    description: "Edit Display Detail 的 Dep Date & Price 区自动列出该 TourType 下所有 wt_tour，每个旁有复选框。勾选 + Save → 写 wt_travel_tour 关联行。"
+    selectors:
+      candidate_block: ".dep-date-block, .orange-card  // 每个 wt_tour 一个 card; 点 card 旁的复选框选中"
+    impact: "Phase 0 SKILL 假设的 'backend auto-binds' 不对。必须显式勾选。"
+    confirmed: true
+
+  query_price_auto_calculated:
+    description: "wt_tour.query_price 后端自动算 = TWNfare + AirportTax (Phase 3: 2199+250=2449)。"
+    impact: "插件不必填 query_price。"
+    confirmed: true
+
+  credit_card_promo_per_type_default:
+    description: "wt_tour_price.Credit Card Promo 默认值因 type_code 不同（WBMXMN=88, WBTUKW=200）。"
+    impact: "v1 留默认值，不重置为 0。"
+    confirmed: true
+
+  wt_tour_price_18_rows_auto:
+    description: "Submit 后所有 18 个 price_name 自动 INSERT (即使用户没动)，未填的 sell_price=0。"
+    impact: "插件无需为 'leave 0' 字段做任何操作；只需填该填的。"
+    confirmed: true
+
+  publish_checkbox_unticked_default:
+    description: "Edit Display Detail 'Publish for sale' 复选框默认未勾 = wt_travel.travel_status=0 = 草稿。"
+    v1_rule: "插件永不勾。"
+    confirmed: true
+
+# Phase 3 的实地证据 (UAT 上已落库)
+phase_3_evidence:
+  test_run_2026_05_08:
+    tour_type_id: 595
+    new_tour_id: 11571
+    tour_code: 12WBMXMN10/26MF
+    wt_travel_id: 149
+    wt_travel_tour_id: 27935
+    test_data_status: "DRAFT (tr_status=0, travel_status=0); will need cleanup or repurpose later"
+
+# Phase 4 — first real run against PROD Create Display Detail (2026-08-06,
+# user ittest). Everything below was observed live; several items contradict
+# the Phase 0 inventory, which was taken from the EDIT page of an existing
+# record rather than the CREATE form.
+phase_4_prod_findings:
+  create_route:
+    description: "The Creat/Publish button did not navigate when clicked. The create form is reachable directly."
+    url: "/#/packageDisplayMgmt/editDisplayDetail?type=add"
+    note: "SPA hash routing — set location.hash then location.reload()."
+    confirmed: true
+
+  publish_defaults_to_TICKED_on_create:
+    description: >
+      On the CREATE form `productForm.publishStatus` initialises to **true**
+      and the "Publish for sale" checkbox renders already ticked. Phase 0
+      recorded the opposite, because it inspected the edit page of a record
+      that was already a draft.
+    impact: >
+      "Never tick the box" is not enough on create — it is already ticked, so
+      a plain save publishes the product immediately. The plugin must
+      explicitly set publishStatus = false and re-read the checkbox to
+      confirm before saving.
+    confirmed: true
+    severity: critical
+
+  carousel_is_two_slots:
+    description: >
+      There is no single "Image Carousel". The form has Mobile Display Image
+      and Desktop Display Image, and every product ships both.
+    ui_recommended: {mobile: "1080x1920 (9:16)", desktop: "1920x1080 (16:9)",
+                     thumbnail: "554x400 (277:200)", cover_video_asset: "986x1752"}
+    live_practice: {mobile: "1080x1440..1620 (0.66-0.75)", desktop: "1012x847..1732x1080 (1.19-1.60)"}
+    note: "The hints and the shipped catalogue disagree; live products follow neither 9:16 nor 16:9."
+    confirmed: true
+
+  bilingual_key_is_zh_not_cn:
+    description: >
+      Section name/title/location/description are {en, zh} objects, and
+      highlights are {highlightsEn, highlightsZh}. Product name is the odd
+      one out: {enName, chName}.
+    impact: "Writing .cn silently does nothing — the field stays empty and validation fails at save."
+    confirmed: true
+
+  product_name_rejects_ampersand:
+    description: >
+      productFormRules.name runs a custom validator that fails on any '&' in
+      either language: "Cannot contain &". Brochure titles routinely have one
+      ("9D8N GUIZHOU & CHONGQING WONDERS TOUR").
+    workaround: "Replace with 'and' (or a middot) in the product name only; highlights and sections accept &."
+    confirmed: true
+
+  save_requires_an_existing_tour:
+    description: >
+      travelMgmt/editTravel returns 500 "tourId Cannot be empty" when the
+      TourType has no wt_tour rows. page.tourList was empty for WBCKWE.
+    impact: >
+      A wt_travel cannot be created for a TourType with no departures. The
+      NEW-mode path in skybear-update-display therefore depends on Step 2
+      (skybear-create-tourcode) having run first — which needs departure
+      date, airline, flights, inventory and price from the Planner.
+    confirmed: true
+    severity: blocking
+
+  image_inputs_accept_synthetic_files:
+    description: >
+      Each slot is an el-upload with a plain input[type=file]. Assigning
+      input.files from a DataTransfer and dispatching a 'change' event is
+      accepted; the component stores {file, preview:dataURL} locally and
+      uploads on Save. Files can be fetched from http://127.0.0.1 — Chrome
+      exempts loopback from mixed-content blocking — which is how the plugin
+      can feed locally-generated crops without a file picker.
+    confirmed: true
+
+  save_button_is_ambiguous:
+    description: >
+      Four buttons read Save/Confirm; three belong to hidden dialogs (the
+      New Inquiry dialog among them) and clicking those fires that dialog's
+      validation instead. Select with :not(.el-dialog *) or check visibility.
+    confirmed: true
