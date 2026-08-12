@@ -285,10 +285,12 @@ OVERRIDES = {
         "d08": [("stock", ("d08_kangbashi", 1), "康巴什城市广场;#2#3 系蒙古国已排除")],
     },
     "WBCURC": {
-        "d03": [("file",
-                 "/private/tmp/claude-501/-Users-wangchengtai-Documents-webuytravel/"
-                 "eed9efad-412f-4396-8741-c38ed4eaf3f1/scratchpad/wbcurc_day3/"
-                 "candidate1_full.jpg",
+        # Path is repo-relative like every other source. It used to point into
+        # an agent session's scratchpad, which survives only until that
+        # scratchpad is cleaned — after which this re-runs "successfully" and
+        # silently drops day 3's photo, because a missing `src_path` only ever
+        # becomes a note on the placement.
+        "d03": [("file", "work/WBCURC/cand/d03_keketuohai_canyon.jpg",
                  "可可托海额尔齐斯大峡谷")],
         # 坎儿井:stock 全是泛化农业灌溉,无一是坎儿井。按区域规则改用新疆区域图。
         "d10": [("stock", ("d07_kokdala", 3),
