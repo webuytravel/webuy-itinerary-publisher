@@ -24,3 +24,5 @@ work/**/norm/
 work/**/out/
 work/**/out_mobile/
 work/_probe_imgs/
+work/**/cand/
+work/**/_sheet_*.jpg
