@@ -1,0 +1,867 @@
+{
+ "type_code": "WBCHET",
+ "travel_days": 9,
+ "product_name": {
+  "en": "9D7N Impression of Shanxi and Inner Mongolia",
+  "zh": "9天7晚山西内蒙古印象之旅"
+ },
+ "highlights": [
+  {
+   "en": "Yungang Grottoes, a UNESCO World Heritage site, and Datong Ancient City",
+   "zh": "云冈石窟（世界文化遗产）与大同古城"
+  },
+  {
+   "en": "The Hanging Temple of Hunyuan and the Yingxian Wooden Pagoda",
+   "zh": "浑源悬空寺与应县木塔"
+  },
+  {
+   "en": "Ordos Grassland welcome ceremony, Mongolian costume experience, bonfire party and a luxury yurt upgrade",
+   "zh": "鄂尔多斯草原迎宾仪式、蒙古族服饰换装、草原篝火晚会、豪华蒙古包升级"
+  },
+  {
+   "en": "Xiangshawan desert cableway · Ulan Hada Volcano Geopark · Ningwu Wannian Ice Cave and Hanging Village",
+   "zh": "响沙湾沙漠索道 · 乌兰哈达火山地质公园 · 宁武万年冰洞与悬空村"
+  },
+  {
+   "en": "Hand-Grabbed Mutton · Mutton Hot Pot · Roast Duck · Mongolian Cuisine",
+   "zh": "手把肉 · 涮羊肉 · 烤鸭 · 蒙古风味"
+  },
+  {
+   "en": "Ningwu · Hunyuan · Datong and Yimeng regional specialities",
+   "zh": "宁武风味 · 浑源风味 · 大同美食 · 伊盟风味"
+  }
+ ],
+ "highlights_source": [
+  {
+   "en": "7 Breakfasts · 7 Lunches · 4 Dinners",
+   "zh": "7早餐 · 7午餐 · 4晚餐"
+  },
+  {
+   "en": "Hand-Grabbed Mutton",
+   "zh": "手把肉"
+  },
+  {
+   "en": "Roast Duck",
+   "zh": "烤鸭"
+  },
+  {
+   "en": "Mutton Hot Pot",
+   "zh": "涮羊肉"
+  },
+  {
+   "en": "Ningwu Cuisine",
+   "zh": "宁武风味"
+  },
+  {
+   "en": "Hunyuan Cuisine",
+   "zh": "浑源风味"
+  },
+  {
+   "en": "Datong Cuisine",
+   "zh": "大同美食"
+  },
+  {
+   "en": "Yimeng Cuisine",
+   "zh": "伊盟风味"
+  },
+  {
+   "en": "Mongolian Cuisine",
+   "zh": "蒙古风味"
+  },
+  {
+   "en": "2+1 Spacious VIP Coach",
+   "zh": "2+1超大空间陆地头等舱"
+  },
+  {
+   "en": "USB Charging Ports",
+   "zh": "USB充电设备"
+  },
+  {
+   "en": "Luxury Mongolian Yurt Upgrade",
+   "zh": "豪华蒙古包特别升级"
+  },
+  {
+   "en": "Hotel Accommodation 4+5 diamond hotel",
+   "zh": "住宿安排全程4+5钻酒店"
+  },
+  {
+   "en": "Ordos — Ordos Grassland, Traditional Welcome Wine & Hada Ceremony, Mongolian Costume Experience, Grassland Bonfire Party, Traditional Mongolian Culture",
+   "zh": "鄂尔多斯 — 鄂尔多斯草原、下马酒及献哈达迎宾仪式、蒙古族服饰换装体验、草原篝火晚会、蒙古族传统文化体验"
+  },
+  {
+   "en": "Xiangshawan — Xiangshawan Desert, Desert Cableway Experience",
+   "zh": "响沙湾 — 响沙湾沙漠、沙漠索道体验"
+  },
+  {
+   "en": "Ulan Hada Volcano — Ulan Hada Volcano Geopark, Spacesuit Costume Experience",
+   "zh": "乌兰哈达火山 — 乌兰哈达火山地质公园、太空服换装体验"
+  },
+  {
+   "en": "Hohhot — Kuanxiangzi Alley, Ordos Cultural Industry Park, Yihe Ecological Culture Expo Park, Kangbashi Tourist Area",
+   "zh": "呼和浩特 — 宽巷子、鄂尔多斯文化产业园、颐和生态文化博览园、康巴什旅游景区"
+  },
+  {
+   "en": "Ningwu — Wannian Ice Cave, Millennium Natural Ice Wonder, Hanging Village, Cliffside Ancient Settlement",
+   "zh": "宁武 — 万年冰洞、千年天然冰洞奇观、悬空村、悬崖古村落"
+  },
+  {
+   "en": "Xinzhou — Xinzhou Ancient City",
+   "zh": "忻州 — 忻州古城"
+  },
+  {
+   "en": "Hunyuan — Hanging Temple",
+   "zh": "浑源 — 悬空寺"
+  },
+  {
+   "en": "Ying County — Yingxian Wooden Pagoda",
+   "zh": "应县 — 应县木塔"
+  },
+  {
+   "en": "Datong — Yungang Grottoes, Datong Ancient City",
+   "zh": "大同 — 云冈石窟、大同古城"
+  }
+ ],
+ "sections": [
+  {
+   "day": 1,
+   "name": {
+    "en": "DAY 1",
+    "zh": "第一天"
+   },
+   "title": {
+    "en": "Singapore > Kuala Lumpur > Ordos",
+    "zh": "新加坡 > 吉隆坡 > 鄂尔多斯"
+   },
+   "location": {
+    "en": "Ordos",
+    "zh": "鄂尔多斯"
+   },
+   "description": {
+    "en": "",
+    "zh": ""
+   },
+   "_note": "PDF 排版问题：中文第 1 句「于吉隆坡国际机场集合，搭乘航班飞往鄂尔多斯。」丢失了 ✦ 标记，被粘在英文第 2 条末尾；此处按语义还原为 2 条中英配对。另：标题中 Singapore 与 Kuala Lumpur 之间的 > 箭头在 PDF 文字层中缺失，按语义补上。",
+   "trip_items": [
+    {
+     "title": {
+      "en": "Depart for Ordos via Kuala Lumpur",
+      "zh": "经吉隆坡飞往鄂尔多斯"
+     },
+     "description": {
+      "en": "Assemble at Kuala Lumpur International Airport and take the flight to Ordos.",
+      "zh": "于吉隆坡国际机场集合，搭乘航班飞往鄂尔多斯。"
+     },
+     "photo_subject": "",
+     "trip_type": "Transportation"
+    },
+    {
+     "title": {
+      "en": "Arrival and Hotel Check-In",
+      "zh": "抵达后入住酒店"
+     },
+     "description": {
+      "en": "Upon arrival, meet your local guide and transfer to the hotel for check-in and rest.",
+      "zh": "抵达鄂尔多斯后，由专业导游接机，乘车前往酒店办理入住并休息。"
+     },
+     "photo_subject": "",
+     "trip_type": "Transportation"
+    }
+   ]
+  },
+  {
+   "day": 2,
+   "name": {
+    "en": "DAY 2",
+    "zh": "第二天"
+   },
+   "title": {
+    "en": "Ordos > Ordos Grassland",
+    "zh": "鄂尔多斯 > 鄂尔多斯草原"
+   },
+   "location": {
+    "en": "Ordos Grassland",
+    "zh": "鄂尔多斯草原"
+   },
+   "description": {
+    "en": "Breakfast / Lunch / -",
+    "zh": "早餐 / 午餐 / -"
+   },
+   "trip_items": [
+    {
+     "title": {
+      "en": "Ordos Grassland",
+      "zh": "鄂尔多斯草原"
+     },
+     "description": {
+      "en": "Travel approximately 2.5 hours to the Ordos Grassland.",
+      "zh": "早餐后乘车前往辽阔的【鄂尔多斯草原】。"
+     },
+     "photo_subject": "Ordos Grassland 鄂尔多斯草原",
+     "trip_type": "Attractions"
+    },
+    {
+     "title": {
+      "en": "Traditional Welcome Wine & Hada Ceremony",
+      "zh": "下马酒及献哈达迎宾仪式"
+     },
+     "description": {
+      "en": "Receive a traditional Mongolian welcome with wine and a ceremonial hada.",
+      "zh": "抵达草原后，接受蒙古族传统下马酒及献哈达迎宾仪式。"
+     },
+     "photo_subject": "Mongolian Hada Welcome Ceremony 蒙古族献哈达迎宾仪式",
+     "trip_type": "Attractions"
+    },
+    {
+     "title": {
+      "en": "Mongolian Costume Experience",
+      "zh": "蒙古族服饰换装体验"
+     },
+     "description": {
+      "en": "Dress in traditional Mongolian costume and experience the colourful culture of the grasslands.",
+      "zh": "换穿蒙古族传统服饰，感受草原民族文化，并留下特色纪念照片。"
+     },
+     "photo_subject": "Mongolian Traditional Costume 蒙古族传统服饰",
+     "trip_type": "Attractions"
+    },
+    {
+     "title": {
+      "en": "Grassland Scenery and Yurts",
+      "zh": "草原风光与蒙古包"
+     },
+     "description": {
+      "en": "Admire the wide-open prairie, yurts, livestock and dramatic skies.",
+      "zh": "游览草原景区，欣赏辽阔草原、蒙古包、牛羊及蓝天白云组成的塞外风光。"
+     },
+     "photo_subject": "Ordos Grassland Yurts 鄂尔多斯草原蒙古包",
+     "trip_type": "Attractions"
+    },
+    {
+     "title": {
+      "en": "Grassland Bonfire Party",
+      "zh": "草原篝火晚会"
+     },
+     "description": {
+      "en": "Join a lively Grassland Bonfire Party in the evening.",
+      "zh": "晚上参加热闹的【草原篝火晚会】，与当地蒙古族同胞载歌载舞。"
+     },
+     "photo_subject": "Grassland Bonfire Party 草原篝火晚会",
+     "trip_type": "Attractions"
+    }
+   ]
+  },
+  {
+   "day": 3,
+   "name": {
+    "en": "DAY 3",
+    "zh": "第三天"
+   },
+   "title": {
+    "en": "Ordos Grassland > Xiangshawan > Ordos",
+    "zh": "鄂尔多斯草原 > 响沙湾 > 鄂尔多斯"
+   },
+   "location": {
+    "en": "Ordos",
+    "zh": "鄂尔多斯"
+   },
+   "description": {
+    "en": "Breakfast / Lunch / Dinner",
+    "zh": "早餐 / 午餐 / 晚餐"
+   },
+   "trip_items": [
+    {
+     "title": {
+      "en": "Xiangshawan",
+      "zh": "响沙湾"
+     },
+     "description": {
+      "en": "Travel to Xiangshawan, one of Inner Mongolia’s celebrated singing-sand destinations.",
+      "zh": "早餐后离开鄂尔多斯草原，乘车前往著名的【响沙湾】。"
+     },
+     "photo_subject": "Xiangshawan Desert 响沙湾沙漠",
+     "trip_type": "Attractions"
+    },
+    {
+     "title": {
+      "en": "Desert Cableway Experience",
+      "zh": "沙漠索道体验"
+     },
+     "description": {
+      "en": "The tour includes scenic-area admission and cableway transportation.",
+      "zh": "行程包含响沙湾景区门票及索道，乘坐索道进入沙漠景区。"
+     },
+     "photo_subject": "Xiangshawan Desert Cableway 响沙湾沙漠索道",
+     "trip_type": "Attractions"
+    },
+    {
+     "title": {
+      "en": "Dunes and Camel Caravans",
+      "zh": "沙丘与沙漠驼队"
+     },
+     "description": {
+      "en": "Admire the sweeping dunes, golden desert scenery and camel caravans.",
+      "zh": "欣赏辽阔沙丘、金色沙海及沙漠驼队风光，感受响沙湾独特的鸣沙奇观。"
+     },
+     "photo_subject": "Xiangshawan Sand Dunes Camel Caravan 响沙湾沙漠驼队",
+     "trip_type": "Attractions"
+    },
+    {
+     "title": {
+      "en": "Optional Desert Activities and Return to Ordos",
+      "zh": "自选沙漠娱乐项目后返回鄂尔多斯"
+     },
+     "description": {
+      "en": "Additional desert activities at Yuesha Island are available at guests’ own choice. Return to Ordos after the visit.",
+      "zh": "可根据个人兴趣自愿参加悦沙岛等沙漠娱乐项目。游览结束后返回鄂尔多斯入住酒店。"
+     },
+     "photo_subject": "",
+     "trip_type": "Attractions"
+    }
+   ]
+  },
+  {
+   "day": 4,
+   "name": {
+    "en": "DAY 4",
+    "zh": "第四天"
+   },
+   "title": {
+    "en": "Ordos > Ningwu",
+    "zh": "鄂尔多斯 > 宁武"
+   },
+   "location": {
+    "en": "Ningwu",
+    "zh": "宁武"
+   },
+   "description": {
+    "en": "Breakfast / Lunch / Dinner",
+    "zh": "早餐 / 午餐 / 晚餐"
+   },
+   "_note": "英文 4 条 ✦、中文只有 3 条 ✦：中文「走进四季不化的天然冰洞，欣赏冰柱、冰瀑、冰笋及晶莹冰壁构成的冰雪奇观。」一句丢失了 ✦ 标记（PDF 中另起一行），语义上对应英文第 3 条，此处按语义还原为 4 条配对。",
+   "trip_items": [
+    {
+     "title": {
+      "en": "Coach to Ningwu",
+      "zh": "前往山西宁武"
+     },
+     "description": {
+      "en": "Travel approximately four hours from Ordos to Ningwu.",
+      "zh": "早餐后乘车前往山西宁武。"
+     },
+     "photo_subject": "",
+     "trip_type": "Transportation"
+    },
+    {
+     "title": {
+      "en": "Wannian Ice Cave",
+      "zh": "万年冰洞"
+     },
+     "description": {
+      "en": "Visit the remarkable Wannian Ice Cave, including admission and cableway transportation.",
+      "zh": "游览神秘的【万年冰洞】，行程包含景区门票及索道。"
+     },
+     "photo_subject": "Wannian Ice Cave Ningwu 宁武万年冰洞",
+     "trip_type": "Attractions"
+    },
+    {
+     "title": {
+      "en": "Ice Formations and Ice Walls",
+      "zh": "冰柱冰瀑与晶莹冰壁"
+     },
+     "description": {
+      "en": "Explore its permanent ice formations, frozen waterfalls and brilliant blue-white ice walls.",
+      "zh": "走进四季不化的天然冰洞，欣赏冰柱、冰瀑、冰笋及晶莹冰壁构成的冰雪奇观。"
+     },
+     "photo_subject": "Wannian Ice Cave ice formations 万年冰洞冰柱冰瀑",
+     "trip_type": "Attractions"
+    },
+    {
+     "title": {
+      "en": "Hanging Village",
+      "zh": "悬空村"
+     },
+     "description": {
+      "en": "Continue to the Hanging Village, an ancient settlement built along the mountain cliffs.",
+      "zh": "随后游览【悬空村】，欣赏依山而建的古老村落及悬崖民居景观。"
+     },
+     "photo_subject": "Ningwu Hanging Village 宁武悬空村",
+     "trip_type": "Attractions"
+    }
+   ]
+  },
+  {
+   "day": 5,
+   "name": {
+    "en": "DAY 5",
+    "zh": "第五天"
+   },
+   "title": {
+    "en": "Ningwu > Xinzhou > Ying County > Datong",
+    "zh": "宁武 > 忻州 > 应县 > 大同"
+   },
+   "location": {
+    "en": "Datong",
+    "zh": "大同"
+   },
+   "description": {
+    "en": "Breakfast / Lunch / -",
+    "zh": "早餐 / 午餐 / -"
+   },
+   "_note": "英文 4 条 ✦、中文 5 条 ✦：中文第 1、2 条（前往忻州古城 / 漫步古城街巷）合起来才对应英文第 1 条，此处按语义合并为 4 条配对。另：PDF 标题原文误写作「Ying Country 应县」，已订正为 Ying County。",
+   "trip_items": [
+    {
+     "title": {
+      "en": "Xinzhou Ancient City",
+      "zh": "忻州古城"
+     },
+     "description": {
+      "en": "Visit Xinzhou Ancient City and stroll through its traditional streets.",
+      "zh": "早餐后乘车前往【忻州古城】。漫步古城街巷，欣赏传统山西建筑、古城楼及地方人文景观。"
+     },
+     "photo_subject": "Xinzhou Ancient City 忻州古城",
+     "trip_type": "Attractions"
+    },
+    {
+     "title": {
+      "en": "Yingxian Wooden Pagoda",
+      "zh": "应县木塔"
+     },
+     "description": {
+      "en": "Continue to Ying County and visit the celebrated Yingxian Wooden Pagoda.",
+      "zh": "随后前往应县，参观著名的【应县木塔】。"
+     },
+     "photo_subject": "Yingxian Wooden Pagoda 应县木塔",
+     "trip_type": "Attractions"
+    },
+    {
+     "title": {
+      "en": "Ancient Wooden Craftsmanship",
+      "zh": "千年木构与榫卯工艺"
+     },
+     "description": {
+      "en": "Admire the ancient wooden structure and its remarkable traditional craftsmanship.",
+      "zh": "欣赏这座千年木构佛塔精巧的建筑结构及传统榫卯工艺。"
+     },
+     "photo_subject": "Yingxian Wooden Pagoda wooden structure 应县木塔木构榫卯",
+     "trip_type": "Attractions"
+    },
+    {
+     "title": {
+      "en": "Datong Ancient City",
+      "zh": "大同古城"
+     },
+     "description": {
+      "en": "Proceed to Datong and enjoy free time around Datong Ancient City.",
+      "zh": "前往大同后，于【大同古城】自由活动，可自行探索古城景点及当地美食。"
+     },
+     "photo_subject": "Datong Ancient City 大同古城",
+     "trip_type": "Attractions"
+    }
+   ]
+  },
+  {
+   "day": 6,
+   "name": {
+    "en": "DAY 6",
+    "zh": "第六天"
+   },
+   "title": {
+    "en": "Datong > Hunyuan > Datong",
+    "zh": "大同 > 浑源 > 大同"
+   },
+   "location": {
+    "en": "Datong",
+    "zh": "大同"
+   },
+   "description": {
+    "en": "Breakfast / Lunch / Dinner",
+    "zh": "早餐 / 午餐 / 晚餐"
+   },
+   "_note": "英文 4 条 ✦、中文 5 条 ✦：中文第 3 条「寺院依悬崖峭壁而建，可欣赏『绝壁古寺』壮观建筑景象。」没有对应英文，已并入第 2 条 trip item。",
+   "trip_items": [
+    {
+     "title": {
+      "en": "Hanging Temple",
+      "zh": "悬空寺"
+     },
+     "description": {
+      "en": "Travel to Hunyuan and visit the extraordinary Hanging Temple.",
+      "zh": "早餐后乘车前往浑源，游览世界建筑奇观【悬空寺】。"
+     },
+     "photo_subject": "Hanging Temple Hunyuan 浑源悬空寺",
+     "trip_type": "Attractions"
+    },
+    {
+     "title": {
+      "en": "Shuttle Included, Exterior Viewing",
+      "zh": "含景区交通车，以外观欣赏为主"
+     },
+     "description": {
+      "en": "The sightseeing shuttle is included, while the climbing ticket is not included. The arrangement is primarily for exterior viewing.",
+      "zh": "行程包含景区交通车，但不包含悬空寺登临门票，以外观欣赏为主。寺院依悬崖峭壁而建，可欣赏“绝壁古寺”壮观建筑景象。"
+     },
+     "photo_subject": "",
+     "trip_type": "Attractions"
+    },
+    {
+     "title": {
+      "en": "Yungang Grottoes",
+      "zh": "云冈石窟"
+     },
+     "description": {
+      "en": "Return to Datong and explore the UNESCO-listed Yungang Grottoes, including scenic shuttle transportation.",
+      "zh": "随后返回大同，游览世界文化遗产【云冈石窟】，包含景区交通车。"
+     },
+     "photo_subject": "Yungang Grottoes Datong 大同云冈石窟",
+     "trip_type": "Attractions"
+    },
+    {
+     "title": {
+      "en": "Buddhist Carvings and Northern Wei Heritage",
+      "zh": "佛像雕刻与北魏佛教艺术"
+     },
+     "description": {
+      "en": "Admire the monumental Buddhist carvings and Northern Wei artistic heritage.",
+      "zh": "欣赏规模宏大的石窟群、佛像雕刻及北魏时期佛教艺术。"
+     },
+     "photo_subject": "Yungang Grottoes Buddha statues 云冈石窟佛像",
+     "trip_type": "Attractions"
+    }
+   ]
+  },
+  {
+   "day": 7,
+   "name": {
+    "en": "DAY 7",
+    "zh": "第七天"
+   },
+   "title": {
+    "en": "Datong > Ulan Hada Volcano > Hohhot",
+    "zh": "大同 > 乌兰哈达火山 > 呼和浩特"
+   },
+   "location": {
+    "en": "Hohhot",
+    "zh": "呼和浩特"
+   },
+   "description": {
+    "en": "Breakfast / Lunch / -",
+    "zh": "早餐 / 午餐 / -"
+   },
+   "_note": "PDF 第 4 页排版顺序有误：DAY 8 的正文排在 DAY 7 之前，此处已按 day 数字正确排序。",
+   "trip_items": [
+    {
+     "title": {
+      "en": "Ulan Hada Volcano Geopark",
+      "zh": "乌兰哈达火山地质公园"
+     },
+     "description": {
+      "en": "Travel to Ulan Hada Volcano Geopark.",
+      "zh": "早餐后乘车前往【乌兰哈达火山地质公园】。"
+     },
+     "photo_subject": "Ulan Hada Volcano Geopark 乌兰哈达火山地质公园",
+     "trip_type": "Attractions"
+    },
+    {
+     "title": {
+      "en": "Scenic Transport and Spacesuit Rental Included",
+      "zh": "含景区交通及太空服租赁"
+     },
+     "description": {
+      "en": "The arrangement includes scenic-area transportation and spacesuit rental.",
+      "zh": "行程包含景区交通及太空服租赁体验。"
+     },
+     "photo_subject": "",
+     "trip_type": "Attractions"
+    },
+    {
+     "title": {
+      "en": "Spacesuit Photo Experience",
+      "zh": "太空服换装拍照体验"
+     },
+     "description": {
+      "en": "Dress in a spacesuit and take memorable photographs among volcanic cones and dramatic black-rock landscapes.",
+      "zh": "换穿太空服，在火山锥、黑色火山岩及辽阔草原间拍摄具有“火星感”的特色照片。"
+     },
+     "photo_subject": "Ulan Hada Volcano spacesuit photo experience 乌兰哈达火山太空服拍照",
+     "trip_type": "Attractions"
+    },
+    {
+     "title": {
+      "en": "Kuanxiangzi Alley",
+      "zh": "宽巷子"
+     },
+     "description": {
+      "en": "Continue to Hohhot and explore Kuanxiangzi Alley.",
+      "zh": "随后前往呼和浩特，游览【宽巷子】，自由感受当地传统街区与美食文化。"
+     },
+     "photo_subject": "Kuanxiangzi Alley Hohhot 呼和浩特宽巷子",
+     "trip_type": "Attractions"
+    }
+   ]
+  },
+  {
+   "day": 8,
+   "name": {
+    "en": "DAY 8",
+    "zh": "第八天"
+   },
+   "title": {
+    "en": "Hohhot > Ordos > Kuala Lumpur",
+    "zh": "呼和浩特 > 鄂尔多斯 > 吉隆坡"
+   },
+   "location": {
+    "en": "Ordos",
+    "zh": "鄂尔多斯"
+   },
+   "description": {
+    "en": "Breakfast / Lunch / Dinner",
+    "zh": "早餐 / 午餐 / 晚餐"
+   },
+   "_note": "标题中 Ordos 与 Kuala Lumpur 之间的 > 箭头在 PDF 文字层中缺失，按语义补上。",
+   "trip_items": [
+    {
+     "title": {
+      "en": "Mengliang Ethnic Cultural Park",
+      "zh": "蒙亮民族风情园"
+     },
+     "description": {
+      "en": "Visit the Mengliang Ethnic Cultural Park, showcasing Mongolian culture, costumes and traditional crafts.",
+      "zh": "早餐后游览【蒙亮民族风情园】，了解内蒙古民族服饰、传统工艺及草原文化。"
+     },
+     "photo_subject": "Mengliang Ethnic Cultural Park Hohhot 呼和浩特蒙亮民族风情园",
+     "trip_type": "Attractions"
+    },
+    {
+     "title": {
+      "en": "Ordos Cultural Industry Park and Yihe Ecological Culture Expo Park",
+      "zh": "鄂尔多斯文化产业园及颐和生态文化博览园"
+     },
+     "description": {
+      "en": "Continue to the Ordos Cultural Industry Park and Yihe Ecological Culture Expo Park.",
+      "zh": "参观【鄂尔多斯文化产业园】及【颐和生态文化博览园】。"
+     },
+     "photo_subject": "Ordos Cultural Industry Park 鄂尔多斯文化产业园",
+     "trip_type": "Attractions"
+    },
+    {
+     "title": {
+      "en": "Kangbashi Tourist Area",
+      "zh": "康巴什旅游景区"
+     },
+     "description": {
+      "en": "Explore the modern Kangbashi Tourist Area.",
+      "zh": "随后前往现代化城市新区【康巴什旅游景区】，欣赏城市建筑及广场景观。"
+     },
+     "photo_subject": "Kangbashi Tourist Area Ordos 鄂尔多斯康巴什旅游景区",
+     "trip_type": "Attractions"
+    },
+    {
+     "title": {
+      "en": "Transfer to Ordos Airport",
+      "zh": "前往鄂尔多斯机场"
+     },
+     "description": {
+      "en": "Transfer to Ordos Airport for the return flight to Kuala Lumpur.",
+      "zh": "根据航班时间前往鄂尔多斯机场，搭乘航班返回吉隆坡。"
+     },
+     "photo_subject": "",
+     "trip_type": "Transportation"
+    }
+   ]
+  },
+  {
+   "day": 9,
+   "name": {
+    "en": "DAY 9",
+    "zh": "第九天"
+   },
+   "title": {
+    "en": "Kuala Lumpur > Singapore",
+    "zh": "吉隆坡 > 新加坡"
+   },
+   "location": {
+    "en": "Singapore",
+    "zh": "新加坡"
+   },
+   "description": {
+    "en": "",
+    "zh": ""
+   },
+   "_note": "PDF 中 DAY 9 只有标题，没有任何 ✦ 正文内容，故 trip_items 为空。标题中的 > 箭头在 PDF 文字层中缺失，按语义补上。",
+   "trip_items": []
+  }
+ ],
+ "images": {
+  "carousel": [
+   {
+    "pos": 0,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBCHET/out/carousel_00_0.jpg",
+    "bytes": 423001,
+    "subject": "Ordos Grassland yurts 鄂尔多斯草原"
+   },
+   {
+    "pos": 1,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBCHET/out/carousel_01_0.jpg",
+    "bytes": 213293,
+    "subject": "Ordos Grassland yurts 鄂尔多斯草原"
+   },
+   {
+    "pos": 2,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBCHET/out/carousel_02_0.jpg",
+    "bytes": 251518,
+    "subject": "Xiangshawan Desert dunes 响沙湾沙漠"
+   },
+   {
+    "pos": 3,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBCHET/out/carousel_03_0.jpg",
+    "bytes": 323031,
+    "subject": "Xiangshawan Desert dunes 响沙湾沙漠"
+   },
+   {
+    "pos": 4,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBCHET/out/carousel_04_0.jpg",
+    "bytes": 510537,
+    "subject": "Hanging Village cliff houses 悬空村 Ningwu"
+   },
+   {
+    "pos": 5,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBCHET/out/carousel_05_0.jpg",
+    "bytes": 333618,
+    "subject": "Yingxian Wooden Pagoda 应县木塔"
+   },
+   {
+    "pos": 6,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBCHET/out/carousel_06_0.jpg",
+    "bytes": 452555,
+    "subject": "Xinzhou Ancient City 忻州古城"
+   },
+   {
+    "pos": 7,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBCHET/out/carousel_07_0.jpg",
+    "bytes": 442218,
+    "subject": "Yungang Grottoes 云冈石窟 Datong"
+   }
+  ],
+  "carousel_mobile": [
+   {
+    "pos": 0,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBCHET/out_mobile/carousel_00_mobile.jpg",
+    "bytes": 451726,
+    "subject": "Ordos Grassland yurts 鄂尔多斯草原"
+   },
+   {
+    "pos": 1,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBCHET/out_mobile/carousel_01_mobile.jpg",
+    "bytes": 198174,
+    "subject": "Ordos Grassland yurts 鄂尔多斯草原"
+   },
+   {
+    "pos": 2,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBCHET/out_mobile/carousel_02_mobile.jpg",
+    "bytes": 247611,
+    "subject": "Xiangshawan Desert dunes 响沙湾沙漠"
+   },
+   {
+    "pos": 3,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBCHET/out_mobile/carousel_03_mobile.jpg",
+    "bytes": 324349,
+    "subject": "Xiangshawan Desert dunes 响沙湾沙漠"
+   },
+   {
+    "pos": 4,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBCHET/out_mobile/carousel_04_mobile.jpg",
+    "bytes": 524425,
+    "subject": "Hanging Village cliff houses 悬空村 Ningwu"
+   },
+   {
+    "pos": 5,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBCHET/out_mobile/carousel_05_mobile.jpg",
+    "bytes": 368633,
+    "subject": "Yingxian Wooden Pagoda 应县木塔"
+   },
+   {
+    "pos": 6,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBCHET/out_mobile/carousel_06_mobile.jpg",
+    "bytes": 500785,
+    "subject": "Xinzhou Ancient City 忻州古城"
+   },
+   {
+    "pos": 7,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBCHET/out_mobile/carousel_07_mobile.jpg",
+    "bytes": 448598,
+    "subject": "Yungang Grottoes 云冈石窟 Datong"
+   }
+  ],
+  "thumbnail": [
+   {
+    "pos": 0,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBCHET/out/thumbnail_00_0.jpg",
+    "bytes": 423001,
+    "subject": "Ordos Grassland yurts 鄂尔多斯草原"
+   }
+  ],
+  "route_map": [
+   {
+    "pos": 0,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBCHET/out/route_map_00.png",
+    "bytes": 541597,
+    "subject": "itinerary route map"
+   }
+  ],
+  "section": [
+   {
+    "pos": 2,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBCHET/out/section_02_0.jpg",
+    "bytes": 262442,
+    "subject": "Ordos Grassland yurts 鄂尔多斯草原"
+   },
+   {
+    "pos": 3,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBCHET/out/section_03_0.jpg",
+    "bytes": 168810,
+    "subject": "Xiangshawan Desert dunes 响沙湾沙漠"
+   },
+   {
+    "pos": 4,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBCHET/out/section_04_0.jpg",
+    "bytes": 334343,
+    "subject": "Hanging Village cliff houses 悬空村 Ningwu"
+   },
+   {
+    "pos": 5,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBCHET/out/section_05_0.jpg",
+    "bytes": 221509,
+    "subject": "Yingxian Wooden Pagoda 应县木塔"
+   },
+   {
+    "pos": 5,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBCHET/out/section_05_1.jpg",
+    "bytes": 291212,
+    "subject": "Xinzhou Ancient City 忻州古城"
+   },
+   {
+    "pos": 6,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBCHET/out/section_06_0.jpg",
+    "bytes": 282096,
+    "subject": "Yungang Grottoes 云冈石窟 Datong"
+   },
+   {
+    "pos": 6,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBCHET/out/section_06_1.jpg",
+    "bytes": 266123,
+    "subject": "Datong Ancient City wall 大同古城"
+   },
+   {
+    "pos": 7,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBCHET/out/section_07_0.jpg",
+    "bytes": 262888,
+    "subject": "Hohhot Dazhao Temple old town 呼和浩特大召寺"
+   },
+   {
+    "pos": 8,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBCHET/out/section_08_0.jpg",
+    "bytes": 198154,
+    "subject": "Kangbashi Ordos city square 康巴什"
+   }
+  ]
+ }
+}

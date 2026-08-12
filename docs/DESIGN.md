@@ -22,15 +22,37 @@
 | 每日右侧一张大图 | `wt_travel_section_image` | |
 | **每日下方的景点卡:标题 + 描述 + 3 张小图** | **Trip Item + Trip Photos** | ← 见下方缺口 |
 
-### ⚠ 已知缺口:Trip Item
+### Trip Item:缺口已补(2026-08-13)
 
 线上参考页里,每天正文的主体其实是**景点卡**(「Grand Bazaar」+ 一段描述 + 3 张配图),
-不是 section description。而 skybear-uploader 明确跳过了这一层——它的 SKILL.md 写着
-`Trip Item: SKIP (Phase 0 unresolved structure)`,Phase 3 也只查到「是 wt_travel_section
-的子记录,具体表未确认」。
+不是 section description。skybear-uploader 明确跳过了这一层(`Trip Item: SKIP
+(Phase 0 unresolved structure)`),照搬它的产品会比参考样例少一层。
 
-**所以照搬 skybear-uploader 传出来的产品,跟用户给的参考样例之间会差一层。**
-这一层要么在阶段一补掉,要么明确降级(每天只有一张大图 + 餐食行),不能默认它不存在。
+**这一层现在填上了。** 生产表单里的结构是:
+
+```
+.itinerary-container .el-collapse-item          ← 一天
+  .section-content .form-group                  Section Name/Title/Location/
+                                                Description/Photos
+  .trip-items .trip-item .trip-content           Trip Type/Title/Description/
+                                                Photos,每个景点一份
+```
+
+必填项实测(读 `is-required`,不是猜):Tour Type、Product Name、Highlight、
+List Thumbneil、Mobile Display Image、Desktop Display Image、Itinerary、
+Section Name、Section Title、**Trip Type**、**Trip Title**。其余可空。
+
+两处要注意:
+
+- **Trip Type 是必填的 el-select**,而行程文件里没有这个字段——册子写的是看什么,
+  不是怎么归类。取值只有七个,`bin/make_payload.py` 按标题开头判断:开头是移动
+  (`Coach to` / `Homeward` / `Transfer`)算 Transportation,其余算 Attractions。
+  只看开头三个词是有意的——「Optional Desert Activities and Return to Ordos」
+  是一个沙漠下午,不是一段交通,归错会让它在页面上消失。
+- **某天可能一个景点都没有**(WBCHET 第 9 天只有回程航班)。表单每个 section
+  自带一条 trip item 且必填,所以这种天要**删掉**那条空行,而不是编一条内容填进去。
+  删除要走一个确认弹窗,而且**折叠状态下删不掉**——移除动画停在 `el-list-leave`
+  不结束,DOM 里那条还在。先展开 section 再删。
 
 ---
 
@@ -130,12 +152,14 @@ WBCHET 从这一级拿到 0 张。**
 
 | 雷 | 后果 |
 |---|---|
-| **新建表单 `publishStatus` 默认 = true,复选框已勾** | 直接点保存 = **当场发布到线上**。「不要勾」这条规则在新建表单上是空话,必须主动取消勾选并回读确认 |
+| **`publishStatus` 默认值不可预设** | 08-06 记录是默认已勾;08-13 三次新建实测都是**未勾**(选完 Tour Type 后重新初始化)。两种都出现过,所以规则不是「记住默认值」而是**每次保存前回读 + 截图确认**。勾着保存 = 当场发布到线上 |
 | `travelMgmt/editTravel` 无团期时 500 `tourId Cannot be empty` | wt_travel 不能先于 wt_tour 存在 → **必须先开团期** |
 | 双语字段 key 是 `zh` 不是 `cn`(产品名例外,用 `{enName, chName}`) | 写 `.cn` 静默失效,保存时才报验证错误 |
-| 产品名不接受 `&` | 三份册子的标题全都带 `&`,要换成 `and` |
-| 四个按钮都叫 Save/Confirm,三个在隐藏弹窗里 | 点错会触发别的弹窗的验证 |
-| 图片槽位接受页面内合成的 File | 可以喂本地生成的裁剪图,不用文件选择器 |
+| 产品名不接受 `&` | 三份册子的标题全都带 `&`,要换成 `and`。选中 Tour Type 会**自动把产品名填成带 `&` 的册子标题**,必须覆盖 |
+| 四个按钮都叫 Save/Confirm,三个在隐藏弹窗里 | 实测点到隐藏的那个:**没有任何反应,也没有报错**,看起来像保存卡住。按 `offsetParent !== null` 过滤出可见的那个再点 |
+| **选中 Tour Type 会清空已上传的图片** | 顺序只能是「先选类型,最后挂图」。08-13 实测:选类型前传好的 List Thumbneil 当场没了 |
+| 选中 Tour Type 会自动加载团期并**全部勾上** | 不用手动勾。实际团期数与 08-12 的记录对不上(见下),以页面为准 |
+| 图片槽位接受页面内合成的 File | 但**字节不能用 fetch 从本地 http 服务器取**,见第 7 节 |
 
 ---
 
@@ -163,7 +187,64 @@ WBCHET 从这一级拿到 0 张。**
 
 ---
 
-## 6. 与 AI Planner 的关系(阶段二的接点)
+## 6. 生产上传实录(2026-08-13,三个产品都已落库)
+
+| 产品 | Product Id | 状态 | 团期 |
+|---|---|---|---|
+| WBCKWE 9D8N 贵州重庆 | **408** | Unpublished | 20 个 CZ,2026-09 → 2027-06 |
+| WBCURC 13D11N 北疆包机 | **409** | Unpublished | 14 个 OD,2027-05 → 2027-10 |
+| WBCHET 9D7N 山西内蒙 | **410** | Unpublished | 8 个 OD,2027-05 → 2027-10 |
+
+团期数与 08-12 的记录(8 / 7 / 8)对不上两项——WBCKWE 实际 20 个、WBCURC 实际 14 个。
+**生产状态一律现查**这条又验证了一次。
+
+### 6.1 图片怎么进 file input:loopback fetch 是死路
+
+原方案是起 `python3 -m http.server` 服务仓库根目录,页面 `fetch('http://127.0.0.1:.../x.jpg')`
+拿字节再用 `DataTransfer` 塞进 input。**这条不通**:从 https 页面 fetch 本地 http origin,
+promise 既不 resolve 也不 reject,console 一条报错都没有——看起来像自己的代码写错了,
+其实是混合内容拦截。「Chrome 对 loopback 豁免混合内容」这条对 `fetch` 不成立。
+
+**能用的是浏览器扩展自己的文件通道**(`file_upload`,给 input 的 element ref + 本地路径),
+它根本不经过页面的网络栈。一个限制:路径必须在**本次会话可读的目录**内,仓库主检出
+不算,所以 `work/**/out*` 要先复制进当前工作目录(它们本来就在 `.gitignore` 里)。
+
+### 6.2 批量操作要同步连点,不能 click-await-click
+
+`Add Section` / `Add Trip Item` 每点一次,Vue 会重渲染整个行程区,而这个渲染的开销随
+已有 section 数增长。写成「点一次 → await → 再点」的循环,13 天那个产品**跑了二十多分钟
+还没填完**:每次 await 都让 Vue 完整重渲一遍,单次点击从 250ms 退化到几十秒。
+
+Vue 是批处理的:**在一个同步块里连发 N 次 click,只产生一次重渲染。** 同一个 13 天表单
+用这种写法 16 秒填完。代价是同步块前后拿到的元素全部作废——写进已 detach 的 input
+会「成功」但什么也不改。所以顺序是:连点 → 等一次 → 重新查询 → 填字段。
+
+### 6.3 Highlight 就是 6 条,这是版式不是限制
+
+表单只有 6 组双语输入,没有加行控件。行程文件里是 15–22 条。
+查线上同类产品 `webuytravel.sg/tours/115` 确认:**它也正好 6 条**,而且格式固定——
+4 条头部景点/体验,再 2 条用 `·` 压缩的餐食风味。所以不是被表单截断,是要按这个版式重排。
+三个产品的成品 6 条写在 `bin/make_payload.py` 的 `HOUSE_HIGHLIGHTS` 里,连同取舍理由。
+
+### 6.4 stock 图源返回的是预览图,不是原图
+
+`photo_source` 存下来的是搜索结果给的**展示尺寸**:Pexels `?w=940&h=650`、Unsplash `&w=1080`。
+WBCHET 的轮播源图因此全是 940×627,横版要上采样 1.72×、竖版 2.30×,超出规格允许的 2.0。
+
+两个 URL 都把尺寸写在 query 里,去掉/调大就能拿到同一张照片的原图。`bin/resharpen.py`
+做这件事:WBCHET 全部 18 张从 940px 上采样变成从 3000–6240px 下采样(0.22–0.90×),
+WBCKWE 第 1 天从 2.04×(超出 section 槽 1.90 的上限)变成 0.92×。**选片没有变,只是像素变了。**
+
+### 6.5 Mobile Display Image 一直是空的
+
+轮播是两个独立必填槽位,而 `bin/compose.py` 只产出过横版,`work/*/out_mobile/` 三个目录
+一直是空的。`bin/mobile_crops.py` 补上:按 `image_spec.CAROUSEL_MOBILE`(1080×1440)
+**从原始源图重裁**——不是把 4:3 成品再裁一刀,那样只剩 810×1080 的一条,照片选它的理由
+基本都被切掉了。
+
+---
+
+## 7. 与 AI Planner 的关系(阶段二的接点)
 
 AI Planner 的 `module/content` 领域已经做过高度重叠的事:Issue #34
 「成品行程 PDF 导入 → 结构化行程+图片 → QA → Skybear 上传闭环」用的样本

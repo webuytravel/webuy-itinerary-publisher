@@ -25,4 +25,5 @@ work/**/out/
 work/**/out_mobile/
 work/_probe_imgs/
 work/**/cand/
+work/**/cand_hi/
 work/**/_sheet_*.jpg
