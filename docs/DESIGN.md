@@ -72,8 +72,42 @@ Word 输入必须依赖后面两级图源,这也正是要接 `webuy-itinerary-cr
 ```
 ① 文档自带图      PDF 内嵌照片 / docx 的 word/media/     ← 最可信,但 Word 路径为空
 ② Webuy 自家图库   webuytravel.sg 已发布产品的 OSS 原图    ← 已授权、同风格、尺寸对
-③ 外部图源        webuy-itinerary-creation 的找图能力      ← 覆盖前两级的空白
+③ 外部图源        webuy-itinerary-mcp 的 fetch_photo      ← 覆盖前两级的空白
+④ AI 生成        webuy-itinerary-mcp 的 generate_image   ← 长尾兜底
 ```
+
+### ③④ 怎么接:直接 HTTP 调线上服务,不复制代码
+
+`webuy-itinerary-creation` 已经作为 MCP 服务部署在
+`https://webuy-itinerary-mcp.onrender.com/mcp`,`/health` 实测三个图源 key
+(Gemini / Unsplash / Pexels)**都已在服务端配好**——本项目一个 key 都不用配。
+
+两个能用的工具:
+
+- **`fetch_photo(subject, region, count, quick=True)`** — 查 Unsplash + Pexels,
+  几秒返回候选 URL + 440px 缩略图。
+  实测拿之前的两个失败案例重跑:「可可托海」返回 4 张真实新疆风光(不再是矿石标本),
+  「乌鲁木齐」6 张里有 1 张精确命中北园春市场——**比 Commons-only 强一个量级**,
+  但仍有 1 张跑到了土库曼斯坦。
+- **`generate_image(prompt, aspect_ratio)`** — Gemini 文生图。
+  **这是 stock 永远覆盖不到的长尾的解法**,也是 WBCHET 山西段的现实出路。
+
+三个坑,接之前先规划:
+
+1. 🚨 **`/mcp` 目前没有鉴权**——`WEBUY_MCP_TOKEN` 没设在 Render 上,不带任何
+   Authorization 头就能完成 MCP 握手。**公网任何人都能消耗这套 Gemini/Unsplash 额度。**
+   接入前应先让他们设上并给我们 token。这是个独立于本项目的安全问题。
+2. `quick=False`(带 Vision 校验 + 美学排序)实测单个主题跑 **6 分钟以上**,
+   服务自己的文档也警告不要整本用——**不能放进逐日循环**。
+   所以质量把关只能由**我们这边看缩略图**来做。
+3. Render 重启会清空 `/asset/` 和 `/download/`,拿到 URL 要立刻下载落地。
+
+### 这个仓库帮不上的两件事
+
+- **它完全不抽取 docx 内嵌图片**(`flatten_docx` 只处理 `p` 和 `tbl`,drawing 直接丢)。
+  「优先用文档自带的图」这条核心需求得自己写。
+- **它明确拒绝老 `.doc`**(检查 zip magic,不是 PK 就报错让人另存为 .docx)。
+  本项目的样本恰好就是 `.doc`,得自己处理(`textutil` 实测可行)。
 
 ②的覆盖度极不均匀,这是实测数字(2026-08-06):贵州 + 重庆两个在售产品几乎盖满
 WBCKWE 全部景点;Altay 盖住 WBCURC 的大部分新疆段;**山西没有任何在售产品,
@@ -105,16 +139,27 @@ WBCHET 从这一级拿到 0 张。**
 
 ---
 
-## 5. 阻塞:先有团期才能有产品
+## 5. 团期:已经不再是阻塞(2026-08-12 复核)
 
-`tourId Cannot be empty` 不是可以绕开的校验,是数据模型约束。要开出团期,需要
-Planner 提供 PDF 里没有的信息:
+`tourId Cannot be empty` 是真实的数据模型约束——wt_travel 不能先于 wt_tour 存在。
+但**触发它的前提已经消失了**。
 
-**必填**:出发日期、航司代码、去程航班(航班号/起降时间/机场)、返程航班、
-领队姓名、库存、Twin 价、机场税
-**可选**(有默认值):返程日期(按天数推)、单房差(400)、儿童加/不加床价差(-40/-100)、婴儿价(0)
+08-06 记录这条时,三个 TourType 都是零团期。08-12 在生产 Package List 上逐个查:
 
-三个产品各要一份。**这是阶段一唯一真正的外部依赖。**
+| 产品 | 团期 | 航司 | 期间 |
+|---|---|---|---|
+| WBCKWE | 8 个,如 `12WBCKWE24/26CZ` `09WBCKWE07/26CZ` | CZ | 2026 年 09–12 月 |
+| WBCURC | 7 个,如 `10WBCURC12/27OD` `08WBCURC28/27OD` | OD | 2027 年 08–10 月 |
+| WBCHET | 8 个,如 `10WBCHET14/27OD` `05WBCHET13/27OD` | OD | 2027 年 05–10 月 |
+
+**团期是产品组在这六天里自己开好的。出发日期、航司这些原本要问 Planner 的信息,
+现在直接从 Skybear 读就有——不用再问。**
+
+反过来,Package Content Mgmt 里按关键词查,三个产品**都还没有 wt_travel**
+(GUIZHOU 7 条无 WBCKWE、XINJIANG 5 条无 WBCURC、SHANXI 0 条)。
+所以三个都走 NEW 模式,要新建展示产品——也就都会碰到第 4 节那个默认勾选的发布框。
+
+> 教训:这条阻塞在上一轮被原样转述了一次而没有复核。**生产状态一律现查。**
 
 ---
 
