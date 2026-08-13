@@ -27,3 +27,9 @@ work/_probe_imgs/
 work/**/cand/
 work/**/cand_hi/
 work/**/_sheet_*.jpg
+
+# 配图审核页:图片以 base64 内嵌,单个 6–9 MB 且不可 diff,每重跑一次就在历史里
+# 多一份整份新 blob。它们是人工签字那一刻的留档,但留档应该在仓库之外——
+# 从一个干净 clone 里本来也重建不出来(work/**/out/ 同样不跟踪)。
+work/**/*_review.html
+work/review*.html
