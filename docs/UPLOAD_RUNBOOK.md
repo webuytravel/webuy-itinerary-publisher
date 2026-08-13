@@ -106,6 +106,21 @@ python3 bin/compose.py WBINC9
 
 不带参数会把**所有**产品重跑一遍,包括已经签过字的——那既是多余的网络往返,也会
 让已定的配图漂移。产出 `plan.json` + 该产品的审核页。
+
+**源文件缺失时 compose 会直接报错退出,一次列全。** 例如在新检出上跑 WBCURC:
+
+```
+WBCURC: 10 placement(s) have no usable source, refusing to materialise:
+  section#3 可可托海额尔齐斯大峡谷 — work/WBCURC/cand/d03_keketuohai_canyon.jpg
+  section#4 Kanas Three Bays 喀纳斯三湾 — work/WBCURC/raw/p04_1_747x955.png
+  ...
+Working artefacts (work/**/cand/, cat/, raw/) are gitignored — in a fresh
+checkout they exist only after the fetch steps have run.
+```
+
+**这不是故障,是提醒你还没跑取图步骤。** `work/**/raw/`、`cand/`、`cat/`、`out*/`
+全部在 `.gitignore` 里,克隆下来是空的;`OVERRIDES` 里写的是仓库相对路径,但
+**相对路径不等于文件存在**。先跑抽图和取图,再跑 compose。
 **这里是人工闸门:`python3 bin/review_page.py WBINC9` 出的页要有人看过并同意,
 才往下走。**
 

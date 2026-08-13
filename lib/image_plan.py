@@ -424,19 +424,50 @@ def materialise(plan: ImagePlan, out_dir: str | Path) -> ImagePlan:
 
     The route map is copied rather than cropped — it is a diagram with text
     on it, and a 4:3 crop would slice the legend off.
+
+    **A source that is absent, or a placement that never got a path, aborts
+    the run.** This used to degrade quietly — a missing file only added
+    "source file missing" to the placement's note, and an unresolved
+    `src_path` was skipped outright — so `compose.py` printed its usual
+    summary line, exited 0, and the day simply had no photo. That is the
+    worst possible shape for this failure: every downstream step keeps
+    working, and the gap only shows up on a customer-facing page.
+
+    Both cases are wiring bugs, not data conditions:
+
+    * an empty `src_path` means the catalogue resolution pass never filled
+      it in, which is a mismatch between `chosen_cat` and the placements
+      waiting on it;
+    * a path that does not exist means an `OVERRIDES` entry points at
+      something that is gone. Everything under `work/**/cand/`, `cat/` and
+      `raw/` is gitignored, so a fresh checkout has none of it until the
+      fetch steps have run — a repo-relative path is not the same as a
+      path that is present.
+
+    Raising here also means `work/<CODE>/out/` is never left half-written:
+    the check runs before anything is encoded, so a failed run leaves no
+    partial directory for a later step to mistake for a complete one.
     """
     out_dir = Path(out_dir)
     slots: dict[str, SlotSpec] = {
         "carousel": CAROUSEL, "thumbnail": THUMBNAIL, "section": SECTION,
     }
 
+    missing = [
+        f"  {p.slot}#{p.position} {p.subject or '(no subject)'} — "
+        + (p.src_path if p.src_path else "no source path was ever resolved")
+        for p in plan.placements
+        if not p.src_path or not Path(p.src_path).exists()
+    ]
+    if missing:
+        raise FileNotFoundError(
+            f"{plan.type_code}: {len(missing)} placement(s) have no usable "
+            f"source, refusing to materialise:\n" + "\n".join(missing)
+            + "\n\nWorking artefacts (work/**/cand/, cat/, raw/) are gitignored — "
+              "in a fresh checkout they exist only after the fetch steps have run.")
+
     for placement in plan.placements:
-        if not placement.src_path:
-            continue
         src = Path(placement.src_path)
-        if not src.exists():
-            placement.note = (placement.note + " | source file missing").strip(" |")
-            continue
 
         stem = f"{placement.slot}_{placement.position:02d}"
         if placement.slot == "route_map":
