@@ -1,0 +1,689 @@
+{
+ "type_code": "WBSZX1",
+ "travel_days": 7,
+ "product_name": {
+  "en": "7D6N A Gourmet Journey Across 8 Vibrant Cities",
+  "zh": "7天6晚粤味寻鲜 · 八城美食之旅"
+ },
+ "highlights": [
+  {
+   "en": "Eight cities in one journey: Shenzhen · Shunde · Foshan · Qingyuan · Guangzhou · Jiangmen · Zhongshan · Zhuhai",
+   "zh": "一程八城:深圳 · 顺德 · 佛山 · 清远 · 广州 · 江门 · 中山 · 珠海"
+  },
+  {
+   "en": "Guangzhou — Canton Tower, Huacheng Square, Shawan Ancient Town and a luxury Pearl River night cruise",
+   "zh": "广州 — 广州塔、花城广场、沙湾古镇与豪华珠江夜游"
+  },
+  {
+   "en": "Foshan Ancestral Temple · Wong Fei-hung Memorial Hall · Lingnan Tiandi · Romance of Guangdong live show · Huangtengxia Glass Bridge",
+   "zh": "佛山祖庙 · 黄飞鸿纪念馆 · 岭南新天地 · 广东千古情 · 黄腾峡玻璃桥"
+  },
+  {
+   "en": "Chikan Ancient Town and 33 Market Street in Jiangmen · Zhuhai's Lovers' Road, Fisher Girl Statue and Sun and Moon Shell Theatre with the Shijingshan cable car",
+   "zh": "江门赤坎古镇与三十三墟街 · 珠海情侣路、渔女像、日月贝大剧院与石景山缆车"
+  },
+  {
+   "en": "Shunde Fish Feast · Qingyuan Chicken Feast · Xinhui Roast Goose · Buddha Jumps Over the Wall",
+   "zh": "顺德鱼宴 · 清远鸡宴 · 新会烧鹅 · 佛跳墙宴"
+  },
+  {
+   "en": "Cantonese Dim Sum Banquet · Steamed Seafood · Kaiping Eel Rice · Panyu Sihaiyijia · Nanhai Fishing Village Sky One",
+   "zh": "广府点心宴 · 蒸汽海鲜 · 开平黄鳝饭 · 番禺四海一家 · 南海渔村·天空一号"
+  }
+ ],
+ "highlights_source": [
+  {
+   "en": "6 Breakfasts · 5 Lunches · 5 Dinners",
+   "zh": "6早餐 · 5午餐 · 5晚餐"
+  },
+  {
+   "en": "Cantonese Cuisine",
+   "zh": "广府风味"
+  },
+  {
+   "en": "Shunde Fish Feast",
+   "zh": "顺德鱼宴"
+  },
+  {
+   "en": "Qingyuan Chicken Feast",
+   "zh": "清远鸡宴"
+  },
+  {
+   "en": "Xinhui Roast Goose",
+   "zh": "新会烧鹅"
+  },
+  {
+   "en": "Buddha Jumps Over the Wall",
+   "zh": "佛跳墙宴"
+  },
+  {
+   "en": "Steamed Seafood",
+   "zh": "蒸汽海鲜"
+  },
+  {
+   "en": "Kaiping Eel Rice",
+   "zh": "开平黄鳝饭"
+  },
+  {
+   "en": "Cantonese Dim Sum Banquet",
+   "zh": "广府点心宴"
+  },
+  {
+   "en": "Panyu Sihaiyijia",
+   "zh": "番禺四海一家"
+  },
+  {
+   "en": "Nanhai Fishing Village · Sky One",
+   "zh": "南海渔村 · 天空一号"
+  },
+  {
+   "en": "Hotel Accommodation: 4 Diamond hotels",
+   "zh": "住宿安排全程4钻酒店"
+  },
+  {
+   "en": "Shenzhen — Shenzhen Bay Talent Park, Bay of Lights Ferris Wheel, Shenzhen-Zhongshan Link",
+   "zh": "深圳 — 深圳湾人才公园、湾区之光摩天轮、深中通道"
+  },
+  {
+   "en": "Foshan — Foshan Ancestral Temple, Wong Fei-hung Memorial Hall, Lingnan Tiandi, Shunfeng Mountain Archway, Happy Coast",
+   "zh": "佛山 — 佛山祖庙、黄飞鸿纪念馆、岭南新天地、顺峰山大牌坊、欢乐海岸"
+  },
+  {
+   "en": "Qingyuan — Romance of Guangdong Show, Huangtengxia Glass Bridge",
+   "zh": "清远 — 广东千古情、黄腾峡玻璃桥"
+  },
+  {
+   "en": "Guangzhou — Shawan Ancient Town, Huacheng Square, Canton Tower, Pearl River Night Cruise",
+   "zh": "广州 — 沙湾古镇、花城广场、广州塔、珠江夜游"
+  },
+  {
+   "en": "Jiangmen — 33 Market Street, Chikan Ancient Town, Chenpi Village",
+   "zh": "江门 — 三十三墟街、赤坎古镇、陈皮村"
+  },
+  {
+   "en": "Zhuhai — Lovers' Road, Fisher Girl Statue, Sun and Moon Shell Theatre, Shijingshan (incl. cable car), Love Post Office",
+   "zh": "珠海 — 情侣路、渔女像、日月贝大剧院、石景山（含缆车）、爱情邮局"
+  }
+ ],
+ "sections": [
+  {
+   "day": 1,
+   "name": {
+    "en": "DAY 1",
+    "zh": "第一天"
+   },
+   "title": {
+    "en": "Singapore > Shenzhen",
+    "zh": "新加坡 > 深圳"
+   },
+   "location": {
+    "en": "Shenzhen",
+    "zh": "深圳"
+   },
+   "description": {
+    "en": "",
+    "zh": ""
+   },
+   "trip_items": [
+    {
+     "title": {
+      "en": "Shenzhen Arrival",
+      "zh": "抵达深圳"
+     },
+     "description": {
+      "en": "Arrive at Shenzhen Bao'an International Airport. Your guide will meet the group and transfer you by private coach to the hotel to rest.",
+      "zh": "抵达深圳宝安国际机场，专业导游接团，专车前往酒店入住休息。"
+     },
+     "photo_subject": "Shenzhen Bao'an International Airport 深圳宝安国际机场",
+     "trip_type": "Transportation"
+    }
+   ]
+  },
+  {
+   "day": 2,
+   "name": {
+    "en": "DAY 2",
+    "zh": "第二天"
+   },
+   "title": {
+    "en": "Shenzhen > Shunde > Foshan",
+    "zh": "深圳 > 顺德 > 佛山"
+   },
+   "location": {
+    "en": "Foshan",
+    "zh": "佛山"
+   },
+   "description": {
+    "en": "Breakfast / Lunch / Dinner",
+    "zh": "早餐 / 午餐 / 晚餐"
+   },
+   "trip_items": [
+    {
+     "title": {
+      "en": "Shenzhen Bay Talent Park and Bay of Lights Ferris Wheel",
+      "zh": "深圳湾人才公园与湾区之光摩天轮"
+     },
+     "description": {
+      "en": "Shenzhen Bay Talent Park and the “Bay of Lights” Ferris Wheel (exterior): admire the vibrant skyline of the Special Economic Zone and Shenzhen's new landmark.",
+      "zh": "深圳湾人才公园 &「湾区之光」摩天轮（外观）：欣赏特区繁华风貌，打卡深圳新地标。"
+     },
+     "photo_subject": "Shenzhen Bay skyline waterfront 深圳湾 天际线 人才公园",
+     "trip_type": "Attractions"
+    },
+    {
+     "title": {
+      "en": "Shunfeng Mountain Century Archway",
+      "zh": "顺峰山世纪大牌坊"
+     },
+     "description": {
+      "en": "Shunfeng Mountain Century Archway: one of the largest memorial archways in Asia.",
+      "zh": "顺峰山世纪大牌坊：亚洲最大牌坊之一。"
+     },
+     "photo_subject": "Shunfeng Mountain Archway Shunde Foshan 顺峰山大牌坊 顺德",
+     "trip_type": "Attractions"
+    },
+    {
+     "title": {
+      "en": "Happy Coast",
+      "zh": "欢乐海岸"
+     },
+     "description": {
+      "en": "Happy Coast: a leisure and entertainment park with a food museum. Travel Note: the food museum is closed on Mondays.",
+      "zh": "欢乐海岸：休闲娱乐公园，内设美食博物馆（周一闭馆）。"
+     },
+     "photo_subject": "Happy Coast Shunde waterfront leisure park 欢乐海岸 顺德",
+     "trip_type": "Attractions"
+    }
+   ]
+  },
+  {
+   "day": 3,
+   "name": {
+    "en": "DAY 3",
+    "zh": "第三天"
+   },
+   "title": {
+    "en": "Foshan > Qingyuan",
+    "zh": "佛山 > 清远"
+   },
+   "location": {
+    "en": "Qingyuan",
+    "zh": "清远"
+   },
+   "description": {
+    "en": "Breakfast / Lunch / Dinner",
+    "zh": "早餐 / 午餐 / 晚餐"
+   },
+   "trip_items": [
+    {
+     "title": {
+      "en": "Foshan Ancestral Temple and Wong Fei-hung Memorial Hall",
+      "zh": "佛山祖庙与黄飞鸿纪念馆"
+     },
+     "description": {
+      "en": "Foshan Ancestral Temple and the Wong Fei-hung Memorial Hall: explore Lingnan history and martial-arts heritage.",
+      "zh": "佛山祖庙 & 黄飞鸿纪念馆：探索岭南历史与武术文化。"
+     },
+     "photo_subject": "Foshan Ancestral Temple 佛山祖庙",
+     "trip_type": "Attractions"
+    },
+    {
+     "title": {
+      "en": "Lingnan Tiandi",
+      "zh": "岭南新天地"
+     },
+     "description": {
+      "en": "Lingnan Tiandi: a charming pedestrian district blending old and new.",
+      "zh": "岭南新天地：古今交融的休闲步行区。"
+     },
+     "photo_subject": "Lingnan Tiandi Foshan pedestrian district 岭南新天地 佛山",
+     "trip_type": "Attractions"
+    },
+    {
+     "title": {
+      "en": "Romance of Guangdong Show",
+      "zh": "广东千古情"
+     },
+     "description": {
+      "en": "Romance of Guangdong: a spectacular large-scale live theatrical performance.",
+      "zh": "广东千古情：精彩大型剧场表演。"
+     },
+     "photo_subject": "Romance of Guangdong theatrical show stage 广东千古情 大型剧场演出",
+     "trip_type": "Attractions"
+    },
+    {
+     "title": {
+      "en": "Huangtengxia Glass Bridge",
+      "zh": "黄腾峡玻璃桥"
+     },
+     "description": {
+      "en": "Huangtengxia Glass Bridge: thrilling views over the canyon in Qingyuan.",
+      "zh": "黄腾峡玻璃桥：清远峡谷惊险观景。"
+     },
+     "photo_subject": "Huangtengxia glass bridge canyon Qingyuan 黄腾峡玻璃桥 清远",
+     "trip_type": "Attractions"
+    }
+   ]
+  },
+  {
+   "day": 4,
+   "name": {
+    "en": "DAY 4",
+    "zh": "第四天"
+   },
+   "title": {
+    "en": "Qingyuan > Panyu > Guangzhou",
+    "zh": "清远 > 番禺 > 广州"
+   },
+   "location": {
+    "en": "Guangzhou",
+    "zh": "广州"
+   },
+   "description": {
+    "en": "Breakfast / Lunch / Dinner",
+    "zh": "早餐 / 午餐 / 晚餐"
+   },
+   "trip_items": [
+    {
+     "title": {
+      "en": "Shawan Ancient Town",
+      "zh": "沙湾古镇"
+     },
+     "description": {
+      "en": "Shawan Ancient Town: a thousand-year-old town rich in Lingnan culture.",
+      "zh": "沙湾古镇：千年古镇，岭南文化浓厚。"
+     },
+     "photo_subject": "Shawan Ancient Town Panyu Lingnan 沙湾古镇 番禺",
+     "trip_type": "Attractions"
+    },
+    {
+     "title": {
+      "en": "City Tram and Huacheng Square",
+      "zh": "有轨电车与花城广场"
+     },
+     "description": {
+      "en": "City Tram and Huacheng Square (CBD): ride the tram to admire Guangzhou's skyline at its central business district.",
+      "zh": "有轨电车 & 花城广场（CBD）：搭乘电车观摩城市天际线。"
+     },
+     "photo_subject": "Huacheng Square Guangzhou CBD skyline 花城广场 广州",
+     "trip_type": "Attractions"
+    },
+    {
+     "title": {
+      "en": "Canton Tower",
+      "zh": "广州塔"
+     },
+     "description": {
+      "en": "Canton Tower (exterior): Guangzhou's iconic landmark.",
+      "zh": "广州塔（外观）：广州地标。"
+     },
+     "photo_subject": "Canton Tower Guangzhou 广州塔",
+     "trip_type": "Attractions"
+    },
+    {
+     "title": {
+      "en": "Pearl River Night Cruise",
+      "zh": "珠江夜游"
+     },
+     "description": {
+      "en": "Pearl River Night Cruise: board a luxury cruise to enjoy the dazzling night views of the Pearl River.",
+      "zh": "珠江夜游：搭乘豪华游轮，欣赏珠江璀璨夜色。"
+     },
+     "photo_subject": "Pearl River night cruise Guangzhou 珠江夜游 广州",
+     "trip_type": "Attractions"
+    }
+   ]
+  },
+  {
+   "day": 5,
+   "name": {
+    "en": "DAY 5",
+    "zh": "第五天"
+   },
+   "title": {
+    "en": "Guangzhou > Jiangmen",
+    "zh": "广州 > 江门"
+   },
+   "location": {
+    "en": "Jiangmen",
+    "zh": "江门"
+   },
+   "description": {
+    "en": "Breakfast / Lunch / Dinner",
+    "zh": "早餐 / 午餐 / 晚餐"
+   },
+   "trip_items": [
+    {
+     "title": {
+      "en": "33 Market Street",
+      "zh": "三十三墟街"
+     },
+     "description": {
+      "en": "Jiangmen, hometown of overseas Chinese: discover the culture of this famous qiaoxiang region. 33 Market Street is a historic street showcasing local heritage.",
+      "zh": "侨乡江门：探访著名侨乡文化。三十三墟街：展现本地历史风貌的老街。"
+     },
+     "photo_subject": "33 Market Street Jiangmen old street 三十三墟街 江门老街",
+     "trip_type": "Attractions"
+    },
+    {
+     "title": {
+      "en": "Chikan Ancient Town",
+      "zh": "赤坎古镇"
+     },
+     "description": {
+      "en": "Chikan Ancient Town: renowned for its European-style arcade architecture.",
+      "zh": "赤坎古镇：以中西合璧的骑楼建筑闻名。"
+     },
+     "photo_subject": "Chikan Ancient Town arcade architecture Kaiping 赤坎古镇 骑楼",
+     "trip_type": "Attractions"
+    }
+   ]
+  },
+  {
+   "day": 6,
+   "name": {
+    "en": "DAY 6",
+    "zh": "第六天"
+   },
+   "title": {
+    "en": "Jiangmen > Zhongshan > Zhuhai",
+    "zh": "江门 > 中山 > 珠海"
+   },
+   "location": {
+    "en": "Zhuhai",
+    "zh": "珠海"
+   },
+   "description": {
+    "en": "Breakfast / Lunch / Dinner",
+    "zh": "早餐 / 午餐 / 晚餐"
+   },
+   "trip_items": [
+    {
+     "title": {
+      "en": "Chenpi Village",
+      "zh": "陈皮村"
+     },
+     "description": {
+      "en": "Chenpi (Tangerine Peel) Village: learn about Xinhui's famous dried tangerine peel.",
+      "zh": "陈皮村：了解新会著名陈皮文化。"
+     },
+     "photo_subject": "Chenpi Village Xinhui dried tangerine peel 陈皮村 新会",
+     "trip_type": "Attractions"
+    },
+    {
+     "title": {
+      "en": "Juxiangyuan Pastry Museum and Rossini Watch Museum",
+      "zh": "咀香园饼家博物馆与罗西尼钟表博物馆"
+     },
+     "description": {
+      "en": "Juxiangyuan Pastry Museum and Rossini Watch Museum: cultural stops in Zhongshan and Zhuhai.",
+      "zh": "咀香园饼家博物馆 & 罗西尼钟表博物馆：中山与珠海文化参观点。"
+     },
+     "photo_subject": "Zhongshan city museum street 中山 博物馆",
+     "trip_type": "Attractions"
+    },
+    {
+     "title": {
+      "en": "Lovers' Road, Love Post Office and Fisher Girl Statue",
+      "zh": "情侣路、爱情邮局与渔女像"
+     },
+     "description": {
+      "en": "Lovers' Road, Love Post Office and the Fisher Girl Statue: Zhuhai's romantic seaside landmarks.",
+      "zh": "情侣路、爱情邮局 & 渔女像：珠海浪漫海滨地标。"
+     },
+     "photo_subject": "Zhuhai Fisher Girl Statue Lovers Road seaside 珠海渔女像 情侣路",
+     "trip_type": "Attractions"
+    },
+    {
+     "title": {
+      "en": "Sun and Moon Shell Grand Theatre and Shijingshan",
+      "zh": "日月贝国家大剧院与石景山"
+     },
+     "description": {
+      "en": "Sun & Moon Shell Grand Theatre and Shijingshan, including the round-trip cable car.",
+      "zh": "日月贝国家大剧院 & 石景山（含双程缆车）。"
+     },
+     "photo_subject": "Sun and Moon Shell Grand Theatre Zhuhai 日月贝大剧院 珠海",
+     "trip_type": "Attractions"
+    }
+   ]
+  },
+  {
+   "day": 7,
+   "name": {
+    "en": "DAY 7",
+    "zh": "第七天"
+   },
+   "title": {
+    "en": "Zhuhai > Shenzhen > Singapore",
+    "zh": "珠海 > 深圳 > 新加坡"
+   },
+   "location": {
+    "en": "Shenzhen",
+    "zh": "深圳"
+   },
+   "description": {
+    "en": "Breakfast",
+    "zh": "早餐"
+   },
+   "trip_items": [
+    {
+     "title": {
+      "en": "Shenzhen-Zhongshan Link",
+      "zh": "深中通道"
+     },
+     "description": {
+      "en": "Cross the Shenzhen-Zhongshan Link, a spectacular sea-crossing bridge, to reach Shenzhen.",
+      "zh": "经深中通道跨海大桥前往深圳。"
+     },
+     "photo_subject": "Shenzhen Zhongshan Link sea crossing bridge 深中通道 跨海大桥",
+     "trip_type": "Attractions"
+    },
+    {
+     "title": {
+      "en": "Homeward Bound",
+      "zh": "返回新加坡"
+     },
+     "description": {
+      "en": "Transfer to Shenzhen Bao'an International Airport for your flight home to Singapore.",
+      "zh": "抵达深圳宝安国际机场，搭乘航班返回新加坡。"
+     },
+     "photo_subject": "Shenzhen Bao'an International Airport 深圳宝安国际机场",
+     "trip_type": "Transportation"
+    }
+   ]
+  }
+ ],
+ "images": {
+  "carousel": [
+   {
+    "pos": 0,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/determined-darwin-c3ef30/work/WBSZX1/out/carousel_00_0.jpg",
+    "bytes": 326037,
+    "subject": "Canton Tower Guangzhou night skyline 广州塔"
+   },
+   {
+    "pos": 1,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/determined-darwin-c3ef30/work/WBSZX1/out/carousel_01_0.jpg",
+    "bytes": 381946,
+    "subject": "Shunde OCT Happy Coast"
+   },
+   {
+    "pos": 2,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/determined-darwin-c3ef30/work/WBSZX1/out/carousel_02_0.jpg",
+    "bytes": 320511,
+    "subject": "Cantonese dim sum banquet 广府点心"
+   },
+   {
+    "pos": 3,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/determined-darwin-c3ef30/work/WBSZX1/out/carousel_03_0.jpg",
+    "bytes": 188420,
+    "subject": "Huangtengxia Tianmen Sky Corridor"
+   },
+   {
+    "pos": 4,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/determined-darwin-c3ef30/work/WBSZX1/out/carousel_04_0.jpg",
+    "bytes": 219442,
+    "subject": "Cantonese dim sum banquet 广府点心"
+   },
+   {
+    "pos": 5,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/determined-darwin-c3ef30/work/WBSZX1/out/carousel_05_0.jpg",
+    "bytes": 487216,
+    "subject": "Shawan Ancient Town"
+   },
+   {
+    "pos": 6,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/determined-darwin-c3ef30/work/WBSZX1/out/carousel_06_0.jpg",
+    "bytes": 267412,
+    "subject": "Shenzhen skyline Shenzhen Bay night 深圳 天际线"
+   },
+   {
+    "pos": 7,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/determined-darwin-c3ef30/work/WBSZX1/out/carousel_07_0.jpg",
+    "bytes": 330393,
+    "subject": "Shunfeng Archway"
+   }
+  ],
+  "carousel_mobile": [
+   {
+    "pos": 0,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/determined-darwin-c3ef30/work/WBSZX1/out_mobile/carousel_00_mobile.jpg",
+    "bytes": 350158,
+    "subject": "Canton Tower Guangzhou night skyline 广州塔"
+   },
+   {
+    "pos": 1,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/determined-darwin-c3ef30/work/WBSZX1/out_mobile/carousel_01_mobile.jpg",
+    "bytes": 363252,
+    "subject": "Shunde OCT Happy Coast"
+   },
+   {
+    "pos": 2,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/determined-darwin-c3ef30/work/WBSZX1/out_mobile/carousel_02_mobile.jpg",
+    "bytes": 279972,
+    "subject": "Cantonese dim sum banquet 广府点心"
+   },
+   {
+    "pos": 3,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/determined-darwin-c3ef30/work/WBSZX1/out_mobile/carousel_03_mobile.jpg",
+    "bytes": 203872,
+    "subject": "Huangtengxia Tianmen Sky Corridor"
+   },
+   {
+    "pos": 4,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/determined-darwin-c3ef30/work/WBSZX1/out_mobile/carousel_04_mobile.jpg",
+    "bytes": 226974,
+    "subject": "Cantonese dim sum banquet 广府点心"
+   },
+   {
+    "pos": 5,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/determined-darwin-c3ef30/work/WBSZX1/out_mobile/carousel_05_mobile.jpg",
+    "bytes": 458998,
+    "subject": "Shawan Ancient Town"
+   },
+   {
+    "pos": 6,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/determined-darwin-c3ef30/work/WBSZX1/out_mobile/carousel_06_mobile.jpg",
+    "bytes": 286850,
+    "subject": "Shenzhen skyline Shenzhen Bay night 深圳 天际线"
+   },
+   {
+    "pos": 7,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/determined-darwin-c3ef30/work/WBSZX1/out_mobile/carousel_07_mobile.jpg",
+    "bytes": 357227,
+    "subject": "Shunfeng Archway"
+   }
+  ],
+  "thumbnail": [
+   {
+    "pos": 0,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/determined-darwin-c3ef30/work/WBSZX1/out/thumbnail_00_0.jpg",
+    "bytes": 326037,
+    "subject": "Canton Tower Guangzhou night skyline 广州塔"
+   }
+  ],
+  "route_map": [
+   {
+    "pos": 0,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/determined-darwin-c3ef30/work/WBSZX1/out/route_map_00.png",
+    "bytes": 1140852,
+    "subject": "itinerary route map"
+   }
+  ],
+  "section": [
+   {
+    "pos": 1,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/determined-darwin-c3ef30/work/WBSZX1/out/section_01_0.jpg",
+    "bytes": 172516,
+    "subject": "Shenzhen skyline Shenzhen Bay night 深圳 天际线"
+   },
+   {
+    "pos": 2,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/determined-darwin-c3ef30/work/WBSZX1/out/section_02_0.jpg",
+    "bytes": 152281,
+    "subject": "Shenzhen Bay skyline waterfront 深圳湾 天际线 人才公园"
+   },
+   {
+    "pos": 2,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/determined-darwin-c3ef30/work/WBSZX1/out/section_02_1.jpg",
+    "bytes": 298340,
+    "subject": "Shunfeng Archway"
+   },
+   {
+    "pos": 3,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/determined-darwin-c3ef30/work/WBSZX1/out/section_03_0.jpg",
+    "bytes": 226358,
+    "subject": "Huang Feihong Martial Arts Memorial Hall"
+   },
+   {
+    "pos": 3,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/determined-darwin-c3ef30/work/WBSZX1/out/section_03_1.jpg",
+    "bytes": 168578,
+    "subject": "Huangtengxia Tianmen Sky Corridor"
+   },
+   {
+    "pos": 4,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/determined-darwin-c3ef30/work/WBSZX1/out/section_04_0.jpg",
+    "bytes": 352127,
+    "subject": "Shawan Ancient Town"
+   },
+   {
+    "pos": 4,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/determined-darwin-c3ef30/work/WBSZX1/out/section_04_1.jpg",
+    "bytes": 254072,
+    "subject": "Pearl River night cruise Guangzhou 珠江夜游"
+   },
+   {
+    "pos": 5,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/determined-darwin-c3ef30/work/WBSZX1/out/section_05_0.jpg",
+    "bytes": 303296,
+    "subject": "33 Market Street Jiangmen old street 三十三墟街 江门老街"
+   },
+   {
+    "pos": 5,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/determined-darwin-c3ef30/work/WBSZX1/out/section_05_1.jpg",
+    "bytes": 288833,
+    "subject": "Chikan Ancient Town arcade architecture Kaiping 赤坎古镇 骑楼"
+   },
+   {
+    "pos": 6,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/determined-darwin-c3ef30/work/WBSZX1/out/section_06_0.jpg",
+    "bytes": 161459,
+    "subject": "Zhuhai Fisher Girl statue seaside 珠海渔女像"
+   },
+   {
+    "pos": 6,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/determined-darwin-c3ef30/work/WBSZX1/out/section_06_1.jpg",
+    "bytes": 194893,
+    "subject": "Shunde OCT Happy Coast"
+   },
+   {
+    "pos": 7,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/determined-darwin-c3ef30/work/WBSZX1/out/section_07_0.jpg",
+    "bytes": 79619,
+    "subject": "sea crossing bridge Shenzhen Zhongshan Link 深中通道 跨海大桥"
+   }
+  ]
+ }
+}

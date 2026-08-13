@@ -1,32 +1,248 @@
 {
   "_note": "主体由多模态看图判定,不采信 caption_hint。caption 实测会错(见 lib/pdf_images.py 模块 docstring)。verdict: real=可用真实照片, generic=真实但泛用无辨识度, cgi_suspect=疑似渲染图/CGI, asset=非景点素材",
   "WBCKWE": [
-    {"ref": "p2#1", "subject": "itinerary route map", "kind": "route_map", "verdict": "asset"},
-    {"ref": "p2#2", "subject": "Cultural performance 民族歌舞表演", "verdict": "real", "note": "非景点,可用作体验类配图;721x335 过窄"},
-    {"ref": "p3#0", "subject": "Huangguoshu Waterfall 黄果树大瀑布", "verdict": "real", "caption_was_right": true},
-    {"ref": "p3#1", "subject": "Jiaxiu Pavilion 甲秀楼", "verdict": "real", "caption_was_right": true},
-    {"ref": "p3#2", "subject": "Wanfenglin & Bagua Field 万峰林八卦田", "verdict": "real", "caption_was_right": false, "caption_said": "Jiaxiu Pavilion 甲秀楼"},
-    {"ref": "p4#0", "subject": "Gorge with stone arch bridge 峡谷石拱桥(疑似荔波小七孔/铜仁大峡谷)", "verdict": "real", "note": "主体待再确认;744x385 低于 section 下限"},
-    {"ref": "p4#1", "subject": "Mount Fanjing Hongyun Golden Summit 梵净山红云金顶", "verdict": "real", "caption_was_right": true},
-    {"ref": "p4#2", "subject": "Xijiang Qianhu Miao Village 西江千户苗寨", "verdict": "real"}
+    {
+      "ref": "p2#1",
+      "subject": "itinerary route map",
+      "kind": "route_map",
+      "verdict": "asset"
+    },
+    {
+      "ref": "p2#2",
+      "subject": "Cultural performance 民族歌舞表演",
+      "verdict": "real",
+      "note": "非景点,可用作体验类配图;721x335 过窄"
+    },
+    {
+      "ref": "p3#0",
+      "subject": "Huangguoshu Waterfall 黄果树大瀑布",
+      "verdict": "real",
+      "caption_was_right": true
+    },
+    {
+      "ref": "p3#1",
+      "subject": "Jiaxiu Pavilion 甲秀楼",
+      "verdict": "real",
+      "caption_was_right": true
+    },
+    {
+      "ref": "p3#2",
+      "subject": "Wanfenglin & Bagua Field 万峰林八卦田",
+      "verdict": "real",
+      "caption_was_right": false,
+      "caption_said": "Jiaxiu Pavilion 甲秀楼"
+    },
+    {
+      "ref": "p4#0",
+      "subject": "Gorge with stone arch bridge 峡谷石拱桥(疑似荔波小七孔/铜仁大峡谷)",
+      "verdict": "real",
+      "note": "主体待再确认;744x385 低于 section 下限"
+    },
+    {
+      "ref": "p4#1",
+      "subject": "Mount Fanjing Hongyun Golden Summit 梵净山红云金顶",
+      "verdict": "real",
+      "caption_was_right": true
+    },
+    {
+      "ref": "p4#2",
+      "subject": "Xijiang Qianhu Miao Village 西江千户苗寨",
+      "verdict": "real"
+    }
   ],
   "WBCURC": [
-    {"ref": "p2#1", "subject": "Guozigou Bridge 果子沟大桥", "verdict": "real", "caption_was_right": false, "caption_said": "可可达拉"},
-    {"ref": "p2#2", "subject": "Sayram Lake 赛里木湖", "verdict": "real", "caption_was_right": false, "caption_said": "Urho Ghost City 乌尔禾魔鬼城"},
-    {"ref": "p3#0", "subject": "itinerary route map", "kind": "route_map", "verdict": "asset"},
-    {"ref": "p3#1", "subject": "Song and dance show 歌舞演出", "verdict": "real", "note": "非景点"},
-    {"ref": "p4#0", "subject": "Kalamaili Nature Reserve wildlife 卡拉麦里野生动物", "verdict": "real"},
-    {"ref": "p4#1", "subject": "Kanas Three Bays 喀纳斯三湾(卧龙湾/月亮湾)", "verdict": "real"},
-    {"ref": "p5#0", "subject": "Hemu Village 禾木村", "verdict": "real"},
-    {"ref": "p5#1", "subject": "Nalati Sky Grassland 那拉提空中草原", "verdict": "real", "caption_was_right": true},
-    {"ref": "p6#0", "subject": "Flaming Mountains 火焰山", "verdict": "real", "caption_was_right": false, "caption_said": "Tongren Grand Canyon 铜仁大峡谷", "note": "文档里记载的那处经典错标"},
-    {"ref": "p6#1", "subject": "Duku Highway / Haxilegen Pass 独库公路·哈希勒根达坂", "verdict": "real"}
+    {
+      "ref": "p2#1",
+      "subject": "Guozigou Bridge 果子沟大桥",
+      "verdict": "real",
+      "caption_was_right": false,
+      "caption_said": "可可达拉"
+    },
+    {
+      "ref": "p2#2",
+      "subject": "Sayram Lake 赛里木湖",
+      "verdict": "real",
+      "caption_was_right": false,
+      "caption_said": "Urho Ghost City 乌尔禾魔鬼城"
+    },
+    {
+      "ref": "p3#0",
+      "subject": "itinerary route map",
+      "kind": "route_map",
+      "verdict": "asset"
+    },
+    {
+      "ref": "p3#1",
+      "subject": "Song and dance show 歌舞演出",
+      "verdict": "real",
+      "note": "非景点"
+    },
+    {
+      "ref": "p4#0",
+      "subject": "Kalamaili Nature Reserve wildlife 卡拉麦里野生动物",
+      "verdict": "real"
+    },
+    {
+      "ref": "p4#1",
+      "subject": "Kanas Three Bays 喀纳斯三湾(卧龙湾/月亮湾)",
+      "verdict": "real"
+    },
+    {
+      "ref": "p5#0",
+      "subject": "Hemu Village 禾木村",
+      "verdict": "real"
+    },
+    {
+      "ref": "p5#1",
+      "subject": "Nalati Sky Grassland 那拉提空中草原",
+      "verdict": "real",
+      "caption_was_right": true
+    },
+    {
+      "ref": "p6#0",
+      "subject": "Flaming Mountains 火焰山",
+      "verdict": "real",
+      "caption_was_right": false,
+      "caption_said": "Tongren Grand Canyon 铜仁大峡谷",
+      "note": "文档里记载的那处经典错标"
+    },
+    {
+      "ref": "p6#1",
+      "subject": "Duku Highway / Haxilegen Pass 独库公路·哈希勒根达坂",
+      "verdict": "real"
+    }
   ],
   "WBCHET": [
-    {"ref": "p2#1", "subject": "itinerary route map 新加坡-内蒙古路线图", "kind": "route_map", "verdict": "asset", "note": "图上显示经吉隆坡中转,与航司 OD 一致"},
-    {"ref": "p3#0", "subject": "A single tree on grassland 草地孤树", "verdict": "generic", "note": "之前被标为鄂尔多斯草原,实为无辨识度泛用风景,不宜代表景点"},
-    {"ref": "p3#2", "subject": "Xiangshawan desert resort 响沙湾莲花酒店", "verdict": "cgi_suspect", "note": "航拍构图过于平滑规整,像建筑效果图而非实拍"},
-    {"ref": "p4#0", "subject": "Hanging Temple 悬空寺", "verdict": "real", "note": "本册唯一确凿的真实景点照"},
-    {"ref": "p4#3", "subject": "Wannian Ice Cave 万年冰洞", "verdict": "cgi_suspect", "note": "蓝调过于均匀对称,质感可疑"}
+    {
+      "ref": "p2#1",
+      "subject": "itinerary route map 新加坡-内蒙古路线图",
+      "kind": "route_map",
+      "verdict": "asset",
+      "note": "图上显示经吉隆坡中转,与航司 OD 一致"
+    },
+    {
+      "ref": "p3#0",
+      "subject": "A single tree on grassland 草地孤树",
+      "verdict": "generic",
+      "note": "之前被标为鄂尔多斯草原,实为无辨识度泛用风景,不宜代表景点"
+    },
+    {
+      "ref": "p3#2",
+      "subject": "Xiangshawan desert resort 响沙湾莲花酒店",
+      "verdict": "cgi_suspect",
+      "note": "航拍构图过于平滑规整,像建筑效果图而非实拍"
+    },
+    {
+      "ref": "p4#0",
+      "subject": "Hanging Temple 悬空寺",
+      "verdict": "real",
+      "note": "本册唯一确凿的真实景点照"
+    },
+    {
+      "ref": "p4#3",
+      "subject": "Wannian Ice Cave 万年冰洞",
+      "verdict": "cgi_suspect",
+      "note": "蓝调过于均匀对称,质感可疑"
+    }
+  ],
+  "WBINC9": [
+    {
+      "ref": "p1#0",
+      "subject": "brochure cover poster 封面海报",
+      "kind": "cover_poster",
+      "verdict": "asset",
+      "note": "带标题文字与 logo,不作景点图使用"
+    },
+    {
+      "ref": "p2#1",
+      "subject": "itinerary route map 路线图",
+      "kind": "route_map",
+      "verdict": "asset"
+    },
+    {
+      "ref": "p2#2",
+      "subject": "108 Pagodas 一百零八塔",
+      "verdict": "real",
+      "caption_was_right": true,
+      "note": "画面内石碑可辨「一百零八塔」"
+    },
+    {
+      "ref": "p2#3",
+      "subject": "wooden movable-type printing 木活字印刷体验",
+      "verdict": "real",
+      "caption_was_right": false,
+      "caption_said": "Service Fee ｜服务费 SGD$ 96/ person"
+    },
+    {
+      "ref": "p3#0",
+      "subject": "Yellow River Stone Forest 黄河石林",
+      "verdict": "real",
+      "caption_was_right": false,
+      "caption_said": "第2天 宁夏博物馆/温馨提示段落",
+      "note": "干峡谷 + 风蚀石柱;非青铜峡黄河大峡谷(后者是宽阔水面峡谷)"
+    },
+    {
+      "ref": "p3#1",
+      "subject": "Twenty-Two-Bend winding mountain road 二十二道弯",
+      "verdict": "real",
+      "caption_was_right": true,
+      "note": "盘山路航拍,与黄河石林同一景区"
+    },
+    {
+      "ref": "p3#4",
+      "subject": "Alxa desert lake aerial 阿拉善 沙漠湖泊 航拍",
+      "verdict": "real",
+      "caption_was_right": true,
+      "note": "三湖之一的航拍;具体是乌兰湖/骆驼湖/吉他湖哪一个无法从画面判定,故主体只写到「沙漠湖泊」"
+    }
+  ],
+  "WBSZX1": [
+    {
+      "ref": "p1#2",
+      "subject": "brochure cover poster 封面海报",
+      "kind": "cover_poster",
+      "verdict": "asset",
+      "note": "带标题文字与 logo,不作景点图使用"
+    },
+    {
+      "ref": "p2#3",
+      "subject": "itinerary route map 路线图",
+      "kind": "route_map",
+      "verdict": "asset"
+    },
+    {
+      "ref": "p2#2",
+      "subject": "Romance of Guangdong theatrical show stage 广东千古情 大型剧场演出",
+      "verdict": "real",
+      "note": "大型歌舞剧场演出实拍;991x369 过宽(2.69:1),裁切窗口小"
+    },
+    {
+      "ref": "p3#1",
+      "subject": "Shenzhen Bay skyline waterfront 深圳湾 天际线 人才公园",
+      "verdict": "real",
+      "caption_was_right": true,
+      "note": "画面内深圳湾体育中心(春茧)与超高层可辨"
+    },
+    {
+      "ref": "p4#0",
+      "subject": "Chikan Ancient Town arcade architecture Kaiping 赤坎古镇 骑楼",
+      "verdict": "real",
+      "caption_was_right": false,
+      "caption_said": "Important Note 段落",
+      "note": "骑楼建筑群 + 钟楼 + 前景水道,与赤坎古镇形态一致"
+    },
+    {
+      "ref": "p4#2",
+      "subject": "Sun and Moon Shell Grand Theatre Zhuhai 日月贝大剧院 珠海",
+      "verdict": "real",
+      "note": "贝壳形大剧院日落 + 海滨草坪,主体明确"
+    },
+    {
+      "ref": "p4#1",
+      "subject": "33 Market Street Jiangmen old street 三十三墟街 江门老街",
+      "verdict": "real",
+      "caption_was_right": null,
+      "note": "岭南老街石阶巷;主体由页内图注排除法推定,画面本身只能确认到「岭南老街」——待人工复核"
+    }
   ]
 }

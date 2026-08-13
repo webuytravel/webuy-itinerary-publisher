@@ -139,6 +139,21 @@ def compose(code: str, region: str, tours: list[str], overrides: dict) -> ImageP
                         subject=data["stock"][block]["subject"],
                         source_ref=row["url"], src_path=row["path"],
                         credit=row["source"], note=note))
+            elif kind == "cat":
+                # ②这一级也需要显式指定的通道。token 匹配在图注写得准时够用，
+                # 但同一天有多个景点、而图库只覆盖其中一两个时，先匹配上的那个
+                # 会占掉名额，把覆盖得更好的那张挤掉——WBSZX1 第 3 天就是这样，
+                # 自动匹配挑走了广东千古情(册子那张 991x369，裁到 section 要
+                # 放大 2.44×)，把 1800px 的黄腾峡和黄飞鸿纪念馆晾在一边。
+                row = next((r for r in cat_rows if r["image_id"] == ref), None)
+                if row is None:
+                    raise SystemExit(f"{code} {key}: catalogue image {ref} not in catalogue.json")
+                used_cat.add(row["image_id"])
+                chosen_cat.append(row)
+                plan.placements.append(Placement(
+                    slot="section", position=day, origin="catalogue",
+                    subject=row["alt"], source_ref=row["tour"],
+                    src_path="", credit="webuytravel.sg", note=note))
             elif kind == "file":
                 plan.placements.append(Placement(
                     slot="section", position=day, origin="web",
@@ -186,10 +201,15 @@ def compose(code: str, region: str, tours: list[str], overrides: dict) -> ImageP
                                  reason="no source matched this day"))
 
     pull_catalogue(code, chosen_cat)
-    for placement in plan.placements:
-        if placement.origin == "catalogue" and not placement.src_path:
-            row = next(r for r in chosen_cat if r["alt"] == placement.subject)
-            placement.src_path = row["path"]
+    # Resolve by position, not by `alt`. The catalogue routinely carries two
+    # images under one label ("Shawan Ancient Town" twice), so an alt lookup
+    # can hand a placement the *other* file — same caption, different photo,
+    # and nothing downstream would notice. `pending` walks the placements in
+    # the order they were appended, which is the order `chosen_cat` was built.
+    pending = [p for p in plan.placements
+               if p.origin == "catalogue" and not p.src_path]
+    for placement, row in zip(pending, chosen_cat):
+        placement.src_path = row["path"]
 
     # Route map: the brochure's own diagram, never cropped.
     route = next((i for i in data["pdf"] if i["kind"] == "route_map"), None)
@@ -204,14 +224,58 @@ def compose(code: str, region: str, tours: list[str], overrides: dict) -> ImageP
     return plan
 
 
-def fill_carousel(plan: ImagePlan, code: str, tours: list[str], target: int = 8):
+def fill_carousel(plan: ImagePlan, code: str, tours: list[str], target: int = 8,
+                  picks: list[tuple] | None = None, stock: dict | None = None):
     """Refill the carousel from what no day used.
 
     Sections win contested images: a day with no picture of the thing it
     sells is a worse page than a carousel one slide shorter, and the
     carousel can always be refilled from the leftovers — the reverse is not
     true.
+
+    `picks` overrides the whole slot. It exists because the reprise path
+    below is resolution-blind: it re-uses the day photos, and when those come
+    from the brochure they are 685–760px — fine for a section tile, but the
+    portrait carousel crop is 1080x1440, so a 685px source lands at 3.25×
+    upscale and ships visibly soft. Brochure photos cannot be re-fetched
+    larger; stock can (`bin/resharpen.py` swaps the preview for the original,
+    2400–6000px). So where a product's headline scenery *does* have honest
+    stock coverage, the carousel is stated explicitly and the brochure
+    photos stay on their own day, where they are correctly sized.
     """
+    if picks is not None:
+        cat_rows = catalogue_for(code, tours)
+        for i, (block, n, note) in enumerate(picks):
+            head = "hero | " if i == 0 else ""
+            if block.startswith("cat:"):
+                # ②优先于③，所以轮播也要能点名图库图，而不是只能从 stock 里挑。
+                image_id = block[4:]
+                row = next((r for r in cat_rows if r["image_id"] == image_id), None)
+                if row is None:
+                    raise SystemExit(f"{code}: carousel pick {block} not in catalogue.json")
+                pull_catalogue(code, [row])
+                plan.placements.append(Placement(
+                    slot="carousel", position=i, origin="catalogue",
+                    subject=row["alt"], source_ref=row["tour"],
+                    src_path=row["path"], credit="webuytravel.sg", note=head + note))
+                continue
+            row = next((c for c in (stock or {}).get(block, {}).get("candidates", [])
+                        if c["n"] == n), None)
+            if row is None:
+                raise SystemExit(f"{code}: carousel pick {block}#{n} not in candidates.json")
+            plan.placements.append(Placement(
+                slot="carousel", position=i, origin="web",
+                subject=(stock or {})[block]["subject"],
+                source_ref=row["url"], src_path=row["path"],
+                credit=row["source"], note=head + note))
+        hero = next((p for p in plan.of("carousel") if p.position == 0), None)
+        if hero:
+            plan.placements.append(Placement(
+                slot="thumbnail", position=0, origin=hero.origin,
+                subject=hero.subject, source_ref=hero.source_ref,
+                src_path=hero.src_path, credit=hero.credit, license=hero.license))
+        return
+
     used = {p.src_path for p in plan.placements}
     pool = []
     for row in catalogue_for(code, tours):
@@ -300,6 +364,73 @@ OVERRIDES = {
         "d01": [("stock", ("d01_chongqing", 2), "重庆夜景")],
         "d06": [("stock", ("d06_kala_miao", 5), "苗族传统服饰")],
     },
+    # WBINC9 是第一个在②图库这一级拿到 0 张的产品:webuytravel.sg 没有宁夏在售
+    # 产品,唯一相邻的内蒙古沙漠产品 tours/75 全站只挂 1 张图。所以除册子自带的
+    # 5 张外全部来自 stock,且逐张看过。
+    # 第 2 天不在这里 —— 宁夏博物馆和览山公园两个主体,stock 12 张里没有一张是
+    # 对的(返回嘉峪关、中国大运河博物馆、丽江黑龙潭),没有可用的替代,所以
+    # 故意留成 gap 让审核页显式报出来,而不是拿一张认不出的中国城市图充数。
+    # WBSZX1 的图源结构和 WBINC9 相反:②图库(tours/118 同区域同主题在售产品)
+    # 覆盖了顺峰山、欢乐海岸、黄飞鸿纪念馆、黄腾峡、沙湾古镇,册子自带图覆盖了
+    # 深圳湾、赤坎古镇、日月贝、千古情演出。缺口只剩首尾两个交通日和几个
+    # 城市地标。
+    "WBSZX1": {
+        # 抵达日,册子只写接机入住。用深圳夜景天际线(平安金融中心可辨)。
+        "d01": [("stock", ("d01_shenzhen_skyline", 2), "深圳湾夜景天际线,平安金融中心形态可辨")],
+        # 自动匹配会挑走册子那张千古情演出图(991x369,裁到 section 要放大
+        # 2.44×),把 1800px 的黄腾峡挤掉。这里点名换成两张图库原图。
+        # 岭南新天地和广东千古情在 CMS 里只有 ~380x510,已从 catalogue.json 剔除。
+        "d03": [("cat", "7vb1txIk", "黄飞鸿纪念馆(位于佛山祖庙内),CMS 图注,已授权"),
+                ("cat", "TM550Omr", "黄腾峡天门玻璃桥,1800px 原图")],
+        "d04": [("cat", "wfUiCnbg", "沙湾古镇,CMS 图注,已授权"),
+                ("stock", ("d04_pearl_river", 3), "珠江夜游观光船实拍——当日必需自费项目")],
+        "d06": [("stock", ("d06_zhuhai_fisher", 1), "珠海渔女像与情侣路海滨"),
+                ("cat", "HTlwuVEv", "欢乐海岸")],
+        # 深中通道 6 张候选都是珠三角跨海大桥,但没有一张能确认就是深中通道
+        # (港珠澳大桥形态相近)。地域与类型都对,主体只写到「跨海大桥」。
+        "d07": [("stock", ("d07_shenzhong_link", 1), "珠三角跨海大桥晨景;是否深中通道本体未确认")],
+    },
+    "WBINC9": {
+        # 沙坡头本体无合规实拍(stock 返回张掖丹霞和交河故城)。这两张不冒充
+        # 沙坡头,卖的是当天真实存在的两个体验:沙丘徒步/滑沙,和沙漠营地观星。
+        "d05": [("stock", ("d05_sand_sliding", 1), "沙丘实拍(未标注具体地点);沙坡头景区本体无合规实拍"),
+                ("stock", ("d05_stargazing", 5), "沙漠营地夜间帐篷观星——当日真实体验")],
+        # 贺兰山岩画整块作废:#1 无可辨刻画,#6 是现代红漆题字的景观石。
+        "d07": [("stock", ("d07_zhenbeipu", 5), "西北夯土城堡片场街景,类型与地域相符(具体是否镇北堡待复核)"),
+                ("stock", ("d07_winery", 1), "岩山脚下葡萄园,与贺兰山东麓产区形态相符")],
+        # 驼车整块作废:6 张全是单峰驼 + 南亚服饰(拉贾斯坦/信德),非中国双峰驼。
+        "d08": [("stock", ("d08_shuidonggou", 4), "黄土峡谷内骑乘,地貌与活动均与水洞沟相符")],
+    },
+}
+
+# 显式指定的轮播,用于册子图太小、又确实有诚实的高分辨率 stock 可用的产品。
+# 每条同样是看过图才写进来的;`hero_*` 这批是专门为轮播补取的大图。
+CAROUSEL = {
+    # ②图库图和③stock 混排:图库这一级优先,但它只覆盖 4 个景点,而且轮播
+    # (尤其 1080x1440 的竖版)需要 1080px 以上的源图,册子那批 700–1000px
+    # 的图放进来会明显发虚,所以册子图只留在当日 section。
+    "WBSZX1": [
+        ("d04_canton_tower", 3, "广州珠江新城夜景天际线——行程里最大的城市"),
+        ("cat:Jmz4i0ph", 0, "顺德欢乐海岸,1916px 原图"),
+        ("food_dim_sum", 3, "广府点心宴——这是美食团,餐食是卖点不是附注"),
+        ("cat:LEiTP6tQ", 0, "黄腾峡天门玻璃桥"),
+        # 这两张刻意与当日配图错开:渔女像和深圳天际线各自已经用在第 6、第 1 天,
+        # 跨槽去重会把轮播里的那张删掉(线上产品的轮播图和日程图本来就不重样)。
+        ("food_dim_sum", 5, "蒸笼点心;八条美食 highlights 撑起两张轮播不算多"),
+        ("cat:LltbVaVY", 0, "沙湾古镇"),
+        ("d01_shenzhen_skyline", 5, "深圳夜景另一机位,与第 1 天当日配图不同张"),
+        ("cat:8ben3nQr", 0, "顺峰山大牌坊"),
+    ],
+    "WBINC9": [
+        ("hero_yellow_river", 4, "黄河嵌入式曲流航拍——产品名的主题,与册子封面同一意象"),
+        ("hero_desert_dunes", 1, "沙丘航拍;行程实际穿越腾格里与阿拉善沙漠"),
+        ("hero_stone_forest", 2, "赭色层理石柱,与册子黄河石林实拍形态一致(具体机位未核实)"),
+        ("d05_stargazing", 5, "沙漠营地夜间观星——第 5 天真实体验"),
+        ("hero_helan", 1, "干旱岩质山脉 + 荒草前景,与贺兰山形态相符"),
+        ("d07_zhenbeipu", 5, "西北夯土城堡片场街景"),
+        ("hero_desert_dunes", 4, "金色沙脊"),
+        ("d08_shuidonggou", 4, "黄土峡谷"),
+    ],
 }
 
 PRODUCTS = {
@@ -307,12 +438,26 @@ PRODUCTS = {
                        "tours/108-8d7n-chongqing-wulong-dazu-world-cultural-heritage"]),
     "WBCURC": ("CHN", ["tours/112-10d9n-travel-with-marcus-chin-altay-wonders"]),
     "WBCHET": ("CHN", []),
+    # 宁夏在 webuytravel.sg 上没有同区域在售产品可采(2026-08-13 实查 china-tours
+    # 索引 12 个产品,最近的 tours/75 内蒙古沙漠全站只有 1 张图)。
+    "WBINC9": ("CHN", []),
+    # 相反的例子:tours/118 是同区域同主题的在售粤味美食团,14 张带 CMS 图注的
+    # 授权图正好覆盖顺峰山、欢乐海岸、黄飞鸿纪念馆、岭南新天地、广东千古情、
+    # 黄腾峡、沙湾古镇 —— ②这一级在有兄弟产品时的实际覆盖度。
+    "WBSZX1": ("CHN", ["tours/118-7d6n-canton-gourmet-tour-2-0"]),
 }
 
 if __name__ == "__main__":
+    # 只跑指定的产品。默认全跑会把已经审过的三个产品的 plan.json 连同
+    # 它们的图一起重新生成,那是不必要的网络往返,也会让已签字的配图漂移。
+    only = set(sys.argv[1:])
     for code, (region, tours) in PRODUCTS.items():
+        if only and code not in only:
+            continue
         plan = compose(code, region, tours, OVERRIDES.get(code, {}))
-        fill_carousel(plan, code, tours)
+        stock = json.loads((WORK / code / "candidates.json").read_text("utf-8")) \
+            if (WORK / code / "candidates.json").exists() else {}
+        fill_carousel(plan, code, tours, picks=CAROUSEL.get(code), stock=stock)
         removed = dedupe(plan, cross_slot=bool(tours))
         materialise(plan, WORK / code / "out")
         plan.to_json(WORK / code / "plan.json")

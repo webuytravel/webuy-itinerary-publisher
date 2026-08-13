@@ -1,0 +1,701 @@
+{
+ "type_code": "WBINC9",
+ "travel_days": 9,
+ "product_name": {
+  "en": "9D6N Ningxia Desert and Yellow River Discovery",
+  "zh": "9天6晚宁夏沙漠与黄河探索之旅"
+ },
+ "highlights": [
+  {
+   "en": "Shapotou Scenic Area, where the Yellow River meets the Tengger Desert, with a night at a desert stargazing camp",
+   "zh": "沙坡头景区,黄河与腾格里沙漠交汇;入住沙漠观星营地"
+  },
+  {
+   "en": "Three-Lake Off-Road Crossing in the Alxa desert — Wulan Lake, Camel Lake and Guitar Lake, with a complimentary Wulan Lake aerial video",
+   "zh": "阿拉善三湖越野穿越 — 乌兰湖、骆驼湖、吉他湖,赠送乌兰湖航拍视频"
+  },
+  {
+   "en": "Yellow River Stone Forest and the Twenty-Two-Bend scenic route, a filming location for The Myth",
+   "zh": "黄河石林与二十二道弯,电影《神话》取景地"
+  },
+  {
+   "en": "Western Xia Imperial Tombs · 108 Pagodas · Helan Mountain Rock Art · Zhenbeipu Western Film Studio · Shuidonggou Underground Troop Caves · Helan Mountain winery tasting",
+   "zh": "西夏陵 · 一百零八塔 · 贺兰山岩画 · 镇北堡西部影城 · 水洞沟藏兵洞 · 贺兰山酒庄品酒"
+  },
+  {
+   "en": "Hand-Grabbed Mutton · Roasted Squab · Desert Barbecue · Mutton Hotpot, one individual pot per person",
+   "zh": "手抓羊肉风味 · 烤乳鸽风味 · 沙漠烧烤 · 涮羊肉风味(每人一小锅)"
+  },
+  {
+   "en": "Haozi Noodle · Zhongwei Local Mixed-Snack · Bobo Pork · Cantonese Cuisine",
+   "zh": "蒿子面风味 · 中卫烩小吃风味 · 饽饽肉风味 · 粤菜风味"
+  }
+ ],
+ "highlights_source": [
+  {
+   "en": "6 Breakfasts · 7 Lunches · 6 Dinners",
+   "zh": "6早餐 · 7午餐 · 6晚餐"
+  },
+  {
+   "en": "Hand-Grabbed Mutton Specialty",
+   "zh": "手抓羊肉风味"
+  },
+  {
+   "en": "Roasted Squab Specialty",
+   "zh": "烤乳鸽风味"
+  },
+  {
+   "en": "Haozi Noodle Specialty",
+   "zh": "蒿子面风味"
+  },
+  {
+   "en": "Cantonese Cuisine",
+   "zh": "粤菜风味"
+  },
+  {
+   "en": "Desert Barbecue",
+   "zh": "沙漠烧烤"
+  },
+  {
+   "en": "Zhongwei Local Mixed-Snack Specialty",
+   "zh": "中卫烩小吃风味"
+  },
+  {
+   "en": "Bobo Pork Specialty",
+   "zh": "饽饽肉风味"
+  },
+  {
+   "en": "Mutton Hotpot, One Individual Pot per Person",
+   "zh": "涮羊肉风味，每人一小锅"
+  },
+  {
+   "en": "Hotel Accommodation: 4+5 Diamond hotels",
+   "zh": "住宿安排全程4+5钻酒店"
+  },
+  {
+   "en": "Zhongwei — Shapotou Scenic Area (South and North Areas), Desert Camp Stargazing Experience",
+   "zh": "中卫 — 沙坡头景区（南区、北区）、沙漠营地观星"
+  },
+  {
+   "en": "Qingtongxia — Yellow River Grand Canyon, 108 Pagodas",
+   "zh": "青铜峡 — 黄河大峡谷、一百零八塔"
+  },
+  {
+   "en": "Yinchuan — Ningxia Museum, Lanshan Park, Western Xia Imperial Tombs, Western Xia Museum, Wooden Movable-Type Printing Experience",
+   "zh": "银川 — 宁夏博物馆、览山公园、西夏陵、西夏博物馆、木活字印刷体验"
+  },
+  {
+   "en": "Yinchuan — Zhenbeipu Western Film Studio (Ming and Qing Fortress Areas), Helan Mountain Rock Art, Zhihui Yuanshi Winery and Wine-Tasting Experience",
+   "zh": "银川 — 镇北堡西部影城（明城、清城）、贺兰山岩画、志辉源石酒庄与酒庄品酒体验"
+  },
+  {
+   "en": "Yinchuan — Shuidonggou Scenic Area, Shuidonggou Museum, Underground Troop Caves, Camel-Cart and Horse-Carriage Experience",
+   "zh": "银川 — 水洞沟景区、水洞沟博物馆、藏兵洞、驼车与马车体验"
+  },
+  {
+   "en": "Alxa Left Banner — Three-Lake Off-Road Crossing (Wulan Lake, Camel Lake, Guitar Lake), Desert Off-Road Vehicle Experience, Wulan Lake Aerial Video",
+   "zh": "阿拉善左旗 — 三湖越野穿越（乌兰湖、骆驼湖、吉他湖）、沙漠越野车体验、乌兰湖航拍视频"
+  },
+  {
+   "en": "Jingtai — Yellow River Stone Forest, Twenty-Two-Bend Scenic Route, Yellow River Boat Ride, filming location of The Myth",
+   "zh": "景泰 — 黄河石林、二十二道弯、黄河游船、电影《神话》拍摄地"
+  }
+ ],
+ "sections": [
+  {
+   "day": 1,
+   "name": {
+    "en": "DAY 1",
+    "zh": "第一天"
+   },
+   "title": {
+    "en": "Singapore > Guangzhou",
+    "zh": "新加坡 > 广州"
+   },
+   "location": {
+    "en": "Guangzhou",
+    "zh": "广州"
+   },
+   "description": {
+    "en": "",
+    "zh": ""
+   },
+   "trip_items": []
+  },
+  {
+   "day": 2,
+   "name": {
+    "en": "DAY 2",
+    "zh": "第二天"
+   },
+   "title": {
+    "en": "Guangzhou > Yinchuan",
+    "zh": "广州 > 银川"
+   },
+   "location": {
+    "en": "Yinchuan",
+    "zh": "银川"
+   },
+   "description": {
+    "en": "Lunch / Dinner",
+    "zh": "午餐 / 晚餐"
+   },
+   "trip_items": [
+    {
+     "title": {
+      "en": "Ningxia Museum",
+      "zh": "宁夏博物馆"
+     },
+     "description": {
+      "en": "Travel via Guangzhou to Yinchuan, the capital of Ningxia. Upon arrival, visit the Ningxia Museum, where historical relics and exhibitions offer an introduction to the region's ancient civilisation, Western Xia heritage and diverse ethnic cultures. Travel Note: Ningxia Museum is closed on Mondays.",
+      "zh": "搭乘航班经广州前往宁夏首府——银川。抵达后前往【宁夏博物馆】，通过丰富的历史文物与展览，认识宁夏地区悠久文明、西夏文化及多元民族风情。温馨提示：宁夏博物馆逢星期一闭馆。"
+     },
+     "photo_subject": "Ningxia Museum Yinchuan 宁夏博物馆 银川",
+     "trip_type": "Attractions"
+    },
+    {
+     "title": {
+      "en": "Lanshan Park",
+      "zh": "览山公园"
+     },
+     "description": {
+      "en": "Continue to Lanshan Park, known for its distinctive European-inspired architecture and spacious viewing areas. Enjoy the pleasant city scenery before transferring to the hotel for check-in.",
+      "zh": "随后游览【览山公园】，欣赏独具特色的欧式建筑景观，并在开阔的观景空间中感受银川迷人的城市风貌。游览结束后前往酒店办理入住。"
+     },
+     "photo_subject": "Lanshan Park Yinchuan 览山公园 银川",
+     "trip_type": "Attractions"
+    }
+   ]
+  },
+  {
+   "day": 3,
+   "name": {
+    "en": "DAY 3",
+    "zh": "第三天"
+   },
+   "title": {
+    "en": "Yinchuan > Alxa Left Banner > Zhongwei",
+    "zh": "银川 > 阿拉善左旗 > 中卫"
+   },
+   "location": {
+    "en": "Alxa Left Banner",
+    "zh": "阿拉善左旗"
+   },
+   "description": {
+    "en": "Breakfast / Lunch / Dinner",
+    "zh": "早餐 / 午餐 / 晚餐"
+   },
+   "trip_items": [
+    {
+     "title": {
+      "en": "Three-Lake Off-Road Crossing Adventure",
+      "zh": "三湖越野穿越"
+     },
+     "description": {
+      "en": "Embark on an exciting Three-Lake Off-Road Crossing Adventure. Transfer to an off-road vehicle and journey deep into the vast desert to explore Wulan Lake, Camel Lake and Guitar Lake. Travel across sweeping sand dunes and admire the striking contrast between desert landscapes and secluded lakes. Each lake presents its own distinctive shape and scenery, creating an extraordinary desert experience.",
+      "zh": "展开精彩的【三湖越野穿越】，换乘越野车深入广阔的沙漠腹地，依次探索【乌兰湖】、【骆驼湖】与【吉他湖】。驰骋在辽阔沙地之间，沿途欣赏沙丘、湖泊与荒漠相互交织的独特景观。不同形态与色彩的湖泊散落在苍茫大地之中，形成极具视觉震撼的沙漠秘境。"
+     },
+     "photo_subject": "Alxa desert off-road vehicle sand dunes 阿拉善 沙漠越野车 沙丘",
+     "trip_type": "Attractions"
+    },
+    {
+     "title": {
+      "en": "Wulan Lake Aerial Video",
+      "zh": "乌兰湖航拍视频"
+     },
+     "description": {
+      "en": "A complimentary aerial video at Wulan Lake is included to capture the spectacular landscape from above.",
+      "zh": "行程特别赠送【乌兰湖航拍视频】，从空中记录壮丽的沙漠湖泊景色，为旅程留下珍贵回忆。"
+     },
+     "photo_subject": "Wulan Lake desert lake aerial view Alxa 乌兰湖 沙漠湖泊 航拍",
+     "trip_type": "Attractions"
+    }
+   ]
+  },
+  {
+   "day": 4,
+   "name": {
+    "en": "DAY 4",
+    "zh": "第四天"
+   },
+   "title": {
+    "en": "Zhongwei > Jingtai > Zhongwei",
+    "zh": "中卫 > 景泰 > 中卫"
+   },
+   "location": {
+    "en": "Jingtai",
+    "zh": "景泰"
+   },
+   "description": {
+    "en": "Breakfast / Lunch / Dinner",
+    "zh": "早餐 / 午餐 / 晚餐"
+   },
+   "trip_items": [
+    {
+     "title": {
+      "en": "Yellow River Stone Forest",
+      "zh": "黄河石林"
+     },
+     "description": {
+      "en": "Visit the magnificent Yellow River Stone Forest, where towering rock formations, dramatic canyons and the flowing Yellow River create a striking natural landscape. Travel between imposing stone pillars and deep valleys while admiring landscapes shaped by nature over countless years. The area was also featured as a filming location for The Myth, starring Jackie Chan and Kim Hee-sun.",
+      "zh": "前往气势磅礴的【黄河石林】，这里奇峰林立、峡谷纵横，黄河水流与古老石林共同构成壮观而苍凉的自然画卷。穿行于高耸的石柱和幽深峡谷之间，感受大自然经过漫长岁月雕琢而成的雄奇景观。这里也是成龙与金喜善主演电影《神话》的取景地，可寻找电影中的经典场景。"
+     },
+     "photo_subject": "Yellow River Stone Forest Jingtai Gansu 黄河石林 景泰",
+     "trip_type": "Attractions"
+    },
+    {
+     "title": {
+      "en": "Twenty-Two-Bend Scenic Route and Yellow River Boat Ride",
+      "zh": "二十二道弯与黄河游船"
+     },
+     "description": {
+      "en": "The visit includes the Twenty-Two-Bend scenic bus, electric cart, boat ride and panoramic sightseeing vehicle, allowing you to experience the stone forest from different perspectives. Travel Note: Boat services are normally suspended from November.",
+      "zh": "行程包含乘坐二十二道弯景区巴士、电瓶车、游船及全景观光车，以不同角度深入欣赏黄河石林的奇特地貌。温馨提示：黄河石林游船通常于11月暂停运行。"
+     },
+     "photo_subject": "Yellow River boat ride Twenty-Two-Bend winding road Jingtai 黄河游船 二十二道弯",
+     "trip_type": "Attractions"
+    }
+   ]
+  },
+  {
+   "day": 5,
+   "name": {
+    "en": "DAY 5",
+    "zh": "第五天"
+   },
+   "title": {
+    "en": "Zhongwei · Shapotou Desert Experience",
+    "zh": "中卫 · 沙坡头沙漠体验"
+   },
+   "location": {
+    "en": "Zhongwei",
+    "zh": "中卫"
+   },
+   "description": {
+    "en": "Breakfast / Lunch / Dinner",
+    "zh": "早餐 / 午餐 / 晚餐"
+   },
+   "trip_items": [
+    {
+     "title": {
+      "en": "Shapotou Scenic Area",
+      "zh": "沙坡头景区"
+     },
+     "description": {
+      "en": "Explore the famous Shapotou Scenic Area, where the Yellow River, vast desert and green oasis meet to form a remarkable natural landscape. Travel through the scenic area by electric cart and shuttle bus before taking the uphill cable car to the top of the dunes. Admire panoramic views of the endless desert and surrounding scenery.",
+      "zh": "前往宁夏著名的【沙坡头景区】，感受黄河、沙漠与绿洲交汇形成的独特自然景观。乘坐南区电瓶车及北区摆渡车深入景区，并搭乘上行缆车登上沙丘高处，俯瞰连绵沙海与壮阔景色。"
+     },
+     "photo_subject": "Shapotou Scenic Area Zhongwei desert meets Yellow River 沙坡头景区 中卫",
+     "trip_type": "Attractions"
+    },
+    {
+     "title": {
+      "en": "Sand-Sliding Experience",
+      "zh": "沙漠滑沙"
+     },
+     "description": {
+      "en": "For the descent, choose between the cable car or an exciting sand-sliding experience down the towering dunes.",
+      "zh": "下山时可选择乘坐缆车，或体验充满速度感的【沙漠滑沙】，从高高的沙坡一路滑下，感受沙漠活动带来的乐趣。"
+     },
+     "photo_subject": "sand sliding down desert dune Shapotou 沙漠滑沙 沙坡头",
+     "trip_type": "Attractions"
+    },
+    {
+     "title": {
+      "en": "Desert Stargazing Night",
+      "zh": "沙漠星空之夜"
+     },
+     "description": {
+      "en": "In the evening, stay at a desert stargazing camp. Away from the city lights, enjoy the peaceful surroundings and gaze upon the brilliant night sky during a memorable Desert Stargazing Night.",
+      "zh": "晚上入住沙漠观星营地，在远离城市灯光的宁静环境中仰望星空，享受难忘的【沙漠星空之夜】。"
+     },
+     "photo_subject": "desert camp stargazing night sky tents 沙漠营地 观星 星空",
+     "trip_type": "Attractions"
+    }
+   ]
+  },
+  {
+   "day": 6,
+   "name": {
+    "en": "DAY 6",
+    "zh": "第六天"
+   },
+   "title": {
+    "en": "Zhongwei > Qingtongxia > Yinchuan",
+    "zh": "中卫 > 青铜峡 > 银川"
+   },
+   "location": {
+    "en": "Qingtongxia",
+    "zh": "青铜峡"
+   },
+   "description": {
+    "en": "Breakfast / Lunch / Dinner",
+    "zh": "早餐 / 午餐 / 晚餐"
+   },
+   "trip_items": [
+    {
+     "title": {
+      "en": "Qingtongxia Yellow River Grand Canyon",
+      "zh": "青铜峡黄河大峡谷"
+     },
+     "description": {
+      "en": "Visit the Qingtongxia Yellow River Grand Canyon and take a short boat ride along the Yellow River. Admire the canyon scenery and the impressive views of the river flowing between the surrounding landscapes.",
+      "zh": "前往【青铜峡黄河大峡谷】，乘坐短线游船畅游黄河，欣赏两岸峡谷风光及黄河奔流而过的壮丽景象。"
+     },
+     "photo_subject": "Qingtongxia Yellow River Grand Canyon 青铜峡黄河大峡谷",
+     "trip_type": "Attractions"
+    },
+    {
+     "title": {
+      "en": "108 Pagodas",
+      "zh": "一百零八塔"
+     },
+     "description": {
+      "en": "Continue to the historic 108 Pagodas, where rows of ancient pagodas form a distinctive sight along the hillside.",
+      "zh": "随后参观历史悠久的【青铜峡一百零八塔】，感受古塔群沿山排列所形成的独特景观。"
+     },
+     "photo_subject": "108 Pagodas Qingtongxia hillside white pagodas 一百零八塔 青铜峡",
+     "trip_type": "Attractions"
+    },
+    {
+     "title": {
+      "en": "Western Xia Imperial Tombs and Western Xia Museum",
+      "zh": "西夏陵与西夏博物馆"
+     },
+     "description": {
+      "en": "Explore the mysterious Western Xia Imperial Tombs by scenic shuttle. Visit the Western Xia Museum to learn about the history, culture and development of the Western Xia civilisation.",
+      "zh": "之后前往【西夏陵】，乘坐景区交通车进入陵区，探索神秘的西夏王朝遗址。参观【西夏博物馆】，通过文物及历史展示了解西夏文明的发展与兴衰。"
+     },
+     "photo_subject": "Western Xia Imperial Tombs Yinchuan earthen mausoleum 西夏陵 银川",
+     "trip_type": "Attractions"
+    },
+    {
+     "title": {
+      "en": "Wooden Movable-Type Printing Experience",
+      "zh": "木活字印刷体验"
+     },
+     "description": {
+      "en": "Complete the visit with a hands-on wooden movable-type printing experience, offering an opportunity to discover the charm of traditional Chinese printing techniques.",
+      "zh": "并参与【木活字印刷体验】，亲手感受中国传统印刷技艺的文化魅力。"
+     },
+     "photo_subject": "wooden movable type printing blocks traditional Chinese 木活字印刷",
+     "trip_type": "Attractions"
+    }
+   ]
+  },
+  {
+   "day": 7,
+   "name": {
+    "en": "DAY 7",
+    "zh": "第七天"
+   },
+   "title": {
+    "en": "Yinchuan Cultural and Helan Mountain Discovery",
+    "zh": "银川文化与贺兰山探索"
+   },
+   "location": {
+    "en": "Yinchuan",
+    "zh": "银川"
+   },
+   "description": {
+    "en": "Breakfast / Lunch / Dinner",
+    "zh": "早餐 / 午餐 / 晚餐"
+   },
+   "trip_items": [
+    {
+     "title": {
+      "en": "Zhenbeipu Western Film Studio",
+      "zh": "镇北堡西部影城"
+     },
+     "description": {
+      "en": "Begin at the Zhenbeipu Western Film Studio, where the Ming- and Qing-style fortress areas recreate the rustic atmosphere of ancient Northwest China. Walk through traditional streets, city walls and familiar film settings while experiencing the unique character of China's western landscapes.",
+      "zh": "首先游览【镇北堡西部影城】，走进充满西北风情的明城与清城建筑群。这里保留了古朴粗犷的街道、城墙及电影场景，可在浓厚的影视氛围中感受中国西部独特的历史风貌。"
+     },
+     "photo_subject": "Zhenbeipu Western Film Studio Yinchuan fortress 镇北堡西部影城 银川",
+     "trip_type": "Attractions"
+    },
+    {
+     "title": {
+      "en": "Helan Mountain Rock Art",
+      "zh": "贺兰山岩画"
+     },
+     "description": {
+      "en": "Continue to the Helan Mountain Rock Art Site. Take an electric cart into the scenic area and view ancient images carved into the rocks. These carvings depict the daily life, hunting activities and beliefs of early communities, offering valuable insight into the region's ancient civilisation.",
+      "zh": "随后前往【贺兰山岩画】，乘坐电瓶车进入景区，欣赏刻画于山石上的古老岩画。这些图案记录了先民的生活、狩猎及信仰，是了解当地古代文明的重要文化遗迹。"
+     },
+     "photo_subject": "Helan Mountain Rock Art petroglyphs Ningxia 贺兰山岩画",
+     "trip_type": "Attractions"
+    },
+    {
+     "title": {
+      "en": "Zhihui Yuanshi Winery",
+      "zh": "志辉源石酒庄"
+     },
+     "description": {
+      "en": "Later, visit Zhihui Yuanshi Winery to admire the winery architecture and vineyard scenery. Learn about the local wine culture and winemaking traditions before enjoying an included wine-tasting experience.",
+      "zh": "之后参观【志辉源石酒庄】，欣赏酒庄建筑与葡萄园景观，了解当地葡萄酒文化及酿造特色，并享用品酒体验，为当天的文化探索增添悠闲雅致的气息。"
+     },
+     "photo_subject": "Zhihui Yuanshi Winery Helan Mountain vineyard Ningxia 志辉源石酒庄 贺兰山 葡萄园",
+     "trip_type": "Attractions"
+    }
+   ]
+  },
+  {
+   "day": 8,
+   "name": {
+    "en": "DAY 8",
+    "zh": "第八天"
+   },
+   "title": {
+    "en": "Yinchuan · Shuidonggou > Guangzhou",
+    "zh": "银川 · 水洞沟 > 广州"
+   },
+   "location": {
+    "en": "Shuidonggou",
+    "zh": "水洞沟"
+   },
+   "description": {
+    "en": "Breakfast / Lunch",
+    "zh": "早餐 / 午餐"
+   },
+   "trip_items": [
+    {
+     "title": {
+      "en": "Shuidonggou Scenic Area and Museum",
+      "zh": "水洞沟景区与博物馆"
+     },
+     "description": {
+      "en": "Visit Shuidonggou, an important site associated with China's prehistoric archaeology. Begin at the museum to learn about early human activity and the historical development of the region.",
+      "zh": "前往被誉为中国史前考古重要遗址之一的【水洞沟】，参观景区博物馆，认识当地古人类活动与历史文化。"
+     },
+     "photo_subject": "Shuidonggou Scenic Area Ningxia prehistoric site landscape 水洞沟景区 宁夏",
+     "trip_type": "Attractions"
+    },
+    {
+     "title": {
+      "en": "Camel-Cart and Horse-Carriage Experience",
+      "zh": "驼车与马车体验"
+     },
+     "description": {
+      "en": "Continue into the scenic area by electric cart and enjoy traditional camel-cart and horse-carriage rides through the open Northwest landscape.",
+      "zh": "随后乘坐电瓶车深入景区，并体验充满西北特色的驼车与马车，在辽阔自然环境中感受古老交通方式的乐趣。"
+     },
+     "photo_subject": "camel cart horse carriage ride Shuidonggou Ningxia 驼车 马车 水洞沟",
+     "trip_type": "Attractions"
+    },
+    {
+     "title": {
+      "en": "Underground Troop Caves",
+      "zh": "藏兵洞"
+     },
+     "description": {
+      "en": "Explore the mysterious Underground Troop Caves, a network of hidden passages and ancient military defence structures that reveals the strategic ingenuity of the past. After the visit, take the scenic shuttle and transfer to the airport for your flight via Guangzhou back to Singapore.",
+      "zh": "走进神秘的【藏兵洞】，探索复杂的地下通道及古代军事防御设施，了解当时独特的军事智慧。之后乘坐区间车离开景区，于指定时间前往机场，经广州转机返回新加坡。"
+     },
+     "photo_subject": "Underground Troop Caves Shuidonggou tunnel passage 藏兵洞 水洞沟",
+     "trip_type": "Attractions"
+    }
+   ]
+  },
+  {
+   "day": 9,
+   "name": {
+    "en": "DAY 9",
+    "zh": "第九天"
+   },
+   "title": {
+    "en": "Guangzhou > Singapore",
+    "zh": "广州 > 新加坡"
+   },
+   "location": {
+    "en": "Singapore",
+    "zh": "新加坡"
+   },
+   "description": {
+    "en": "",
+    "zh": ""
+   },
+   "trip_items": []
+  }
+ ],
+ "images": {
+  "carousel": [
+   {
+    "pos": 0,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/determined-darwin-c3ef30/work/WBINC9/out/carousel_00_0.jpg",
+    "bytes": 461831,
+    "subject": "Yellow River bend desert Ningxia 黄河 宁夏"
+   },
+   {
+    "pos": 1,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/determined-darwin-c3ef30/work/WBINC9/out/carousel_01_0.jpg",
+    "bytes": 359603,
+    "subject": "Tengger desert golden dunes aerial 腾格里沙漠 沙丘"
+   },
+   {
+    "pos": 2,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/determined-darwin-c3ef30/work/WBINC9/out/carousel_02_0.jpg",
+    "bytes": 416824,
+    "subject": "Yellow River Stone Forest canyon stone pillars 黄河石林"
+   },
+   {
+    "pos": 3,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/determined-darwin-c3ef30/work/WBINC9/out/carousel_03_0.jpg",
+    "bytes": 250873,
+    "subject": "desert camp stargazing night sky 沙漠营地观星"
+   },
+   {
+    "pos": 4,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/determined-darwin-c3ef30/work/WBINC9/out/carousel_04_0.jpg",
+    "bytes": 419837,
+    "subject": "Helan Mountain range Ningxia 贺兰山"
+   },
+   {
+    "pos": 5,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/determined-darwin-c3ef30/work/WBINC9/out/carousel_05_0.jpg",
+    "bytes": 261090,
+    "subject": "Zhenbeipu Western Film Studio 镇北堡西部影城"
+   },
+   {
+    "pos": 6,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/determined-darwin-c3ef30/work/WBINC9/out/carousel_06_0.jpg",
+    "bytes": 480704,
+    "subject": "Tengger desert golden dunes aerial 腾格里沙漠 沙丘"
+   },
+   {
+    "pos": 7,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/determined-darwin-c3ef30/work/WBINC9/out/carousel_07_0.jpg",
+    "bytes": 524635,
+    "subject": "Shuidonggou scenic area 水洞沟"
+   }
+  ],
+  "carousel_mobile": [
+   {
+    "pos": 0,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/determined-darwin-c3ef30/work/WBINC9/out_mobile/carousel_00_mobile.jpg",
+    "bytes": 450993,
+    "subject": "Yellow River bend desert Ningxia 黄河 宁夏"
+   },
+   {
+    "pos": 1,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/determined-darwin-c3ef30/work/WBINC9/out_mobile/carousel_01_mobile.jpg",
+    "bytes": 345422,
+    "subject": "Tengger desert golden dunes aerial 腾格里沙漠 沙丘"
+   },
+   {
+    "pos": 2,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/determined-darwin-c3ef30/work/WBINC9/out_mobile/carousel_02_mobile.jpg",
+    "bytes": 500627,
+    "subject": "Yellow River Stone Forest canyon stone pillars 黄河石林"
+   },
+   {
+    "pos": 3,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/determined-darwin-c3ef30/work/WBINC9/out_mobile/carousel_03_mobile.jpg",
+    "bytes": 256519,
+    "subject": "desert camp stargazing night sky 沙漠营地观星"
+   },
+   {
+    "pos": 4,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/determined-darwin-c3ef30/work/WBINC9/out_mobile/carousel_04_mobile.jpg",
+    "bytes": 437018,
+    "subject": "Helan Mountain range Ningxia 贺兰山"
+   },
+   {
+    "pos": 5,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/determined-darwin-c3ef30/work/WBINC9/out_mobile/carousel_05_mobile.jpg",
+    "bytes": 254379,
+    "subject": "Zhenbeipu Western Film Studio 镇北堡西部影城"
+   },
+   {
+    "pos": 6,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/determined-darwin-c3ef30/work/WBINC9/out_mobile/carousel_06_mobile.jpg",
+    "bytes": 608489,
+    "subject": "Tengger desert golden dunes aerial 腾格里沙漠 沙丘"
+   },
+   {
+    "pos": 7,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/determined-darwin-c3ef30/work/WBINC9/out_mobile/carousel_07_mobile.jpg",
+    "bytes": 465022,
+    "subject": "Shuidonggou scenic area 水洞沟"
+   }
+  ],
+  "thumbnail": [
+   {
+    "pos": 0,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/determined-darwin-c3ef30/work/WBINC9/out/thumbnail_00_0.jpg",
+    "bytes": 461831,
+    "subject": "Yellow River bend desert Ningxia 黄河 宁夏"
+   }
+  ],
+  "route_map": [
+   {
+    "pos": 0,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/determined-darwin-c3ef30/work/WBINC9/out/route_map_00.png",
+    "bytes": 511018,
+    "subject": "itinerary route map"
+   }
+  ],
+  "section": [
+   {
+    "pos": 3,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/determined-darwin-c3ef30/work/WBINC9/out/section_03_0.jpg",
+    "bytes": 133371,
+    "subject": "Alxa desert lake aerial 阿拉善 沙漠湖泊 航拍"
+   },
+   {
+    "pos": 4,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/determined-darwin-c3ef30/work/WBINC9/out/section_04_0.jpg",
+    "bytes": 210801,
+    "subject": "Yellow River Stone Forest 黄河石林"
+   },
+   {
+    "pos": 4,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/determined-darwin-c3ef30/work/WBINC9/out/section_04_1.jpg",
+    "bytes": 265628,
+    "subject": "Twenty-Two-Bend winding mountain road 二十二道弯"
+   },
+   {
+    "pos": 5,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/determined-darwin-c3ef30/work/WBINC9/out/section_05_0.jpg",
+    "bytes": 82880,
+    "subject": "sand sliding desert dune 滑沙"
+   },
+   {
+    "pos": 5,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/determined-darwin-c3ef30/work/WBINC9/out/section_05_1.jpg",
+    "bytes": 152621,
+    "subject": "desert camp stargazing night sky 沙漠营地观星"
+   },
+   {
+    "pos": 6,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/determined-darwin-c3ef30/work/WBINC9/out/section_06_0.jpg",
+    "bytes": 200291,
+    "subject": "108 Pagodas 一百零八塔"
+   },
+   {
+    "pos": 6,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/determined-darwin-c3ef30/work/WBINC9/out/section_06_1.jpg",
+    "bytes": 134988,
+    "subject": "wooden movable-type printing 木活字印刷体验"
+   },
+   {
+    "pos": 7,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/determined-darwin-c3ef30/work/WBINC9/out/section_07_0.jpg",
+    "bytes": 168060,
+    "subject": "Zhenbeipu Western Film Studio 镇北堡西部影城"
+   },
+   {
+    "pos": 7,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/determined-darwin-c3ef30/work/WBINC9/out/section_07_1.jpg",
+    "bytes": 251428,
+    "subject": "Helan Mountain vineyard winery Ningxia 贺兰山葡萄园酒庄"
+   },
+   {
+    "pos": 8,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/determined-darwin-c3ef30/work/WBINC9/out/section_08_0.jpg",
+    "bytes": 362733,
+    "subject": "Shuidonggou scenic area 水洞沟"
+   }
+  ]
+ }
+}

@@ -89,6 +89,56 @@ HOUSE_HIGHLIGHTS = {
         ("Whole Roasted Lamb Feast · Xinjiang Song-and-Dance Banquet · Xinjiang Mini Hot Pot",
          "烤全羊风味宴 · 新疆歌舞宴 · 新疆小火锅风味"),
     ],
+    # WBSZX1 册子原始 18 条:1 条餐数、10 条菜式/餐厅、1 条酒店钻级、6 条按城市
+    # 分组的景点。这是一个美食团,所以两条餐食行要吃下全部 10 条,而不是像其他
+    # 产品那样只压缩风味名;番禺四海一家和南海渔村·天空一号是餐厅不是菜式,但
+    # 在粤港澳客群里本身就是卖点,予以保留。
+    # 落掉的:餐数、4 钻酒店(参考页版式不带),以及深圳湾人才公园、顺峰山大牌坊、
+    # 欢乐海岸、陈皮村、咀香园/罗西尼博物馆、深中通道 —— 都在逐日行程里出现。
+    "WBSZX1": [
+        ("Eight cities in one journey: Shenzhen · Shunde · Foshan · Qingyuan · "
+         "Guangzhou · Jiangmen · Zhongshan · Zhuhai",
+         "一程八城:深圳 · 顺德 · 佛山 · 清远 · 广州 · 江门 · 中山 · 珠海"),
+        ("Guangzhou — Canton Tower, Huacheng Square, Shawan Ancient Town and a "
+         "luxury Pearl River night cruise",
+         "广州 — 广州塔、花城广场、沙湾古镇与豪华珠江夜游"),
+        ("Foshan Ancestral Temple · Wong Fei-hung Memorial Hall · Lingnan Tiandi · "
+         "Romance of Guangdong live show · Huangtengxia Glass Bridge",
+         "佛山祖庙 · 黄飞鸿纪念馆 · 岭南新天地 · 广东千古情 · 黄腾峡玻璃桥"),
+        ("Chikan Ancient Town and 33 Market Street in Jiangmen · Zhuhai's Lovers' "
+         "Road, Fisher Girl Statue and Sun and Moon Shell Theatre with the "
+         "Shijingshan cable car",
+         "江门赤坎古镇与三十三墟街 · 珠海情侣路、渔女像、日月贝大剧院与石景山缆车"),
+        ("Shunde Fish Feast · Qingyuan Chicken Feast · Xinhui Roast Goose · "
+         "Buddha Jumps Over the Wall",
+         "顺德鱼宴 · 清远鸡宴 · 新会烧鹅 · 佛跳墙宴"),
+        ("Cantonese Dim Sum Banquet · Steamed Seafood · Kaiping Eel Rice · "
+         "Panyu Sihaiyijia · Nanhai Fishing Village Sky One",
+         "广府点心宴 · 蒸汽海鲜 · 开平黄鳝饭 · 番禺四海一家 · 南海渔村·天空一号"),
+    ],
+    # WBINC9 册子原始 17 条:1 条餐数、8 条菜式、1 条酒店钻级、7 条按城市分组的
+    # 景点。折叠后落掉的是宁夏博物馆、览山公园、木活字印刷、青铜峡游船 —— 都在
+    # 逐日行程里出现,不占头部版位;餐数和钻级按参考页版式一律不进 highlights。
+    "WBINC9": [
+        ("Shapotou Scenic Area, where the Yellow River meets the Tengger Desert, "
+         "with a night at a desert stargazing camp",
+         "沙坡头景区,黄河与腾格里沙漠交汇;入住沙漠观星营地"),
+        ("Three-Lake Off-Road Crossing in the Alxa desert — Wulan Lake, Camel Lake "
+         "and Guitar Lake, with a complimentary Wulan Lake aerial video",
+         "阿拉善三湖越野穿越 — 乌兰湖、骆驼湖、吉他湖,赠送乌兰湖航拍视频"),
+        ("Yellow River Stone Forest and the Twenty-Two-Bend scenic route, "
+         "a filming location for The Myth",
+         "黄河石林与二十二道弯,电影《神话》取景地"),
+        ("Western Xia Imperial Tombs · 108 Pagodas · Helan Mountain Rock Art · "
+         "Zhenbeipu Western Film Studio · Shuidonggou Underground Troop Caves · "
+         "Helan Mountain winery tasting",
+         "西夏陵 · 一百零八塔 · 贺兰山岩画 · 镇北堡西部影城 · 水洞沟藏兵洞 · 贺兰山酒庄品酒"),
+        ("Hand-Grabbed Mutton · Roasted Squab · Desert Barbecue · "
+         "Mutton Hotpot, one individual pot per person",
+         "手抓羊肉风味 · 烤乳鸽风味 · 沙漠烧烤 · 涮羊肉风味(每人一小锅)"),
+        ("Haozi Noodle · Zhongwei Local Mixed-Snack · Bobo Pork · Cantonese Cuisine",
+         "蒿子面风味 · 中卫烩小吃风味 · 饽饽肉风味 · 粤菜风味"),
+    ],
     "WBCHET": [
         ("Yungang Grottoes, a UNESCO World Heritage site, and Datong Ancient City",
          "云冈石窟（世界文化遗产）与大同古城"),
