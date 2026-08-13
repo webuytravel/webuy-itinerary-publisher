@@ -378,6 +378,96 @@ hash 导航进不去(主线程不转就处理不了),带 query 强制整页重�
 **唯一有效的恢复是开新标签页。** 表单在 Save 之前不写库,所以重来只是重做填写。
 这也是「填写阶段中断是安全的」这条的实际用处——它不是理论上的安慰,是恢复手段。
 
+### 6.11 有些天没有配图,而且没有任何地方说过(2026-08-13 业务同事发现)
+
+业务同事看 410 的编辑页,反馈「每一天的介绍里只有 3 天有照片」。现查 410 的组件
+模型(不是数 DOM,见 6.1):
+
+```
+D1 sec=0 | D2 sec=1 | D3 sec=1 | D4 sec=1 | D5 sec=2 | D6 sec=2 | D7 sec=1 | D8 sec=1 | D9 sec=0
+```
+
+**实际是 9 天里 7 天有图**,不是 3 天。差额的来源是编辑页**默认只展开 Section 1**,
+而 Section 1 恰好是没有配图的那天——要逐天点开才看得见,不点开就只看到一个空的
+抵达日。这条本身要写进手册(见 UPLOAD_RUNBOOK 6.2)。
+
+**但他的结论是对的:D1 本来就该有图,而它是静默留空的。**
+
+#### 线上在售产品的标准
+
+`tours/112 Altay Wonders` 10 天(2026-08-13 看的线上页面):**第 1 天
+「Singapore ✈ Urumqi」有配图**(抵达当天逛大巴扎),**只有最后一天
+「Urumqi ✈ Singapore」没有**。所以规则不是「中转日不用配图」,而是:
+
+> **除了纯回程那一天,每天都该有配图。抵达日有落地活动,它算正常的一天。**
+
+#### 静默是怎么发生的:两个缺陷叠在一起
+
+一、`bin/compose.py` 的 `subjects` 只从 `trip_items[].photo_subject` 来:
+
+```python
+subjects = [t["photo_subject"] for t in section.get("trip_items", []) if t.get("photo_subject")]
+...
+if placed == 0 and subjects:          # ← 这个 and
+    plan.gaps.append(Gap(...))
+```
+
+WBCHET D1 有两个景点条目——`Depart for Ordos via Kuala Lumpur` 和
+`Arrival and Hotel Check-In`——**两个都没写 photo_subject**。于是 `subjects` 是空的,
+`and subjects` 短路,**既不配图也不记 gap**。`section["location"]` 里明明有 `Ordos`,
+但 compose 从来不看它。(讽刺的是 `lib/image_plan.py` 的 `DaySection.search_subjects`
+写了这个兜底 `landmarks or [location_en]`——但那是死代码,`DaySection` 全仓库没有
+任何地方构造过。两份实现,活着的那份把兜底丢了。)
+
+二、`bin/review_page.py` 把无配图日分两桶,然后**只渲染其中一桶**:
+
+```python
+transit  = [d for d in missing if not has_items.get(d)]      # 0 个景点条目 → 正常
+unfilled = [d for d in missing if     has_items.get(d)]      # 有景点却没图 → 异常
+... for d in unfilled if d in gaps                            # ← 没有 gap 记录就不渲染
+```
+
+D1 有 2 个景点条目 → 落进 `unfilled` → 但 compose 没给它记 gap → `if d in gaps`
+把它滤掉。**它既不在「纯中转日」那行,也不在「有景点却没配图」那行,在签字页上
+完全不存在。** 人工闸门看不见的东西,人工闸门拦不住。
+
+第三处助攻:compose 的摘要行打的是 `sections=9 over 7 days`。9 天的产品少了 2 天,
+这行字里读不出来——它读起来像在报进度,不像在报缺口。
+
+#### 五个产品的实际情况
+
+按新逻辑跑一遍 `section_gap`,之前静默的天全部现形:
+
+| 产品 | 静默留空的天 | 该不该有图 |
+|---|---|---|
+| WBCKWE 408 | D9 Singapore(Homeward Bound) | 纯回程,可以空 |
+| WBCURC 409 | D1 Urumqi、D12 Urumqi、D13 Singapore | **D1/D12 该有**,D13 纯回程 |
+| WBCHET 410 | D1 Ordos | **该有** |
+| WBINC9 411 | D1/D9(无景点条目,已在页上显示) | 纯抵离,可以空 |
+| WBSZX1 412 | 无 | — |
+
+WBINC9 D2 是另一类(有景点、四级图源都没命中),它一直是可见的——`gaps` 里有它。
+两类的处理办法不同,所以 `lib/image_plan.py` 的 `section_gap()` 把成因分成三种
+常量(`GAP_NO_MATCH` / `GAP_NO_SUBJECT` / `GAP_NO_ITEMS`),审核页按成因分行显示。
+
+#### 修法,以及为什么不自动补图
+
+`section_gap()` **无条件返回一个 Gap**——`placed == 0` 就记,不再看 `subjects`
+是否为空;`subjects` 为空时退到当天的城市(`section.location.en`),那不是一张图,
+只是「人还能拿什么去搜」。审核页两桶都全量渲染,缺 gap 记录也照样列出来。
+
+**没有让它自动去搜图。** 这条线全仓库一致:「Stock is never auto-selected」
+(compose.py 的注释,理由是搜索按 query 相关性排序、不按是不是那个地方,
+6.7 那一串翻车就是证据)。所以这里做到「让人看见」为止,选哪张仍然是人的事。
+
+`GAP_NO_ITEMS`(连景点条目都没有)也照样记 gap,只是审核页把它归到正常那一行。
+不按标题去猜「Homeward Bound 是纯回程」——那正是 `make_payload` 的 Trip Type
+分类踩过的坑(第 1 节),标题启发式在这里同样不可靠。**记下来,让人判断。**
+
+判断标准和 6.9 是同一条,只是这次漏在了另一个地方:**当一个失败的后果是
+「页面上少了东西」时,它必须响。** 6.9 修的是 `materialise` 遇到源文件缺失,
+这次漏的是**根本没走到 materialise**——一天连候选都没有,前面就静静地跳过去了。
+
 ---
 
 ## 7. 与 AI Planner 的关系(阶段二的接点)

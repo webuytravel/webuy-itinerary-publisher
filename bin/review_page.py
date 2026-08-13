@@ -102,8 +102,14 @@ def product_block(code: str) -> str:
                           if payload_path.exists() else 0)
 
     has_items = {s["day"]: len(s.get("trip_items", [])) for s in itin["sections"]}
-    transit = [d for d in missing if not has_items.get(d)]
     gaps = {g["position"]: g for g in plan.get("gaps", [])}
+    transit = [d for d in missing if not has_items.get(d)]
+    # 每一个无配图日都必须在页面上出现。原来这里是
+    # `unfilled = [d for d in missing if has_items.get(d)]`，然后渲染时又
+    # `for d in unfilled if d in gaps` 过滤一道——一个「有景点、没配图、也没
+    # gap 记录」的天两边都落不到，于是在签字页上彻底消失。WBCHET D1 就是这样
+    # 上线的：2 个景点条目、location 是 Ordos、页面上一个字都没提。
+    # 现在按「有没有 trip item」分两桶，两桶都全量渲染，缺 gap 记录也照样列。
     unfilled = [d for d in missing if has_items.get(d)]
 
     out = [f"""<section class="product">
@@ -123,8 +129,10 @@ def product_block(code: str) -> str:
     {'<p class="prov soft">⚠ ' + str(len(soft)) + ' 张超过放大上限，见下方标注</p>' if soft else ''}
     {'<p class="prov">无配图日：' + '、'.join(f'D{d}（{titles[d][:34]}）' for d in transit) + ' — 无景点条目的纯中转/抵离日</p>' if transit else ''}
     {''.join('<p class="prov soft">⚠ D' + str(d) + '（' + titles[d][:34] + '）有景点却没有配图：'
-             + '、'.join(gaps[d]["subjects"]) [:150] + ' — 四级图源都没有可用的实拍，需要你决定：'
-             '留空、提供自有照片、或改用当日城市/区域实拍</p>' for d in unfilled if d in gaps)}
+             + ('、'.join(gaps[d]["subjects"])[:150] if gaps.get(d, {}).get("subjects")
+                else '这天的景点条目一个 photo_subject 都没写，四级图源从来没有为它搜过')
+             + ' — 需要你决定：留空、提供自有照片、或改用当日城市/区域实拍</p>'
+             for d in unfilled)}
   </header>"""]
 
     for slot, label in [("thumbnail", "列表缩略图"), ("carousel", "轮播图"),

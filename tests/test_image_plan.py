@@ -2,7 +2,8 @@ import numpy as np
 import pytest
 from PIL import Image
 
-from lib.image_plan import ImagePlan, Placement, materialise
+from lib.image_plan import (GAP_NO_ITEMS, GAP_NO_MATCH, GAP_NO_SUBJECT,
+                            ImagePlan, Placement, materialise, section_gap)
 
 
 def _photo(path, width=2400, height=1600, seed=0):
@@ -72,3 +73,40 @@ def test_nothing_is_written_when_one_source_is_missing(tmp_path):
     with pytest.raises(FileNotFoundError):
         materialise(plan, out)
     assert not out.exists()
+
+
+# --- every dayless day must be reported ------------------------------------
+# WBCHET D1 shipped to production 410 with no section photo and no mention of
+# it anywhere: not on the review page, not in plan.json's gaps, not in
+# compose's summary line. The day had two trip items ("Depart for Ordos via
+# Kuala Lumpur", "Arrival and Hotel Check-In") and neither carried a
+# photo_subject, so `if placed == 0 and subjects:` skipped the gap entirely.
+# See docs/DESIGN.md 6.11.
+
+def test_a_day_whose_items_carry_no_subject_still_reports_a_gap():
+    gap = section_gap(1, has_items=True, subjects=[], fallback=["Ordos"])
+    assert gap.reason == GAP_NO_SUBJECT
+    # The city is the only thing left to search on — it has to survive into
+    # the gap or the review page has nothing to show the person signing off.
+    assert gap.subjects == ["Ordos"]
+
+
+def test_a_day_with_subjects_that_matched_nothing_is_a_different_gap():
+    gap = section_gap(2, has_items=True,
+                      subjects=["Ningxia Museum"], fallback=["Yinchuan"])
+    assert gap.reason == GAP_NO_MATCH
+    assert gap.subjects == ["Ningxia Museum"]
+
+
+def test_a_day_with_no_trip_items_is_still_a_gap_just_a_benign_one():
+    # Pure return day. tours/112 leaves its last day blank too, so this one
+    # is allowed to stay empty — but it is logged, not swallowed, because
+    # "normal" is the reviewer's call and not compose's.
+    gap = section_gap(9, has_items=False, subjects=[], fallback=["Singapore"])
+    assert gap.reason == GAP_NO_ITEMS
+
+
+def test_the_three_reasons_are_distinct():
+    # The review page branches on them; collapsing any two would put an
+    # unfilled day back under the benign "纯中转/抵离日" line.
+    assert len({GAP_NO_MATCH, GAP_NO_SUBJECT, GAP_NO_ITEMS}) == 3

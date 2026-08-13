@@ -81,6 +81,40 @@ class Gap:
     reason: str
 
 
+# 三种「这天没有配图」的成因,处理办法完全不同,所以不能合并成一句话:
+#   NO_MATCH   有 photo_subject,四级图源都没给出可用的实拍 → 换图源/自备照片
+#   NO_SUBJECT 有景点条目,但一个 photo_subject 都没写 → 从来没搜过,补 subject 就能搜
+#   NO_ITEMS   连景点条目都没有,纯抵离日 → 线上参考产品的最后一天也是空的
+GAP_NO_MATCH = "no source matched this day"
+GAP_NO_SUBJECT = ("day has trip items but not one carries photo_subject "
+                  "— nothing was ever searched for")
+GAP_NO_ITEMS = "no trip items — arrival/departure transit day"
+
+
+def section_gap(day: int, has_items: bool, subjects: list[str],
+                fallback: list[str]) -> Gap:
+    """The Gap to log when a day ends with zero section photos.
+
+    Always returns one. The bug this replaces was a `placed == 0 and subjects`
+    guard in `bin/compose.py`: a day whose trip items carry no `photo_subject`
+    produced neither a placement nor a gap, so `bin/review_page.py` — the human
+    sign-off gate — had nothing to render for it and the day shipped blank.
+    WBCHET D1, WBCURC D1/D12/D13 and WBCKWE D9 all reached production that way
+    (2026-08-13). See docs/DESIGN.md 6.11.
+
+    `fallback` is the day's own city: not a photo, just the last remaining
+    thing a human could search on once the itinerary offered nothing.
+    """
+    if subjects:
+        reason = GAP_NO_MATCH
+    elif has_items:
+        reason = GAP_NO_SUBJECT
+    else:
+        reason = GAP_NO_ITEMS
+    return Gap(slot="section", position=day,
+               subjects=subjects or fallback, reason=reason)
+
+
 @dataclass
 class ImagePlan:
     type_code: str

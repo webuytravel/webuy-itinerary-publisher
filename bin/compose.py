@@ -30,7 +30,8 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from lib.catalogue_source import CatalogueImage, fetch as fetch_catalogue
-from lib.image_plan import Gap, ImagePlan, Placement, dedupe, materialise
+from lib.image_plan import (ImagePlan, Placement, dedupe, materialise,
+                            section_gap)
 from lib.preview import render
 
 WORK = Path("work")
@@ -120,6 +121,12 @@ def compose(code: str, region: str, tours: list[str], overrides: dict) -> ImageP
         day = section["day"]
         subjects = [t["photo_subject"] for t in section.get("trip_items", [])
                     if t.get("photo_subject")]
+        # 当天城市是最后一道搜索线索。景点条目可以一个 photo_subject 都没有
+        # （抵达日写的是「Depart for Ordos via Kuala Lumpur」「Arrival and
+        # Hotel Check-In」），但那天在表单上仍然是一个完整的 section，线上
+        # 在售的参考产品 tours/112 第 1 天也是有图的。没有 subject 不等于
+        # 那天不需要图，只等于「没人说过要搜什么」。
+        fallback = [loc for loc in [(section.get("location") or {}).get("en")] if loc]
         key = f"d{day:02d}"
 
         # Explicit picks come first. Stock is never auto-selected: the
@@ -195,10 +202,12 @@ def compose(code: str, region: str, tours: list[str], overrides: dict) -> ImageP
                     src_path="", credit="webuytravel.sg"))
                 placed += 1
 
-        if placed == 0 and subjects:
-            plan.gaps.append(Gap(slot="section", position=day,
-                                 subjects=subjects,
-                                 reason="no source matched this day"))
+        # 无条件记 gap。原来这里是 `if placed == 0 and subjects:`，那个
+        # `and subjects` 把「一个 photo_subject 都没有的天」整个吞掉:既没有
+        # 配图,也没有 gap,于是审核页上那天根本不出现,签字的人看不见它。
+        if placed == 0:
+            plan.gaps.append(section_gap(
+                day, bool(section.get("trip_items")), subjects, fallback))
 
     pull_catalogue(code, chosen_cat)
     # Resolve by position, not by `alt`. The catalogue routinely carries two
@@ -485,9 +494,17 @@ if __name__ == "__main__":
         name = json.loads((WORK / code / "itinerary.json").read_text("utf-8"))
         render(plan, WORK / code / f"{code}_review.html",
                tour_name=name["product_name"]["en"])
-        days = len({p.position for p in plan.of("section")})
-        print(f"{code}: sections={len(plan.of('section'))} over {days} days | "
+        covered = {p.position for p in plan.of("section")}
+        total_days = len(name["sections"])
+        bare = [d for d in range(1, total_days + 1) if d not in covered]
+        print(f"{code}: sections={len(plan.of('section'))} over {len(covered)}/{total_days} days | "
               f"carousel={len(plan.of('carousel'))} | thumb={len(plan.of('thumbnail'))} | "
               f"route={len(plan.of('route_map'))} | gaps={len(plan.gaps)} | deduped={len(removed)}")
+        # 「over 7 days」这种说法读起来像在报进度,不像在报缺口——WBCHET 打的
+        # 就是 `sections=9 over 7 days`,9 天的产品少了 2 天,没有人从这行字里
+        # 看出来。把没有图的那几天点名列出来。
+        if bare:
+            print(f"    NO SECTION PHOTO: day(s) {', '.join(map(str, bare))} "
+                  f"— 逐条见下方 GAP,每一条都要人决定")
         for g in plan.gaps:
             print(f"    GAP day {g.position}: {', '.join(g.subjects)[:70]}")
