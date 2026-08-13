@@ -13,10 +13,17 @@ WBCKWE / WBCURC / WBCHET(id 408 / 409 / 410)、WBINC9(411)、WBSZX1(412)。
 
 - **登录由人做。** Chrome 里 `travel.webuysg.com` 的登录态会过期,过期了就请用户点
   一下 Login,不要代填或代提交密码。
-- **图片路径。** 浏览器扩展的 `file_upload` 接受**本次会话可读目录**内的路径。
-  实测在 worktree 里跑时,`work/<CODE>/out/…` 的绝对路径可以直接喂,不必先复制到
-  仓库主检出(08-13 上半场那条「必须复制」的记录是当时会话的目录权限所致,不是
-  工具的通例)。喂之前用绝对路径,别用相对路径。
+- **图片路径必须在本次会话的工作目录内。** 浏览器扩展的 `file_upload` 只接受
+  **会话自己的工作目录**里的文件,其他路径一律拒:
+
+  ```
+  Cannot upload "...": only files this session is allowed to read can be uploaded.
+  ```
+
+  在 worktree 里跑时,会话的工作目录**就是那个 worktree**,仓库主检出不算。
+  所以如果图是在别处生成的(例如在主检出跑的 compose),**先复制进当前工作目录
+  再传**。`work/**/out/`、`out_mobile/` 都在 `.gitignore` 里,复制过来不会污染
+  版本控制。喂路径用绝对路径。
 
 ---
 
@@ -187,8 +194,10 @@ CAROUSEL = {
 
 `work/catalogue.json` 是照单全收采下来的,里面混着两类不能用的:
 
-- **列表横幅图**:`alt` 就是产品名(「7D6N Canton Gourmet Tour 2.0」)。token 匹配
-  会把它配到任意一天去,WBSZX1 第 4 天就中过。
+- **列表横幅图**:`alt` 就是产品名(「7D6N Canton Gourmet Tour 2.0」)。**每个
+  tours/* 的第 0 条都是它**,四个采过的产品无一例外。它排在 pool 最前面,于是
+  成为轮播首图,又被复制成 List Thumbneil——408 和 409 就是这样带着兄弟产品的
+  横幅图当缩略图上线的。token 匹配还会把它配到任意一天去,WBSZX1 第 4 天中过。
 - **CMS 里本来就小的图**:tours/118 的岭南新天地和广东千古情只有 ~380×510,任何
   槽位都要放大 3 倍以上。
 
@@ -302,6 +311,51 @@ Vue 是批处理的:**一个同步块里连发 N 次 click 只产生一次重渲
 `Publish for sale` 未勾、团期已绑。
 
 表单在点 Save 之前什么都不写库,**填写阶段中断是安全的**;一旦保存就是生产记录。
+
+---
+
+## 6.1 改已有产品的图(EDIT 模式)
+
+2026-08-13 给 408 / 409 换掉列表缩略图和轮播时踩到的,和新建流程不一样:
+
+**1) 换产品要整页重载,不能只改 hash。**
+从 `?id=408` 直接跳到 `?id=409`,地址栏变了,**页面数据不变**——SPA 在同一路由内
+不会重新拉。实测跳过去之后产品名还是 408 的贵州重庆,如果不核对就接着删图上传,
+改的是同一个产品两次。加个查询串强制整页重载:
+
+```
+https://travel.webuysg.com/?v=409#/packageDisplayMgmt/editDisplayDetail?id=409&type=edit
+```
+
+**每次进编辑页都先读一次 Product Name 确认是对的那个产品。**
+
+**2) 删图:组件的模型是真相,DOM 不是。**
+图片槽位是自定义组件 `image-crop-upload`,删除按钮在 hover 才显示的
+`.img-btns > i.el-icon-delete` 里。删掉之后**图还留在 DOM 上**——移除动画停在
+`el-list-leave` 不结束,和删 trip item 那个坑一模一样。所以数 `<img>` 会得到旧数字,
+要读组件的 `value`:
+
+```js
+const vmOf = name => {                       // name 是表单标签,如 'Desktop Display Image'
+  const f = [...document.querySelectorAll('.el-form-item')]
+    .find(x => (x.querySelector('.el-form-item__label')||{}).innerText?.trim() === name);
+  return f.querySelector('.image-crop-upload').__vue__;
+};
+const vm = vmOf('Desktop Display Image');
+while (vm.value.length) { vm.removeImage(0); await new Promise(r => setTimeout(r, 200)); }
+```
+
+**3) 连续删多张会让注入调用超时,但操作本身完成了。**
+一次删七八张,`Runtime.evaluate` 会报 45s 超时(每次删都触发重渲染)。
+**不要直接重试**——先等 20 秒再回读 `vm.value.length`,通常已经是 0 或只剩几张,
+接着删剩下的即可。盲目重试会在别的槽位上多删。
+
+**4) 只动要动的槽位,别碰 Tour Type。**
+选中 Tour Type 会清空所有已上传的图(第 5 步第 8 条)。改图时**完全不要碰它**。
+删改前后各读一次 Route Map 和 Section Photos 的数量,确认没有误伤。
+
+**5) 保存前仍然要回读 + 截图确认发布框。** 编辑已有产品和新建一样,
+`Publish for sale` 勾着保存就是当场上架。
 
 ---
 
