@@ -376,9 +376,22 @@ def dedupe(plan: ImagePlan, *, cross_slot: bool = True,
             kept.append((placement, None))
             continue
 
+        # The list thumbnail is *deliberately* the carousel hero — that is what
+        # `fill_carousel` builds it from, and the live catalogue does the same.
+        # Cross-slot dedupe used to read that intent as an accident: thumbnail
+        # outranks carousel in `slot_priority`, so it kept the thumbnail and
+        # deleted slide 0. The carousel then renumbered, promoting whatever was
+        # second, and `fill_carousel`'s leftover pool refilled the tail — so the
+        # product shipped with one slide fewer and a hero that no longer matched
+        # its thumbnail. WBCKWE (408) and WBCURC (409) both went out this way on
+        # 2026-08-13; WBCHET only escaped because it has no catalogue pool and
+        # therefore ran with cross_slot=False.
+        exempt = {"thumbnail", "carousel"}
         twin = next((k for k, sig in kept
                      if sig is not None
                      and (cross_slot or k.slot == placement.slot)
+                     and not (k.slot != placement.slot
+                              and {k.slot, placement.slot} == exempt)
                      and int((sig != signature).sum()) <= DUPLICATE_BITS), None)
         if twin is not None:
             removed.append(f"{placement.slot}#{placement.position} "

@@ -30,7 +30,8 @@ from PIL import Image
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 WORK = Path("work")
-PRODUCTS = ["WBCKWE", "WBCURC", "WBCHET"]
+# 默认是首批那三个;跑新产品时用 `python3 bin/review_page.py WBINC9` 覆盖。
+DEFAULT_PRODUCTS = ["WBCKWE", "WBCURC", "WBCHET"]
 UPSCALE_CEILING = 2.0
 PREVIEW_W = 460
 
@@ -89,6 +90,21 @@ def product_block(code: str) -> str:
 
     days_with = sorted({p["position"] for p in by_slot.get("section", [])})
     missing = [d for d in titles if d not in days_with]
+    # 一天没有配图有两种成因，页面必须分开说：没有景点条目的纯中转日（正常，
+    # 表单上那天本来就只有 section 抬头），和有景点却一张图都没找到的天
+    # （异常，是这个闸门要拦的东西）。首批三个产品全是前者，所以原来那句
+    # 「均为纯中转/抵离日」写死也没露馅；WBINC9 第 2 天有宁夏博物馆和览山公园
+    # 两个景点、stock 12 张没有一张是对的，正是后者。
+    # 册子有 15–22 条 highlights，表单只有 6 组输入，折叠是 make_payload 里的
+    # 编辑决策。签字页要显示真正会上传的那 6 条的条数，不是册子原始条数。
+    payload_path = WORK / code / "form_payload.json"
+    shipped_highlights = (len(json.loads(payload_path.read_text("utf-8"))["highlights"])
+                          if payload_path.exists() else 0)
+
+    has_items = {s["day"]: len(s.get("trip_items", [])) for s in itin["sections"]}
+    transit = [d for d in missing if not has_items.get(d)]
+    gaps = {g["position"]: g for g in plan.get("gaps", [])}
+    unfilled = [d for d in missing if has_items.get(d)]
 
     out = [f"""<section class="product">
   <header class="phead">
@@ -99,13 +115,16 @@ def product_block(code: str) -> str:
       <li><b>{itin['travel_days']}</b> 天</li>
       <li><b>{counts.get('section',0)}</b> 张日程图 / 覆盖 <b>{len(days_with)}</b> 天</li>
       <li><b>{counts.get('carousel',0)}</b> 张轮播</li>
-      <li><b>{len(itin['highlights'])}</b> 条 highlights</li>
+      <li><b>{shipped_highlights if shipped_highlights else len(itin['highlights'])}</b> 条 highlights{f'（自册子 {len(itin["highlights"])} 条折叠）' if shipped_highlights else ''}</li>
       <li><b>{sum(len(s.get('trip_items',[])) for s in itin['sections'])}</b> 个景点条目</li>
     </ul>
     <p class="prov">来源分布：""" + " · ".join(
         f"{ORIGIN_LABEL.get(k,(k,''))[0]} {v}" for k, v in sorted(origins.items())) + f"""</p>
     {'<p class="prov soft">⚠ ' + str(len(soft)) + ' 张超过放大上限，见下方标注</p>' if soft else ''}
-    {'<p class="prov">无配图日：' + '、'.join(f'D{d}（{titles[d][:34]}）' for d in missing) + ' — 均为纯中转/抵离日</p>' if missing else ''}
+    {'<p class="prov">无配图日：' + '、'.join(f'D{d}（{titles[d][:34]}）' for d in transit) + ' — 无景点条目的纯中转/抵离日</p>' if transit else ''}
+    {''.join('<p class="prov soft">⚠ D' + str(d) + '（' + titles[d][:34] + '）有景点却没有配图：'
+             + '、'.join(gaps[d]["subjects"]) [:150] + ' — 四级图源都没有可用的实拍，需要你决定：'
+             '留空、提供自有照片、或改用当日城市/区域实拍</p>' for d in unfilled if d in gaps)}
   </header>"""]
 
     for slot, label in [("thumbnail", "列表缩略图"), ("carousel", "轮播图"),
@@ -177,20 +196,25 @@ font-family:var(--mono);font-size:12px;color:var(--faint)}
 
 
 def main() -> None:
-    blocks = "\n".join(product_block(c) for c in PRODUCTS)
-    html = f"""<title>配图审核 · 三个产品上架前确认</title>
+    products = sys.argv[1:] or DEFAULT_PRODUCTS
+    blocks = "\n".join(product_block(c) for c in products)
+    n = len(products)
+    out = (WORK / "review_all.html" if products == DEFAULT_PRODUCTS
+           else WORK / f"review_{'_'.join(products)}.html")
+    html = f"""<title>配图审核 · {'、'.join(products)}</title>
 <style>{CSS}</style>
 <div class="wrap">
 <header>
-  <span class="eyebrow">Skybear 上架前审核 · 2026-08-12</span>
-  <h1>三个产品的配图，请过目</h1>
+  <span class="eyebrow">Skybear 上架前审核 · {'、'.join(products)}</span>
+  <h1>{'这个产品' if n == 1 else f'这 {n} 个产品'}的配图，请过目</h1>
   <p class="lede">每张图都标了来源。<b>册子自带</b>是产品组自己选的照片；<b>自家图库</b>
   是已在 webuytravel.sg 上线的同类产品照片，已授权、同风格；<b>外部图源</b>是搜来的，
   风险最高——每一张都经过看图确认主体，标题一律不采信。</p>
   <div class="gate">
     <b>确认后才会上传，而且只上传到草稿态。</b>
-    「Publish for sale」不会被勾选——生产新建表单上这个框默认是勾着的，上传程序会主动
-    取消并回读确认。上架那一下留给你点。
+    「Publish for sale」不会被勾选。这个框的默认值<b>不可预设</b>——2026-08-06 实测是
+    默认已勾，08-13 三次新建实测都是未勾——所以上传程序不依赖默认值，而是每次保存前
+    回读 DOM 并截图确认它没被勾上。上架那一下留给你点。
   </div>
 </header>
 {blocks}
@@ -199,7 +223,6 @@ def main() -> None:
   路线图按原样上传不裁切
 </footer>
 </div>"""
-    out = WORK / "review_all.html"
     out.write_text(html, encoding="utf-8")
     print(f"{out}  {out.stat().st_size/1024/1024:.1f} MB")
 

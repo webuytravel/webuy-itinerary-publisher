@@ -108,6 +108,16 @@ def run(code: str, work: Path, assets_root: Path) -> None:
         placement["src_path"] = str(new)
         placement["bytes"] = result.bytes
         placement["upscale"] = result.upscale
+        # `materialise` stamped the pre-swap ratio into the note, and the
+        # review page prints the note verbatim next to the tag it derives
+        # from `upscale`. Leaving it stale makes the page contradict itself
+        # — "放大 0.35×" beside "upscaled 2.04×" — right where a human is
+        # being asked to judge whether a picture is sharp enough to ship.
+        placement["note"] = re.sub(r"\s*\|?\s*upscaled [\d.]+×", "",
+                                   placement.get("note", "")).strip(" |")
+        if result.upscale > 1.0:
+            placement["note"] = (placement["note"]
+                                 + f" | upscaled {result.upscale:.2f}×").strip(" |")
         improved += 1
         print(f"  {slot} {placement['position']}: {ow}x{oh} -> {nw}x{nh} | "
               f"upscale {before:.2f}x -> {result.upscale:.2f}x")
