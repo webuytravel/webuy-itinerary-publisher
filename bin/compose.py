@@ -282,7 +282,28 @@ def fill_carousel(plan: ImagePlan, code: str, tours: list[str], target: int = 8,
         path = WORK / code / "cat" / f"{row['image_id']}.jpg"
         if str(path) not in used:
             pool.append(row)
-    picks = pool[:target]
+
+    # One slide per landmark first. The catalogue carries two or three shots
+    # of each place, and taking the pool in order gave WBCKWE a carousel of
+    # Huangguoshu Waterfall ×3 + Jiaxiu Pavilion ×2 + Huaguoyuan ×2 — seven
+    # slides, three subjects. `dedupe` never caught it: its same-subject rule
+    # is keyed on (slot, position), and every carousel image sits at its own
+    # position. Variety has to be chosen here, where the pool is picked.
+    seen: set[str] = set()
+    picks = []
+    for row in pool:
+        if row["alt"] in seen:
+            continue
+        seen.add(row["alt"])
+        picks.append(row)
+        if len(picks) == target:
+            break
+    # Only if the catalogue genuinely has fewer distinct landmarks than the
+    # carousel has slots do we fall back to a second shot of one we already
+    # used — a shorter carousel would be the worse trade.
+    if len(picks) < target:
+        chosen = {r["image_id"] for r in picks}
+        picks += [r for r in pool if r["image_id"] not in chosen][:target - len(picks)]
     pull_catalogue(code, picks)
     for i, row in enumerate(picks):
         plan.placements.append(Placement(
