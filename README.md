@@ -5,6 +5,9 @@ Planner 丢一份行程 **PDF 或 Word** 进来 → 行程结构和配图自动�
 
 产出的目标水准 = [www.webuytravel.sg](https://www.webuytravel.sg/group-tour/) 上已发布的产品页。
 
+> **业务同事要自己跑** → **[docs/COWORK_PROMPT.md](docs/COWORK_PROMPT.md)**,
+> 四个前置条件 + 一段可直接粘贴的起始提示词。不需要会写代码。
+>
 > **第一次上手** → **[docs/SETUP.md](docs/SETUP.md)**,装什么、配什么。
 > 结论是:跑通主流程需要配置的密钥数量是**零**。
 >
