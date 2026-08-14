@@ -29,6 +29,7 @@ work/_commons_probe/
 work/_media_platform_pool.json
 work/**/cand/
 work/**/cand_hi/
+work/**/cand_commons/
 work/**/_sheet_*.jpg
 
 # 配图审核页:图片以 base64 内嵌,单个 6–9 MB 且不可 diff,每重跑一次就在历史里
