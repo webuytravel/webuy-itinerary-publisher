@@ -486,6 +486,13 @@ OVERRIDES = {
         "d07": [("stock", ("d07_shenzhong_link", 1), "珠三角跨海大桥晨景;是否深中通道本体未确认")],
     },
     "WBINC9": {
+        # D2 宁夏博物馆 / 览山公园。08-13 这是 plan.gaps 里唯一一条「有景点却
+        # 一张图都没找到」的记录:stock 两轮 18 张全废(#2 是西安大雁塔,
+        # 6.7 记过)。08-14 Commons 直接给出馆舍外观和中庭,主体确定无误。
+        "d02": [("commons", ("d02_ningxia_museum_yinchuan", 5), "宁夏博物馆馆舍外观"),
+                ("commons", ("d02_ningxia_museum_yinchuan", 6), "馆内中庭")],
+        # D6 一百零八塔。stock 搜「一百零八塔」返回的是大理三塔(6.7),
+        # 所以原来这天靠册子那张 590px 顶着。Commons #1 带 GPS,塔阵水中倒影。
         # 沙坡头本体无合规实拍(stock 返回张掖丹霞和交河故城)。这两张不冒充
         # 沙坡头,卖的是当天真实存在的两个体验:沙丘徒步/滑沙,和沙漠营地观星。
         "d05": [("stock", ("d05_sand_sliding", 1), "沙丘实拍(未标注具体地点);沙坡头景区本体无合规实拍"),
@@ -632,6 +639,143 @@ TRIP_PICKS = {
         #   d10_karez_well_turpan —— 见上,美军在阿富汗
         #   d11_uyghur_family_home_visit_turpan —— 一张黑白老式全家福影楼照
         #   d05_hemu_village_tuvan_wooden_houses —— 与 d05_hemu_village 完全重复
+    ],
+    # 2026-08-14 WBINC9:63 张候选,留 20 张。
+    # 这一批的意义比数量大——6.7 记的三个「stock 完全给不出」的主体全部命中,
+    # 而且都带 GPS:西夏陵(stock 6 张里 3 张兵马俑 1 张大雁塔)、
+    # 一百零八塔(stock 返回大理三塔)、宁夏博物馆(两轮 18 张全废)。
+    "WBINC9": [
+        # D6 西夏陵:#1–#5 全部带 GPS,贺兰山下的夯土陵台。#6 是石构件残件。
+        ("commons", ("d06_western_xia_imperial_tombs_yinchua", 2), "陵台正面"),
+        ("commons", ("d06_western_xia_imperial_tombs_yinchua", 3), "两座陵台与远山"),
+        ("commons", ("d06_western_xia_imperial_tombs_yinchua", 1), "单座陵台"),
+        ("commons", ("d06_western_xia_imperial_tombs_yinchua", 4), "陵区全景"),
+        # D6 一百零八塔:#1 GPS 是水中倒影的塔阵,最标志性。#5 是展柜里的塔刹。
+        ("commons", ("d06_108_pagodas_qingtongxia_hillside_w", 1), "塔阵与水中倒影"),
+        ("commons", ("d06_108_pagodas_qingtongxia_hillside_w", 6), "塔阵侧面全景"),
+        ("commons", ("d06_108_pagodas_qingtongxia_hillside_w", 2), "单塔与游客"),
+        ("commons", ("d06_108_pagodas_qingtongxia_hillside_w", 3), "入口牌坊"),
+        # D2 宁夏博物馆:这是 6.11 里唯一一个「有景点却四级图源全废」的 gap。
+        # #5 是馆舍外观,#6 是中庭,#3 #4 是馆藏。
+        ("commons", ("d02_ningxia_museum_yinchuan", 5), "博物馆馆舍外观"),
+        ("commons", ("d02_ningxia_museum_yinchuan", 6), "中庭"),
+        ("commons", ("d02_ningxia_museum_yinchuan", 3), "绿釉鸱吻(馆藏)"),
+        ("commons", ("d02_ningxia_museum_yinchuan", 4), "石雕(馆藏)"),
+        # D4 黄河石林:赭色层理石柱,和册子那张形态一致(6.7 记的那次比对)。
+        ("commons", ("d04_yellow_river_stone_forest_jingtai_", 1), "石林柱群"),
+        ("commons", ("d04_yellow_river_stone_forest_jingtai_", 2), "峡谷与谷底村落"),
+        # D5 沙坡头:整块只有一张,而且正是「沙漠与黄河相接」那个标志性视角。
+        ("commons", ("d05_shapotou_scenic_area_zhongwei_dese", 1), "沙丘边缘俯瞰黄河绿洲"),
+        # D6 青铜峡:拦河大坝。
+        ("commons", ("d06_qingtongxia_yellow_river_grand_can", 1), "拦河大坝"),
+        ("commons", ("d06_qingtongxia_yellow_river_grand_can", 2), "坝体全景"),
+        # D3 阿拉善:#2 是沙丘倒映湖面,和现有 section 那张同一形态。
+        ("commons", ("d03_alxa_desert_off_road_vehicle_sand_", 2), "沙丘与湖"),
+        # D7 贺兰山岩画:六张全是**博物馆展柜里的岩画石板**,不是山体上的原位。
+        # 6.7 记的 stock 结果更差(一面无可辨刻画的岩壁 + 一块现代红漆题字石),
+        # 所以这两张至少是真的岩画,只是展陈形态。**签字时要知道这一点。**
+        ("commons", ("d07_helan_mountain_rock_art_petroglyph", 1), "岩画石板(展柜)"),
+        ("commons", ("d07_helan_mountain_rock_art_petroglyph", 4), "动物岩画(展柜)"),
+        # 整块否决:
+        #   d03_wulan_lake —— 四张都是南亚绿林湖(红衣人物),疑似斯里兰卡
+        #   d04_yellow_river_boat_ride —— 19 世纪港口油画、棕榈滩版画、殖民地建筑
+        #   d05_sand_sliding —— 美国西南部红砂岩,画面里还有拍摄者的影子
+        #   d05_desert_camp_stargazing —— 带 GPS 那张在俄勒冈州,其余无法定位
+        #   d06_wooden_movable_type_printing_block —— 全是**西方活字印刷**史料
+        #   d08_camel_cart —— 一张手工上色的老明信片
+        #   d08_underground_troop_caves —— **二战时期地堡里看地图的士兵**
+    ],
+    # 2026-08-14 WBCKWE:63 张候选,留 24 张。贵州这一批质量最高,
+    # 甲秀楼 / 梵净山 / 千户苗寨 三组几乎整组可用,而且大量带 GPS。
+    "WBCKWE": [
+        # D7 红云金顶:六张全部带 GPS。#2 是两峰之间那道拱桥,最标志性。
+        ("commons", ("d07_red_cloud_golden_summit_mount_fanj", 2), "两峰间的拱桥(雾中)"),
+        ("commons", ("d07_red_cloud_golden_summit_mount_fanj", 3), "拱桥另一角度"),
+        ("commons", ("d07_red_cloud_golden_summit_mount_fanj", 6), "蘑菇石"),
+        ("commons", ("d07_red_cloud_golden_summit_mount_fanj", 4), "金顶庙宇"),
+        ("commons", ("d07_red_cloud_golden_summit_mount_fanj", 1), "金顶石桥"),
+        # D7 梵净山:#6 是云海之上的金顶,画面最强。#4 是石槽题刻,没选。
+        ("commons", ("d07_mount_fanjing", 6), "云海之上的金顶"),
+        ("commons", ("d07_mount_fanjing", 3), "云中山脊与金顶"),
+        ("commons", ("d07_mount_fanjing", 5), "两峰之间的石阶夹缝"),
+        # D6 西江千户苗寨:#1 带 GPS,满山吊脚楼。
+        # 顺带一提:册子自己那张西江千户苗寨(821×458)至今没被用上,
+        # 是 3.6.1 里那 6 张「有主体、判定为真、却没进任何槽」之一。
+        ("commons", ("d06_xijiang_qianhu_miao_village", 1), "满山吊脚楼,带 GPS"),
+        ("commons", ("d06_xijiang_qianhu_miao_village", 2), "梯田与village"),
+        ("commons", ("d06_xijiang_qianhu_miao_village", 3), "河边木楼街市"),
+        ("commons", ("d06_xijiang_qianhu_miao_village", 4), "溪上吊脚楼"),
+        # D2 甲秀楼:#1–#5 全部带 GPS。
+        ("commons", ("d02_jiaxiu_pavilion", 1), "临水楼阁与拱桥"),
+        ("commons", ("d02_jiaxiu_pavilion", 3), "楼阁仰视"),
+        ("commons", ("d02_jiaxiu_pavilion", 5), "桥上与楼"),
+        ("commons", ("d02_jiaxiu_pavilion", 6), "楼阁与现代天际线"),
+        # D3 黄果树:#1 是入口广场、#3 是夜间彩灯,都没选。
+        ("commons", ("d03_huangguoshu_waterfall", 4), "瀑布全景"),
+        ("commons", ("d03_huangguoshu_waterfall", 2), "林隙中的瀑布"),
+        ("commons", ("d03_huangguoshu_waterfall", 5), "瀑布与碧潭"),
+        # D3 陡坡塘瀑布:整组六张都是同一处宽帘瀑布,取四张。
+        ("commons", ("d03_doupotang_waterfall", 1), "宽帘瀑布"),
+        ("commons", ("d03_doupotang_waterfall", 5), "侧逆光"),
+        ("commons", ("d03_doupotang_waterfall", 6), "全景"),
+        # D4 万峰林:锥状喀斯特峰丛与坝子农田。
+        ("commons", ("d04_wanfenglin_ten_thousand_peak_fores", 1), "峰丛与坝子"),
+        ("commons", ("d04_wanfenglin_ten_thousand_peak_fores", 2), "雾中峰丛"),
+        # 整块否决:
+        #   d04_bagua_field_wanfenglin —— **秘鲁的 Bagua 镇**(市政厅、教堂广场),
+        #     外加一面八卦镜(GPS 在德国 Münster)。八卦田撞了地名。
+        #   d05_maling_river_grand_canyon —— 人像、美国分布图、卧式自行车
+        #   d05_tianxing_gallery —— 一页中国古籍插图
+        #   d07_maitreya_sanctuary —— 一张黄昏河谷,形态像藏区
+        #   d03_water_curtain_cave —— #1 洞后看瀑布像是对的,但同组有
+        #     西游记塑像群和四张彩灯溶洞,整组可信度不足,**没选**
+        #   d06_xijiang_miao_village_stilt_houses —— 与 d06_xijiang_qianhu 重复
+    ],
+    # 2026-08-14 WBSZX1:76 张候选,留 21 张。
+    # 这一批出了本轮唯一一次**GPS 救场**:沙湾古镇(番禺)整块返回的是
+    # 长沙的沙湾公园,画面上是一模一样的「老街 + 地铁站」,靠看图看不出来,
+    # 是坐标 28.16/113.04 把它判掉的。
+    "WBSZX1": [
+        # D6 珠海渔女:整组都是真的。#5 带 GPS。
+        ("commons", ("d06_zhuhai_fisher_girl_statue_lovers_r", 2), "海中礁石上的渔女与城市"),
+        ("commons", ("d06_zhuhai_fisher_girl_statue_lovers_r", 5), "雾中渔女,带 GPS"),
+        ("commons", ("d06_zhuhai_fisher_girl_statue_lovers_r", 3), "观景平台与渔女"),
+        ("commons", ("d06_zhuhai_fisher_girl_statue_lovers_r", 1), "渔女仰视"),
+        ("commons", ("d06_zhuhai_fisher_girl_statue_lovers_r", 4), "「珠海渔女」题名石"),
+        # D3 佛山祖庙:6.7 记的 stock 结果是**广州中山纪念堂**。#6 带 GPS。
+        ("commons", ("d03_foshan_ancestral_temple", 6), "祖庙正面,带 GPS"),
+        ("commons", ("d03_foshan_ancestral_temple", 4), "石狮与庙门"),
+        ("commons", ("d03_foshan_ancestral_temple", 2), "门厅与宫灯"),
+        ("commons", ("d03_foshan_ancestral_temple", 1), "屋脊与庭院"),
+        # D4 广州塔:#4 带 GPS,夜间彩光。
+        ("commons", ("d04_canton_tower_guangzhou", 4), "夜间彩光塔与江"),
+        ("commons", ("d04_canton_tower_guangzhou", 3), "塔与城市、珠江"),
+        ("commons", ("d04_canton_tower_guangzhou", 5), "粉光夜景"),
+        # D4 珠江夜游:册子上印着这是**必需自费项目**(RMB 600 那一条,见第 7 节)。
+        ("commons", ("d04_pearl_river_night_cruise_guangzhou", 3), "蓝光游船,带 GPS"),
+        ("commons", ("d04_pearl_river_night_cruise_guangzhou", 2), "游船与斜拉桥夜景"),
+        # D4 花城广场:#4 画面里就有「花城广场」题名石。
+        ("commons", ("d04_huacheng_square_guangzhou_cbd_skyl", 4), "题名石与广州塔"),
+        ("commons", ("d04_huacheng_square_guangzhou_cbd_skyl", 5), "CBD 航拍"),
+        # D2 顺峰山牌坊:三张都是那座巨型三门牌坊。
+        ("commons", ("d02_shunfeng_mountain_archway_shunde_f", 2), "牌坊与园景"),
+        ("commons", ("d02_shunfeng_mountain_archway_shunde_f", 1), "夜间灯光牌坊"),
+        # D7 深中通道:#4 是主塔,#6 是海上远景。
+        ("commons", ("d07_shenzhen_zhongshan_link_sea_crossi", 4), "悬索桥主塔"),
+        ("commons", ("d07_shenzhen_zhongshan_link_sea_crossi", 6), "海上桥影"),
+        # D5 赤坎古镇:#2 是河涌边骑楼群航拍。
+        ("commons", ("d05_chikan_ancient_town_arcade_archite", 2), "河涌与骑楼群"),
+        # 整块否决:
+        #   d04_shawan_ancient_town_panyu_lingnan —— **长沙的沙湾公园**,
+        #     GPS 28.16/113.04。看图完全看不出来,这是 GPS 闸门救的一次。
+        #   d05_33_market_street_jiangmen_old_stre —— 英国/爱尔兰的街铺
+        #   d06_zhongshan_city_museum_street —— 双翼机、**一战坦克**、
+        #     **罗马军团人偶**、两台打字机
+        #   d06_sun_and_moon_shell_grand_theatre_z —— 新艺术插画、月相表、
+        #     两张纯黄色太阳图形。日月贝在册子里**有一张自带实拍**(727×803),
+        #     那是 3.6.1 里没被用上的六张之一,应该用它而不是外部源。
+        #   d02_happy_coast_shunde_waterfront_leis —— **澳洲弗雷泽岛的旅游广告**
+        #   d03_romance_of_guangdong —— 一只青花瓶和一页木刻书影
     ],
 }
 
