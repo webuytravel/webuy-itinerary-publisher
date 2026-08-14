@@ -311,7 +311,26 @@ Vue 是批处理的:**一个同步块里连发 N 次 click 只产生一次重渲
 | Mobile Display Image | `out_mobile/carousel_*_mobile.jpg`(竖版,必填) |
 | Route Map | `out/route_map_00.png` |
 | Section Photos(每天一个) | `out/section_<day>_*.jpg`,文档序 = 天序 |
-| Trip Photos / Cover Video | 留空(非必填) |
+| **Trip Photos**(每个景点卡一个) | `out/trip_<day>_<卡序>_*.jpg` |
+| Cover Video | 留空(非必填) |
+
+**Trip Photos 不再留空。** 2026-08-14 起五个产品的景点卡都挂了图(DESIGN 6.05),
+线上三个已发布的内蒙产品也是把图全挂在这一层、Section Photos 留空(DESIGN 1.1)。
+
+槽位定位:`file_upload` 要 `ref`,而一个 13 天产品有 40+ 个文件 input。
+**同一个 section 内 ref 是等差的:**
+
+```
+Section Photos = S，第 k 张卡(0 基)= S + 29×(k+1)
+```
+
+**跨 section 的步长不固定**(+28 和 +31 都见过),所以 section 本身的 ref 要
+逐个 `find`,只在 section 内部用等差推。取 ref 前**先展开全部 section**,
+折叠状态下拿不到里面的 input。
+
+> ⚠️ **`find` 的 "Trip Item N" 标注会错位。** WBCURC 第 6 天只有 3 张卡,
+> 一次 find 却标成 Trip Item 2/3/4。**数量对不上时不要顺着它猜**——换一句只问
+> 那一个 section 的 query 重查。传错槽会把图挂到别的景点卡上,而且从数字上看不出来。
 
 > **不要用本地 http 服务器 + fetch 取字节。** 从 https 页面 fetch `127.0.0.1`
 > **静默挂起**:promise 既不 resolve 也不 reject,console 一条报错都没有,看起来像
