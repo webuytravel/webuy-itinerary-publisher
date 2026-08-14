@@ -257,7 +257,7 @@ def build(
 
 def assign_trip_photos(plan: ImagePlan, sections: list[dict],
                        score, floor: float, per_item: int = 2,
-                       max_reuse: int = 2,
+                       max_reuse: int = 1,
                        extra: list[Placement] | None = None) -> ImagePlan:
     """Hang photos the plan already holds onto the landmark cards.
 
@@ -274,11 +274,21 @@ def assign_trip_photos(plan: ImagePlan, sections: list[dict],
     slots, so this cannot introduce a wrong-place photo that the review gate
     has not already seen.
 
-    `max_reuse` is the part worth keeping. Without it the one good photo of
-    a day gets stamped onto every card on that day, and the page turns into
-    the same image four times — which reads worse than an empty card. Two
-    is deliberate: enough for "the section tile and its own landmark card",
-    not enough to paper over a day.
+    **Two things a card must never show**, both found on the live products
+    after the first upload (2026-08-14) and both produced by this function:
+
+    * **the same photo as its own day's section tile.** 64 of the first 154
+      trip photos were byte-identical to the section image directly above
+      them, because section placements are in the pool and scored highest —
+      they are, after all, photos of that day. On the page it reads as the
+      picture having been pasted twice.
+    * **the same photo twice anywhere in the trip layer.** 28 repeated
+      within a single day.
+
+    So a day's own section sources are excluded from that day's pool, and
+    `max_reuse` counts uses *within this layer* — 1 by default, meaning a
+    file appears on at most one card in the whole product. Raising it above
+    1 brings the repeats back; it is a knob for coverage, not a default.
 
     `extra` carries photos approved for the cards but deliberately kept out
     of the section grid. The three live Inner Mongolia products put every
@@ -292,8 +302,15 @@ def assign_trip_photos(plan: ImagePlan, sections: list[dict],
     pool += list(extra or ())
     used: dict[str, int] = {}
 
+    # 当天 section 用掉的源文件,那天的卡一律不许再用。
+    section_src: dict[int, set[str]] = {}
+    for p in plan.placements:
+        if p.slot == "section":
+            section_src.setdefault(p.position, set()).add(p.src_path)
+
     for section in sections:
         day = section["day"]
+        blocked = section_src.get(day, set())
         for index, item in enumerate(section.get("trip_items", [])):
             subject = item.get("photo_subject") or item["title"]["en"]
             ranked = sorted(
@@ -303,6 +320,8 @@ def assign_trip_photos(plan: ImagePlan, sections: list[dict],
             for value, placement in ranked:
                 if taken >= per_item or value < floor:
                     break
+                if placement.src_path in blocked:
+                    continue
                 if used.get(placement.src_path, 0) >= max_reuse:
                     continue
                 used[placement.src_path] = used.get(placement.src_path, 0) + 1

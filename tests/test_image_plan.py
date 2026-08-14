@@ -131,9 +131,16 @@ def _exact(subject, label):
     return 1.0 if subject.lower() == label.lower() else 0.0
 
 
-def test_a_card_gets_the_day_photo_that_depicts_it():
-    plan = _plan(_section("/tmp/a.jpg", position=6, subject="Yungang Grottoes"))
-    assign_trip_photos(plan, _sections((6, ["Yungang Grottoes"])), _exact, 0.5)
+def _pick(src, subject, day=6):
+    """A photo approved for the cards but kept out of the section grid."""
+    return Placement(slot="trip", position=day, origin="web", subject=subject,
+                     source_ref="url", src_path=src)
+
+
+def test_a_card_gets_the_photo_that_depicts_it():
+    plan = _plan(_section("/tmp/sec.jpg", position=6, subject="Datong Wall"))
+    assign_trip_photos(plan, _sections((6, ["Yungang Grottoes"])), _exact, 0.5,
+                       extra=[_pick("/tmp/a.jpg", "Yungang Grottoes")])
     trips = plan.of("trip")
     assert [(t.position, t.trip_index) for t in trips] == [(6, 0)]
     assert trips[0].src_path == "/tmp/a.jpg"
@@ -147,31 +154,66 @@ def test_a_card_nothing_depicts_is_left_empty_rather_than_filled():
     assert plan.of("trip") == []
 
 
-def test_one_photo_cannot_paper_over_a_whole_day():
-    # Without the reuse cap the single good photo of a day lands on every
-    # card and the page shows the same picture four times.
-    plan = _plan(_section("/tmp/a.jpg", position=2, subject="Ordos Grassland"))
+def test_a_card_never_repeats_its_own_days_section_photo():
+    # Found on the live products after the first upload: 64 of 154 trip
+    # photos were byte-identical to the section tile directly above them,
+    # because section placements score highest — they are photos of that
+    # day. On the page it reads as the picture pasted twice.
+    plan = _plan(_section("/tmp/a.jpg", position=6, subject="Yungang Grottoes"))
+    assign_trip_photos(plan, _sections((6, ["Yungang Grottoes"])), _exact, 0.5)
+    assert plan.of("trip") == []
+
+
+def test_the_same_file_is_never_used_on_two_cards():
+    # 28 of the first 154 repeated inside a single day. `extra` supplies a
+    # photo that is not the day's section tile, so exactly one card gets it.
+    plan = _plan(_section("/tmp/sec.jpg", position=2, subject="Other"))
+    extra = [Placement(slot="trip", position=2, origin="web",
+                       subject="Ordos Grassland", source_ref="u",
+                       src_path="/tmp/grass.jpg")]
     sections = _sections((2, ["Ordos Grassland"] * 4))
-    assign_trip_photos(plan, sections, _exact, 0.5, per_item=1, max_reuse=2)
-    assert len(plan.of("trip")) == 2
+    assign_trip_photos(plan, sections, _exact, 0.5, extra=extra)
+    trips = plan.of("trip")
+    assert len(trips) == 1
+    assert len({t.src_path for t in trips}) == 1
+
+
+def test_reuse_is_a_coverage_knob_not_a_default():
+    # max_reuse > 1 brings the repeats back on purpose; measured on the five
+    # products it buys 4 more cards out of 126, which is not worth a visibly
+    # duplicated page. Default stays 1.
+    plan = _plan(_section("/tmp/sec.jpg", position=2, subject="Other"))
+    extra = [Placement(slot="trip", position=2, origin="web",
+                       subject="Ordos Grassland", source_ref="u",
+                       src_path="/tmp/grass.jpg")]
+    assign_trip_photos(plan, _sections((2, ["Ordos Grassland"] * 4)),
+                       _exact, 0.5, max_reuse=3)
+    assert len(plan.of("trip")) == 0   # same-day repeat still blocked
+    plan2 = _plan(_section("/tmp/sec.jpg", position=2, subject="Other"))
+    assign_trip_photos(plan2, _sections((2, ["Ordos Grassland"]),
+                                        (5, ["Ordos Grassland"])),
+                       _exact, 0.5, max_reuse=2, extra=extra)
+    assert len(plan2.of("trip")) == 2  # different days, reuse allowed
 
 
 def test_credit_and_licence_survive_onto_the_card():
     # Commons photos carry an author and a licence; a trip photo is another
     # public use of the same file, so it has to carry them too.
-    source = _section("/tmp/a.jpg", position=3, subject="Western Xia Tombs")
+    source = _pick("/tmp/a.jpg", "Western Xia Tombs", day=3)
     source.credit, source.license = "Thebrainchamber1", "CC BY-SA 4.0"
-    plan = _plan(source)
-    assign_trip_photos(plan, _sections((3, ["Western Xia Tombs"])), _exact, 0.5)
+    plan = _plan(_section("/tmp/sec.jpg", position=3, subject="Other"))
+    assign_trip_photos(plan, _sections((3, ["Western Xia Tombs"])), _exact, 0.5,
+                       extra=[source])
     trip = plan.of("trip")[0]
     assert (trip.credit, trip.license) == ("Thebrainchamber1", "CC BY-SA 4.0")
 
 
 def test_trip_photos_get_their_own_filenames_per_card(tmp_path):
     # position alone stops being unique once a day has several cards.
-    plan = _plan(_section(_photo(tmp_path / "a.png"), position=4, subject="X"),
-                 _section(_photo(tmp_path / "b.png"), position=4, subject="Y"))
-    assign_trip_photos(plan, _sections((4, ["X", "Y"])), _exact, 0.5)
+    plan = _plan(_section(_photo(tmp_path / "sec.png"), position=4, subject="S"))
+    extra = [_pick(str(_photo(tmp_path / "a.png")), "X", day=4),
+             _pick(str(_photo(tmp_path / "b.png")), "Y", day=4)]
+    assign_trip_photos(plan, _sections((4, ["X", "Y"])), _exact, 0.5, extra=extra)
     materialise(plan, tmp_path / "out")
     names = sorted(Path(p.out_path).name for p in plan.of("trip"))
     assert names == ["trip_04_00_0.jpg", "trip_04_01_0.jpg"]
