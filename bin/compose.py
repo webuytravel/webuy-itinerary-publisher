@@ -441,8 +441,19 @@ OVERRIDES = {
         "d03": [("file", "work/WBCURC/cand/d03_keketuohai_canyon.jpg",
                  "可可托海额尔齐斯大峡谷")],
         # 坎儿井:stock 全是泛化农业灌溉,无一是坎儿井。按区域规则改用新疆区域图。
+        # (08-14 复查:Commons 搜 Karez Well 返回的是美军在阿富汗的照片,更糟,
+        #  所以这条区域替代继续保留。)
         "d10": [("stock", ("d07_kokdala", 3),
                  "新疆区域实拍——坎儿井无合规实拍")],
+        # D1 抵达乌鲁木齐。行程原文只有「飞 + 接机 + 入住」,没有游览活动,
+        # 但用户 08-14 定的范围里包含它。入夜城市灯光配傍晚抵达是贴的。
+        "d01": [("commons", ("d12_free_time_in_urumqi", 1),
+                 "入夜城市灯光——抵达当晚")],
+        # D12 乌鲁木齐自由活动。08-13 这天是静默留空的(DESIGN 6.11),而它有
+        # 整个白天的自由活动,不是纯回程日——线上参考产品 tours/112 只有最后
+        # 一天是空的。城市背后的天山雪线是乌鲁木齐最好认的特征。
+        "d12": [("commons", ("d12_free_time_in_urumqi", 6),
+                 "乌鲁木齐城区与天山雪线")],
     },
     "WBCKWE": {
         "d01": [("stock", ("d01_chongqing", 2), "重庆夜景")],
@@ -564,6 +575,63 @@ TRIP_PICKS = {
         #   d02_ordos_grassland #1     —— 带 GPS 地点对,但画面平淡,远处只有一辆车
         #   d04_wannian_ice_cave_ningwu #1 —— 无 GPS,无法确认是宁武那一个;
         #      册子自己那张也被判 cgi_suspect,木构支撑的样子也像欧洲的盐矿
+    ],
+    # 2026-08-14 WBCURC:79 张候选,留 28 张。
+    # 整块否决里最离谱的一组是 `d10_karez_well_turpan` —— 退化搜 'Karez Well'
+    # 返回**美军在阿富汗的照片**(士兵、军犬、电台)加一张水文示意图。
+    # karez(坎儿井)在阿富汗也是常用词,而画面里没有任何东西提示这一点。
+    "WBCURC": [
+        # D7 果子沟大桥:整组都是真的,是这一轮最干净的一组。
+        ("commons", ("d07_guozigou_bridge", 1), "斜拉桥主体"),
+        ("commons", ("d07_guozigou_bridge", 3), "山谷中的桥,远景"),
+        ("commons", ("d07_guozigou_bridge", 2), "从公路上看"),
+        ("commons", ("d07_guozigou_bridge", 4), "桥塔入云"),
+        # D7 赛里木湖:#3 #6 带 GPS。#2 太平淡、#4 是加了黑边的日落条,没选。
+        ("commons", ("d07_sayram_lake", 3), "湖面与草岸、雪山"),
+        ("commons", ("d07_sayram_lake", 6), "蓝湖绿草雪山"),
+        ("commons", ("d07_sayram_lake", 1), "湖畔航标"),
+        # D4 喀纳斯湖:#2 是卫星图、#3 是水彩画,都没选。
+        ("commons", ("d04_kanas_lake", 5), "湖面、针叶林与雪山"),
+        ("commons", ("d04_kanas_lake", 6), "松绿色河湾"),
+        ("commons", ("d04_kanas_lake", 4), "河石与松绿水色"),
+        ("commons", ("d04_kanas_lake", 1), "晨雾草甸中的骑手,带 GPS"),
+        # D5 禾木村:#5 是城市公交车,没选。
+        ("commons", ("d05_hemu_village", 3), "秋色、河滩与木屋"),
+        ("commons", ("d05_hemu_village", 6), "河谷木屋航拍,带 GPS"),
+        ("commons", ("d05_hemu_village", 2), "村落俯瞰"),
+        ("commons", ("d05_hemu_village", 4), "雪季河谷全景"),
+        # D5 五彩滩:整个块只有这一张,而且是对的。
+        ("commons", ("d05_colourful_beach_burqin", 1), "赭色风蚀滩与河"),
+        # D9 独库公路:#1 是城镇街口、#5 #6 是路牌,没选。
+        ("commons", ("d09_duku_highway", 3), "盘山公路穿林谷"),
+        ("commons", ("d09_duku_highway", 4), "陡峭山谷中的公路"),
+        # D9 天山:#3–#6 是飞机上拍的雪山群,泛化,只留地面两张。
+        ("commons", ("d09_tianshan_mountains", 1), "冰川谷与雪峰,带 GPS"),
+        ("commons", ("d09_tianshan_mountains", 2), "金色日照雪峰,带 GPS"),
+        # D11 火焰山:#5 才是山体本身,#1–#3 是山下的骆驼项目。#6 是博物馆场景。
+        ("commons", ("d11_flaming_mountains_turpan", 5), "赭红色风蚀山脊"),
+        ("commons", ("d11_flaming_mountains_turpan", 1), "双峰驼(红鞍)"),
+        ("commons", ("d11_flaming_mountains_turpan", 2), "卧驼"),
+        # D11 打馕:#1 是博物馆里的古代馕、#3 那个露天灶像拉美,只留 #2。
+        ("commons", ("d11_xinjiang_naan_making", 2), "馕坑里贴馕的手"),
+        # D12 乌鲁木齐自由活动:#2 是线描、#3 是拼贴、#4 #5 是地铁线路图。
+        # #6 城市背后是天山雪线,是乌鲁木齐最好认的特征。
+        ("commons", ("d12_free_time_in_urumqi", 6), "城市天际线与天山雪山"),
+        ("commons", ("d12_free_time_in_urumqi", 1), "入夜城市灯光"),
+        # D7 薰衣草:#5 带 GPS 且在范围内,#3 无坐标但形态一致。
+        # #1 #2 是旧郁金香种子目录,#4 是老合影。
+        ("commons", ("d07_ili_lavender_museum", 5), "薰衣草田,带 GPS"),
+        # D8 草原:退化搜的是 'Xinjiang Grassland',所以这些只是**区域级**实拍,
+        # 不是篝火晚会本身。当区域图用可以,别当成那个活动的图。
+        ("commons", ("d08_xinjiang_grassland_bonfire_party", 2), "草原上的曲流河(区域图)"),
+        ("commons", ("d08_xinjiang_grassland_bonfire_party", 4), "牧人驱牛(区域图)"),
+        # 整块否决:
+        #   d02_kalamaili_nature_reserve —— 普氏野马,主体对,但 GPS 47.7/105.9
+        #     在蒙古国,不在卡拉麦里。这正是 GPS 闸门要拦的那一类。
+        #   d04_kanas_three_bays —— 两张画满动物的立方体渲染图,不知从何而来
+        #   d10_karez_well_turpan —— 见上,美军在阿富汗
+        #   d11_uyghur_family_home_visit_turpan —— 一张黑白老式全家福影楼照
+        #   d05_hemu_village_tuvan_wooden_houses —— 与 d05_hemu_village 完全重复
     ],
 }
 
