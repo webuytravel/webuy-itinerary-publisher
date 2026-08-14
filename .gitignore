@@ -24,6 +24,9 @@ work/**/norm/
 work/**/out/
 work/**/out_mobile/
 work/_probe_imgs/
+work/_commons_probe/
+# 中台素材库的探查缓存:内部文件命名和客户证明素材的标题,不进公开仓库
+work/_media_platform_pool.json
 work/**/cand/
 work/**/cand_hi/
 work/**/_sheet_*.jpg
