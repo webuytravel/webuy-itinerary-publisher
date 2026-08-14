@@ -86,6 +86,10 @@ def load(code: str) -> dict:
     ]
     cand = base / "candidates.json"
     out["stock"] = json.loads(cand.read_text("utf-8")) if cand.exists() else {}
+    # ②Commons(DESIGN 3.35)。和 stock 同一个形状,所以下面的 override 分支
+    # 只差 credit/license 要原样带过去——Commons 是唯一给出作者和许可证的源。
+    commons = base / "commons.json"
+    out["commons"] = json.loads(commons.read_text("utf-8")) if commons.exists() else {}
     return out
 
 
@@ -161,6 +165,22 @@ def compose(code: str, region: str, tours: list[str], overrides: dict) -> ImageP
                     slot="section", position=day, origin="catalogue",
                     subject=row["alt"], source_ref=row["tour"],
                     src_path="", credit="webuytravel.sg", note=note))
+            elif kind == "commons":
+                block, n = ref
+                row = next((c for c in data["commons"].get(block, {}).get("candidates", [])
+                            if c["n"] == n), None)
+                if row is None:
+                    raise SystemExit(
+                        f"{code} {key}: commons {block}#{n} 不在 commons.json 里 —— "
+                        f"先跑 `python3 bin/fetch_commons.py {code}`")
+                # credit/license 原样带走。DESIGN 3.3 那张图的教训:出处丢了就
+                # 只能靠 EXIF 反推,而 Commons 本来是把作者和许可证给全了的。
+                plan.placements.append(Placement(
+                    slot="section", position=day, origin="web",
+                    subject=data["commons"][block]["subject"],
+                    source_ref=row["url"], src_path=row["path"],
+                    credit=row.get("credit") or "Wikimedia Commons",
+                    license=row.get("license", ""), note=note))
             elif kind == "file":
                 plan.placements.append(Placement(
                     slot="section", position=day, origin="web",

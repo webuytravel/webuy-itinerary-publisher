@@ -1,0 +1,1318 @@
+{
+  "d02_ordos_grassland": {
+    "subject": "Ordos Grassland 鄂尔多斯草原",
+    "query": "Ordos Grassland",
+    "query_full": "Ordos Grassland",
+    "shrunk": false,
+    "day": 2,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/20130801%E5%86%85%E8%92%99%E9%84%82%E6%89%98%E5%85%8B%E6%97%97%E9%95%87%E5%8C%97%E5%B1%B1%E6%A2%81S313%E7%9C%81%E9%81%93%E8%BE%B9%E7%9B%9B%E5%A4%8F%E6%99%B4%E6%97%A5%E8%8D%89%E5%9C%BA_-_panoramio.jpg/3840px-20130801%E5%86%85%E8%92%99%E9%84%82%E6%89%98%E5%85%8B%E6%97%97%E9%95%87%E5%8C%97%E5%B1%B1%E6%A2%81S313%E7%9C%81%E9%81%93%E8%BE%B9%E7%9B%9B%E5%A4%8F%E6%99%B4%E6%97%A5%E8%8D%89%E5%9C%BA_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "20130801内蒙鄂托克旗镇北山梁S313省道边盛夏晴日草场 - panoramio.jpg",
+        "path": "work/WBCHET/cand_commons/d02_ordos_grassland_1.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "fish4fish",
+        "lat": 39.18580166666667,
+        "lon": 107.93059833333334
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/03/DiorhabdasublineataSfaxTunisia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "DiorhabdasublineataSfaxTunisia.jpg",
+        "path": "work/WBCHET/cand_commons/d02_ordos_grassland_2.jpg",
+        "license": "Public domain",
+        "credit": "JamesLTracy",
+        "lat": null,
+        "lon": null
+      }
+    ]
+  },
+  "d02_mongolian_hada_welcome_ceremony": {
+    "subject": "Mongolian Hada Welcome Ceremony 蒙古族献哈达迎宾仪式",
+    "query": "Mongolian Hada",
+    "query_full": "Mongolian Hada Welcome Ceremony",
+    "shrunk": true,
+    "day": 2,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/45/Hada_Hikoshiro.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Hada Hikoshiro.jpg",
+        "path": "work/WBCHET/cand_commons/d02_mongolian_hada_welcome_ceremony_1.jpg",
+        "license": "Public domain",
+        "credit": "Unknown authorUnknown author",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Hada_plebeja_%2827832268300%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Hada plebeja (27832268300).jpg",
+        "path": "work/WBCHET/cand_commons/d02_mongolian_hada_welcome_ceremony_2.jpg",
+        "license": "CC BY 2.0",
+        "credit": "Ben Sale from UK",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/28/Hada_plebeja_%2827841654160%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Hada plebeja (27841654160).jpg",
+        "path": "work/WBCHET/cand_commons/d02_mongolian_hada_welcome_ceremony_3.jpg",
+        "license": "CC BY 2.0",
+        "credit": "Ben Sale from UK",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/39/Vasile_Hada.01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Vasile Hada.01.jpg",
+        "path": "work/WBCHET/cand_commons/d02_mongolian_hada_welcome_ceremony_4.jpg",
+        "license": "Public domain",
+        "credit": "Unknown authorUnknown author",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/19/Vasile_Hada.02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Vasile Hada.02.jpg",
+        "path": "work/WBCHET/cand_commons/d02_mongolian_hada_welcome_ceremony_5.jpg",
+        "license": "Public domain",
+        "credit": "Unknown authorUnknown author",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Vasile_Hada.03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Vasile Hada.03.jpg",
+        "path": "work/WBCHET/cand_commons/d02_mongolian_hada_welcome_ceremony_6.jpg",
+        "license": "Public domain",
+        "credit": "Unknown authorUnknown author",
+        "lat": null,
+        "lon": null
+      }
+    ]
+  },
+  "d02_mongolian_traditional_costume": {
+    "subject": "Mongolian Traditional Costume 蒙古族传统服饰",
+    "query": "Mongolian Traditional Costume",
+    "query_full": "Mongolian Traditional Costume",
+    "shrunk": false,
+    "day": 2,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Mongolian_State_Ceremonial_Costume.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Mongolian State Ceremonial Costume.jpg",
+        "path": "work/WBCHET/cand_commons/d02_mongolian_traditional_costume_1.jpg",
+        "license": "CC0",
+        "credit": "Gary Todd",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Mongolian_Traditional_Culture_Lama_Costume_%2834898730083%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Mongolian Traditional Culture Lama Costume (34898730083).jpg",
+        "path": "work/WBCHET/cand_commons/d02_mongolian_traditional_costume_2.jpg",
+        "license": "CC0",
+        "credit": "Gary Todd from Xinzheng, China",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/71/Mongolian_Traditional_Culture_Lama_Costume_%2835577583951%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Mongolian Traditional Culture Lama Costume (35577583951).jpg",
+        "path": "work/WBCHET/cand_commons/d02_mongolian_traditional_costume_3.jpg",
+        "license": "CC0",
+        "credit": "Gary Todd from Xinzheng, China",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/59/Mongolian_Traditional_Culture_Shaman_Costume_%2835321046070%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Mongolian Traditional Culture Shaman Costume (35321046070).jpg",
+        "path": "work/WBCHET/cand_commons/d02_mongolian_traditional_costume_4.jpg",
+        "license": "CC0",
+        "credit": "Gary Todd from Xinzheng, China",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Mongolian_Traditional_Culture_Shaman_Costume_%2835577599171%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Mongolian Traditional Culture Shaman Costume (35577599171).jpg",
+        "path": "work/WBCHET/cand_commons/d02_mongolian_traditional_costume_5.jpg",
+        "license": "CC0",
+        "credit": "Gary Todd from Xinzheng, China",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Traditional_costume_festival.jpg/3840px-Traditional_costume_festival.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Traditional costume festival.jpg",
+        "path": "work/WBCHET/cand_commons/d02_mongolian_traditional_costume_6.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Orgio89",
+        "lat": null,
+        "lon": null
+      }
+    ]
+  },
+  "d02_ordos_grassland_yurts": {
+    "subject": "Ordos Grassland Yurts 鄂尔多斯草原蒙古包",
+    "query": "Ordos Grassland",
+    "query_full": "Ordos Grassland Yurts",
+    "shrunk": true,
+    "day": 2,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/20130801%E5%86%85%E8%92%99%E9%84%82%E6%89%98%E5%85%8B%E6%97%97%E9%95%87%E5%8C%97%E5%B1%B1%E6%A2%81S313%E7%9C%81%E9%81%93%E8%BE%B9%E7%9B%9B%E5%A4%8F%E6%99%B4%E6%97%A5%E8%8D%89%E5%9C%BA_-_panoramio.jpg/3840px-20130801%E5%86%85%E8%92%99%E9%84%82%E6%89%98%E5%85%8B%E6%97%97%E9%95%87%E5%8C%97%E5%B1%B1%E6%A2%81S313%E7%9C%81%E9%81%93%E8%BE%B9%E7%9B%9B%E5%A4%8F%E6%99%B4%E6%97%A5%E8%8D%89%E5%9C%BA_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "20130801内蒙鄂托克旗镇北山梁S313省道边盛夏晴日草场 - panoramio.jpg",
+        "path": "work/WBCHET/cand_commons/d02_ordos_grassland_yurts_1.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "fish4fish",
+        "lat": 39.18580166666667,
+        "lon": 107.93059833333334
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/03/DiorhabdasublineataSfaxTunisia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "DiorhabdasublineataSfaxTunisia.jpg",
+        "path": "work/WBCHET/cand_commons/d02_ordos_grassland_yurts_2.jpg",
+        "license": "Public domain",
+        "credit": "JamesLTracy",
+        "lat": null,
+        "lon": null
+      }
+    ]
+  },
+  "d02_grassland_bonfire_party": {
+    "subject": "Grassland Bonfire Party 草原篝火晚会",
+    "query": "Grassland Bonfire",
+    "query_full": "Grassland Bonfire Party",
+    "shrunk": true,
+    "day": 2,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Bonfire_field%2C_Haddenham_-_geograph.org.uk_-_4187489.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Bonfire field, Haddenham - geograph.org.uk - 4187489.jpg",
+        "path": "work/WBCHET/cand_commons/d02_grassland_bonfire_party_1.jpg",
+        "license": "CC BY-SA 2.0",
+        "credit": "Andrea",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Bonfire_view_-_geograph.org.uk_-_5835210.jpg/3840px-Bonfire_view_-_geograph.org.uk_-_5835210.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Bonfire view - geograph.org.uk - 5835210.jpg",
+        "path": "work/WBCHET/cand_commons/d02_grassland_bonfire_party_2.jpg",
+        "license": "CC BY-SA 2.0",
+        "credit": "Michael Dibb",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Ilfracombe_%2C_Bonfire_-_geograph.org.uk_-_6735409.jpg/3840px-Ilfracombe_%2C_Bonfire_-_geograph.org.uk_-_6735409.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Ilfracombe , Bonfire - geograph.org.uk - 6735409.jpg",
+        "path": "work/WBCHET/cand_commons/d02_grassland_bonfire_party_3.jpg",
+        "license": "CC BY-SA 2.0",
+        "credit": "Lewis Clarke",
+        "lat": 51.188635230032155,
+        "lon": -4.13021452991453
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/32/Jacobs_Well_bonfire_-_geograph.org.uk_-_4716076.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Jacobs Well bonfire - geograph.org.uk - 4716076.jpg",
+        "path": "work/WBCHET/cand_commons/d02_grassland_bonfire_party_4.jpg",
+        "license": "CC BY-SA 2.0",
+        "credit": "Alan Hunt",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Large_Bonfire_-_geograph.org.uk_-_7417953.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Large Bonfire - geograph.org.uk - 7417953.jpg",
+        "path": "work/WBCHET/cand_commons/d02_grassland_bonfire_party_5.jpg",
+        "license": "CC BY-SA 2.0",
+        "credit": "Jay Pea",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Site_of_a_bonfire_-_geograph.org.uk_-_7990157.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Site of a bonfire - geograph.org.uk - 7990157.jpg",
+        "path": "work/WBCHET/cand_commons/d02_grassland_bonfire_party_6.jpg",
+        "license": "CC BY-SA 2.0",
+        "credit": "Richard Sutcliffe",
+        "lat": null,
+        "lon": null
+      }
+    ]
+  },
+  "d03_xiangshawan_desert": {
+    "subject": "Xiangshawan Desert 响沙湾沙漠",
+    "query": "Xiangshawan Desert",
+    "query_full": "Xiangshawan Desert",
+    "shrunk": false,
+    "day": 3,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Desert_vehicle_Xiangshawan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Desert vehicle Xiangshawan.jpg",
+        "path": "work/WBCHET/cand_commons/d03_xiangshawan_desert_1.jpg",
+        "license": "CC0",
+        "credit": "Muzzleflash",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Kubuqi.chameaux.jpg/3840px-Kubuqi.chameaux.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Kubuqi.chameaux.jpg",
+        "path": "work/WBCHET/cand_commons/d03_xiangshawan_desert_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Popolon",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Kubuqi_desert.tout_terrain.jpg/3840px-Kubuqi_desert.tout_terrain.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Kubuqi desert.tout terrain.jpg",
+        "path": "work/WBCHET/cand_commons/d03_xiangshawan_desert_3.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Popolon",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Nomad_Theater_Xiangshawan.jpg/3840px-Nomad_Theater_Xiangshawan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Nomad Theater Xiangshawan.jpg",
+        "path": "work/WBCHET/cand_commons/d03_xiangshawan_desert_4.jpg",
+        "license": "CC0",
+        "credit": "Muzzleflash",
+        "lat": 40.252842972222226,
+        "lon": 109.92249097222222
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Swimming_pool_in_Xiangshawan.jpg/1920px-Swimming_pool_in_Xiangshawan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Swimming pool in Xiangshawan.jpg",
+        "path": "work/WBCHET/cand_commons/d03_xiangshawan_desert_5.jpg",
+        "license": "CC0",
+        "credit": "Muzzleflash",
+        "lat": 40.25363980555556,
+        "lon": 109.9208336388889
+      }
+    ]
+  },
+  "d03_xiangshawan_desert_cableway": {
+    "subject": "Xiangshawan Desert Cableway 响沙湾沙漠索道",
+    "query": "Xiangshawan Desert",
+    "query_full": "Xiangshawan Desert Cableway",
+    "shrunk": true,
+    "day": 3,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Desert_vehicle_Xiangshawan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Desert vehicle Xiangshawan.jpg",
+        "path": "work/WBCHET/cand_commons/d03_xiangshawan_desert_cableway_1.jpg",
+        "license": "CC0",
+        "credit": "Muzzleflash",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Kubuqi.chameaux.jpg/3840px-Kubuqi.chameaux.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Kubuqi.chameaux.jpg",
+        "path": "work/WBCHET/cand_commons/d03_xiangshawan_desert_cableway_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Popolon",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Kubuqi_desert.tout_terrain.jpg/3840px-Kubuqi_desert.tout_terrain.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Kubuqi desert.tout terrain.jpg",
+        "path": "work/WBCHET/cand_commons/d03_xiangshawan_desert_cableway_3.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Popolon",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Nomad_Theater_Xiangshawan.jpg/3840px-Nomad_Theater_Xiangshawan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Nomad Theater Xiangshawan.jpg",
+        "path": "work/WBCHET/cand_commons/d03_xiangshawan_desert_cableway_4.jpg",
+        "license": "CC0",
+        "credit": "Muzzleflash",
+        "lat": 40.252842972222226,
+        "lon": 109.92249097222222
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Swimming_pool_in_Xiangshawan.jpg/1920px-Swimming_pool_in_Xiangshawan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Swimming pool in Xiangshawan.jpg",
+        "path": "work/WBCHET/cand_commons/d03_xiangshawan_desert_cableway_5.jpg",
+        "license": "CC0",
+        "credit": "Muzzleflash",
+        "lat": 40.25363980555556,
+        "lon": 109.9208336388889
+      }
+    ]
+  },
+  "d03_xiangshawan_sand_dunes_camel_carav": {
+    "subject": "Xiangshawan Sand Dunes Camel Caravan 响沙湾沙漠驼队",
+    "query": "Xiangshawan Sand Dunes Camel Caravan",
+    "query_full": "Xiangshawan Sand Dunes Camel Caravan",
+    "shrunk": false,
+    "day": 3,
+    "candidates": []
+  },
+  "d03_optional_desert_activities_and_ret": {
+    "subject": "Optional Desert Activities and Return to Ordos",
+    "query": "Optional Desert",
+    "query_full": "Optional Desert Activities and Return to Ordos",
+    "shrunk": true,
+    "day": 3,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/MonsClaudianus01_83.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "MonsClaudianus01 83.jpg",
+        "path": "work/WBCHET/cand_commons/d03_optional_desert_activities_and_ret_1.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Хрюша",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/30/MonsClaudianus02_83.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "MonsClaudianus02 83.jpg",
+        "path": "work/WBCHET/cand_commons/d03_optional_desert_activities_and_ret_2.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Хрюша",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/73/MonsClaudianus03_83.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "MonsClaudianus03 83.jpg",
+        "path": "work/WBCHET/cand_commons/d03_optional_desert_activities_and_ret_3.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Хрюша",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Povray_dunes_of_sandy_desert_1.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Povray dunes of sandy desert 1.png",
+        "path": "work/WBCHET/cand_commons/d03_optional_desert_activities_and_ret_4.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Merikanto",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Sako_TRG-42_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Sako TRG-42 2.jpg",
+        "path": "work/WBCHET/cand_commons/d03_optional_desert_activities_and_ret_5.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Francis Flinch",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Tunisia-3980_-_No_Bus...._%288040778048%29.jpg/3840px-Tunisia-3980_-_No_Bus...._%288040778048%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Tunisia-3980 - No Bus.... (8040778048).jpg",
+        "path": "work/WBCHET/cand_commons/d03_optional_desert_activities_and_ret_6.jpg",
+        "license": "CC BY-SA 2.0",
+        "credit": "Dennis G. Jarvis",
+        "lat": null,
+        "lon": null
+      }
+    ]
+  },
+  "d04_wannian_ice_cave_ningwu": {
+    "subject": "Wannian Ice Cave Ningwu 宁武万年冰洞",
+    "query": "Wannian Ice Cave Ningwu",
+    "query_full": "Wannian Ice Cave Ningwu",
+    "shrunk": false,
+    "day": 4,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Wannian_Ice_Cave.JPG/3840px-Wannian_Ice_Cave.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Wannian Ice Cave.JPG",
+        "path": "work/WBCHET/cand_commons/d04_wannian_ice_cave_ningwu_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Underbar dk",
+        "lat": null,
+        "lon": null
+      }
+    ]
+  },
+  "d04_wannian_ice_cave_ice_formations": {
+    "subject": "Wannian Ice Cave ice formations 万年冰洞冰柱冰瀑",
+    "query": "Wannian Ice Cave ice",
+    "query_full": "Wannian Ice Cave ice formations",
+    "shrunk": true,
+    "day": 4,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Wannian_Ice_Cave.JPG/3840px-Wannian_Ice_Cave.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Wannian Ice Cave.JPG",
+        "path": "work/WBCHET/cand_commons/d04_wannian_ice_cave_ice_formations_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Underbar dk",
+        "lat": null,
+        "lon": null
+      }
+    ]
+  },
+  "d04_ningwu_hanging_village": {
+    "subject": "Ningwu Hanging Village 宁武悬空村",
+    "query": "Ningwu Hanging Village",
+    "query_full": "Ningwu Hanging Village",
+    "shrunk": false,
+    "day": 4,
+    "candidates": []
+  },
+  "d05_xinzhou_ancient_city": {
+    "subject": "Xinzhou Ancient City 忻州古城",
+    "query": "Xinzhou Ancient",
+    "query_full": "Xinzhou Ancient City",
+    "shrunk": true,
+    "day": 5,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Shang_Bronze_Axe_08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Shang Bronze Axe 08.jpg",
+        "path": "work/WBCHET/cand_commons/d05_xinzhou_ancient_city_1.jpg",
+        "license": "CC0",
+        "credit": "Gary Lee Todd, Ph.D.",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Shang_Bronze_Dagger.jpg/3840px-Shang_Bronze_Dagger.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Shang Bronze Dagger.jpg",
+        "path": "work/WBCHET/cand_commons/d05_xinzhou_ancient_city_2.jpg",
+        "license": "CC0",
+        "credit": "Gary Todd",
+        "lat": null,
+        "lon": null
+      }
+    ]
+  },
+  "d05_yingxian_wooden_pagoda": {
+    "subject": "Yingxian Wooden Pagoda 应县木塔",
+    "query": "Yingxian Wooden Pagoda",
+    "query_full": "Yingxian Wooden Pagoda",
+    "shrunk": false,
+    "day": 5,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/46/Fogong_Pagoda_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Fogong Pagoda 1.jpg",
+        "path": "work/WBCHET/cand_commons/d05_yingxian_wooden_pagoda_1.jpg",
+        "license": "CC BY 2.0",
+        "credit": "Patrick Streule",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Fogong_temple_corner_dougong.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Fogong temple corner dougong.JPG",
+        "path": "work/WBCHET/cand_commons/d05_yingxian_wooden_pagoda_2.jpg",
+        "license": "CC BY 3.0",
+        "credit": "Gisling",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Pagoda_of_Fogong_Temple_at_Dust.jpg/3840px-Pagoda_of_Fogong_Temple_at_Dust.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Pagoda of Fogong Temple at Dust.jpg",
+        "path": "work/WBCHET/cand_commons/d05_yingxian_wooden_pagoda_3.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Charlie fong",
+        "lat": 39.56451466666666,
+        "lon": 113.18090925
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Pagoda_of_Fogong_Temple_from_the_Top.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Pagoda of Fogong Temple from the Top.jpg",
+        "path": "work/WBCHET/cand_commons/d05_yingxian_wooden_pagoda_4.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Charlie fong",
+        "lat": 39.56527222222222,
+        "lon": 113.18198055555555
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/The_Fogong_Pagoda_gate_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "The Fogong Pagoda gate 1.jpg",
+        "path": "work/WBCHET/cand_commons/d05_yingxian_wooden_pagoda_5.jpg",
+        "license": "CC BY 2.0",
+        "credit": "Patrick Streule",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/5d/%E4%BD%9B%E5%AE%AE%E5%AF%BA%E9%87%8B%E8%BF%A6%E5%A1%94_Fogong_Temple_Shakya_Timber_Pagoda_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "佛宮寺釋迦塔 Fogong Temple Shakya Timber Pagoda - panoramio.jpg",
+        "path": "work/WBCHET/cand_commons/d05_yingxian_wooden_pagoda_6.jpg",
+        "license": "CC BY 3.0",
+        "credit": "lienyuan lee",
+        "lat": null,
+        "lon": null
+      }
+    ]
+  },
+  "d05_yingxian_wooden_pagoda_wooden_stru": {
+    "subject": "Yingxian Wooden Pagoda wooden structure 应县木塔木构榫卯",
+    "query": "Yingxian Wooden Pagoda wooden structure",
+    "query_full": "Yingxian Wooden Pagoda wooden structure",
+    "shrunk": false,
+    "day": 5,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/16/Dunhuang_0507_336.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Dunhuang 0507 336.jpg",
+        "path": "work/WBCHET/cand_commons/d05_yingxian_wooden_pagoda_wooden_stru_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "G41rn8",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Dunhuang_0507_338.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Dunhuang 0507 338.jpg",
+        "path": "work/WBCHET/cand_commons/d05_yingxian_wooden_pagoda_wooden_stru_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "G41rn8",
+        "lat": null,
+        "lon": null
+      }
+    ]
+  },
+  "d05_datong_ancient_city": {
+    "subject": "Datong Ancient City 大同古城",
+    "query": "Datong Ancient City",
+    "query_full": "Datong Ancient City",
+    "shrunk": false,
+    "day": 5,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Datong_Ancient_City_Wall_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Datong Ancient City Wall 04.jpg",
+        "path": "work/WBCHET/cand_commons/d05_datong_ancient_city_1.jpg",
+        "license": "CC BY 4.0",
+        "credit": "xiquinhosilva",
+        "lat": 40.100368333333336,
+        "lon": 113.29549666666666
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Datong_Ancient_City_Wall_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Datong Ancient City Wall 05.jpg",
+        "path": "work/WBCHET/cand_commons/d05_datong_ancient_city_2.jpg",
+        "license": "CC BY 4.0",
+        "credit": "xiquinhosilva",
+        "lat": 40.102873333333335,
+        "lon": 113.28272166666666
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Datong_Ancient_City_Wall_09.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Datong Ancient City Wall 09.jpg",
+        "path": "work/WBCHET/cand_commons/d05_datong_ancient_city_3.jpg",
+        "license": "CC BY 4.0",
+        "credit": "xiquinhosilva",
+        "lat": 40.09203333333333,
+        "lon": 113.30400166666666
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Datong_Ancient_City_Wall_10.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Datong Ancient City Wall 10.jpg",
+        "path": "work/WBCHET/cand_commons/d05_datong_ancient_city_4.jpg",
+        "license": "CC BY 4.0",
+        "credit": "xiquinhosilva",
+        "lat": 40.0921,
+        "lon": 113.30765
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Datong_Ancient_City_Wall_11.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Datong Ancient City Wall 11.jpg",
+        "path": "work/WBCHET/cand_commons/d05_datong_ancient_city_5.jpg",
+        "license": "CC BY 4.0",
+        "credit": "xiquinhosilva",
+        "lat": 40.09157,
+        "lon": 113.306145
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Datong_Ancient_City_Wall_12.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Datong Ancient City Wall 12.jpg",
+        "path": "work/WBCHET/cand_commons/d05_datong_ancient_city_6.jpg",
+        "license": "CC BY 4.0",
+        "credit": "xiquinhosilva",
+        "lat": 40.09157,
+        "lon": 113.306145
+      }
+    ]
+  },
+  "d06_hanging_temple_hunyuan": {
+    "subject": "Hanging Temple Hunyuan 浑源悬空寺",
+    "query": "Hanging Temple Hunyuan",
+    "query_full": "Hanging Temple Hunyuan",
+    "shrunk": false,
+    "day": 6,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Hanging_Temple_-_panoramio.jpg/3840px-Hanging_Temple_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Hanging Temple - panoramio.jpg",
+        "path": "work/WBCHET/cand_commons/d06_hanging_temple_hunyuan_1.jpg",
+        "license": "CC BY 3.0",
+        "credit": "Raffaele Nicolussi",
+        "lat": 39.660357999999995,
+        "lon": 113.70842100007988
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Hanging_Temple_-_panoramio_%281%29.jpg/3840px-Hanging_Temple_-_panoramio_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Hanging Temple - panoramio (1).jpg",
+        "path": "work/WBCHET/cand_commons/d06_hanging_temple_hunyuan_2.jpg",
+        "license": "CC BY 3.0",
+        "credit": "Raffaele Nicolussi",
+        "lat": 39.661775430022516,
+        "lon": 113.71225787990844
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Hunyuan_Xuankong_Si_2013.08.30_09-02-11.jpg/3840px-Hunyuan_Xuankong_Si_2013.08.30_09-02-11.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Hunyuan Xuankong Si 2013.08.30 09-02-11.jpg",
+        "path": "work/WBCHET/cand_commons/d06_hanging_temple_hunyuan_3.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Zhangzhugang",
+        "lat": 39.66093,
+        "lon": 113.70957833333334
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Hunyuan_Xuankong_Si_2013.08.30_09-13-46.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Hunyuan Xuankong Si 2013.08.30 09-13-46.jpg",
+        "path": "work/WBCHET/cand_commons/d06_hanging_temple_hunyuan_4.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Zhangzhugang",
+        "lat": 39.658825,
+        "lon": 113.709775
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/62/Hunyuan_Xuankong_Si_2013.08.30_09-42-51.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Hunyuan Xuankong Si 2013.08.30 09-42-51.jpg",
+        "path": "work/WBCHET/cand_commons/d06_hanging_temple_hunyuan_5.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Zhangzhugang",
+        "lat": 39.65918,
+        "lon": 113.71011666666666
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Hunyuan_Xuankong_Si_2013.08.30_09-44-26.jpg/3840px-Hunyuan_Xuankong_Si_2013.08.30_09-44-26.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Hunyuan Xuankong Si 2013.08.30 09-44-26.jpg",
+        "path": "work/WBCHET/cand_commons/d06_hanging_temple_hunyuan_6.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Zhangzhugang",
+        "lat": 39.65927,
+        "lon": 113.70969166666667
+      }
+    ]
+  },
+  "d06_shuttle_included_exterior_viewing": {
+    "subject": "Shuttle Included, Exterior Viewing",
+    "query": "Shuttle Included, Exterior Viewing",
+    "query_full": "Shuttle Included, Exterior Viewing",
+    "shrunk": false,
+    "day": 6,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/SShuttle_Exterior-Medium_resolution_%28Space_Shuttle_Discovery%29_140.tif/lossy-page1-3840px-SShuttle_Exterior-Medium_resolution_%28Space_Shuttle_Discovery%29_140.tif.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "SShuttle Exterior-Medium resolution (Space Shuttle Discovery) 140.tif",
+        "path": "work/WBCHET/cand_commons/d06_shuttle_included_exterior_viewing_1.jpg",
+        "license": "CC0",
+        "credit": "Smithsonian Institute\nNASA\n3D model: NASA/Smithsonian Institute/Support generous",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/SShuttle_Exterior-Medium_resolution_%28Space_Shuttle_Discovery%29_142.tif/lossy-page1-3840px-SShuttle_Exterior-Medium_resolution_%28Space_Shuttle_Discovery%29_142.tif.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "SShuttle Exterior-Medium resolution (Space Shuttle Discovery) 142.tif",
+        "path": "work/WBCHET/cand_commons/d06_shuttle_included_exterior_viewing_2.jpg",
+        "license": "CC0",
+        "credit": "Smithsonian Institute\nNASA\n3D model: NASA/Smithsonian Institute/Support generous",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/SShuttle_Exterior-Medium_resolution_%28Space_Shuttle_Discovery%29_145.tif/lossy-page1-3840px-SShuttle_Exterior-Medium_resolution_%28Space_Shuttle_Discovery%29_145.tif.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "SShuttle Exterior-Medium resolution (Space Shuttle Discovery) 145.tif",
+        "path": "work/WBCHET/cand_commons/d06_shuttle_included_exterior_viewing_3.jpg",
+        "license": "CC0",
+        "credit": "Smithsonian Institute\nNASA\n3D model: NASA/Smithsonian Institute/Support generous",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/SShuttle_Exterior-Medium_resolution_%28Space_Shuttle_Discovery%29_156.tif/lossy-page1-3840px-SShuttle_Exterior-Medium_resolution_%28Space_Shuttle_Discovery%29_156.tif.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "SShuttle Exterior-Medium resolution (Space Shuttle Discovery) 156.tif",
+        "path": "work/WBCHET/cand_commons/d06_shuttle_included_exterior_viewing_4.jpg",
+        "license": "CC0",
+        "credit": "Smithsonian Institute\nNASA\n3D model: NASA/Smithsonian Institute/Support generous",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/SShuttle_Exterior-Medium_resolution_%28Space_Shuttle_Discovery%29_161.tif/lossy-page1-3840px-SShuttle_Exterior-Medium_resolution_%28Space_Shuttle_Discovery%29_161.tif.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "SShuttle Exterior-Medium resolution (Space Shuttle Discovery) 161.tif",
+        "path": "work/WBCHET/cand_commons/d06_shuttle_included_exterior_viewing_5.jpg",
+        "license": "CC0",
+        "credit": "Smithsonian Institute\nNASA\n3D model: NASA/Smithsonian Institute/Support generous",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/SShuttle_Exterior-Medium_resolution_%28Space_Shuttle_Discovery%29_164.tif/lossy-page1-3840px-SShuttle_Exterior-Medium_resolution_%28Space_Shuttle_Discovery%29_164.tif.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "SShuttle Exterior-Medium resolution (Space Shuttle Discovery) 164.tif",
+        "path": "work/WBCHET/cand_commons/d06_shuttle_included_exterior_viewing_6.jpg",
+        "license": "CC0",
+        "credit": "Smithsonian Institute\nNASA\n3D model: NASA/Smithsonian Institute/Support generous",
+        "lat": null,
+        "lon": null
+      }
+    ]
+  },
+  "d06_yungang_grottoes_datong": {
+    "subject": "Yungang Grottoes Datong 大同云冈石窟",
+    "query": "Yungang Grottoes Datong",
+    "query_full": "Yungang Grottoes Datong",
+    "shrunk": false,
+    "day": 6,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/35/Datong_Yungang_Grottoes_Buddha_statue_with_painted_background.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Datong Yungang Grottoes Buddha statue with painted background.jpg",
+        "path": "work/WBCHET/cand_commons/d06_yungang_grottoes_datong_1.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "BabelStone",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Datong_Yungang_Grottoes_Buddhist_statues.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Datong Yungang Grottoes Buddhist statues.jpg",
+        "path": "work/WBCHET/cand_commons/d06_yungang_grottoes_datong_2.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "BabelStone",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/58/Yungang11_2010.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Yungang11 2010.JPG",
+        "path": "work/WBCHET/cand_commons/d06_yungang_grottoes_datong_3.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Marcin Białek",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/42/Yungang_Grottoes_Postcard.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Yungang Grottoes Postcard.jpg",
+        "path": "work/WBCHET/cand_commons/d06_yungang_grottoes_datong_4.jpg",
+        "license": "Public domain",
+        "credit": "Not clear",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/db/Yungang_Grottoes_and_temples.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Yungang Grottoes and temples.jpg",
+        "path": "work/WBCHET/cand_commons/d06_yungang_grottoes_datong_5.jpg",
+        "license": "Public domain",
+        "credit": "Anonymous. The postcard set was published in Keijo(Today Seoul) in 1939.",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Yungang_road_to_grottoes.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Yungang road to grottoes.JPG",
+        "path": "work/WBCHET/cand_commons/d06_yungang_grottoes_datong_6.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Marcin Białek",
+        "lat": null,
+        "lon": null
+      }
+    ]
+  },
+  "d06_yungang_grottoes_buddha_statues": {
+    "subject": "Yungang Grottoes Buddha statues 云冈石窟佛像",
+    "query": "Yungang Grottoes Buddha statues",
+    "query_full": "Yungang Grottoes Buddha statues",
+    "shrunk": false,
+    "day": 6,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Buddha_head_in_the_Tokyo_National_Museum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Buddha head in the Tokyo National Museum.jpg",
+        "path": "work/WBCHET/cand_commons/d06_yungang_grottoes_buddha_statues_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Motokoka",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Buddhas_in_collapsed_cave_Yungang.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Buddhas in collapsed cave Yungang.jpg",
+        "path": "work/WBCHET/cand_commons/d06_yungang_grottoes_buddha_statues_2.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Felix Andrews (Floybix)",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/CHINA_-_Shanxi_-_Plusieurs_statues_de_Buddha_sculpt%C3%A9es_%C3%A0_l%27entr%C3%A9e_d%27une_grotte_%282179797374%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "CHINA - Shanxi - Plusieurs statues de Buddha sculptées à l'entrée d'une grotte (2179797374).jpg",
+        "path": "work/WBCHET/cand_commons/d06_yungang_grottoes_buddha_statues_3.jpg",
+        "license": "CC BY-SA 2.0",
+        "credit": "Charlotte Marillet from Tokyo, Japan",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/38/Cina_settentrionale%2C_buddha_stante_da_grotte_di_yungang%2C_din._wei_del_nord%2C_490-505_ca..JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Cina settentrionale, buddha stante da grotte di yungang, din. wei del nord, 490-505 ca..JPG",
+        "path": "work/WBCHET/cand_commons/d06_yungang_grottoes_buddha_statues_4.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "sailko",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Datong_Yungang_Grottoes_Buddha_statue.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Datong Yungang Grottoes Buddha statue.jpg",
+        "path": "work/WBCHET/cand_commons/d06_yungang_grottoes_buddha_statues_5.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "BabelStone",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/35/Datong_Yungang_Grottoes_Buddha_statue_with_painted_background.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Datong Yungang Grottoes Buddha statue with painted background.jpg",
+        "path": "work/WBCHET/cand_commons/d06_yungang_grottoes_buddha_statues_6.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "BabelStone",
+        "lat": null,
+        "lon": null
+      }
+    ]
+  },
+  "d07_ulan_hada_volcano_geopark": {
+    "subject": "Ulan Hada Volcano Geopark 乌兰哈达火山地质公园",
+    "query": "Ulan Hada Volcano",
+    "query_full": "Ulan Hada Volcano Geopark",
+    "shrunk": true,
+    "day": 7,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Crater_Liandanlu_of_Chahaer.jpg/3840px-Crater_Liandanlu_of_Chahaer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Crater Liandanlu of Chahaer.jpg",
+        "path": "work/WBCHET/cand_commons/d07_ulan_hada_volcano_geopark_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Charlie fong",
+        "lat": 41.61288888888889,
+        "lon": 113.15646944444445
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Crater_of_Ulan_Hada_Volcano.jpg/3840px-Crater_of_Ulan_Hada_Volcano.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Crater of Ulan Hada Volcano.jpg",
+        "path": "work/WBCHET/cand_commons/d07_ulan_hada_volcano_geopark_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Charlie fong",
+        "lat": 41.58233055555556,
+        "lon": 113.10220277777778
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Ulan_Hada_Volcanic_Geology_Park.jpg/3840px-Ulan_Hada_Volcanic_Geology_Park.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Ulan Hada Volcanic Geology Park.jpg",
+        "path": "work/WBCHET/cand_commons/d07_ulan_hada_volcano_geopark_3.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Charlie fong",
+        "lat": 41.60091944444444,
+        "lon": 113.12190833333332
+      }
+    ]
+  },
+  "d07_scenic_transport_and_spacesuit_ren": {
+    "subject": "Scenic Transport and Spacesuit Rental Included",
+    "query": "Scenic Transport and",
+    "query_full": "Scenic Transport and Spacesuit Rental Included",
+    "shrunk": true,
+    "day": 7,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Katoomba_%28AU%29%2C_Scenic_World%2C_Scenic_Cableway_--_2019_--_1913.jpg/3840px-Katoomba_%28AU%29%2C_Scenic_World%2C_Scenic_Cableway_--_2019_--_1913.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Katoomba (AU), Scenic World, Scenic Cableway -- 2019 -- 1913.jpg",
+        "path": "work/WBCHET/cand_commons/d07_scenic_transport_and_spacesuit_ren_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Dietmar Rabich",
+        "lat": -33.729375,
+        "lon": 150.30118833333333
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/75/National_Scenic_Byway_-_Ohio_River_%28multistate%29_-_NARA_-_68886913_%28page_10%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "National Scenic Byway - Ohio River (multistate) - NARA - 68886913 (page 10).jpg",
+        "path": "work/WBCHET/cand_commons/d07_scenic_transport_and_spacesuit_ren_2.jpg",
+        "license": "Public domain",
+        "credit": "Unknown authorUnknown author or not provided",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/47/National_Scenic_Byway_-_Ohio_River_%28multistate%29_-_NARA_-_68886913_%28page_11%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "National Scenic Byway - Ohio River (multistate) - NARA - 68886913 (page 11).jpg",
+        "path": "work/WBCHET/cand_commons/d07_scenic_transport_and_spacesuit_ren_3.jpg",
+        "license": "Public domain",
+        "credit": "Unknown authorUnknown author or not provided",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/36/National_Scenic_Byway_-_Ohio_River_%28multistate%29_-_NARA_-_68886913_%28page_12%29.gif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "National Scenic Byway - Ohio River (multistate) - NARA - 68886913 (page 12).gif",
+        "path": "work/WBCHET/cand_commons/d07_scenic_transport_and_spacesuit_ren_4.jpg",
+        "license": "Public domain",
+        "credit": "Unknown authorUnknown author or not provided",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/29/National_Scenic_Byway_-_Ohio_River_%28multistate%29_-_NARA_-_68886913_%28page_6%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "National Scenic Byway - Ohio River (multistate) - NARA - 68886913 (page 6).jpg",
+        "path": "work/WBCHET/cand_commons/d07_scenic_transport_and_spacesuit_ren_5.jpg",
+        "license": "Public domain",
+        "credit": "Unknown authorUnknown author or not provided",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f3/National_Scenic_Byway_-_Ohio_River_%28multistate%29_-_NARA_-_68886913_%28page_7%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "National Scenic Byway - Ohio River (multistate) - NARA - 68886913 (page 7).jpg",
+        "path": "work/WBCHET/cand_commons/d07_scenic_transport_and_spacesuit_ren_6.jpg",
+        "license": "Public domain",
+        "credit": "Unknown authorUnknown author or not provided",
+        "lat": null,
+        "lon": null
+      }
+    ]
+  },
+  "d07_ulan_hada_volcano_spacesuit_photo_": {
+    "subject": "Ulan Hada Volcano spacesuit photo experience 乌兰哈达火山太空服拍照",
+    "query": "Ulan Hada Volcano",
+    "query_full": "Ulan Hada Volcano spacesuit photo experience",
+    "shrunk": true,
+    "day": 7,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Crater_Liandanlu_of_Chahaer.jpg/3840px-Crater_Liandanlu_of_Chahaer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Crater Liandanlu of Chahaer.jpg",
+        "path": "work/WBCHET/cand_commons/d07_ulan_hada_volcano_spacesuit_photo__1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Charlie fong",
+        "lat": 41.61288888888889,
+        "lon": 113.15646944444445
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Crater_of_Ulan_Hada_Volcano.jpg/3840px-Crater_of_Ulan_Hada_Volcano.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Crater of Ulan Hada Volcano.jpg",
+        "path": "work/WBCHET/cand_commons/d07_ulan_hada_volcano_spacesuit_photo__2.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Charlie fong",
+        "lat": 41.58233055555556,
+        "lon": 113.10220277777778
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Ulan_Hada_Volcanic_Geology_Park.jpg/3840px-Ulan_Hada_Volcanic_Geology_Park.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Ulan Hada Volcanic Geology Park.jpg",
+        "path": "work/WBCHET/cand_commons/d07_ulan_hada_volcano_spacesuit_photo__3.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Charlie fong",
+        "lat": 41.60091944444444,
+        "lon": 113.12190833333332
+      }
+    ]
+  },
+  "d07_kuanxiangzi_alley_hohhot": {
+    "subject": "Kuanxiangzi Alley Hohhot 呼和浩特宽巷子",
+    "query": "Kuanxiangzi Alley Hohhot",
+    "query_full": "Kuanxiangzi Alley Hohhot",
+    "shrunk": false,
+    "day": 7,
+    "candidates": []
+  },
+  "d08_mengliang_ethnic_cultural_park_hoh": {
+    "subject": "Mengliang Ethnic Cultural Park Hohhot 呼和浩特蒙亮民族风情园",
+    "query": "Mengliang Ethnic Cultural Park Hohhot",
+    "query_full": "Mengliang Ethnic Cultural Park Hohhot",
+    "shrunk": false,
+    "day": 8,
+    "candidates": []
+  },
+  "d08_ordos_cultural_industry_park": {
+    "subject": "Ordos Cultural Industry Park 鄂尔多斯文化产业园",
+    "query": "Ordos Cultural",
+    "query_full": "Ordos Cultural Industry Park",
+    "shrunk": true,
+    "day": 8,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/09/Rux_Ordo_from_the_SE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Rux Ordo from the SE.jpg",
+        "path": "work/WBCHET/cand_commons/d08_ordos_cultural_industry_park_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Firespeaker",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/13/%D0%92%D0%B8%D0%B4_%D1%81_%D0%BF%D0%B8%D1%80%D1%81%D0%B0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Вид с пирса.jpg",
+        "path": "work/WBCHET/cand_commons/d08_ordos_cultural_industry_park_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Gulumzhan",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/%D0%9A%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%81_%22%D0%A0%D1%83%D1%85-%D0%9E%D1%80%D0%B4%D0%BE%22_-_panoramio_%2830%29.jpg/3840px-%D0%9A%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%81_%22%D0%A0%D1%83%D1%85-%D0%9E%D1%80%D0%B4%D0%BE%22_-_panoramio_%2830%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Комплекс \"Рух-Ордо\" - panoramio (30).jpg",
+        "path": "work/WBCHET/cand_commons/d08_ordos_cultural_industry_park_3.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Sergey Sukhinin",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/%D0%9A%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%81_%22%D0%A0%D1%83%D1%85-%D0%9E%D1%80%D0%B4%D0%BE%22_-_panoramio_%2843%29.jpg/3840px-%D0%9A%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%81_%22%D0%A0%D1%83%D1%85-%D0%9E%D1%80%D0%B4%D0%BE%22_-_panoramio_%2843%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Комплекс \"Рух-Ордо\" - panoramio (43).jpg",
+        "path": "work/WBCHET/cand_commons/d08_ordos_cultural_industry_park_4.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Sergey Sukhinin",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/38/%D0%9A%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%81_%22%D0%A0%D1%83%D1%85-%D0%9E%D1%80%D0%B4%D0%BE%22_-_panoramio_%2844%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Комплекс \"Рух-Ордо\" - panoramio (44).jpg",
+        "path": "work/WBCHET/cand_commons/d08_ordos_cultural_industry_park_5.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Sergey Sukhinin",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/%D0%9A%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%81_%22%D0%A0%D1%83%D1%85-%D0%9E%D1%80%D0%B4%D0%BE%22_-_panoramio_%287%29.jpg/3840px-%D0%9A%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%81_%22%D0%A0%D1%83%D1%85-%D0%9E%D1%80%D0%B4%D0%BE%22_-_panoramio_%287%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Комплекс \"Рух-Ордо\" - panoramio (7).jpg",
+        "path": "work/WBCHET/cand_commons/d08_ordos_cultural_industry_park_6.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Sergey Sukhinin",
+        "lat": null,
+        "lon": null
+      }
+    ]
+  },
+  "d08_kangbashi_tourist_area_ordos": {
+    "subject": "Kangbashi Tourist Area Ordos 鄂尔多斯康巴什旅游景区",
+    "query": "Kangbashi Tourist Area Ordos",
+    "query_full": "Kangbashi Tourist Area Ordos",
+    "shrunk": false,
+    "day": 8,
+    "candidates": []
+  }
+}

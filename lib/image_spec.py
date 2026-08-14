@@ -93,6 +93,30 @@ THUMBNAIL = SlotSpec("thumbnail", 1440, 1080, _MAX_BYTES, 86, 1, max_upscale=2.0
 # replaced by stock, which is the whole point of PDF-first.
 SECTION = SlotSpec("section", 1200, 900, _MAX_BYTES, 84, 10, max_upscale=1.90)
 
+# Trip Photos → wt_travel_trip_image, the 3-up strip under each landmark
+# card. Measured on the live reference product `tours/112` (2026-08-14,
+# viewport 1291×707), because the numbers above it were assumed and this one
+# should not be:
+#
+#   hero band          1283×460   ×1
+#   per-day section    220×165    ×9      ← SECTION ships 1200px for this
+#   trip photo tile    89×89      ×68     ← this slot
+#
+# 89px would be an absurd target, and it is not the real one: the tiles are
+# `cursor: zoom-in` and open a lightbox. In the lightbox the image renders
+# **535×643** off a 1080×1297 source, and a taller viewport pushes that to
+# roughly 750px. So the lightbox sets the floor, not the tile.
+#
+# 1080 on the long edge is also exactly what the live catalogue already
+# ships (`lib/catalogue_source.py` — "1080-class on the long edge, straight
+# off the OSS bucket"), so this target is the house standard rather than a
+# new bar. The 2.2 ceiling is looser than SECTION's 1.90 on purpose: a
+# 492px brochure crop lands at 2.2× here and still renders at or above the
+# 535px lightbox size, and letting those photos through is the entire
+# reason this spec exists — see `docs/DESIGN.md` 3.6.1 for the seven real
+# photos that the SECTION-derived floor was throwing away.
+TRIP = SlotSpec("trip", 1080, 810, _MAX_BYTES, 84, 10, max_upscale=2.2)
+
 # Cover Video Asset → wt_travel.video_cover_url. The one slot that is
 # genuinely portrait (UI hint 986×1752 ≈ 9:16) — do NOT 4:3 this one.
 COVER_PORTRAIT = SlotSpec("cover_portrait", 986, 1752, _MAX_BYTES, 86, 1, max_upscale=1.65)
@@ -112,6 +136,20 @@ MIN_ASPECT = 1 / 3.0
 # Smallest 4:3 crop window worth keeping at all. Under this the photo can't
 # even serve a section tile, so the day goes to the web fallback.
 MIN_PDF_CROP_WIDTH = SECTION.min_source_width  # 632px
+
+# …but "can't serve a section tile" is not the same as "unusable", and for
+# five years' worth of brochures that difference was being thrown away. Of
+# the 61 rasters across the five launch brochures, 7 are real photographs of
+# real stops on the itinerary — 苗族歌舞, 小七孔撑船, 千户苗寨吊脚楼,
+# 新疆民族歌舞, 卡拉麦里的鹅喉羚 — rejected only for landing at a 420–610px
+# 4:3 crop against the 632 line above. That line comes from SECTION's 1200px
+# target, and SECTION renders at 220px on the page.
+#
+# A trip photo is a 89px tile that opens a ~535–750px lightbox, so it has
+# its own, lower floor. Do NOT solve this by lowering MIN_PDF_CROP_WIDTH:
+# SECTION is the only per-day image that ever appears large, and dropping
+# its floor trades a visible slot for an invisible one.
+MIN_TRIP_CROP_WIDTH = TRIP.min_source_width    # 491px
 
 
 def crop_window(width: int, height: int, aspect: float) -> tuple[int, int]:
