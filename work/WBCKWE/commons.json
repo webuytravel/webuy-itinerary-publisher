@@ -1,0 +1,899 @@
+{
+  "d02_jiaxiu_pavilion": {
+    "subject": "Jiaxiu Pavilion 甲秀楼",
+    "query": "Jiaxiu Pavilion",
+    "query_full": "Jiaxiu Pavilion",
+    "shrunk": false,
+    "day": 2,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Jiaxiu_Pavilion%2C_Guiyang.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Jiaxiu Pavilion, Guiyang.jpg",
+        "path": "work/WBCKWE/cand_commons/d02_jiaxiu_pavilion_1.jpg",
+        "license": "CC BY 2.0",
+        "credit": "xiquinhosilva",
+        "lat": 26.574926666666666,
+        "lon": 106.71533166666667,
+        "in_region": true
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Jiaxiu_Pavilion_85234-Guiyang_%2848696602498%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Jiaxiu Pavilion 85234-Guiyang (48696602498).jpg",
+        "path": "work/WBCKWE/cand_commons/d02_jiaxiu_pavilion_2.jpg",
+        "license": "CC BY 2.0",
+        "credit": "xiquinhosilva",
+        "lat": 26.575056666666665,
+        "lon": 106.71554166666667,
+        "in_region": true
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Jiaxiu_Pavilion_85249-Guiyang_%2848696944851%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Jiaxiu Pavilion 85249-Guiyang (48696944851).jpg",
+        "path": "work/WBCKWE/cand_commons/d02_jiaxiu_pavilion_3.jpg",
+        "license": "CC BY 2.0",
+        "credit": "xiquinhosilva",
+        "lat": 26.575158333333334,
+        "lon": 106.71588,
+        "in_region": true
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Jiaxiu_Pavilion_85304-Guiyang_%2842953805470%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Jiaxiu Pavilion 85304-Guiyang (42953805470).jpg",
+        "path": "work/WBCKWE/cand_commons/d02_jiaxiu_pavilion_4.jpg",
+        "license": "CC BY 2.0",
+        "credit": "xiquinhosilva",
+        "lat": 26.573811666666668,
+        "lon": 106.71309333333333,
+        "in_region": true
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/49/Jiaxiu_Pavilion_85338-Guiyang_%2848696604988%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Jiaxiu Pavilion 85338-Guiyang (48696604988).jpg",
+        "path": "work/WBCKWE/cand_commons/d02_jiaxiu_pavilion_5.jpg",
+        "license": "CC BY 2.0",
+        "credit": "xiquinhosilva",
+        "lat": 26.575321666666667,
+        "lon": 106.71577333333333,
+        "in_region": true
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Jiaxiu_pavilion.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Jiaxiu pavilion.jpg",
+        "path": "work/WBCKWE/cand_commons/d02_jiaxiu_pavilion_6.jpg",
+        "license": "CC0",
+        "credit": "Thehistorianisaac",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d03_huangguoshu_waterfall": {
+    "subject": "Huangguoshu Waterfall 黄果树大瀑布",
+    "query": "Huangguoshu Waterfall",
+    "query_full": "Huangguoshu Waterfall",
+    "shrunk": false,
+    "day": 3,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Entrance_of_Huangguoshu_Waterfall_Scenic_Spot.jpg/3840px-Entrance_of_Huangguoshu_Waterfall_Scenic_Spot.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Entrance of Huangguoshu Waterfall Scenic Spot.jpg",
+        "path": "work/WBCKWE/cand_commons/d03_huangguoshu_waterfall_1.jpg",
+        "license": "CC BY 3.0",
+        "credit": "Huangdan2060",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/30/HuangguoshuFall.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "HuangguoshuFall.jpg",
+        "path": "work/WBCKWE/cand_commons/d03_huangguoshu_waterfall_2.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "WaitinZ",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Huangguoshu_Waterfall_during_night_tour_%2820230403210211%29.jpg/3840px-Huangguoshu_Waterfall_during_night_tour_%2820230403210211%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Huangguoshu Waterfall during night tour (20230403210211).jpg",
+        "path": "work/WBCKWE/cand_commons/d03_huangguoshu_waterfall_3.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "N509FZ",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/18/Huangguoshu_dapubu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Huangguoshu dapubu.jpg",
+        "path": "work/WBCKWE/cand_commons/d03_huangguoshu_waterfall_4.jpg",
+        "license": "Public domain",
+        "credit": "Mrspaceman at English Wikipedia",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/40/Huangguoshu_waterfall1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Huangguoshu waterfall1.jpg",
+        "path": "work/WBCKWE/cand_commons/d03_huangguoshu_waterfall_5.jpg",
+        "license": "CC0",
+        "credit": "Thehistorianisaac",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/de/Huangguoshu_waterfall2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Huangguoshu waterfall2.jpg",
+        "path": "work/WBCKWE/cand_commons/d03_huangguoshu_waterfall_6.jpg",
+        "license": "CC0",
+        "credit": "Thehistorianisaac",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d03_water_curtain_cave_huangguoshu": {
+    "subject": "Water Curtain Cave Huangguoshu 黄果树水帘洞",
+    "query": "Water Curtain Cave",
+    "query_full": "Water Curtain Cave Huangguoshu",
+    "shrunk": true,
+    "day": 3,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Interior_view_of_Water_Curtain_Cave_near_Tianxiang_on_6_March_2016.jpg/3840px-Interior_view_of_Water_Curtain_Cave_near_Tianxiang_on_6_March_2016.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Interior view of Water Curtain Cave near Tianxiang on 6 March 2016.jpg",
+        "path": "work/WBCKWE/cand_commons/d03_water_curtain_cave_huangguoshu_1.jpg",
+        "license": "CC BY-SA 2.0",
+        "credit": "大雄 汪",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Monkey_King%27s_Homeland_-_Mount_Huaguo.jpg/3840px-Monkey_King%27s_Homeland_-_Mount_Huaguo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Monkey King's Homeland - Mount Huaguo.jpg",
+        "path": "work/WBCKWE/cand_commons/d03_water_curtain_cave_huangguoshu_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Jason M. C., Han",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Stalactites_-_Water_Curtain_Cave%2C_Boyue_Cave%2Cpicture1.jpg/3840px-Stalactites_-_Water_Curtain_Cave%2C_Boyue_Cave%2Cpicture1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Stalactites - Water Curtain Cave, Boyue Cave,picture1.jpg",
+        "path": "work/WBCKWE/cand_commons/d03_water_curtain_cave_huangguoshu_3.jpg",
+        "license": "CC0",
+        "credit": "Huangdan2060",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Stalactites_-_Water_Curtain_Cave%2C_Boyue_Cave%2Cpicture3.jpg/3840px-Stalactites_-_Water_Curtain_Cave%2C_Boyue_Cave%2Cpicture3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Stalactites - Water Curtain Cave, Boyue Cave,picture3.jpg",
+        "path": "work/WBCKWE/cand_commons/d03_water_curtain_cave_huangguoshu_4.jpg",
+        "license": "CC0",
+        "credit": "Huangdan2060",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Stalactites_-_Water_Curtain_Cave%2C_Boyue_Cave%2Cpicture4.jpg/1920px-Stalactites_-_Water_Curtain_Cave%2C_Boyue_Cave%2Cpicture4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Stalactites - Water Curtain Cave, Boyue Cave,picture4.jpg",
+        "path": "work/WBCKWE/cand_commons/d03_water_curtain_cave_huangguoshu_5.jpg",
+        "license": "CC0",
+        "credit": "Huangdan2060",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Stalactites_-_Water_Curtain_Cave%2C_Boyue_Cave%2Cpicture5.jpg/3840px-Stalactites_-_Water_Curtain_Cave%2C_Boyue_Cave%2Cpicture5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Stalactites - Water Curtain Cave, Boyue Cave,picture5.jpg",
+        "path": "work/WBCKWE/cand_commons/d03_water_curtain_cave_huangguoshu_6.jpg",
+        "license": "CC0",
+        "credit": "Huangdan2060",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d03_doupotang_waterfall": {
+    "subject": "Doupotang Waterfall 陡坡塘瀑布",
+    "query": "Doupotang Waterfall",
+    "query_full": "Doupotang Waterfall",
+    "shrunk": false,
+    "day": 3,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Doupotang_Waterfall_in_October_2020%2C_Picture02.jpg/3840px-Doupotang_Waterfall_in_October_2020%2C_Picture02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Doupotang Waterfall in October 2020, Picture02.jpg",
+        "path": "work/WBCKWE/cand_commons/d03_doupotang_waterfall_1.jpg",
+        "license": "CC BY 3.0",
+        "credit": "Huangdan2060",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Doupotang_Waterfall_in_October_2020%2C_Picture12.jpg/3840px-Doupotang_Waterfall_in_October_2020%2C_Picture12.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Doupotang Waterfall in October 2020, Picture12.jpg",
+        "path": "work/WBCKWE/cand_commons/d03_doupotang_waterfall_2.jpg",
+        "license": "CC BY 3.0",
+        "credit": "Huangdan2060",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Doupotang_Waterfall_in_October_2020%2C_Picture22.jpg/3840px-Doupotang_Waterfall_in_October_2020%2C_Picture22.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Doupotang Waterfall in October 2020, Picture22.jpg",
+        "path": "work/WBCKWE/cand_commons/d03_doupotang_waterfall_3.jpg",
+        "license": "CC BY 3.0",
+        "credit": "Huangdan2060",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Doupotang_Waterfall_in_October_2020%2C_Picture37.jpg/3840px-Doupotang_Waterfall_in_October_2020%2C_Picture37.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Doupotang Waterfall in October 2020, Picture37.jpg",
+        "path": "work/WBCKWE/cand_commons/d03_doupotang_waterfall_4.jpg",
+        "license": "CC BY 3.0",
+        "credit": "Huangdan2060",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Doupotang_Waterfall_in_October_2020%2C_Picture46.jpg/3840px-Doupotang_Waterfall_in_October_2020%2C_Picture46.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Doupotang Waterfall in October 2020, Picture46.jpg",
+        "path": "work/WBCKWE/cand_commons/d03_doupotang_waterfall_5.jpg",
+        "license": "CC BY 3.0",
+        "credit": "Huangdan2060",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Doupotang_Waterfall_in_October_2020%2C_Picture55.jpg/3840px-Doupotang_Waterfall_in_October_2020%2C_Picture55.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Doupotang Waterfall in October 2020, Picture55.jpg",
+        "path": "work/WBCKWE/cand_commons/d03_doupotang_waterfall_6.jpg",
+        "license": "CC BY 3.0",
+        "credit": "Huangdan2060",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d04_wanfenglin_ten_thousand_peak_fores": {
+    "subject": "Wanfenglin Ten Thousand Peak Forest 万峰林",
+    "query": "Wanfenglin Ten Thousand Peak Forest",
+    "query_full": "Wanfenglin Ten Thousand Peak Forest",
+    "shrunk": false,
+    "day": 4,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/WanFengLin-ShangNaHui2025-08.jpg/3840px-WanFengLin-ShangNaHui2025-08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "WanFengLin-ShangNaHui2025-08.jpg",
+        "path": "work/WBCKWE/cand_commons/d04_wanfenglin_ten_thousand_peak_fores_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "名字长的让人受不了",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/7d/XingyiWanfenglin.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "XingyiWanfenglin.jpg",
+        "path": "work/WBCKWE/cand_commons/d04_wanfenglin_ten_thousand_peak_fores_2.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Brookqi",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d04_bagua_field_wanfenglin": {
+    "subject": "Bagua Field Wanfenglin 万峰林八卦田",
+    "query": "Bagua Field",
+    "query_full": "Bagua Field Wanfenglin",
+    "shrunk": true,
+    "day": 4,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Bagua_Chica_-_panoramio.jpg/3840px-Bagua_Chica_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Bagua Chica - panoramio.jpg",
+        "path": "work/WBCKWE/cand_commons/d04_bagua_field_wanfenglin_1.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Heiner Amado Cadillo",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Bagua_Chica_-_panoramio_%281%29.jpg/3840px-Bagua_Chica_-_panoramio_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Bagua Chica - panoramio (1).jpg",
+        "path": "work/WBCKWE/cand_commons/d04_bagua_field_wanfenglin_2.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Heiner Amado Cadillo",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Bagua_Chica_-_panoramio_%282%29.jpg/3840px-Bagua_Chica_-_panoramio_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Bagua Chica - panoramio (2).jpg",
+        "path": "work/WBCKWE/cand_commons/d04_bagua_field_wanfenglin_3.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Heiner Amado Cadillo",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Bagua_Plateau_on_Worldwind.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Bagua Plateau on Worldwind.png",
+        "path": "work/WBCKWE/cand_commons/d04_bagua_field_wanfenglin_4.jpg",
+        "license": "Public domain",
+        "credit": "NASA Ames Research Center",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/M%C3%BCnster%2C_Hollenbeckerstra%C3%9Fe_24%2C_Feng-Shui-Bagua-Spiegel_--_2026_--_0573.jpg/3840px-M%C3%BCnster%2C_Hollenbeckerstra%C3%9Fe_24%2C_Feng-Shui-Bagua-Spiegel_--_2026_--_0573.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Münster, Hollenbeckerstraße 24, Feng-Shui-Bagua-Spiegel -- 2026 -- 0573.jpg",
+        "path": "work/WBCKWE/cand_commons/d04_bagua_field_wanfenglin_5.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Dietmar Rabich",
+        "lat": 51.966134445,
+        "lon": 7.62051,
+        "in_region": false
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/%E5%85%AB%E5%8D%A6%E5%B1%B1%E9%BA%93%E9%B3%B3%E6%A2%A8%E7%94%B0_Pineapple_Plantation_on_Bagua_Mountain_-_panoramio.jpg/3840px-%E5%85%AB%E5%8D%A6%E5%B1%B1%E9%BA%93%E9%B3%B3%E6%A2%A8%E7%94%B0_Pineapple_Plantation_on_Bagua_Mountain_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "八卦山麓鳳梨田 Pineapple Plantation on Bagua Mountain - panoramio.jpg",
+        "path": "work/WBCKWE/cand_commons/d04_bagua_field_wanfenglin_6.jpg",
+        "license": "CC BY 3.0",
+        "credit": "lienyuan lee",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d04_wanfeng_lake": {
+    "subject": "Wanfeng Lake 万峰湖",
+    "query": "Wanfeng Lake",
+    "query_full": "Wanfeng Lake",
+    "shrunk": false,
+    "day": 4,
+    "candidates": []
+  },
+  "d05_maling_river_grand_canyon": {
+    "subject": "Maling River Grand Canyon 马岭河大峡谷",
+    "query": "Maling River Grand Canyon",
+    "query_full": "Maling River Grand Canyon",
+    "shrunk": false,
+    "day": 5,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Bert_Loper_c1935.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Bert Loper c1935.jpg",
+        "path": "work/WBCKWE/cand_commons/d05_maling_river_grand_canyon_1.jpg",
+        "license": "Public domain",
+        "credit": "Grand Canyon National Park",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Bionomics%2C_systematics%2C_and_phylogeny_of_Lytta%2C_a_genus_of_blister_beetles_%28Coleoptera%2C_Meloidae%29_%281960%29_%2820374492052%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Bionomics, systematics, and phylogeny of Lytta, a genus of blister beetles (Coleoptera, Meloidae) (1960) (20374492052).jpg",
+        "path": "work/WBCKWE/cand_commons/d05_maling_river_grand_canyon_2.jpg",
+        "license": "No restrictions",
+        "credit": "Internet Archive Book Images",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/In_and_around_the_Grand_Canyon%3B_the_Grand_Canyon_of_the_Colorado_River_in_Arizona_%281900%29_%2814587216877%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "In and around the Grand Canyon; the Grand Canyon of the Colorado River in Arizona (1900) (14587216877).jpg",
+        "path": "work/WBCKWE/cand_commons/d05_maling_river_grand_canyon_3.jpg",
+        "license": "No restrictions",
+        "credit": "Internet Archive Book Images",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/PULLING_UP_NEW_CABLE_BY_MEANS_OF_30-TON_STUMP_PULLER_-_Kaibab_Trail_Suspension_Bridge%2C_Spanning_Colorado_River%2C_Grand_Canyon%2C_Coconino_County%2C_AZ_HAER_ARIZ%2C3-GRACAN%2C3-17.tif/lossy-page1-3840px-thumbnail.tif.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "PULLING UP NEW CABLE BY MEANS OF 30-TON STUMP PULLER - Kaibab Trail Suspension Bridge, Spanning Colorado River, Grand Canyon, Coconino County, AZ HAER ARIZ,3-GRACAN,3-17.tif",
+        "path": "work/WBCKWE/cand_commons/d05_maling_river_grand_canyon_4.jpg",
+        "license": "Public domain",
+        "credit": "",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Photographing_Lower_Falls_from_an_off-road_wheelchair_at_Artist_Point_%285870c71a-b623-4e59-9a85-1f74fa87fb01%29.jpg/3840px-Photographing_Lower_Falls_from_an_off-road_wheelchair_at_Artist_Point_%285870c71a-b623-4e59-9a85-1f74fa87fb01%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Photographing Lower Falls from an off-road wheelchair at Artist Point (5870c71a-b623-4e59-9a85-1f74fa87fb01).jpg",
+        "path": "work/WBCKWE/cand_commons/d05_maling_river_grand_canyon_5.jpg",
+        "license": "Public domain",
+        "credit": "Jacob W. Frank",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d05_tianxing_gallery_maling_river_cany": {
+    "subject": "Tianxing Gallery Maling River Canyon 马岭河天星画廊",
+    "query": "Tianxing Gallery",
+    "query_full": "Tianxing Gallery Maling River Canyon",
+    "shrunk": true,
+    "day": 5,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Chinese_Materia_Dietetica%2C_Ming%3B_Crab-roe_water_Wellcome_L0039376.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Chinese Materia Dietetica, Ming; Crab-roe water Wellcome L0039376.jpg",
+        "path": "work/WBCKWE/cand_commons/d05_tianxing_gallery_maling_river_cany_1.jpg",
+        "license": "CC BY 4.0",
+        "credit": "AnonymousUnknown author",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d06_kala_miao_village_danzhai": {
+    "subject": "Kala Miao Village Danzhai 丹寨卡拉苗寨",
+    "query": "Kala Miao Village Danzhai",
+    "query_full": "Kala Miao Village Danzhai",
+    "shrunk": false,
+    "day": 6,
+    "candidates": []
+  },
+  "d06_xijiang_qianhu_miao_village": {
+    "subject": "Xijiang Qianhu Miao Village 西江千户苗寨",
+    "query": "Xijiang Qianhu Miao Village",
+    "query_full": "Xijiang Qianhu Miao Village",
+    "shrunk": false,
+    "day": 6,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/19/Xijiang_Miao_Village.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Xijiang Miao Village.jpg",
+        "path": "work/WBCKWE/cand_commons/d06_xijiang_qianhu_miao_village_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "SONG1907",
+        "lat": 26.496100000000002,
+        "lon": 108.16636666666668,
+        "in_region": true
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Xijiang_Qianhu_Miaozhai.Skyline.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Xijiang Qianhu Miaozhai.Skyline.jpg",
+        "path": "work/WBCKWE/cand_commons/d06_xijiang_qianhu_miao_village_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Popolon",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/df/Xijiang_Qianhu_Miaozhai.river.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Xijiang Qianhu Miaozhai.river.jpg",
+        "path": "work/WBCKWE/cand_commons/d06_xijiang_qianhu_miao_village_3.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Popolon",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Xijiang_Qianhu_Miaozhai.river2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Xijiang Qianhu Miaozhai.river2.jpg",
+        "path": "work/WBCKWE/cand_commons/d06_xijiang_qianhu_miao_village_4.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Popolon",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Xijiang_Qianhu_Miaozhai.rizi%C3%A8re.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Xijiang Qianhu Miaozhai.rizière.jpg",
+        "path": "work/WBCKWE/cand_commons/d06_xijiang_qianhu_miao_village_5.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Popolon",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/71/Xijiang_qianhu_miaozhai.lotus_pond.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Xijiang qianhu miaozhai.lotus pond.jpg",
+        "path": "work/WBCKWE/cand_commons/d06_xijiang_qianhu_miao_village_6.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Popolon",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d06_xijiang_miao_village_stilt_houses": {
+    "subject": "Xijiang Miao Village Stilt Houses 西江苗寨吊脚楼",
+    "query": "Xijiang Miao Village",
+    "query_full": "Xijiang Miao Village Stilt Houses",
+    "shrunk": true,
+    "day": 6,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/19/Xijiang_Miao_Village.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Xijiang Miao Village.jpg",
+        "path": "work/WBCKWE/cand_commons/d06_xijiang_miao_village_stilt_houses_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "SONG1907",
+        "lat": 26.496100000000002,
+        "lon": 108.16636666666668,
+        "in_region": true
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Xijiang_Qianhu_Miaozhai.Skyline.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Xijiang Qianhu Miaozhai.Skyline.jpg",
+        "path": "work/WBCKWE/cand_commons/d06_xijiang_miao_village_stilt_houses_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Popolon",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/df/Xijiang_Qianhu_Miaozhai.river.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Xijiang Qianhu Miaozhai.river.jpg",
+        "path": "work/WBCKWE/cand_commons/d06_xijiang_miao_village_stilt_houses_3.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Popolon",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Xijiang_Qianhu_Miaozhai.river2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Xijiang Qianhu Miaozhai.river2.jpg",
+        "path": "work/WBCKWE/cand_commons/d06_xijiang_miao_village_stilt_houses_4.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Popolon",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Xijiang_Qianhu_Miaozhai.rizi%C3%A8re.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Xijiang Qianhu Miaozhai.rizière.jpg",
+        "path": "work/WBCKWE/cand_commons/d06_xijiang_miao_village_stilt_houses_5.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Popolon",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/71/Xijiang_qianhu_miaozhai.lotus_pond.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Xijiang qianhu miaozhai.lotus pond.jpg",
+        "path": "work/WBCKWE/cand_commons/d06_xijiang_miao_village_stilt_houses_6.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Popolon",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d07_mount_fanjing": {
+    "subject": "Mount Fanjing 梵净山",
+    "query": "Mount Fanjing",
+    "query_full": "Mount Fanjing",
+    "shrunk": false,
+    "day": 7,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Gorge%2C_Mount_Fanjing%2C_31_March_2020D.jpg/3840px-Gorge%2C_Mount_Fanjing%2C_31_March_2020D.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Gorge, Mount Fanjing, 31 March 2020D.jpg",
+        "path": "work/WBCKWE/cand_commons/d07_mount_fanjing_1.jpg",
+        "license": "CC BY 3.0",
+        "credit": "Huangdan2060",
+        "lat": 27.91341972333333,
+        "lon": 108.69326782222223,
+        "in_region": true
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Mount_Fanjing%2C_31_March_2020c.jpg/3840px-Mount_Fanjing%2C_31_March_2020c.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Mount Fanjing, 31 March 2020c.jpg",
+        "path": "work/WBCKWE/cand_commons/d07_mount_fanjing_2.jpg",
+        "license": "CC BY 3.0",
+        "credit": "Huangdan2060",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Mount_Fanjing%2C_31_March_2020p.jpg/3840px-Mount_Fanjing%2C_31_March_2020p.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Mount Fanjing, 31 March 2020p.jpg",
+        "path": "work/WBCKWE/cand_commons/d07_mount_fanjing_3.jpg",
+        "license": "CC BY 3.0",
+        "credit": "Huangdan2060",
+        "lat": 27.910627365,
+        "lon": 108.69251251194444,
+        "in_region": true
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Pool%2C_Mount_Fanjing%2C_31_March_2020B.jpg/3840px-Pool%2C_Mount_Fanjing%2C_31_March_2020B.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Pool, Mount Fanjing, 31 March 2020B.jpg",
+        "path": "work/WBCKWE/cand_commons/d07_mount_fanjing_4.jpg",
+        "license": "CC BY 3.0",
+        "credit": "Huangdan2060",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Stone_steps%2C_Mount_Fanjing%2C_Picture7.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Stone steps, Mount Fanjing, Picture7.jpg",
+        "path": "work/WBCKWE/cand_commons/d07_mount_fanjing_5.jpg",
+        "license": "CC BY 3.0",
+        "credit": "Huangdan2060",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/%E6%A2%B5%E6%B7%A8%E5%B1%B1%E7%B4%85%E9%9B%B2%E9%87%91%E9%A0%82%EF%BC%88%E6%96%B0%E9%87%91%E9%A0%82%EF%BC%89.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "梵淨山紅雲金頂（新金頂）.jpg",
+        "path": "work/WBCKWE/cand_commons/d07_mount_fanjing_6.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Mande5255881",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d07_red_cloud_golden_summit_mount_fanj": {
+    "subject": "Red Cloud Golden Summit Mount Fanjing 梵净山红云金顶",
+    "query": "Red Cloud Golden Summit Mount Fanjing",
+    "query_full": "Red Cloud Golden Summit Mount Fanjing",
+    "shrunk": false,
+    "day": 7,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Bridge_on_Red_Clouds_Golden_Summit%2C_Mount_Fanjing%2C_31_March_2020a.jpg/3840px-Bridge_on_Red_Clouds_Golden_Summit%2C_Mount_Fanjing%2C_31_March_2020a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Bridge on Red Clouds Golden Summit, Mount Fanjing, 31 March 2020a.jpg",
+        "path": "work/WBCKWE/cand_commons/d07_red_cloud_golden_summit_mount_fanj_1.jpg",
+        "license": "CC BY 3.0",
+        "credit": "Huangdan2060",
+        "lat": 27.9098091125,
+        "lon": 108.6919555663889,
+        "in_region": true
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Bridge_on_Red_Clouds_Golden_Summit%2C_Mount_Fanjing%2C_31_March_2020c.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Bridge on Red Clouds Golden Summit, Mount Fanjing, 31 March 2020c.jpg",
+        "path": "work/WBCKWE/cand_commons/d07_red_cloud_golden_summit_mount_fanj_2.jpg",
+        "license": "CC BY 3.0",
+        "credit": "Huangdan2060",
+        "lat": 27.909883498888888,
+        "lon": 108.69178009027779,
+        "in_region": true
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/09/Bridge_on_Red_Clouds_Golden_Summit%2C_Mount_Fanjing%2C_31_March_2020d.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Bridge on Red Clouds Golden Summit, Mount Fanjing, 31 March 2020d.jpg",
+        "path": "work/WBCKWE/cand_commons/d07_red_cloud_golden_summit_mount_fanj_3.jpg",
+        "license": "CC BY 3.0",
+        "credit": "Huangdan2060",
+        "lat": 27.90996742222222,
+        "lon": 108.69196319555556,
+        "in_region": true
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Buddhist_temple_on_Red_Clouds_Golden_Summit%2C_Mount_Fanjing%2C_31_March_2020i.jpg/3840px-Buddhist_temple_on_Red_Clouds_Golden_Summit%2C_Mount_Fanjing%2C_31_March_2020i.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Buddhist temple on Red Clouds Golden Summit, Mount Fanjing, 31 March 2020i.jpg",
+        "path": "work/WBCKWE/cand_commons/d07_red_cloud_golden_summit_mount_fanj_4.jpg",
+        "license": "CC BY 3.0",
+        "credit": "Huangdan2060",
+        "lat": 27.90971946694444,
+        "lon": 108.69198608388889,
+        "in_region": true
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/73/Stone_tablet%2C_Red_Clouds_Golden_Summit%2C_Mount_Fanjing%2C_31_March_2020b.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Stone tablet, Red Clouds Golden Summit, Mount Fanjing, 31 March 2020b.jpg",
+        "path": "work/WBCKWE/cand_commons/d07_red_cloud_golden_summit_mount_fanj_5.jpg",
+        "license": "CC BY 3.0",
+        "credit": "Huangdan2060",
+        "lat": 27.909832000555554,
+        "lon": 108.69172668444445,
+        "in_region": true
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/54/Weathered_rock_on_Red_Clouds_Golden_Summit%2C_Mount_Fanjing%2C_31_March_2020d.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Weathered rock on Red Clouds Golden Summit, Mount Fanjing, 31 March 2020d.jpg",
+        "path": "work/WBCKWE/cand_commons/d07_red_cloud_golden_summit_mount_fanj_6.jpg",
+        "license": "CC BY 3.0",
+        "credit": "Huangdan2060",
+        "lat": 27.909938812222222,
+        "lon": 108.69182586666668,
+        "in_region": true
+      }
+    ]
+  },
+  "d07_maitreya_sanctuary_mount_fanjing": {
+    "subject": "Maitreya Sanctuary Mount Fanjing 梵净山弥勒道场",
+    "query": "Maitreya Sanctuary",
+    "query_full": "Maitreya Sanctuary Mount Fanjing",
+    "shrunk": true,
+    "day": 7,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Nubra_Valley_Landscape.jpg/3840px-Nubra_Valley_Landscape.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Nubra Valley Landscape.jpg",
+        "path": "work/WBCKWE/cand_commons/d07_maitreya_sanctuary_mount_fanjing_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Shri 4545",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d08_tongren_grand_canyon": {
+    "subject": "Tongren Grand Canyon 铜仁大峡谷",
+    "query": "Tongren Grand Canyon",
+    "query_full": "Tongren Grand Canyon",
+    "shrunk": false,
+    "day": 8,
+    "candidates": []
+  }
+}

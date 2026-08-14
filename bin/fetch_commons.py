@@ -45,6 +45,42 @@ from make_payload import trip_type   # 同一条「只看开头三个词」的�
 WORK = Path("work")
 MIN_WIDTH = 1200  # below this a lightbox render (~535–750px CSS) starts to soften
 
+# Where each tour actually goes, as (lat_min, lat_max, lon_min, lon_max).
+# Commons is the only source that returns coordinates, and this is the only
+# mechanical check in the whole pipeline for "right subject, wrong place" —
+# `docs/DESIGN.md` 3.2 records that switching source ③ to the MCP quietly
+# removed it, which is why 6.7 is a long list of failures a person had to
+# catch by eye. Measured catches on the first run, all of which look right
+# in a thumbnail:
+#
+#   沙湾古镇 (Panyu, 广东) → Shawan Park in **Changsha, Hunan** ×3 — same
+#     name, wrong province, and nothing in the picture says so
+#   Kalamaili → a Przewalski horse in **Mongolia** (47.7, 105.9)
+#   Scenic Transport → **Katoomba Scenic World, Australia**
+#   Wanfenglin → a street in **Münster, Germany**
+#   Grassland Bonfire → **Ilfracombe, UK**
+#
+# Boxes are deliberately loose — they only have to separate "somewhere on
+# this itinerary" from "a different continent". A candidate with no
+# coordinates is left as `None`, never rejected: most Commons files have no
+# GPS and absence of evidence is not evidence.
+REGION_BOX = {
+    "WBCHET": (36, 44, 105, 116),   # 山西 + 内蒙中西部
+    "WBCURC": (40, 49, 78, 96),     # 北疆
+    "WBINC9": (35, 41, 103, 110),   # 宁夏 + 甘肃东 + 内蒙西
+    "WBCKWE": (24, 31, 103, 111),   # 贵州 + 重庆
+    "WBSZX1": (21, 26, 110, 116),   # 广东
+}
+
+
+def in_region(code: str, lat, lon):
+    """True / False / None — None means the file carries no coordinates."""
+    box = REGION_BOX.get(code)
+    if box is None or lat is None or lon is None:
+        return None
+    lat_min, lat_max, lon_min, lon_max = box
+    return lat_min <= lat <= lat_max and lon_min <= lon <= lon_max
+
 
 def block_name(day: int, subject: str) -> str:
     """`d07_ulan_hada_volcano` — same shape as the stock blocks."""
@@ -118,6 +154,8 @@ def fetch(code: str, per_subject: int = 6) -> dict:
                     "title": cand.title, "path": str(path),
                     "license": cand.license, "credit": cand.credit,
                     "lat": cand.lat, "lon": cand.lon,
+                    # 标注,不是删除。没有坐标的一律 None,不能当成「地方不对」。
+                    "in_region": in_region(code, cand.lat, cand.lon),
                 })
             # `query_full` vs `query`:退化过的块要在审核页上显示出来。
             # 退化保证的是「有结果」,不是「结果对」——`Optional Desert Activities
@@ -127,9 +165,11 @@ def fetch(code: str, per_subject: int = 6) -> dict:
                         "query_full": ladder[0], "shrunk": query != ladder[0],
                         "day": day, "candidates": rows}
             geo = sum(1 for r in rows if r["lat"] is not None)
+            wrong = sum(1 for r in rows if r["in_region"] is False)
             shrunk = "" if query == ladder[0] else f"  ←退化搜 {query!r}"
             flag = "   ← 0" if not rows else ""
-            print(f"  {key:<40} {len(rows)} 张 (带坐标 {geo}){flag}{shrunk}")
+            off = f"  ⚠ {wrong} 张 GPS 不在行程范围内" if wrong else ""
+            print(f"  {key:<40} {len(rows)} 张 (带坐标 {geo}){flag}{shrunk}{off}")
 
     return out
 

@@ -15,7 +15,8 @@
         "license": "CC BY-SA 2.0",
         "credit": "Ludovic Hirlimann from 's-Gravenhage, The Netherlands",
         "lat": 47.696095,
-        "lon": 105.935005
+        "lon": 105.935005,
+        "in_region": false
       }
     ]
   },
@@ -51,7 +52,8 @@
         "license": "CC0",
         "credit": "Muye Ma muyema",
         "lat": 20.023588888888888,
-        "lon": 110.29977222222222
+        "lon": 110.29977222222222,
+        "in_region": false
       },
       {
         "n": 2,
@@ -62,7 +64,8 @@
         "license": "Public domain",
         "credit": "NASA",
         "lat": null,
-        "lon": null
+        "lon": null,
+        "in_region": null
       },
       {
         "n": 3,
@@ -73,7 +76,8 @@
         "license": "CC BY-SA 3.0",
         "credit": "罗一丁",
         "lat": null,
-        "lon": null
+        "lon": null,
+        "in_region": null
       },
       {
         "n": 4,
@@ -84,7 +88,8 @@
         "license": "CC BY 2.0",
         "credit": "Clemson",
         "lat": null,
-        "lon": null
+        "lon": null,
+        "in_region": null
       },
       {
         "n": 5,
@@ -95,7 +100,8 @@
         "license": "CC BY-SA 3.0",
         "credit": "Fanghong",
         "lat": null,
-        "lon": null
+        "lon": null,
+        "in_region": null
       },
       {
         "n": 6,
@@ -106,7 +112,8 @@
         "license": "CC BY 3.0",
         "credit": "Julianbce",
         "lat": null,
-        "lon": null
+        "lon": null,
+        "in_region": null
       }
     ]
   },
@@ -126,7 +133,8 @@
         "license": "Public domain",
         "credit": "Pardies, Ignace Gaston, 1636-1673\nDuchange, Gaspard",
         "lat": null,
-        "lon": null
+        "lon": null,
+        "in_region": null
       },
       {
         "n": 2,
@@ -137,7 +145,8 @@
         "license": "Public domain",
         "credit": "Pardies, Ignace Gaston, 1636-1673\nDuchange, Gaspard",
         "lat": null,
-        "lon": null
+        "lon": null,
+        "in_region": null
       }
     ]
   },
@@ -157,7 +166,8 @@
         "license": "CC BY 4.0",
         "credit": "User:CatOnMars",
         "lat": null,
-        "lon": null
+        "lon": null,
+        "in_region": null
       },
       {
         "n": 2,
@@ -168,7 +178,8 @@
         "license": "CC BY 4.0",
         "credit": "User:CatOnMars",
         "lat": null,
-        "lon": null
+        "lon": null,
+        "in_region": null
       },
       {
         "n": 3,
@@ -179,7 +190,8 @@
         "license": "CC BY 3.0",
         "credit": "Bohao Zhao Tongfei",
         "lat": null,
-        "lon": null
+        "lon": null,
+        "in_region": null
       },
       {
         "n": 4,
@@ -190,7 +202,8 @@
         "license": "CC BY-SA 4.0",
         "credit": "Leeinm",
         "lat": null,
-        "lon": null
+        "lon": null,
+        "in_region": null
       },
       {
         "n": 5,
@@ -201,7 +214,8 @@
         "license": "CC BY-SA 4.0",
         "credit": "Gorden 2211",
         "lat": null,
-        "lon": null
+        "lon": null,
+        "in_region": null
       },
       {
         "n": 6,
@@ -212,7 +226,8 @@
         "license": "CC BY-SA 4.0",
         "credit": "Yanxutong1215",
         "lat": 48.58152165824603,
-        "lon": 87.44243579911509
+        "lon": 87.44243579911509,
+        "in_region": true
       }
     ]
   },
@@ -232,7 +247,8 @@
         "license": "CC BY 4.0",
         "credit": "User:CatOnMars",
         "lat": null,
-        "lon": null
+        "lon": null,
+        "in_region": null
       },
       {
         "n": 2,
@@ -243,7 +259,8 @@
         "license": "CC BY 4.0",
         "credit": "User:CatOnMars",
         "lat": null,
-        "lon": null
+        "lon": null,
+        "in_region": null
       },
       {
         "n": 3,
@@ -254,7 +271,8 @@
         "license": "CC BY 3.0",
         "credit": "Bohao Zhao Tongfei",
         "lat": null,
-        "lon": null
+        "lon": null,
+        "in_region": null
       },
       {
         "n": 4,
@@ -265,7 +283,8 @@
         "license": "CC BY-SA 4.0",
         "credit": "Leeinm",
         "lat": null,
-        "lon": null
+        "lon": null,
+        "in_region": null
       },
       {
         "n": 5,
@@ -276,7 +295,8 @@
         "license": "CC BY-SA 4.0",
         "credit": "Gorden 2211",
         "lat": null,
-        "lon": null
+        "lon": null,
+        "in_region": null
       },
       {
         "n": 6,
@@ -287,7 +307,8 @@
         "license": "CC BY-SA 4.0",
         "credit": "Yanxutong1215",
         "lat": 48.58152165824603,
-        "lon": 87.44243579911509
+        "lon": 87.44243579911509,
+        "in_region": true
       }
     ]
   },
@@ -307,7 +328,8 @@
         "license": "CC BY-SA 3.0",
         "credit": "Fanghong",
         "lat": null,
-        "lon": null
+        "lon": null,
+        "in_region": null
       }
     ]
   },
@@ -335,7 +357,8 @@
         "license": "CC0",
         "credit": "Fumikas Sagisavas",
         "lat": null,
-        "lon": null
+        "lon": null,
+        "in_region": null
       },
       {
         "n": 2,
@@ -346,7 +369,8 @@
         "license": "CC BY-SA 4.0",
         "credit": "Y Chen",
         "lat": null,
-        "lon": null
+        "lon": null,
+        "in_region": null
       },
       {
         "n": 3,
@@ -357,7 +381,8 @@
         "license": "CC0",
         "credit": "Fumikas Sagisavas",
         "lat": 44.722461111111116,
-        "lon": 81.13956111111112
+        "lon": 81.13956111111112,
+        "in_region": true
       },
       {
         "n": 4,
@@ -368,7 +393,8 @@
         "license": "CC BY-SA 4.0",
         "credit": "Y Chen",
         "lat": 44.600555,
-        "lon": 81.38833333333334
+        "lon": 81.38833333333334,
+        "in_region": true
       },
       {
         "n": 5,
@@ -379,7 +405,8 @@
         "license": "CC0",
         "credit": "Fumikas Sagisavas",
         "lat": null,
-        "lon": null
+        "lon": null,
+        "in_region": null
       },
       {
         "n": 6,
@@ -390,7 +417,8 @@
         "license": "CC BY 2.0",
         "credit": "lwtt93 from Shanghai, China",
         "lat": 44.50772166666667,
-        "lon": 81.13148833333332
+        "lon": 81.13148833333332,
+        "in_region": true
       }
     ]
   },
@@ -410,7 +438,8 @@
         "license": "CC BY-SA 3.0",
         "credit": "千里走单骑",
         "lat": null,
-        "lon": null
+        "lon": null,
+        "in_region": null
       },
       {
         "n": 2,
@@ -421,7 +450,8 @@
         "license": "CC BY-SA 3.0",
         "credit": "This image has been extracted from another file",
         "lat": null,
-        "lon": null
+        "lon": null,
+        "in_region": null
       },
       {
         "n": 3,
@@ -432,7 +462,8 @@
         "license": "CC BY 4.0",
         "credit": "Timothytyy",
         "lat": null,
-        "lon": null
+        "lon": null,
+        "in_region": null
       },
       {
         "n": 4,
@@ -443,7 +474,8 @@
         "license": "CC BY 2.0",
         "credit": "Revolution cycle",
         "lat": null,
-        "lon": null
+        "lon": null,
+        "in_region": null
       },
       {
         "n": 5,
@@ -454,7 +486,8 @@
         "license": "CC BY 4.0",
         "credit": "Timothytyy",
         "lat": null,
-        "lon": null
+        "lon": null,
+        "in_region": null
       },
       {
         "n": 6,
@@ -465,7 +498,8 @@
         "license": "CC BY 4.0",
         "credit": "Timothytyy",
         "lat": null,
-        "lon": null
+        "lon": null,
+        "in_region": null
       }
     ]
   },
@@ -485,7 +519,8 @@
         "license": "Public domain",
         "credit": "Henry G. Gilbert Nursery and Seed Trade Catalog Collection.; Peter Henderson &am",
         "lat": null,
-        "lon": null
+        "lon": null,
+        "in_region": null
       },
       {
         "n": 2,
@@ -496,7 +531,8 @@
         "license": "No restrictions",
         "credit": "Internet Archive Book Images",
         "lat": null,
-        "lon": null
+        "lon": null,
+        "in_region": null
       },
       {
         "n": 3,
@@ -507,7 +543,8 @@
         "license": "CC0",
         "credit": "Francis Cheung riceball",
         "lat": null,
-        "lon": null
+        "lon": null,
+        "in_region": null
       },
       {
         "n": 4,
@@ -518,7 +555,8 @@
         "license": "No restrictions",
         "credit": "Internet Archive Book Images",
         "lat": null,
-        "lon": null
+        "lon": null,
+        "in_region": null
       },
       {
         "n": 5,
@@ -529,7 +567,8 @@
         "license": "CC BY-SA 3.0",
         "credit": "Benjamin W.",
         "lat": 44.157,
-        "lon": 80.77683333333333
+        "lon": 80.77683333333333,
+        "in_region": true
       }
     ]
   },
@@ -557,7 +596,8 @@
         "license": "CC0",
         "credit": "Yoshi Canopus",
         "lat": null,
-        "lon": null
+        "lon": null,
+        "in_region": null
       },
       {
         "n": 2,
@@ -568,7 +608,8 @@
         "license": "CC BY 2.0",
         "credit": "lwtt93 from Shanghai, China",
         "lat": null,
-        "lon": null
+        "lon": null,
+        "in_region": null
       },
       {
         "n": 3,
@@ -579,7 +620,8 @@
         "license": "CC BY 2.0",
         "credit": "lwtt93 from Shanghai, China",
         "lat": null,
-        "lon": null
+        "lon": null,
+        "in_region": null
       },
       {
         "n": 4,
@@ -590,7 +632,8 @@
         "license": "CC BY 2.0",
         "credit": "lwtt93 from Shanghai, China",
         "lat": null,
-        "lon": null
+        "lon": null,
+        "in_region": null
       },
       {
         "n": 5,
@@ -601,7 +644,8 @@
         "license": "CC BY 2.0",
         "credit": "lwtt93 from Shanghai, China",
         "lat": null,
-        "lon": null
+        "lon": null,
+        "in_region": null
       },
       {
         "n": 6,
@@ -612,7 +656,8 @@
         "license": "CC BY 2.0",
         "credit": "lwtt93 from Shanghai, China",
         "lat": null,
-        "lon": null
+        "lon": null,
+        "in_region": null
       }
     ]
   },
@@ -632,7 +677,8 @@
         "license": "CC BY-SA 4.0",
         "credit": "Windmemories",
         "lat": 40.547936111111106,
-        "lon": 81.22743611111112
+        "lon": 81.22743611111112,
+        "in_region": true
       },
       {
         "n": 2,
@@ -643,7 +689,8 @@
         "license": "CC BY-SA 4.0",
         "credit": "Windmemories",
         "lat": 40.55265833333333,
-        "lon": 81.23303611111112
+        "lon": 81.23303611111112,
+        "in_region": true
       },
       {
         "n": 3,
@@ -654,7 +701,8 @@
         "license": "CC BY-SA 4.0",
         "credit": "Tigerzeng",
         "lat": 42.443587888888885,
-        "lon": 83.25460197222222
+        "lon": 83.25460197222222,
+        "in_region": true
       },
       {
         "n": 4,
@@ -665,7 +713,8 @@
         "license": "CC BY-SA 4.0",
         "credit": "Tigerzeng",
         "lat": 42.464559111111114,
-        "lon": 83.40826652777778
+        "lon": 83.40826652777778,
+        "in_region": true
       },
       {
         "n": 5,
@@ -676,7 +725,8 @@
         "license": "CC BY-SA 3.0",
         "credit": "user:Yaoleilei",
         "lat": null,
-        "lon": null
+        "lon": null,
+        "in_region": null
       },
       {
         "n": 6,
@@ -687,7 +737,8 @@
         "license": "CC BY-SA 3.0",
         "credit": "余华峰",
         "lat": null,
-        "lon": null
+        "lon": null,
+        "in_region": null
       }
     ]
   },
@@ -707,7 +758,8 @@
         "license": "CC BY-SA 4.0",
         "credit": "Maryliflower",
         "lat": 42.157221666666665,
-        "lon": 79.95997333333334
+        "lon": 79.95997333333334,
+        "in_region": true
       },
       {
         "n": 2,
@@ -718,7 +770,8 @@
         "license": "CC BY-SA 4.0",
         "credit": "Maryliflower",
         "lat": 42.142112,
-        "lon": 80.09716
+        "lon": 80.09716,
+        "in_region": true
       },
       {
         "n": 3,
@@ -729,7 +782,8 @@
         "license": "CC BY-SA 4.0",
         "credit": "N509FZ",
         "lat": null,
-        "lon": null
+        "lon": null,
+        "in_region": null
       },
       {
         "n": 4,
@@ -740,7 +794,8 @@
         "license": "CC BY-SA 4.0",
         "credit": "N509FZ",
         "lat": null,
-        "lon": null
+        "lon": null,
+        "in_region": null
       },
       {
         "n": 5,
@@ -751,7 +806,8 @@
         "license": "CC BY-SA 4.0",
         "credit": "N509FZ",
         "lat": null,
-        "lon": null
+        "lon": null,
+        "in_region": null
       },
       {
         "n": 6,
@@ -762,7 +818,8 @@
         "license": "CC BY-SA 4.0",
         "credit": "N509FZ",
         "lat": null,
-        "lon": null
+        "lon": null,
+        "in_region": null
       }
     ]
   },
@@ -782,7 +839,8 @@
         "license": "Public domain",
         "credit": "Petty Officer 1st Class Stephen Hickok",
         "lat": null,
-        "lon": null
+        "lon": null,
+        "in_region": null
       },
       {
         "n": 2,
@@ -793,7 +851,8 @@
         "license": "Public domain",
         "credit": "Staff Sgt. Robert Storm",
         "lat": null,
-        "lon": null
+        "lon": null,
+        "in_region": null
       },
       {
         "n": 3,
@@ -804,7 +863,8 @@
         "license": "Public domain",
         "credit": "Staff Sgt. Robert Storm",
         "lat": null,
-        "lon": null
+        "lon": null,
+        "in_region": null
       },
       {
         "n": 4,
@@ -815,7 +875,8 @@
         "license": "Public domain",
         "credit": "Staff Sgt. Robert Storm",
         "lat": null,
-        "lon": null
+        "lon": null,
+        "in_region": null
       },
       {
         "n": 5,
@@ -826,7 +887,8 @@
         "license": "Public domain",
         "credit": "Gunnery Sgt. Chris W. Cox",
         "lat": null,
-        "lon": null
+        "lon": null,
+        "in_region": null
       },
       {
         "n": 6,
@@ -837,7 +899,8 @@
         "license": "Public domain",
         "credit": "R.J.Oosterbaan at English Wikipedia",
         "lat": null,
-        "lon": null
+        "lon": null,
+        "in_region": null
       }
     ]
   },
@@ -857,7 +920,8 @@
         "license": "CC BY-SA 2.5 es",
         "credit": "Colegota",
         "lat": null,
-        "lon": null
+        "lon": null,
+        "in_region": null
       },
       {
         "n": 2,
@@ -868,7 +932,8 @@
         "license": "CC BY-SA 2.5 es",
         "credit": "Colegota",
         "lat": null,
-        "lon": null
+        "lon": null,
+        "in_region": null
       },
       {
         "n": 3,
@@ -879,7 +944,8 @@
         "license": "CC BY-SA 2.5 es",
         "credit": "Colegota",
         "lat": null,
-        "lon": null
+        "lon": null,
+        "in_region": null
       },
       {
         "n": 4,
@@ -890,7 +956,8 @@
         "license": "CC BY-SA 2.5 es",
         "credit": "Colegota",
         "lat": null,
-        "lon": null
+        "lon": null,
+        "in_region": null
       },
       {
         "n": 5,
@@ -901,7 +968,8 @@
         "license": "CC BY-SA 2.5 es",
         "credit": "es:User:Colegota",
         "lat": null,
-        "lon": null
+        "lon": null,
+        "in_region": null
       },
       {
         "n": 6,
@@ -912,7 +980,8 @@
         "license": "CC BY-SA 2.5 es",
         "credit": "",
         "lat": null,
-        "lon": null
+        "lon": null,
+        "in_region": null
       }
     ]
   },
@@ -932,7 +1001,8 @@
         "license": "Public domain",
         "credit": "Unknown authorUnknown author",
         "lat": null,
-        "lon": null
+        "lon": null,
+        "in_region": null
       }
     ]
   },
@@ -952,7 +1022,8 @@
         "license": "CC BY-SA 4.0",
         "credit": "Hiroooooo",
         "lat": 43.818447222222225,
-        "lon": 87.58112222222222
+        "lon": 87.58112222222222,
+        "in_region": true
       },
       {
         "n": 2,
@@ -963,7 +1034,8 @@
         "license": "CC BY-SA 4.0",
         "credit": "George6996",
         "lat": null,
-        "lon": null
+        "lon": null,
+        "in_region": null
       },
       {
         "n": 3,
@@ -974,7 +1046,8 @@
         "license": "CC BY-SA 4.0",
         "credit": "HaziiDozen",
         "lat": null,
-        "lon": null
+        "lon": null,
+        "in_region": null
       }
     ]
   },
@@ -994,7 +1067,8 @@
         "license": "CC BY 3.0",
         "credit": "Ccyber5 (talk)",
         "lat": null,
-        "lon": null
+        "lon": null,
+        "in_region": null
       },
       {
         "n": 2,
@@ -1005,7 +1079,8 @@
         "license": "CC BY-SA 3.0",
         "credit": "Per Honor et Gloria",
         "lat": null,
-        "lon": null
+        "lon": null,
+        "in_region": null
       },
       {
         "n": 3,
@@ -1016,7 +1091,8 @@
         "license": "CC BY-SA 2.0",
         "credit": "Andrew An from Beijing, PR China",
         "lat": null,
-        "lon": null
+        "lon": null,
+        "in_region": null
       },
       {
         "n": 4,
@@ -1027,7 +1103,8 @@
         "license": "CC BY-SA 4.0",
         "credit": "Kmchang28 at Chinese Wikipedia",
         "lat": null,
-        "lon": null
+        "lon": null,
+        "in_region": null
       },
       {
         "n": 5,
@@ -1038,7 +1115,8 @@
         "license": "CC BY-SA 4.0",
         "credit": "Kmchang28 at Chinese Wikipedia",
         "lat": null,
-        "lon": null
+        "lon": null,
+        "in_region": null
       },
       {
         "n": 6,
@@ -1049,7 +1127,8 @@
         "license": "CC BY 3.0",
         "credit": "Ccyber5 (talk)",
         "lat": null,
-        "lon": null
+        "lon": null,
+        "in_region": null
       }
     ]
   }
