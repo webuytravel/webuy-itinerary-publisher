@@ -1,0 +1,1056 @@
+{
+  "d02_kalamaili_nature_reserve": {
+    "subject": "Kalamaili Nature Reserve 卡拉麦里自然保护区",
+    "query": "Kalamaili Nature Reserve",
+    "query_full": "Kalamaili Nature Reserve",
+    "shrunk": false,
+    "day": 2,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Cheval_de_Przewalski_Mongolia.jpg/3840px-Cheval_de_Przewalski_Mongolia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Cheval de Przewalski Mongolia.jpg",
+        "path": "work/WBCURC/cand_commons/d02_kalamaili_nature_reserve_1.jpg",
+        "license": "CC BY-SA 2.0",
+        "credit": "Ludovic Hirlimann from 's-Gravenhage, The Netherlands",
+        "lat": 47.696095,
+        "lon": 105.935005
+      }
+    ]
+  },
+  "d03_keketuohai_scenic_area": {
+    "subject": "Keketuohai Scenic Area 可可托海景区",
+    "query": "Keketuohai Scenic Area",
+    "query_full": "Keketuohai Scenic Area",
+    "shrunk": false,
+    "day": 3,
+    "candidates": []
+  },
+  "d03_burqin_riverside_night_market": {
+    "subject": "Burqin Riverside Night Market 布尔津河堤夜市",
+    "query": "Burqin Riverside Night Market",
+    "query_full": "Burqin Riverside Night Market",
+    "shrunk": false,
+    "day": 3,
+    "candidates": []
+  },
+  "d04_kanas_lake": {
+    "subject": "Kanas Lake 喀纳斯湖",
+    "query": "Kanas Lake",
+    "query_full": "Kanas Lake",
+    "shrunk": false,
+    "day": 4,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Kanas_Lake%2C_Altay%2C_China_%28Unsplash%29.jpg/3840px-Kanas_Lake%2C_Altay%2C_China_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Kanas Lake, Altay, China (Unsplash).jpg",
+        "path": "work/WBCURC/cand_commons/d04_kanas_lake_1.jpg",
+        "license": "CC0",
+        "credit": "Muye Ma muyema",
+        "lat": 20.023588888888888,
+        "lon": 110.29977222222222
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Kanas_Lake%2C_China%2C_LandSat_image.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Kanas Lake, China, LandSat image.jpg",
+        "path": "work/WBCURC/cand_commons/d04_kanas_lake_2.jpg",
+        "license": "Public domain",
+        "credit": "NASA",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Kanas_Lake-Xinjiang-Chin-Darwings.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Kanas Lake-Xinjiang-Chin-Darwings.jpg",
+        "path": "work/WBCURC/cand_commons/d04_kanas_lake_3.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "罗一丁",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/80/Kanas_Lake_North_XinJiang.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Kanas Lake North XinJiang.jpg",
+        "path": "work/WBCURC/cand_commons/d04_kanas_lake_4.jpg",
+        "license": "CC BY 2.0",
+        "credit": "Clemson",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/cd/LakeKanas.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "LakeKanas.jpg",
+        "path": "work/WBCURC/cand_commons/d04_kanas_lake_5.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Fanghong",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/44/Quaternary_age_Kanas_lake_2009-0827.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Quaternary age Kanas lake 2009-0827.jpg",
+        "path": "work/WBCURC/cand_commons/d04_kanas_lake_6.jpg",
+        "license": "CC BY 3.0",
+        "credit": "Julianbce",
+        "lat": null,
+        "lon": null
+      }
+    ]
+  },
+  "d04_kanas_three_bays": {
+    "subject": "Kanas Three Bays 喀纳斯三湾",
+    "query": "Kanas Three Bays",
+    "query_full": "Kanas Three Bays",
+    "shrunk": false,
+    "day": 4,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/%28Composite_of%29-_Plates_1%2C_2%2C_5_Joined_in_a_3D_cube_%28IA_dr_composite-of-plates-1-2-5-joined-in-a-3d-cube-6900009%29.jpg/3840px-%28Composite_of%29-_Plates_1%2C_2%2C_5_Joined_in_a_3D_cube_%28IA_dr_composite-of-plates-1-2-5-joined-in-a-3d-cube-6900009%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "(Composite of)- Plates 1, 2, 5 Joined in a 3D cube (IA dr composite-of-plates-1-2-5-joined-in-a-3d-cube-6900009).jpg",
+        "path": "work/WBCURC/cand_commons/d04_kanas_three_bays_1.jpg",
+        "license": "Public domain",
+        "credit": "Pardies, Ignace Gaston, 1636-1673\nDuchange, Gaspard",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/%28Composite_of%29-_Plates_1%2C_3%2C_4_Joined_in_a_3D_cube_%28IA_dr_composite-of-plates-1-3-4-joined-in-a-3d-cube-6900010%29.jpg/3840px-%28Composite_of%29-_Plates_1%2C_3%2C_4_Joined_in_a_3D_cube_%28IA_dr_composite-of-plates-1-3-4-joined-in-a-3d-cube-6900010%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "(Composite of)- Plates 1, 3, 4 Joined in a 3D cube (IA dr composite-of-plates-1-3-4-joined-in-a-3d-cube-6900010).jpg",
+        "path": "work/WBCURC/cand_commons/d04_kanas_three_bays_2.jpg",
+        "license": "Public domain",
+        "credit": "Pardies, Ignace Gaston, 1636-1673\nDuchange, Gaspard",
+        "lat": null,
+        "lon": null
+      }
+    ]
+  },
+  "d05_hemu_village": {
+    "subject": "Hemu Village 禾木村",
+    "query": "Hemu Village",
+    "query_full": "Hemu Village",
+    "shrunk": false,
+    "day": 5,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/DSC_-_Altay_-_Hemu_Valley_1.jpg/3840px-DSC_-_Altay_-_Hemu_Valley_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "DSC - Altay - Hemu Valley 1.jpg",
+        "path": "work/WBCURC/cand_commons/d05_hemu_village_1.jpg",
+        "license": "CC BY 4.0",
+        "credit": "User:CatOnMars",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/DSC_-_Altay_-_Hemu_Valley_2.jpg/3840px-DSC_-_Altay_-_Hemu_Valley_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "DSC - Altay - Hemu Valley 2.jpg",
+        "path": "work/WBCURC/cand_commons/d05_hemu_village_2.jpg",
+        "license": "CC BY 4.0",
+        "credit": "User:CatOnMars",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Hemu_River_and_Mongolian_Village.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Hemu River and Mongolian Village.jpg",
+        "path": "work/WBCURC/cand_commons/d05_hemu_village_3.jpg",
+        "license": "CC BY 3.0",
+        "credit": "Bohao Zhao Tongfei",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Hemu_Village_in_the_snow.jpg/3840px-Hemu_Village_in_the_snow.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Hemu Village in the snow.jpg",
+        "path": "work/WBCURC/cand_commons/d05_hemu_village_4.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Leeinm",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/K155_terminus%2C_Hemu_Village.jpg/3840px-K155_terminus%2C_Hemu_Village.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "K155 terminus, Hemu Village.jpg",
+        "path": "work/WBCURC/cand_commons/d05_hemu_village_5.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Gorden 2211",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/%E7%A6%BE%E6%9C%A8%E6%96%B0%E6%9D%91.jpg/3840px-%E7%A6%BE%E6%9C%A8%E6%96%B0%E6%9D%91.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "禾木新村.jpg",
+        "path": "work/WBCURC/cand_commons/d05_hemu_village_6.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Yanxutong1215",
+        "lat": 48.58152165824603,
+        "lon": 87.44243579911509
+      }
+    ]
+  },
+  "d05_hemu_village_tuvan_wooden_houses": {
+    "subject": "Hemu Village Tuvan Wooden Houses 禾木村图瓦木屋",
+    "query": "Hemu Village",
+    "query_full": "Hemu Village Tuvan Wooden Houses",
+    "shrunk": true,
+    "day": 5,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/DSC_-_Altay_-_Hemu_Valley_1.jpg/3840px-DSC_-_Altay_-_Hemu_Valley_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "DSC - Altay - Hemu Valley 1.jpg",
+        "path": "work/WBCURC/cand_commons/d05_hemu_village_tuvan_wooden_houses_1.jpg",
+        "license": "CC BY 4.0",
+        "credit": "User:CatOnMars",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/DSC_-_Altay_-_Hemu_Valley_2.jpg/3840px-DSC_-_Altay_-_Hemu_Valley_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "DSC - Altay - Hemu Valley 2.jpg",
+        "path": "work/WBCURC/cand_commons/d05_hemu_village_tuvan_wooden_houses_2.jpg",
+        "license": "CC BY 4.0",
+        "credit": "User:CatOnMars",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Hemu_River_and_Mongolian_Village.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Hemu River and Mongolian Village.jpg",
+        "path": "work/WBCURC/cand_commons/d05_hemu_village_tuvan_wooden_houses_3.jpg",
+        "license": "CC BY 3.0",
+        "credit": "Bohao Zhao Tongfei",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Hemu_Village_in_the_snow.jpg/3840px-Hemu_Village_in_the_snow.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Hemu Village in the snow.jpg",
+        "path": "work/WBCURC/cand_commons/d05_hemu_village_tuvan_wooden_houses_4.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Leeinm",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/K155_terminus%2C_Hemu_Village.jpg/3840px-K155_terminus%2C_Hemu_Village.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "K155 terminus, Hemu Village.jpg",
+        "path": "work/WBCURC/cand_commons/d05_hemu_village_tuvan_wooden_houses_5.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Gorden 2211",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/%E7%A6%BE%E6%9C%A8%E6%96%B0%E6%9D%91.jpg/3840px-%E7%A6%BE%E6%9C%A8%E6%96%B0%E6%9D%91.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "禾木新村.jpg",
+        "path": "work/WBCURC/cand_commons/d05_hemu_village_tuvan_wooden_houses_6.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Yanxutong1215",
+        "lat": 48.58152165824603,
+        "lon": 87.44243579911509
+      }
+    ]
+  },
+  "d05_colourful_beach_burqin": {
+    "subject": "Colourful Beach Burqin 布尔津五彩滩",
+    "query": "Colourful Beach Burqin",
+    "query_full": "Colourful Beach Burqin",
+    "shrunk": false,
+    "day": 5,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c2/ColourfulBeach.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "ColourfulBeach.jpg",
+        "path": "work/WBCURC/cand_commons/d05_colourful_beach_burqin_1.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Fanghong",
+        "lat": null,
+        "lon": null
+      }
+    ]
+  },
+  "d06_urho_ghost_city": {
+    "subject": "Urho Ghost City 乌尔禾魔鬼城",
+    "query": "Urho Ghost City",
+    "query_full": "Urho Ghost City",
+    "shrunk": false,
+    "day": 6,
+    "candidates": []
+  },
+  "d07_sayram_lake": {
+    "subject": "Sayram Lake 赛里木湖",
+    "query": "Sayram Lake",
+    "query_full": "Sayram Lake",
+    "shrunk": false,
+    "day": 7,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Lighthouse_on_the_shore_of_Sayram_Lake.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Lighthouse on the shore of Sayram Lake.jpg",
+        "path": "work/WBCURC/cand_commons/d07_sayram_lake_1.jpg",
+        "license": "CC0",
+        "credit": "Fumikas Sagisavas",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/21/Sayram_Lake_on_north_bank.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Sayram Lake on north bank.jpg",
+        "path": "work/WBCURC/cand_commons/d07_sayram_lake_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Y Chen",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Sayram_Lake_scenery.jpg/3840px-Sayram_Lake_scenery.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Sayram Lake scenery.jpg",
+        "path": "work/WBCURC/cand_commons/d07_sayram_lake_3.jpg",
+        "license": "CC0",
+        "credit": "Fumikas Sagisavas",
+        "lat": 44.722461111111116,
+        "lon": 81.13956111111112
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Sunset_upon_the_Lake_Sayram.png/3840px-Sunset_upon_the_Lake_Sayram.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Sunset upon the Lake Sayram.png",
+        "path": "work/WBCURC/cand_commons/d07_sayram_lake_4.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Y Chen",
+        "lat": 44.600555,
+        "lon": 81.38833333333334
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/The_shore_of_Sayram_Lake.jpg/3840px-The_shore_of_Sayram_Lake.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "The shore of Sayram Lake.jpg",
+        "path": "work/WBCURC/cand_commons/d07_sayram_lake_5.jpg",
+        "license": "CC0",
+        "credit": "Fumikas Sagisavas",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Xinjiang_DSC_9301_%285303314254%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Xinjiang DSC 9301 (5303314254).jpg",
+        "path": "work/WBCURC/cand_commons/d07_sayram_lake_6.jpg",
+        "license": "CC BY 2.0",
+        "credit": "lwtt93 from Shanghai, China",
+        "lat": 44.50772166666667,
+        "lon": 81.13148833333332
+      }
+    ]
+  },
+  "d07_guozigou_bridge": {
+    "subject": "Guozigou Bridge 果子沟大桥",
+    "query": "Guozigou Bridge",
+    "query_full": "Guozigou Bridge",
+    "shrunk": false,
+    "day": 7,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Guozigou_Bridge.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Guozigou Bridge.jpg",
+        "path": "work/WBCURC/cand_commons/d07_guozigou_bridge_1.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "千里走单骑",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Guozigou_Bridge_crop.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Guozigou Bridge crop.jpg",
+        "path": "work/WBCURC/cand_commons/d07_guozigou_bridge_2.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "This image has been extracted from another file",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Guozigou_Bridge_far_view.jpg/3840px-Guozigou_Bridge_far_view.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Guozigou Bridge far view.jpg",
+        "path": "work/WBCURC/cand_commons/d07_guozigou_bridge_3.jpg",
+        "license": "CC BY 4.0",
+        "credit": "Timothytyy",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Guozigou_Bridge_in_Construction_-_China_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Guozigou Bridge in Construction - China (1).jpg",
+        "path": "work/WBCURC/cand_commons/d07_guozigou_bridge_4.jpg",
+        "license": "CC BY 2.0",
+        "credit": "Revolution cycle",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Guozigou_Bridge_seen_from_G30.jpg/3840px-Guozigou_Bridge_seen_from_G30.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Guozigou Bridge seen from G30.jpg",
+        "path": "work/WBCURC/cand_commons/d07_guozigou_bridge_5.jpg",
+        "license": "CC BY 4.0",
+        "credit": "Timothytyy",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/63/Sign_of_Guozigou_Bridge.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Sign of Guozigou Bridge.jpg",
+        "path": "work/WBCURC/cand_commons/d07_guozigou_bridge_6.jpg",
+        "license": "CC BY 4.0",
+        "credit": "Timothytyy",
+        "lat": null,
+        "lon": null
+      }
+    ]
+  },
+  "d07_ili_lavender_museum": {
+    "subject": "Ili Lavender Museum 伊犁薰衣草博物馆",
+    "query": "Ili Lavender",
+    "query_full": "Ili Lavender Museum",
+    "shrunk": true,
+    "day": 7,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Autumn_bulbs_catalogue_%2815829403204%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Autumn bulbs catalogue (15829403204).jpg",
+        "path": "work/WBCURC/cand_commons/d07_ili_lavender_museum_1.jpg",
+        "license": "Public domain",
+        "credit": "Henry G. Gilbert Nursery and Seed Trade Catalog Collection.; Peter Henderson &am",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Florists%27_review_%28microform%29_%281912%29_%2816697684221%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Florists' review (microform) (1912) (16697684221).jpg",
+        "path": "work/WBCURC/cand_commons/d07_ili_lavender_museum_2.jpg",
+        "license": "No restrictions",
+        "credit": "Internet Archive Book Images",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Purple_lavender_field_%28Unsplash%29.jpg/3840px-Purple_lavender_field_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Purple lavender field (Unsplash).jpg",
+        "path": "work/WBCURC/cand_commons/d07_ili_lavender_museum_3.jpg",
+        "license": "CC0",
+        "credit": "Francis Cheung riceball",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Terra_Mariae_%281905%29_%2814740453396%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Terra Mariae (1905) (14740453396).jpg",
+        "path": "work/WBCURC/cand_commons/d07_ili_lavender_museum_4.jpg",
+        "license": "No restrictions",
+        "credit": "Internet Archive Book Images",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/62/%E4%BC%8A%E7%8A%81%E8%96%B0%E8%A1%A3%E8%8D%89%E5%9B%AD_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "伊犁薰衣草园 - panoramio.jpg",
+        "path": "work/WBCURC/cand_commons/d07_ili_lavender_museum_5.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Benjamin W.",
+        "lat": 44.157,
+        "lon": 80.77683333333333
+      }
+    ]
+  },
+  "d08_nalati_sky_grassland": {
+    "subject": "Nalati Sky Grassland 那拉提空中草原",
+    "query": "Nalati Sky Grassland",
+    "query_full": "Nalati Sky Grassland",
+    "shrunk": false,
+    "day": 8,
+    "candidates": []
+  },
+  "d08_xinjiang_grassland_bonfire_party": {
+    "subject": "Xinjiang Grassland Bonfire Party 新疆草原篝火晚会",
+    "query": "Xinjiang Grassland",
+    "query_full": "Xinjiang Grassland Bonfire Party",
+    "shrunk": true,
+    "day": 8,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Nalati_Grassland_4%2C_Xinjiang%2C_China.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Nalati Grassland 4, Xinjiang, China.jpg",
+        "path": "work/WBCURC/cand_commons/d08_xinjiang_grassland_bonfire_party_1.jpg",
+        "license": "CC0",
+        "credit": "Yoshi Canopus",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/71/Xinjiang_Bayinbuluk_Grassland%28HDR%29_%287105599245%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Xinjiang Bayinbuluk Grassland(HDR) (7105599245).jpg",
+        "path": "work/WBCURC/cand_commons/d08_xinjiang_grassland_bonfire_party_2.jpg",
+        "license": "CC BY 2.0",
+        "credit": "lwtt93 from Shanghai, China",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Xinjiang_Bayinbuluk_Grassland%28HDR2%29_%287109014119%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Xinjiang Bayinbuluk Grassland(HDR2) (7109014119).jpg",
+        "path": "work/WBCURC/cand_commons/d08_xinjiang_grassland_bonfire_party_3.jpg",
+        "license": "CC BY 2.0",
+        "credit": "lwtt93 from Shanghai, China",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/11/Xinjiang_Shepherd_In_Tangbula_Grassland_%28HDR%29_%287118333907%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Xinjiang Shepherd In Tangbula Grassland (HDR) (7118333907).jpg",
+        "path": "work/WBCURC/cand_commons/d08_xinjiang_grassland_bonfire_party_4.jpg",
+        "license": "CC BY 2.0",
+        "credit": "lwtt93 from Shanghai, China",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/20/Xinjiang_Tangbula_Grassland%28HDR%29_%286974977536%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Xinjiang Tangbula Grassland(HDR) (6974977536).jpg",
+        "path": "work/WBCURC/cand_commons/d08_xinjiang_grassland_bonfire_party_5.jpg",
+        "license": "CC BY 2.0",
+        "credit": "lwtt93 from Shanghai, China",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/44/Xinjiang_Tangbula_Grassland_Xinjiang%28HDR%29_%287115190267%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Xinjiang Tangbula Grassland Xinjiang(HDR) (7115190267).jpg",
+        "path": "work/WBCURC/cand_commons/d08_xinjiang_grassland_bonfire_party_6.jpg",
+        "license": "CC BY 2.0",
+        "credit": "lwtt93 from Shanghai, China",
+        "lat": null,
+        "lon": null
+      }
+    ]
+  },
+  "d09_duku_highway": {
+    "subject": "Duku Highway 独库公路",
+    "query": "Duku Highway",
+    "query_full": "Duku Highway",
+    "shrunk": false,
+    "day": 9,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/77/20231216_G217_Highway_in_Aral_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "20231216 G217 Highway in Aral 01.jpg",
+        "path": "work/WBCURC/cand_commons/d09_duku_highway_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Windmemories",
+        "lat": 40.547936111111106,
+        "lon": 81.22743611111112
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/20231217_G217_Highway_in_Aral_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "20231217 G217 Highway in Aral 02.jpg",
+        "path": "work/WBCURC/cand_commons/d09_duku_highway_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Windmemories",
+        "lat": 40.55265833333333,
+        "lon": 81.23303611111112
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/G217_Duku.jpg/3840px-G217_Duku.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "G217 Duku.jpg",
+        "path": "work/WBCURC/cand_commons/d09_duku_highway_3.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Tigerzeng",
+        "lat": 42.443587888888885,
+        "lon": 83.25460197222222
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/G217_K940.jpeg/3840px-G217_K940.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "G217 K940.jpeg",
+        "path": "work/WBCURC/cand_commons/d09_duku_highway_4.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Tigerzeng",
+        "lat": 42.464559111111114,
+        "lon": 83.40826652777778
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c3/G217_ghost_city.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "G217 ghost city.jpg",
+        "path": "work/WBCURC/cand_commons/d09_duku_highway_5.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "user:Yaoleilei",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f9/State_Road_217_at_21_kilometer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "State Road 217 at 21 kilometer.jpg",
+        "path": "work/WBCURC/cand_commons/d09_duku_highway_6.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "余华峰",
+        "lat": null,
+        "lon": null
+      }
+    ]
+  },
+  "d09_tianshan_mountains": {
+    "subject": "Tianshan Mountains 天山山脉",
+    "query": "Tianshan Mountains",
+    "query_full": "Tianshan Mountains",
+    "shrunk": false,
+    "day": 9,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Glacier_valley_in_Khan_Tengri_Nature_Park%2C_Tien_Shan.jpg/3840px-Glacier_valley_in_Khan_Tengri_Nature_Park%2C_Tien_Shan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Glacier valley in Khan Tengri Nature Park, Tien Shan.jpg",
+        "path": "work/WBCURC/cand_commons/d09_tianshan_mountains_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Maryliflower",
+        "lat": 42.157221666666665,
+        "lon": 79.95997333333334
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Pik_Pobedy_and_Vazha-Pshavela_Peak_at_sunset_from_South_Engilchek_Base_Camp%2C_Central_Tian_Shan%2C_Kyrgyzstan.jpg/3840px-Pik_Pobedy_and_Vazha-Pshavela_Peak_at_sunset_from_South_Engilchek_Base_Camp%2C_Central_Tian_Shan%2C_Kyrgyzstan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Pik Pobedy and Vazha-Pshavela Peak at sunset from South Engilchek Base Camp, Central Tian Shan, Kyrgyzstan.jpg",
+        "path": "work/WBCURC/cand_commons/d09_tianshan_mountains_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Maryliflower",
+        "lat": 42.142112,
+        "lon": 80.09716
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Tianshan_Mountains_at_Baicheng_County_%2820230922154816%29.jpg/3840px-Tianshan_Mountains_at_Baicheng_County_%2820230922154816%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Tianshan Mountains at Baicheng County (20230922154816).jpg",
+        "path": "work/WBCURC/cand_commons/d09_tianshan_mountains_3.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "N509FZ",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Tianshan_Mountains_at_Baicheng_County_%2820230922154906%29.jpg/3840px-Tianshan_Mountains_at_Baicheng_County_%2820230922154906%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Tianshan Mountains at Baicheng County (20230922154906).jpg",
+        "path": "work/WBCURC/cand_commons/d09_tianshan_mountains_4.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "N509FZ",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Tianshan_Mountains_at_Baicheng_County_%2820230922155014%29.jpg/3840px-Tianshan_Mountains_at_Baicheng_County_%2820230922155014%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Tianshan Mountains at Baicheng County (20230922155014).jpg",
+        "path": "work/WBCURC/cand_commons/d09_tianshan_mountains_5.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "N509FZ",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Tianshan_Mountains_at_Baicheng_County_%2820230922155115%29.jpg/3840px-Tianshan_Mountains_at_Baicheng_County_%2820230922155115%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Tianshan Mountains at Baicheng County (20230922155115).jpg",
+        "path": "work/WBCURC/cand_commons/d09_tianshan_mountains_6.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "N509FZ",
+        "lat": null,
+        "lon": null
+      }
+    ]
+  },
+  "d10_karez_well_turpan": {
+    "subject": "Karez Well Turpan 吐鲁番坎儿井",
+    "query": "Karez Well",
+    "query_full": "Karez Well Turpan",
+    "shrunk": true,
+    "day": 10,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Coalition_forces%2C_Afghans_work_together_to_repair_collapsed_Karez_DVIDS376628.jpg/3840px-Coalition_forces%2C_Afghans_work_together_to_repair_collapsed_Karez_DVIDS376628.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Coalition forces, Afghans work together to repair collapsed Karez DVIDS376628.jpg",
+        "path": "work/WBCURC/cand_commons/d10_karez_well_turpan_1.jpg",
+        "license": "Public domain",
+        "credit": "Petty Officer 1st Class Stephen Hickok",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/U.S._Marine_Corps_Cpl._Andrew_Gosinki_talks_on_a_field_radio_during_a_patrol_at_Shah_Karez%2C_Helmand_province%2C_Afghanistan%2C_Feb_120210-M-EV518-444.jpg/3840px-U.S._Marine_Corps_Cpl._Andrew_Gosinki_talks_on_a_field_radio_during_a_patrol_at_Shah_Karez%2C_Helmand_province%2C_Afghanistan%2C_Feb_120210-M-EV518-444.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "U.S. Marine Corps Cpl. Andrew Gosinki talks on a field radio during a patrol at Shah Karez, Helmand province, Afghanistan, Feb 120210-M-EV518-444.jpg",
+        "path": "work/WBCURC/cand_commons/d10_karez_well_turpan_2.jpg",
+        "license": "Public domain",
+        "credit": "Staff Sgt. Robert Storm",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/U.S._Marine_Corps_Cpl._Derrick_Magee_rests_beside_TTroy%2C_a_military_working_dog%2C_during_a_break_from_a_patrol_at_Shah_Karez%2C_Helmand_province%2C_Afghanistan%2C_Feb_120210-M-EV518-655.jpg/3840px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "U.S. Marine Corps Cpl. Derrick Magee rests beside TTroy, a military working dog, during a break from a patrol at Shah Karez, Helmand province, Afghanistan, Feb 120210-M-EV518-655.jpg",
+        "path": "work/WBCURC/cand_commons/d10_karez_well_turpan_3.jpg",
+        "license": "Public domain",
+        "credit": "Staff Sgt. Robert Storm",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/U.S._Marines_walk_along_road_during_a_patrol_at_Shah_Karez%2C_Helmand_province%2C_Afghanistan%2C_Feb_120210-M-EV518-829.jpg/3840px-U.S._Marines_walk_along_road_during_a_patrol_at_Shah_Karez%2C_Helmand_province%2C_Afghanistan%2C_Feb_120210-M-EV518-829.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "U.S. Marines walk along road during a patrol at Shah Karez, Helmand province, Afghanistan, Feb 120210-M-EV518-829.jpg",
+        "path": "work/WBCURC/cand_commons/d10_karez_well_turpan_4.jpg",
+        "license": "Public domain",
+        "credit": "Staff Sgt. Robert Storm",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/USMC-090923-M-4704C-007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "USMC-090923-M-4704C-007.jpg",
+        "path": "work/WBCURC/cand_commons/d10_karez_well_turpan_5.jpg",
+        "license": "Public domain",
+        "credit": "Gunnery Sgt. Chris W. Cox",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/22/Well%26Karez.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Well&Karez.JPG",
+        "path": "work/WBCURC/cand_commons/d10_karez_well_turpan_6.jpg",
+        "license": "Public domain",
+        "credit": "R.J.Oosterbaan at English Wikipedia",
+        "lat": null,
+        "lon": null
+      }
+    ]
+  },
+  "d11_flaming_mountains_turpan": {
+    "subject": "Flaming Mountains Turpan 吐鲁番火焰山",
+    "query": "Flaming Mountains Turpan",
+    "query_full": "Flaming Mountains Turpan",
+    "shrunk": false,
+    "day": 11,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Turpan-flaming-mountains-camellos-d01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Turpan-flaming-mountains-camellos-d01.jpg",
+        "path": "work/WBCURC/cand_commons/d11_flaming_mountains_turpan_1.jpg",
+        "license": "CC BY-SA 2.5 es",
+        "credit": "Colegota",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/24/Turpan-flaming-mountains-camellos-d02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Turpan-flaming-mountains-camellos-d02.jpg",
+        "path": "work/WBCURC/cand_commons/d11_flaming_mountains_turpan_2.jpg",
+        "license": "CC BY-SA 2.5 es",
+        "credit": "Colegota",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/72/Turpan-flaming-mountains-camellos-d03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Turpan-flaming-mountains-camellos-d03.jpg",
+        "path": "work/WBCURC/cand_commons/d11_flaming_mountains_turpan_3.jpg",
+        "license": "CC BY-SA 2.5 es",
+        "credit": "Colegota",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/62/Turpan-flaming-mountains-camellos-d04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Turpan-flaming-mountains-camellos-d04.jpg",
+        "path": "work/WBCURC/cand_commons/d11_flaming_mountains_turpan_4.jpg",
+        "license": "CC BY-SA 2.5 es",
+        "credit": "Colegota",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Turpan-flaming-mountains-d02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Turpan-flaming-mountains-d02.jpg",
+        "path": "work/WBCURC/cand_commons/d11_flaming_mountains_turpan_5.jpg",
+        "license": "CC BY-SA 2.5 es",
+        "credit": "es:User:Colegota",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Turpan-flaming-mountains-museo-d05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Turpan-flaming-mountains-museo-d05.jpg",
+        "path": "work/WBCURC/cand_commons/d11_flaming_mountains_turpan_6.jpg",
+        "license": "CC BY-SA 2.5 es",
+        "credit": "",
+        "lat": null,
+        "lon": null
+      }
+    ]
+  },
+  "d11_uyghur_family_home_visit_turpan": {
+    "subject": "Uyghur Family Home Visit Turpan 吐鲁番维吾尔族家访",
+    "query": "Uyghur Family Home",
+    "query_full": "Uyghur Family Home Visit Turpan",
+    "shrunk": true,
+    "day": 11,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/%D0%95%D1%81%D0%B5%D0%BD%D0%B8%D0%BD%D0%B0_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80%D0%B0_%D1%81_%D1%80%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8F%D0%BC%D0%B8_%28%D1%81%D0%B5%D1%81%D1%82%D1%80%D0%B0_%D0%BF%D0%BE%D1%8D%D1%82%D0%B0_%D0%95%D1%81%D0%B5%D0%BD%D0%B8%D0%BD%D0%B0_%D0%A1%D0%B5%D1%80%D0%B3%D0%B5%D1%8F_%D0%90.%29._%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F._1912%D0%B3_scale_1200.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Есенина Александра с родителями (сестра поэта Есенина Сергея А.). Россия. 1912г scale 1200.jpg",
+        "path": "work/WBCURC/cand_commons/d11_uyghur_family_home_visit_turpan_1.jpg",
+        "license": "Public domain",
+        "credit": "Unknown authorUnknown author",
+        "lat": null,
+        "lon": null
+      }
+    ]
+  },
+  "d11_xinjiang_naan_making": {
+    "subject": "Xinjiang Naan Making 新疆打馕",
+    "query": "Xinjiang Naan",
+    "query_full": "Xinjiang Naan Making",
+    "shrunk": true,
+    "day": 11,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Ancient_Pancake_%28Nang%2C_Naan%29_unearthed_from_Astana_Cemetery%2C_Turpan%2C_China.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Ancient Pancake (Nang, Naan) unearthed from Astana Cemetery, Turpan, China.jpg",
+        "path": "work/WBCURC/cand_commons/d11_xinjiang_naan_making_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Hiroooooo",
+        "lat": 43.818447222222225,
+        "lon": 87.58112222222222
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Naan_prepared_in_tandyr_oven%2C_Kashgar%2C_Xinjiang.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Naan prepared in tandyr oven, Kashgar, Xinjiang.jpg",
+        "path": "work/WBCURC/cand_commons/d11_xinjiang_naan_making_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "George6996",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/%E4%BA%8C%E9%81%93%E6%A1%A5_%E9%A6%95%E5%BA%972.jpg/1920px-%E4%BA%8C%E9%81%93%E6%A1%A5_%E9%A6%95%E5%BA%972.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "二道桥 馕店2.jpg",
+        "path": "work/WBCURC/cand_commons/d11_xinjiang_naan_making_3.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "HaziiDozen",
+        "lat": null,
+        "lon": null
+      }
+    ]
+  },
+  "d12_free_time_in_urumqi": {
+    "subject": "Free Time in Urumqi",
+    "query": "Free Time in Urumqi",
+    "query_full": "Free Time in Urumqi",
+    "shrunk": false,
+    "day": 12,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/db/Outer_Ring_Road_of_Urumqi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Outer Ring Road of Urumqi.jpg",
+        "path": "work/WBCURC/cand_commons/d12_free_time_in_urumqi_1.jpg",
+        "license": "CC BY 3.0",
+        "credit": "Ccyber5 (talk)",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/UrumqiSoldier.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "UrumqiSoldier.jpg",
+        "path": "work/WBCURC/cand_commons/d12_free_time_in_urumqi_2.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Per Honor et Gloria",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Urumqi_Cellphone_screenshots_%284243234789%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Urumqi Cellphone screenshots (4243234789).jpg",
+        "path": "work/WBCURC/cand_commons/d12_free_time_in_urumqi_3.jpg",
+        "license": "CC BY-SA 2.0",
+        "credit": "Andrew An from Beijing, PR China",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Urumqi_Metro_Map_Line1_2018.png/3840px-Urumqi_Metro_Map_Line1_2018.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Urumqi Metro Map Line1 2018.png",
+        "path": "work/WBCURC/cand_commons/d12_free_time_in_urumqi_4.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Kmchang28 at Chinese Wikipedia",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Urumqi_Metro_System_Map_2018.png/3840px-Urumqi_Metro_System_Map_2018.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Urumqi Metro System Map 2018.png",
+        "path": "work/WBCURC/cand_commons/d12_free_time_in_urumqi_5.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Kmchang28 at Chinese Wikipedia",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/11/View_of_Urumqi_with_Yamalik_mountain.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "View of Urumqi with Yamalik mountain.jpg",
+        "path": "work/WBCURC/cand_commons/d12_free_time_in_urumqi_6.jpg",
+        "license": "CC BY 3.0",
+        "credit": "Ccyber5 (talk)",
+        "lat": null,
+        "lon": null
+      }
+    ]
+  }
+}

@@ -30,7 +30,8 @@ import numpy as np
 from PIL import Image
 
 from .image_norm import normalise
-from .image_spec import CAROUSEL, SECTION, THUMBNAIL, SlotSpec, crop_window
+from .image_spec import (CAROUSEL, SECTION, THUMBNAIL, TRIP, SlotSpec,
+                         crop_window)
 from .pdf_images import PdfImage, PdfImageSet
 
 
@@ -57,13 +58,17 @@ class DaySection:
 class Placement:
     """One image, bound to one slot."""
 
-    slot: str  # carousel | thumbnail | route_map | section
-    position: int  # order within the slot; day number for sections
+    slot: str  # carousel | thumbnail | route_map | section | trip
+    position: int  # order within the slot; day number for sections and trips
     origin: str  # pdf | web
     subject: str
     source_ref: str  # "p3 #1" for PDF, or the candidate URL for web
     src_path: str = ""  # local file before normalising
     out_path: str = ""  # normalised file, filled by materialise()
+    # `trip` only: which landmark card on that day, 0-based in document order.
+    # A day has one section grid but several trip cards, so position alone
+    # stops being a unique address once this slot exists.
+    trip_index: int | None = None
     upscale: float = 0.0
     bytes: int = 0
     credit: str = ""
@@ -247,6 +252,58 @@ def build(
             subjects=section.search_subjects, reason=reason,
         ))
 
+    return plan
+
+
+def assign_trip_photos(plan: ImagePlan, sections: list[dict],
+                       score, floor: float, per_item: int = 2,
+                       max_reuse: int = 2) -> ImagePlan:
+    """Hang photos the plan already holds onto the landmark cards.
+
+    The live reference product renders three small images under every
+    landmark card (`tours/112` carries 68 of them); this project shipped all
+    five products with that layer empty. Roughly half the gap closes for
+    free, because a day's section photo usually *is* a photo of one of that
+    day's landmarks — the Yungang Grottoes tile and the "Yungang Grottoes"
+    trip card want the same picture. Measured across the five products,
+    71 of 126 cards match something already in the plan.
+
+    Nothing new is sourced and nothing is re-judged: the pool is only
+    placements a person already signed off for the section and carousel
+    slots, so this cannot introduce a wrong-place photo that the review gate
+    has not already seen.
+
+    `max_reuse` is the part worth keeping. Without it the one good photo of
+    a day gets stamped onto every card on that day, and the page turns into
+    the same image four times — which reads worse than an empty card. Two
+    is deliberate: enough for "the section tile and its own landmark card",
+    not enough to paper over a day.
+    """
+    pool = [p for p in plan.placements if p.slot in ("section", "carousel")]
+    used: dict[str, int] = {}
+
+    for section in sections:
+        day = section["day"]
+        for index, item in enumerate(section.get("trip_items", [])):
+            subject = item.get("photo_subject") or item["title"]["en"]
+            ranked = sorted(
+                ((score(subject, p.subject), p) for p in pool),
+                key=lambda pair: -pair[0])
+            taken = 0
+            for value, placement in ranked:
+                if taken >= per_item or value < floor:
+                    break
+                if used.get(placement.src_path, 0) >= max_reuse:
+                    continue
+                used[placement.src_path] = used.get(placement.src_path, 0) + 1
+                plan.placements.append(Placement(
+                    slot="trip", position=day, trip_index=index,
+                    origin=placement.origin, subject=placement.subject,
+                    source_ref=placement.source_ref,
+                    src_path=placement.src_path,
+                    credit=placement.credit, license=placement.license,
+                    note=f"reused from {placement.slot}#{placement.position}"))
+                taken += 1
     return plan
 
 
@@ -485,6 +542,7 @@ def materialise(plan: ImagePlan, out_dir: str | Path) -> ImagePlan:
     out_dir = Path(out_dir)
     slots: dict[str, SlotSpec] = {
         "carousel": CAROUSEL, "thumbnail": THUMBNAIL, "section": SECTION,
+        "trip": TRIP,
     }
 
     missing = [
@@ -504,6 +562,8 @@ def materialise(plan: ImagePlan, out_dir: str | Path) -> ImagePlan:
         src = Path(placement.src_path)
 
         stem = f"{placement.slot}_{placement.position:02d}"
+        if placement.slot == "trip":
+            stem = f"trip_{placement.position:02d}_{placement.trip_index or 0:02d}"
         if placement.slot == "route_map":
             dest = out_dir / f"{stem}{src.suffix}"
             dest.parent.mkdir(parents=True, exist_ok=True)
@@ -518,6 +578,7 @@ def materialise(plan: ImagePlan, out_dir: str | Path) -> ImagePlan:
         existing = len([p for p in plan.placements
                         if p.slot == placement.slot
                         and p.position == placement.position
+                        and p.trip_index == placement.trip_index
                         and p.out_path])
         dest = out_dir / f"{stem}_{existing}.jpg"
         result = normalise(src, dest, spec)

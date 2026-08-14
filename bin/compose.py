@@ -30,8 +30,8 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from lib.catalogue_source import CatalogueImage, fetch as fetch_catalogue
-from lib.image_plan import (ImagePlan, Placement, dedupe, materialise,
-                            section_gap)
+from lib.image_plan import (ImagePlan, Placement, assign_trip_photos, dedupe,
+                            materialise, section_gap)
 from lib.preview import render
 
 WORK = Path("work")
@@ -509,6 +509,11 @@ if __name__ == "__main__":
             if (WORK / code / "candidates.json").exists() else {}
         fill_carousel(plan, code, tours, picks=CAROUSEL.get(code), stock=stock)
         removed = dedupe(plan, cross_slot=bool(tours))
+        # 景点卡这一层。放在 dedupe 之后:它复用的是去重之后真正留下的那些图,
+        # 而不是可能马上被删掉的。也放在 materialise 之前,这样 trip 槽和别的槽
+        # 一起编码,不会出现一半产物的 out/ 目录。
+        itin = json.loads((WORK / code / "itinerary.json").read_text("utf-8"))
+        assign_trip_photos(plan, itin["sections"], score, MATCH_FLOOR)
         materialise(plan, WORK / code / "out")
         plan.to_json(WORK / code / "plan.json")
         name = json.loads((WORK / code / "itinerary.json").read_text("utf-8"))
