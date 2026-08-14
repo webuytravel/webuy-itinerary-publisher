@@ -54,6 +54,28 @@ Section Name、Section Title、**Trip Type**、**Trip Title**。其余可空。
   删除要走一个确认弹窗,而且**折叠状态下删不掉**——移除动画停在 `el-list-leave`
   不结束,DOM 里那条还在。先展开 section 再删。
 
+### 1.1 Trip Photos 才是自家产品挂图的地方,我们挂反了(2026-08-13 现查)
+
+`Trip Item` 这一层填上了,但 **`Trip Photos` 一张都没传过**——五个产品 126 个景点
+条目全是空的(DESIGN 第 7 节把它记成「非必填,当前流程留空」)。当时的判断是
+「当天配图挂在 Section Photos 就够了」。
+
+查了三个已发布的内蒙产品(见 3.1),这个判断是反的:
+
+| | Section Photos | Trip Photos |
+|---|---|---|
+| 75 / 213 / 306(线上已发布) | **全部为 0** | 0 / 48 / 22 |
+| 408–412(我们做的) | 9–12 张 | **全部为 0** |
+
+**三个线上产品一张 section 图都没有,图全挂在景点条目上。** 也就是说我们和
+自家在售产品的做法**正好相反**。参考页 `tours/112` 上「每天正文的主体是景点卡 +
+3 张小图」这个观察(第 1 节)说的就是 Trip Photos 这一层,只是当时没意识到
+Section Photos 在自家产品里其实是空的。
+
+这不是「哪个对」的问题——两层都是有效槽位,前台都渲染。但如果目标是「和在售产品
+一个水准」,**Trip Photos 是主战场,不是可选项**。逐日一张 section 图更像是我们
+自己发明的折中。
+
 ---
 
 ## 2. 输入:PDF 和 Word 不是同一种东西
@@ -134,6 +156,57 @@ Word 输入必须依赖后面两级图源,这也正是要接 `webuy-itinerary-cr
 ②的覆盖度极不均匀,这是实测数字(2026-08-06):贵州 + 重庆两个在售产品几乎盖满
 WBCKWE 全部景点;Altay 盖住 WBCURC 的大部分新疆段;**山西没有任何在售产品,
 WBCHET 从这一级拿到 0 张。**
+
+### 3.1 ②这一级一直在错的地方找:公开站只是 Skybear 的一个子集
+
+**上面那句「WBCHET 从这一级拿到 0 张」有一半是错的,2026-08-13 业务同事质疑后现查
+才发现。** 错的不是数字(它确实拿到 0 张),是**结论**——不是「内蒙没有在售产品」,
+是**我们根本没去看有没有**。
+
+`lib/catalogue_source.py` 把这一级定义成「`webuytravel.sg` 已发布产品的 OSS 原图」,
+`CHINA_INDEX` 指向 `webuytravel.sg/china-tours`。但那个索引页**滚到底只列 12 个中国团**,
+而 Skybear 里 `travelStatus=1` 的产品有 **237 个**。公开站是 Skybear 的一个子集,
+不是它的镜像。
+
+按产品名扫这 237 个,内蒙古有三个已发布产品,**一个都不在公开站索引上**,
+用产品名推出来的 slug 去 `tours/<id>-<slug>` 也全部 404:
+
+| id | 产品 | 图片分布 |
+|---|---|---|
+| 75 | 10D8N 沙漠与草原双重体验 呼和浩特·响沙湾·希拉穆仁 | 7 横版轮播 + 1 缩略图,**section 0、trip 0** |
+| 213 | 7D6N WINTER ROMANCE 内蒙火山·沙漠·草原 | 1 轮播 + **48 张 Trip Photos**,section 0 |
+| 306 | 9D8N JOURNEY TO INNER MONGOLIA 房车穿越草原 | 10 轮播 + **22 张 Trip Photos** + 路线图,section 0 |
+
+合计约 **88 张**已授权的内蒙实拍,而且 213/306 的图是**逐个景点挂的**,标签就是
+Trip Title,比公开站的 `alt` 还准。和 WBCHET 的重合度很高(方括号是该条目的图片数):
+
+```
+Dazhao Temple[4] · Saishang Old Street[4] · Xilamuren Grassland[4]
+Blue Khadag Toast Ceremony & Welcome Wine[2] · Mongolian Costume Photo Shoot[2]
+Camel Ride & Desert Sightseeing Train[3] · Camel Roller Coaster & Desert ATV[4]
+Desert Bonfire Party & Fireworks[4] · Ordos Wedding Performance[4]
+Inner Mongolia Museum[4] · Wang Zhaojun Museum[4]
+```
+
+正好覆盖 WBCHET 的 D2(草原 / 迎宾仪式 / 蒙古族服饰)、D3(响沙湾沙漠活动)、
+D7(呼和浩特大召寺)。**WBCHET 那 18 张 stock 里有相当一部分本来不必去外面找。**
+
+**山西和宁夏是真的没有**:237 个已发布产品里,按 五台/平遥/云冈/悬空/应县/大同/太原
+和 沙坡头/中卫/腾格里/贺兰/水洞沟/西夏/银川 扫,零命中。
+
+#### 两条要改的
+
+1. **②这一级的产品清单要从 Skybear 取,不是从公开站爬。** 鉴权头在后台任意页面
+   patch 一下 `XMLHttpRequest.prototype.setRequestHeader` 就能拿到,
+   `travelMgmt/queryListPage` 一次就能列全 300+ 条(用法见 UPLOAD_RUNBOOK 1.2)。
+   图片本身仍然从 `prod-webuysg.oss.webuy.ren/travel-video` 直接下载,那个 bucket 是
+   开放的,这部分不用改。
+2. **`tours/112` 现在是 `travelStatus=0`(Unpublished)。** 它的公开页面还能打开、
+   本文多处拿它当「线上在售参考产品」——**那句话现在不成立了**,它已经下架,
+   只是静态页还在。作为「自家出品的版式参考」仍然有效,作为「在售」不再有效。
+
+> 教训和第 5 节是同一条,只是换了个对象:那次是团期,这次是图库。
+> **凡是「线上有没有 X」这种判断,一律现查,而且要查到权威的那个源。**
 
 ③在没有 key 的时候只剩 Wikimedia Commons,而 Commons 是档案馆不是图库:
 48 个候选只有 4 个能用(搜「可可托海」返回矿石标本,搜「乌鲁木齐」返回中国地图)。
