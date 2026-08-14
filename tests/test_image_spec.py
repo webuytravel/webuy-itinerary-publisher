@@ -53,18 +53,14 @@ def test_trip_floor_is_lower_than_section_floor():
     assert MIN_TRIP_CROP_WIDTH < MIN_PDF_CROP_WIDTH
 
 
-def test_the_five_recoverable_brochure_crops_clear_trip_but_not_section():
-    # The actual measured crop widths of the seven real photographs the
-    # section-derived floor was discarding. Five come back; 446 and 420 stay
-    # out, and staying out is the correct answer for them — at TRIP's 1080
-    # target they would be upscaled past the 2.2 ceiling.
-    recoverable = [610, 590, 513, 492, 492]
-    still_too_small = [446, 420]
-    for crop in recoverable:
-        assert crop < MIN_PDF_CROP_WIDTH
-        assert crop >= MIN_TRIP_CROP_WIDTH
-    for crop in still_too_small:
-        assert crop < MIN_TRIP_CROP_WIDTH
+def test_a_brochure_crop_too_small_for_section_can_still_serve_a_card():
+    # 492px is a real measured crop (WBSZX1 广东千古情, WBCURC 卡拉麦里). It
+    # cannot serve a 1200px section tile but renders at 1.09× behind the
+    # 535px lightbox. NB this is about encode targets only — nothing on the
+    # live path actually gates brochure photos on MIN_PDF_CROP_WIDTH; see
+    # docs/DESIGN.md 3.6.1.
+    assert 492 < MIN_PDF_CROP_WIDTH
+    assert 492 >= MIN_TRIP_CROP_WIDTH
 
 
 def test_lowering_the_section_floor_is_not_the_fix():

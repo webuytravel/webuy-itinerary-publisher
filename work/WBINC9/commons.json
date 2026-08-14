@@ -1,0 +1,863 @@
+{
+  "d02_ningxia_museum_yinchuan": {
+    "subject": "Ningxia Museum Yinchuan 宁夏博物馆 银川",
+    "query": "Ningxia Museum Yinchuan",
+    "query_full": "Ningxia Museum Yinchuan",
+    "shrunk": false,
+    "day": 2,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Ningxia_Museum_Tangut_manuscript_D.jpg/3840px-Ningxia_Museum_Tangut_manuscript_D.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Ningxia Museum Tangut manuscript D.jpg",
+        "path": "work/WBINC9/cand_commons/d02_ningxia_museum_yinchuan_1.jpg",
+        "license": "CC0",
+        "credit": "BabelStone",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Ningxia_Museum_Tangut_manuscript_E.jpg/3840px-Ningxia_Museum_Tangut_manuscript_E.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Ningxia Museum Tangut manuscript E.jpg",
+        "path": "work/WBINC9/cand_commons/d02_ningxia_museum_yinchuan_2.jpg",
+        "license": "CC0",
+        "credit": "BabelStone",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Ningxia_Museum_green-glazed_architectural_ornament.jpg/3840px-Ningxia_Museum_green-glazed_architectural_ornament.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Ningxia Museum green-glazed architectural ornament.jpg",
+        "path": "work/WBINC9/cand_commons/d02_ningxia_museum_yinchuan_3.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "BabelStone",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Ningxia_Museum_stone_horse.jpg/3840px-Ningxia_Museum_stone_horse.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Ningxia Museum stone horse.jpg",
+        "path": "work/WBINC9/cand_commons/d02_ningxia_museum_yinchuan_4.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "BabelStone",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Ningxia_Provincial_Museum%2C_Yinchuan.jpg/3840px-Ningxia_Provincial_Museum%2C_Yinchuan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Ningxia Provincial Museum, Yinchuan.jpg",
+        "path": "work/WBINC9/cand_commons/d02_ningxia_museum_yinchuan_5.jpg",
+        "license": "CC0",
+        "credit": "Gary Lee Todd, Ph.D.",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Ningxia_Provincial_Museum%2C_Yinchuan_-_41873785662.jpg/3840px-Ningxia_Provincial_Museum%2C_Yinchuan_-_41873785662.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Ningxia Provincial Museum, Yinchuan - 41873785662.jpg",
+        "path": "work/WBINC9/cand_commons/d02_ningxia_museum_yinchuan_6.jpg",
+        "license": "CC0",
+        "credit": "Gary Lee Todd, Ph.D.",
+        "lat": null,
+        "lon": null
+      }
+    ]
+  },
+  "d02_lanshan_park_yinchuan": {
+    "subject": "Lanshan Park Yinchuan 览山公园 银川",
+    "query": "Lanshan Park",
+    "query_full": "Lanshan Park Yinchuan",
+    "shrunk": true,
+    "day": 2,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Lanzhou_Skyline_201906.jpg/3840px-Lanzhou_Skyline_201906.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Lanzhou Skyline 201906.jpg",
+        "path": "work/WBINC9/cand_commons/d02_lanshan_park_yinchuan_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Pieceofmetalwork",
+        "lat": 36.025115444444445,
+        "lon": 103.83431313888889
+      }
+    ]
+  },
+  "d03_alxa_desert_off_road_vehicle_sand_": {
+    "subject": "Alxa desert off-road vehicle sand dunes 阿拉善 沙漠越野车 沙丘",
+    "query": "Alxa desert",
+    "query_full": "Alxa desert off-road vehicle sand dunes",
+    "shrunk": true,
+    "day": 3,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Badain_Jaran_Desert%2C_Landsat_8_2014.jpg/3840px-Badain_Jaran_Desert%2C_Landsat_8_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Badain Jaran Desert, Landsat 8 2014.jpg",
+        "path": "work/WBINC9/cand_commons/d03_alxa_desert_off_road_vehicle_sand__1.jpg",
+        "license": "Public domain",
+        "credit": "NASA Earth Observatory image by Jesse Allen, using Landsat data from the U.S. Ge",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Badanjilin.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Badanjilin.jpg",
+        "path": "work/WBINC9/cand_commons/d03_alxa_desert_off_road_vehicle_sand__2.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "张骐",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Earth_from_Space-_Singing_dunes_and_mysterious_lakes_ESA515185.jpg/3840px-Earth_from_Space-_Singing_dunes_and_mysterious_lakes_ESA515185.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Earth from Space- Singing dunes and mysterious lakes ESA515185.jpg",
+        "path": "work/WBINC9/cand_commons/d03_alxa_desert_off_road_vehicle_sand__3.jpg",
+        "license": "Attribution",
+        "credit": "European Space Agency",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Siberian_Sea-rosemary%2C_Alxa_673849295.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Siberian Sea-rosemary, Alxa 673849295.jpg",
+        "path": "work/WBINC9/cand_commons/d03_alxa_desert_off_road_vehicle_sand__4.jpg",
+        "license": "CC0",
+        "credit": "no rights reserved",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/39/Snow_in_the_Tennger_Desert_%28MODIS_2025-01-31%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Snow in the Tennger Desert (MODIS 2025-01-31).jpg",
+        "path": "work/WBINC9/cand_commons/d03_alxa_desert_off_road_vehicle_sand__5.jpg",
+        "license": "Public domain",
+        "credit": "MODIS Land Rapid Response Team, NASA GSFC",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/%E4%B9%8C%E5%85%B0%E5%B8%83%E5%92%8C%E5%A4%A7%E6%B2%99%E6%BC%A0%E4%B8%AD%E7%9A%84%E7%9B%90%E7%A2%B1%E6%B9%96_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "乌兰布和大沙漠中的盐碱湖 - panoramio.jpg",
+        "path": "work/WBINC9/cand_commons/d03_alxa_desert_off_road_vehicle_sand__6.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "摩游乐",
+        "lat": null,
+        "lon": null
+      }
+    ]
+  },
+  "d03_wulan_lake_desert_lake_aerial_view": {
+    "subject": "Wulan Lake desert lake aerial view Alxa 乌兰湖 沙漠湖泊 航拍",
+    "query": "Wulan Lake",
+    "query_full": "Wulan Lake desert lake aerial view Alxa",
+    "shrunk": true,
+    "day": 3,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Alam_Cisanti.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Alam Cisanti.jpg",
+        "path": "work/WBINC9/cand_commons/d03_wulan_lake_desert_lake_aerial_view_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Mira wida wulan",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/64/Cisanti_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Cisanti 2.jpg",
+        "path": "work/WBINC9/cand_commons/d03_wulan_lake_desert_lake_aerial_view_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Mira wida wulan",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Situ_Cisanti.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Situ Cisanti.jpg",
+        "path": "work/WBINC9/cand_commons/d03_wulan_lake_desert_lake_aerial_view_3.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Mira wida wulan",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/70/Situ_Cisanti_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Situ Cisanti 2.jpg",
+        "path": "work/WBINC9/cand_commons/d03_wulan_lake_desert_lake_aerial_view_4.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Mira wida wulan",
+        "lat": null,
+        "lon": null
+      }
+    ]
+  },
+  "d04_yellow_river_stone_forest_jingtai_": {
+    "subject": "Yellow River Stone Forest Jingtai Gansu 黄河石林 景泰",
+    "query": "Yellow River Stone Forest Jingtai Gansu",
+    "query_full": "Yellow River Stone Forest Jingtai Gansu",
+    "shrunk": false,
+    "day": 4,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Yellow_river_stone_forest.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Yellow river stone forest.jpg",
+        "path": "work/WBINC9/cand_commons/d04_yellow_river_stone_forest_jingtai__1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Tracylxh",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/%E9%BB%84%E6%B2%B3%E7%9F%B3%E6%9E%97%E5%9B%BD%E5%AE%B6%E5%9C%B0%E8%B4%A8%E5%85%AC%E5%9B%AD.jpg/3840px-%E9%BB%84%E6%B2%B3%E7%9F%B3%E6%9E%97%E5%9B%BD%E5%AE%B6%E5%9C%B0%E8%B4%A8%E5%85%AC%E5%9B%AD.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "黄河石林国家地质公园.jpg",
+        "path": "work/WBINC9/cand_commons/d04_yellow_river_stone_forest_jingtai__2.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "watarukawa",
+        "lat": null,
+        "lon": null
+      }
+    ]
+  },
+  "d04_yellow_river_boat_ride_twenty_two_": {
+    "subject": "Yellow River boat ride Twenty-Two-Bend winding road Jingtai 黄河游船 二十二道弯",
+    "query": "Yellow River boat ride",
+    "query_full": "Yellow River boat ride Twenty-Two-Bend winding road Jingtai",
+    "shrunk": true,
+    "day": 4,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/At_one_stage_a_pinnacle_of_karst_stands_out%2C_literally_like_a_sore_thumb_%2835945755621%29.jpg/3840px-At_one_stage_a_pinnacle_of_karst_stands_out%2C_literally_like_a_sore_thumb_%2835945755621%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "At one stage a pinnacle of karst stands out, literally like a sore thumb (35945755621).jpg",
+        "path": "work/WBINC9/cand_commons/d04_yellow_river_boat_ride_twenty_two__1.jpg",
+        "license": "CC BY 2.0",
+        "credit": "shankar s. from Dubai, united arab emirates",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b5/California_and_the_expositions%2C_Yellowstone_National_Park_-_how_to_go_and_what_to_see_en_route_Union_Pacific_System_%281915%29_%2814573253519%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "California and the expositions, Yellowstone National Park - how to go and what to see en route Union Pacific System (1915) (14573253519).jpg",
+        "path": "work/WBINC9/cand_commons/d04_yellow_river_boat_ride_twenty_two__2.jpg",
+        "license": "No restrictions",
+        "credit": "Internet Archive Book Images",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Egypt_and_the_Christian_crusade_%281907%29_%2814591563099%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Egypt and the Christian crusade (1907) (14591563099).jpg",
+        "path": "work/WBINC9/cand_commons/d04_yellow_river_boat_ride_twenty_two__3.jpg",
+        "license": "No restrictions",
+        "credit": "Internet Archive Book Images",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Maritime_Business_on_the_Huangpu_River%2C_Shanghai%2C_circa_1850.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Maritime Business on the Huangpu River, Shanghai, circa 1850.jpg",
+        "path": "work/WBINC9/cand_commons/d04_yellow_river_boat_ride_twenty_two__4.jpg",
+        "license": "Public domain",
+        "credit": "AnonymousUnknown author",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/5d/The_Persian_Gulf_and_South_Sea_Isles_%281904%29_%2814577685769%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "The Persian Gulf and South Sea Isles (1904) (14577685769).jpg",
+        "path": "work/WBINC9/cand_commons/d04_yellow_river_boat_ride_twenty_two__5.jpg",
+        "license": "No restrictions",
+        "credit": "Internet Archive Book Images",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/66/The_new_New_York_-_a_commentary_on_the_place_and_the_people_%281909%29_%2814760394001%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "The new New York - a commentary on the place and the people (1909) (14760394001).jpg",
+        "path": "work/WBINC9/cand_commons/d04_yellow_river_boat_ride_twenty_two__6.jpg",
+        "license": "No restrictions",
+        "credit": "Internet Archive Book Images",
+        "lat": null,
+        "lon": null
+      }
+    ]
+  },
+  "d05_shapotou_scenic_area_zhongwei_dese": {
+    "subject": "Shapotou Scenic Area Zhongwei desert meets Yellow River 沙坡头景区 中卫",
+    "query": "Shapotou Scenic Area Zhongwei desert",
+    "query_full": "Shapotou Scenic Area Zhongwei desert meets Yellow River",
+    "shrunk": true,
+    "day": 5,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/fd/%E6%B2%99%E5%9D%A1%E5%A4%B4%2C_Shapotou%2C_Tengger_Desert_-_panoramio_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "沙坡头, Shapotou, Tengger Desert - panoramio (2).jpg",
+        "path": "work/WBINC9/cand_commons/d05_shapotou_scenic_area_zhongwei_dese_1.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "sylvannus",
+        "lat": null,
+        "lon": null
+      }
+    ]
+  },
+  "d05_sand_sliding_down_desert_dune_shap": {
+    "subject": "sand sliding down desert dune Shapotou 沙漠滑沙 沙坡头",
+    "query": "sand sliding down desert dune",
+    "query_full": "sand sliding down desert dune Shapotou",
+    "shrunk": true,
+    "day": 5,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Mouse%27s_Tank%2C_Valley_of_Fire_State_Park%2C_NV.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Mouse's Tank, Valley of Fire State Park, NV.jpg",
+        "path": "work/WBINC9/cand_commons/d05_sand_sliding_down_desert_dune_shap_1.jpg",
+        "license": "CC0",
+        "credit": "w_lemay",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/32/Red_Rocks%2C_Valley_of_Fire_State_Park%2C_NV.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Red Rocks, Valley of Fire State Park, NV.jpg",
+        "path": "work/WBINC9/cand_commons/d05_sand_sliding_down_desert_dune_shap_2.jpg",
+        "license": "CC0",
+        "credit": "w_lemay",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Red_Rocks%2C_Valley_of_Fire_State_Park%2C_NV_-_28222652498.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Red Rocks, Valley of Fire State Park, NV - 28222652498.jpg",
+        "path": "work/WBINC9/cand_commons/d05_sand_sliding_down_desert_dune_shap_3.jpg",
+        "license": "CC0",
+        "credit": "w_lemay",
+        "lat": null,
+        "lon": null
+      }
+    ]
+  },
+  "d05_desert_camp_stargazing_night_sky_t": {
+    "subject": "desert camp stargazing night sky tents 沙漠营地 观星 星空",
+    "query": "desert camp stargazing night sky",
+    "query_full": "desert camp stargazing night sky tents",
+    "shrunk": true,
+    "day": 5,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/-mypubliclandsroadtrip_2016-_Search_for_Solitude%2C_Pine_Forest_Range_Wilderness_%2829174235536%29.jpg/3840px--mypubliclandsroadtrip_2016-_Search_for_Solitude%2C_Pine_Forest_Range_Wilderness_%2829174235536%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "-mypubliclandsroadtrip 2016- Search for Solitude, Pine Forest Range Wilderness (29174235536).jpg",
+        "path": "work/WBINC9/cand_commons/d05_desert_camp_stargazing_night_sky_t_1.jpg",
+        "license": "Public domain",
+        "credit": "mypubliclands",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Afton_Canyon_Campground_%2833172504450%29.jpg/3840px-Afton_Canyon_Campground_%2833172504450%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Afton Canyon Campground (33172504450).jpg",
+        "path": "work/WBINC9/cand_commons/d05_desert_camp_stargazing_night_sky_t_2.jpg",
+        "license": "Public domain",
+        "credit": "blmcalifornia",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Afton_Canyon_Campground_%2833555760815%29.jpg/3840px-Afton_Canyon_Campground_%2833555760815%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Afton Canyon Campground (33555760815).jpg",
+        "path": "work/WBINC9/cand_commons/d05_desert_camp_stargazing_night_sky_t_3.jpg",
+        "license": "Public domain",
+        "credit": "blmcalifornia",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Green_Mountain_Campground_%2836029062721%29.jpg/3840px-Green_Mountain_Campground_%2836029062721%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Green Mountain Campground (36029062721).jpg",
+        "path": "work/WBINC9/cand_commons/d05_desert_camp_stargazing_night_sky_t_4.jpg",
+        "license": "Public domain",
+        "credit": "Bureau of Land Management Oregon and Washington from Portland, America",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Green_Mountain_Campground_%2848104515632%29.jpg/3840px-Green_Mountain_Campground_%2848104515632%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Green Mountain Campground (48104515632).jpg",
+        "path": "work/WBINC9/cand_commons/d05_desert_camp_stargazing_night_sky_t_5.jpg",
+        "license": "Public domain",
+        "credit": "BLM Oregon &amp; Washington",
+        "lat": 43.386252999999996,
+        "lon": -120.72289297222223
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Table_Rock_from_Green_Mountain_%2835323336114%29.jpg/3840px-Table_Rock_from_Green_Mountain_%2835323336114%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Table Rock from Green Mountain (35323336114).jpg",
+        "path": "work/WBINC9/cand_commons/d05_desert_camp_stargazing_night_sky_t_6.jpg",
+        "license": "Public domain",
+        "credit": "Bureau of Land Management Oregon and Washington from Portland, America",
+        "lat": null,
+        "lon": null
+      }
+    ]
+  },
+  "d06_qingtongxia_yellow_river_grand_can": {
+    "subject": "Qingtongxia Yellow River Grand Canyon 青铜峡黄河大峡谷",
+    "query": "Qingtongxia Yellow River Grand",
+    "query_full": "Qingtongxia Yellow River Grand Canyon",
+    "shrunk": true,
+    "day": 6,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/%E9%9D%92%E9%93%9C%E5%B3%A1%E9%BB%84%E6%B2%B3%E5%A4%A7%E5%B3%A1%E8%B0%B7.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "青铜峡黄河大峡谷.jpg",
+        "path": "work/WBINC9/cand_commons/d06_qingtongxia_yellow_river_grand_can_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "HCCB3947",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/%E9%9D%92%E9%93%9C%E5%B3%A1%E9%BB%84%E6%B2%B3%E5%A4%A7%E5%B3%A1%E8%B0%B7%E5%85%A8%E6%99%AF%E5%9B%BE.jpg/3840px-%E9%9D%92%E9%93%9C%E5%B3%A1%E9%BB%84%E6%B2%B3%E5%A4%A7%E5%B3%A1%E8%B0%B7%E5%85%A8%E6%99%AF%E5%9B%BE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "青铜峡黄河大峡谷全景图.jpg",
+        "path": "work/WBINC9/cand_commons/d06_qingtongxia_yellow_river_grand_can_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "HCCB3947",
+        "lat": null,
+        "lon": null
+      }
+    ]
+  },
+  "d06_108_pagodas_qingtongxia_hillside_w": {
+    "subject": "108 Pagodas Qingtongxia hillside white pagodas 一百零八塔 青铜峡",
+    "query": "108 Pagodas Qingtongxia",
+    "query_full": "108 Pagodas Qingtongxia hillside white pagodas",
+    "shrunk": true,
+    "day": 6,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/108_stupas_all_3.jpg/3840px-108_stupas_all_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "108 stupas all 3.jpg",
+        "path": "work/WBINC9/cand_commons/d06_108_pagodas_qingtongxia_hillside_w_1.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "BabelStone",
+        "lat": 37.87385333333334,
+        "lon": 105.97904833333334
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/108_stupas_big_stupa_1.jpg/1920px-108_stupas_big_stupa_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "108 stupas big stupa 1.jpg",
+        "path": "work/WBINC9/cand_commons/d06_108_pagodas_qingtongxia_hillside_w_2.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "BabelStone",
+        "lat": 37.87423166666667,
+        "lon": 105.978235
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/108_stupas_entrance.jpg/3840px-108_stupas_entrance.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "108 stupas entrance.jpg",
+        "path": "work/WBINC9/cand_commons/d06_108_pagodas_qingtongxia_hillside_w_3.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "BabelStone",
+        "lat": 37.87674833333333,
+        "lon": 105.98117333333333
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/108_stupas_stele.jpg/3840px-108_stupas_stele.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "108 stupas stele.jpg",
+        "path": "work/WBINC9/cand_commons/d06_108_pagodas_qingtongxia_hillside_w_4.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "BabelStone",
+        "lat": 37.87657166666667,
+        "lon": 105.98126666666667
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/92/108_stupas_tsha-tsha_pagodas.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "108 stupas tsha-tsha pagodas.jpg",
+        "path": "work/WBINC9/cand_commons/d06_108_pagodas_qingtongxia_hillside_w_5.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "BabelStone",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/18/%E4%B8%80%E7%99%BE%E9%9B%B6%E5%85%AB%E5%A1%94.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "一百零八塔.jpg",
+        "path": "work/WBINC9/cand_commons/d06_108_pagodas_qingtongxia_hillside_w_6.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Smwy09",
+        "lat": null,
+        "lon": null
+      }
+    ]
+  },
+  "d06_western_xia_imperial_tombs_yinchua": {
+    "subject": "Western Xia Imperial Tombs Yinchuan earthen mausoleum 西夏陵 银川",
+    "query": "Western Xia Imperial Tombs Yinchuan",
+    "query_full": "Western Xia Imperial Tombs Yinchuan earthen mausoleum",
+    "shrunk": true,
+    "day": 6,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/XiXia_Tomb_1A.jpg/3840px-XiXia_Tomb_1A.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "XiXia Tomb 1A.jpg",
+        "path": "work/WBINC9/cand_commons/d06_western_xia_imperial_tombs_yinchua_1.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "BabelStone",
+        "lat": 38.397103333333334,
+        "lon": 105.97268666666668
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/XiXia_Tomb_2A.jpg/3840px-XiXia_Tomb_2A.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "XiXia Tomb 2A.jpg",
+        "path": "work/WBINC9/cand_commons/d06_western_xia_imperial_tombs_yinchua_2.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "BabelStone",
+        "lat": 38.397288333333336,
+        "lon": 105.971875
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/XiXia_Tombs_1_and_2_A.jpg/3840px-XiXia_Tombs_1_and_2_A.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "XiXia Tombs 1 and 2 A.jpg",
+        "path": "work/WBINC9/cand_commons/d06_western_xia_imperial_tombs_yinchua_3.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "BabelStone",
+        "lat": 38.39706833333333,
+        "lon": 105.97186166666667
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/XiXia_Tombs_1_and_2_B.jpg/3840px-XiXia_Tombs_1_and_2_B.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "XiXia Tombs 1 and 2 B.jpg",
+        "path": "work/WBINC9/cand_commons/d06_western_xia_imperial_tombs_yinchua_4.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "BabelStone",
+        "lat": 38.397288333333336,
+        "lon": 105.971875
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/XiXia_Tombs_1_and_2_whole.jpg/3840px-XiXia_Tombs_1_and_2_whole.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "XiXia Tombs 1 and 2 whole.jpg",
+        "path": "work/WBINC9/cand_commons/d06_western_xia_imperial_tombs_yinchua_5.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "BabelStone",
+        "lat": 38.397103333333334,
+        "lon": 105.97268666666668
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/XiXia_tombs_stele_fragment.jpg/3840px-XiXia_tombs_stele_fragment.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "XiXia tombs stele fragment.jpg",
+        "path": "work/WBINC9/cand_commons/d06_western_xia_imperial_tombs_yinchua_6.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "BabelStone",
+        "lat": null,
+        "lon": null
+      }
+    ]
+  },
+  "d06_wooden_movable_type_printing_block": {
+    "subject": "wooden movable type printing blocks traditional Chinese 木活字印刷",
+    "query": "wooden movable type printing blocks",
+    "query_full": "wooden movable type printing blocks traditional Chinese",
+    "shrunk": true,
+    "day": 6,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d1/2006_Holzlettern_026_23A.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "2006 Holzlettern 026 23A.jpg",
+        "path": "work/WBINC9/cand_commons/d06_wooden_movable_type_printing_block_1.jpg",
+        "license": "GFDL 1.2",
+        "credit": "Daniela Kloth",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/28/JohnstonSansPrintingBlocks.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "JohnstonSansPrintingBlocks.JPG",
+        "path": "work/WBINC9/cand_commons/d06_wooden_movable_type_printing_block_2.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "User Kaihsu on en.wikipedia",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Specimens_of_type%2C_borders%2C_ornaments%2C_brass_rules_and_cuts%2C_etc._-_catalogue_of_printing_machinery_and_materials%2C_wood_goods%2C_etc_%281897%29_%2814578736589%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Specimens of type, borders, ornaments, brass rules and cuts, etc. - catalogue of printing machinery and materials, wood goods, etc (1897) (14578736589).jpg",
+        "path": "work/WBINC9/cand_commons/d06_wooden_movable_type_printing_block_3.jpg",
+        "license": "No restrictions",
+        "credit": "American Type Founders Company",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Sp%C3%A4tgotik_exhibition_Block_Book_with_Apocalypse_9791.jpg/3840px-Sp%C3%A4tgotik_exhibition_Block_Book_with_Apocalypse_9791.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Spätgotik exhibition Block Book with Apocalypse 9791.jpg",
+        "path": "work/WBINC9/cand_commons/d06_wooden_movable_type_printing_block_4.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Dosseman",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/87/Wood_letterpress_type.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Wood letterpress type.jpg",
+        "path": "work/WBINC9/cand_commons/d06_wooden_movable_type_printing_block_5.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Michellecornelison",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Wood_letterpress_type_and_furniture.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Wood letterpress type and furniture.jpg",
+        "path": "work/WBINC9/cand_commons/d06_wooden_movable_type_printing_block_6.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Michellecornelison",
+        "lat": null,
+        "lon": null
+      }
+    ]
+  },
+  "d07_zhenbeipu_western_film_studio_yinc": {
+    "subject": "Zhenbeipu Western Film Studio Yinchuan fortress 镇北堡西部影城 银川",
+    "query": "Zhenbeipu Western Film Studio Yinchuan fortress",
+    "query_full": "Zhenbeipu Western Film Studio Yinchuan fortress",
+    "shrunk": false,
+    "day": 7,
+    "candidates": []
+  },
+  "d07_helan_mountain_rock_art_petroglyph": {
+    "subject": "Helan Mountain Rock Art petroglyphs Ningxia 贺兰山岩画",
+    "query": "Helan Mountain Rock Art petroglyphs Ningxia",
+    "query_full": "Helan Mountain Rock Art petroglyphs Ningxia",
+    "shrunk": false,
+    "day": 7,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Rock_art_from_Helan_Mountains_in_Ningxia_Museum_09.jpg/3840px-Rock_art_from_Helan_Mountains_in_Ningxia_Museum_09.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Rock art from Helan Mountains in Ningxia Museum 09.jpg",
+        "path": "work/WBINC9/cand_commons/d07_helan_mountain_rock_art_petroglyph_1.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "BabelStone",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Rock_art_from_Helan_Mountains_in_Ningxia_Museum_13.jpg/3840px-Rock_art_from_Helan_Mountains_in_Ningxia_Museum_13.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Rock art from Helan Mountains in Ningxia Museum 13.jpg",
+        "path": "work/WBINC9/cand_commons/d07_helan_mountain_rock_art_petroglyph_2.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "BabelStone",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Rock_art_from_Helan_Mountains_in_Ningxia_Museum_15.jpg/3840px-Rock_art_from_Helan_Mountains_in_Ningxia_Museum_15.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Rock art from Helan Mountains in Ningxia Museum 15.jpg",
+        "path": "work/WBINC9/cand_commons/d07_helan_mountain_rock_art_petroglyph_3.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "BabelStone",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Rock_art_from_Helan_Mountains_in_Ningxia_Museum_17.jpg/3840px-Rock_art_from_Helan_Mountains_in_Ningxia_Museum_17.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Rock art from Helan Mountains in Ningxia Museum 17.jpg",
+        "path": "work/WBINC9/cand_commons/d07_helan_mountain_rock_art_petroglyph_4.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "BabelStone",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Rock_art_from_Helan_Mountains_in_Ningxia_Museum_19.jpg/3840px-Rock_art_from_Helan_Mountains_in_Ningxia_Museum_19.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Rock art from Helan Mountains in Ningxia Museum 19.jpg",
+        "path": "work/WBINC9/cand_commons/d07_helan_mountain_rock_art_petroglyph_5.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "BabelStone",
+        "lat": null,
+        "lon": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Rock_art_from_Helan_Mountains_in_Ningxia_Museum_32.jpg/3840px-Rock_art_from_Helan_Mountains_in_Ningxia_Museum_32.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Rock art from Helan Mountains in Ningxia Museum 32.jpg",
+        "path": "work/WBINC9/cand_commons/d07_helan_mountain_rock_art_petroglyph_6.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "BabelStone",
+        "lat": null,
+        "lon": null
+      }
+    ]
+  },
+  "d07_zhihui_yuanshi_winery_helan_mounta": {
+    "subject": "Zhihui Yuanshi Winery Helan Mountain vineyard Ningxia 志辉源石酒庄 贺兰山 葡萄园",
+    "query": "Zhihui Yuanshi Winery Helan Mountain vineyard Ningxia",
+    "query_full": "Zhihui Yuanshi Winery Helan Mountain vineyard Ningxia",
+    "shrunk": false,
+    "day": 7,
+    "candidates": []
+  },
+  "d08_shuidonggou_scenic_area_ningxia_pr": {
+    "subject": "Shuidonggou Scenic Area Ningxia prehistoric site landscape 水洞沟景区 宁夏",
+    "query": "Shuidonggou Scenic Area Ningxia prehistoric site landscape",
+    "query_full": "Shuidonggou Scenic Area Ningxia prehistoric site landscape",
+    "shrunk": false,
+    "day": 8,
+    "candidates": []
+  },
+  "d08_camel_cart_horse_carriage_ride_shu": {
+    "subject": "camel cart horse carriage ride Shuidonggou Ningxia 驼车 马车 水洞沟",
+    "query": "camel cart horse carriage ride",
+    "query_full": "camel cart horse carriage ride Shuidonggou Ningxia",
+    "shrunk": true,
+    "day": 8,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/A_Typical_Scene_of_Street_Life_in_Cairo%2C_Egypt_%284822075072%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "A Typical Scene of Street Life in Cairo, Egypt (4822075072).jpg",
+        "path": "work/WBINC9/cand_commons/d08_camel_cart_horse_carriage_ride_shu_1.jpg",
+        "license": "No restrictions",
+        "credit": "OSU Special Collections &amp; Archives : Commons",
+        "lat": null,
+        "lon": null
+      }
+    ]
+  },
+  "d08_underground_troop_caves_shuidonggo": {
+    "subject": "Underground Troop Caves Shuidonggou tunnel passage 藏兵洞 水洞沟",
+    "query": "Underground Troop Caves",
+    "query_full": "Underground Troop Caves Shuidonggou tunnel passage",
+    "shrunk": true,
+    "day": 8,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Staff_officers_plotting_troop_positions_during_the_invasion_of_Sicily_on_a_wall_map_in_the_underground_operations_room_at_Malta%2C_9_July_1943._NA4094.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Staff officers plotting troop positions during the invasion of Sicily on a wall map in the underground operations room at Malta, 9 July 1943. NA4094.jpg",
+        "path": "work/WBINC9/cand_commons/d08_underground_troop_caves_shuidonggo_1.jpg",
+        "license": "Public domain",
+        "credit": "No 2 Army Film &amp; Photographic Unit, Keating G (Major)",
+        "lat": null,
+        "lon": null
+      }
+    ]
+  }
+}
