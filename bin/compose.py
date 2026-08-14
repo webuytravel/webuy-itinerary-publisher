@@ -114,6 +114,36 @@ def pull_catalogue(code: str, rows: list[dict]) -> None:
         row["path"] = str(dest)
 
 
+def trip_pool(code: str, picks: list[tuple]) -> list[Placement]:
+    """Resolve `TRIP_PICKS` into a pool `assign_trip_photos` can draw from.
+
+    These never enter the plan by themselves — a landmark card has to match
+    them first. Raising on a missing block is the same rule as everywhere
+    else here: a pick that points at nothing is a wiring error, and the cost
+    of letting it pass silently is a card that quietly stays empty.
+    """
+    if not picks:
+        return []
+    data = load(code)
+    out = []
+    for kind, ref, note in picks:
+        if kind != "commons":
+            raise SystemExit(f"{code}: TRIP_PICKS 只支持 commons,收到 {kind!r}")
+        block, n = ref
+        blk = data["commons"].get(block)
+        row = next((c for c in (blk or {}).get("candidates", []) if c["n"] == n), None)
+        if row is None:
+            raise SystemExit(
+                f"{code}: TRIP_PICKS 指向 {block}#{n},commons.json 里没有 —— "
+                f"先跑 `python3 bin/fetch_commons.py {code}`")
+        out.append(Placement(
+            slot="trip", position=blk["day"], origin="web",
+            subject=blk["subject"], source_ref=row["url"], src_path=row["path"],
+            credit=row.get("credit") or "Wikimedia Commons",
+            license=row.get("license", ""), note=note))
+    return out
+
+
 def compose(code: str, region: str, tours: list[str], overrides: dict) -> ImagePlan:
     data = load(code)
     cat_rows = catalogue_for(code, tours)
@@ -392,9 +422,13 @@ OVERRIDES = {
                 ("stock", ("d05_xinzhou", 4), "山西古城街景")],
         "d06": [("stock", ("d06_yungang", 1), "云冈石窟大佛"),
                 ("stock", ("d05_datong_city", 6), "大同九龙壁")],
-        # 乌兰哈达火山:stock 只有埃特纳和尼加拉瓜。改用当天落脚城市。
-        "d07": [("stock", ("d07_region_hohhot", 1),
-                 "呼和浩特大召寺——当日落脚城市;乌兰哈达火山无合规实拍")],
+        # 乌兰哈达火山:stock 只有埃特纳和尼加拉瓜,所以 08-13 那轮只能拿当天
+        # 落脚城市顶上。08-14 Commons 给出三张带 GPS 且落在内蒙范围内的火山口
+        # 航拍,这个替代不再必要——火山排前面,大召寺留作第二张。
+        # 它写在产品 highlights 第 4 条,拿城市照顶替是失真的。
+        "d07": [("commons", ("d07_ulan_hada_volcano_geopark", 1),
+                 "乌兰哈达火山口航拍,带 GPS"),
+                ("stock", ("d07_region_hohhot", 1), "呼和浩特大召寺——当日落脚城市")],
         # 康巴什:候选 #2#3 标题写 Mongolian Government Palace,实为蒙古国乌兰巴托,已排除。
         "d08": [("stock", ("d08_kangbashi", 1), "康巴什城市广场;#2#3 系蒙古国已排除")],
     },
@@ -483,6 +517,57 @@ CAROUSEL = {
     ],
 }
 
+# 景点卡专用的选片。和 OVERRIDES 一样是编辑决策——每一条都是有人看过图才写下的,
+# 区别只在于它落到 Trip Photos 而不是 Section Photos。
+#
+# 为什么要分开:线上三个已发布的内蒙产品 Section Photos 全是 0,图全挂在景点卡上
+# (docs/DESIGN.md 1.1)。一天有五张好图时,要的是一张 section + 四张卡,
+# 不是五张 section。这些条目不会自己进 plan,只有当某张景点卡的主体匹配上才会进。
+#
+# 2026-08-14 WBCHET 这一批:98 张 Commons 候选逐张看过,留 25 张(审核页已签字)。
+# 被整块否决的 12 组里,`d06_shuttle_included_exterior_viewing` 六张全是美国航天
+# 飞机「发现号」——行程原文写的是「含摆渡车」,shuttle 撞词。
+TRIP_PICKS = {
+    "WBCHET": [
+        # D6 悬空寺:六张全部带 GPS 且落在山西境内,是这一轮最干净的一组。
+        ("commons", ("d06_hanging_temple_hunyuan", 1), "崖壁全景"),
+        ("commons", ("d06_hanging_temple_hunyuan", 3), "远景,能看清悬空结构"),
+        ("commons", ("d06_hanging_temple_hunyuan", 2), "栈道上的游客"),
+        ("commons", ("d06_hanging_temple_hunyuan", 6), "隔水远眺"),
+        ("commons", ("d06_hanging_temple_hunyuan", 5), "「天下巨观」题刻石"),
+        # D5 大同古城:六张全部带 GPS。#3 是节庆彩灯装置,风格不搭,没选。
+        ("commons", ("d05_datong_ancient_city", 5), "城墙与拱形城门"),
+        ("commons", ("d05_datong_ancient_city", 1), "城楼正面"),
+        ("commons", ("d05_datong_ancient_city", 4), "寺院院落红灯笼"),
+        ("commons", ("d05_datong_ancient_city", 6), "香炉与院落"),
+        # D5 应县木塔:#4 是屋顶垂直航拍、#6 是室内模型,都没选。
+        ("commons", ("d05_yingxian_wooden_pagoda", 1), "木塔全景"),
+        ("commons", ("d05_yingxian_wooden_pagoda", 3), "航拍,塔与县城的关系"),
+        ("commons", ("d05_yingxian_wooden_pagoda", 5), "牌楼取景,塔在其后"),
+        ("commons", ("d05_yingxian_wooden_pagoda", 2), "斗拱细部"),
+        # D7 乌兰哈达火山:最好的那张同时进了 section(见 OVERRIDES d07)。
+        ("commons", ("d07_ulan_hada_volcano_geopark", 2), "火山口航拍,裸露火山岩"),
+        ("commons", ("d07_ulan_hada_volcano_geopark", 3), "地质公园游客区"),
+        # D3 响沙湾:册子自己那张莲花酒店被人判为 cgi_suspect(效果图),
+        # #4 是同一处的实拍,而且带 GPS。
+        ("commons", ("d03_xiangshawan_desert", 2), "游客骑骆驼队列"),
+        ("commons", ("d03_xiangshawan_desert", 4), "沙丘中的白色穹顶度假区"),
+        ("commons", ("d03_xiangshawan_desert", 1), "沙漠越野车"),
+        ("commons", ("d03_xiangshawan_desert", 5), "沙漠泳池"),
+        # D6 云冈石窟:#4 #5 是黑白老明信片,#6 是游客步道,都没选。
+        ("commons", ("d06_yungang_grottoes_datong", 3), "露天大坐佛"),
+        ("commons", ("d06_yungang_grottoes_datong", 1), "彩绘佛龛"),
+        ("commons", ("d06_yungang_grottoes_datong", 2), "千佛龛壁面"),
+        ("commons", ("d06_yungang_grottoes_buddha_statues", 2), "崖壁大坐佛"),
+        ("commons", ("d06_yungang_grottoes_buddha_statues", 6), "彩绘佛龛"),
+        # 去掉的两张(2026-08-14 用户签字时判掉):
+        #   d02_ordos_grassland #1     —— 带 GPS 地点对,但画面平淡,远处只有一辆车
+        #   d04_wannian_ice_cave_ningwu #1 —— 无 GPS,无法确认是宁武那一个;
+        #      册子自己那张也被判 cgi_suspect,木构支撑的样子也像欧洲的盐矿
+    ],
+}
+
+
 PRODUCTS = {
     "WBCKWE": ("CHN", ["tours/115-9d8n-discover-the-natural-wonders-of-guizhou",
                        "tours/108-8d7n-chongqing-wulong-dazu-world-cultural-heritage"]),
@@ -513,7 +598,8 @@ if __name__ == "__main__":
         # 而不是可能马上被删掉的。也放在 materialise 之前,这样 trip 槽和别的槽
         # 一起编码,不会出现一半产物的 out/ 目录。
         itin = json.loads((WORK / code / "itinerary.json").read_text("utf-8"))
-        assign_trip_photos(plan, itin["sections"], score, MATCH_FLOOR)
+        assign_trip_photos(plan, itin["sections"], score, MATCH_FLOOR,
+                           extra=trip_pool(code, TRIP_PICKS.get(code, [])))
         materialise(plan, WORK / code / "out")
         plan.to_json(WORK / code / "plan.json")
         name = json.loads((WORK / code / "itinerary.json").read_text("utf-8"))

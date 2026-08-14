@@ -257,7 +257,8 @@ def build(
 
 def assign_trip_photos(plan: ImagePlan, sections: list[dict],
                        score, floor: float, per_item: int = 2,
-                       max_reuse: int = 2) -> ImagePlan:
+                       max_reuse: int = 2,
+                       extra: list[Placement] | None = None) -> ImagePlan:
     """Hang photos the plan already holds onto the landmark cards.
 
     The live reference product renders three small images under every
@@ -278,8 +279,17 @@ def assign_trip_photos(plan: ImagePlan, sections: list[dict],
     the same image four times — which reads worse than an empty card. Two
     is deliberate: enough for "the section tile and its own landmark card",
     not enough to paper over a day.
+
+    `extra` carries photos approved for the cards but deliberately kept out
+    of the section grid. The three live Inner Mongolia products put every
+    photo on the landmark cards and leave `Section Photos` empty
+    (`docs/DESIGN.md` 1.1), so a day with five good Commons photos wants one
+    section tile and four cards, not five section tiles. Entries here are as
+    hand-picked as `OVERRIDES` — they never enter the plan on their own,
+    only through a card that matches them.
     """
     pool = [p for p in plan.placements if p.slot in ("section", "carousel")]
+    pool += list(extra or ())
     used: dict[str, int] = {}
 
     for section in sections:
