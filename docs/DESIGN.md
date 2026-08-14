@@ -212,6 +212,72 @@ D7(呼和浩特大召寺)。**WBCHET 那 18 张 stock 里有相当一部分本�
 48 个候选只有 4 个能用(搜「可可托海」返回矿石标本,搜「乌鲁木齐」返回中国地图)。
 接 `webuy-itinerary-creation` 的价值就在这里。
 
+### 3.2 ③这一级写下来的链路和实际跑的链路不是同一条
+
+2026-08-13 逐条核对生产上那 45 张外部图,发现文档描述的图源顺序**一条都没走**。
+
+`lib/photo_source.py` 的开头写的优先级是:
+
+> **Shutterstock(Webuy 已购图库)→ Unsplash → Pexels → Wikimedia Commons**,
+> 其中 Commons 结果带坐标,**超出 `max_distance_km` 的直接丢弃**。
+
+实际跑的是 `lib/mcp_photos.py` → 线上 MCP 的 `fetch_photo`,而那个服务
+`/health` 报的 key 只有 **Gemini / Unsplash / Pexels**。落到生产的 45 张:
+
+| 实际来源 | 张数 | 域名 |
+|---|---:|---|
+| Pexels | 33 | `images.pexels.com` |
+| Unsplash | 11 | `images.unsplash.com` |
+| 手工放进 `OVERRIDES` 的本地文件 | 1 | (无 URL) |
+
+**两件本该起作用的东西一次都没起作用:**
+
+1. **Shutterstock 这一级从来没跑过。** `SHUTTERSTOCK_TOKEN` 本地没设,MCP 服务端
+   也没配。它在文档里排第一、理由是「付费且精选,冷门中国景点上质量占优」——
+   而它恰恰是我们没在用的那一级。`_shutterstock()` 里 `if not token: return []`,
+   **没有 token 就静默返回空**,和 6.9 那批 bug 同一种失败方式。
+2. **Commons 的 GPS 闸门也从来没跑过。** 它只存在于 `photo_source.py` 里,而
+   `photo_source` 在主流程上没有被调用。**这是整条链上唯一一个能机械判定
+   「地方不对」的检查**,换成 MCP 之后就没有了——6.7 那一长串「主体对、地方不对」
+   之所以只能靠人眼逐张看,原因就在这里。Pexels/Unsplash 的返回不带坐标,
+   想恢复这个闸门也没有数据可用。
+
+### 3.3 生产上有一张图,来源没有记录,许可证标签是猜的
+
+45 张里那张没有 URL 的,是 WBCURC(409)第 3 天的可可托海额尔齐斯大峡谷。它是
+`bin/compose.py` 的 `OVERRIDES` 里一条 `("file", "work/WBCURC/cand/d03_keketuohai_canyon.jpg", …)`,
+而 `file` 这个分支是这么写的:
+
+```python
+elif kind == "file":
+    plan.placements.append(Placement(
+        ..., credit="Wikimedia Commons", license="CC BY-SA 4.0", ...))
+```
+
+**credit 和 license 是硬编码的**,不是查出来的——任何本地文件从这个分支进来,
+都会被盖上「Wikimedia Commons / CC BY-SA 4.0」这个章,不管它实际是什么。
+`work/WBCURC/candidates.json` 里 `d03_keketuohai` 那组只有 pexels 条目,文件名
+也对不上,所以**这张图的真实出处在仓库里没有任何记录**。
+
+看文件本身能拿到的(EXIF):HUAWEI NOH-AN00、Snapseed 2.0 修过、2021-06-26 拍,
+**GPS 47.298 / 89.971 —— 距可可托海额尔齐斯大峡谷 21 km**。所以**地方是对的**,
+而且它是全部 103 张里唯一一张能用硬证据(而不是靠看)确认地点的。
+
+但**如果它真是 CC BY-SA 4.0,那就欠着署名和相同方式共享**,而 Skybear 产品页上
+没有任何地方放署名。这需要产品/法务定,不是这里能决定的:要么找回原始出处补上
+署名,要么换掉这张图。
+
+**代码这边该改的是**:`file` 分支不能再硬编码 credit/license,应当由 `OVERRIDES`
+显式提供,提供不了就拒绝——这正是 6.9 那条判断标准的又一次应用。
+
+### 3.4 版权不是主要风险,「不是那个地方」才是
+
+Unsplash 和 Pexels 的许可都允许免费商用、不强制署名,所以那 44 张在版权上是干净的。
+真正的风险在另一头:**卖的是这条线路,配的却是别处的照片。** 6.7 记的那一串
+(搜西夏陵返回兵马俑、搜驼车返回南亚单峰驼、搜大巴扎返回希瓦古城)如果漏一张上线,
+问题不是侵权,是**广告与实际不符**。这也是为什么这一级的图必须逐张人签字,
+以及为什么 3.1 里那 88 张自家内蒙实拍值钱——它们的地点是 CMS 记下来的,不用猜。
+
 **不管哪一级来的图,主体判断一律靠看图,不靠图注。**
 行程册的图注实测会错:WBCURC 那本 9 张图有 3 张图注写错景点(标着「铜仁大峡谷」
 的其实是吐鲁番火焰山),因为新疆册子是拿贵州册子改的。
