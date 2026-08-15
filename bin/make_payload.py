@@ -25,7 +25,8 @@ import json
 import re
 from pathlib import Path
 
-SLOTS = ("carousel", "carousel_mobile", "thumbnail", "route_map", "section")
+SLOTS = ("carousel", "carousel_mobile", "thumbnail", "route_map", "section",
+         "trip")
 
 # Trip Type is a required el-select on every trip item, and the itinerary has
 # no such field — the brochures describe what you see, not how it is filed.
@@ -187,12 +188,17 @@ def build(code: str, work: Path, assets_root: Path) -> dict:
         path = (assets_root / out).resolve()
         if not path.exists():
             missing.append(str(path))
-        images.setdefault(placement["slot"], []).append({
+        row = {
             "pos": placement["position"],
             "path": str(path),
             "bytes": placement.get("bytes"),
             "subject": placement["subject"],
-        })
+        }
+        # trip 图的地址是 (天, 第几张景点卡) —— 光有 pos 到这一层就不唯一了,
+        # 上传端要靠 trip_index 找到对应的那张卡。
+        if placement["slot"] == "trip":
+            row["trip_index"] = placement.get("trip_index") or 0
+        images.setdefault(placement["slot"], []).append(row)
     # The portrait carousel is produced by `bin/mobile_crops.py` and is not in
     # the plan — it is the same picks at a second ratio, matched by position.
     for row in images["carousel"]:

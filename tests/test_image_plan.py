@@ -1,8 +1,12 @@
+from pathlib import Path
+
 import numpy as np
 import pytest
 from PIL import Image
 
-from lib.image_plan import ImagePlan, Placement, materialise
+from lib.image_plan import (GAP_NO_ITEMS, GAP_NO_MATCH, GAP_NO_SUBJECT,
+                            ImagePlan, Placement, assign_trip_photos,
+                            materialise, section_gap)
 
 
 def _photo(path, width=2400, height=1600, seed=0):
@@ -72,3 +76,162 @@ def test_nothing_is_written_when_one_source_is_missing(tmp_path):
     with pytest.raises(FileNotFoundError):
         materialise(plan, out)
     assert not out.exists()
+
+
+# --- every dayless day must be reported ------------------------------------
+# WBCHET D1 shipped to production 410 with no section photo and no mention of
+# it anywhere: not on the review page, not in plan.json's gaps, not in
+# compose's summary line. The day had two trip items ("Depart for Ordos via
+# Kuala Lumpur", "Arrival and Hotel Check-In") and neither carried a
+# photo_subject, so `if placed == 0 and subjects:` skipped the gap entirely.
+# See docs/DESIGN.md 6.11.
+
+def test_a_day_whose_items_carry_no_subject_still_reports_a_gap():
+    gap = section_gap(1, has_items=True, subjects=[], fallback=["Ordos"])
+    assert gap.reason == GAP_NO_SUBJECT
+    # The city is the only thing left to search on — it has to survive into
+    # the gap or the review page has nothing to show the person signing off.
+    assert gap.subjects == ["Ordos"]
+
+
+def test_a_day_with_subjects_that_matched_nothing_is_a_different_gap():
+    gap = section_gap(2, has_items=True,
+                      subjects=["Ningxia Museum"], fallback=["Yinchuan"])
+    assert gap.reason == GAP_NO_MATCH
+    assert gap.subjects == ["Ningxia Museum"]
+
+
+def test_a_day_with_no_trip_items_is_still_a_gap_just_a_benign_one():
+    # Pure return day. tours/112 leaves its last day blank too, so this one
+    # is allowed to stay empty — but it is logged, not swallowed, because
+    # "normal" is the reviewer's call and not compose's.
+    gap = section_gap(9, has_items=False, subjects=[], fallback=["Singapore"])
+    assert gap.reason == GAP_NO_ITEMS
+
+
+def test_the_three_reasons_are_distinct():
+    # The review page branches on them; collapsing any two would put an
+    # unfilled day back under the benign "纯中转/抵离日" line.
+    assert len({GAP_NO_MATCH, GAP_NO_SUBJECT, GAP_NO_ITEMS}) == 3
+
+
+# --- landmark cards reuse what the plan already holds ------------------------
+# The live reference product renders three photos under every landmark card
+# (tours/112 carries 68); all five products shipped that layer empty. About
+# half of it closes with no new sourcing, because a day's section photo
+# usually is a photo of one of that day's landmarks.
+
+def _sections(*days):
+    """days = ((day_no, [item_subject, ...]), ...)"""
+    return [{"day": d, "trip_items": [{"title": {"en": s}, "photo_subject": s}
+                                      for s in items]} for d, items in days]
+
+
+def _exact(subject, label):
+    return 1.0 if subject.lower() == label.lower() else 0.0
+
+
+def _pick(src, subject, day=6):
+    """A photo approved for the cards but kept out of the section grid."""
+    return Placement(slot="trip", position=day, origin="web", subject=subject,
+                     source_ref="url", src_path=src)
+
+
+def test_a_card_gets_the_photo_that_depicts_it():
+    plan = _plan(_section("/tmp/sec.jpg", position=6, subject="Datong Wall"))
+    assign_trip_photos(plan, _sections((6, ["Yungang Grottoes"])), _exact, 0.5,
+                       extra=[_pick("/tmp/a.jpg", "Yungang Grottoes")])
+    trips = plan.of("trip")
+    assert [(t.position, t.trip_index) for t in trips] == [(6, 0)]
+    assert trips[0].src_path == "/tmp/a.jpg"
+
+
+def test_a_card_nothing_depicts_is_left_empty_rather_than_filled():
+    # An unrelated photo on a card is worse than an empty card: it is the
+    # wrong-place failure (docs/DESIGN.md 6.7) with extra steps.
+    plan = _plan(_section("/tmp/a.jpg", position=6, subject="Yungang Grottoes"))
+    assign_trip_photos(plan, _sections((6, ["Hanging Temple"])), _exact, 0.5)
+    assert plan.of("trip") == []
+
+
+def test_a_card_never_repeats_its_own_days_section_photo():
+    # Found on the live products after the first upload: 64 of 154 trip
+    # photos were byte-identical to the section tile directly above them,
+    # because section placements score highest — they are photos of that
+    # day. On the page it reads as the picture pasted twice.
+    plan = _plan(_section("/tmp/a.jpg", position=6, subject="Yungang Grottoes"))
+    assign_trip_photos(plan, _sections((6, ["Yungang Grottoes"])), _exact, 0.5)
+    assert plan.of("trip") == []
+
+
+def test_the_same_file_is_never_used_on_two_cards():
+    # 28 of the first 154 repeated inside a single day. `extra` supplies a
+    # photo that is not the day's section tile, so exactly one card gets it.
+    plan = _plan(_section("/tmp/sec.jpg", position=2, subject="Other"))
+    extra = [Placement(slot="trip", position=2, origin="web",
+                       subject="Ordos Grassland", source_ref="u",
+                       src_path="/tmp/grass.jpg")]
+    sections = _sections((2, ["Ordos Grassland"] * 4))
+    assign_trip_photos(plan, sections, _exact, 0.5, extra=extra)
+    trips = plan.of("trip")
+    assert len(trips) == 1
+    assert len({t.src_path for t in trips}) == 1
+
+
+def test_reuse_is_a_coverage_knob_not_a_default():
+    # max_reuse > 1 brings the repeats back on purpose; measured on the five
+    # products it buys 4 more cards out of 126, which is not worth a visibly
+    # duplicated page. Default stays 1.
+    plan = _plan(_section("/tmp/sec.jpg", position=2, subject="Other"))
+    extra = [Placement(slot="trip", position=2, origin="web",
+                       subject="Ordos Grassland", source_ref="u",
+                       src_path="/tmp/grass.jpg")]
+    assign_trip_photos(plan, _sections((2, ["Ordos Grassland"] * 4)),
+                       _exact, 0.5, max_reuse=3)
+    assert len(plan.of("trip")) == 0   # same-day repeat still blocked
+    plan2 = _plan(_section("/tmp/sec.jpg", position=2, subject="Other"))
+    assign_trip_photos(plan2, _sections((2, ["Ordos Grassland"]),
+                                        (5, ["Ordos Grassland"])),
+                       _exact, 0.5, max_reuse=2, extra=extra)
+    assert len(plan2.of("trip")) == 2  # different days, reuse allowed
+
+
+def test_credit_and_licence_survive_onto_the_card():
+    # Commons photos carry an author and a licence; a trip photo is another
+    # public use of the same file, so it has to carry them too.
+    source = _pick("/tmp/a.jpg", "Western Xia Tombs", day=3)
+    source.credit, source.license = "Thebrainchamber1", "CC BY-SA 4.0"
+    plan = _plan(_section("/tmp/sec.jpg", position=3, subject="Other"))
+    assign_trip_photos(plan, _sections((3, ["Western Xia Tombs"])), _exact, 0.5,
+                       extra=[source])
+    trip = plan.of("trip")[0]
+    assert (trip.credit, trip.license) == ("Thebrainchamber1", "CC BY-SA 4.0")
+
+
+def test_trip_photos_get_their_own_filenames_per_card(tmp_path):
+    # position alone stops being unique once a day has several cards.
+    # Distinct seeds on purpose: with the same seed the two files are
+    # byte-identical and the content-hash dedupe correctly collapses them,
+    # which is a different test (below).
+    plan = _plan(_section(_photo(tmp_path / "sec.png", seed=1), position=4, subject="S"))
+    extra = [_pick(str(_photo(tmp_path / "a.png", seed=2)), "X", day=4),
+             _pick(str(_photo(tmp_path / "b.png", seed=3)), "Y", day=4)]
+    assign_trip_photos(plan, _sections((4, ["X", "Y"])), _exact, 0.5, extra=extra)
+    materialise(plan, tmp_path / "out")
+    names = sorted(Path(p.out_path).name for p in plan.of("trip"))
+    assert names == ["trip_04_00_0.jpg", "trip_04_01_0.jpg"]
+
+
+def test_two_filenames_holding_one_photo_count_as_one(tmp_path):
+    # WBCHET D6 shipped the same Yungang photo on cards 2 and 3: the Commons
+    # blocks `d06_yungang_grottoes_datong` and `..._buddha_statues` both
+    # downloaded it, under different filenames. Path-based dedupe saw two
+    # files; the page showed one picture twice.
+    same = _photo(tmp_path / "one.png", seed=7)
+    copy = tmp_path / "two.png"
+    copy.write_bytes(Path(same).read_bytes())
+    plan = _plan(_section(_photo(tmp_path / "sec.png", seed=9), position=6, subject="S"))
+    extra = [_pick(str(same), "Yungang", day=6), _pick(str(copy), "Yungang", day=6)]
+    assign_trip_photos(plan, _sections((6, ["Yungang", "Yungang"])),
+                       _exact, 0.5, extra=extra)
+    assert len(plan.of("trip")) == 1

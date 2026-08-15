@@ -1,0 +1,768 @@
+{
+ "WBCKWE": [
+  [
+   1,
+   "Chongqing Arrival",
+   6,
+   6
+  ],
+  [
+   2,
+   "Jiaxiu Pavilion",
+   6,
+   6
+  ],
+  [
+   2,
+   "On to Anshun",
+   6,
+   6
+  ],
+  [
+   3,
+   "Huangguoshu Waterfall (incl. eco-s",
+   6,
+   6
+  ],
+  [
+   3,
+   "Water Curtain Cave",
+   0,
+   0
+  ],
+  [
+   3,
+   "Doupotang & Tianxing Bridge",
+   6,
+   6
+  ],
+  [
+   4,
+   "Wanfenglin (Ten Thousand Peak Fore",
+   2,
+   2
+  ],
+  [
+   4,
+   "Bagua Field",
+   0,
+   0
+  ],
+  [
+   4,
+   "Wanfeng Lake (incl. cruise)",
+   0,
+   0
+  ],
+  [
+   5,
+   "Maling River Grand Canyon",
+   5,
+   5
+  ],
+  [
+   5,
+   "Tianxing Gallery (incl. round-trip",
+   0,
+   0
+  ],
+  [
+   5,
+   "On to Guiyang",
+   6,
+   6
+  ],
+  [
+   6,
+   "Kala Miao Village",
+   0,
+   0
+  ],
+  [
+   6,
+   "Xijiang Qianhu Miao Village (incl.",
+   6,
+   6
+  ],
+  [
+   6,
+   "Terraces, Stilt Houses & Wind-Rain",
+   0,
+   0
+  ],
+  [
+   7,
+   "Mount Fanjing (incl. round-trip ca",
+   6,
+   6
+  ],
+  [
+   7,
+   "Red Cloud Golden Summit & Mushroom",
+   6,
+   6
+  ],
+  [
+   7,
+   "Maitreya Sanctuary",
+   0,
+   0
+  ],
+  [
+   8,
+   "Tongren Grand Canyon (incl. sights",
+   0,
+   0
+  ],
+  [
+   8,
+   "Back to Chongqing",
+   6,
+   6
+  ],
+  [
+   9,
+   "Homeward Bound",
+   6,
+   6
+  ]
+ ],
+ "WBCURC": [
+  [
+   1,
+   "Depart for Urumqi via Kuala Lumpur",
+   0,
+   0
+  ],
+  [
+   2,
+   "Coach to Fuyun",
+   0,
+   0
+  ],
+  [
+   2,
+   "Kalamaili Nature Reserve",
+   1,
+   1
+  ],
+  [
+   2,
+   "Hotel Check-In in Fuyun",
+   0,
+   0
+  ],
+  [
+   3,
+   "Keketuohai Scenic Area",
+   0,
+   0
+  ],
+  [
+   3,
+   "Coach to Burqin",
+   0,
+   0
+  ],
+  [
+   3,
+   "Burqin Riverside Night Market",
+   0,
+   0
+  ],
+  [
+   4,
+   "Coach to Jiadengyu",
+   0,
+   0
+  ],
+  [
+   4,
+   "Kanas Lake",
+   6,
+   6
+  ],
+  [
+   4,
+   "Three Bays of Kanas",
+   2,
+   2
+  ],
+  [
+   5,
+   "Hemu Village",
+   6,
+   6
+  ],
+  [
+   5,
+   "Electric Cart into Hemu Village",
+   0,
+   0
+  ],
+  [
+   5,
+   "Colourful Beach",
+   1,
+   1
+  ],
+  [
+   5,
+   "Return to Burqin",
+   0,
+   0
+  ],
+  [
+   6,
+   "Coach to Kuitun",
+   0,
+   0
+  ],
+  [
+   6,
+   "Urho Ghost City",
+   0,
+   0
+  ],
+  [
+   6,
+   "Hotel Check-In in Kuitun",
+   0,
+   0
+  ],
+  [
+   7,
+   "Sayram Lake",
+   6,
+   6
+  ],
+  [
+   7,
+   "Guozigou Bridge",
+   6,
+   6
+  ],
+  [
+   7,
+   "Lavender Museum",
+   0,
+   0
+  ],
+  [
+   7,
+   "On to Kokdala",
+   3,
+   3
+  ],
+  [
+   8,
+   "Coach to Nalati",
+   0,
+   0
+  ],
+  [
+   8,
+   "Nalati Sky Grassland (incl. scenic",
+   0,
+   0
+  ],
+  [
+   8,
+   "Grassland Bonfire Party",
+   0,
+   0
+  ],
+  [
+   9,
+   "Duku Highway Scenic Drive",
+   6,
+   6
+  ],
+  [
+   9,
+   "Tianshan Mountain Scenery",
+   6,
+   6
+  ],
+  [
+   10,
+   "Coach to Turpan",
+   1,
+   1
+  ],
+  [
+   10,
+   "Karez Well",
+   0,
+   0
+  ],
+  [
+   11,
+   "Flaming Mountains",
+   6,
+   6
+  ],
+  [
+   11,
+   "Uyghur Family Visit",
+   0,
+   0
+  ],
+  [
+   11,
+   "Traditional Naan-Making Experience",
+   0,
+   0
+  ],
+  [
+   11,
+   "Return to Urumqi",
+   3,
+   3
+  ],
+  [
+   12,
+   "Free Time in Urumqi",
+   6,
+   6
+  ],
+  [
+   12,
+   "Transfer to Airport",
+   6,
+   6
+  ],
+  [
+   13,
+   "Homeward Bound",
+   6,
+   6
+  ]
+ ],
+ "WBCHET": [
+  [
+   1,
+   "Depart for Ordos via Kuala Lumpur",
+   0,
+   0
+  ],
+  [
+   1,
+   "Arrival and Hotel Check-In",
+   6,
+   6
+  ],
+  [
+   2,
+   "Ordos Grassland",
+   2,
+   2
+  ],
+  [
+   2,
+   "Traditional Welcome Wine & Hada Ce",
+   0,
+   0
+  ],
+  [
+   2,
+   "Mongolian Costume Experience",
+   6,
+   6
+  ],
+  [
+   2,
+   "Grassland Scenery and Yurts",
+   0,
+   0
+  ],
+  [
+   2,
+   "Grassland Bonfire Party",
+   0,
+   0
+  ],
+  [
+   3,
+   "Xiangshawan",
+   5,
+   5
+  ],
+  [
+   3,
+   "Desert Cableway Experience",
+   0,
+   0
+  ],
+  [
+   3,
+   "Dunes and Camel Caravans",
+   0,
+   0
+  ],
+  [
+   3,
+   "Optional Desert Activities and Ret",
+   0,
+   0
+  ],
+  [
+   4,
+   "Coach to Ningwu",
+   0,
+   0
+  ],
+  [
+   4,
+   "Wannian Ice Cave",
+   1,
+   1
+  ],
+  [
+   4,
+   "Ice Formations and Ice Walls",
+   0,
+   0
+  ],
+  [
+   4,
+   "Hanging Village",
+   0,
+   0
+  ],
+  [
+   5,
+   "Xinzhou Ancient City",
+   0,
+   0
+  ],
+  [
+   5,
+   "Yingxian Wooden Pagoda",
+   6,
+   6
+  ],
+  [
+   5,
+   "Ancient Wooden Craftsmanship",
+   2,
+   2
+  ],
+  [
+   5,
+   "Datong Ancient City",
+   6,
+   6
+  ],
+  [
+   6,
+   "Hanging Temple",
+   6,
+   6
+  ],
+  [
+   6,
+   "Shuttle Included, Exterior Viewing",
+   6,
+   6
+  ],
+  [
+   6,
+   "Yungang Grottoes",
+   6,
+   6
+  ],
+  [
+   6,
+   "Buddhist Carvings and Northern Wei",
+   6,
+   6
+  ],
+  [
+   7,
+   "Ulan Hada Volcano Geopark",
+   0,
+   0
+  ],
+  [
+   7,
+   "Scenic Transport and Spacesuit Ren",
+   0,
+   0
+  ],
+  [
+   7,
+   "Spacesuit Photo Experience",
+   0,
+   0
+  ],
+  [
+   7,
+   "Kuanxiangzi Alley",
+   0,
+   0
+  ],
+  [
+   8,
+   "Mengliang Ethnic Cultural Park",
+   0,
+   0
+  ],
+  [
+   8,
+   "Ordos Cultural Industry Park and Y",
+   0,
+   0
+  ],
+  [
+   8,
+   "Kangbashi Tourist Area",
+   0,
+   0
+  ],
+  [
+   8,
+   "Transfer to Ordos Airport",
+   0,
+   0
+  ]
+ ],
+ "WBINC9": [
+  [
+   2,
+   "Ningxia Museum",
+   6,
+   6
+  ],
+  [
+   2,
+   "Lanshan Park",
+   0,
+   0
+  ],
+  [
+   3,
+   "Three-Lake Off-Road Crossing Adven",
+   0,
+   0
+  ],
+  [
+   3,
+   "Wulan Lake Aerial Video",
+   0,
+   0
+  ],
+  [
+   4,
+   "Yellow River Stone Forest",
+   2,
+   2
+  ],
+  [
+   4,
+   "Twenty-Two-Bend Scenic Route and Y",
+   0,
+   0
+  ],
+  [
+   5,
+   "Shapotou Scenic Area",
+   0,
+   0
+  ],
+  [
+   5,
+   "Sand-Sliding Experience",
+   0,
+   0
+  ],
+  [
+   5,
+   "Desert Stargazing Night",
+   0,
+   0
+  ],
+  [
+   6,
+   "Qingtongxia Yellow River Grand Can",
+   0,
+   0
+  ],
+  [
+   6,
+   "108 Pagodas",
+   0,
+   0
+  ],
+  [
+   6,
+   "Western Xia Imperial Tombs and Wes",
+   0,
+   0
+  ],
+  [
+   6,
+   "Wooden Movable-Type Printing Exper",
+   0,
+   0
+  ],
+  [
+   7,
+   "Zhenbeipu Western Film Studio",
+   0,
+   0
+  ],
+  [
+   7,
+   "Helan Mountain Rock Art",
+   6,
+   6
+  ],
+  [
+   7,
+   "Zhihui Yuanshi Winery",
+   0,
+   0
+  ],
+  [
+   8,
+   "Shuidonggou Scenic Area and Museum",
+   0,
+   0
+  ],
+  [
+   8,
+   "Camel-Cart and Horse-Carriage Expe",
+   0,
+   0
+  ],
+  [
+   8,
+   "Underground Troop Caves",
+   0,
+   0
+  ]
+ ],
+ "WBSZX1": [
+  [
+   1,
+   "Shenzhen Arrival",
+   6,
+   6
+  ],
+  [
+   2,
+   "Shenzhen Bay Talent Park and Bay o",
+   0,
+   0
+  ],
+  [
+   2,
+   "Shunfeng Mountain Century Archway",
+   3,
+   3
+  ],
+  [
+   2,
+   "Happy Coast",
+   0,
+   0
+  ],
+  [
+   3,
+   "Foshan Ancestral Temple and Wong F",
+   6,
+   6
+  ],
+  [
+   3,
+   "Lingnan Tiandi",
+   0,
+   0
+  ],
+  [
+   3,
+   "Romance of Guangdong Show",
+   0,
+   0
+  ],
+  [
+   3,
+   "Huangtengxia Glass Bridge",
+   0,
+   0
+  ],
+  [
+   4,
+   "Shawan Ancient Town",
+   0,
+   0
+  ],
+  [
+   4,
+   "City Tram and Huacheng Square",
+   0,
+   0
+  ],
+  [
+   4,
+   "Canton Tower",
+   6,
+   6
+  ],
+  [
+   4,
+   "Pearl River Night Cruise",
+   3,
+   3
+  ],
+  [
+   5,
+   "33 Market Street",
+   0,
+   0
+  ],
+  [
+   5,
+   "Chikan Ancient Town",
+   0,
+   0
+  ],
+  [
+   6,
+   "Chenpi Village",
+   0,
+   0
+  ],
+  [
+   6,
+   "Juxiangyuan Pastry Museum and Ross",
+   0,
+   0
+  ],
+  [
+   6,
+   "Lovers' Road, Love Post Office and",
+   0,
+   0
+  ],
+  [
+   6,
+   "Sun and Moon Shell Grand Theatre a",
+   0,
+   0
+  ],
+  [
+   7,
+   "Shenzhen-Zhongshan Link",
+   0,
+   0
+  ],
+  [
+   7,
+   "Homeward Bound",
+   6,
+   6
+  ]
+ ]
+}

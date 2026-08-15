@@ -93,6 +93,35 @@ THUMBNAIL = SlotSpec("thumbnail", 1440, 1080, _MAX_BYTES, 86, 1, max_upscale=2.0
 # replaced by stock, which is the whole point of PDF-first.
 SECTION = SlotSpec("section", 1200, 900, _MAX_BYTES, 84, 10, max_upscale=1.90)
 
+# Trip Photos → wt_travel_trip_image, the 3-up strip under each landmark
+# card. Measured on the live reference product `tours/112` (2026-08-14,
+# viewport 1291×707), because the numbers above it were assumed and this one
+# should not be:
+#
+#   hero band          1283×460   ×1
+#   per-day section    220×165    ×9      ← SECTION ships 1200px for this
+#   trip photo tile    89×89      ×68     ← this slot
+#
+# 89px would be an absurd target, and it is not the real one: the tiles are
+# `cursor: zoom-in` and open a lightbox. In the lightbox the image renders
+# **535×643** off a 1080×1297 source, and a taller viewport pushes that to
+# roughly 750px. So the lightbox sets the floor, not the tile.
+#
+# 1080 on the long edge is also exactly what the live catalogue already
+# ships (`lib/catalogue_source.py` — "1080-class on the long edge, straight
+# off the OSS bucket"), so this target is the house standard rather than a
+# new bar. The 2.2 ceiling is looser than SECTION's 1.90 on purpose: a
+# 492px brochure crop lands at 2.2× here and still renders at or above the
+# 535px lightbox size.
+#
+# What this slot is NOT for: an earlier version of this comment claimed the
+# looser floor rescues brochure photos that `MIN_PDF_CROP_WIDTH` was
+# discarding. That was wrong — `MIN_PDF_CROP_WIDTH` is not enforced on the
+# live path at all (`docs/DESIGN.md` 3.6.1). The real reason brochure photos
+# go unused is that a day has only two section slots and `OVERRIDES` gets
+# them first; this slot helps by being *another* slot, not a looser one.
+TRIP = SlotSpec("trip", 1080, 810, _MAX_BYTES, 84, 10, max_upscale=2.2)
+
 # Cover Video Asset → wt_travel.video_cover_url. The one slot that is
 # genuinely portrait (UI hint 986×1752 ≈ 9:16) — do NOT 4:3 this one.
 COVER_PORTRAIT = SlotSpec("cover_portrait", 986, 1752, _MAX_BYTES, 86, 1, max_upscale=1.65)
@@ -112,6 +141,20 @@ MIN_ASPECT = 1 / 3.0
 # Smallest 4:3 crop window worth keeping at all. Under this the photo can't
 # even serve a section tile, so the day goes to the web fallback.
 MIN_PDF_CROP_WIDTH = SECTION.min_source_width  # 632px
+
+# ⚠️ Nothing on the live path reads the line above. It reaches compose only
+# through `PdfImageSet.usable` → `image_plan.build()`, and `build()` is never
+# called — same dead branch as `DaySection` (docs/DESIGN.md 3.6.1). Verified
+# by the three brochure photos sitting in shipped plans at 492–590px crops,
+# well under 632. Before quoting either constant as a live rule, grep for the
+# caller.
+#
+# The trip floor below is a real encode target for a real slot: an 89px tile
+# that opens a ~535–750px lightbox needs less than a 1200px section tile. Do
+# NOT "fix" anything by lowering MIN_PDF_CROP_WIDTH — if `build()` is ever
+# reconnected, SECTION is the only per-day image that appears large, and
+# dropping its floor trades a visible slot for an invisible one.
+MIN_TRIP_CROP_WIDTH = TRIP.min_source_width    # 491px
 
 
 def crop_window(width: int, height: int, aspect: float) -> tuple[int, int]:

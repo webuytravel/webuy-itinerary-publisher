@@ -22,6 +22,7 @@ exception is the hero — carousel position 0 — which is described below.
 
 from __future__ import annotations
 
+import hashlib
 import json
 from dataclasses import asdict, dataclass, field
 from pathlib import Path
@@ -30,7 +31,8 @@ import numpy as np
 from PIL import Image
 
 from .image_norm import normalise
-from .image_spec import CAROUSEL, SECTION, THUMBNAIL, SlotSpec, crop_window
+from .image_spec import (CAROUSEL, SECTION, THUMBNAIL, TRIP, SlotSpec,
+                         crop_window)
 from .pdf_images import PdfImage, PdfImageSet
 
 
@@ -57,13 +59,17 @@ class DaySection:
 class Placement:
     """One image, bound to one slot."""
 
-    slot: str  # carousel | thumbnail | route_map | section
-    position: int  # order within the slot; day number for sections
+    slot: str  # carousel | thumbnail | route_map | section | trip
+    position: int  # order within the slot; day number for sections and trips
     origin: str  # pdf | web
     subject: str
     source_ref: str  # "p3 #1" for PDF, or the candidate URL for web
     src_path: str = ""  # local file before normalising
     out_path: str = ""  # normalised file, filled by materialise()
+    # `trip` only: which landmark card on that day, 0-based in document order.
+    # A day has one section grid but several trip cards, so position alone
+    # stops being a unique address once this slot exists.
+    trip_index: int | None = None
     upscale: float = 0.0
     bytes: int = 0
     credit: str = ""
@@ -79,6 +85,40 @@ class Gap:
     position: int
     subjects: list[str]
     reason: str
+
+
+# 三种「这天没有配图」的成因,处理办法完全不同,所以不能合并成一句话:
+#   NO_MATCH   有 photo_subject,四级图源都没给出可用的实拍 → 换图源/自备照片
+#   NO_SUBJECT 有景点条目,但一个 photo_subject 都没写 → 从来没搜过,补 subject 就能搜
+#   NO_ITEMS   连景点条目都没有,纯抵离日 → 线上参考产品的最后一天也是空的
+GAP_NO_MATCH = "no source matched this day"
+GAP_NO_SUBJECT = ("day has trip items but not one carries photo_subject "
+                  "— nothing was ever searched for")
+GAP_NO_ITEMS = "no trip items — arrival/departure transit day"
+
+
+def section_gap(day: int, has_items: bool, subjects: list[str],
+                fallback: list[str]) -> Gap:
+    """The Gap to log when a day ends with zero section photos.
+
+    Always returns one. The bug this replaces was a `placed == 0 and subjects`
+    guard in `bin/compose.py`: a day whose trip items carry no `photo_subject`
+    produced neither a placement nor a gap, so `bin/review_page.py` — the human
+    sign-off gate — had nothing to render for it and the day shipped blank.
+    WBCHET D1, WBCURC D1/D12/D13 and WBCKWE D9 all reached production that way
+    (2026-08-13). See docs/DESIGN.md 6.11.
+
+    `fallback` is the day's own city: not a photo, just the last remaining
+    thing a human could search on once the itinerary offered nothing.
+    """
+    if subjects:
+        reason = GAP_NO_MATCH
+    elif has_items:
+        reason = GAP_NO_SUBJECT
+    else:
+        reason = GAP_NO_ITEMS
+    return Gap(slot="section", position=day,
+               subjects=subjects or fallback, reason=reason)
 
 
 @dataclass
@@ -213,6 +253,113 @@ def build(
             subjects=section.search_subjects, reason=reason,
         ))
 
+    return plan
+
+
+_CONTENT_CACHE: dict[str, str] = {}
+
+
+def _content_key(path: str) -> str:
+    """sha1 of the bytes, so two filenames holding one photo collapse.
+
+    Falls back to the path when the file cannot be read — a missing source
+    is `materialise`'s problem to shout about, not this function's.
+    """
+    if path in _CONTENT_CACHE:
+        return _CONTENT_CACHE[path]
+    try:
+        key = hashlib.sha1(Path(path).read_bytes()).hexdigest()
+    except Exception:                                      # noqa: BLE001
+        key = path
+    _CONTENT_CACHE[path] = key
+    return key
+
+
+def assign_trip_photos(plan: ImagePlan, sections: list[dict],
+                       score, floor: float, per_item: int = 2,
+                       max_reuse: int = 1,
+                       extra: list[Placement] | None = None) -> ImagePlan:
+    """Hang photos the plan already holds onto the landmark cards.
+
+    The live reference product renders three small images under every
+    landmark card (`tours/112` carries 68 of them); this project shipped all
+    five products with that layer empty. Roughly half the gap closes for
+    free, because a day's section photo usually *is* a photo of one of that
+    day's landmarks — the Yungang Grottoes tile and the "Yungang Grottoes"
+    trip card want the same picture. Measured across the five products,
+    71 of 126 cards match something already in the plan.
+
+    Nothing new is sourced and nothing is re-judged: the pool is only
+    placements a person already signed off for the section and carousel
+    slots, so this cannot introduce a wrong-place photo that the review gate
+    has not already seen.
+
+    **Two things a card must never show**, both found on the live products
+    after the first upload (2026-08-14) and both produced by this function:
+
+    * **the same photo as its own day's section tile.** 64 of the first 154
+      trip photos were byte-identical to the section image directly above
+      them, because section placements are in the pool and scored highest —
+      they are, after all, photos of that day. On the page it reads as the
+      picture having been pasted twice.
+    * **the same photo twice anywhere in the trip layer.** 28 repeated
+      within a single day.
+
+    So a day's own section sources are excluded from that day's pool, and
+    `max_reuse` counts uses *within this layer* — 1 by default, meaning a
+    file appears on at most one card in the whole product. Raising it above
+    1 brings the repeats back; it is a knob for coverage, not a default.
+
+    `extra` carries photos approved for the cards but deliberately kept out
+    of the section grid. The three live Inner Mongolia products put every
+    photo on the landmark cards and leave `Section Photos` empty
+    (`docs/DESIGN.md` 1.1), so a day with five good Commons photos wants one
+    section tile and four cards, not five section tiles. Entries here are as
+    hand-picked as `OVERRIDES` — they never enter the plan on their own,
+    only through a card that matches them.
+    """
+    pool = [p for p in plan.placements if p.slot in ("section", "carousel")]
+    pool += list(extra or ())
+    used: dict[str, int] = {}
+
+    # 按**内容**去重,不按路径。08-14 第一次修完之后 WBCHET 第 6 天的卡 2 和卡 3
+    # 仍然是同一张图:Commons 的 `d06_yungang_grottoes_datong` 和
+    # `d06_yungang_grottoes_buddha_statues` 两个块下载到了同一张照片,
+    # 存成了两个文件名。按 src_path 去重看不出来,按 sha1 一眼就看出来。
+    ident = _content_key
+
+    # 当天 section 用掉的源文件,那天的卡一律不许再用。
+    section_src: dict[int, set[str]] = {}
+    for p in plan.placements:
+        if p.slot == "section":
+            section_src.setdefault(p.position, set()).add(ident(p.src_path))
+
+    for section in sections:
+        day = section["day"]
+        blocked = section_src.get(day, set())
+        for index, item in enumerate(section.get("trip_items", [])):
+            subject = item.get("photo_subject") or item["title"]["en"]
+            ranked = sorted(
+                ((score(subject, p.subject), p) for p in pool),
+                key=lambda pair: -pair[0])
+            taken = 0
+            for value, placement in ranked:
+                if taken >= per_item or value < floor:
+                    break
+                key = ident(placement.src_path)
+                if key in blocked:
+                    continue
+                if used.get(key, 0) >= max_reuse:
+                    continue
+                used[key] = used.get(key, 0) + 1
+                plan.placements.append(Placement(
+                    slot="trip", position=day, trip_index=index,
+                    origin=placement.origin, subject=placement.subject,
+                    source_ref=placement.source_ref,
+                    src_path=placement.src_path,
+                    credit=placement.credit, license=placement.license,
+                    note=f"reused from {placement.slot}#{placement.position}"))
+                taken += 1
     return plan
 
 
@@ -451,6 +598,7 @@ def materialise(plan: ImagePlan, out_dir: str | Path) -> ImagePlan:
     out_dir = Path(out_dir)
     slots: dict[str, SlotSpec] = {
         "carousel": CAROUSEL, "thumbnail": THUMBNAIL, "section": SECTION,
+        "trip": TRIP,
     }
 
     missing = [
@@ -470,6 +618,8 @@ def materialise(plan: ImagePlan, out_dir: str | Path) -> ImagePlan:
         src = Path(placement.src_path)
 
         stem = f"{placement.slot}_{placement.position:02d}"
+        if placement.slot == "trip":
+            stem = f"trip_{placement.position:02d}_{placement.trip_index or 0:02d}"
         if placement.slot == "route_map":
             dest = out_dir / f"{stem}{src.suffix}"
             dest.parent.mkdir(parents=True, exist_ok=True)
@@ -484,6 +634,7 @@ def materialise(plan: ImagePlan, out_dir: str | Path) -> ImagePlan:
         existing = len([p for p in plan.placements
                         if p.slot == placement.slot
                         and p.position == placement.position
+                        and p.trip_index == placement.trip_index
                         and p.out_path])
         dest = out_dir / f"{stem}_{existing}.jpg"
         result = normalise(src, dest, spec)

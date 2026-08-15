@@ -131,6 +131,34 @@ checkout they exist only after the fetch steps have run.
 **这里是人工闸门:`python3 bin/review_page.py WBINC9` 出的页要有人看过并同意,
 才往下走。**
 
+### 3.0 除了纯回程那天,每天都要有配图
+
+线上在售的 `tours/112` 10 天里 9 天有图,**只有最后一天「Urumqi ✈ Singapore」
+没有**;第 1 天虽然也是飞行日,但有落地活动,**它是有图的**。所以标准是:
+
+> **抵达日算正常的一天,要有图。只有纯回程那天可以空。**
+
+compose 的摘要行会点名没有图的天:
+
+```
+WBCHET: sections=9 over 7/9 days | ... | gaps=2
+    NO SECTION PHOTO: day(s) 1, 9 — 逐条见下方 GAP,每一条都要人决定
+    GAP day 1: Ordos
+    GAP day 9: Singapore
+```
+
+**每一条都要处理掉再往下走**,不是看一眼就算。三种成因,办法不一样:
+
+| gap 的 reason | 含义 | 怎么办 |
+|---|---|---|
+| `no source matched this day` | 有景点,四级图源都没命中 | 换图源 / 自备照片 / 改用当日城市实拍 |
+| `...not one carries photo_subject` | 有景点条目,但**没人写过要搜什么** | 去 `itinerary.json` 给那天的景点补 `photo_subject`,或按当日城市取图 |
+| `no trip items` | 连景点条目都没有 | 纯抵离日,可以留空——但仍要人点头 |
+
+中间那一条 2026-08-13 之前是**完全不显示**的:compose 不记 gap、审核页不渲染,
+WBCHET D1、WBCURC D1/D12/D13、WBCKWE D9 就是这样静默留空上线的。为什么会漏、
+以及为什么不让它自动去搜图,见 `docs/DESIGN.md` 6.11。
+
 ### 3.1 `pdf_subjects.json` 的 ref 是页内**全部**栅格的序号
 
 `ref` 形如 `p3#4`,`4` 是 `page.get_images()` 在该页的下标,**包含被 gate 剔除的
@@ -283,7 +311,36 @@ Vue 是批处理的:**一个同步块里连发 N 次 click 只产生一次重渲
 | Mobile Display Image | `out_mobile/carousel_*_mobile.jpg`(竖版,必填) |
 | Route Map | `out/route_map_00.png` |
 | Section Photos(每天一个) | `out/section_<day>_*.jpg`,文档序 = 天序 |
-| Trip Photos / Cover Video | 留空(非必填) |
+| **Trip Photos**(每个景点卡一个) | `out/trip_<day>_<卡序>_*.jpg` |
+| Cover Video | 留空(非必填) |
+
+**Trip Photos 不再留空。** 2026-08-14 起五个产品的景点卡都挂了图(DESIGN 6.05),
+线上三个已发布的内蒙产品也是把图全挂在这一层、Section Photos 留空(DESIGN 1.1)。
+
+槽位定位:`file_upload` 要 `ref`,而一个 13 天产品有 40+ 个文件 input。
+**同一个 section 内 ref 是等差的:**
+
+```
+Section Photos = S，第 k 张卡(0 基)= S + 29×(k+1)
+```
+
+**跨 section 的步长不固定**(+28 和 +31 都见过),所以 section 本身的 ref 要
+逐个 `find`,只在 section 内部用等差推。取 ref 前**先展开全部 section**,
+折叠状态下拿不到里面的 input。
+
+> 🚨 **删除大批图片之后,ref 图谱会失效。** 2026-08-14 清掉 33 张 trip 图后再
+> `find`,返回的标注自相矛盾(同一个 ref 既标 Trip Item 1、又排在 Section Photos
+> 前面),section 之间的间距也出现了没见过的 +37。**不要在这种状态下推导 ref。**
+> 正确做法:**先把"已清空"这一步保存下来,整页重载,再取新的 ref** ——
+> 间距立刻回到正常的 +28/+31。表单在 Save 前不写库,分两次存是安全的。
+>
+> 🚨 **批量删除必须分批,而且删除调用超时不代表没删。** 一次删 39 张,
+> `Runtime.evaluate` 连续两次 45s 超时;**按 6.1.3 不重试、等 20–25 秒回读**,
+> 每次都发现实际已经删掉一大半。每批 4–8 个组件最稳。
+
+> ⚠️ **`find` 的 "Trip Item N" 标注会错位。** WBCURC 第 6 天只有 3 张卡,
+> 一次 find 却标成 Trip Item 2/3/4。**数量对不上时不要顺着它猜**——换一句只问
+> 那一个 section 的 query 重查。传错槽会把图挂到别的景点卡上,而且从数字上看不出来。
 
 > **不要用本地 http 服务器 + fetch 取字节。** 从 https 页面 fetch `127.0.0.1`
 > **静默挂起**:promise 既不 resolve 也不 reject,console 一条报错都没有,看起来像
@@ -309,6 +366,24 @@ Vue 是批处理的:**一个同步块里连发 N 次 click 只产生一次重渲
 回列表页确认 `Status = Unpublished`,记下 Product Id。然后**重新打开编辑页**核对:
 产品名(无 `&`)、highlights 条数、section 数、trip item 数、各图片槽位数量、
 `Publish for sale` 未勾、团期已绑。
+
+**逐日配图要逐天数,而且要交给用户一张表。** 「各图片槽位数量」这句话不够——
+它默认你会去数每一天,而实际上没人会。410 少了 D1 的图,交付时说的是「已完成」,
+两天后由业务同事在页面上发现。**报交付时把这张表贴出来**:
+
+```js
+// 编辑页 console。数组件的 value,不数 DOM——删除动画会留下幻影 <img>(见 6.1)
+[...document.querySelectorAll('.itinerary-container .el-collapse-item')].map((s,i)=>{
+  const n=[...s.querySelectorAll('.image-crop-upload')]
+    .filter(u=>(u.closest('.el-form-item')?.querySelector('.el-form-item__label')||{})
+                 .innerText?.trim()==='Section Photos')
+    .reduce((t,u)=>t+(u.__vue__?.value?.length||0),0);
+  return `D${i+1}=${n}`;
+}).join(' ')
+// WBCHET 410:D1=0 D2=1 D3=1 D4=1 D5=2 D6=2 D7=1 D8=1 D9=0
+```
+
+**除了纯回程那天,出现 `=0` 就是没做完**(标准见 3.0)。
 
 表单在点 Save 之前什么都不写库,**填写阶段中断是安全的**;一旦保存就是生产记录。
 
@@ -356,6 +431,27 @@ while (vm.value.length) { vm.removeImage(0); await new Promise(r => setTimeout(r
 
 **5) 保存前仍然要回读 + 截图确认发布框。** 编辑已有产品和新建一样,
 `Publish for sale` 勾着保存就是当场上架。
+
+---
+
+## 6.2 编辑页默认只展开 Section 1,所以「看起来一天图都没有」
+
+打开编辑页时,九个 section 里**只有第一个是展开的**(实测 410:
+`[true,false,false,false,false,false,false,false,false]`)。其余全折叠,里面的
+Section Photos 一张都看不见——**要一天一天点开才数得清**。
+
+雪上加霜的是:**Section 1 往往正是没有配图的那一天**(抵达日)。于是第一眼看到的
+是一个空的 Day 1,很容易得出「大部分天都没有图」的结论。2026-08-13 业务同事看
+410 报的是「8 天里只有 3 天有照片」,实际是 9 天里 7 天有。
+
+**别靠肉眼数,先全部展开再用 6. 节那段脚本读组件的 value。** 全部展开:
+
+```js
+[...document.querySelectorAll('.itinerary-container .el-collapse-item__header')]
+  .forEach(h => { if (!h.closest('.el-collapse-item').className.includes('is-active')) h.click(); });
+```
+
+展开是纯前端状态,不写库,随便点。
 
 ---
 

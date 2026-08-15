@@ -30,7 +30,8 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from lib.catalogue_source import CatalogueImage, fetch as fetch_catalogue
-from lib.image_plan import Gap, ImagePlan, Placement, dedupe, materialise
+from lib.image_plan import (ImagePlan, Placement, assign_trip_photos, dedupe,
+                            materialise, section_gap)
 from lib.preview import render
 
 WORK = Path("work")
@@ -85,6 +86,10 @@ def load(code: str) -> dict:
     ]
     cand = base / "candidates.json"
     out["stock"] = json.loads(cand.read_text("utf-8")) if cand.exists() else {}
+    # ②Commons(DESIGN 3.35)。和 stock 同一个形状,所以下面的 override 分支
+    # 只差 credit/license 要原样带过去——Commons 是唯一给出作者和许可证的源。
+    commons = base / "commons.json"
+    out["commons"] = json.loads(commons.read_text("utf-8")) if commons.exists() else {}
     return out
 
 
@@ -109,6 +114,36 @@ def pull_catalogue(code: str, rows: list[dict]) -> None:
         row["path"] = str(dest)
 
 
+def trip_pool(code: str, picks: list[tuple]) -> list[Placement]:
+    """Resolve `TRIP_PICKS` into a pool `assign_trip_photos` can draw from.
+
+    These never enter the plan by themselves — a landmark card has to match
+    them first. Raising on a missing block is the same rule as everywhere
+    else here: a pick that points at nothing is a wiring error, and the cost
+    of letting it pass silently is a card that quietly stays empty.
+    """
+    if not picks:
+        return []
+    data = load(code)
+    out = []
+    for kind, ref, note in picks:
+        if kind != "commons":
+            raise SystemExit(f"{code}: TRIP_PICKS 只支持 commons,收到 {kind!r}")
+        block, n = ref
+        blk = data["commons"].get(block)
+        row = next((c for c in (blk or {}).get("candidates", []) if c["n"] == n), None)
+        if row is None:
+            raise SystemExit(
+                f"{code}: TRIP_PICKS 指向 {block}#{n},commons.json 里没有 —— "
+                f"先跑 `python3 bin/fetch_commons.py {code}`")
+        out.append(Placement(
+            slot="trip", position=blk["day"], origin="web",
+            subject=blk["subject"], source_ref=row["url"], src_path=row["path"],
+            credit=row.get("credit") or "Wikimedia Commons",
+            license=row.get("license", ""), note=note))
+    return out
+
+
 def compose(code: str, region: str, tours: list[str], overrides: dict) -> ImagePlan:
     data = load(code)
     cat_rows = catalogue_for(code, tours)
@@ -120,6 +155,12 @@ def compose(code: str, region: str, tours: list[str], overrides: dict) -> ImageP
         day = section["day"]
         subjects = [t["photo_subject"] for t in section.get("trip_items", [])
                     if t.get("photo_subject")]
+        # 当天城市是最后一道搜索线索。景点条目可以一个 photo_subject 都没有
+        # （抵达日写的是「Depart for Ordos via Kuala Lumpur」「Arrival and
+        # Hotel Check-In」），但那天在表单上仍然是一个完整的 section，线上
+        # 在售的参考产品 tours/112 第 1 天也是有图的。没有 subject 不等于
+        # 那天不需要图，只等于「没人说过要搜什么」。
+        fallback = [loc for loc in [(section.get("location") or {}).get("en")] if loc]
         key = f"d{day:02d}"
 
         # Explicit picks come first. Stock is never auto-selected: the
@@ -154,6 +195,22 @@ def compose(code: str, region: str, tours: list[str], overrides: dict) -> ImageP
                     slot="section", position=day, origin="catalogue",
                     subject=row["alt"], source_ref=row["tour"],
                     src_path="", credit="webuytravel.sg", note=note))
+            elif kind == "commons":
+                block, n = ref
+                row = next((c for c in data["commons"].get(block, {}).get("candidates", [])
+                            if c["n"] == n), None)
+                if row is None:
+                    raise SystemExit(
+                        f"{code} {key}: commons {block}#{n} 不在 commons.json 里 —— "
+                        f"先跑 `python3 bin/fetch_commons.py {code}`")
+                # credit/license 原样带走。DESIGN 3.3 那张图的教训:出处丢了就
+                # 只能靠 EXIF 反推,而 Commons 本来是把作者和许可证给全了的。
+                plan.placements.append(Placement(
+                    slot="section", position=day, origin="web",
+                    subject=data["commons"][block]["subject"],
+                    source_ref=row["url"], src_path=row["path"],
+                    credit=row.get("credit") or "Wikimedia Commons",
+                    license=row.get("license", ""), note=note))
             elif kind == "file":
                 plan.placements.append(Placement(
                     slot="section", position=day, origin="web",
@@ -195,10 +252,12 @@ def compose(code: str, region: str, tours: list[str], overrides: dict) -> ImageP
                     src_path="", credit="webuytravel.sg"))
                 placed += 1
 
-        if placed == 0 and subjects:
-            plan.gaps.append(Gap(slot="section", position=day,
-                                 subjects=subjects,
-                                 reason="no source matched this day"))
+        # 无条件记 gap。原来这里是 `if placed == 0 and subjects:`，那个
+        # `and subjects` 把「一个 photo_subject 都没有的天」整个吞掉:既没有
+        # 配图,也没有 gap,于是审核页上那天根本不出现,签字的人看不见它。
+        if placed == 0:
+            plan.gaps.append(section_gap(
+                day, bool(section.get("trip_items")), subjects, fallback))
 
     pull_catalogue(code, chosen_cat)
     # Resolve by position, not by `alt`. The catalogue routinely carries two
@@ -363,9 +422,13 @@ OVERRIDES = {
                 ("stock", ("d05_xinzhou", 4), "山西古城街景")],
         "d06": [("stock", ("d06_yungang", 1), "云冈石窟大佛"),
                 ("stock", ("d05_datong_city", 6), "大同九龙壁")],
-        # 乌兰哈达火山:stock 只有埃特纳和尼加拉瓜。改用当天落脚城市。
-        "d07": [("stock", ("d07_region_hohhot", 1),
-                 "呼和浩特大召寺——当日落脚城市;乌兰哈达火山无合规实拍")],
+        # 乌兰哈达火山:stock 只有埃特纳和尼加拉瓜,所以 08-13 那轮只能拿当天
+        # 落脚城市顶上。08-14 Commons 给出三张带 GPS 且落在内蒙范围内的火山口
+        # 航拍,这个替代不再必要——火山排前面,大召寺留作第二张。
+        # 它写在产品 highlights 第 4 条,拿城市照顶替是失真的。
+        "d07": [("commons", ("d07_ulan_hada_volcano_geopark", 1),
+                 "乌兰哈达火山口航拍,带 GPS"),
+                ("stock", ("d07_region_hohhot", 1), "呼和浩特大召寺——当日落脚城市")],
         # 康巴什:候选 #2#3 标题写 Mongolian Government Palace,实为蒙古国乌兰巴托,已排除。
         "d08": [("stock", ("d08_kangbashi", 1), "康巴什城市广场;#2#3 系蒙古国已排除")],
     },
@@ -378,8 +441,19 @@ OVERRIDES = {
         "d03": [("file", "work/WBCURC/cand/d03_keketuohai_canyon.jpg",
                  "可可托海额尔齐斯大峡谷")],
         # 坎儿井:stock 全是泛化农业灌溉,无一是坎儿井。按区域规则改用新疆区域图。
+        # (08-14 复查:Commons 搜 Karez Well 返回的是美军在阿富汗的照片,更糟,
+        #  所以这条区域替代继续保留。)
         "d10": [("stock", ("d07_kokdala", 3),
                  "新疆区域实拍——坎儿井无合规实拍")],
+        # D1 抵达乌鲁木齐。行程原文只有「飞 + 接机 + 入住」,没有游览活动,
+        # 但用户 08-14 定的范围里包含它。入夜城市灯光配傍晚抵达是贴的。
+        "d01": [("commons", ("d12_free_time_in_urumqi", 1),
+                 "入夜城市灯光——抵达当晚")],
+        # D12 乌鲁木齐自由活动。08-13 这天是静默留空的(DESIGN 6.11),而它有
+        # 整个白天的自由活动,不是纯回程日——线上参考产品 tours/112 只有最后
+        # 一天是空的。城市背后的天山雪线是乌鲁木齐最好认的特征。
+        "d12": [("commons", ("d12_free_time_in_urumqi", 6),
+                 "乌鲁木齐城区与天山雪线")],
     },
     "WBCKWE": {
         "d01": [("stock", ("d01_chongqing", 2), "重庆夜景")],
@@ -412,6 +486,13 @@ OVERRIDES = {
         "d07": [("stock", ("d07_shenzhong_link", 1), "珠三角跨海大桥晨景;是否深中通道本体未确认")],
     },
     "WBINC9": {
+        # D2 宁夏博物馆 / 览山公园。08-13 这是 plan.gaps 里唯一一条「有景点却
+        # 一张图都没找到」的记录:stock 两轮 18 张全废(#2 是西安大雁塔,
+        # 6.7 记过)。08-14 Commons 直接给出馆舍外观和中庭,主体确定无误。
+        "d02": [("commons", ("d02_ningxia_museum_yinchuan", 5), "宁夏博物馆馆舍外观"),
+                ("commons", ("d02_ningxia_museum_yinchuan", 6), "馆内中庭")],
+        # D6 一百零八塔。stock 搜「一百零八塔」返回的是大理三塔(6.7),
+        # 所以原来这天靠册子那张 590px 顶着。Commons #1 带 GPS,塔阵水中倒影。
         # 沙坡头本体无合规实拍(stock 返回张掖丹霞和交河故城)。这两张不冒充
         # 沙坡头,卖的是当天真实存在的两个体验:沙丘徒步/滑沙,和沙漠营地观星。
         "d05": [("stock", ("d05_sand_sliding", 1), "沙丘实拍(未标注具体地点);沙坡头景区本体无合规实拍"),
@@ -454,6 +535,175 @@ CAROUSEL = {
     ],
 }
 
+# 景点卡专用的选片。和 OVERRIDES 一样是编辑决策——每一条都是有人看过图才写下的,
+# 区别只在于它落到 Trip Photos 而不是 Section Photos。
+#
+# 为什么要分开:线上三个已发布的内蒙产品 Section Photos 全是 0,图全挂在景点卡上
+# (docs/DESIGN.md 1.1)。一天有五张好图时,要的是一张 section + 四张卡,
+# 不是五张 section。这些条目不会自己进 plan,只有当某张景点卡的主体匹配上才会进。
+#
+# 2026-08-14 WBCHET 这一批:98 张 Commons 候选逐张看过,留 25 张(审核页已签字)。
+# 被整块否决的 12 组里,`d06_shuttle_included_exterior_viewing` 六张全是美国航天
+# 飞机「发现号」——行程原文写的是「含摆渡车」,shuttle 撞词。
+TRIP_PICKS = {
+    # 景点卡专用的选片。和 OVERRIDES 一样是编辑决策,区别只在于它落到
+    # Trip Photos 而不是 Section Photos(分开的理由见 docs/DESIGN.md 1.1:
+    # 线上三个已发布的内蒙产品 Section Photos 全是 0,图全挂在景点卡上)。
+    #
+    # 2026-08-14 第二轮重挑。第一轮只有准确性一根轴,结果五个产品的饱和度
+    # 无一达到自家图库的水准(0.235–0.319 对 0.421),业务同事看生产页面
+    # 提了「色彩不要灰暗」。现在按两轴挑,和印刷册子那边一致
+    # (docs/DESIGN.md 6.06)。每条后面的 s0.xx 是实测饱和度,房子标准是 0.421、
+    # 闸门(第 10 百分位)是 0.181。
+    #
+    # **美学分不是唯一标准。** 三处明显的反例,都按主体价值压过了分数:
+    #   广州塔那组分最高的 #1(1.08)画面里根本不是广州塔;
+    #   火焰山分最高的是山下骆驼(1.09),山体本身只有 0.92,但山体才是主角;
+    #   黄果树分最高的 #3(1.08)是夜间彩灯秀,和册子调性不符。
+    "WBCHET": [
+        # D6 悬空寺:换掉原来的 #3/#5/#6(s0.11–0.16,灰崖壁和题刻)
+        ("commons", ("d06_hanging_temple_hunyuan", 1), "崖壁全景,绿 s0.26"),
+        ("commons", ("d06_hanging_temple_hunyuan", 2), "栈道游客,能看清悬空结构 s0.20"),
+        ("commons", ("d06_hanging_temple_hunyuan", 4), "红墙门楼 s0.23"),
+        # D5 大同古城:#2 疑似不是大同(像应县木塔)、#3 是节庆花灯,都没选
+        ("commons", ("d05_datong_ancient_city", 5), "城墙与拱门,蓝天 s0.31"),
+        ("commons", ("d05_datong_ancient_city", 1), "城楼正面,蓝天 s0.29"),
+        ("commons", ("d05_datong_ancient_city", 6), "寺院院落红灯笼 s0.28"),
+        # D5 应县木塔:#6 是展柜里的模型不是实景,#4 是屋顶垂直航拍
+        ("commons", ("d05_yingxian_wooden_pagoda", 1), "木塔全景,蓝天 s0.33"),
+        ("commons", ("d05_yingxian_wooden_pagoda", 5), "牌楼取景,塔在其后 s0.36"),
+        ("commons", ("d05_yingxian_wooden_pagoda", 2), "斗拱细部,红木 s0.60"),
+        # D7 乌兰哈达火山:#2 火山口深色岩 s0.14 不达标,换成地质公园游客区
+        ("commons", ("d07_ulan_hada_volcano_geopark", 3), "地质公园游客区 s0.27"),
+        # D3 响沙湾:去掉 #5(沙漠泳池,灰天 s0.12)
+        ("commons", ("d03_xiangshawan_desert", 2), "骑骆驼队列,金沙 s0.37"),
+        ("commons", ("d03_xiangshawan_desert", 1), "沙漠越野车 s0.34"),
+        ("commons", ("d03_xiangshawan_desert", 4), "沙丘中白色穹顶度假区 s0.26"),
+        # D6 云冈:#5 #4 是黑白老明信片。两个云冈块只各留一张,免得一天全是石窟
+        ("commons", ("d06_yungang_grottoes_datong", 3), "露天大坐佛 s0.26"),
+        ("commons", ("d06_yungang_grottoes_datong", 1), "彩绘佛龛 s0.29"),
+        ("commons", ("d06_yungang_grottoes_buddha_statues", 2), "崖壁大坐佛 s0.28"),
+    ],
+    "WBCURC": [
+        # D7 果子沟大桥:换掉 #1/#2(s0.14–0.15,阴天灰)
+        ("commons", ("d07_guozigou_bridge", 5), "桥 + 绿山谷 + 蓝天 s0.38"),
+        ("commons", ("d07_guozigou_bridge", 3), "山谷中的桥,远景 s0.36"),
+        ("commons", ("d07_guozigou_bridge", 4), "桥塔入云 s0.28"),
+        # D7 赛里木湖
+        ("commons", ("d07_sayram_lake", 6), "蓝湖绿草雪山 s0.56"),
+        ("commons", ("d07_sayram_lake", 3), "湖面草岸雪山 s0.33"),
+        ("commons", ("d07_sayram_lake", 1), "湖畔航标 s0.33"),
+        # D4 喀纳斯:去掉 #1(晨雾骑手 s0.24 但整体闷)
+        ("commons", ("d04_kanas_lake", 4), "河石与松绿水色 s0.34"),
+        ("commons", ("d04_kanas_lake", 6), "松绿色河湾 s0.28"),
+        ("commons", ("d04_kanas_lake", 5), "湖面针叶林雪山 s0.22"),
+        # D5 禾木村:#5 是城市公交车
+        ("commons", ("d05_hemu_village", 6), "河谷木屋航拍,蓝天 s0.39"),
+        ("commons", ("d05_hemu_village", 4), "雪季河谷全景 s0.35"),
+        ("commons", ("d05_hemu_village", 3), "秋色河滩木屋 s0.24"),
+        # D5 五彩滩:整块只有这一张
+        ("commons", ("d05_colourful_beach_burqin", 1), "赭色风蚀滩与河 s0.28"),
+        # D9 独库公路:#1 #2 是城镇街口和白杨路,#6 #5 主体是路牌
+        ("commons", ("d09_duku_highway", 3), "盘山公路穿林谷,蓝天 s0.25"),
+        ("commons", ("d09_duku_highway", 4), "陡峭山谷中的公路 s0.21"),
+        # D9 天山:换掉 #2(金色日照雪峰,分 0.49 太暗)
+        ("commons", ("d09_tianshan_mountains", 1), "冰川谷与雪峰 s0.33"),
+        ("commons", ("d09_tianshan_mountains", 6), "雪山群 s0.25"),
+        # D11 火焰山:#5 分最低(0.92)但它是山体本身,主体压过分数
+        ("commons", ("d11_flaming_mountains_turpan", 5), "赭红色风蚀山脊——主角 s0.41"),
+        ("commons", ("d11_flaming_mountains_turpan", 3), "卧驼 s0.38"),
+        ("commons", ("d11_flaming_mountains_turpan", 2), "卧驼(红鞍) s0.40"),
+        # D11 打馕
+        ("commons", ("d11_xinjiang_naan_making", 2), "馕坑里贴馕的手 s0.27"),
+        # D12 乌鲁木齐:#1 入夜城市灯光(D1 的 section 也用它,见 OVERRIDES)
+        ("commons", ("d12_free_time_in_urumqi", 1), "入夜城市灯光 s0.40"),
+        # D7 薰衣草:#5 带 GPS 可验证,#3 无坐标但形态明确且极饱和
+        ("commons", ("d07_ili_lavender_museum", 5), "薰衣草田带白云,带 GPS s0.33"),
+        ("commons", ("d07_ili_lavender_museum", 3), "紫色薰衣草田 s0.87"),
+        # D8 草原(区域级,不是篝火活动本身):换掉 #4(牧人驱牛 s0.28,阴天)
+        ("commons", ("d08_xinjiang_grassland_bonfire_party", 2), "草原曲流河(区域图) s0.54"),
+        ("commons", ("d08_xinjiang_grassland_bonfire_party", 5), "绿丘草原(区域图) s0.54"),
+    ],
+    "WBINC9": [
+        # D6 西夏陵:#5 分最高但陵台太远看不清,#1 最灰
+        ("commons", ("d06_western_xia_imperial_tombs_yinchua", 4), "陵区全景,绿草 s0.24"),
+        ("commons", ("d06_western_xia_imperial_tombs_yinchua", 3), "两座陵台与远山 s0.24"),
+        ("commons", ("d06_western_xia_imperial_tombs_yinchua", 2), "陵台正面 s0.22"),
+        # D6 一百零八塔:#6 升为主选(塔阵全景 + 蓝天),#1 倒影最标志但灰
+        ("commons", ("d06_108_pagodas_qingtongxia_hillside_w", 6), "塔阵侧面全景,蓝天 s0.27"),
+        ("commons", ("d06_108_pagodas_qingtongxia_hillside_w", 1), "塔阵与水中倒影 s0.16"),
+        # D2 宁夏博物馆:馆舍外观(s0.17)留给 section,卡用中庭和石雕
+        ("commons", ("d02_ningxia_museum_yinchuan", 6), "中庭 s0.25"),
+        ("commons", ("d02_ningxia_museum_yinchuan", 4), "石雕(馆藏) s0.18"),
+        # D4 黄河石林:#1 是全部候选里最亮的一张
+        ("commons", ("d04_yellow_river_stone_forest_jingtai_", 1), "石林柱群,蓝天 s0.64"),
+        ("commons", ("d04_yellow_river_stone_forest_jingtai_", 2), "峡谷与谷底村落 s0.18"),
+        # D5 沙坡头:整块只有这一张,而且是「沙漠与黄河相接」那个标志性视角
+        ("commons", ("d05_shapotou_scenic_area_zhongwei_dese", 1), "沙丘俯瞰黄河绿洲 s0.23"),
+        # D6 青铜峡
+        ("commons", ("d06_qingtongxia_yellow_river_grand_can", 1), "拦河大坝 s0.23"),
+        ("commons", ("d06_qingtongxia_yellow_river_grand_can", 2), "坝体全景 s0.21"),
+        # D3 阿拉善:#5 分更高但画面抽象,#2 主体最对(沙丘倒映湖面)
+        ("commons", ("d03_alxa_desert_off_road_vehicle_sand_", 2), "沙丘与湖 s0.18"),
+        # D7 贺兰山岩画:全是**展柜里的岩画石板**,不是山体原位。换掉最灰的 #1
+        ("commons", ("d07_helan_mountain_rock_art_petroglyph", 3), "岩画石板(展柜) s0.27"),
+        ("commons", ("d07_helan_mountain_rock_art_petroglyph", 4), "动物岩画(展柜) s0.24"),
+    ],
+    "WBCKWE": [
+        # D7 梵净山:**整个 red_cloud_golden_summit 块弃用**——六张全是雾里的
+        # 灰石桥和题刻,饱和 0.06–0.12,是全部候选里最差的一组。同一座山的
+        # mount_fanjing #6 是云海之上的金顶,s0.43,画面强一个量级。
+        ("commons", ("d07_mount_fanjing", 6), "云海之上的金顶 s0.43"),
+        ("commons", ("d07_mount_fanjing", 1), "雾中山脊上的红衣人 s0.25"),
+        # D6 西江千户苗寨
+        ("commons", ("d06_xijiang_qianhu_miao_village", 2), "满山吊脚楼与梯田 s0.23"),
+        ("commons", ("d06_xijiang_qianhu_miao_village", 6), "木楼与梯田 s0.26"),
+        ("commons", ("d06_xijiang_qianhu_miao_village", 4), "溪上吊脚楼 s0.19"),
+        # D2 甲秀楼:整组都在 0.19–0.22,挑主体最完整的三张
+        ("commons", ("d02_jiaxiu_pavilion", 2), "临水楼阁与绿树 s0.22"),
+        ("commons", ("d02_jiaxiu_pavilion", 1), "楼与拱桥、河 s0.22"),
+        ("commons", ("d02_jiaxiu_pavilion", 4), "石桥与楼 s0.20"),
+        # D3 黄果树:#3 分最高(1.08)但是夜间彩灯秀,粉紫色和册子调性不符
+        ("commons", ("d03_huangguoshu_waterfall", 2), "林隙中的瀑布,绿 s0.27"),
+        ("commons", ("d03_huangguoshu_waterfall", 5), "瀑布与碧潭 s0.27"),
+        ("commons", ("d03_huangguoshu_waterfall", 4), "瀑布全景 s0.23"),
+        # D3 陡坡塘:换掉 #5 #6(s0.10–0.12)
+        ("commons", ("d03_doupotang_waterfall", 1), "宽帘瀑布 s0.21"),
+        ("commons", ("d03_doupotang_waterfall", 3), "蓝天下的宽帘瀑布 s0.22"),
+        ("commons", ("d03_doupotang_waterfall", 4), "瀑布与游客 s0.20"),
+        # D4 万峰林:#2 雾中版 s0.13 不达标,只留 #1
+        ("commons", ("d04_wanfenglin_ten_thousand_peak_fores", 1), "峰丛与金黄坝子 s0.19"),
+    ],
+    "WBSZX1": [
+        # D6 珠海渔女:换掉 #5(雾中 s0.13)和 #1(隔山雾 s0.19)
+        ("commons", ("d06_zhuhai_fisher_girl_statue_lovers_r", 2), "海中礁石上的渔女与城市,蓝天 s0.53"),
+        ("commons", ("d06_zhuhai_fisher_girl_statue_lovers_r", 3), "观景平台与渔女 s0.41"),
+        ("commons", ("d06_zhuhai_fisher_girl_statue_lovers_r", 4), "「珠海渔女」题名石 s0.38"),
+        # D3 佛山祖庙:换掉 #6(带 GPS 但 s0.11,灰)
+        ("commons", ("d03_foshan_ancestral_temple", 1), "庙宇屋脊与棕榈,蓝天 s0.43"),
+        ("commons", ("d03_foshan_ancestral_temple", 5), "红墙与金字牌匾 s0.37"),
+        ("commons", ("d03_foshan_ancestral_temple", 4), "石狮与庙门 s0.26"),
+        # D4 广州塔:#1 分最高(1.08)但画面里不是广州塔,主体错,不选
+        ("commons", ("d04_canton_tower_guangzhou", 3), "塔与城市、珠江,蓝天 s0.38"),
+        ("commons", ("d04_canton_tower_guangzhou", 4), "夜间彩光塔与江 s0.34"),
+        ("commons", ("d04_canton_tower_guangzhou", 5), "粉光夜景 s0.26"),
+        # D4 珠江夜游(册子上的必需自费项目):#2 是全部候选里最亮的一张
+        ("commons", ("d04_pearl_river_night_cruise_guangzhou", 2), "游船与斜拉桥夜景 s0.75"),
+        ("commons", ("d04_pearl_river_night_cruise_guangzhou", 3), "蓝光游船,带 GPS s0.32"),
+        # D4 花城广场:换掉 #4(题名石但 s0.06)和 #5
+        ("commons", ("d04_huacheng_square_guangzhou_cbd_skyl", 3), "CBD 塔楼,蓝天 s0.39"),
+        ("commons", ("d04_huacheng_square_guangzhou_cbd_skyl", 1), "东塔西塔,蓝天 s0.20"),
+        ("commons", ("d04_huacheng_square_guangzhou_cbd_skyl", 2), "现代建筑与绿地 s0.31"),
+        # D2 顺峰山牌坊
+        ("commons", ("d02_shunfeng_mountain_archway_shunde_f", 1), "夜间灯光牌坊 s0.38"),
+        ("commons", ("d02_shunfeng_mountain_archway_shunde_f", 2), "牌坊与园景 s0.26"),
+        # D5 赤坎古镇
+        ("commons", ("d05_chikan_ancient_town_arcade_archite", 2), "河涌与骑楼群 s0.21"),
+        # D7 深中通道:**整块弃用**。六张全是灰海灰天的高速公路,最好的
+        # #1 也只有 s0.15,低于闸门。一张灰色的高速照片不是卖点,宁可这张卡空着。
+    ],
+}
+
 PRODUCTS = {
     "WBCKWE": ("CHN", ["tours/115-9d8n-discover-the-natural-wonders-of-guizhou",
                        "tours/108-8d7n-chongqing-wulong-dazu-world-cultural-heritage"]),
@@ -480,14 +730,28 @@ if __name__ == "__main__":
             if (WORK / code / "candidates.json").exists() else {}
         fill_carousel(plan, code, tours, picks=CAROUSEL.get(code), stock=stock)
         removed = dedupe(plan, cross_slot=bool(tours))
+        # 景点卡这一层。放在 dedupe 之后:它复用的是去重之后真正留下的那些图,
+        # 而不是可能马上被删掉的。也放在 materialise 之前,这样 trip 槽和别的槽
+        # 一起编码,不会出现一半产物的 out/ 目录。
+        itin = json.loads((WORK / code / "itinerary.json").read_text("utf-8"))
+        assign_trip_photos(plan, itin["sections"], score, MATCH_FLOOR,
+                           extra=trip_pool(code, TRIP_PICKS.get(code, [])))
         materialise(plan, WORK / code / "out")
         plan.to_json(WORK / code / "plan.json")
         name = json.loads((WORK / code / "itinerary.json").read_text("utf-8"))
         render(plan, WORK / code / f"{code}_review.html",
                tour_name=name["product_name"]["en"])
-        days = len({p.position for p in plan.of("section")})
-        print(f"{code}: sections={len(plan.of('section'))} over {days} days | "
+        covered = {p.position for p in plan.of("section")}
+        total_days = len(name["sections"])
+        bare = [d for d in range(1, total_days + 1) if d not in covered]
+        print(f"{code}: sections={len(plan.of('section'))} over {len(covered)}/{total_days} days | "
               f"carousel={len(plan.of('carousel'))} | thumb={len(plan.of('thumbnail'))} | "
               f"route={len(plan.of('route_map'))} | gaps={len(plan.gaps)} | deduped={len(removed)}")
+        # 「over 7 days」这种说法读起来像在报进度,不像在报缺口——WBCHET 打的
+        # 就是 `sections=9 over 7 days`,9 天的产品少了 2 天,没有人从这行字里
+        # 看出来。把没有图的那几天点名列出来。
+        if bare:
+            print(f"    NO SECTION PHOTO: day(s) {', '.join(map(str, bare))} "
+                  f"— 逐条见下方 GAP,每一条都要人决定")
         for g in plan.gaps:
             print(f"    GAP day {g.position}: {', '.join(g.subjects)[:70]}")
