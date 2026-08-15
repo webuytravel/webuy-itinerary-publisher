@@ -75,7 +75,14 @@ def load(code: str) -> dict:
     base = WORK / code
     out = {"itinerary": json.loads((base / "itinerary.json").read_text("utf-8"))}
     subjects = json.loads((WORK / "pdf_subjects.json").read_text("utf-8"))
-    raw = json.loads((base / "pdf_images.json").read_text("utf-8"))
+    # ①这一级是可选的。前五个产品都是从行程册进来的,所以 pdf_images.json 一定
+    # 存在;2026-08-15 这一批相反——产品早就在 Skybear 上,行程文本是从生产读回来
+    # 的,根本没有册子。缺册子不是错误状态,只是少一级图源,不该让整个 compose
+    # 打不开。**注意这跟「跑了抽图但文件不在」不是一回事**:那种情况下 materialise
+    # 仍然会因为 src_path 指不到文件而报错退出(见 3. 节那段 refusing to
+    # materialise),所以放宽这里不会让缺图静默溜过去。
+    pdf_path = base / "pdf_images.json"
+    raw = json.loads(pdf_path.read_text("utf-8")) if pdf_path.exists() else []
     by_ref = {f"p{i['page']}#{i['index']}": i for i in raw}
     # only images a human looked at and called real; generic/CGI-suspect are
     # deliberately excluded rather than silently ranked lower
@@ -127,19 +134,31 @@ def trip_pool(code: str, picks: list[tuple]) -> list[Placement]:
     data = load(code)
     out = []
     for kind, ref, note in picks:
-        if kind != "commons":
-            raise SystemExit(f"{code}: TRIP_PICKS 只支持 commons,收到 {kind!r}")
+        # ③ 和 ④ 两级都要能进景点卡。原来这里只收 commons,是因为 2026-08-14
+        # 那一批的 trip 图全部来自 Commons;而 6.06 量出来的结论恰恰是那样做
+        # 买到了准确性、赔掉了美学(五个产品饱和度 0.235–0.319 对房子 0.421)。
+        # stock 是**唯一**按「好看」组织的一级,把它挡在景点卡外面等于把那根轴
+        # 关掉。两级的取舍不同,所以都留着,由人逐张定。
+        if kind == "commons":
+            table, fallback_credit = data["commons"], "Wikimedia Commons"
+            hint = f"先跑 `python3 bin/fetch_commons.py {code}`"
+        elif kind == "stock":
+            table, fallback_credit = data["stock"], "stock"
+            hint = f"先跑 `python3 bin/fetch_stock.py {code}`"
+        else:
+            raise SystemExit(f"{code}: TRIP_PICKS 只支持 commons / stock,收到 {kind!r}")
         block, n = ref
-        blk = data["commons"].get(block)
+        blk = table.get(block)
         row = next((c for c in (blk or {}).get("candidates", []) if c["n"] == n), None)
         if row is None:
             raise SystemExit(
-                f"{code}: TRIP_PICKS 指向 {block}#{n},commons.json 里没有 —— "
-                f"先跑 `python3 bin/fetch_commons.py {code}`")
+                f"{code}: TRIP_PICKS 指向 {kind}:{block}#{n},没找到 —— {hint}")
         out.append(Placement(
             slot="trip", position=blk["day"], origin="web",
             subject=blk["subject"], source_ref=row["url"], src_path=row["path"],
-            credit=row.get("credit") or "Wikimedia Commons",
+            # stock 没有作者字段,退回来源名(pexels/unsplash);commons 两样都有,
+            # 原样带走(DESIGN 3.35:不要在管线里把 credit/license 丢掉)。
+            credit=row.get("credit") or row.get("source") or fallback_credit,
             license=row.get("license", ""), note=note))
     return out
 
@@ -174,12 +193,19 @@ def compose(code: str, region: str, tours: list[str], overrides: dict) -> ImageP
                 block, n = ref
                 row = next((c for c in data["stock"].get(block, {}).get("candidates", [])
                             if c["n"] == n), None)
-                if row:
-                    plan.placements.append(Placement(
-                        slot="section", position=day, origin="web",
-                        subject=data["stock"][block]["subject"],
-                        source_ref=row["url"], src_path=row["path"],
-                        credit=row["source"], note=note))
+                # 和下面 commons 那一支一样要炸。原来这里是 `if row:` ——
+                # 一个打错的 block 名或序号会**静默**跳过,那天就无声地少一张图,
+                # 而摘要行只会报 gap,不会说「你指的那张不存在」。DESIGN 6.9 记的
+                # 静默降级就是这一类,6.11 那批静默留空的天也是这么来的。
+                if row is None:
+                    raise SystemExit(
+                        f"{code} {key}: stock {block}#{n} 不在 candidates.json 里 —— "
+                        f"先跑 `python3 bin/fetch_stock.py {code}`")
+                plan.placements.append(Placement(
+                    slot="section", position=day, origin="web",
+                    subject=data["stock"][block]["subject"],
+                    source_ref=row["url"], src_path=row["path"],
+                    credit=row["source"], note=note))
             elif kind == "cat":
                 # ②这一级也需要显式指定的通道。token 匹配在图注写得准时够用，
                 # 但同一天有多个景点、而图库只覆盖其中一两个时，先匹配上的那个
@@ -409,6 +435,30 @@ def fill_carousel(plan: ImagePlan, code: str, tours: list[str], target: int = 8,
 # (Etna, Nicaragua) — right subject, wrong continent. A page selling this trip
 # cannot carry them.
 OVERRIDES = {
+    # WBLJG9 的 section 层。每天一张,而且刻意避开当天景点卡用掉的那几张——
+    # assign_trip_photos 会硬性禁止当天的卡复用 section 的源文件(DESIGN 6.05),
+    # 所以这里选的每一张都是那一块里没有进 TRIP_PICKS 的。
+    # D1 不在下面:那天只有一张「夜间航班前往丽江」的交通卡,没有落地活动,
+    # 属于 3.0 里「纯回程/纯飞行」那一类。**留空是要人点头的,不是我替它决定的**,
+    # 所以它会作为 GAP 出现在摘要里。D9 抵达新加坡同理。
+    "WBLJG9": {
+        "d02": [("stock", ("d02_dali_ancient_city", 4), "大理城楼夜景,金光 s0.864")],
+        "d03": [("stock", ("d03_bai_tie_dye_textile", 4), "扎染纹样特写,青碧 s0.528")],
+        "d04": [("stock", ("d04_lige_peninsula_lugu_lake", 3), "枯树与木栈桥 s0.406")],
+        "d05": [("stock", ("d05_lugu_lake_sunrise", 6), "湖面日出 s0.441")],
+        "d06": [("stock", ("d06_blue_moon_valley_lijiang", 1), "秋林与松绿水 s0.387")],
+        "d07": [("stock", ("d07_yuhu_village_lijiang", 2), "白墙纳西院落,蓝天 s0.293")],
+        "d08": [("stock", ("d08_black_dragon_pool_lijiang", 6), "黑龙潭桥与雪山 s0.373")],
+    },
+    # WBXMNM 的 section 层,同样每天一张、且避开当天卡用掉的。
+    "WBXMNM": {
+        "d01": [("commons", ("d01_xunpu_village_quanzhou", 1), "宫庙前红妆院落 s0.467")],
+        "d02": [("stock", ("d02_chaozhou_ancient_city", 2), "潮汕庙宇飞檐,蓝天 s0.410")],
+        "d03": [("commons", ("d03_jieyang_confucian_temple", 5), "学宫大殿与庭院 s0.242")],
+        "d04": [("commons", ("d04_fujian_tulou_earthen_building", 1), "油菜花前的土楼 s0.590")],
+        "d05": [("stock", ("d05_gulangyu_island_xiamen", 4), "红瓦屋顶与海 s0.303")],
+        "d06": [("stock", ("d06_nanputuo_temple_xiamen", 1), "南普陀塔院 s0.297")],
+    },
     "WBCHET": {
         "d02": [("stock", ("d02_ordos_grassland", 5), "蒙古包群实拍"),
                 ("stock", ("d02_ordos_grassland", 1), "草原孤包")],
@@ -702,6 +752,148 @@ TRIP_PICKS = {
         # D7 深中通道:**整块弃用**。六张全是灰海灰天的高速公路,最好的
         # #1 也只有 s0.15,低于闸门。一张灰色的高速照片不是卖点,宁可这张卡空着。
     ],
+    # 2026-08-15 WBLJG9(id 419,云南)。245 张候选(③107 + ④138)逐块看过。
+    # 这是第一个「行程文本来自生产、不是册子」的产品,也是第一个 ④ 和 ③ 一起
+    # 参与景点卡的产品——6.06 之后 stock 才被放进这一层,理由见 trip_pool。
+    #
+    # 三处按主体价值压过美学分的:
+    #   lijiang_old_town S3(s0.456,全块最高)是香格里拉松赞林寺,**弃**;
+    #   baisha_town C4/C5/C6(三张)是丽江的蓝色动车组,查询词退化撞的,**弃**;
+    #   jade_dragon C3(s0.414)画面是印象丽江的红色剧场,不是雪山,**弃**。
+    # 一处相反、美学分和主体刚好一致:impression_lijiang C2(s0.612)是全块
+    # 唯一真的演出场地,同时也是最饱和的一张。
+    "WBLJG9": [
+        # D2 双廊古镇
+        ("commons", ("d02_shuanglang_town", 5), "洱海边古镇航拍,秋色+湖蓝 s0.393"),
+        ("commons", ("d02_shuanglang_town", 1), "湖上玻璃观景台 s0.376"),
+        # D2 大理古城(洋人街另算)
+        ("stock", ("d02_dali_ancient_city", 3), "城门牌坊街景,蓝天 s0.407"),
+        ("commons", ("d02_dali_ancient_city", 5), "南城楼与人流 s0.269"),
+        # D2 洋人街:夜市霓虹正是这条街的样子,而且是全块最饱和的
+        ("commons", ("d02_dali_old_town_street", 3), "夜市霓虹招牌 s0.522"),
+        ("commons", ("d02_dali_old_town_street", 4), "夜街店铺 s0.429"),
+        # D2 理想邦 → 洱海。整块 12 张里 8 张低于闸门,是这个产品最灰的一块。
+        ("stock", ("d02_erhai_lake_dali", 6), "洱海石桥与绿岸,全块唯一达标的构图 s0.444"),
+        # D3 洱海日出(龙龛码头)
+        ("commons", ("d03_erhai_lake_sunrise", 2), "深蓝洱海与积云 s0.484"),
+        # D3 喜洲古镇:金色稻田配白族民居,喜洲的标志画面
+        ("commons", ("d03_xizhou_town_dali", 1), "稻田与白族民居 s0.547"),
+        ("stock", ("d03_xizhou_town_dali", 2), "白墙民居院落,蓝天 s0.293"),
+        # D3 金花打跳 / 白族服饰
+        ("stock", ("d03_bai_people_traditional_costume", 5), "街头打跳,盛装群舞 s0.327"),
+        ("commons", ("d03_bai_people_traditional_costume", 1), "白族妇女表演 s0.367"),
+        # D3 扎染:这一块是全产品最好的,过程 + 成品都有
+        ("stock", ("d03_bai_tie_dye_textile", 6), "手浸靛蓝染缸,过程 s0.498"),
+        ("stock", ("d03_bai_tie_dye_textile", 3), "橙墙前展开扎染布 s0.431"),
+        # D4 泸沽湖
+        ("commons", ("d04_lugu_lake", 3), "绿丘环抱的湖湾 s0.461"),
+        # D4 里格半岛 / 情人滩
+        ("stock", ("d04_lige_peninsula_lugu_lake", 1), "蓝湖与半岛全景 s0.542"),
+        ("commons", ("d04_lige_peninsula_lugu_lake", 3), "里格半岛俯瞰,岛形清楚 s0.296"),
+        # D4 摩梭篝火:没有一张真的篝火晚会。C2/C4 分更高(0.605/0.741)但族属
+        # 存疑(看着更像彝族/藏族),按「宁可不用也不错标民族」取 C6。
+        ("commons", ("d04_mosuo_people", 6), "木楞房前两位盛装妇女,族属可辨 s0.561"),
+        # D5 泸沽湖日出。这里要**三张**,不是因为要挂三张,是因为 D4 也是泸沽湖:
+        # token 匹配分不出「Lugu Lake」和「Lugu Lake sunrise」(两者都是 1.00),
+        # 而 D4 先被处理、max_reuse=1,所以 D4 的卡会先把日出这张吃掉,D5 那张
+        # 名字就叫「Lugu Lake Sunrise」的卡反而空着。多备两张,让 D4 吃饱之后
+        # D5 还有得挑。
+        ("stock", ("d05_lugu_lake_sunrise", 5), "金色日出与船影 s0.449"),
+        ("stock", ("d05_lugu_lake_sunrise", 2), "晨雾中的日出湖面 s0.283"),
+        ("stock", ("d05_lugu_lake_sunrise", 1), "朝霞映雪峰与村舍 s0.261"),
+        # D5 猪槽船与里务比岛:橙色猪槽船就是这张卡的正主
+        ("stock", ("d05_liwubi_island_lugu_lake", 4), "摩梭人划猪槽船 s0.472"),
+        ("commons", ("d05_liwubi_island_lugu_lake", 1), "湖中岛屿与蓝湖 s0.446"),
+        # D6 玉龙雪山
+        ("stock", ("d06_jade_dragon_snow_mountain", 5), "石桥前雪峰,蓝天明信片 s0.458"),
+        ("stock", ("d06_jade_dragon_snow_mountain", 4), "雪峰特写 s0.412"),
+        ("stock", ("d06_jade_dragon_snow_mountain", 2), "木栈道通向雪山 s0.375"),
+        # D6 蓝月谷 / 白水河
+        ("stock", ("d06_blue_moon_valley_lijiang", 6), "松绿水与秋林 s0.520"),
+        ("stock", ("d06_blue_moon_valley_lijiang", 2), "白水河阶梯状水台 s0.275"),
+        # D6 印象丽江:全块唯一真的演出场地
+        ("commons", ("d06_impression_lijiang_show", 2), "红色梯形剧场与雪山 s0.612"),
+        # D7 玉湖村:C1 是唯一真的玉湖村(石头房),stock 六张全是别处
+        ("commons", ("d07_yuhu_village_lijiang", 1), "石砌院落与草地 s0.310"),
+        # D7 白沙古镇
+        ("commons", ("d07_baisha_town_lijiang", 3), "集市与纳西妇女盛装 s0.353"),
+        ("commons", ("d07_baisha_town_lijiang", 1), "夯土墙巷道 s0.307"),
+        # D8 黑龙潭
+        ("stock", ("d08_black_dragon_pool_lijiang", 4), "得月楼与玉龙雪山,标志构图 s0.379"),
+        ("commons", ("d08_black_dragon_pool_lijiang", 6), "五孔桥与雪山 s0.394"),
+        # D8 丽江古城与四方街
+        ("commons", ("d08_lijiang_old_town", 4), "木构商铺石板街 s0.449"),
+        ("commons", ("d08_lijiang_old_town", 1), "古城夜景 s0.448"),
+        ("commons", ("d08_lijiang_old_town", 5), "大水车,古城入口标志 s0.261"),
+    ],
+    # 2026-08-15 WBXMNM(id 413,闽南 + 潮汕)。233 张候选(③89 + ④144)逐块看过。
+    #
+    # **这个产品和云南不是一个量级,原因是潮汕属于长尾。** D3(揭阳/汕头)那五块
+    # 里,stock 返回的是西安城墙(进贤门那块 6 张里 4 张)、皖南宏村(小公园和棉湖
+    # 两块)、北京颐和园和台北中正纪念堂(揭阳学宫那块);Commons 有真货但基本在
+    # 闸门以下。潮州牌坊街 6 张 Commons **全部**低于 0.181。
+    #
+    # 因此有 6 张卡是**故意空着**的,不是漏了:
+    #   D1 洛伽寺 / 侨批馆 —— 只有「某座闽南庙」「某栋殖民风建筑」,认不出是它;
+    #   D3 棉湖古镇 —— 能用的全是皖南;
+    #   D3 小公园 —— 唯一真的那张(C1)只有 s0.100,而闸门以上的全是宏村;
+    #   D5 乳胶商场 —— 购物点,不是景点;退化搜 'Free Trade Zone' 还搜回了一张
+    #                  尼日利亚 Lekki 自贸区的地图(GPS 已标出不在行程范围);
+    #   D5 毓园 —— 林巧稚纪念园,Commons 0 张,stock 全是鼓浪屿泛拍。
+    # 按 3.4:卖这条线路配别处的照片,问题不是侵权是广告不实。宁可空。
+    "WBXMNM": [
+        # D1 蟳埔村簪花 —— 这一块是全产品最好的,蚵壳厝和簪花都是独有的
+        ("commons", ("d01_xunpu_village_quanzhou", 4), "盛装簪花妇女在宫庙前 s0.368"),
+        ("commons", ("d01_xunpu_village_quanzhou", 3), "蚵壳厝墙面,蟳埔独有 s0.338"),
+        # D1 西街与开元寺
+        ("stock", ("d01_quanzhou_west_street_kaiyuan_templ", 3), "开元寺东西塔近景,蓝天 s0.375"),
+        ("commons", ("d01_quanzhou_west_street_kaiyuan_templ", 5), "双塔越过红瓦屋顶 s0.324"),
+        # D2 潮州古城:没有一张标准「古城全景」,用潮汕嵌瓷屋脊代表
+        ("stock", ("d02_chaozhou_ancient_city", 6), "金red描金屋脊,潮汕庙宇 s0.418"),
+        ("stock", ("d02_chaozhou_ancient_city", 4), "嵌瓷屋脊人物,潮汕工艺 s0.309"),
+        # D2 牌坊街:Commons 六张全部低于闸门,只能用 stock 这一张
+        ("stock", ("d02_chaozhou_paifang_street_archways", 1), "牌坊与红灯笼,蓝天 s0.256"),
+        # D2 广济楼
+        ("commons", ("d02_guangji_gate_chaozhou", 6), "城楼与城墙,暮色 s0.207"),
+        ("commons", ("d02_guangji_gate_chaozhou", 4), "城楼正面,蓝天 s0.197"),
+        # D2 入梦潮州:两张潮剧扮相,是全产品最饱和的一组
+        ("stock", ("d02_chaozhou_night_performance", 2), "潮剧武生扮相 s0.662"),
+        ("stock", ("d02_chaozhou_night_performance", 6), "潮剧青衣扮相 s0.438"),
+        # D2 湘子桥
+        ("commons", ("d02_guangji_bridge_chaozhou", 2), "桥上亭阁与彩旗 s0.484"),
+        ("commons", ("d02_guangji_bridge_chaozhou", 3), "十八梭船连成的浮桥段 s0.363"),
+        # D3 揭阳学宫
+        ("commons", ("d03_jieyang_confucian_temple", 3), "大成门朱漆门扇 s0.476"),
+        ("commons", ("d03_jieyang_confucian_temple", 2), "太和元气红照壁 s0.272"),
+        # D3 中山骑楼街。**标注:骑楼是粤东到广府共有的形制,这张核不到具体城市。**
+        # 按 6.8 的规矩,这类替代必须写出来,而且不重复使用。
+        ("stock", ("d03_shantou_qilou_arcade_street", 5), "骑楼商行街景,城市未核实 s0.309"),
+        # D3 进贤门:Commons C1 是唯一真的进贤门(stock 六张里四张是西安城墙)
+        ("commons", ("d03_jinxian_gate_jieyang", 1), "进贤门城楼与绿化 s0.218"),
+        # D4 土楼。**标注:行程写的是饶平道韵楼(八角形),这两张是通用福建土楼。**
+        ("stock", ("d04_fujian_tulou_earthen_building", 4), "土楼檐口与红灯笼,蓝天 s0.412"),
+        ("stock", ("d04_fujian_tulou_earthen_building", 5), "圆楼外观与入口 s0.196"),
+        # D4 漳州古城
+        ("stock", ("d04_zhangzhou_ancient_city", 5), "古城屋顶与塔 s0.337"),
+        ("stock", ("d04_zhangzhou_ancient_city", 2), "院落盆景与老树 s0.395"),
+        # D4 漳州文庙
+        ("commons", ("d04_zhangzhou_confucian_temple", 5), "大成殿梁架斗拱 s0.445"),
+        ("commons", ("d04_zhangzhou_confucian_temple", 1), "大成殿与月台 s0.200"),
+        # D5 鼓浪屿
+        ("commons", ("d05_gulangyu_island_xiamen", 1), "环岛夜景 s0.461"),
+        ("stock", ("d05_gulangyu_island_xiamen", 3), "轮渡码头与岛景 s0.319"),
+        # D5 万国建筑
+        ("commons", ("d05_gulangyu_colonial_architecture", 2), "山坡老别墅群 s0.319"),
+        ("commons", ("d05_gulangyu_colonial_architecture", 1), "红瓦屋顶密集俯瞰 s0.316"),
+        # D5 龙头路:Commons 是唯一拍到真商业街的,stock 全是航拍泛景
+        ("commons", ("d05_gulangyu_longtou_road_beach", 4), "龙头路人流商铺 s0.252"),
+        # D6 南普陀寺
+        ("commons", ("d06_nanputuo_temple_xiamen", 4), "大悲殿匾额与彩绘 s0.509"),
+        ("commons", ("d06_nanputuo_temple_xiamen", 1), "天王殿正面与香客 s0.310"),
+        # D6 沙坡尾
+        ("stock", ("d06_shapowei_xiamen_harbour", 5), "日落渔船与海面 s0.364"),
+        ("commons", ("d06_shapowei_xiamen_harbour", 1), "避风坞彩色渔船 s0.311"),
+    ],
 }
 
 PRODUCTS = {
@@ -716,6 +908,11 @@ PRODUCTS = {
     # 授权图正好覆盖顺峰山、欢乐海岸、黄飞鸿纪念馆、岭南新天地、广东千古情、
     # 黄腾峡、沙湾古镇 —— ②这一级在有兄弟产品时的实际覆盖度。
     "WBSZX1": ("CHN", ["tours/118-7d6n-canton-gourmet-tour-2-0"]),
+    # 2026-08-15 起这一批:产品已在 Skybear 上、行程文本从生产读回,没有册子,
+    # webuytravel.sg 上也没有同区域在售的云南产品可采,所以 ①② 两级都是空的,
+    # 全部靠 ③Commons + ④stock。
+    "WBLJG9": ("CHN", []),
+    "WBXMNM": ("CHN", []),
 }
 
 if __name__ == "__main__":

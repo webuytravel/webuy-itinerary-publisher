@@ -14,7 +14,13 @@ is a decision only a person should make:
   two do not;
 * **which days carry a compliant regional photo instead of the landmark**,
   and why the landmark had none;
-* **which crops were pushed past the upscale ceiling** and will look soft.
+* **which crops were pushed past the upscale ceiling** and will look soft;
+* **how colourful each picture actually is**, against the standard the
+  company already ships. Saturation is printed on every card and anything
+  under the house floor is flagged, because "色彩不要灰暗" was raised twice
+  by business on live pages (`docs/DESIGN.md` 6.06) and by then the pictures
+  were already uploaded. A number on the review page is the last point where
+  that costs nothing to fix.
 """
 
 from __future__ import annotations
@@ -28,6 +34,12 @@ from pathlib import Path
 from PIL import Image
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
+from lib.image_appeal import MIN_SATURATION, measure
+
+# 自家在售图库 48 张的均值。闸门 MIN_SATURATION 是同一批的第 10 百分位,
+# 两个数都摆在页面上,签字的人才知道 0.29 是「比房子淡但合格」还是「不合格」。
+HOUSE_SATURATION = 0.421
 
 WORK = Path("work")
 # 默认是首批那三个;跑新产品时用 `python3 bin/review_page.py WBINC9` 覆盖。
@@ -60,6 +72,16 @@ def card(p: dict, day_title: str = "") -> str:
     note = f'<p class="note">{p["note"]}</p>' if p.get("note") else ""
     where = f'<span class="day">{day_title}</span>' if day_title else ""
     src = p.get("out_path") or p.get("src_path")
+    # 量成品(out_path),不是量候选原图——裁切和重编码都会动饱和度,而上线的是成品。
+    appeal = measure(src)
+    if appeal is None:
+        sat_html = '<span class="sat unknown">饱和 —</span>'
+    else:
+        cls = "sat bad" if appeal.saturation < MIN_SATURATION else "sat ok"
+        pct = appeal.saturation / HOUSE_SATURATION * 100
+        flag = f' ⚠ {appeal.why}' if appeal.is_dull else ""
+        sat_html = (f'<span class="{cls}">饱和 {appeal.saturation:.3f}'
+                    f' · 房子的 {pct:.0f}%{flag}</span>')
     return f"""<figure class="card">
   <img src="{thumb(src)}" alt="{p['subject']}" loading="lazy">
   <figcaption>
@@ -67,6 +89,7 @@ def card(p: dict, day_title: str = "") -> str:
     <p class="subj">{p['subject']}</p>
     <p class="meta"><span class="chip {p['origin']}">{zh}</span>
        <span class="ref">{p.get('source_ref','')[:52]}</span></p>
+    <p class="meta">{sat_html}</p>
     {note}{warn}
   </figcaption>
 </figure>"""
@@ -101,6 +124,18 @@ def product_block(code: str) -> str:
     shipped_highlights = (len(json.loads(payload_path.read_text("utf-8"))["highlights"])
                           if payload_path.exists() else 0)
 
+    # 整份的色彩体检,摆在抬头。单张的数字在每张卡上,但「这个产品整体够不够亮」
+    # 只有汇总才看得出来——6.06 就是靠这个均值才把「灰暗」从印象变成可判定的事实。
+    sats = [a.saturation for a in (measure(p.get("out_path") or p["src_path"])
+                                   for p in placements) if a]
+    mean_sat = sum(sats) / len(sats) if sats else 0.0
+    dull_n = sum(1 for s in sats if s < MIN_SATURATION)
+    sat_cls = "prov" if mean_sat >= HOUSE_SATURATION * 0.9 and not dull_n else "prov soft"
+
+    cards_total = sum(len(s.get("trip_items", [])) for s in itin["sections"])
+    cards_filled = len({(p["position"], p.get("trip_index"))
+                        for p in by_slot.get("trip", [])})
+
     has_items = {s["day"]: len(s.get("trip_items", [])) for s in itin["sections"]}
     gaps = {g["position"]: g for g in plan.get("gaps", [])}
     transit = [d for d in missing if not has_items.get(d)]
@@ -122,10 +157,13 @@ def product_block(code: str) -> str:
       <li><b>{counts.get('section',0)}</b> 张日程图 / 覆盖 <b>{len(days_with)}</b> 天</li>
       <li><b>{counts.get('carousel',0)}</b> 张轮播</li>
       <li><b>{shipped_highlights if shipped_highlights else len(itin['highlights'])}</b> 条 highlights{f'（自册子 {len(itin["highlights"])} 条折叠）' if shipped_highlights else ''}</li>
-      <li><b>{sum(len(s.get('trip_items',[])) for s in itin['sections'])}</b> 个景点条目</li>
+      <li><b>{counts.get('trip',0)}</b> 张景点卡图 / 覆盖 <b>{cards_filled}</b>/<b>{cards_total}</b> 张卡</li>
     </ul>
     <p class="prov">来源分布：""" + " · ".join(
         f"{ORIGIN_LABEL.get(k,(k,''))[0]} {v}" for k, v in sorted(origins.items())) + f"""</p>
+    <p class="{sat_cls}">色彩：平均饱和 <b>{mean_sat:.3f}</b>
+       （自家图库房子标准 {HOUSE_SATURATION:.3f}，闸门 {MIN_SATURATION:.3f}）
+       · 低于闸门 <b>{dull_n}</b> 张</p>
     {'<p class="prov soft">⚠ ' + str(len(soft)) + ' 张超过放大上限，见下方标注</p>' if soft else ''}
     {'<p class="prov">无配图日：' + '、'.join(f'D{d}（{titles[d][:34]}）' for d in transit) + ' — 无景点条目的纯中转/抵离日</p>' if transit else ''}
     {''.join('<p class="prov soft">⚠ D' + str(d) + '（' + titles[d][:34] + '）有景点却没有配图：'
@@ -135,14 +173,24 @@ def product_block(code: str) -> str:
              for d in unfilled)}
   </header>"""]
 
+    # `trip` 原来不在这个列表里,于是景点卡这一层**整层不出现在签字页上**——
+    # 2026-08-14 那 154 张 trip 图是没有经过这个闸门的,业务同事是在生产页面上
+    # 才看到重复和灰暗的(DESIGN 6.05 / 6.06 两轮返工都由此而来)。
+    # 现在它是这一批的主要产物,必须逐张摆出来。
     for slot, label in [("thumbnail", "列表缩略图"), ("carousel", "轮播图"),
-                        ("route_map", "路线图"), ("section", "每日配图")]:
+                        ("route_map", "路线图"), ("section", "每日配图"),
+                        ("trip", "景点卡配图")]:
         rows = by_slot.get(slot, [])
         if not rows:
             continue
         out.append(f'<h3 class="slot">{label} <span>{len(rows)}</span></h3><div class="grid">')
-        for p in sorted(rows, key=lambda r: r["position"]):
-            dt = f"DAY {p['position']} · {titles.get(p['position'],'')[:38]}" if slot == "section" else ""
+        for p in sorted(rows, key=lambda r: (r["position"], r.get("trip_index") or 0)):
+            if slot == "section":
+                dt = f"DAY {p['position']} · {titles.get(p['position'],'')[:38]}"
+            elif slot == "trip":
+                dt = f"DAY {p['position']} · 第 {(p.get('trip_index') or 0) + 1} 张卡"
+            else:
+                dt = ""
             out.append(card(p, dt))
         out.append("</div>")
     out.append("</section>")
@@ -198,6 +246,10 @@ letter-spacing:.03em;border:1px solid currentColor}
 .ref{font-family:var(--mono);font-size:10.5px;color:var(--faint);overflow-wrap:anywhere}
 .note{margin:7px 0 0;font-size:12px;color:var(--muted);line-height:1.45}
 .warn{margin:6px 0 0;font-size:12px;color:var(--warn);font-weight:600}
+.sat{font-family:var(--mono);font-size:10.5px;padding:2px 6px;border:1px solid currentColor}
+.sat.ok{color:var(--cat)}
+.sat.bad{color:var(--warn);font-weight:700}
+.sat.unknown{color:var(--faint)}
 footer{margin-top:60px;border-top:1px solid var(--line);padding-top:20px;
 font-family:var(--mono);font-size:12px;color:var(--faint)}
 """

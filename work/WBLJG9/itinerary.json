@@ -1,0 +1,216 @@
+{
+  "type_code": "WBLJG9",
+  "travel_days": 9,
+  "_source": "read back from Skybear wt_travel id=419 on 2026-08-15; no brochure PDF for this product, so the itinerary text is production's, not an extraction. photo_subject is the only editorial field added here.",
+  "product_name": {
+    "en": "9D6N Best of Yunnan: Dali, Lijiang, Jade Dragon Snow Mountain and Lugu Lake",
+    "zh": "9天6晚 云南精选：大理、丽江、玉龙雪山与泸沽湖"
+  },
+  "highlights": [],
+  "sections": [
+    {
+      "day": 1,
+      "name": {"en": "DAY 1", "zh": "第一天"},
+      "title": {"en": "Singapore to Lijiang", "zh": "新加坡 > 丽江"},
+      "location": {"en": "Lijiang", "zh": "丽江"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {
+          "title": {"en": "Overnight Flight to Lijiang", "zh": "夜间航班前往丽江"},
+          "description": {"en": "", "zh": ""}
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "name": {"en": "DAY 2", "zh": "第二天"},
+      "title": {"en": "Lijiang to Dali", "zh": "丽江 > 大理"},
+      "location": {"en": "Dali", "zh": "大理"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {
+          "title": {"en": "Shuanglang Ancient Town", "zh": "双廊古镇"},
+          "description": {"en": "", "zh": ""},
+          "photo_subject": "Shuanglang Town 双廊古镇"
+        },
+        {
+          "title": {"en": "Ideal State - Santorini Dali", "zh": "理想邦－大理圣托里尼"},
+          "description": {"en": "", "zh": ""},
+          "photo_subject": "Erhai Lake Dali 洱海"
+        },
+        {
+          "title": {"en": "Dali Ancient City", "zh": "大理古城"},
+          "description": {"en": "", "zh": ""},
+          "photo_subject": "Dali Ancient City 大理古城"
+        },
+        {
+          "title": {"en": "Foreigner Street", "zh": "洋人街"},
+          "description": {"en": "", "zh": ""},
+          "photo_subject": "Dali Old Town street 大理洋人街"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "name": {"en": "DAY 3", "zh": "第三天"},
+      "title": {"en": "Dali Cultural and Photography Experience", "zh": "大理文化与旅拍体验"},
+      "location": {"en": "Dali", "zh": "大理"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {
+          "title": {"en": "Longkan Wharf (Erhai Sunrise)", "zh": "龙龛码头"},
+          "description": {"en": "", "zh": ""},
+          "photo_subject": "Erhai Lake sunrise 洱海日出"
+        },
+        {
+          "title": {"en": "Xizhou Ancient Town and Corner Tower", "zh": "喜洲古镇与转角楼"},
+          "description": {"en": "", "zh": ""},
+          "photo_subject": "Xizhou Town Dali 喜洲古镇"
+        },
+        {
+          "title": {"en": "Countryside Photography and Bai Ethnic Dance", "zh": "乡村旅拍体验与金花打跳"},
+          "description": {"en": "", "zh": ""},
+          "photo_subject": "Bai people traditional costume 白族"
+        },
+        {
+          "title": {"en": "Bai Tie-Dyeing Experience", "zh": "白族非遗扎染体验"},
+          "description": {"en": "", "zh": ""},
+          "photo_subject": "Bai tie dye textile 白族扎染"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "name": {"en": "DAY 4", "zh": "第四天"},
+      "title": {"en": "Dali to Lugu Lake", "zh": "大理 > 泸沽湖"},
+      "location": {"en": "Lugu Lake", "zh": "泸沽湖"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {
+          "title": {"en": "Lugu Lake and Viewing Platform", "zh": "泸沽湖与泸沽湖观景台"},
+          "description": {"en": "", "zh": ""},
+          "photo_subject": "Lugu Lake 泸沽湖"
+        },
+        {
+          "title": {"en": "Lovers' Beach and Lige Viewing Platform", "zh": "情人沙滩与里格观景台"},
+          "description": {"en": "", "zh": ""},
+          "photo_subject": "Lige Peninsula Lugu Lake 里格半岛"
+        },
+        {
+          "title": {"en": "Mosuo Bonfire Party", "zh": "摩梭篝火晚会"},
+          "description": {"en": "", "zh": ""},
+          "photo_subject": "Mosuo people 摩梭人"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "name": {"en": "DAY 5", "zh": "第五天"},
+      "title": {"en": "Lugu Lake to Lijiang", "zh": "泸沽湖 > 丽江"},
+      "location": {"en": "Lijiang", "zh": "丽江"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {
+          "title": {"en": "Lugu Lake Sunrise", "zh": "泸沽湖日出"},
+          "description": {"en": "", "zh": ""},
+          "photo_subject": "Lugu Lake sunrise 泸沽湖日出"
+        },
+        {
+          "title": {"en": "Mosuo Family Home", "zh": "摩梭家访"},
+          "description": {"en": "", "zh": ""},
+          "photo_subject": "Mosuo traditional house 摩梭民居"
+        },
+        {
+          "title": {"en": "Pig-Trough Boat and Liwubi Island", "zh": "猪槽船与里务比岛"},
+          "description": {"en": "", "zh": ""},
+          "photo_subject": "Liwubi Island Lugu Lake 里务比岛"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "name": {"en": "DAY 6", "zh": "第六天"},
+      "title": {"en": "Jade Dragon Snow Mountain", "zh": "玉龙雪山"},
+      "location": {"en": "Lijiang", "zh": "丽江"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {
+          "title": {"en": "Jade Dragon Snow Mountain and Glacier Park", "zh": "玉龙雪山与冰川公园"},
+          "description": {"en": "", "zh": ""},
+          "photo_subject": "Jade Dragon Snow Mountain 玉龙雪山"
+        },
+        {
+          "title": {"en": "Ganhaizi Meadow, Baishui River and Blue Moon Valley", "zh": "甘海子、白水河与蓝月谷"},
+          "description": {"en": "", "zh": ""},
+          "photo_subject": "Blue Moon Valley Lijiang 蓝月谷"
+        },
+        {
+          "title": {"en": "Impression Lijiang", "zh": "印象丽江"},
+          "description": {"en": "", "zh": ""},
+          "photo_subject": "Impression Lijiang show 印象丽江"
+        },
+        {
+          "title": {"en": "Snow Mountain Sightseeing Train", "zh": "雪山观光小火车"},
+          "description": {"en": "", "zh": ""},
+          "photo_subject": "Jade Dragon Snow Mountain meadow 甘海子"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "name": {"en": "DAY 7", "zh": "第七天"},
+      "title": {"en": "Yuhu Village and Baisha Ancient Town", "zh": "玉湖村－白沙古镇"},
+      "location": {"en": "Lijiang", "zh": "丽江"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {
+          "title": {"en": "Yuhu Village", "zh": "玉湖村"},
+          "description": {"en": "", "zh": ""},
+          "photo_subject": "Yuhu Village Lijiang 玉湖村"
+        },
+        {
+          "title": {"en": "Longnv Lake", "zh": "龙女湖"},
+          "description": {"en": "", "zh": ""},
+          "photo_subject": "Yuhu Lake Lijiang 玉湖"
+        },
+        {
+          "title": {"en": "Baisha Ancient Town", "zh": "白沙古镇"},
+          "description": {"en": "", "zh": ""},
+          "photo_subject": "Baisha Town Lijiang 白沙古镇"
+        }
+      ]
+    },
+    {
+      "day": 8,
+      "name": {"en": "DAY 8", "zh": "第八天"},
+      "title": {"en": "Lijiang to Singapore", "zh": "丽江 > 新加坡"},
+      "location": {"en": "Lijiang", "zh": "丽江"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {
+          "title": {"en": "Black Dragon Pool Park", "zh": "黑龙潭公园"},
+          "description": {"en": "", "zh": ""},
+          "photo_subject": "Black Dragon Pool Lijiang 黑龙潭"
+        },
+        {
+          "title": {"en": "Lijiang Ancient Town and Sifang Street", "zh": "丽江古城与四方街"},
+          "description": {"en": "", "zh": ""},
+          "photo_subject": "Lijiang Old Town 丽江古城"
+        }
+      ]
+    },
+    {
+      "day": 9,
+      "name": {"en": "DAY 9", "zh": "第九天"},
+      "title": {"en": "Arrival in Singapore", "zh": "抵达新加坡"},
+      "location": {"en": "Singapore", "zh": "新加坡"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {
+          "title": {"en": "Arrival in Singapore", "zh": "抵达新加坡"},
+          "description": {"en": "", "zh": ""}
+        }
+      ]
+    }
+  ]
+}

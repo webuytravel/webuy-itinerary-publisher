@@ -1,0 +1,1492 @@
+{
+  "d02_shuanglang_town": {
+    "subject": "Shuanglang Town 双廊古镇",
+    "query": "Shuanglang Town",
+    "query_full": "Shuanglang Town",
+    "shrunk": false,
+    "day": 2,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Shuanglang%2C_Dali%2C_Yunnan%2C_China_02.jpg/3840px-Shuanglang%2C_Dali%2C_Yunnan%2C_China_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Shuanglang, Dali, Yunnan, China 02.jpg",
+        "path": "work/WBLJG9/cand_commons/d02_shuanglang_town_1.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Zhangmoon618",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/%E5%8F%8C%E5%BB%8A%E5%8F%A4%E9%95%87_Shuanglang_Town_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "双廊古镇 Shuanglang Town - panoramio.jpg",
+        "path": "work/WBLJG9/cand_commons/d02_shuanglang_town_2.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Ma Martin",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/%E5%8F%8C%E5%BB%8A%E9%95%87%E7%9A%84%E5%BF%AB%E8%89%87.jpg/3840px-%E5%8F%8C%E5%BB%8A%E9%95%87%E7%9A%84%E5%BF%AB%E8%89%87.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "双廊镇的快艇.jpg",
+        "path": "work/WBLJG9/cand_commons/d02_shuanglang_town_3.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Liuxingy",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/%E5%9C%A8%E6%B4%B1%E6%B5%B7%E4%B8%8A%E7%9C%8B%E5%8F%8C%E5%BB%8A%E9%95%87%E6%97%81%E7%9A%84%E9%AB%98%E9%80%9F%E5%85%AC%E8%B7%AF%E5%92%8C%E9%93%81%E8%B7%AF.jpg/3840px-%E5%9C%A8%E6%B4%B1%E6%B5%B7%E4%B8%8A%E7%9C%8B%E5%8F%8C%E5%BB%8A%E9%95%87%E6%97%81%E7%9A%84%E9%AB%98%E9%80%9F%E5%85%AC%E8%B7%AF%E5%92%8C%E9%93%81%E8%B7%AF.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "在洱海上看双廊镇旁的高速公路和铁路.jpg",
+        "path": "work/WBLJG9/cand_commons/d02_shuanglang_town_4.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Liuxingy",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/%E5%A4%A7%E7%90%86%E5%8F%8C%E5%BB%8A-2489796.jpg/3840px-%E5%A4%A7%E7%90%86%E5%8F%8C%E5%BB%8A-2489796.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "大理双廊-2489796.jpg",
+        "path": "work/WBLJG9/cand_commons/d02_shuanglang_town_5.jpg",
+        "license": "CC0",
+        "credit": "Zhouqiyang",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/%E6%B4%B1%E6%B5%B7%E4%B8%8A%E6%9C%9B%E5%8F%8C%E5%BB%8A%E9%95%87%E5%8D%97%E9%83%A8_02.jpg/3840px-%E6%B4%B1%E6%B5%B7%E4%B8%8A%E6%9C%9B%E5%8F%8C%E5%BB%8A%E9%95%87%E5%8D%97%E9%83%A8_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "洱海上望双廊镇南部 02.jpg",
+        "path": "work/WBLJG9/cand_commons/d02_shuanglang_town_6.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Liuxingy",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d02_erhai_lake_dali": {
+    "subject": "Erhai Lake Dali 洱海",
+    "query": "Erhai Lake Dali",
+    "query_full": "Erhai Lake Dali",
+    "shrunk": false,
+    "day": 2,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/20260223_Erhai_Park_in_Dali%2C_Yunnan.jpg/3840px-20260223_Erhai_Park_in_Dali%2C_Yunnan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "20260223 Erhai Park in Dali, Yunnan.jpg",
+        "path": "work/WBLJG9/cand_commons/d02_erhai_lake_dali_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Ngguls",
+        "lat": 25.608316666666667,
+        "lon": 100.24428611111111,
+        "in_region": true
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/20260223_Erhai_Park_in_Dali%2C_Yunnan_NE.jpg/3840px-20260223_Erhai_Park_in_Dali%2C_Yunnan_NE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "20260223 Erhai Park in Dali, Yunnan NE.jpg",
+        "path": "work/WBLJG9/cand_commons/d02_erhai_lake_dali_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Ngguls",
+        "lat": 25.608483,
+        "lon": 100.244363,
+        "in_region": true
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/20260223_Erhai_Park_in_Dali%2C_Yunnan_NW.jpg/3840px-20260223_Erhai_Park_in_Dali%2C_Yunnan_NW.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "20260223 Erhai Park in Dali, Yunnan NW.jpg",
+        "path": "work/WBLJG9/cand_commons/d02_erhai_lake_dali_3.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Ngguls",
+        "lat": 25.608508333333333,
+        "lon": 100.24433055555555,
+        "in_region": true
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/20260223_Erhai_Park_in_Dali%2C_Yunnan_NW_03.jpg/3840px-20260223_Erhai_Park_in_Dali%2C_Yunnan_NW_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "20260223 Erhai Park in Dali, Yunnan NW 03.jpg",
+        "path": "work/WBLJG9/cand_commons/d02_erhai_lake_dali_4.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Ngguls",
+        "lat": 25.608457,
+        "lon": 100.24437400000001,
+        "in_region": true
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/20260223_Erhai_Park_in_Dali%2C_Yunnan_NW_04.jpg/3840px-20260223_Erhai_Park_in_Dali%2C_Yunnan_NW_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "20260223 Erhai Park in Dali, Yunnan NW 04.jpg",
+        "path": "work/WBLJG9/cand_commons/d02_erhai_lake_dali_5.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Ngguls",
+        "lat": 25.608483,
+        "lon": 100.244363,
+        "in_region": true
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Tree_in_front_of_Erhai_Lake.jpg/3840px-Tree_in_front_of_Erhai_Lake.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Tree in front of Erhai Lake.jpg",
+        "path": "work/WBLJG9/cand_commons/d02_erhai_lake_dali_6.jpg",
+        "license": "CC0",
+        "credit": "Mx. Granger",
+        "lat": 25.856127055555557,
+        "lon": 100.21402400000001,
+        "in_region": true
+      }
+    ]
+  },
+  "d02_dali_ancient_city": {
+    "subject": "Dali Ancient City 大理古城",
+    "query": "Dali Ancient City",
+    "query_full": "Dali Ancient City",
+    "shrunk": false,
+    "day": 2,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/202605_Streets_in_Dali_Old_Town_05.jpg/3840px-202605_Streets_in_Dali_Old_Town_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "202605 Streets in Dali Old Town 05.jpg",
+        "path": "work/WBLJG9/cand_commons/d02_dali_ancient_city_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Jonashtand",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Dali_Ancient_Town_20260220-3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Dali Ancient Town 20260220-3.jpg",
+        "path": "work/WBLJG9/cand_commons/d02_dali_ancient_city_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "ShuQizhe",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/71/Dali_Ancient_Town_20260220-4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Dali Ancient Town 20260220-4.jpg",
+        "path": "work/WBLJG9/cand_commons/d02_dali_ancient_city_3.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "ShuQizhe",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/96/Dali_Ancient_Town_20260220-6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Dali Ancient Town 20260220-6.jpg",
+        "path": "work/WBLJG9/cand_commons/d02_dali_ancient_city_4.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "ShuQizhe",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Dali_Ancient_Town_20260220-7.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Dali Ancient Town 20260220-7.jpg",
+        "path": "work/WBLJG9/cand_commons/d02_dali_ancient_city_5.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "ShuQizhe",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Dali_Ancient_Town_20260220-9.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Dali Ancient Town 20260220-9.jpg",
+        "path": "work/WBLJG9/cand_commons/d02_dali_ancient_city_6.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "ShuQizhe",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d02_dali_old_town_street": {
+    "subject": "Dali Old Town street 大理洋人街",
+    "query": "Dali Old Town street",
+    "query_full": "Dali Old Town street",
+    "shrunk": false,
+    "day": 2,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/202605_Streets_in_Dali_Old_Town_02.jpg/3840px-202605_Streets_in_Dali_Old_Town_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "202605 Streets in Dali Old Town 02.jpg",
+        "path": "work/WBLJG9/cand_commons/d02_dali_old_town_street_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Jonashtand",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/202605_Streets_in_Dali_Old_Town_05.jpg/3840px-202605_Streets_in_Dali_Old_Town_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "202605 Streets in Dali Old Town 05.jpg",
+        "path": "work/WBLJG9/cand_commons/d02_dali_old_town_street_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Jonashtand",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/202605_Streets_in_Dali_Old_Town_06.jpg/3840px-202605_Streets_in_Dali_Old_Town_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "202605 Streets in Dali Old Town 06.jpg",
+        "path": "work/WBLJG9/cand_commons/d02_dali_old_town_street_3.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Jonashtand",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/202605_Streets_in_Dali_Old_Town_07.jpg/3840px-202605_Streets_in_Dali_Old_Town_07.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "202605 Streets in Dali Old Town 07.jpg",
+        "path": "work/WBLJG9/cand_commons/d02_dali_old_town_street_4.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Jonashtand",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/202605_Streets_in_Dali_Old_Town_11.jpg/3840px-202605_Streets_in_Dali_Old_Town_11.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "202605 Streets in Dali Old Town 11.jpg",
+        "path": "work/WBLJG9/cand_commons/d02_dali_old_town_street_5.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Jonashtand",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/202605_Streets_in_Dali_Old_Town_13.jpg/3840px-202605_Streets_in_Dali_Old_Town_13.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "202605 Streets in Dali Old Town 13.jpg",
+        "path": "work/WBLJG9/cand_commons/d02_dali_old_town_street_6.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Jonashtand",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d03_erhai_lake_sunrise": {
+    "subject": "Erhai Lake sunrise 洱海日出",
+    "query": "Erhai Lake",
+    "query_full": "Erhai Lake sunrise",
+    "shrunk": true,
+    "day": 3,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/38/Erhai_20260220-1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Erhai 20260220-1.jpg",
+        "path": "work/WBLJG9/cand_commons/d03_erhai_lake_sunrise_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "ShuQizhe",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Erhai_Lake_in_2023.jpg/3840px-Erhai_Lake_in_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Erhai Lake in 2023.jpg",
+        "path": "work/WBLJG9/cand_commons/d03_erhai_lake_sunrise_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Nishino Asuka",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Erhai_lake%2C_Yunnan%2C_China.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Erhai lake, Yunnan, China.jpg",
+        "path": "work/WBLJG9/cand_commons/d03_erhai_lake_sunrise_3.jpg",
+        "license": "CC BY 2.5",
+        "credit": "Ariel Steiner (Asteiner)",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Erhai_north_Panorama.jpg/3840px-Erhai_north_Panorama.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Erhai north Panorama.jpg",
+        "path": "work/WBLJG9/cand_commons/d03_erhai_lake_sunrise_4.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Fong Chen",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/09/Satellite_picture_of_Erhai_Lake_-_ISS043-E-162687.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Satellite picture of Erhai Lake - ISS043-E-162687.jpg",
+        "path": "work/WBLJG9/cand_commons/d03_erhai_lake_sunrise_5.jpg",
+        "license": "Public domain",
+        "credit": "Earth Science and Remote Sensing Unit, Lyndon B. Johnson Space Center",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Tree_in_front_of_Erhai_Lake.jpg/3840px-Tree_in_front_of_Erhai_Lake.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Tree in front of Erhai Lake.jpg",
+        "path": "work/WBLJG9/cand_commons/d03_erhai_lake_sunrise_6.jpg",
+        "license": "CC0",
+        "credit": "Mx. Granger",
+        "lat": 25.856127055555557,
+        "lon": 100.21402400000001,
+        "in_region": true
+      }
+    ]
+  },
+  "d03_xizhou_town_dali": {
+    "subject": "Xizhou Town Dali 喜洲古镇",
+    "query": "Xizhou Town Dali",
+    "query_full": "Xizhou Town Dali",
+    "shrunk": false,
+    "day": 3,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Rice_fields_and_the_town_of_Xizhou.JPG/3840px-Rice_fields_and_the_town_of_Xizhou.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Rice fields and the town of Xizhou.JPG",
+        "path": "work/WBLJG9/cand_commons/d03_xizhou_town_dali_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Chris DeLacy",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Xizhou_03.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Xizhou 03.JPG",
+        "path": "work/WBLJG9/cand_commons/d03_xizhou_town_dali_2.jpg",
+        "license": "Public domain",
+        "credit": "Brücke-Osteuropa",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Xizhou_Old_Town.jpg/3840px-Xizhou_Old_Town.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Xizhou Old Town.jpg",
+        "path": "work/WBLJG9/cand_commons/d03_xizhou_town_dali_3.jpg",
+        "license": "CC0",
+        "credit": "Mx. Granger",
+        "lat": 25.85612788888889,
+        "lon": 100.13100897222222,
+        "in_region": true
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Xizhou_Town_%28121112461%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Xizhou Town (121112461).jpeg",
+        "path": "work/WBLJG9/cand_commons/d03_xizhou_town_dali_4.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Luca Casartelli",
+        "lat": 25.851186666666667,
+        "lon": 100.12903,
+        "in_region": true
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/00/Xizhou_Town_%2821200714911%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Xizhou Town (21200714911).jpg",
+        "path": "work/WBLJG9/cand_commons/d03_xizhou_town_dali_5.jpg",
+        "license": "CC BY-SA 2.0",
+        "credit": "Luca Casartelli",
+        "lat": 25.851186666666667,
+        "lon": 100.12903,
+        "in_region": true
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Xizhou_Town_-_Bai_People.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Xizhou Town - Bai People.jpg",
+        "path": "work/WBLJG9/cand_commons/d03_xizhou_town_dali_6.jpg",
+        "license": "CC BY-SA 2.0",
+        "credit": "Luca Casartelli",
+        "lat": 25.851186666666667,
+        "lon": 100.12903,
+        "in_region": true
+      }
+    ]
+  },
+  "d03_bai_people_traditional_costume": {
+    "subject": "Bai people traditional costume 白族",
+    "query": "Bai people traditional costume",
+    "query_full": "Bai people traditional costume",
+    "shrunk": false,
+    "day": 3,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Bai_female_costumes.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Bai female costumes.JPG",
+        "path": "work/WBLJG9/cand_commons/d03_bai_people_traditional_costume_1.jpg",
+        "license": "GFDL",
+        "credit": "User Tdxiang on English Wikipedia",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/H%27mong_children%2C_Vietnam.jpg/1920px-H%27mong_children%2C_Vietnam.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "H'mong children, Vietnam.jpg",
+        "path": "work/WBLJG9/cand_commons/d03_bai_people_traditional_costume_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "DTH-BD-NVT",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Statue_of_Liu_Hai_Cuts_Firewood_in_Ningxiang%2C_Hunan%2C_China.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Statue of Liu Hai Cuts Firewood in Ningxiang, Hunan, China.jpg",
+        "path": "work/WBLJG9/cand_commons/d03_bai_people_traditional_costume_3.jpg",
+        "license": "CC BY 3.0",
+        "credit": "People's Government of Ningxiang",
+        "lat": 28.253049850277776,
+        "lon": 112.55336761472222,
+        "in_region": false
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Thai_people%2C_Vietnam.jpg/3840px-Thai_people%2C_Vietnam.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Thai people, Vietnam.jpg",
+        "path": "work/WBLJG9/cand_commons/d03_bai_people_traditional_costume_4.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "DTH-BD-NVT",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d03_bai_tie_dye_textile": {
+    "subject": "Bai tie dye textile 白族扎染",
+    "query": "Bai tie dye",
+    "query_full": "Bai tie dye textile",
+    "shrunk": true,
+    "day": 3,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Bai_fabric%2C_tie-dyed_-_Yunnan_Provincial_Museum_-_DSC02211.JPG/3840px-Bai_fabric%2C_tie-dyed_-_Yunnan_Provincial_Museum_-_DSC02211.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Bai fabric, tie-dyed - Yunnan Provincial Museum - DSC02211.JPG",
+        "path": "work/WBLJG9/cand_commons/d03_bai_tie_dye_textile_1.jpg",
+        "license": "Public domain",
+        "credit": "Daderot",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Bai_fabric%2C_tie-dyed_-_Yunnan_Provincial_Museum_-_DSC02212.JPG/3840px-Bai_fabric%2C_tie-dyed_-_Yunnan_Provincial_Museum_-_DSC02212.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Bai fabric, tie-dyed - Yunnan Provincial Museum - DSC02212.JPG",
+        "path": "work/WBLJG9/cand_commons/d03_bai_tie_dye_textile_2.jpg",
+        "license": "Public domain",
+        "credit": "Daderot",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Bai_fabric%2C_tie-dyed_-_Yunnan_Provincial_Museum_-_DSC02213.JPG/3840px-Bai_fabric%2C_tie-dyed_-_Yunnan_Provincial_Museum_-_DSC02213.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Bai fabric, tie-dyed - Yunnan Provincial Museum - DSC02213.JPG",
+        "path": "work/WBLJG9/cand_commons/d03_bai_tie_dye_textile_3.jpg",
+        "license": "Public domain",
+        "credit": "Daderot",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/89/SHIBORI_%E9%9B%B2%E5%8D%97%E7%9C%81%E3%83%9A%E3%83%BC%E6%97%8F%E7%B5%9E%E3%82%8A%E6%9F%93%E3%82%81%E5%B7%A5%E5%A0%B4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "SHIBORI 雲南省ペー族絞り染め工場.jpg",
+        "path": "work/WBLJG9/cand_commons/d03_bai_tie_dye_textile_4.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "漱石の猫",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Tie-dyed_cloth.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Tie-dyed cloth.jpg",
+        "path": "work/WBLJG9/cand_commons/d03_bai_tie_dye_textile_5.jpg",
+        "license": "CC BY-SA 2.0",
+        "credit": "Caitriana Nicholson",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/6d/%E7%99%BD%E6%97%8F%E6%89%8E%E6%9F%93.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "白族扎染.jpg",
+        "path": "work/WBLJG9/cand_commons/d03_bai_tie_dye_textile_6.jpg",
+        "license": "CC BY 2.0",
+        "credit": "Alexander Savin",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d04_lugu_lake": {
+    "subject": "Lugu Lake 泸沽湖",
+    "query": "Lugu Lake",
+    "query_full": "Lugu Lake",
+    "shrunk": false,
+    "day": 4,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/20260226_Lugu_Lake_Lige_Peninsula_02.jpg/3840px-20260226_Lugu_Lake_Lige_Peninsula_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "20260226 Lugu Lake Lige Peninsula 02.jpg",
+        "path": "work/WBLJG9/cand_commons/d04_lugu_lake_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Ngguls",
+        "lat": 27.733755555555557,
+        "lon": 100.74880277777778,
+        "in_region": true
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d1/20260226_Lugu_Lake_Lige_Peninsula_07.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "20260226 Lugu Lake Lige Peninsula 07.jpg",
+        "path": "work/WBLJG9/cand_commons/d04_lugu_lake_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Ngguls",
+        "lat": 27.73375,
+        "lon": 100.74880277777778,
+        "in_region": true
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Lugu_Lake_from_Lige_Observation_Deck_%2820230930180236%29.jpg/3840px-Lugu_Lake_from_Lige_Observation_Deck_%2820230930180236%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Lugu Lake from Lige Observation Deck (20230930180236).jpg",
+        "path": "work/WBLJG9/cand_commons/d04_lugu_lake_3.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "N509FZ",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Lugu_Lake_view_from_cable_car%2C_August_2018_%282%29.jpg/3840px-Lugu_Lake_view_from_cable_car%2C_August_2018_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Lugu Lake view from cable car, August 2018 (2).jpg",
+        "path": "work/WBLJG9/cand_commons/d04_lugu_lake_4.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Jason Zhang",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Northwest_of_Lugu_Lake_%2820230930180157%29.jpg/3840px-Northwest_of_Lugu_Lake_%2820230930180157%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Northwest of Lugu Lake (20230930180157).jpg",
+        "path": "work/WBLJG9/cand_commons/d04_lugu_lake_5.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "N509FZ",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/71/View_over_Lugu_Lake_%28Luguhu_Nature_Reserve_with_WDPA_ID_95771%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "View over Lugu Lake (Luguhu Nature Reserve with WDPA ID 95771).jpg",
+        "path": "work/WBLJG9/cand_commons/d04_lugu_lake_6.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Toni Wöhrl",
+        "lat": 27.657531730001992,
+        "lon": 100.79809569996766,
+        "in_region": true
+      }
+    ]
+  },
+  "d04_lige_peninsula_lugu_lake": {
+    "subject": "Lige Peninsula Lugu Lake 里格半岛",
+    "query": "Lige Peninsula Lugu Lake",
+    "query_full": "Lige Peninsula Lugu Lake",
+    "shrunk": false,
+    "day": 4,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/20260226_Lugu_Lake_Lige_Peninsula_04.jpg/3840px-20260226_Lugu_Lake_Lige_Peninsula_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "20260226 Lugu Lake Lige Peninsula 04.jpg",
+        "path": "work/WBLJG9/cand_commons/d04_lige_peninsula_lugu_lake_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Ngguls",
+        "lat": 27.733752777777777,
+        "lon": 100.74880277777778,
+        "in_region": true
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/20260226_Lugu_Lake_Lige_Peninsula_05.jpg/3840px-20260226_Lugu_Lake_Lige_Peninsula_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "20260226 Lugu Lake Lige Peninsula 05.jpg",
+        "path": "work/WBLJG9/cand_commons/d04_lige_peninsula_lugu_lake_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Ngguls",
+        "lat": 27.73375,
+        "lon": 100.74880277777778,
+        "in_region": true
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/20260226_Lugu_Lake_Lige_Peninsula_06.jpg/3840px-20260226_Lugu_Lake_Lige_Peninsula_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "20260226 Lugu Lake Lige Peninsula 06.jpg",
+        "path": "work/WBLJG9/cand_commons/d04_lige_peninsula_lugu_lake_3.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Ngguls",
+        "lat": 27.73375,
+        "lon": 100.74880277777778,
+        "in_region": true
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d1/20260226_Lugu_Lake_Lige_Peninsula_07.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "20260226 Lugu Lake Lige Peninsula 07.jpg",
+        "path": "work/WBLJG9/cand_commons/d04_lige_peninsula_lugu_lake_4.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Ngguls",
+        "lat": 27.73375,
+        "lon": 100.74880277777778,
+        "in_region": true
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/20260226_Lugu_Lake_Lige_Peninsula_08.jpg/3840px-20260226_Lugu_Lake_Lige_Peninsula_08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "20260226 Lugu Lake Lige Peninsula 08.jpg",
+        "path": "work/WBLJG9/cand_commons/d04_lige_peninsula_lugu_lake_5.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Ngguls",
+        "lat": 27.733769444444444,
+        "lon": 100.74887222222222,
+        "in_region": true
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/20260226_Lugu_Lake_Lige_Peninsula_10.jpg/3840px-20260226_Lugu_Lake_Lige_Peninsula_10.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "20260226 Lugu Lake Lige Peninsula 10.jpg",
+        "path": "work/WBLJG9/cand_commons/d04_lige_peninsula_lugu_lake_6.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Ngguls",
+        "lat": 27.732391999999997,
+        "lon": 100.746457,
+        "in_region": true
+      }
+    ]
+  },
+  "d04_mosuo_people": {
+    "subject": "Mosuo people 摩梭人",
+    "query": "Mosuo people",
+    "query_full": "Mosuo people",
+    "shrunk": false,
+    "day": 4,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/B%26W_photo_of_Mosuo_Man.jpg/3840px-B%26W_photo_of_Mosuo_Man.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "B&W photo of Mosuo Man.jpg",
+        "path": "work/WBLJG9/cand_commons/d04_mosuo_people_1.jpg",
+        "license": "CC BY-SA 2.0",
+        "credit": "Rod Waddington",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Mosuo_Bride_%26_Groom.jpg/3840px-Mosuo_Bride_%26_Groom.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Mosuo Bride & Groom.jpg",
+        "path": "work/WBLJG9/cand_commons/d04_mosuo_people_2.jpg",
+        "license": "CC BY-SA 2.0",
+        "credit": "Rod Waddington",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Mosuo_Tibetan_Woman.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Mosuo Tibetan Woman.jpg",
+        "path": "work/WBLJG9/cand_commons/d04_mosuo_people_3.jpg",
+        "license": "CC BY-SA 2.0",
+        "credit": "Rod Waddington",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Mosuo_Woman._%28in_explore%29_-_Flickr_-_Rod_Waddington.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Mosuo Woman. (in explore) - Flickr - Rod Waddington.jpg",
+        "path": "work/WBLJG9/cand_commons/d04_mosuo_people_4.jpg",
+        "license": "CC BY-SA 2.0",
+        "credit": "Rod Waddington from Kergunyah, Australia",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/49/Mosuo_Woman_-_42723465920.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Mosuo Woman - 42723465920.jpg",
+        "path": "work/WBLJG9/cand_commons/d04_mosuo_people_5.jpg",
+        "license": "CC BY-SA 2.0",
+        "credit": "Rod Waddington",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Mosuo_girls.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Mosuo girls.jpg",
+        "path": "work/WBLJG9/cand_commons/d04_mosuo_people_6.jpg",
+        "license": "CC BY 2.0",
+        "credit": "Goddess Sherry",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d05_lugu_lake_sunrise": {
+    "subject": "Lugu Lake sunrise 泸沽湖日出",
+    "query": "Lugu Lake",
+    "query_full": "Lugu Lake sunrise",
+    "shrunk": true,
+    "day": 5,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/20260226_Lugu_Lake_Lige_Peninsula_02.jpg/3840px-20260226_Lugu_Lake_Lige_Peninsula_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "20260226 Lugu Lake Lige Peninsula 02.jpg",
+        "path": "work/WBLJG9/cand_commons/d05_lugu_lake_sunrise_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Ngguls",
+        "lat": 27.733755555555557,
+        "lon": 100.74880277777778,
+        "in_region": true
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d1/20260226_Lugu_Lake_Lige_Peninsula_07.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "20260226 Lugu Lake Lige Peninsula 07.jpg",
+        "path": "work/WBLJG9/cand_commons/d05_lugu_lake_sunrise_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Ngguls",
+        "lat": 27.73375,
+        "lon": 100.74880277777778,
+        "in_region": true
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Lugu_Lake_from_Lige_Observation_Deck_%2820230930180236%29.jpg/3840px-Lugu_Lake_from_Lige_Observation_Deck_%2820230930180236%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Lugu Lake from Lige Observation Deck (20230930180236).jpg",
+        "path": "work/WBLJG9/cand_commons/d05_lugu_lake_sunrise_3.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "N509FZ",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Lugu_Lake_view_from_cable_car%2C_August_2018_%282%29.jpg/3840px-Lugu_Lake_view_from_cable_car%2C_August_2018_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Lugu Lake view from cable car, August 2018 (2).jpg",
+        "path": "work/WBLJG9/cand_commons/d05_lugu_lake_sunrise_4.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Jason Zhang",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Northwest_of_Lugu_Lake_%2820230930180157%29.jpg/3840px-Northwest_of_Lugu_Lake_%2820230930180157%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Northwest of Lugu Lake (20230930180157).jpg",
+        "path": "work/WBLJG9/cand_commons/d05_lugu_lake_sunrise_5.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "N509FZ",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/71/View_over_Lugu_Lake_%28Luguhu_Nature_Reserve_with_WDPA_ID_95771%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "View over Lugu Lake (Luguhu Nature Reserve with WDPA ID 95771).jpg",
+        "path": "work/WBLJG9/cand_commons/d05_lugu_lake_sunrise_6.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Toni Wöhrl",
+        "lat": 27.657531730001992,
+        "lon": 100.79809569996766,
+        "in_region": true
+      }
+    ]
+  },
+  "d05_mosuo_traditional_house": {
+    "subject": "Mosuo traditional house 摩梭民居",
+    "query": "Mosuo traditional house",
+    "query_full": "Mosuo traditional house",
+    "shrunk": false,
+    "day": 5,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/82/Mosuo_Tibetan_Woman._%28in_explore%29_-_Flickr_-_Rod_Waddington.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Mosuo Tibetan Woman. (in explore) - Flickr - Rod Waddington.jpg",
+        "path": "work/WBLJG9/cand_commons/d05_mosuo_traditional_house_1.jpg",
+        "license": "CC BY-SA 2.0",
+        "credit": "Rod Waddington from Kergunyah, Australia",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d05_liwubi_island_lugu_lake": {
+    "subject": "Liwubi Island Lugu Lake 里务比岛",
+    "query": "Liwubi Island Lugu Lake",
+    "query_full": "Liwubi Island Lugu Lake",
+    "shrunk": false,
+    "day": 5,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/20260226_Lugu_Lake_and_Liwubi_Island.jpg/3840px-20260226_Lugu_Lake_and_Liwubi_Island.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "20260226 Lugu Lake and Liwubi Island.jpg",
+        "path": "work/WBLJG9/cand_commons/d05_liwubi_island_lugu_lake_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "祝鱼贵",
+        "lat": 27.659325,
+        "lon": 100.806893,
+        "in_region": true
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/20260226_Lugu_Lake_and_Liwubi_Island_2.jpg/3840px-20260226_Lugu_Lake_and_Liwubi_Island_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "20260226 Lugu Lake and Liwubi Island 2.jpg",
+        "path": "work/WBLJG9/cand_commons/d05_liwubi_island_lugu_lake_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "祝鱼贵",
+        "lat": 27.659325,
+        "lon": 100.806893,
+        "in_region": true
+      }
+    ]
+  },
+  "d06_jade_dragon_snow_mountain": {
+    "subject": "Jade Dragon Snow Mountain 玉龙雪山",
+    "query": "Jade Dragon Snow Mountain",
+    "query_full": "Jade Dragon Snow Mountain",
+    "shrunk": false,
+    "day": 6,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Jade_Dragon_Snow_Mountain_20260221-1.jpg/3840px-Jade_Dragon_Snow_Mountain_20260221-1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Jade Dragon Snow Mountain 20260221-1.jpg",
+        "path": "work/WBLJG9/cand_commons/d06_jade_dragon_snow_mountain_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "ShuQizhe",
+        "lat": 27.096014,
+        "lon": 100.257869,
+        "in_region": true
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/19/Jade_Dragon_Snow_Mountain_20260221-14.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Jade Dragon Snow Mountain 20260221-14.jpg",
+        "path": "work/WBLJG9/cand_commons/d06_jade_dragon_snow_mountain_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "ShuQizhe",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/15/Lijiang_Yunnan_China-Naxi-people-carrying-baskets-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Lijiang Yunnan China-Naxi-people-carrying-baskets-01.jpg",
+        "path": "work/WBLJG9/cand_commons/d06_jade_dragon_snow_mountain_3.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "CEphoto, Uwe Aranas",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Lijiang_Yunnan_China-View-of-Jade-Dragon-Mountain-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Lijiang Yunnan China-View-of-Jade-Dragon-Mountain-01.jpg",
+        "path": "work/WBLJG9/cand_commons/d06_jade_dragon_snow_mountain_4.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "CEphoto, Uwe Aranas",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Lijiang_Yunnan_China_Jade-Dragon-Snow-Mountain-01.jpg/3840px-Lijiang_Yunnan_China_Jade-Dragon-Snow-Mountain-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Lijiang Yunnan China Jade-Dragon-Snow-Mountain-01.jpg",
+        "path": "work/WBLJG9/cand_commons/d06_jade_dragon_snow_mountain_5.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "CEphoto, Uwe Aranas",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Main_Peak_of_Jade_Dragon_Snow_Mountain_20260221_185346.jpg/3840px-Main_Peak_of_Jade_Dragon_Snow_Mountain_20260221_185346.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Main Peak of Jade Dragon Snow Mountain 20260221 185346.jpg",
+        "path": "work/WBLJG9/cand_commons/d06_jade_dragon_snow_mountain_6.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "ShuQizhe",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d06_blue_moon_valley_lijiang": {
+    "subject": "Blue Moon Valley Lijiang 蓝月谷",
+    "query": "Blue Moon Valley Lijiang",
+    "query_full": "Blue Moon Valley Lijiang",
+    "shrunk": false,
+    "day": 6,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/32/20140511_Lijiang_Impression_Show.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "20140511 Lijiang Impression Show.jpg",
+        "path": "work/WBLJG9/cand_commons/d06_blue_moon_valley_lijiang_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "之乎",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/%E6%B0%B4%E8%89%B2%E6%9C%83%E8%AE%8A%E7%9A%84%E8%97%8D%E6%9C%88%E8%B0%B7_20190928195012.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "水色會變的藍月谷 20190928195012.jpg",
+        "path": "work/WBLJG9/cand_commons/d06_blue_moon_valley_lijiang_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Ping an Chang",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/%E7%8E%89%E9%BE%99%E9%9B%AA%E5%B1%B1_%E8%93%9D%E6%9C%88%E8%B0%B7_Blue_Moon_Valley_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "玉龙雪山 蓝月谷 Blue Moon Valley - panoramio.jpg",
+        "path": "work/WBLJG9/cand_commons/d06_blue_moon_valley_lijiang_3.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Ma Martin",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d06_impression_lijiang_show": {
+    "subject": "Impression Lijiang show 印象丽江",
+    "query": "Impression Lijiang show",
+    "query_full": "Impression Lijiang show",
+    "shrunk": false,
+    "day": 6,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/32/20140511_Lijiang_Impression_Show.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "20140511 Lijiang Impression Show.jpg",
+        "path": "work/WBLJG9/cand_commons/d06_impression_lijiang_show_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "之乎",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/26/Lijiang_Yunnan_China-Stage-of-Jade-Dragon-Mountain-Theatre-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Lijiang Yunnan China-Stage-of-Jade-Dragon-Mountain-Theatre-01.jpg",
+        "path": "work/WBLJG9/cand_commons/d06_impression_lijiang_show_2.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "CEphoto, Uwe Aranas",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d06_jade_dragon_snow_mountain_meadow": {
+    "subject": "Jade Dragon Snow Mountain meadow 甘海子",
+    "query": "Jade Dragon Snow Mountain meadow",
+    "query_full": "Jade Dragon Snow Mountain meadow",
+    "shrunk": false,
+    "day": 6,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/21/Tibetan_Temple%2C_Yak_Meadows%2C_Jade_Dragon_Snow_Mountain%2C_China_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Tibetan Temple, Yak Meadows, Jade Dragon Snow Mountain, China - panoramio.jpg",
+        "path": "work/WBLJG9/cand_commons/d06_jade_dragon_snow_mountain_meadow_1.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Colin W",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Yak_Meadows%2C_Jade_Dragon_Snow_Mountain_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Yak Meadows, Jade Dragon Snow Mountain - panoramio.jpg",
+        "path": "work/WBLJG9/cand_commons/d06_jade_dragon_snow_mountain_meadow_2.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Colin W",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/26/Yak_Meadows%2C_Jade_Dragon_Snow_Mountain_-_panoramio_-_Colin_W.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Yak Meadows, Jade Dragon Snow Mountain - panoramio - Colin W.jpg",
+        "path": "work/WBLJG9/cand_commons/d06_jade_dragon_snow_mountain_meadow_3.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Colin W",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/59/Yak_Meadows%2C_Jade_Dragon_Snow_Mountain_-_panoramio_-_Colin_W_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Yak Meadows, Jade Dragon Snow Mountain - panoramio - Colin W (1).jpg",
+        "path": "work/WBLJG9/cand_commons/d06_jade_dragon_snow_mountain_meadow_4.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Colin W",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d07_yuhu_village_lijiang": {
+    "subject": "Yuhu Village Lijiang 玉湖村",
+    "query": "Yuhu Village Lijiang",
+    "query_full": "Yuhu Village Lijiang",
+    "shrunk": false,
+    "day": 7,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/de/Lijiang_Oct_2007_232.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Lijiang Oct 2007 232.jpg",
+        "path": "work/WBLJG9/cand_commons/d07_yuhu_village_lijiang_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "G41rn8",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d07_yuhu_lake_lijiang": {
+    "subject": "Yuhu Lake Lijiang 玉湖",
+    "query": "Yuhu Lake Lijiang",
+    "query_full": "Yuhu Lake Lijiang",
+    "shrunk": false,
+    "day": 7,
+    "candidates": []
+  },
+  "d07_baisha_town_lijiang": {
+    "subject": "Baisha Town Lijiang 白沙古镇",
+    "query": "Baisha Town Lijiang",
+    "query_full": "Baisha Town Lijiang",
+    "shrunk": false,
+    "day": 7,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Baisha_Old_Town_%2820572649363%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Baisha Old Town (20572649363).jpg",
+        "path": "work/WBLJG9/cand_commons/d07_baisha_town_lijiang_1.jpg",
+        "license": "CC BY-SA 2.0",
+        "credit": "Luca Casartelli",
+        "lat": 26.87343,
+        "lon": 100.23631166666667,
+        "in_region": true
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Baisha_Old_Town_%2821183444262%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Baisha Old Town (21183444262).jpg",
+        "path": "work/WBLJG9/cand_commons/d07_baisha_town_lijiang_2.jpg",
+        "license": "CC BY-SA 2.0",
+        "credit": "Luca Casartelli",
+        "lat": 26.87343,
+        "lon": 100.23631166666667,
+        "in_region": true
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/71/Baisha_Old_Town_%2821201627171%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Baisha Old Town (21201627171).jpg",
+        "path": "work/WBLJG9/cand_commons/d07_baisha_town_lijiang_3.jpg",
+        "license": "CC BY-SA 2.0",
+        "credit": "Luca Casartelli",
+        "lat": 26.87343,
+        "lon": 100.23631166666667,
+        "in_region": true
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Lijiang_Tramways_105_approaching_Baisha_Ancient_Town_%2820230929152414%29.jpg/3840px-Lijiang_Tramways_105_approaching_Baisha_Ancient_Town_%2820230929152414%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Lijiang Tramways 105 approaching Baisha Ancient Town (20230929152414).jpg",
+        "path": "work/WBLJG9/cand_commons/d07_baisha_town_lijiang_4.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "N509FZ",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Lijiang_Tramways_105_approaching_Baisha_Ancient_Town_%2820230929152415%29.jpg/3840px-Lijiang_Tramways_105_approaching_Baisha_Ancient_Town_%2820230929152415%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Lijiang Tramways 105 approaching Baisha Ancient Town (20230929152415).jpg",
+        "path": "work/WBLJG9/cand_commons/d07_baisha_town_lijiang_5.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "N509FZ",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Lijiang_Tramways_105_approaching_Baisha_Ancient_Town_%2820230929152416%29.jpg/3840px-Lijiang_Tramways_105_approaching_Baisha_Ancient_Town_%2820230929152416%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Lijiang Tramways 105 approaching Baisha Ancient Town (20230929152416).jpg",
+        "path": "work/WBLJG9/cand_commons/d07_baisha_town_lijiang_6.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "N509FZ",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d08_black_dragon_pool_lijiang": {
+    "subject": "Black Dragon Pool Lijiang 黑龙潭",
+    "query": "Black Dragon Pool Lijiang",
+    "query_full": "Black Dragon Pool Lijiang",
+    "shrunk": false,
+    "day": 8,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Black_Dragon_Pool%2C_Lijiang%2C_China_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Black Dragon Pool, Lijiang, China - panoramio.jpg",
+        "path": "work/WBLJG9/cand_commons/d08_black_dragon_pool_lijiang_1.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Colin W",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Black_Dragon_Pool%2C_Lijiang_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Black Dragon Pool, Lijiang - panoramio.jpg",
+        "path": "work/WBLJG9/cand_commons/d08_black_dragon_pool_lijiang_2.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Colin W",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Black_Dragon_Pool.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Black Dragon Pool.jpg",
+        "path": "work/WBLJG9/cand_commons/d08_black_dragon_pool_lijiang_3.jpg",
+        "license": "CC BY 2.0",
+        "credit": "Chris from Canada",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Lijiang_-_black_dragon_pool_park_4_top_city_view.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Lijiang - black dragon pool park 4 top city view.jpg",
+        "path": "work/WBLJG9/cand_commons/d08_black_dragon_pool_lijiang_4.jpg",
+        "license": "CC BY-SA 2.0",
+        "credit": "adifromusa",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/71/Lijiang_-_black_dragon_pool_park_8_city_view.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Lijiang - black dragon pool park 8 city view.jpg",
+        "path": "work/WBLJG9/cand_commons/d08_black_dragon_pool_lijiang_5.jpg",
+        "license": "CC BY-SA 2.0",
+        "credit": "adifromusa",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Lijiang_Yunnan_Black-Dragon-Pool-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Lijiang Yunnan Black-Dragon-Pool-01.jpg",
+        "path": "work/WBLJG9/cand_commons/d08_black_dragon_pool_lijiang_6.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "CEphoto, Uwe Aranas",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d08_lijiang_old_town": {
+    "subject": "Lijiang Old Town 丽江古城",
+    "query": "Lijiang Old Town",
+    "query_full": "Lijiang Old Town",
+    "shrunk": false,
+    "day": 8,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/1_lijiang_old_town_night.jpg/3840px-1_lijiang_old_town_night.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "1 lijiang old town night.jpg",
+        "path": "work/WBLJG9/cand_commons/d08_lijiang_old_town_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "chensiyuan",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Lijiang_Yunnan_China-Firefighting-Equipment-in-Old-Town-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Lijiang Yunnan China-Firefighting-Equipment-in-Old-Town-01.jpg",
+        "path": "work/WBLJG9/cand_commons/d08_lijiang_old_town_2.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "CEphoto, Uwe Aranas",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Lijiang_Yunnan_Doors-_in-old-town-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Lijiang Yunnan Doors- in-old-town-01.jpg",
+        "path": "work/WBLJG9/cand_commons/d08_lijiang_old_town_3.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "CEphoto, Uwe Aranas",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/27/Lijiang_Yunnan_Heritage-shops-in-old-town-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Lijiang Yunnan Heritage-shops-in-old-town-01.jpg",
+        "path": "work/WBLJG9/cand_commons/d08_lijiang_old_town_4.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "CEphoto, Uwe Aranas",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Lijiang_Yunnan_Old-town-02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Lijiang Yunnan Old-town-02.jpg",
+        "path": "work/WBLJG9/cand_commons/d08_lijiang_old_town_5.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "CEphoto, Uwe Aranas",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Lijiang_Yunnan_Old-town-03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Lijiang Yunnan Old-town-03.jpg",
+        "path": "work/WBLJG9/cand_commons/d08_lijiang_old_town_6.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "CEphoto, Uwe Aranas",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  }
+}
