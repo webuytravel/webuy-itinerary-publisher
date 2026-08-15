@@ -1,0 +1,734 @@
+{
+ "type_code": "WBLCKG",
+ "travel_days": 8,
+ "product_name": {
+  "en": "8D7N Chongqing and Enshi Geological Wonders",
+  "zh": "8天7晚 重庆与恩施 渝鄂双城秘境·世界级地质奇观"
+ },
+ "highlights": [
+  {
+   "en": "Yunyang Longgang Scenic Area and the Cloud Corridor Glass Skywalk",
+   "zh": "云阳龙缸景区与云端廊桥"
+  },
+  {
+   "en": "Baidi City · Qutang Gorge · Kuimen Gate · Three Gorges Summit",
+   "zh": "白帝城 · 瞿塘峡 · 夔门 · 三峡之巅"
+  },
+  {
+   "en": "Suobuya Stone Forest and Tujia Daughter City in Enshi",
+   "zh": "恩施梭布垭石林与土家女儿城"
+  },
+  {
+   "en": "Shiziguan Water Highway and Tenglong Cave, a spectacular karst cave",
+   "zh": "狮子关水上公路与腾龙洞奇幻喀斯特溶洞"
+  },
+  {
+   "en": "Chongqing city: Hongyadong Night View · Liziba Light Rail · Jiefangbei · Zoo Panda House · Sichuan Opera Face-Changing",
+   "zh": "重庆市区：洪崖洞夜景 · 李子坝轻轨穿楼 · 解放碑 · 动物园熊猫馆 · 川剧变脸"
+  },
+  {
+   "en": "Yunyang Cuisine · Tujia Cuisine · Guzi Chicken · Bowl-Smashing Wine Banquet · Chongqing Hot Pot",
+   "zh": "云阳风味 · 土家风味 · 簋子鸡风味 · 摔碗酒宴 · 重庆火锅"
+  }
+ ],
+ "highlights_source": [],
+ "sections": [
+  {
+   "day": 1,
+   "name": {
+    "en": "DAY 1",
+    "zh": "第一天"
+   },
+   "title": {
+    "en": "Singapore to Chongqing",
+    "zh": "新加坡 - 重庆"
+   },
+   "location": {
+    "en": "Chongqing",
+    "zh": "重庆"
+   },
+   "description": {
+    "en": "",
+    "zh": ""
+   },
+   "trip_items": [
+    {
+     "title": {
+      "en": "Fly from Singapore to Chongqing",
+      "zh": "搭乘国际航班从新加坡飞往重庆"
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     },
+     "trip_type": "Attractions"
+    }
+   ]
+  },
+  {
+   "day": 2,
+   "name": {
+    "en": "DAY 2",
+    "zh": "第二天"
+   },
+   "title": {
+    "en": "Chongqing to Yunyang",
+    "zh": "重庆 - 云阳"
+   },
+   "location": {
+    "en": "Yunyang",
+    "zh": "云阳"
+   },
+   "description": {
+    "en": "",
+    "zh": ""
+   },
+   "trip_items": [
+    {
+     "title": {
+      "en": "Yunyang Longgang Scenic Area",
+      "zh": "云阳龙缸景区"
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     },
+     "photo_subject": "Yunyang Longgang Scenic Area 云阳龙缸",
+     "trip_type": "Attractions"
+    },
+    {
+     "title": {
+      "en": "Cloud Corridor Glass Skywalk",
+      "zh": "云端廊桥"
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     },
+     "photo_subject": "Yunduan Corridor Bridge glass skywalk Yunyang 云端廊桥",
+     "trip_type": "Attractions"
+    },
+    {
+     "title": {
+      "en": "Zhang Fei Temple Scenic Area",
+      "zh": "张飞庙景区"
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     },
+     "photo_subject": "Zhangfei Temple Yunyang 张飞庙",
+     "trip_type": "Attractions"
+    }
+   ]
+  },
+  {
+   "day": 3,
+   "name": {
+    "en": "DAY 3",
+    "zh": "第三天"
+   },
+   "title": {
+    "en": "Yunyang to Fengjie",
+    "zh": "云阳 - 奉节"
+   },
+   "location": {
+    "en": "Fengjie",
+    "zh": "奉节"
+   },
+   "description": {
+    "en": "",
+    "zh": ""
+   },
+   "trip_items": [
+    {
+     "title": {
+      "en": "Baidi City",
+      "zh": "白帝城"
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     },
+     "photo_subject": "Baidicheng Fengjie 白帝城",
+     "trip_type": "Attractions"
+    },
+    {
+     "title": {
+      "en": "Qutang Gorge and Kuimen Gate",
+      "zh": "瞿塘峡与夔门"
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     },
+     "photo_subject": "Qutang Gorge Kuimen Yangtze 瞿塘峡夔门",
+     "trip_type": "Attractions"
+    },
+    {
+     "title": {
+      "en": "Three Gorges Summit",
+      "zh": "三峡之巅"
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     },
+     "photo_subject": "Three Gorges Summit Fengjie 三峡之巅",
+     "trip_type": "Attractions"
+    }
+   ]
+  },
+  {
+   "day": 4,
+   "name": {
+    "en": "DAY 4",
+    "zh": "第四天"
+   },
+   "title": {
+    "en": "Fengjie to Enshi",
+    "zh": "奉节 - 恩施"
+   },
+   "location": {
+    "en": "Enshi",
+    "zh": "恩施"
+   },
+   "description": {
+    "en": "",
+    "zh": ""
+   },
+   "trip_items": [
+    {
+     "title": {
+      "en": "Suobuya Stone Forest",
+      "zh": "梭布垭石林"
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     },
+     "photo_subject": "Suobuya Stone Forest Enshi 梭布垭石林",
+     "trip_type": "Attractions"
+    },
+    {
+     "title": {
+      "en": "Tujia Daughter City",
+      "zh": "土家女儿城"
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     },
+     "photo_subject": "Tujia Daughter City Enshi 土家女儿城",
+     "trip_type": "Attractions"
+    }
+   ]
+  },
+  {
+   "day": 5,
+   "name": {
+    "en": "DAY 5",
+    "zh": "第五天"
+   },
+   "title": {
+    "en": "Enshi to Lichuan",
+    "zh": "恩施 - 利川"
+   },
+   "location": {
+    "en": "Lichuan",
+    "zh": "利川"
+   },
+   "description": {
+    "en": "",
+    "zh": ""
+   },
+   "trip_items": [
+    {
+     "title": {
+      "en": "Shiziguan Water Highway",
+      "zh": "狮子关水上公路"
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     },
+     "photo_subject": "Shiziguan floating water highway Lichuan 狮子关水上公路",
+     "trip_type": "Attractions"
+    },
+    {
+     "title": {
+      "en": "Tenglong Cave",
+      "zh": "腾龙洞"
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     },
+     "photo_subject": "Tenglong Cave Lichuan 腾龙洞",
+     "trip_type": "Attractions"
+    }
+   ]
+  },
+  {
+   "day": 6,
+   "name": {
+    "en": "DAY 6",
+    "zh": "第六天"
+   },
+   "title": {
+    "en": "Lichuan to Chongqing by high-speed train",
+    "zh": "利川（动车）- 重庆"
+   },
+   "location": {
+    "en": "Chongqing",
+    "zh": "重庆"
+   },
+   "description": {
+    "en": "",
+    "zh": ""
+   },
+   "trip_items": [
+    {
+     "title": {
+      "en": "Huangjueping Graffiti Art Street",
+      "zh": "黄桷坪涂鸦艺术街"
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     },
+     "photo_subject": "Huangjueping graffiti street Chongqing 黄桷坪涂鸦街",
+     "trip_type": "Attractions"
+    },
+    {
+     "title": {
+      "en": "Jiaotong Teahouse",
+      "zh": "交通茶馆"
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     },
+     "photo_subject": "Jiaotong Teahouse Chongqing 交通茶馆",
+     "trip_type": "Attractions"
+    },
+    {
+     "title": {
+      "en": "Danzishi Old Street",
+      "zh": "弹子石老街"
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     },
+     "photo_subject": "Danzishi Old Street Chongqing 弹子石老街",
+     "trip_type": "Attractions"
+    },
+    {
+     "title": {
+      "en": "Mountain City Trail",
+      "zh": "山城步道"
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     },
+     "photo_subject": "Shancheng Trail Chongqing 山城步道",
+     "trip_type": "Attractions"
+    },
+    {
+     "title": {
+      "en": "Shibati Traditional Scenic Area",
+      "zh": "十八梯传统风貌区"
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     },
+     "photo_subject": "Shibati Chongqing 十八梯",
+     "trip_type": "Attractions"
+    }
+   ]
+  },
+  {
+   "day": 7,
+   "name": {
+    "en": "DAY 7",
+    "zh": "第七天"
+   },
+   "title": {
+    "en": "Chongqing City Tour",
+    "zh": "重庆市区游"
+   },
+   "location": {
+    "en": "Chongqing",
+    "zh": "重庆"
+   },
+   "description": {
+    "en": "",
+    "zh": ""
+   },
+   "trip_items": [
+    {
+     "title": {
+      "en": "Liziba Light Rail Through Building",
+      "zh": "李子坝轻轨穿楼"
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     },
+     "photo_subject": "Liziba monorail through building Chongqing 李子坝轻轨穿楼",
+     "trip_type": "Attractions"
+    },
+    {
+     "title": {
+      "en": "Jiefangbei Pedestrian Street",
+      "zh": "解放碑步行街"
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     },
+     "photo_subject": "Jiefangbei Chongqing 解放碑",
+     "trip_type": "Attractions"
+    },
+    {
+     "title": {
+      "en": "Chongqing Zoo Panda House",
+      "zh": "重庆动物园熊猫馆"
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     },
+     "photo_subject": "giant panda Chongqing Zoo 大熊猫",
+     "trip_type": "Attractions"
+    },
+    {
+     "title": {
+      "en": "Sichuan Opera Face-Changing Experience",
+      "zh": "川剧变脸体验"
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     },
+     "photo_subject": "Sichuan opera face changing bianlian 川剧变脸",
+     "trip_type": "Attractions"
+    },
+    {
+     "title": {
+      "en": "Hongyadong Night View",
+      "zh": "洪崖洞夜景"
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     },
+     "photo_subject": "Hongyadong Chongqing 洪崖洞",
+     "trip_type": "Attractions"
+    }
+   ]
+  },
+  {
+   "day": 8,
+   "name": {
+    "en": "DAY 8",
+    "zh": "第八天"
+   },
+   "title": {
+    "en": "Chongqing to Singapore",
+    "zh": "重庆 - 新加坡"
+   },
+   "location": {
+    "en": "Chongqing",
+    "zh": "重庆"
+   },
+   "description": {
+    "en": "",
+    "zh": ""
+   },
+   "trip_items": [
+    {
+     "title": {
+      "en": "Transfer to Chongqing Jiangbei International Airport",
+      "zh": "前往重庆江北国际机场"
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     },
+     "trip_type": "Transportation"
+    }
+   ]
+  }
+ ],
+ "images": {
+  "carousel": [
+   {
+    "pos": 0,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBLCKG/out/carousel_00_0.jpg",
+    "bytes": 389745,
+    "subject": "Fly from Singapore to Chongqing"
+   },
+   {
+    "pos": 1,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBLCKG/out/carousel_01_0.jpg",
+    "bytes": 496186,
+    "subject": "Yunyang Longgang Scenic Area 云阳龙缸"
+   },
+   {
+    "pos": 2,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBLCKG/out/carousel_02_0.jpg",
+    "bytes": 347681,
+    "subject": "Baidicheng Fengjie 白帝城"
+   },
+   {
+    "pos": 3,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBLCKG/out/carousel_03_0.jpg",
+    "bytes": 362863,
+    "subject": "Tenglong Cave Lichuan 腾龙洞"
+   },
+   {
+    "pos": 4,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBLCKG/out/carousel_04_0.jpg",
+    "bytes": 236883,
+    "subject": "Danzishi Old Street Chongqing 弹子石老街"
+   },
+   {
+    "pos": 5,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBLCKG/out/carousel_05_0.jpg",
+    "bytes": 252247,
+    "subject": "Jiefangbei Chongqing 解放碑"
+   }
+  ],
+  "carousel_mobile": [
+   {
+    "pos": 0,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBLCKG/out_mobile/carousel_00_mobile.jpg",
+    "bytes": 343685,
+    "subject": "Fly from Singapore to Chongqing"
+   },
+   {
+    "pos": 1,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBLCKG/out_mobile/carousel_01_mobile.jpg",
+    "bytes": 518769,
+    "subject": "Yunyang Longgang Scenic Area 云阳龙缸"
+   },
+   {
+    "pos": 2,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBLCKG/out_mobile/carousel_02_mobile.jpg",
+    "bytes": 337517,
+    "subject": "Baidicheng Fengjie 白帝城"
+   },
+   {
+    "pos": 3,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBLCKG/out_mobile/carousel_03_mobile.jpg",
+    "bytes": 305675,
+    "subject": "Tenglong Cave Lichuan 腾龙洞"
+   },
+   {
+    "pos": 4,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBLCKG/out_mobile/carousel_04_mobile.jpg",
+    "bytes": 207168,
+    "subject": "Danzishi Old Street Chongqing 弹子石老街"
+   },
+   {
+    "pos": 5,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBLCKG/out_mobile/carousel_05_mobile.jpg",
+    "bytes": 229073,
+    "subject": "Jiefangbei Chongqing 解放碑"
+   }
+  ],
+  "thumbnail": [
+   {
+    "pos": 0,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBLCKG/out/thumbnail_00_0.jpg",
+    "bytes": 389745,
+    "subject": "Fly from Singapore to Chongqing"
+   }
+  ],
+  "route_map": [],
+  "section": [
+   {
+    "pos": 1,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBLCKG/out/section_01_0.jpg",
+    "bytes": 285156,
+    "subject": "Fly from Singapore to Chongqing"
+   },
+   {
+    "pos": 2,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBLCKG/out/section_02_0.jpg",
+    "bytes": 320060,
+    "subject": "Yunyang Longgang Scenic Area 云阳龙缸"
+   },
+   {
+    "pos": 3,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBLCKG/out/section_03_0.jpg",
+    "bytes": 220118,
+    "subject": "Baidicheng Fengjie 白帝城"
+   },
+   {
+    "pos": 5,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBLCKG/out/section_05_0.jpg",
+    "bytes": 263298,
+    "subject": "Tenglong Cave Lichuan 腾龙洞"
+   },
+   {
+    "pos": 6,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBLCKG/out/section_06_0.jpg",
+    "bytes": 174588,
+    "subject": "Danzishi Old Street Chongqing 弹子石老街"
+   },
+   {
+    "pos": 7,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBLCKG/out/section_07_0.jpg",
+    "bytes": 182892,
+    "subject": "Jiefangbei Chongqing 解放碑"
+   }
+  ],
+  "trip": [
+   {
+    "pos": 2,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBLCKG/out/trip_02_00_0.jpg",
+    "bytes": 199012,
+    "subject": "Yunyang Longgang Scenic Area 云阳龙缸",
+    "trip_index": 0
+   },
+   {
+    "pos": 2,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBLCKG/out/trip_02_00_1.jpg",
+    "bytes": 292871,
+    "subject": "Yunyang Longgang Scenic Area 云阳龙缸",
+    "trip_index": 0
+   },
+   {
+    "pos": 3,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBLCKG/out/trip_03_00_0.jpg",
+    "bytes": 347602,
+    "subject": "Baidicheng Fengjie 白帝城",
+    "trip_index": 0
+   },
+   {
+    "pos": 3,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBLCKG/out/trip_03_00_1.jpg",
+    "bytes": 214625,
+    "subject": "Baidicheng Fengjie 白帝城",
+    "trip_index": 0
+   },
+   {
+    "pos": 3,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBLCKG/out/trip_03_01_0.jpg",
+    "bytes": 138076,
+    "subject": "Qutang Gorge Kuimen Yangtze 瞿塘峡夔门",
+    "trip_index": 1
+   },
+   {
+    "pos": 5,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBLCKG/out/trip_05_01_0.jpg",
+    "bytes": 199234,
+    "subject": "Tenglong Cave Lichuan 腾龙洞",
+    "trip_index": 1
+   },
+   {
+    "pos": 6,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBLCKG/out/trip_06_00_0.jpg",
+    "bytes": 200389,
+    "subject": "Huangjueping graffiti street Chongqing 黄桷坪涂鸦街",
+    "trip_index": 0
+   },
+   {
+    "pos": 6,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBLCKG/out/trip_06_01_0.jpg",
+    "bytes": 209276,
+    "subject": "Jiaotong Teahouse Chongqing 交通茶馆",
+    "trip_index": 1
+   },
+   {
+    "pos": 6,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBLCKG/out/trip_06_04_0.jpg",
+    "bytes": 244143,
+    "subject": "Shibati Chongqing 十八梯",
+    "trip_index": 4
+   },
+   {
+    "pos": 6,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBLCKG/out/trip_06_04_1.jpg",
+    "bytes": 212663,
+    "subject": "Shibati Chongqing 十八梯",
+    "trip_index": 4
+   },
+   {
+    "pos": 7,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBLCKG/out/trip_07_00_0.jpg",
+    "bytes": 155029,
+    "subject": "Liziba monorail through building Chongqing 李子坝轻轨穿楼",
+    "trip_index": 0
+   },
+   {
+    "pos": 7,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBLCKG/out/trip_07_00_1.jpg",
+    "bytes": 209364,
+    "subject": "Liziba monorail through building Chongqing 李子坝轻轨穿楼",
+    "trip_index": 0
+   },
+   {
+    "pos": 7,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBLCKG/out/trip_07_01_0.jpg",
+    "bytes": 201530,
+    "subject": "Jiefangbei Chongqing 解放碑",
+    "trip_index": 1
+   },
+   {
+    "pos": 7,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBLCKG/out/trip_07_01_1.jpg",
+    "bytes": 156329,
+    "subject": "Jiefangbei Chongqing 解放碑",
+    "trip_index": 1
+   },
+   {
+    "pos": 7,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBLCKG/out/trip_07_02_0.jpg",
+    "bytes": 321823,
+    "subject": "giant panda Chongqing Zoo 大熊猫",
+    "trip_index": 2
+   },
+   {
+    "pos": 7,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBLCKG/out/trip_07_02_1.jpg",
+    "bytes": 132362,
+    "subject": "giant panda Chongqing Zoo 大熊猫",
+    "trip_index": 2
+   },
+   {
+    "pos": 7,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBLCKG/out/trip_07_03_0.jpg",
+    "bytes": 195593,
+    "subject": "Sichuan opera face changing bianlian 川剧变脸",
+    "trip_index": 3
+   },
+   {
+    "pos": 7,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBLCKG/out/trip_07_03_1.jpg",
+    "bytes": 172151,
+    "subject": "Sichuan opera face changing bianlian 川剧变脸",
+    "trip_index": 3
+   },
+   {
+    "pos": 7,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBLCKG/out/trip_07_04_0.jpg",
+    "bytes": 284126,
+    "subject": "Hongyadong Chongqing 洪崖洞",
+    "trip_index": 4
+   },
+   {
+    "pos": 7,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBLCKG/out/trip_07_04_1.jpg",
+    "bytes": 222226,
+    "subject": "Hongyadong Chongqing 洪崖洞",
+    "trip_index": 4
+   }
+  ]
+ }
+}
