@@ -31,6 +31,10 @@ work/**/cand/
 work/**/cand_hi/
 work/**/cand_commons/
 work/**/_sheet_*.jpg
+# bin/contact_sheet.py 的产出:候选缩略图拼版,几 MB 且从 cand*/ 就能重建
+work/**/sheets/
+# 业务方给的行程册原件。是公司的商务文档,这是公开仓库,不进版本控制。
+work/_inbox/
 work/_repick_*.jpg
 # 上传清单里是本机绝对路径,只对那一次会话有意义
 work/_upload_manifest*.json

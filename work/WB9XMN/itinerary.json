@@ -1,0 +1,145 @@
+{
+  "type_code": "WB9XMN",
+  "travel_days": 7,
+  "_source": "read back from Skybear wt_travel id=423 on 2026-08-15; no brochure PDF, itinerary text is production's. photo_subject is the only editorial field added here. 11 landmarks overlap with WBXMNM (413) — same Chaoshan region, different product.",
+  "product_name": {
+    "en": "7D6N Best of Eastern Guangdong: Chaoshan, Meizhou and Heyuan",
+    "zh": "7天6晚 粤东精选：潮汕、梅州与河源"
+  },
+  "highlights": [],
+  "sections": [
+    {
+      "day": 1,
+      "name": {"en": "DAY 1", "zh": "第一天"},
+      "title": {"en": "Singapore - Guangzhou > Huizhou", "zh": "新加坡-广州 > 惠州"},
+      "location": {"en": "Guangzhou", "zh": "广州"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {"title": {"en": "Huacheng Square", "zh": "花城广场"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Huacheng Square Guangzhou 花城广场"},
+        {"title": {"en": "Canton Tower (Exterior View)", "zh": "广州塔（外观）"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Canton Tower 广州塔"},
+        {"title": {"en": "Yongqing Fang", "zh": "永庆坊"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Yongqingfang Guangzhou 永庆坊"},
+        {"title": {"en": "Bruce Lee Ancestral Home", "zh": "李小龙祖居"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Bruce Lee Ancestral Home Foshan 李小龙祖居"},
+        {"title": {"en": "Hejiang Tower", "zh": "合江楼"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Hejiang Tower Huizhou 合江楼"},
+        {"title": {"en": "Shuidong Street", "zh": "水东街"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Shuidong Street Huizhou 水东街"}
+      ]
+    },
+    {
+      "day": 2,
+      "name": {"en": "DAY 2", "zh": "第二天"},
+      "title": {"en": "Huizhou > Jieyang > Shantou", "zh": "惠州 > 揭阳 > 汕头"},
+      "location": {"en": "Shantou", "zh": "汕头"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {"title": {"en": "Mianhu Ancient Town", "zh": "棉湖古镇"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Mianhu Ancient Town Jieyang 棉湖古镇"},
+        {"title": {"en": "Blacksmith Street", "zh": "打铁街"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "blacksmith forge workshop 打铁"},
+        {"title": {"en": "Rice-Free Dumpling Stall", "zh": "无米粿摊位"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Chaoshan street food dumpling 潮汕小吃"},
+        {"title": {"en": "Jieyang Ancient City", "zh": "揭阳古城"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Jieyang Confucian Temple 揭阳学宫"},
+        {"title": {"en": "Coppersmith Street", "zh": "打铜街"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "coppersmith copperware workshop 打铜"},
+        {"title": {"en": "Zhongshan Arcade Street", "zh": "中山骑楼街"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Qilou arcade street Guangdong 骑楼"},
+        {"title": {"en": "Longyan South Road Food Street", "zh": "龙眼南路美食街"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Chaoshan night food street 潮汕美食街"}
+      ]
+    },
+    {
+      "day": 3,
+      "name": {"en": "DAY 3", "zh": "第三天"},
+      "title": {"en": "Shantou > Nan'ao Island > Shantou", "zh": "汕头 > 南澳岛 > 汕头"},
+      "location": {"en": "Nan'ao Island", "zh": "南澳岛"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {"title": {"en": "Nan'ao Bridge", "zh": "南澳大桥"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Nan'ao Bridge Shantou 南澳大桥"},
+        {"title": {"en": "Changshanwei Lighthouse", "zh": "长山尾灯塔"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Changshanwei Lighthouse Nan'ao 长山尾灯塔"},
+        {"title": {"en": "Gate of Nature", "zh": "自然之门"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Nan'ao Island coast 南澳岛"},
+        {"title": {"en": "Oyster-Raft Sea Experience", "zh": "鱼排出海体验"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "oyster raft aquaculture sea 海上鱼排"},
+        {"title": {"en": "Laoma Palace", "zh": "老妈宫"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Mazu temple Shantou 妈祖庙"},
+        {"title": {"en": "Shantou Small Park", "zh": "小公园"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Shantou Xiaogongyuan Old Town 汕头小公园"},
+        {"title": {"en": "Arcade Pedestrian Street", "zh": "骑楼步行街"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Shantou arcade pedestrian street 汕头骑楼"},
+        {"title": {"en": "Xiannan Cinema", "zh": "暹南电影院"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "old cinema facade Shantou 老电影院"}
+      ]
+    },
+    {
+      "day": 4,
+      "name": {"en": "DAY 4", "zh": "第四天"},
+      "title": {"en": "Shantou > Chenghai > Chaozhou", "zh": "汕头 > 澄海 > 潮州"},
+      "location": {"en": "Chaozhou", "zh": "潮州"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {"title": {"en": "Former Residence of Chen Cihong", "zh": "陈慈黉故居"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Chen Cihong Former Residence Chenghai 陈慈黉故居"},
+        {"title": {"en": "Zhangcuonei, Tangxi Village", "zh": "塘西村张厝内"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Chaoshan traditional courtyard house 潮汕民居"},
+        {"title": {"en": "Qifeng Chen Ancestral Hall", "zh": "起凤陈公祠"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Chaoshan ancestral hall 潮汕祠堂"},
+        {"title": {"en": "Chaozhou Ancient City", "zh": "潮州古城"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Chaozhou Ancient City 潮州古城"},
+        {"title": {"en": "Jiadi Lane", "zh": "甲第巷"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Jiadi Lane Chaozhou 甲第巷"},
+        {"title": {"en": "Paifang Street", "zh": "牌坊街"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Chaozhou Paifang Street archways 潮州牌坊街"},
+        {"title": {"en": "Guangji Gate Tower", "zh": "广济楼城门"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Guangji Gate Chaozhou 广济楼"},
+        {"title": {"en": "Guangji Bridge", "zh": "广济桥"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Guangji Bridge Chaozhou 湘子桥"}
+      ]
+    },
+    {
+      "day": 5,
+      "name": {"en": "DAY 5", "zh": "第五天"},
+      "title": {"en": "Chaozhou > Raoping > Meizhou", "zh": "潮州 > 饶平 > 梅州"},
+      "location": {"en": "Raoping", "zh": "饶平"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {"title": {"en": "Longhu Ancient Village", "zh": "龙湖古寨"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Longhu Ancient Village Chaozhou 龙湖古寨"},
+        {"title": {"en": "Daoyun Building", "zh": "道韵楼"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Daoyun Lou Raoping tulou 道韵楼"}
+      ]
+    },
+    {
+      "day": 6,
+      "name": {"en": "DAY 6", "zh": "第六天"},
+      "title": {"en": "Meizhou > Heyuan", "zh": "梅州 > 河源"},
+      "location": {"en": "Meizhou", "zh": "梅州"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {"title": {"en": "China Hakka Museum", "zh": "中国客家博物馆"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "China Hakka Museum Meizhou 中国客家博物馆"},
+        {"title": {"en": "Hakka Weilong House", "zh": "客家围龙屋"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Hakka Weilongwu enclosed house 围龙屋"},
+        {"title": {"en": "Yannanfei Tea Plantation", "zh": "雁南飞茶田"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Yannanfei tea plantation Meizhou 雁南飞茶田"}
+      ]
+    },
+    {
+      "day": 7,
+      "name": {"en": "DAY 7", "zh": "第七天"},
+      "title": {"en": "Heyuan > Guangzhou > Singapore", "zh": "河源 > 广州 > 新加坡"},
+      "location": {"en": "Heyuan", "zh": "河源"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {"title": {"en": "Wanlu Lake Scenic Area", "zh": "万绿湖风景区"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Wanlu Lake Heyuan 万绿湖"}
+      ]
+    }
+  ]
+}

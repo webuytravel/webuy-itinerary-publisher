@@ -1,0 +1,124 @@
+{
+  "type_code": "WBYNB",
+  "travel_days": 8,
+  "_source": "read back from Skybear wt_travel id=421 on 2026-08-15; no brochure PDF, itinerary text is production's. photo_subject is the only editorial field added here. 勐焕大金塔/银塔 overlaps with WBYNG (420) — same Dehong landmarks, different product.",
+  "product_name": {
+    "en": "8D7N Tengchong — Border Hot Springs and Golden Ginkgo",
+    "zh": "云南秘境·腾冲 边境温泉·银杏金秋深度之旅"
+  },
+  "highlights": [],
+  "sections": [
+    {
+      "day": 1,
+      "name": {"en": "DAY 1", "zh": "第一天"},
+      "title": {"en": "Arrival in Mangshi", "zh": "抵达芒市"},
+      "location": {"en": "Singapore > Kunming > Mangshi", "zh": "新加坡 > 昆明 > 芒市"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {"title": {"en": "Singapore to Kunming to Mangshi", "zh": "新加坡 - 昆明 - 芒市"}, "description": {"en": "", "zh": ""}}
+      ]
+    },
+    {
+      "day": 2,
+      "name": {"en": "DAY 2", "zh": "第二天"},
+      "title": {"en": "Ruili Border Day Trip", "zh": "瑞丽边境一日游"},
+      "location": {"en": "Mangshi > Ruili > Mangshi", "zh": "芒市 > 瑞丽 > 芒市"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {"title": {"en": "Jiegao Border Gate", "zh": "姐告国门口岸"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Jiegao Border Gate Ruili 姐告国门"},
+        {"title": {"en": "Moli Waterfall", "zh": "莫里瀑布"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Moli Waterfall Ruili 莫里瀑布"},
+        {"title": {"en": "One Tree Forest", "zh": "独树成林"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "One Tree Forest Ruili banyan 独树成林"},
+        {"title": {"en": "Wanding China-Myanmar Friendship Bridge", "zh": "畹町中缅友谊桥"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Wanding Bridge China Myanmar 畹町桥"},
+        {"title": {"en": "Mengbalaxi Exotic Garden", "zh": "勐巴拉西珍奇园"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Dai tropical garden Ruili 傣族园林"}
+      ]
+    },
+    {
+      "day": 3,
+      "name": {"en": "DAY 3", "zh": "第三天"},
+      "title": {"en": "Mangshi Pagodas and Beihai Wetland", "zh": "芒市佛塔与北海湿地"},
+      "location": {"en": "Mangshi > Tengchong", "zh": "芒市 > 腾冲"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {"title": {"en": "Menghuan Grand Golden Pagoda", "zh": "勐焕大金塔"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Menghuan Golden Pagoda Mangshi 勐焕大金塔"},
+        {"title": {"en": "Menghuan Silver Pagoda", "zh": "勐焕银塔"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Menghuan Silver Pagoda Mangshi 勐焕银塔"},
+        {"title": {"en": "Beihai Wetland", "zh": "北海湿地"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Beihai Wetland Tengchong 北海湿地"}
+      ]
+    },
+    {
+      "day": 4,
+      "name": {"en": "DAY 4", "zh": "第四天"},
+      "title": {"en": "Tengchong In-depth Tour", "zh": "腾冲深度游"},
+      "location": {"en": "Tengchong", "zh": "腾冲"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {"title": {"en": "Rehai Scenic Area", "zh": "热海景区"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Rehai hot spring Tengchong 腾冲热海"},
+        {"title": {"en": "Western Yunnan Anti-Japanese War Memorial", "zh": "滇西抗战纪念馆"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Dianxi Anti-Japanese War Memorial Tengchong 国殇墓园"},
+        {"title": {"en": "Heshun Ancient Town", "zh": "和顺侨乡古镇"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Heshun Ancient Town Tengchong 和顺古镇"}
+      ]
+    },
+    {
+      "day": 5,
+      "name": {"en": "DAY 5", "zh": "第五天"},
+      "title": {"en": "Volcanoes and Golden Ginkgo Village", "zh": "火山公园与银杏村"},
+      "location": {"en": "Tengchong > Yunfeng Mountain", "zh": "腾冲 > 云峰山"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {"title": {"en": "Tengchong Volcano Park", "zh": "火山公园"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Tengchong Volcano Park 腾冲火山"},
+        {"title": {"en": "Ginkgo Village", "zh": "银杏村"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Jiangdong Ginkgo Village Tengchong 银杏村"}
+      ]
+    },
+    {
+      "day": 6,
+      "name": {"en": "DAY 6", "zh": "第六天"},
+      "title": {"en": "Yunfeng Mountain and Coffee Estate", "zh": "云峰山与咖啡庄园"},
+      "location": {"en": "Yunfeng Mountain > Baoshan", "zh": "云峰山 > 保山"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {"title": {"en": "Yunfeng Mountain Scenic Area", "zh": "云峰山景区"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Yunfeng Mountain Tengchong 云峰山"},
+        {"title": {"en": "Longjiang Bridge", "zh": "龙江大桥"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Longjiang Bridge Tengchong 龙江大桥"},
+        {"title": {"en": "Yungong Coffee Estate and Millennial Bodhi Tree", "zh": "云贡咖啡庄园·千年菩提树"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "coffee plantation Baoshan Yunnan 保山咖啡庄园"}
+      ]
+    },
+    {
+      "day": 7,
+      "name": {"en": "DAY 7", "zh": "第七天"},
+      "title": {"en": "Baoshan to Kunming", "zh": "保山 - 昆明"},
+      "location": {"en": "Baoshan > Kunming", "zh": "保山 > 昆明"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {"title": {"en": "Qinghuahai Park", "zh": "青华海公园"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Qinghuahai Wetland Park Baoshan 青华海"},
+        {"title": {"en": "Yongchang Pavilion", "zh": "永昌阁"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Yongchang Pavilion Baoshan 永昌阁"},
+        {"title": {"en": "Dounan Flower Market", "zh": "斗南花市"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Dounan Flower Market Kunming 斗南花市"}
+      ]
+    },
+    {
+      "day": 8,
+      "name": {"en": "DAY 8", "zh": "第八天"},
+      "title": {"en": "Departure", "zh": "返程"},
+      "location": {"en": "Kunming > Singapore", "zh": "昆明 > 新加坡"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {"title": {"en": "Kunming to Singapore", "zh": "昆明 - 新加坡"}, "description": {"en": "", "zh": ""}}
+      ]
+    }
+  ]
+}

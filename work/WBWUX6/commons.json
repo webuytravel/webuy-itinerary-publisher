@@ -1,0 +1,1408 @@
+{
+  "d01_former_residence_of_xue_fucheng_wu": {
+    "subject": "Former Residence of Xue Fucheng Wuxi 薛福成故居",
+    "query": "Former Residence of Xue Fucheng Wuxi",
+    "query_full": "Former Residence of Xue Fucheng Wuxi",
+    "shrunk": false,
+    "day": 1,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Wuxi_Xue_Fucheng_Guju_2015.04.24_13-31-02.jpg/3840px-Wuxi_Xue_Fucheng_Guju_2015.04.24_13-31-02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Wuxi Xue Fucheng Guju 2015.04.24 13-31-02.jpg",
+        "path": "work/WBWUX6/cand_commons/d01_former_residence_of_xue_fucheng_wu_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Zhangzhugang",
+        "lat": 31.572106666666667,
+        "lon": 120.29093666666667,
+        "in_region": true
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Wuxi_Xue_Fucheng_Guju_2015.04.24_13-44-07.jpg/3840px-Wuxi_Xue_Fucheng_Guju_2015.04.24_13-44-07.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Wuxi Xue Fucheng Guju 2015.04.24 13-44-07.jpg",
+        "path": "work/WBWUX6/cand_commons/d01_former_residence_of_xue_fucheng_wu_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Zhangzhugang",
+        "lat": 31.572783333333334,
+        "lon": 120.29137,
+        "in_region": true
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Wuxi_Xue_Fucheng_Guju_2015.04.24_13-44-19.jpg/3840px-Wuxi_Xue_Fucheng_Guju_2015.04.24_13-44-19.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Wuxi Xue Fucheng Guju 2015.04.24 13-44-19.jpg",
+        "path": "work/WBWUX6/cand_commons/d01_former_residence_of_xue_fucheng_wu_3.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Zhangzhugang",
+        "lat": 31.57278,
+        "lon": 120.29138333333333,
+        "in_region": true
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Wuxi_Xue_Fucheng_Guju_2015.04.24_13-44-55.jpg/3840px-Wuxi_Xue_Fucheng_Guju_2015.04.24_13-44-55.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Wuxi Xue Fucheng Guju 2015.04.24 13-44-55.jpg",
+        "path": "work/WBWUX6/cand_commons/d01_former_residence_of_xue_fucheng_wu_4.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Zhangzhugang",
+        "lat": 31.572905,
+        "lon": 120.29125833333333,
+        "in_region": true
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Wuxi_Xue_Fucheng_Guju_2015.04.24_14-24-15.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Wuxi Xue Fucheng Guju 2015.04.24 14-24-15.jpg",
+        "path": "work/WBWUX6/cand_commons/d01_former_residence_of_xue_fucheng_wu_5.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Zhangzhugang",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Xue_Fucheng_Residence_in_Wuxi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Xue Fucheng Residence in Wuxi.jpg",
+        "path": "work/WBWUX6/cand_commons/d01_former_residence_of_xue_fucheng_wu_6.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Dirrival",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d01_nianhua_bay_wuxi": {
+    "subject": "Nianhua Bay Wuxi 拈花湾",
+    "query": "Nianhua Bay",
+    "query_full": "Nianhua Bay Wuxi",
+    "shrunk": true,
+    "day": 1,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/%E7%81%B5%E5%B1%B1%E5%B0%8F%E9%95%87%E6%8B%88%E8%8A%B1%E6%B9%BE20200912_15.jpg/3840px-%E7%81%B5%E5%B1%B1%E5%B0%8F%E9%95%87%E6%8B%88%E8%8A%B1%E6%B9%BE20200912_15.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "灵山小镇拈花湾20200912 15.jpg",
+        "path": "work/WBWUX6/cand_commons/d01_nianhua_bay_wuxi_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "西安兵马俑",
+        "lat": 31.420034,
+        "lon": 120.07052297222222,
+        "in_region": true
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/%E7%81%B5%E5%B1%B1%E5%B0%8F%E9%95%87%E6%8B%88%E8%8A%B1%E6%B9%BE20200913_05.jpg/3840px-%E7%81%B5%E5%B1%B1%E5%B0%8F%E9%95%87%E6%8B%88%E8%8A%B1%E6%B9%BE20200913_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "灵山小镇拈花湾20200913 05.jpg",
+        "path": "work/WBWUX6/cand_commons/d01_nianhua_bay_wuxi_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "西安兵马俑",
+        "lat": 31.428342,
+        "lon": 120.07494799999999,
+        "in_region": true
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/%E7%81%B5%E5%B1%B1%E5%B0%8F%E9%95%87%E6%8B%88%E8%8A%B1%E6%B9%BE20200913_26.jpg/3840px-%E7%81%B5%E5%B1%B1%E5%B0%8F%E9%95%87%E6%8B%88%E8%8A%B1%E6%B9%BE20200913_26.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "灵山小镇拈花湾20200913 26.jpg",
+        "path": "work/WBWUX6/cand_commons/d01_nianhua_bay_wuxi_3.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "西安兵马俑",
+        "lat": 31.422837972222222,
+        "lon": 120.07116897222222,
+        "in_region": true
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/%E7%81%B5%E5%B1%B1%E5%B0%8F%E9%95%87%E6%8B%88%E8%8A%B1%E6%B9%BE20200913_27.jpg/3840px-%E7%81%B5%E5%B1%B1%E5%B0%8F%E9%95%87%E6%8B%88%E8%8A%B1%E6%B9%BE20200913_27.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "灵山小镇拈花湾20200913 27.jpg",
+        "path": "work/WBWUX6/cand_commons/d01_nianhua_bay_wuxi_4.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "西安兵马俑",
+        "lat": 31.422347972222223,
+        "lon": 120.070926,
+        "in_region": true
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/%E7%81%B5%E5%B1%B1%E5%B0%8F%E9%95%87%E6%8B%88%E8%8A%B1%E6%B9%BE20200913_31.jpg/3840px-%E7%81%B5%E5%B1%B1%E5%B0%8F%E9%95%87%E6%8B%88%E8%8A%B1%E6%B9%BE20200913_31.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "灵山小镇拈花湾20200913 31.jpg",
+        "path": "work/WBWUX6/cand_commons/d01_nianhua_bay_wuxi_5.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "西安兵马俑",
+        "lat": 31.420819,
+        "lon": 120.07054497222222,
+        "in_region": true
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/%E7%81%B5%E5%B1%B1%E5%B0%8F%E9%95%87%E6%8B%88%E8%8A%B1%E6%B9%BE20200913_35.jpg/3840px-%E7%81%B5%E5%B1%B1%E5%B0%8F%E9%95%87%E6%8B%88%E8%8A%B1%E6%B9%BE20200913_35.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "灵山小镇拈花湾20200913 35.jpg",
+        "path": "work/WBWUX6/cand_commons/d01_nianhua_bay_wuxi_6.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "西安兵马俑",
+        "lat": 31.416325999999998,
+        "lon": 120.068877,
+        "in_region": true
+      }
+    ]
+  },
+  "d02_changguangxi_wetland_park_wuxi": {
+    "subject": "Changguangxi Wetland Park Wuxi 长广溪湿地公园",
+    "query": "Changguangxi Wetland Park Wuxi",
+    "query_full": "Changguangxi Wetland Park Wuxi",
+    "shrunk": false,
+    "day": 2,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Binhu%2C_Wuxi%2C_Jiangsu%2C_China_-_panoramio_%28346%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Binhu, Wuxi, Jiangsu, China - panoramio (346).jpg",
+        "path": "work/WBWUX6/cand_commons/d02_changguangxi_wetland_park_wuxi_1.jpg",
+        "license": "CC BY 3.0",
+        "credit": "song songroov",
+        "lat": 31.498040472222222,
+        "lon": 120.25501019444444,
+        "in_region": true
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Changguangxi_National_Chengshi_Shidi_Park_%E9%95%BF%E5%B9%BF%E6%BA%AA%E5%9B%BD%E5%AE%B6%E5%9F%8E%E5%B8%82%E6%B9%BF%E5%9C%B0%E5%85%AC%E5%9B%AD_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Changguangxi National Chengshi Shidi Park 长广溪国家城市湿地公园 - panoramio.jpg",
+        "path": "work/WBWUX6/cand_commons/d02_changguangxi_wetland_park_wuxi_2.jpg",
+        "license": "CC BY 3.0",
+        "credit": "ktanaka",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/da/Changguangxi_National_Chengshi_Shidi_Park_%E9%95%BF%E5%B9%BF%E6%BA%AA%E5%9B%BD%E5%AE%B6%E5%9F%8E%E5%B8%82%E6%B9%BF%E5%9C%B0%E5%85%AC%E5%9B%AD_-_panoramio_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Changguangxi National Chengshi Shidi Park 长广溪国家城市湿地公园 - panoramio (1).jpg",
+        "path": "work/WBWUX6/cand_commons/d02_changguangxi_wetland_park_wuxi_3.jpg",
+        "license": "CC BY 3.0",
+        "credit": "ktanaka",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Changguangxi_National_Chengshi_Shidi_Park_%E9%95%BF%E5%B9%BF%E6%BA%AA%E5%9B%BD%E5%AE%B6%E5%9F%8E%E5%B8%82%E6%B9%BF%E5%9C%B0%E5%85%AC%E5%9B%AD_-_panoramio_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Changguangxi National Chengshi Shidi Park 长广溪国家城市湿地公园 - panoramio (2).jpg",
+        "path": "work/WBWUX6/cand_commons/d02_changguangxi_wetland_park_wuxi_4.jpg",
+        "license": "CC BY 3.0",
+        "credit": "ktanaka",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/95/Changguangxi_National_Chengshi_Shidi_Park_%E9%95%BF%E5%B9%BF%E6%BA%AA%E5%9B%BD%E5%AE%B6%E5%9F%8E%E5%B8%82%E6%B9%BF%E5%9C%B0%E5%85%AC%E5%9B%AD_-_panoramio_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Changguangxi National Chengshi Shidi Park 长广溪国家城市湿地公园 - panoramio (4).jpg",
+        "path": "work/WBWUX6/cand_commons/d02_changguangxi_wetland_park_wuxi_5.jpg",
+        "license": "CC BY 3.0",
+        "credit": "ktanaka",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/%E9%95%B7%E5%BB%A3%E6%BA%AA%E6%BF%95%E5%9C%B0.jpg/3840px-%E9%95%B7%E5%BB%A3%E6%BA%AA%E6%BF%95%E5%9C%B0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "長廣溪濕地.jpg",
+        "path": "work/WBWUX6/cand_commons/d02_changguangxi_wetland_park_wuxi_6.jpg",
+        "license": "CC BY 4.0",
+        "credit": "Lt2818",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d02_huishan_ancient_town_wuxi": {
+    "subject": "Huishan Ancient Town Wuxi 惠山古镇",
+    "query": "Huishan Ancient Town Wuxi",
+    "query_full": "Huishan Ancient Town Wuxi",
+    "shrunk": false,
+    "day": 2,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/76/Chu_Hsi%27s_ancestral_temple_in_Wuxi_Huishan_ancient_town.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Chu Hsi's ancestral temple in Wuxi Huishan ancient town.JPG",
+        "path": "work/WBWUX6/cand_commons/d02_huishan_ancient_town_wuxi_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Remember the mistress \n\n(記小三)",
+        "lat": 31.5821,
+        "lon": 120.26843333333333,
+        "in_region": true
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Dongyue_Temple_in_Wuxi_Huishan_ancient_town.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Dongyue Temple in Wuxi Huishan ancient town.JPG",
+        "path": "work/WBWUX6/cand_commons/d02_huishan_ancient_town_wuxi_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "記小三",
+        "lat": 31.58212222222222,
+        "lon": 120.26866944444444,
+        "in_region": true
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Dongyue_Temple_in_Wuxi_Huishan_ancient_town_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Dongyue Temple in Wuxi Huishan ancient town 2.JPG",
+        "path": "work/WBWUX6/cand_commons/d02_huishan_ancient_town_wuxi_3.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Xuankongshengjing",
+        "lat": 31.58212222222222,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Huishan_Ancient_Town_Station_Platform.jpg/3840px-Huishan_Ancient_Town_Station_Platform.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Huishan Ancient Town Station Platform.jpg",
+        "path": "work/WBWUX6/cand_commons/d02_huishan_ancient_town_wuxi_4.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Tianhaoz95",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/The_historical_photograph_about_Wuxi_Huishan_Ancient_Town.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "The historical photograph about Wuxi Huishan Ancient Town.jpg",
+        "path": "work/WBWUX6/cand_commons/d02_huishan_ancient_town_wuxi_5.jpg",
+        "license": "Public domain",
+        "credit": "王波波 翻摄",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/80/Wuxi_Huishan_ancient_town%27s_past_and_present.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Wuxi Huishan ancient town's past and present.jpg",
+        "path": "work/WBWUX6/cand_commons/d02_huishan_ancient_town_wuxi_6.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "王波波",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d02_taihu_ancient_town_huzhou": {
+    "subject": "Taihu Ancient Town Huzhou 太湖古镇",
+    "query": "Taihu Ancient",
+    "query_full": "Taihu Ancient Town Huzhou",
+    "shrunk": true,
+    "day": 2,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Chinois_Wu.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Chinois Wu.png",
+        "path": "work/WBWUX6/cand_commons/d02_taihu_ancient_town_huzhou_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Richaringan",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Da_Pu_Bu_Diao.jpg/3840px-Da_Pu_Bu_Diao.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Da Pu Bu Diao.jpg",
+        "path": "work/WBWUX6/cand_commons/d02_taihu_ancient_town_huzhou_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Huang",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/79/Garbage_%28_Riverside_District_-_Suzhou_%29_%282534548584%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Garbage ( Riverside District - Suzhou ) (2534548584).jpg",
+        "path": "work/WBWUX6/cand_commons/d02_taihu_ancient_town_huzhou_3.jpg",
+        "license": "CC BY-SA 2.0",
+        "credit": "d'n'c",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Ling_Long%2C_Gu_Mei_Qi_Shi_Pu.jpg/3840px-Ling_Long%2C_Gu_Mei_Qi_Shi_Pu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Ling Long, Gu Mei Qi Shi Pu.jpg",
+        "path": "work/WBWUX6/cand_commons/d02_taihu_ancient_town_huzhou_4.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Huang",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/01/Patrol_boat_--_Suzhou.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Patrol boat -- Suzhou.jpg",
+        "path": "work/WBWUX6/cand_commons/d02_taihu_ancient_town_huzhou_5.jpg",
+        "license": "CC BY-SA 2.0",
+        "credit": "d. FUKA from Yokohama, Japan",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Wuxi%2C_1987_%286827385853%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Wuxi, 1987 (6827385853).jpg",
+        "path": "work/WBWUX6/cand_commons/d02_taihu_ancient_town_huzhou_6.jpg",
+        "license": "CC BY 2.0",
+        "credit": "Nathan Hughes Hamilton from Sacramento, California, USA",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d03_nanxun_ancient_town": {
+    "subject": "Nanxun Ancient Town 南浔古镇",
+    "query": "Nanxun Ancient Town",
+    "query_full": "Nanxun Ancient Town",
+    "shrunk": false,
+    "day": 3,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Nanxun_-_Ancient_water_town_-_0081.jpg/3840px-Nanxun_-_Ancient_water_town_-_0081.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Nanxun - Ancient water town - 0081.jpg",
+        "path": "work/WBWUX6/cand_commons/d03_nanxun_ancient_town_1.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Stefan Fussan",
+        "lat": 30.880656666666667,
+        "lon": 120.42638,
+        "in_region": true
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Nanxun_-_Ancient_water_town_-_0095.jpg/3840px-Nanxun_-_Ancient_water_town_-_0095.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Nanxun - Ancient water town - 0095.jpg",
+        "path": "work/WBWUX6/cand_commons/d03_nanxun_ancient_town_2.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Stefan Fussan",
+        "lat": 30.880298333333332,
+        "lon": 120.42494833333333,
+        "in_region": true
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Nanxun_-_Ancient_water_town_-_0153.jpg/3840px-Nanxun_-_Ancient_water_town_-_0153.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Nanxun - Ancient water town - 0153.jpg",
+        "path": "work/WBWUX6/cand_commons/d03_nanxun_ancient_town_3.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Stefan Fussan",
+        "lat": 30.88412,
+        "lon": 120.42607666666666,
+        "in_region": true
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Nanxun_-_Ancient_water_town_-_0159.jpg/3840px-Nanxun_-_Ancient_water_town_-_0159.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Nanxun - Ancient water town - 0159.jpg",
+        "path": "work/WBWUX6/cand_commons/d03_nanxun_ancient_town_4.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Stefan Fussan",
+        "lat": 30.884401666666665,
+        "lon": 120.42603666666666,
+        "in_region": true
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Nanxun_-_Ancient_water_town_-_0256-Pano.jpg/3840px-Nanxun_-_Ancient_water_town_-_0256-Pano.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Nanxun - Ancient water town - 0256-Pano.jpg",
+        "path": "work/WBWUX6/cand_commons/d03_nanxun_ancient_town_5.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Stefan Fussan",
+        "lat": 30.883888883333334,
+        "lon": 120.42666666666666,
+        "in_region": true
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Nanxun_-_Ancient_water_town_-_0333.jpg/3840px-Nanxun_-_Ancient_water_town_-_0333.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Nanxun - Ancient water town - 0333.jpg",
+        "path": "work/WBWUX6/cand_commons/d03_nanxun_ancient_town_6.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Stefan Fussan",
+        "lat": 30.872638333333335,
+        "lon": 120.424895,
+        "in_region": true
+      }
+    ]
+  },
+  "d03_west_lake_hangzhou": {
+    "subject": "West Lake Hangzhou 西湖",
+    "query": "West Lake Hangzhou",
+    "query_full": "West Lake Hangzhou",
+    "shrunk": false,
+    "day": 3,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/07/20090524_Hangzhou_West_Lake_7531.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "20090524 Hangzhou West Lake 7531.jpg",
+        "path": "work/WBWUX6/cand_commons/d03_west_lake_hangzhou_1.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Jakub Hałun",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/20260424_West_Lake_and_Hangzhou_Skyline.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "20260424 West Lake and Hangzhou Skyline.jpg",
+        "path": "work/WBWUX6/cand_commons/d03_west_lake_hangzhou_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Windmemories",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Hangzhou_Skyline_against_the_West_Lake.png/3840px-Hangzhou_Skyline_against_the_West_Lake.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Hangzhou Skyline against the West Lake.png",
+        "path": "work/WBWUX6/cand_commons/d03_west_lake_hangzhou_3.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Y Chen",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/61/West_Lake%2C_Hangzhou%2C_1931%2C_Shinzo_Fukuhara_27.JPEG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "West Lake, Hangzhou, 1931, Shinzo Fukuhara 27.JPEG",
+        "path": "work/WBWUX6/cand_commons/d03_west_lake_hangzhou_4.jpg",
+        "license": "Public domain",
+        "credit": "福原 信三 Fukuhara Shinzō（1883-1948）",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d8/West_Lake%2C_Hangzhou_%28Nine-turn_bridge%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "West Lake, Hangzhou (Nine-turn bridge).jpg",
+        "path": "work/WBWUX6/cand_commons/d03_west_lake_hangzhou_5.jpg",
+        "license": "Public domain",
+        "credit": "Sekino Tadashi",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/22/West_Lake%2C_Hangzhou_%28Wanzi_Pavilion%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "West Lake, Hangzhou (Wanzi Pavilion).jpg",
+        "path": "work/WBWUX6/cand_commons/d03_west_lake_hangzhou_6.jpg",
+        "license": "Public domain",
+        "credit": "Sekino Tadashi",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d03_hefang_street_hangzhou": {
+    "subject": "Hefang Street Hangzhou 河坊街",
+    "query": "Hefang Street Hangzhou",
+    "query_full": "Hefang Street Hangzhou",
+    "shrunk": false,
+    "day": 3,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Hangzhou_Hefang_Street_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Hangzhou Hefang Street 4.jpg",
+        "path": "work/WBWUX6/cand_commons/d03_hefang_street_hangzhou_1.jpg",
+        "license": "CC BY 2.0",
+        "credit": "jensimon7",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Hefang_Street%2C_Hangzhou.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Hefang Street, Hangzhou.jpg",
+        "path": "work/WBWUX6/cand_commons/d03_hefang_street_hangzhou_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "钉钉",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Hefang_Street%2C_Hangzhou_-_9.jpg/1920px-Hefang_Street%2C_Hangzhou_-_9.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Hefang Street, Hangzhou - 9.jpg",
+        "path": "work/WBWUX6/cand_commons/d03_hefang_street_hangzhou_3.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Jason M. C., Han",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/55/Hefang_Street_0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Hefang Street 0.jpg",
+        "path": "work/WBWUX6/cand_commons/d03_hefang_street_hangzhou_4.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "钉钉",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Hefang_Street_20240729.jpg/3840px-Hefang_Street_20240729.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Hefang Street 20240729.jpg",
+        "path": "work/WBWUX6/cand_commons/d03_hefang_street_hangzhou_5.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "HoweyYuan",
+        "lat": 30.242419972222223,
+        "lon": 120.163178,
+        "in_region": true
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Hefang_Street%C2%B7%CB%99%C2%B7ChinaUli2010%C2%B7.%C2%B7_Hangzhou_-_panoramio_%28336%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Hefang Street·˙·ChinaUli2010·.· Hangzhou - panoramio (336).jpg",
+        "path": "work/WBWUX6/cand_commons/d03_hefang_street_hangzhou_6.jpg",
+        "license": "CC BY 3.0",
+        "credit": "·˙·ChinaUli2010·.·",
+        "lat": 30.242383333333333,
+        "lon": 120.16307222222223,
+        "in_region": true
+      }
+    ]
+  },
+  "d04_longjing_tea_plantation_hangzhou": {
+    "subject": "Longjing tea plantation Hangzhou 龙井茶园",
+    "query": "Longjing tea plantation Hangzhou",
+    "query_full": "Longjing tea plantation Hangzhou",
+    "shrunk": false,
+    "day": 4,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Dragon_Well_Tea_Plantation%2C_Hangzhou_%283019246289%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Dragon Well Tea Plantation, Hangzhou (3019246289).jpg",
+        "path": "work/WBWUX6/cand_commons/d04_longjing_tea_plantation_hangzhou_1.jpg",
+        "license": "CC BY 2.0",
+        "credit": "Dave Proffer",
+        "lat": 30.202708348830864,
+        "lon": 120.08164147286821,
+        "in_region": true
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Longjing_Tea_field%2C_Dragon_Well_area%2C_Meijiawu_China.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Longjing Tea field, Dragon Well area, Meijiawu China.jpg",
+        "path": "work/WBWUX6/cand_commons/d04_longjing_tea_plantation_hangzhou_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Peter K Burian",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Longjing_villiage.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Longjing villiage.jpg",
+        "path": "work/WBWUX6/cand_commons/d04_longjing_tea_plantation_hangzhou_3.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Jessie csz",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/39/Tea-grower-hangzhou-edit.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Tea-grower-hangzhou-edit.png",
+        "path": "work/WBWUX6/cand_commons/d04_longjing_tea_plantation_hangzhou_4.jpg",
+        "license": "Public domain",
+        "credit": "JalalV",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/25/Tea_plantation_in_hangzhou.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Tea plantation in hangzhou.JPG",
+        "path": "work/WBWUX6/cand_commons/d04_longjing_tea_plantation_hangzhou_5.jpg",
+        "license": "CC BY 1.0",
+        "credit": "Shizhao",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Tea_plantations_in_Longjing%2C_Hangzhou.jpg/3840px-Tea_plantations_in_Longjing%2C_Hangzhou.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Tea plantations in Longjing, Hangzhou.jpg",
+        "path": "work/WBWUX6/cand_commons/d04_longjing_tea_plantation_hangzhou_6.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Wishva de Silva",
+        "lat": 30.208808333333334,
+        "lon": 120.10480555555554,
+        "in_region": true
+      }
+    ]
+  },
+  "d04_city_god_temple_shanghai": {
+    "subject": "City God Temple Shanghai 上海城隍庙",
+    "query": "City God Temple Shanghai",
+    "query_full": "City God Temple Shanghai",
+    "shrunk": false,
+    "day": 4,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/be/20090510_Shanghai_City_God_Temple_6514.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "20090510 Shanghai City God Temple 6514.jpg",
+        "path": "work/WBWUX6/cand_commons/d04_city_god_temple_shanghai_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Jakub Hałun",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/2024-Apr_Shanghai_City_God_Temple_%E4%B8%8A%E6%B5%B7%E5%9F%8E%E9%9A%8D%E5%BB%9F_-_img_01.jpg/3840px-2024-Apr_Shanghai_City_God_Temple_%E4%B8%8A%E6%B5%B7%E5%9F%8E%E9%9A%8D%E5%BB%9F_-_img_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "2024-Apr Shanghai City God Temple 上海城隍廟 - img 01.jpg",
+        "path": "work/WBWUX6/cand_commons/d04_city_god_temple_shanghai_2.jpg",
+        "license": "CC BY 4.0",
+        "credit": "Chainwit.",
+        "lat": 31.22732222222222,
+        "lon": 121.488075,
+        "in_region": true
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/22/City_God_Temple_of_Shanghai_21451-Shanghai_%2833048285155%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "City God Temple of Shanghai 21451-Shanghai (33048285155).jpg",
+        "path": "work/WBWUX6/cand_commons/d04_city_god_temple_shanghai_3.jpg",
+        "license": "CC BY 2.0",
+        "credit": "xiquinhosilva",
+        "lat": 31.227786666666667,
+        "lon": 121.48792166666667,
+        "in_region": true
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8d/City_God_Temple_of_Shanghai_21460-Shanghai_%2833048289615%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "City God Temple of Shanghai 21460-Shanghai (33048289615).jpg",
+        "path": "work/WBWUX6/cand_commons/d04_city_god_temple_shanghai_4.jpg",
+        "license": "CC BY 2.0",
+        "credit": "xiquinhosilva",
+        "lat": 31.227786666666667,
+        "lon": 121.48792166666667,
+        "in_region": true
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/5d/City_God_Temple_of_Shanghai_21492-Shanghai_%2832203002824%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "City God Temple of Shanghai 21492-Shanghai (32203002824).jpg",
+        "path": "work/WBWUX6/cand_commons/d04_city_god_temple_shanghai_5.jpg",
+        "license": "CC BY 2.0",
+        "credit": "xiquinhosilva",
+        "lat": 31.227786666666667,
+        "lon": 121.48792166666667,
+        "in_region": true
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/89/City_God_Temple_of_Shanghai_21506-Shanghai_%2832203009544%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "City God Temple of Shanghai 21506-Shanghai (32203009544).jpg",
+        "path": "work/WBWUX6/cand_commons/d04_city_god_temple_shanghai_6.jpg",
+        "license": "CC BY 2.0",
+        "credit": "xiquinhosilva",
+        "lat": 31.227786666666667,
+        "lon": 121.48792166666667,
+        "in_region": true
+      }
+    ]
+  },
+  "d04_the_bund_shanghai": {
+    "subject": "The Bund Shanghai 外滩",
+    "query": "The Bund Shanghai",
+    "query_full": "The Bund Shanghai",
+    "shrunk": false,
+    "day": 4,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Blue_hour_view_of_the_Bund_from_the_Shanghai_World_Financial_Center_dllu.jpg/3840px-Blue_hour_view_of_the_Bund_from_the_Shanghai_World_Financial_Center_dllu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Blue hour view of the Bund from the Shanghai World Financial Center dllu.jpg",
+        "path": "work/WBWUX6/cand_commons/d04_the_bund_shanghai_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Dllu",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Pudong_Shanghai_November_2017_panorama.jpg/3840px-Pudong_Shanghai_November_2017_panorama.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Pudong Shanghai November 2017 panorama.jpg",
+        "path": "work/WBWUX6/cand_commons/d04_the_bund_shanghai_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "King of Hearts",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Shanghai_Bund-20150516-RM-173803.jpg/3840px-Shanghai_Bund-20150516-RM-173803.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Shanghai Bund-20150516-RM-173803.jpg",
+        "path": "work/WBWUX6/cand_commons/d04_the_bund_shanghai_3.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Ermell",
+        "lat": 31.2366,
+        "lon": 121.49617221666666,
+        "in_region": true
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/The_Bund%2C_Shanghai_at_night.jpg/3840px-The_Bund%2C_Shanghai_at_night.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "The Bund, Shanghai at night.jpg",
+        "path": "work/WBWUX6/cand_commons/d04_the_bund_shanghai_4.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Lloyd Tudor",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/The_Bund_Finance_Center_in_Shanghai.jpg/3840px-The_Bund_Finance_Center_in_Shanghai.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "The Bund Finance Center in Shanghai.jpg",
+        "path": "work/WBWUX6/cand_commons/d04_the_bund_shanghai_5.jpg",
+        "license": "CC BY 2.0",
+        "credit": "GillyBerlin",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/70/The_Bund_in_Shanghai_in_1988.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "The Bund in Shanghai in 1988.jpg",
+        "path": "work/WBWUX6/cand_commons/d04_the_bund_shanghai_6.jpg",
+        "license": "CC0",
+        "credit": "Zapata1000",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d05_lujiazui_shanghai": {
+    "subject": "Lujiazui Shanghai 陆家嘴",
+    "query": "Lujiazui Shanghai",
+    "query_full": "Lujiazui Shanghai",
+    "shrunk": false,
+    "day": 5,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Lujiazui_from_The_Bund.jpg/3840px-Lujiazui_from_The_Bund.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Lujiazui from The Bund.jpg",
+        "path": "work/WBWUX6/cand_commons/d05_lujiazui_shanghai_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "kallerna",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Minor_skyscrapers_in_Lujiazui%2C_Shanghai_as_seen_from_Lujiazui_Pedestrian_Bridge_20120602_1.jpg/3840px-Minor_skyscrapers_in_Lujiazui%2C_Shanghai_as_seen_from_Lujiazui_Pedestrian_Bridge_20120602_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Minor skyscrapers in Lujiazui, Shanghai as seen from Lujiazui Pedestrian Bridge 20120602 1.jpg",
+        "path": "work/WBWUX6/cand_commons/d05_lujiazui_shanghai_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "DXR",
+        "lat": 31.239903333333334,
+        "lon": 121.49662666666667,
+        "in_region": true
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Pudong_Shanghai_November_2017_panorama.jpg/3840px-Pudong_Shanghai_November_2017_panorama.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Pudong Shanghai November 2017 panorama.jpg",
+        "path": "work/WBWUX6/cand_commons/d05_lujiazui_shanghai_3.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "King of Hearts",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Shanghai_-_Shanghai_Tower_-_0001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Shanghai - Shanghai Tower - 0001.jpg",
+        "path": "work/WBWUX6/cand_commons/d05_lujiazui_shanghai_4.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Stefan Fussan",
+        "lat": 31.2315846,
+        "lon": 121.48958376666667,
+        "in_region": true
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Shanghai_-_Shanghai_Tower_-_0003.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Shanghai - Shanghai Tower - 0003.jpg",
+        "path": "work/WBWUX6/cand_commons/d05_lujiazui_shanghai_5.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Stefan Fussan",
+        "lat": 31.231238316666666,
+        "lon": 121.4933,
+        "in_region": true
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Shanghai_Shanghai_Tower_5166304.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Shanghai Shanghai Tower 5166304.jpg",
+        "path": "work/WBWUX6/cand_commons/d05_lujiazui_shanghai_6.jpg",
+        "license": "CC0",
+        "credit": "Ermell",
+        "lat": 31.235261666666666,
+        "lon": 121.49972166666667,
+        "in_region": true
+      }
+    ]
+  },
+  "d05_shikumen_old_shanghai_street": {
+    "subject": "Shikumen old Shanghai street 石库门老街",
+    "query": "Shikumen old Shanghai",
+    "query_full": "Shikumen old Shanghai street",
+    "shrunk": true,
+    "day": 5,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Xingrenli_a_Typical_Old-Style_Shikumen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Xingrenli a Typical Old-Style Shikumen.jpg",
+        "path": "work/WBWUX6/cand_commons/d05_shikumen_old_shanghai_street_1.jpg",
+        "license": "Public domain",
+        "credit": "Unknown authorUnknown author",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d05_nanjing_road_pedestrian_street_sha": {
+    "subject": "Nanjing Road Pedestrian Street Shanghai 南京路步行街",
+    "query": "Nanjing Road Pedestrian Street Shanghai",
+    "query_full": "Nanjing Road Pedestrian Street Shanghai",
+    "shrunk": false,
+    "day": 5,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/94/2014.11.15.181406_Nanjing_Road_Pedestrian_Zone_Shanghai.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "2014.11.15.181406 Nanjing Road Pedestrian Zone Shanghai.jpg",
+        "path": "work/WBWUX6/cand_commons/d05_nanjing_road_pedestrian_street_sha_1.jpg",
+        "license": "CC0",
+        "credit": "Hermann Luyken",
+        "lat": 31.238997,
+        "lon": 121.47081,
+        "in_region": true
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/01/2014.11.15.181414_Nanjing_Road_Pedestrian_Zone_Shanghai.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "2014.11.15.181414 Nanjing Road Pedestrian Zone Shanghai.jpg",
+        "path": "work/WBWUX6/cand_commons/d05_nanjing_road_pedestrian_street_sha_2.jpg",
+        "license": "CC0",
+        "credit": "Hermann Luyken",
+        "lat": 31.238799,
+        "lon": 121.470718,
+        "in_region": true
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/2014.11.15.181419_Nanjing_Road_Pedestrian_Zone_Shanghai.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "2014.11.15.181419 Nanjing Road Pedestrian Zone Shanghai.jpg",
+        "path": "work/WBWUX6/cand_commons/d05_nanjing_road_pedestrian_street_sha_3.jpg",
+        "license": "CC0",
+        "credit": "Hermann Luyken",
+        "lat": 31.238786,
+        "lon": 121.470715,
+        "in_region": true
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/2014.11.15.181427_Nanjing_Road_Pedestrian_Zone_Shanghai.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "2014.11.15.181427 Nanjing Road Pedestrian Zone Shanghai.jpg",
+        "path": "work/WBWUX6/cand_commons/d05_nanjing_road_pedestrian_street_sha_4.jpg",
+        "license": "CC0",
+        "credit": "Hermann Luyken",
+        "lat": 31.238589,
+        "lon": 121.470811,
+        "in_region": true
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/00/2014.11.15.184711_East_Nanjing_Road_Pedestrian_Zone_Shanghai.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "2014.11.15.184711 East Nanjing Road Pedestrian Zone Shanghai.jpg",
+        "path": "work/WBWUX6/cand_commons/d05_nanjing_road_pedestrian_street_sha_5.jpg",
+        "license": "CC0",
+        "credit": "Hermann Luyken",
+        "lat": 31.237984,
+        "lon": 121.474026,
+        "in_region": true
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/2014.11.15.184722_East_Nanjing_Road_Pedestrian_Zone_Shanghai.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "2014.11.15.184722 East Nanjing Road Pedestrian Zone Shanghai.jpg",
+        "path": "work/WBWUX6/cand_commons/d05_nanjing_road_pedestrian_street_sha_6.jpg",
+        "license": "CC0",
+        "credit": "Hermann Luyken",
+        "lat": 31.237982000000002,
+        "lon": 121.474027,
+        "in_region": true
+      }
+    ]
+  },
+  "d05_tianzifang_shanghai": {
+    "subject": "Tianzifang Shanghai 田子坊",
+    "query": "Tianzifang Shanghai",
+    "query_full": "Tianzifang Shanghai",
+    "shrunk": false,
+    "day": 5,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Tianzifang%2C_Shanghai.jpg/3840px-Tianzifang%2C_Shanghai.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Tianzifang, Shanghai.jpg",
+        "path": "work/WBWUX6/cand_commons/d05_tianzifang_shanghai_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "钉钉",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Tianzifang_21640-Shanghai_%2832943988321%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Tianzifang 21640-Shanghai (32943988321).jpg",
+        "path": "work/WBWUX6/cand_commons/d05_tianzifang_shanghai_2.jpg",
+        "license": "CC BY 2.0",
+        "credit": "xiquinhosilva",
+        "lat": 31.209796666666666,
+        "lon": 121.464295,
+        "in_region": true
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Tianzifang_21641-Shanghai_%2833029166756%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Tianzifang 21641-Shanghai (33029166756).jpg",
+        "path": "work/WBWUX6/cand_commons/d05_tianzifang_shanghai_3.jpg",
+        "license": "CC BY 2.0",
+        "credit": "xiquinhosilva",
+        "lat": 31.209796666666666,
+        "lon": 121.464295,
+        "in_region": true
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Tianzifang_21655-Shanghai_%2832255079393%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Tianzifang 21655-Shanghai (32255079393).jpg",
+        "path": "work/WBWUX6/cand_commons/d05_tianzifang_shanghai_4.jpg",
+        "license": "CC BY 2.0",
+        "credit": "xiquinhosilva",
+        "lat": 31.209796666666666,
+        "lon": 121.464295,
+        "in_region": true
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Tianzifang_21669-Shanghai_%2833070816285%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Tianzifang 21669-Shanghai (33070816285).jpg",
+        "path": "work/WBWUX6/cand_commons/d05_tianzifang_shanghai_5.jpg",
+        "license": "CC BY 2.0",
+        "credit": "xiquinhosilva",
+        "lat": 31.210153333333334,
+        "lon": 121.46356166666666,
+        "in_region": true
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Tianzifangbyday.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Tianzifangbyday.jpg",
+        "path": "work/WBWUX6/cand_commons/d05_tianzifang_shanghai_6.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Jonipoon",
+        "lat": 0.0,
+        "lon": 0.0,
+        "in_region": false
+      }
+    ]
+  },
+  "d05_wukang_mansion_shanghai": {
+    "subject": "Wukang Mansion Shanghai 武康大楼",
+    "query": "Wukang Mansion Shanghai",
+    "query_full": "Wukang Mansion Shanghai",
+    "shrunk": false,
+    "day": 5,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Wukang_Mansion%2C_Shanghai%2C_May_2016_01.JPG/1920px-Wukang_Mansion%2C_Shanghai%2C_May_2016_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Wukang Mansion, Shanghai, May 2016 01.JPG",
+        "path": "work/WBWUX6/cand_commons/d05_wukang_mansion_shanghai_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "SSYoung",
+        "lat": 31.205641666666665,
+        "lon": 121.43302222222222,
+        "in_region": true
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Wukang_Mansion%2C_Shanghai%2C_May_2016_01_%28cropped%29.JPG/1280px-Wukang_Mansion%2C_Shanghai%2C_May_2016_01_%28cropped%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Wukang Mansion, Shanghai, May 2016 01 (cropped).JPG",
+        "path": "work/WBWUX6/cand_commons/d05_wukang_mansion_shanghai_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "SSYoung",
+        "lat": 31.205641666666665,
+        "lon": 121.43302222222222,
+        "in_region": true
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Wukang_Mansion_%2820191114161507%29.jpg/3840px-Wukang_Mansion_%2820191114161507%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Wukang Mansion (20191114161507).jpg",
+        "path": "work/WBWUX6/cand_commons/d05_wukang_mansion_shanghai_3.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "N509FZ",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Wukang_Mansion_20251128.jpg/3840px-Wukang_Mansion_20251128.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Wukang Mansion 20251128.jpg",
+        "path": "work/WBWUX6/cand_commons/d05_wukang_mansion_shanghai_4.jpg",
+        "license": "CC BY 4.0",
+        "credit": "This Photo was taken by Supanut Arunoprayote.\n\nFeel free to use any of my images",
+        "lat": 31.205648333333333,
+        "lon": 121.43319,
+        "in_region": true
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Wukang_Mansion_Intersection.jpg/3840px-Wukang_Mansion_Intersection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Wukang Mansion Intersection.jpg",
+        "path": "work/WBWUX6/cand_commons/d05_wukang_mansion_shanghai_5.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "钉钉",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Wukang_Rd%2C_north_of_Wukang_Mansion%2C_Shanghai%2C_May_2016.JPG/1920px-Wukang_Rd%2C_north_of_Wukang_Mansion%2C_Shanghai%2C_May_2016.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Wukang Rd, north of Wukang Mansion, Shanghai, May 2016.JPG",
+        "path": "work/WBWUX6/cand_commons/d05_wukang_mansion_shanghai_6.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "SSYoung",
+        "lat": 31.20611388888889,
+        "lon": 121.432975,
+        "in_region": true
+      }
+    ]
+  },
+  "d05_shantang_street_suzhou": {
+    "subject": "Shantang Street Suzhou 山塘街",
+    "query": "Shantang Street Suzhou",
+    "query_full": "Shantang Street Suzhou",
+    "shrunk": false,
+    "day": 5,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/80/2017-04-17_Shantang_River%2C_Suzhou_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "2017-04-17 Shantang River, Suzhou 02.jpg",
+        "path": "work/WBWUX6/cand_commons/d05_shantang_street_suzhou_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Windmemories",
+        "lat": 31.32293333333333,
+        "lon": 120.59395555555555,
+        "in_region": true
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Shantang_Street%2C_Suzhou_%28December_2015%29_-_10.JPG/3840px-Shantang_Street%2C_Suzhou_%28December_2015%29_-_10.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Shantang Street, Suzhou (December 2015) - 10.JPG",
+        "path": "work/WBWUX6/cand_commons/d05_shantang_street_suzhou_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Another Believer",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Shantang_Street%2C_Suzhou_%28December_2015%29_-_13.JPG/3840px-Shantang_Street%2C_Suzhou_%28December_2015%29_-_13.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Shantang Street, Suzhou (December 2015) - 13.JPG",
+        "path": "work/WBWUX6/cand_commons/d05_shantang_street_suzhou_3.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Another Believer",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Shantang_Street%2C_Suzhou_%28December_2015%29_-_23.JPG/3840px-Shantang_Street%2C_Suzhou_%28December_2015%29_-_23.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Shantang Street, Suzhou (December 2015) - 23.JPG",
+        "path": "work/WBWUX6/cand_commons/d05_shantang_street_suzhou_4.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Another Believer",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Shantang_Street%2C_Suzhou_%28December_2015%29_-_25.JPG/3840px-Shantang_Street%2C_Suzhou_%28December_2015%29_-_25.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Shantang Street, Suzhou (December 2015) - 25.JPG",
+        "path": "work/WBWUX6/cand_commons/d05_shantang_street_suzhou_5.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Another Believer",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Shantang_Street%2C_Suzhou_%28December_2015%29_-_27.JPG/3840px-Shantang_Street%2C_Suzhou_%28December_2015%29_-_27.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Shantang Street, Suzhou (December 2015) - 27.JPG",
+        "path": "work/WBWUX6/cand_commons/d05_shantang_street_suzhou_6.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Another Believer",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d06_xiangmen_city_wall_suzhou": {
+    "subject": "Xiangmen City Wall Suzhou 相门城墙",
+    "query": "Xiangmen City Wall Suzhou",
+    "query_full": "Xiangmen City Wall Suzhou",
+    "shrunk": false,
+    "day": 6,
+    "candidates": []
+  },
+  "d06_pingjiang_road_suzhou": {
+    "subject": "Pingjiang Road Suzhou 平江路",
+    "query": "Pingjiang Road Suzhou",
+    "query_full": "Pingjiang Road Suzhou",
+    "shrunk": false,
+    "day": 6,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/A_gallery_bridge_in_Pingjiang_Road%2C_Gusu%2C_Suzhou%2C_Jiangsu%2C_China%2C_215000.jpg/3840px-A_gallery_bridge_in_Pingjiang_Road%2C_Gusu%2C_Suzhou%2C_Jiangsu%2C_China%2C_215000.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "A gallery bridge in Pingjiang Road, Gusu, Suzhou, Jiangsu, China, 215000.jpg",
+        "path": "work/WBWUX6/cand_commons/d06_pingjiang_road_suzhou_1.jpg",
+        "license": "CC BY 3.0",
+        "credit": "song songroov",
+        "lat": 31.311944444444446,
+        "lon": 120.63416666666667,
+        "in_region": true
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/A_stone_arch_bridge_in_Pingjiang_Road%2C_Suzhou.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "A stone arch bridge in Pingjiang Road, Suzhou.jpg",
+        "path": "work/WBWUX6/cand_commons/d06_pingjiang_road_suzhou_2.jpg",
+        "license": "CC BY-SA 2.0",
+        "credit": "kevinmcgill from Den Bosch, Netherlands",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Flower_tubs_in_Pingjiang_Road%2C_Gusu%2C_Suzhou%2C_Jiangsu%2C_China%2C_215000.jpg/3840px-Flower_tubs_in_Pingjiang_Road%2C_Gusu%2C_Suzhou%2C_Jiangsu%2C_China%2C_215000.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Flower tubs in Pingjiang Road, Gusu, Suzhou, Jiangsu, China, 215000.jpg",
+        "path": "work/WBWUX6/cand_commons/d06_pingjiang_road_suzhou_3.jpg",
+        "license": "CC BY 3.0",
+        "credit": "song songroov",
+        "lat": 31.31361111111111,
+        "lon": 120.63361111111112,
+        "in_region": true
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/66/Gate_of_Pingjiang_Road%2C_Suzhou.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Gate of Pingjiang Road, Suzhou.jpg",
+        "path": "work/WBWUX6/cand_commons/d06_pingjiang_road_suzhou_4.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "ZhengZhou",
+        "lat": 31.324166666666667,
+        "lon": 120.62783333333333,
+        "in_region": true
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Riverside_of_Pingjiang_Road%2C_Gusu%2C_Suzhou%2C_Jiangsu%2C_China%2C_215000.jpg/3840px-Riverside_of_Pingjiang_Road%2C_Gusu%2C_Suzhou%2C_Jiangsu%2C_China%2C_215000.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Riverside of Pingjiang Road, Gusu, Suzhou, Jiangsu, China, 215000.jpg",
+        "path": "work/WBWUX6/cand_commons/d06_pingjiang_road_suzhou_5.jpg",
+        "license": "CC BY 3.0",
+        "credit": "song songroov",
+        "lat": 31.310277777777777,
+        "lon": 120.63444444444445,
+        "in_region": true
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Suzhou_Pingjiang_Road.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Suzhou Pingjiang Road.jpg",
+        "path": "work/WBWUX6/cand_commons/d06_pingjiang_road_suzhou_6.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "User:Zhangzhugang",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  }
+}

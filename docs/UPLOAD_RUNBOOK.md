@@ -457,8 +457,15 @@ Section Photos 一张都看不见——**要一天一天点开才数得清**。
 
 ## 7. 已知留空的字段
 
-Trip Photos、Cover Video Asset、Flight Info 都非必填,当前流程留空(当天配图挂在
-Section Photos)。Tour Fare 表显示 `No Data`——定价不在本流程范围内。
+Cover Video Asset、Flight Info 非必填,当前流程留空。Tour Fare 表显示
+`No Data`——定价不在本流程范围内。
+
+> **~~Trip Photos~~ 已经不在这个清单里了(2026-08-14 起)。** 这一节原本写的是
+> 「Trip Photos 也留空,当天配图挂在 Section Photos」,那句话从 08-14 起就是错的,
+> 却一直留到 08-15 才发现——**同一份文档的第 5 步第 8 条写着「Trip Photos 不再
+> 留空」,两条互相矛盾**,照第 7 节做的人会把整层跳过。
+> 景点卡现在是主战场,理由见 `docs/DESIGN.md` 1.1(线上三个已发布的内蒙产品
+> Section Photos 全是 0,图全挂在景点卡上)。
 
 **这条会漏掉真实的商务信息。** WBSZX1 册子上印着「必需自费项目 RMB 600/人」
 (广东千古情 + 珠江夜游 + 石景山缆车,大人小孩同价)。当前流程**没有任何字段

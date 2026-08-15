@@ -1,0 +1,143 @@
+{
+  "type_code": "WBXMNM",
+  "travel_days": 6,
+  "_source": "read back from Skybear wt_travel id=413 on 2026-08-15; no brochure PDF for this product, so the itinerary text is production's, not an extraction. photo_subject is the only editorial field added here.",
+  "product_name": {
+    "en": "6D5N A Journey Through Southern Fujian and Chaoshan",
+    "zh": "6天5晚 闽南与潮汕之旅"
+  },
+  "highlights": [],
+  "sections": [
+    {
+      "day": 1,
+      "name": {"en": "DAY 1", "zh": "第一天"},
+      "title": {"en": "Singapore > Xiamen > Shishi > Quanzhou", "zh": "新加坡 > 厦门 > 石狮 > 泉州"},
+      "location": {"en": "Quanzhou", "zh": "泉州"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {"title": {"en": "Arrival at Xiamen and transfer to Shishi", "zh": "抵达厦门前往石狮"},
+         "description": {"en": "", "zh": ""}},
+        {"title": {"en": "Luojia Temple", "zh": "海天佛国洛伽寺"},
+         "description": {"en": "", "zh": ""},
+         "photo_subject": "Luojia Temple Shishi 洛伽寺"},
+        {"title": {"en": "Overseas Chinese Letters Museum", "zh": "侨批馆"},
+         "description": {"en": "", "zh": ""},
+         "photo_subject": "Qiaopi Overseas Chinese letters 侨批"},
+        {"title": {"en": "Xunpu Village and Floral Hairpin Experience", "zh": "蟳埔村及簪花体验"},
+         "description": {"en": "", "zh": ""},
+         "photo_subject": "Xunpu Village Quanzhou 蟳埔村簪花"},
+        {"title": {"en": "West Street and Xiaoxicheng", "zh": "西街及小西埕"},
+         "description": {"en": "", "zh": ""},
+         "photo_subject": "Quanzhou West Street Kaiyuan Temple 泉州西街"}
+      ]
+    },
+    {
+      "day": 2,
+      "name": {"en": "DAY 2", "zh": "第二天"},
+      "title": {"en": "Quanzhou > Chaozhou > Shantou", "zh": "泉州 > 潮州 > 汕头"},
+      "location": {"en": "Chaozhou", "zh": "潮州"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {"title": {"en": "Chaozhou Ancient City", "zh": "潮州古城"},
+         "description": {"en": "", "zh": ""},
+         "photo_subject": "Chaozhou Ancient City 潮州古城"},
+        {"title": {"en": "Jiadi Alley and Paifang Street", "zh": "甲第巷及牌坊街"},
+         "description": {"en": "", "zh": ""},
+         "photo_subject": "Chaozhou Paifang Street archways 潮州牌坊街"},
+        {"title": {"en": "Guangji Gate Tower and Riverside Promenade", "zh": "广济楼城门及滨江长廊"},
+         "description": {"en": "", "zh": ""},
+         "photo_subject": "Guangji Gate Chaozhou 广济楼"},
+        {"title": {"en": "“Dream of Chaozhou” Immersive Show", "zh": "大潮归来·入梦潮州"},
+         "description": {"en": "", "zh": ""},
+         "photo_subject": "Chaozhou night performance 潮州演出"},
+        {"title": {"en": "Xiangzi Bridge", "zh": "湘子桥"},
+         "description": {"en": "", "zh": ""},
+         "photo_subject": "Guangji Bridge Chaozhou 湘子桥"}
+      ]
+    },
+    {
+      "day": 3,
+      "name": {"en": "DAY 3", "zh": "第三天"},
+      "title": {"en": "Shantou > Jieyang > Shantou", "zh": "汕头 > 揭阳 > 汕头"},
+      "location": {"en": "Jieyang", "zh": "揭阳"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {"title": {"en": "Mianhu Ancient Town", "zh": "棉湖古镇"},
+         "description": {"en": "", "zh": ""},
+         "photo_subject": "Mianhu Ancient Town Jieyang 棉湖古镇"},
+        {"title": {"en": "Jieyang Ancient City and Coppersmith Street", "zh": "揭阳古城及打铜街"},
+         "description": {"en": "", "zh": ""},
+         "photo_subject": "Jieyang Confucian Temple 揭阳学宫"},
+        {"title": {"en": "Zhongshan Arcade Street", "zh": "中山骑楼街"},
+         "description": {"en": "", "zh": ""},
+         "photo_subject": "Shantou Qilou arcade street 骑楼"},
+        {"title": {"en": "Jinxian Gate and City God Temple", "zh": "进贤门及城隍庙"},
+         "description": {"en": "", "zh": ""},
+         "photo_subject": "Jinxian Gate Jieyang 进贤门"},
+        {"title": {"en": "Shantou Small Park and Xian Nan Cinema", "zh": "小公园及暹南电影院"},
+         "description": {"en": "", "zh": ""},
+         "photo_subject": "Shantou Xiaogongyuan Old Town 汕头小公园"}
+      ]
+    },
+    {
+      "day": 4,
+      "name": {"en": "DAY 4", "zh": "第四天"},
+      "title": {"en": "Shantou > Raoping > Zhangzhou", "zh": "汕头 > 饶平 > 漳州"},
+      "location": {"en": "Zhangzhou", "zh": "漳州"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {"title": {"en": "Daoyun Tulou", "zh": "道韵楼"},
+         "description": {"en": "", "zh": ""},
+         "photo_subject": "Fujian Tulou earthen building 土楼"},
+        {"title": {"en": "Zhangzhou Ancient City", "zh": "漳州古城"},
+         "description": {"en": "", "zh": ""},
+         "photo_subject": "Zhangzhou Ancient City 漳州古城"},
+        {"title": {"en": "Zhangzhou Confucian Temple", "zh": "漳州文庙"},
+         "description": {"en": "", "zh": ""},
+         "photo_subject": "Zhangzhou Confucian Temple 漳州文庙"},
+        {"title": {"en": "Hot Spring Hotel Experience", "zh": "温泉酒店体验"},
+         "description": {"en": "", "zh": ""}}
+      ]
+    },
+    {
+      "day": 5,
+      "name": {"en": "DAY 5", "zh": "第五天"},
+      "title": {"en": "Zhangzhou > Xiamen", "zh": "漳州 > 厦门"},
+      "location": {"en": "Xiamen", "zh": "厦门"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {"title": {"en": "Free Trade Zone Latex Gallery", "zh": "自贸区乳胶商场"},
+         "description": {"en": "", "zh": ""}},
+        {"title": {"en": "Gulangyu Island", "zh": "鼓浪屿"},
+         "description": {"en": "", "zh": ""},
+         "photo_subject": "Gulangyu Island Xiamen 鼓浪屿"},
+        {"title": {"en": "International Architecture Exhibition", "zh": "万国建筑博览"},
+         "description": {"en": "", "zh": ""},
+         "photo_subject": "Gulangyu colonial architecture 鼓浪屿万国建筑"},
+        {"title": {"en": "Yuyuan Garden", "zh": "毓园"},
+         "description": {"en": "", "zh": ""},
+         "photo_subject": "Gulangyu Yuyuan Lin Qiaozhi 毓园"},
+        {"title": {"en": "Gangzaihou Beach and Longtou Road", "zh": "港仔后沙滩及龙头路"},
+         "description": {"en": "", "zh": ""},
+         "photo_subject": "Gulangyu Longtou Road beach 龙头路"}
+      ]
+    },
+    {
+      "day": 6,
+      "name": {"en": "DAY 6", "zh": "第六天"},
+      "title": {"en": "Xiamen > Singapore", "zh": "厦门 > 新加坡"},
+      "location": {"en": "Xiamen", "zh": "厦门"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {"title": {"en": "Nanputuo Temple", "zh": "南普陀寺"},
+         "description": {"en": "", "zh": ""},
+         "photo_subject": "Nanputuo Temple Xiamen 南普陀寺"},
+        {"title": {"en": "Shapowei Art Zone", "zh": "沙坡尾避风坞"},
+         "description": {"en": "", "zh": ""},
+         "photo_subject": "Shapowei Xiamen harbour 沙坡尾"},
+        {"title": {"en": "Homeward bound", "zh": "返回新加坡"},
+         "description": {"en": "", "zh": ""}}
+      ]
+    }
+  ]
+}

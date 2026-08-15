@@ -1,0 +1,118 @@
+{
+  "type_code": "WBPCSX",
+  "travel_days": 8,
+  "_source": "read back from Skybear wt_travel id=417 on 2026-08-15; no brochure PDF, itinerary text is production's. photo_subject is the only editorial field added here.",
+  "product_name": {
+    "en": "8D7N Enchanting Zhangjiajie, Phoenix Ancient Town and Borderland Discovery",
+    "zh": "仙境张家界 · 醉美凤凰古城 · 边城秘境之旅"
+  },
+  "highlights": [],
+  "sections": [
+    {
+      "day": 1,
+      "name": {"en": "DAY 1", "zh": "第一天"},
+      "title": {"en": "Singapore to Zhangjiajie", "zh": "新加坡 - 张家界"},
+      "location": {"en": "Singapore - Zhangjiajie", "zh": "新加坡 - 张家界"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {"title": {"en": "Arrival in Zhangjiajie", "zh": "抵达张家界"}, "description": {"en": "", "zh": ""}}
+      ]
+    },
+    {
+      "day": 2,
+      "name": {"en": "DAY 2", "zh": "第二天"},
+      "title": {"en": "Zhangjiajie to Phoenix Ancient Town", "zh": "张家界 - 凤凰古城"},
+      "location": {"en": "Zhangjiajie - Phoenix Ancient Town", "zh": "张家界 - 凤凰古城"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {"title": {"en": "Phoenix Ancient Town", "zh": "凤凰古城"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Fenghuang Ancient Town 凤凰古城"},
+        {"title": {"en": "Tuojiang River Cruise", "zh": "沱江游船"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Tuojiang River Fenghuang 沱江"},
+        {"title": {"en": "Miao Costume Experience", "zh": "苗族服饰体验"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Miao people silver costume Hunan 苗族服饰"}
+      ]
+    },
+    {
+      "day": 3,
+      "name": {"en": "DAY 3", "zh": "第三天"},
+      "title": {"en": "Phoenix > Chadong Border Town > Zhangjiajie", "zh": "凤凰 - 边城茶峒 - 张家界"},
+      "location": {"en": "Phoenix - Chadong - Zhangjiajie", "zh": "凤凰 - 茶峒 - 张家界"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {"title": {"en": "Chadong Border Town", "zh": "边城茶峒"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Chadong Border Town Huayuan 边城茶峒"},
+        {"title": {"en": "Cuicui Island", "zh": "翠翠岛"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Cuicui Island Chadong 翠翠岛"},
+        {"title": {"en": "Junsheng Sandstone Painting Institute", "zh": "军声画院"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Junsheng sandstone painting Zhangjiajie 军声砂石画"},
+        {"title": {"en": "72 Wonder Tower", "zh": "七十二奇楼"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Zhangjiajie Xiqi Tower night 七十二奇楼"}
+      ]
+    },
+    {
+      "day": 4,
+      "name": {"en": "DAY 4", "zh": "第四天"},
+      "title": {"en": "Zhangjiajie > Tianmen Mountain > Tujia Tusi Town", "zh": "张家界 - 天门山 - 土司城"},
+      "location": {"en": "Zhangjiajie - Tianmen Mountain - Tujia Tusi Town", "zh": "张家界 - 天门山 - 土司城"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {"title": {"en": "Tianmen Mountain", "zh": "天门山"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Tianmen Mountain Zhangjiajie 天门山"},
+        {"title": {"en": "Tujia Tusi Town", "zh": "土司城"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Tujia Tusi City Zhangjiajie 土家风情园"}
+      ]
+    },
+    {
+      "day": 5,
+      "name": {"en": "DAY 5", "zh": "第五天"},
+      "title": {"en": "Zhangjiajie National Forest Park > Yuanjiajie", "zh": "张家界国家森林公园 - 袁家界"},
+      "location": {"en": "Zhangjiajie Forest Park - Yuanjiajie", "zh": "张家界国家森林公园 - 袁家界"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {"title": {"en": "Zhangjiajie National Forest Park", "zh": "张家界国家森林公园"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Zhangjiajie National Forest Park 张家界国家森林公园"},
+        {"title": {"en": "Yuanjiajie", "zh": "袁家界"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Yuanjiajie Zhangjiajie 袁家界"}
+      ]
+    },
+    {
+      "day": 6,
+      "name": {"en": "DAY 6", "zh": "第六天"},
+      "title": {"en": "Grand Canyon Glass Bridge > Golden Whip Stream > Ten-Mile Gallery", "zh": "大峡谷玻璃桥 - 金鞭溪 - 十里画廊"},
+      "location": {"en": "Grand Canyon - Golden Whip Stream - Ten-Mile Gallery", "zh": "大峡谷 - 金鞭溪 - 十里画廊"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {"title": {"en": "Zhangjiajie Grand Canyon Glass Bridge", "zh": "张家界大峡谷玻璃桥"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Zhangjiajie Grand Canyon Glass Bridge 玻璃桥"},
+        {"title": {"en": "Golden Whip Stream", "zh": "金鞭溪"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Golden Whip Stream Zhangjiajie 金鞭溪"},
+        {"title": {"en": "Ten-Mile Gallery", "zh": "十里画廊"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Ten Mile Gallery Zhangjiajie 十里画廊"}
+      ]
+    },
+    {
+      "day": 7,
+      "name": {"en": "DAY 7", "zh": "第七天"},
+      "title": {"en": "Yellow Dragon Cave > Fruit Picking", "zh": "黄龙洞 - 水果采摘"},
+      "location": {"en": "Yellow Dragon Cave - Fruit Picking", "zh": "黄龙洞 - 采摘"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {"title": {"en": "Yellow Dragon Cave", "zh": "黄龙洞"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Yellow Dragon Cave Zhangjiajie 黄龙洞"},
+        {"title": {"en": "Seasonal Fruit-Picking Experience", "zh": "季节水果采摘"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "orchard fruit picking harvest 果园采摘"}
+      ]
+    },
+    {
+      "day": 8,
+      "name": {"en": "DAY 8", "zh": "第八天"},
+      "title": {"en": "Zhangjiajie to Singapore", "zh": "张家界 - 新加坡"},
+      "location": {"en": "Zhangjiajie - Singapore", "zh": "张家界 - 新加坡"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {"title": {"en": "Departure to Singapore", "zh": "返回新加坡"}, "description": {"en": "", "zh": ""}}
+      ]
+    }
+  ]
+}

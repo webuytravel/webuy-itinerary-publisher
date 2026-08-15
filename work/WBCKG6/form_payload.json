@@ -1,0 +1,610 @@
+{
+ "type_code": "WBCKG6",
+ "travel_days": 6,
+ "product_name": {
+  "en": "6D5N Magical Chongqing Highlights Tour",
+  "zh": "6天5晚 魔幻重庆精华之旅"
+ },
+ "highlights": [
+  {
+   "en": "Hongyadong Night View — the stilt-house night scene that inspired “Spirited Away”",
+   "zh": "洪崖洞夜景 —— 千与千寻同款吊脚楼，灯火璀璨"
+  },
+  {
+   "en": "Liziba Monorail Through a Building, from the upgraded viewing platform",
+   "zh": "李子坝轻轨穿楼奇观，升级观景平台"
+  },
+  {
+   "en": "Jinfo Mountain Scenic Area, UNESCO karst and alpine forest (cable car and in-park shuttle included)",
+   "zh": "南川金佛山风景区，世界自然遗产喀斯特与高山森林（含索道+环保车）"
+  },
+  {
+   "en": "Ciqikou Ancient Town, a thousand-year-old town at the heart of Ba-Yu culture",
+   "zh": "磁器口古镇，千年古镇·巴渝文化代表"
+  },
+  {
+   "en": "Jiefangbei · Qiansimen Bridge · Chaotianmen Confluence · Shibati · Daijia Alley · E’ling No.2 Factory",
+   "zh": "解放碑 · 千厮门大桥 · 朝天门两江交汇 · 十八梯 · 戴家巷 · 鹅岭二厂"
+  },
+  {
+   "en": "Authentic Mountain-City Hotpot · Chongqing street flavours",
+   "zh": "地道山城火锅 · 重庆小吃风味"
+  }
+ ],
+ "highlights_source": [],
+ "sections": [
+  {
+   "day": 1,
+   "name": {
+    "en": "DAY 1",
+    "zh": "第一天"
+   },
+   "title": {
+    "en": "Singapore to Chongqing",
+    "zh": "新加坡 - 重庆"
+   },
+   "location": {
+    "en": "Chongqing",
+    "zh": "重庆"
+   },
+   "description": {
+    "en": "",
+    "zh": ""
+   },
+   "trip_items": [
+    {
+     "title": {
+      "en": "Fly from Singapore to Chongqing",
+      "zh": "由新加坡乘搭航班飞往重庆"
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     },
+     "trip_type": "Attractions"
+    }
+   ]
+  },
+  {
+   "day": 2,
+   "name": {
+    "en": "DAY 2",
+    "zh": "第二天"
+   },
+   "title": {
+    "en": "Chongqing City",
+    "zh": "重庆市区"
+   },
+   "location": {
+    "en": "Chongqing",
+    "zh": "重庆"
+   },
+   "description": {
+    "en": "",
+    "zh": ""
+   },
+   "trip_items": [
+    {
+     "title": {
+      "en": "Kuixing Tower",
+      "zh": "奎星楼"
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     },
+     "photo_subject": "Kuixinglou Chongqing 奎星楼",
+     "trip_type": "Attractions"
+    },
+    {
+     "title": {
+      "en": "Qiansimen Bridge",
+      "zh": "千厮门大桥"
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     },
+     "photo_subject": "Qiansimen Bridge Chongqing 千厮门大桥",
+     "trip_type": "Attractions"
+    },
+    {
+     "title": {
+      "en": "Daijia Alley",
+      "zh": "戴家巷"
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     },
+     "photo_subject": "Daijiaxiang Chongqing cliff walk 戴家巷",
+     "trip_type": "Attractions"
+    },
+    {
+     "title": {
+      "en": "Jiefangbei Pedestrian Street",
+      "zh": "解放碑步行街"
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     },
+     "photo_subject": "Jiefangbei Chongqing 解放碑",
+     "trip_type": "Attractions"
+    },
+    {
+     "title": {
+      "en": "Bayi Road Food Street",
+      "zh": "八一路美食街"
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     },
+     "photo_subject": "Chongqing street food snacks 重庆小吃",
+     "trip_type": "Attractions"
+    },
+    {
+     "title": {
+      "en": "Shibati Traditional Scenic Area",
+      "zh": "十八梯传统风貌区"
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     },
+     "photo_subject": "Shibati Chongqing 十八梯",
+     "trip_type": "Attractions"
+    },
+    {
+     "title": {
+      "en": "Hongyadong Night View",
+      "zh": "洪崖洞夜景"
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     },
+     "photo_subject": "Hongyadong Chongqing 洪崖洞",
+     "trip_type": "Attractions"
+    }
+   ]
+  },
+  {
+   "day": 3,
+   "name": {
+    "en": "DAY 3",
+    "zh": "第三天"
+   },
+   "title": {
+    "en": "Chongqing - Nanchuan Jinfo Mountain - Chongqing",
+    "zh": "重庆 - 南川金佛山 - 重庆"
+   },
+   "location": {
+    "en": "Jinfo Mountain",
+    "zh": "金佛山"
+   },
+   "description": {
+    "en": "",
+    "zh": ""
+   },
+   "trip_items": [
+    {
+     "title": {
+      "en": "Jinfo Mountain Scenic Area (including cable car and shuttle bus)",
+      "zh": "金佛山风景区（含索道+环保车）"
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     },
+     "photo_subject": "Jinfo Mountain Nanchuan karst 金佛山",
+     "trip_type": "Attractions"
+    }
+   ]
+  },
+  {
+   "day": 4,
+   "name": {
+    "en": "DAY 4",
+    "zh": "第四天"
+   },
+   "title": {
+    "en": "Chongqing City",
+    "zh": "重庆市区"
+   },
+   "location": {
+    "en": "Chongqing",
+    "zh": "重庆"
+   },
+   "description": {
+    "en": "",
+    "zh": ""
+   },
+   "trip_items": [
+    {
+     "title": {
+      "en": "Ciqikou Ancient Town",
+      "zh": "磁器口古镇"
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     },
+     "photo_subject": "Ciqikou Ancient Town Chongqing 磁器口古镇",
+     "trip_type": "Attractions"
+    },
+    {
+     "title": {
+      "en": "Chaotianmen Square",
+      "zh": "朝天门广场"
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     },
+     "photo_subject": "Chaotianmen Chongqing 朝天门",
+     "trip_type": "Attractions"
+    },
+    {
+     "title": {
+      "en": "Chaotianmen Wholesale Market",
+      "zh": "朝天门批发市场"
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     },
+     "photo_subject": "Chinese wholesale market stalls 批发市场",
+     "trip_type": "Attractions"
+    },
+    {
+     "title": {
+      "en": "Liziba Viewing Platform (Enhanced Viewpoint)",
+      "zh": "李子坝观景平台（升级视角）"
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     },
+     "photo_subject": "Liziba monorail through building Chongqing 李子坝轻轨穿楼",
+     "trip_type": "Attractions"
+    },
+    {
+     "title": {
+      "en": "E'ling No.2 Factory Creative Park",
+      "zh": "鹅岭二厂文创园"
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     },
+     "photo_subject": "Eling Second Factory Chongqing 鹅岭二厂",
+     "trip_type": "Attractions"
+    },
+    {
+     "title": {
+      "en": "Guanyinqiao Pedestrian Street",
+      "zh": "观音桥步行街"
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     },
+     "photo_subject": "Guanyinqiao Chongqing 观音桥步行街",
+     "trip_type": "Attractions"
+    }
+   ]
+  },
+  {
+   "day": 5,
+   "name": {
+    "en": "DAY 5",
+    "zh": "第五天"
+   },
+   "title": {
+    "en": "Chongqing Free and Easy",
+    "zh": "重庆自由活动"
+   },
+   "location": {
+    "en": "Chongqing",
+    "zh": "重庆"
+   },
+   "description": {
+    "en": "",
+    "zh": ""
+   },
+   "trip_items": [
+    {
+     "title": {
+      "en": "Free and Easy",
+      "zh": "自由活动"
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     },
+     "photo_subject": "Chongqing hotpot 重庆火锅",
+     "trip_type": "Attractions"
+    }
+   ]
+  },
+  {
+   "day": 6,
+   "name": {
+    "en": "DAY 6",
+    "zh": "第六天"
+   },
+   "title": {
+    "en": "Chongqing to Singapore",
+    "zh": "重庆 - 新加坡"
+   },
+   "location": {
+    "en": "Chongqing",
+    "zh": "重庆"
+   },
+   "description": {
+    "en": "",
+    "zh": ""
+   },
+   "trip_items": [
+    {
+     "title": {
+      "en": "Transfer to airport for departure",
+      "zh": "送机返回"
+     },
+     "description": {
+      "en": "",
+      "zh": ""
+     },
+     "trip_type": "Transportation"
+    }
+   ]
+  }
+ ],
+ "images": {
+  "carousel": [
+   {
+    "pos": 0,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBCKG6/out/carousel_00_0.jpg",
+    "bytes": 389745,
+    "subject": "Fly from Singapore to Chongqing"
+   },
+   {
+    "pos": 1,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBCKG6/out/carousel_01_0.jpg",
+    "bytes": 553821,
+    "subject": "Hongyadong Chongqing 洪崖洞"
+   },
+   {
+    "pos": 2,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBCKG6/out/carousel_02_0.jpg",
+    "bytes": 265721,
+    "subject": "Chaotianmen Chongqing 朝天门"
+   },
+   {
+    "pos": 3,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBCKG6/out/carousel_03_0.jpg",
+    "bytes": 351927,
+    "subject": "Chongqing hotpot 重庆火锅"
+   }
+  ],
+  "carousel_mobile": [
+   {
+    "pos": 0,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBCKG6/out_mobile/carousel_00_mobile.jpg",
+    "bytes": 343685,
+    "subject": "Fly from Singapore to Chongqing"
+   },
+   {
+    "pos": 1,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBCKG6/out_mobile/carousel_01_mobile.jpg",
+    "bytes": 497814,
+    "subject": "Hongyadong Chongqing 洪崖洞"
+   },
+   {
+    "pos": 2,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBCKG6/out_mobile/carousel_02_mobile.jpg",
+    "bytes": 266360,
+    "subject": "Chaotianmen Chongqing 朝天门"
+   },
+   {
+    "pos": 3,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBCKG6/out_mobile/carousel_03_mobile.jpg",
+    "bytes": 348038,
+    "subject": "Chongqing hotpot 重庆火锅"
+   }
+  ],
+  "thumbnail": [
+   {
+    "pos": 0,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBCKG6/out/thumbnail_00_0.jpg",
+    "bytes": 389745,
+    "subject": "Fly from Singapore to Chongqing"
+   }
+  ],
+  "route_map": [],
+  "section": [
+   {
+    "pos": 1,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBCKG6/out/section_01_0.jpg",
+    "bytes": 285156,
+    "subject": "Fly from Singapore to Chongqing"
+   },
+   {
+    "pos": 2,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBCKG6/out/section_02_0.jpg",
+    "bytes": 375303,
+    "subject": "Hongyadong Chongqing 洪崖洞"
+   },
+   {
+    "pos": 4,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBCKG6/out/section_04_0.jpg",
+    "bytes": 193285,
+    "subject": "Chaotianmen Chongqing 朝天门"
+   },
+   {
+    "pos": 5,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBCKG6/out/section_05_0.jpg",
+    "bytes": 236552,
+    "subject": "Chongqing hotpot 重庆火锅"
+   }
+  ],
+  "trip": [
+   {
+    "pos": 2,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBCKG6/out/trip_02_01_0.jpg",
+    "bytes": 147341,
+    "subject": "Qiansimen Bridge Chongqing 千厮门大桥",
+    "trip_index": 1
+   },
+   {
+    "pos": 2,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBCKG6/out/trip_02_01_1.jpg",
+    "bytes": 217121,
+    "subject": "Qiansimen Bridge Chongqing 千厮门大桥",
+    "trip_index": 1
+   },
+   {
+    "pos": 2,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBCKG6/out/trip_02_03_0.jpg",
+    "bytes": 201530,
+    "subject": "Jiefangbei Chongqing 解放碑",
+    "trip_index": 3
+   },
+   {
+    "pos": 2,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBCKG6/out/trip_02_03_1.jpg",
+    "bytes": 156329,
+    "subject": "Jiefangbei Chongqing 解放碑",
+    "trip_index": 3
+   },
+   {
+    "pos": 2,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBCKG6/out/trip_02_04_0.jpg",
+    "bytes": 130962,
+    "subject": "Chongqing street food snacks 重庆小吃",
+    "trip_index": 4
+   },
+   {
+    "pos": 2,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBCKG6/out/trip_02_04_1.jpg",
+    "bytes": 216484,
+    "subject": "Chongqing street food snacks 重庆小吃",
+    "trip_index": 4
+   },
+   {
+    "pos": 2,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBCKG6/out/trip_02_05_0.jpg",
+    "bytes": 244143,
+    "subject": "Shibati Chongqing 十八梯",
+    "trip_index": 5
+   },
+   {
+    "pos": 2,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBCKG6/out/trip_02_05_1.jpg",
+    "bytes": 212663,
+    "subject": "Shibati Chongqing 十八梯",
+    "trip_index": 5
+   },
+   {
+    "pos": 2,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBCKG6/out/trip_02_06_0.jpg",
+    "bytes": 284126,
+    "subject": "Hongyadong Chongqing 洪崖洞",
+    "trip_index": 6
+   },
+   {
+    "pos": 2,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBCKG6/out/trip_02_06_1.jpg",
+    "bytes": 222226,
+    "subject": "Hongyadong Chongqing 洪崖洞",
+    "trip_index": 6
+   },
+   {
+    "pos": 4,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBCKG6/out/trip_04_00_0.jpg",
+    "bytes": 237947,
+    "subject": "Ciqikou Ancient Town Chongqing 磁器口古镇",
+    "trip_index": 0
+   },
+   {
+    "pos": 4,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBCKG6/out/trip_04_00_1.jpg",
+    "bytes": 154397,
+    "subject": "Ciqikou Ancient Town Chongqing 磁器口古镇",
+    "trip_index": 0
+   },
+   {
+    "pos": 4,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBCKG6/out/trip_04_01_0.jpg",
+    "bytes": 218889,
+    "subject": "Chaotianmen Chongqing 朝天门",
+    "trip_index": 1
+   },
+   {
+    "pos": 4,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBCKG6/out/trip_04_01_1.jpg",
+    "bytes": 228346,
+    "subject": "Chaotianmen Chongqing 朝天门",
+    "trip_index": 1
+   },
+   {
+    "pos": 4,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBCKG6/out/trip_04_02_0.jpg",
+    "bytes": 189456,
+    "subject": "Chinese wholesale market stalls 批发市场",
+    "trip_index": 2
+   },
+   {
+    "pos": 4,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBCKG6/out/trip_04_02_1.jpg",
+    "bytes": 213089,
+    "subject": "Chinese wholesale market stalls 批发市场",
+    "trip_index": 2
+   },
+   {
+    "pos": 4,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBCKG6/out/trip_04_03_0.jpg",
+    "bytes": 155029,
+    "subject": "Liziba monorail through building Chongqing 李子坝轻轨穿楼",
+    "trip_index": 3
+   },
+   {
+    "pos": 4,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBCKG6/out/trip_04_03_1.jpg",
+    "bytes": 209364,
+    "subject": "Liziba monorail through building Chongqing 李子坝轻轨穿楼",
+    "trip_index": 3
+   },
+   {
+    "pos": 4,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBCKG6/out/trip_04_05_0.jpg",
+    "bytes": 177437,
+    "subject": "Guanyinqiao Chongqing 观音桥步行街",
+    "trip_index": 5
+   },
+   {
+    "pos": 4,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBCKG6/out/trip_04_05_1.jpg",
+    "bytes": 224733,
+    "subject": "Guanyinqiao Chongqing 观音桥步行街",
+    "trip_index": 5
+   },
+   {
+    "pos": 5,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBCKG6/out/trip_05_00_0.jpg",
+    "bytes": 278962,
+    "subject": "Chongqing hotpot 重庆火锅",
+    "trip_index": 0
+   },
+   {
+    "pos": 5,
+    "path": "/Users/wangchengtai/Documents/webuytravel/webuy-itinerary-publisher/.claude/worktrees/charming-heisenberg-c82ae4/work/WBCKG6/out/trip_05_00_1.jpg",
+    "bytes": 261137,
+    "subject": "Chongqing hotpot 重庆火锅",
+    "trip_index": 0
+   }
+  ]
+ }
+}

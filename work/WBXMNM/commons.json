@@ -1,0 +1,1281 @@
+{
+  "d01_luojia_temple_shishi": {
+    "subject": "Luojia Temple Shishi 洛伽寺",
+    "query": "Luojia Temple Shishi",
+    "query_full": "Luojia Temple Shishi",
+    "shrunk": false,
+    "day": 1,
+    "candidates": []
+  },
+  "d01_qiaopi_overseas_chinese_letters": {
+    "subject": "Qiaopi Overseas Chinese letters 侨批",
+    "query": "Qiaopi Overseas Chinese letters",
+    "query_full": "Qiaopi Overseas Chinese letters",
+    "shrunk": false,
+    "day": 1,
+    "candidates": []
+  },
+  "d01_xunpu_village_quanzhou": {
+    "subject": "Xunpu Village Quanzhou 蟳埔村簪花",
+    "query": "Xunpu Village Quanzhou",
+    "query_full": "Xunpu Village Quanzhou",
+    "shrunk": false,
+    "day": 1,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Xunpu_Village_1.jpg/3840px-Xunpu_Village_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Xunpu Village 1.jpg",
+        "path": "work/WBXMNM/cand_commons/d01_xunpu_village_quanzhou_1.jpg",
+        "license": "CC0",
+        "credit": "H2v5o68z",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Xunpu_Village_2.jpg/3840px-Xunpu_Village_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Xunpu Village 2.jpg",
+        "path": "work/WBXMNM/cand_commons/d01_xunpu_village_quanzhou_2.jpg",
+        "license": "CC0",
+        "credit": "H2v5o68z",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Xunpu_Village_3.jpg/3840px-Xunpu_Village_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Xunpu Village 3.jpg",
+        "path": "work/WBXMNM/cand_commons/d01_xunpu_village_quanzhou_3.jpg",
+        "license": "CC0",
+        "credit": "H2v5o68z",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Xunpu_Village_5.jpg/3840px-Xunpu_Village_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Xunpu Village 5.jpg",
+        "path": "work/WBXMNM/cand_commons/d01_xunpu_village_quanzhou_4.jpg",
+        "license": "CC0",
+        "credit": "H2v5o68z",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Xunpu_Village_6.jpg/3840px-Xunpu_Village_6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Xunpu Village 6.jpg",
+        "path": "work/WBXMNM/cand_commons/d01_xunpu_village_quanzhou_5.jpg",
+        "license": "CC0",
+        "credit": "H2v5o68z",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Xunpu_Village_7.jpg/3840px-Xunpu_Village_7.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Xunpu Village 7.jpg",
+        "path": "work/WBXMNM/cand_commons/d01_xunpu_village_quanzhou_6.jpg",
+        "license": "CC0",
+        "credit": "H2v5o68z",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d01_quanzhou_west_street_kaiyuan_templ": {
+    "subject": "Quanzhou West Street Kaiyuan Temple 泉州西街",
+    "query": "Quanzhou West Street",
+    "query_full": "Quanzhou West Street Kaiyuan Temple",
+    "shrunk": true,
+    "day": 1,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d5/20230130_No._116_West_Street.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "20230130 No. 116 West Street.jpg",
+        "path": "work/WBXMNM/cand_commons/d01_quanzhou_west_street_kaiyuan_templ_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Windmemories",
+        "lat": 24.915524277777777,
+        "lon": 118.58330255555555,
+        "in_region": true
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/20230130_West_Street%2C_Quanzhou.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "20230130 West Street, Quanzhou.jpg",
+        "path": "work/WBXMNM/cand_commons/d01_quanzhou_west_street_kaiyuan_templ_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Windmemories",
+        "lat": 24.91543672222222,
+        "lon": 118.58554577777777,
+        "in_region": true
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/36/AndreasPerusinus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "AndreasPerusinus.jpg",
+        "path": "work/WBXMNM/cand_commons/d01_quanzhou_west_street_kaiyuan_templ_3.jpg",
+        "license": "Public domain",
+        "credit": "BabelStone",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Carving_of_Shiva_wife_from_a_Hindu_Temple_at_Quanzhou.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Carving of Shiva wife from a Hindu Temple at Quanzhou.jpg",
+        "path": "work/WBXMNM/cand_commons/d01_quanzhou_west_street_kaiyuan_templ_4.jpg",
+        "license": "Public domain",
+        "credit": "BabelStone",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Xi_Jie_%28West_Street%29%2C_Quanzhou_Aug_2023.jpg/3840px-Xi_Jie_%28West_Street%29%2C_Quanzhou_Aug_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Xi Jie (West Street), Quanzhou Aug 2023.jpg",
+        "path": "work/WBXMNM/cand_commons/d01_quanzhou_west_street_kaiyuan_templ_5.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "HMGiovanniV",
+        "lat": 24.915644444444442,
+        "lon": 118.58377777777777,
+        "in_region": true
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/%E6%B3%89%E5%B7%9E%E8%A5%BF%E6%B9%96%E5%85%AC%E5%9C%92%E8%A5%BF%E9%96%80.jpg/3840px-%E6%B3%89%E5%B7%9E%E8%A5%BF%E6%B9%96%E5%85%AC%E5%9C%92%E8%A5%BF%E9%96%80.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "泉州西湖公園西門.jpg",
+        "path": "work/WBXMNM/cand_commons/d01_quanzhou_west_street_kaiyuan_templ_6.jpg",
+        "license": "CC0",
+        "credit": "Boreas Sawada",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d02_chaozhou_ancient_city": {
+    "subject": "Chaozhou Ancient City 潮州古城",
+    "query": "Chaozhou Ancient City",
+    "query_full": "Chaozhou Ancient City",
+    "shrunk": false,
+    "day": 2,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Chaozhou_Laocheng_Guminju_Jianzhuqun_2013.10.27_11-20-22.jpg/1920px-Chaozhou_Laocheng_Guminju_Jianzhuqun_2013.10.27_11-20-22.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Chaozhou Laocheng Guminju Jianzhuqun 2013.10.27 11-20-22.jpg",
+        "path": "work/WBXMNM/cand_commons/d02_chaozhou_ancient_city_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Zhangzhugang",
+        "lat": 23.663193333333332,
+        "lon": 116.642325,
+        "in_region": true
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Chaozhou_Laocheng_Guminju_Jianzhuqun_2013.10.27_11-20-35.jpg/3840px-Chaozhou_Laocheng_Guminju_Jianzhuqun_2013.10.27_11-20-35.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Chaozhou Laocheng Guminju Jianzhuqun 2013.10.27 11-20-35.jpg",
+        "path": "work/WBXMNM/cand_commons/d02_chaozhou_ancient_city_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Zhangzhugang",
+        "lat": 23.663193333333332,
+        "lon": 116.642325,
+        "in_region": true
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Chaozhou_Laocheng_Guminju_Jianzhuqun_2013.10.27_11-21-31.jpg/3840px-Chaozhou_Laocheng_Guminju_Jianzhuqun_2013.10.27_11-21-31.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Chaozhou Laocheng Guminju Jianzhuqun 2013.10.27 11-21-31.jpg",
+        "path": "work/WBXMNM/cand_commons/d02_chaozhou_ancient_city_3.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Zhangzhugang",
+        "lat": 23.663148333333332,
+        "lon": 116.6424,
+        "in_region": true
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Chaozhou_Laocheng_Guminju_Jianzhuqun_2013.10.27_11-23-27.jpg/3840px-Chaozhou_Laocheng_Guminju_Jianzhuqun_2013.10.27_11-23-27.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Chaozhou Laocheng Guminju Jianzhuqun 2013.10.27 11-23-27.jpg",
+        "path": "work/WBXMNM/cand_commons/d02_chaozhou_ancient_city_4.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Zhangzhugang",
+        "lat": 23.662961666666668,
+        "lon": 116.64304166666666,
+        "in_region": true
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Chaozhou_Laocheng_Guminju_Jianzhuqun_2013.10.27_11-23-53.jpg/3840px-Chaozhou_Laocheng_Guminju_Jianzhuqun_2013.10.27_11-23-53.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Chaozhou Laocheng Guminju Jianzhuqun 2013.10.27 11-23-53.jpg",
+        "path": "work/WBXMNM/cand_commons/d02_chaozhou_ancient_city_5.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Zhangzhugang",
+        "lat": 23.66291,
+        "lon": 116.64308,
+        "in_region": true
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Chaozhou_Laocheng_Guminju_Jianzhuqun_2013.10.27_11-28-35.jpg/3840px-Chaozhou_Laocheng_Guminju_Jianzhuqun_2013.10.27_11-28-35.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Chaozhou Laocheng Guminju Jianzhuqun 2013.10.27 11-28-35.jpg",
+        "path": "work/WBXMNM/cand_commons/d02_chaozhou_ancient_city_6.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Zhangzhugang",
+        "lat": 23.662701666666667,
+        "lon": 116.644205,
+        "in_region": true
+      }
+    ]
+  },
+  "d02_chaozhou_paifang_street_archways": {
+    "subject": "Chaozhou Paifang Street archways 潮州牌坊街",
+    "query": "Chaozhou Paifang Street",
+    "query_full": "Chaozhou Paifang Street archways",
+    "shrunk": true,
+    "day": 2,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b1/20230206_Taiping_Road%2C_Chaozhou.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "20230206 Taiping Road, Chaozhou.jpg",
+        "path": "work/WBXMNM/cand_commons/d02_chaozhou_paifang_street_archways_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Windmemories",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/31/Arch_Street_of_Chaozhou2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Arch Street of Chaozhou2.JPG",
+        "path": "work/WBXMNM/cand_commons/d02_chaozhou_paifang_street_archways_2.jpg",
+        "license": "CC BY 3.0",
+        "credit": "Polar1",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Arch_Street_of_Chaozhou3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Arch Street of Chaozhou3.jpg",
+        "path": "work/WBXMNM/cand_commons/d02_chaozhou_paifang_street_archways_3.jpg",
+        "license": "CC BY 3.0",
+        "credit": "Polar1",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/61/Arch_street_of_Chaozhou1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Arch street of Chaozhou1.jpg",
+        "path": "work/WBXMNM/cand_commons/d02_chaozhou_paifang_street_archways_4.jpg",
+        "license": "CC BY 3.0",
+        "credit": "Polar1",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Chaozhou_tonglau.jpg/3840px-Chaozhou_tonglau.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Chaozhou tonglau.jpg",
+        "path": "work/WBXMNM/cand_commons/d02_chaozhou_paifang_street_archways_5.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Sgnpkd",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Paifangjie_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Paifangjie (cropped).jpg",
+        "path": "work/WBXMNM/cand_commons/d02_chaozhou_paifang_street_archways_6.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Sgnpkd",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d02_guangji_gate_chaozhou": {
+    "subject": "Guangji Gate Chaozhou 广济楼",
+    "query": "Guangji Gate Chaozhou",
+    "query_full": "Guangji Gate Chaozhou",
+    "shrunk": false,
+    "day": 2,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/20230206_Guangji_Gate_and_Guangji_Bridge.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "20230206 Guangji Gate and Guangji Bridge.jpg",
+        "path": "work/WBXMNM/cand_commons/d02_guangji_gate_chaozhou_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Windmemories",
+        "lat": 23.66592769444444,
+        "lon": 116.64662722222224,
+        "in_region": true
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Chaozhou_Guangji_Men_2013.10.26_15-22-21.jpg/3840px-Chaozhou_Guangji_Men_2013.10.26_15-22-21.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Chaozhou Guangji Men 2013.10.26 15-22-21.jpg",
+        "path": "work/WBXMNM/cand_commons/d02_guangji_gate_chaozhou_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Zhangzhugang",
+        "lat": 23.665855,
+        "lon": 116.64793166666666,
+        "in_region": true
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Chaozhou_Guangji_Men_2013.10.26_15-37-46.jpg/3840px-Chaozhou_Guangji_Men_2013.10.26_15-37-46.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Chaozhou Guangji Men 2013.10.26 15-37-46.jpg",
+        "path": "work/WBXMNM/cand_commons/d02_guangji_gate_chaozhou_3.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Zhangzhugang",
+        "lat": 23.665263333333332,
+        "lon": 116.64826333333333,
+        "in_region": true
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Chaozhou_Xiangqiao_Guangji_Men_Chenglou_20201116.111731.jpg/3840px-Chaozhou_Xiangqiao_Guangji_Men_Chenglou_20201116.111731.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Chaozhou Xiangqiao Guangji Men Chenglou 20201116.111731.jpg",
+        "path": "work/WBXMNM/cand_commons/d02_guangji_gate_chaozhou_4.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "古海岸遗址",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Guangji_Gate_front_view_2019-07-15.jpg/3840px-Guangji_Gate_front_view_2019-07-15.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Guangji Gate front view 2019-07-15.jpg",
+        "path": "work/WBXMNM/cand_commons/d02_guangji_gate_chaozhou_5.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "JamesYoung8167",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Guangji_Gate_of_Chaozhou.JPG/3840px-Guangji_Gate_of_Chaozhou.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Guangji Gate of Chaozhou.JPG",
+        "path": "work/WBXMNM/cand_commons/d02_guangji_gate_chaozhou_6.jpg",
+        "license": "CC BY 3.0",
+        "credit": "小杰杰",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d02_chaozhou_night_performance": {
+    "subject": "Chaozhou night performance 潮州演出",
+    "query": "Chaozhou night",
+    "query_full": "Chaozhou night performance",
+    "shrunk": true,
+    "day": 2,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/202608_Chaozhou_Night_Market_%E6%BD%AE%E5%B7%9E%E5%A4%9C%E5%B8%82_02.jpg/3840px-202608_Chaozhou_Night_Market_%E6%BD%AE%E5%B7%9E%E5%A4%9C%E5%B8%82_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "202608 Chaozhou Night Market 潮州夜市 02.jpg",
+        "path": "work/WBXMNM/cand_commons/d02_chaozhou_night_performance_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Jonashtand",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/202608_Night_in_Chaozhou_Township%2C_Pingtung_02.jpg/3840px-202608_Night_in_Chaozhou_Township%2C_Pingtung_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "202608 Night in Chaozhou Township, Pingtung 02.jpg",
+        "path": "work/WBXMNM/cand_commons/d02_chaozhou_night_performance_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Jonashtand",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/202608_Night_in_Chaozhou_Township%2C_Pingtung_03.jpg/3840px-202608_Night_in_Chaozhou_Township%2C_Pingtung_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "202608 Night in Chaozhou Township, Pingtung 03.jpg",
+        "path": "work/WBXMNM/cand_commons/d02_chaozhou_night_performance_3.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Jonashtand",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/202608_Night_in_Chaozhou_Township%2C_Pingtung_04.jpg/3840px-202608_Night_in_Chaozhou_Township%2C_Pingtung_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "202608 Night in Chaozhou Township, Pingtung 04.jpg",
+        "path": "work/WBXMNM/cand_commons/d02_chaozhou_night_performance_4.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Jonashtand",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/202608_Night_in_Chaozhou_Township%2C_Pingtung_05.jpg/3840px-202608_Night_in_Chaozhou_Township%2C_Pingtung_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "202608 Night in Chaozhou Township, Pingtung 05.jpg",
+        "path": "work/WBXMNM/cand_commons/d02_chaozhou_night_performance_5.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Jonashtand",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/202608_Night_in_Chaozhou_Township%2C_Pingtung_07.jpg/3840px-202608_Night_in_Chaozhou_Township%2C_Pingtung_07.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "202608 Night in Chaozhou Township, Pingtung 07.jpg",
+        "path": "work/WBXMNM/cand_commons/d02_chaozhou_night_performance_6.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Jonashtand",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d02_guangji_bridge_chaozhou": {
+    "subject": "Guangji Bridge Chaozhou 湘子桥",
+    "query": "Guangji Bridge Chaozhou",
+    "query_full": "Guangji Bridge Chaozhou",
+    "shrunk": false,
+    "day": 2,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Chaozhou_Guangji_Bridge_%28Guangdong%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Chaozhou Guangji Bridge (Guangdong).jpeg",
+        "path": "work/WBXMNM/cand_commons/d02_guangji_bridge_chaozhou_1.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "See below",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Chaozhou_Guangji_Bridge_20191211.jpg/3840px-Chaozhou_Guangji_Bridge_20191211.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Chaozhou Guangji Bridge 20191211.jpg",
+        "path": "work/WBXMNM/cand_commons/d02_guangji_bridge_chaozhou_2.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Akira CA",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Chaozhou_Guangji_Bridge_20191211_2.jpg/3840px-Chaozhou_Guangji_Bridge_20191211_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Chaozhou Guangji Bridge 20191211 2.jpg",
+        "path": "work/WBXMNM/cand_commons/d02_guangji_bridge_chaozhou_3.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Akira CA",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Guangji_Bridge%2C_Chaozhou.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Guangji Bridge, Chaozhou.jpg",
+        "path": "work/WBXMNM/cand_commons/d02_guangji_bridge_chaozhou_4.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Agatha Qiu at English Wikipedia",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Guangji_Bridge%2C_China2.jpg/3840px-Guangji_Bridge%2C_China2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Guangji Bridge, China2.jpg",
+        "path": "work/WBXMNM/cand_commons/d02_guangji_bridge_chaozhou_5.jpg",
+        "license": "CC BY-SA 2.0",
+        "credit": "Luis Evers",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Guangji_Bridge.JPG/3840px-Guangji_Bridge.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Guangji Bridge.JPG",
+        "path": "work/WBXMNM/cand_commons/d02_guangji_bridge_chaozhou_6.jpg",
+        "license": "CC BY 3.0",
+        "credit": "小杰杰",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d03_mianhu_ancient_town_jieyang": {
+    "subject": "Mianhu Ancient Town Jieyang 棉湖古镇",
+    "query": "Mianhu Ancient Town Jieyang",
+    "query_full": "Mianhu Ancient Town Jieyang",
+    "shrunk": false,
+    "day": 3,
+    "candidates": []
+  },
+  "d03_jieyang_confucian_temple": {
+    "subject": "Jieyang Confucian Temple 揭阳学宫",
+    "query": "Jieyang Confucian Temple",
+    "query_full": "Jieyang Confucian Temple",
+    "shrunk": false,
+    "day": 3,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/20251001_Spirit_screen_of_the_Jieyang_Confucian_Temple.jpg/3840px-20251001_Spirit_screen_of_the_Jieyang_Confucian_Temple.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "20251001 Spirit screen of the Jieyang Confucian Temple.jpg",
+        "path": "work/WBXMNM/cand_commons/d03_jieyang_confucian_temple_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Yumeto",
+        "lat": 23.537845611388892,
+        "lon": 116.35123443583333,
+        "in_region": true
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Jieyang_Xuegong_2013.10.27_14-45-50.jpg/3840px-Jieyang_Xuegong_2013.10.27_14-45-50.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Jieyang Xuegong 2013.10.27 14-45-50.jpg",
+        "path": "work/WBXMNM/cand_commons/d03_jieyang_confucian_temple_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Zhangzhugang",
+        "lat": 23.537908333333334,
+        "lon": 116.35120333333333,
+        "in_region": true
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Jieyang_Xuegong_2013.10.27_14-50-56.jpg/3840px-Jieyang_Xuegong_2013.10.27_14-50-56.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Jieyang Xuegong 2013.10.27 14-50-56.jpg",
+        "path": "work/WBXMNM/cand_commons/d03_jieyang_confucian_temple_3.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Zhangzhugang",
+        "lat": 23.538391666666666,
+        "lon": 116.351345,
+        "in_region": true
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Jieyang_Xuegong_2013.10.27_14-56-31.jpg/3840px-Jieyang_Xuegong_2013.10.27_14-56-31.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Jieyang Xuegong 2013.10.27 14-56-31.jpg",
+        "path": "work/WBXMNM/cand_commons/d03_jieyang_confucian_temple_4.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Zhangzhugang",
+        "lat": 23.538676666666667,
+        "lon": 116.351355,
+        "in_region": true
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Jieyang_Xuegong_2013.10.27_15-03-37.jpg/3840px-Jieyang_Xuegong_2013.10.27_15-03-37.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Jieyang Xuegong 2013.10.27 15-03-37.jpg",
+        "path": "work/WBXMNM/cand_commons/d03_jieyang_confucian_temple_5.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Zhangzhugang",
+        "lat": 23.539186666666666,
+        "lon": 116.35159666666667,
+        "in_region": true
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Jieyang_Xuegong_2013.10.27_15-12-27.jpg/3840px-Jieyang_Xuegong_2013.10.27_15-12-27.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Jieyang Xuegong 2013.10.27 15-12-27.jpg",
+        "path": "work/WBXMNM/cand_commons/d03_jieyang_confucian_temple_6.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Zhangzhugang",
+        "lat": 23.538658333333334,
+        "lon": 116.35141833333333,
+        "in_region": true
+      }
+    ]
+  },
+  "d03_shantou_qilou_arcade_street": {
+    "subject": "Shantou Qilou arcade street 骑楼",
+    "query": "Shantou Qilou arcade street",
+    "query_full": "Shantou Qilou arcade street",
+    "shrunk": false,
+    "day": 3,
+    "candidates": []
+  },
+  "d03_jinxian_gate_jieyang": {
+    "subject": "Jinxian Gate Jieyang 进贤门",
+    "query": "Jinxian Gate Jieyang",
+    "query_full": "Jinxian Gate Jieyang",
+    "shrunk": false,
+    "day": 3,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Jieyang_Jinxian_Gate.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Jieyang Jinxian Gate.JPG",
+        "path": "work/WBXMNM/cand_commons/d03_jinxian_gate_jieyang_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Thyj",
+        "lat": 23.53732777777778,
+        "lon": 116.35351666666666,
+        "in_region": true
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/28/Jieyang_banner_Jinxian_Gate.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Jieyang banner Jinxian Gate.JPG",
+        "path": "work/WBXMNM/cand_commons/d03_jinxian_gate_jieyang_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Thyj",
+        "lat": 23.53732777777778,
+        "lon": 116.35351666666666,
+        "in_region": true
+      }
+    ]
+  },
+  "d03_shantou_xiaogongyuan_old_town": {
+    "subject": "Shantou Xiaogongyuan Old Town 汕头小公园",
+    "query": "Shantou Xiaogongyuan",
+    "query_full": "Shantou Xiaogongyuan Old Town",
+    "shrunk": true,
+    "day": 3,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Xiaogongyuan.jpg/3840px-Xiaogongyuan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Xiaogongyuan.jpg",
+        "path": "work/WBXMNM/cand_commons/d03_shantou_xiaogongyuan_old_town_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Sgnpkd",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d04_fujian_tulou_earthen_building": {
+    "subject": "Fujian Tulou earthen building 土楼",
+    "query": "Fujian Tulou earthen building",
+    "query_full": "Fujian Tulou earthen building",
+    "shrunk": false,
+    "day": 4,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/%E6%B0%B8%E5%AE%9A%E5%9C%9F%E6%A8%93_Yongding_Earthen_Buildings_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "永定土樓 Yongding Earthen Buildings - panoramio.jpg",
+        "path": "work/WBXMNM/cand_commons/d04_fujian_tulou_earthen_building_1.jpg",
+        "license": "CC BY 3.0",
+        "credit": "lienyuan lee",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d04_zhangzhou_ancient_city": {
+    "subject": "Zhangzhou Ancient City 漳州古城",
+    "query": "Zhangzhou Ancient City",
+    "query_full": "Zhangzhou Ancient City",
+    "shrunk": false,
+    "day": 4,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/23/Zhenhha_Zhenhai_ancient_town8B8DB709-48CC-47CF-B49C-760DA78F5Zhenhaiwei_anc_town.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Zhenhha Zhenhai ancient town8B8DB709-48CC-47CF-B49C-760DA78F5Zhenhaiwei anc town.jpg",
+        "path": "work/WBXMNM/cand_commons/d04_zhangzhou_ancient_city_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Allervous",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/%E4%BB%99%E5%AD%97%E6%BD%AD_-_Ancient_Inscription_-_2013.11_-_panoramio.jpg/3840px-%E4%BB%99%E5%AD%97%E6%BD%AD_-_Ancient_Inscription_-_2013.11_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "仙字潭 - Ancient Inscription - 2013.11 - panoramio.jpg",
+        "path": "work/WBXMNM/cand_commons/d04_zhangzhou_ancient_city_2.jpg",
+        "license": "CC BY 3.0",
+        "credit": "rheins",
+        "lat": 24.713533333333334,
+        "lon": 117.57581111111111,
+        "in_region": true
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/%E6%97%A7%E6%BC%B3%E5%B7%9E%E5%BA%9C%E8%A1%99_-_Ancient_Government_Building_of_Zhangzhou_-_2013.12_-_panoramio.jpg/3840px-%E6%97%A7%E6%BC%B3%E5%B7%9E%E5%BA%9C%E8%A1%99_-_Ancient_Government_Building_of_Zhangzhou_-_2013.12_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "旧漳州府衙 - Ancient Government Building of Zhangzhou - 2013.12 - panoramio.jpg",
+        "path": "work/WBXMNM/cand_commons/d04_zhangzhou_ancient_city_3.jpg",
+        "license": "CC BY 3.0",
+        "credit": "rheins",
+        "lat": 24.510472222222223,
+        "lon": 117.64786111111111,
+        "in_region": true
+      }
+    ]
+  },
+  "d04_zhangzhou_confucian_temple": {
+    "subject": "Zhangzhou Confucian Temple 漳州文庙",
+    "query": "Zhangzhou Confucian Temple",
+    "query_full": "Zhangzhou Confucian Temple",
+    "shrunk": false,
+    "day": 4,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Zhangzhou_Confucian_temple.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Zhangzhou Confucian temple.jpg",
+        "path": "work/WBXMNM/cand_commons/d04_zhangzhou_confucian_temple_1.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Hhaithait (talk) 14:44, 12 December 2010 (UTC)",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Zhangzhou_Wenmiao_20120225-04.jpg/3840px-Zhangzhou_Wenmiao_20120225-04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Zhangzhou Wenmiao 20120225-04.jpg",
+        "path": "work/WBXMNM/cand_commons/d04_zhangzhou_confucian_temple_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Zhangzhugang",
+        "lat": 24.507566,
+        "lon": 117.648949,
+        "in_region": true
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Zhangzhou_Wenmiao_20120225-05.jpg/3840px-Zhangzhou_Wenmiao_20120225-05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Zhangzhou Wenmiao 20120225-05.jpg",
+        "path": "work/WBXMNM/cand_commons/d04_zhangzhou_confucian_temple_3.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Zhangzhugang",
+        "lat": 24.507595,
+        "lon": 117.64895600000001,
+        "in_region": true
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Zhangzhou_Wenmiao_20120225-10.jpg/3840px-Zhangzhou_Wenmiao_20120225-10.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Zhangzhou Wenmiao 20120225-10.jpg",
+        "path": "work/WBXMNM/cand_commons/d04_zhangzhou_confucian_temple_4.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Zhangzhugang",
+        "lat": 24.507818,
+        "lon": 117.648865,
+        "in_region": true
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Zhangzhou_Wenmiao_20120225-19.jpg/3840px-Zhangzhou_Wenmiao_20120225-19.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Zhangzhou Wenmiao 20120225-19.jpg",
+        "path": "work/WBXMNM/cand_commons/d04_zhangzhou_confucian_temple_5.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Zhangzhugang",
+        "lat": 24.50791,
+        "lon": 117.648972,
+        "in_region": true
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Zhangzhou_Wenmiao_20120225-31.jpg/3840px-Zhangzhou_Wenmiao_20120225-31.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Zhangzhou Wenmiao 20120225-31.jpg",
+        "path": "work/WBXMNM/cand_commons/d04_zhangzhou_confucian_temple_6.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Zhangzhugang",
+        "lat": 24.507639,
+        "lon": 117.648926,
+        "in_region": true
+      }
+    ]
+  },
+  "d05_free_trade_zone_latex_gallery": {
+    "subject": "Free Trade Zone Latex Gallery",
+    "query": "Free Trade Zone",
+    "query_full": "Free Trade Zone Latex Gallery",
+    "shrunk": true,
+    "day": 5,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/China_%28Hunan%29_Pilot_Free_Trade_Zone_20250221N.jpg/3840px-China_%28Hunan%29_Pilot_Free_Trade_Zone_20250221N.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "China (Hunan) Pilot Free Trade Zone 20250221N.jpg",
+        "path": "work/WBXMNM/cand_commons/d05_free_trade_zone_latex_gallery_1.jpg",
+        "license": "CC BY 4.0",
+        "credit": "Huangdan2060",
+        "lat": 28.199304580555555,
+        "lon": 113.10317230222222,
+        "in_region": false
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/China_Hunan_Pilot_Free_Trade_Zone_29_June_2024a.jpg/3840px-China_Hunan_Pilot_Free_Trade_Zone_29_June_2024a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "China Hunan Pilot Free Trade Zone 29 June 2024a.jpg",
+        "path": "work/WBXMNM/cand_commons/d05_free_trade_zone_latex_gallery_2.jpg",
+        "license": "CC BY 4.0",
+        "credit": "Huangdan2060",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flamingos_in_the_Kuwait_Free_Trade_Zone.jpg/3840px-Flamingos_in_the_Kuwait_Free_Trade_Zone.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Flamingos in the Kuwait Free Trade Zone.jpg",
+        "path": "work/WBXMNM/cand_commons/d05_free_trade_zone_latex_gallery_3.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Di7ane",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Free-Trade-Zone-Lekki.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Free-Trade-Zone-Lekki.jpg",
+        "path": "work/WBXMNM/cand_commons/d05_free_trade_zone_latex_gallery_4.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "FrankvEck",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/93/Free_Trade_Zone_Zhuhai_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Free Trade Zone Zhuhai 01.JPG",
+        "path": "work/WBXMNM/cand_commons/d05_free_trade_zone_latex_gallery_5.jpg",
+        "license": "Public domain",
+        "credit": "Brücke-Osteuropa",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/98/Free_Trade_Zone_Zhuhai_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Free Trade Zone Zhuhai 02.jpg",
+        "path": "work/WBXMNM/cand_commons/d05_free_trade_zone_latex_gallery_6.jpg",
+        "license": "Public domain",
+        "credit": "Brücke-Osteuropa",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d05_gulangyu_island_xiamen": {
+    "subject": "Gulangyu Island Xiamen 鼓浪屿",
+    "query": "Gulangyu Island Xiamen",
+    "query_full": "Gulangyu Island Xiamen",
+    "shrunk": false,
+    "day": 5,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Gulangyu_Island_from_Zhongshan_Road%2C_Xiamen.jpg/3840px-Gulangyu_Island_from_Zhongshan_Road%2C_Xiamen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Gulangyu Island from Zhongshan Road, Xiamen.jpg",
+        "path": "work/WBXMNM/cand_commons/d05_gulangyu_island_xiamen_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Slyronit",
+        "lat": 24.45641111111111,
+        "lon": 118.0713611111111,
+        "in_region": true
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Woman_crossing_a_bridge_on_Gulangyu_Island%2C_Xiamen%2C_China_-_%E9%BC%93%E6%B5%AA%E5%B1%BF%2C_%E5%8E%A6%E9%97%A8%EF%BC%8C%E4%B8%AD%E5%9B%BD_%2816114158191%29.jpg/3840px-Woman_crossing_a_bridge_on_Gulangyu_Island%2C_Xiamen%2C_China_-_%E9%BC%93%E6%B5%AA%E5%B1%BF%2C_%E5%8E%A6%E9%97%A8%EF%BC%8C%E4%B8%AD%E5%9B%BD_%2816114158191%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Woman crossing a bridge on Gulangyu Island, Xiamen, China - 鼓浪屿, 厦门，中国 (16114158191).jpg",
+        "path": "work/WBXMNM/cand_commons/d05_gulangyu_island_xiamen_2.jpg",
+        "license": "CC BY-SA 2.0",
+        "credit": "Romain Pontida",
+        "lat": 24.44468611111111,
+        "lon": 118.0624,
+        "in_region": true
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Xiamen_China_Gulangyu_Island_map_by_Don_Ramey_Logan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Xiamen China Gulangyu Island map by Don Ramey Logan.jpg",
+        "path": "work/WBXMNM/cand_commons/d05_gulangyu_island_xiamen_3.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Don Ramey Logan",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Xiamen_China_Gulangyu_Island_shellfish_for_sale_by_Don_Ramey_Logan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Xiamen China Gulangyu Island shellfish for sale by Don Ramey Logan.jpg",
+        "path": "work/WBXMNM/cand_commons/d05_gulangyu_island_xiamen_4.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Don Ramey Logan",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Xiamen_China_Gulangyu_Island_statue_near_the_shore_by_Don_Ramey_Logan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Xiamen China Gulangyu Island statue near the shore by Don Ramey Logan.jpg",
+        "path": "work/WBXMNM/cand_commons/d05_gulangyu_island_xiamen_5.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Don Ramey Logan",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Xiamen_Ferry_Terminal_%E2%80%93_Sanqiutian_Wharf_on_Gulangyu_Island.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Xiamen Ferry Terminal – Sanqiutian Wharf on Gulangyu Island.jpg",
+        "path": "work/WBXMNM/cand_commons/d05_gulangyu_island_xiamen_6.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "CDwuxieastgroup",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d05_gulangyu_colonial_architecture": {
+    "subject": "Gulangyu colonial architecture 鼓浪屿万国建筑",
+    "query": "Gulangyu colonial architecture",
+    "query_full": "Gulangyu colonial architecture",
+    "shrunk": false,
+    "day": 5,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Gulangyu%27s_Houses..jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Gulangyu's Houses..jpg",
+        "path": "work/WBXMNM/cand_commons/d05_gulangyu_colonial_architecture_1.jpg",
+        "license": "CC BY 2.0",
+        "credit": "Jakob Montrasio",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Gulangyu_banner_Houses.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Gulangyu banner Houses.jpg",
+        "path": "work/WBXMNM/cand_commons/d05_gulangyu_colonial_architecture_2.jpg",
+        "license": "CC BY 2.0",
+        "credit": "Jakob Montrasio",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d05_gulangyu_yuyuan_lin_qiaozhi": {
+    "subject": "Gulangyu Yuyuan Lin Qiaozhi 毓园",
+    "query": "Gulangyu Yuyuan Lin Qiaozhi",
+    "query_full": "Gulangyu Yuyuan Lin Qiaozhi",
+    "shrunk": false,
+    "day": 5,
+    "candidates": []
+  },
+  "d05_gulangyu_longtou_road_beach": {
+    "subject": "Gulangyu Longtou Road beach 龙头路",
+    "query": "Gulangyu Longtou Road",
+    "query_full": "Gulangyu Longtou Road beach",
+    "shrunk": true,
+    "day": 5,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/CCB_Xiamen_Gulangyu_Branch.jpg/3840px-CCB_Xiamen_Gulangyu_Branch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "CCB Xiamen Gulangyu Branch.jpg",
+        "path": "work/WBXMNM/cand_commons/d05_gulangyu_longtou_road_beach_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "HualinXMN",
+        "lat": 24.448322277777777,
+        "lon": 118.06774899999999,
+        "in_region": true
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Gulangyu_Market-20191215.jpg/3840px-Gulangyu_Market-20191215.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Gulangyu Market-20191215.jpg",
+        "path": "work/WBXMNM/cand_commons/d05_gulangyu_longtou_road_beach_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Shwangtianyuan",
+        "lat": 24.447874069166666,
+        "lon": 118.06654357888888,
+        "in_region": true
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Gulangyu_Pharmacy_20191215.jpg/3840px-Gulangyu_Pharmacy_20191215.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Gulangyu Pharmacy 20191215.jpg",
+        "path": "work/WBXMNM/cand_commons/d05_gulangyu_longtou_road_beach_3.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Shwangtianyuan",
+        "lat": 24.446847915555555,
+        "lon": 118.06604003888889,
+        "in_region": true
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Gulangyu_shops_20191215.jpg/3840px-Gulangyu_shops_20191215.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Gulangyu shops 20191215.jpg",
+        "path": "work/WBXMNM/cand_commons/d05_gulangyu_longtou_road_beach_4.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Shwangtianyuan",
+        "lat": 24.44638888888889,
+        "lon": 118.06611111111111,
+        "in_region": true
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Longtou_Rd_in_Kulangsu_%2820170120161108%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Longtou Rd in Kulangsu (20170120161108).jpg",
+        "path": "work/WBXMNM/cand_commons/d05_gulangyu_longtou_road_beach_5.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "N509FZ",
+        "lat": 24.44686388888889,
+        "lon": 118.06628333333333,
+        "in_region": true
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Xinhua_Bookstore_Gulangyu_Store.jpg/3840px-Xinhua_Bookstore_Gulangyu_Store.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Xinhua Bookstore Gulangyu Store.jpg",
+        "path": "work/WBXMNM/cand_commons/d05_gulangyu_longtou_road_beach_6.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "HualinXMN",
+        "lat": 24.447013833333333,
+        "lon": 118.06632994444445,
+        "in_region": true
+      }
+    ]
+  },
+  "d06_nanputuo_temple_xiamen": {
+    "subject": "Nanputuo Temple Xiamen 南普陀寺",
+    "query": "Nanputuo Temple Xiamen",
+    "query_full": "Nanputuo Temple Xiamen",
+    "shrunk": false,
+    "day": 6,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Nanputuo_Temple%2C_Xiamen%2C_China.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Nanputuo Temple, Xiamen, China.JPG",
+        "path": "work/WBXMNM/cand_commons/d06_nanputuo_temple_xiamen_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "User: (WT-shared) Shoestring at  wts wikivoyage",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Nanputuo_Temple%2C_Xiamen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Nanputuo Temple, Xiamen.jpg",
+        "path": "work/WBXMNM/cand_commons/d06_nanputuo_temple_xiamen_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Slyronit",
+        "lat": 24.467552777777776,
+        "lon": 118.10498888888888,
+        "in_region": true
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Nanputuo_Temple%2C_Xiamen_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Nanputuo Temple, Xiamen 2.jpg",
+        "path": "work/WBXMNM/cand_commons/d06_nanputuo_temple_xiamen_3.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Slyronit",
+        "lat": 24.46756111111111,
+        "lon": 118.10494166666666,
+        "in_region": true
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Xiamen-Nanputuo_Temple-under_roof_details.jpg/3840px-Xiamen-Nanputuo_Temple-under_roof_details.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Xiamen-Nanputuo Temple-under roof details.jpg",
+        "path": "work/WBXMNM/cand_commons/d06_nanputuo_temple_xiamen_4.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Popolon",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Xiamen-Nanputuo_temple-2012.JPG/3840px-Xiamen-Nanputuo_temple-2012.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Xiamen-Nanputuo temple-2012.JPG",
+        "path": "work/WBXMNM/cand_commons/d06_nanputuo_temple_xiamen_5.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Popolon",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d3/%E5%8D%97%E6%99%AE%E9%99%80%E5%AF%BA.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "南普陀寺.jpg",
+        "path": "work/WBXMNM/cand_commons/d06_nanputuo_temple_xiamen_6.jpg",
+        "license": "CC0",
+        "credit": "Mx. Granger",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d06_shapowei_xiamen_harbour": {
+    "subject": "Shapowei Xiamen harbour 沙坡尾",
+    "query": "Shapowei Xiamen",
+    "query_full": "Shapowei Xiamen harbour",
+    "shrunk": true,
+    "day": 6,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Fishing_boats_in_Shapowei%2C_Xiamen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Fishing boats in Shapowei, Xiamen.jpg",
+        "path": "work/WBXMNM/cand_commons/d06_shapowei_xiamen_harbour_1.jpg",
+        "license": "CC BY-SA 2.0",
+        "credit": "mojojo.cn",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/%E5%8F%A4%E8%80%81%E7%9A%84%E5%8E%A6%E9%97%A8%E6%B8%AF_old_Xiamen_Harbor_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "古老的厦门港 old Xiamen Harbor - panoramio.jpg",
+        "path": "work/WBXMNM/cand_commons/d06_shapowei_xiamen_harbour_2.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "wanghongliu",
+        "lat": 24.44295962347433,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  }
+}

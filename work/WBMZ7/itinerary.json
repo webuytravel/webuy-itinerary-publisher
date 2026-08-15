@@ -1,0 +1,115 @@
+{
+  "type_code": "WBMZ7",
+  "travel_days": 8,
+  "_source": "read back from Skybear wt_travel id=415 on 2026-08-15; no brochure PDF, itinerary text is production's. photo_subject is the only editorial field added here. NOTE: days 3/4/5 carry 必须自费 (compulsory self-paid) items — the form has no field for that, flag at delivery per UPLOAD_RUNBOOK section 7.",
+  "product_name": {
+    "en": "8D7N Macau, Zhuhai, Guangzhou, Lianzhou and Chenzhou",
+    "zh": "山水画卷 郴州相见 澳门·珠海·广州·连州·郴州游"
+  },
+  "highlights": [],
+  "sections": [
+    {
+      "day": 1,
+      "name": {"en": "DAY 1", "zh": "第一天"},
+      "title": {"en": "Fly to Macau and cross into Zhuhai", "zh": "飞抵澳门转珠海"},
+      "location": {"en": "Singapore - Macau - Zhuhai", "zh": "新加坡 - 澳门 - 珠海"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {"title": {"en": "Hong Kong–Zhuhai–Macau Bridge", "zh": "港珠澳大桥"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Hong Kong Zhuhai Macau Bridge 港珠澳大桥"}
+      ]
+    },
+    {
+      "day": 2,
+      "name": {"en": "DAY 2", "zh": "第二天"},
+      "title": {"en": "Millennium Yao Village and Lianzhou Underground River", "zh": "千年瑶寨与连州地下河"},
+      "location": {"en": "Zhuhai - Lianzhou", "zh": "珠海 - 连州"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {"title": {"en": "Millennium Yao Village", "zh": "千年瑶寨"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Nangang Yao Village Liannan 千年瑶寨"},
+        {"title": {"en": "Lianzhou Underground River", "zh": "连州地下河"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Lianzhou Underground River 连州地下河"}
+      ]
+    },
+    {
+      "day": 3,
+      "name": {"en": "DAY 3", "zh": "第三天"},
+      "title": {"en": "Mangshan Five-Finger Peak Scenic Area", "zh": "莽山五指峰景区"},
+      "location": {"en": "Lianzhou - Mangshan - Chenzhou", "zh": "连州 - 莽山 - 郴州"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {"title": {"en": "Mangshan Five-Finger Peak Scenic Area (Compulsory Tour)", "zh": "莽山五指峰景区（必须自费）"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Mangshan Five Finger Peak Yizhang 莽山五指峰"}
+      ]
+    },
+    {
+      "day": 4,
+      "name": {"en": "DAY 4", "zh": "第四天"},
+      "title": {"en": "Dongjiang Lake and Suxian Mountain", "zh": "东江湖与苏仙岭"},
+      "location": {"en": "Chenzhou · Dongjiang Lake · Suxian Mountain", "zh": "郴州 · 东江湖 · 苏仙岭"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {"title": {"en": "Dongjiang Lake Scenic Area (Compulsory Tour)", "zh": "东江湖景区（必须自费）"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Dongjiang Lake Zixing 东江湖"},
+        {"title": {"en": "Longjing Grand Canyon Waterfalls", "zh": "龙景大峡谷瀑布群"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Longjing Grand Canyon waterfall Zixing 龙景峡谷"},
+        {"title": {"en": "Suxian Mountain Scenic Area", "zh": "苏仙岭景区"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Suxian Mountain Chenzhou 苏仙岭"}
+      ]
+    },
+    {
+      "day": 5,
+      "name": {"en": "DAY 5", "zh": "第五天"},
+      "title": {"en": "Yangtian Lake Prairie", "zh": "仰天湖大草原"},
+      "location": {"en": "Chenzhou · Yangtian Lake Prairie", "zh": "郴州 · 仰天湖大草原"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {"title": {"en": "Yangtian Lake Prairie (Compulsory Tour)", "zh": "仰天湖大草原（必须自费）"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Yangtianhu Grassland Chenzhou 仰天湖大草原"},
+        {"title": {"en": "Hunan Silver Museum", "zh": "湖南白银博物馆"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Hunan Silver Museum Chenzhou 湖南白银博物馆"},
+        {"title": {"en": "Yuhou Street", "zh": "裕后街"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Yuhou Street Chenzhou 裕后街"}
+      ]
+    },
+    {
+      "day": 6,
+      "name": {"en": "DAY 6", "zh": "第六天"},
+      "title": {"en": "High-speed rail to Guangzhou city sights", "zh": "高铁前往广州市区观光"},
+      "location": {"en": "Chenzhou - Guangzhou - Zhuhai", "zh": "郴州 - 广州 - 珠海"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {"title": {"en": "Haixinsha Asian Games Park", "zh": "海心沙亚运公园"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Haixinsha Asian Games Park Guangzhou 海心沙"},
+        {"title": {"en": "Canton Tower — Exterior View", "zh": "广州塔外观"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Canton Tower 广州塔"},
+        {"title": {"en": "Grand Buddha Temple", "zh": "大佛寺"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Dafo Temple Guangzhou 广州大佛寺"},
+        {"title": {"en": "Beijing Road Pedestrian Street", "zh": "北京路步行街"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Beijing Road Pedestrian Street Guangzhou 北京路步行街"}
+      ]
+    },
+    {
+      "day": 7,
+      "name": {"en": "DAY 7", "zh": "第七天"},
+      "title": {"en": "Free at leisure in Zhuhai", "zh": "珠海自由活动"},
+      "location": {"en": "Zhuhai", "zh": "珠海"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {"title": {"en": "Free at Leisure", "zh": "自由活动"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Zhuhai Fisher Girl seafront 珠海渔女"}
+      ]
+    },
+    {
+      "day": 8,
+      "name": {"en": "DAY 8", "zh": "第八天"},
+      "title": {"en": "Return to Singapore", "zh": "返回新加坡"},
+      "location": {"en": "Zhuhai - Macau - Singapore", "zh": "珠海 - 澳门 - 新加坡"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {"title": {"en": "Depart for Singapore", "zh": "启程返回新加坡"}, "description": {"en": "", "zh": ""}}
+      ]
+    }
+  ]
+}

@@ -318,8 +318,19 @@ def assign_trip_photos(plan: ImagePlan, sections: list[dict],
     hand-picked as `OVERRIDES` — they never enter the plan on their own,
     only through a card that matches them.
     """
-    pool = [p for p in plan.placements if p.slot in ("section", "carousel")]
-    pool += list(extra or ())
+    # `extra` 排在前面,不是后面。下面的排序按分数,而**同一个块里的候选分数
+    # 完全相同**(score 比的是块的 subject,不是具体那张图),Python 的排序又是
+    # 稳定的——所以池子的顺序就是同分时的胜负。原来 section 在前,结果是:
+    # 某一天的 section 图会被**别的天**的卡抢走,而这张卡明明有一条专门为它
+    # 挑的 extra。WBYNG 上一次跑出来三处:D2 怒江大峡谷那张卡吃掉了 D3 和 D4
+    # 的天头图,D6 飞来寺观景台吃掉了 D5 的天头图(于是观景台卡上是一座白塔,
+    # 而我为它挑的梅里全景根本没进去)。
+    #
+    # 两个后果都要修。一是页面上同一张照片出现两次(6.06 业务同事提的正是
+    # 「重复」);二是**手挑的条目被静默顶掉**,而摘要里看不出来——6.9 记的
+    # 静默降级就是这一类。extra 的定义本来就是「为景点卡挑的」,同分时它该赢。
+    pool = list(extra or ())
+    pool += [p for p in plan.placements if p.slot in ("section", "carousel")]
     used: dict[str, int] = {}
 
     # 按**内容**去重,不按路径。08-14 第一次修完之后 WBCHET 第 6 天的卡 2 和卡 3
@@ -334,32 +345,67 @@ def assign_trip_photos(plan: ImagePlan, sections: list[dict],
         if p.slot == "section":
             section_src.setdefault(p.position, set()).add(ident(p.src_path))
 
-    for section in sections:
-        day = section["day"]
-        blocked = section_src.get(day, set())
-        for index, item in enumerate(section.get("trip_items", [])):
-            subject = item.get("photo_subject") or item["title"]["en"]
-            ranked = sorted(
-                ((score(subject, p.subject), p) for p in pool),
-                key=lambda pair: -pair[0])
-            taken = 0
-            for value, placement in ranked:
-                if taken >= per_item or value < floor:
-                    break
-                key = ident(placement.src_path)
-                if key in blocked:
-                    continue
-                if used.get(key, 0) >= max_reuse:
-                    continue
-                used[key] = used.get(key, 0) + 1
-                plan.placements.append(Placement(
-                    slot="trip", position=day, trip_index=index,
-                    origin=placement.origin, subject=placement.subject,
-                    source_ref=placement.source_ref,
-                    src_path=placement.src_path,
-                    credit=placement.credit, license=placement.license,
-                    note=f"reused from {placement.slot}#{placement.position}"))
-                taken += 1
+    # 两遍,不是一遍。score() 比的是词面重叠,而**相邻景点的名字经常重叠**:
+    # 「Guangji Gate Chaozhou 广济楼」和「Guangji Bridge Chaozhou 湘子桥」共用
+    # guangji/chaozhou,「Chaoshan street food dumpling」和「Chaoshan night food
+    # street」共用 chaoshan/food/street。一遍扫下来,排在前面的那张卡会**把后面
+    # 那张卡自己的图吃掉**——WB9XMN 实测:广济桥那张照片挂到了广济楼的卡上,
+    # 而广济桥自己的卡是空的。页面上就是「广济桥」标题下没有图,「广济楼城门」
+    # 标题下是一座桥,和传错槽的后果一模一样,只是发生在匹配这一步。
+    #
+    # 所以先让每张卡认领 subject **完全相同**的那些(第一遍),剩下的再按词面
+    # 分数补(第二遍)。第二遍保留原来的行为,只是不会再从别人碗里拿。
+    def claim(exact_only: bool) -> None:
+        for section in sections:
+            day = section["day"]
+            blocked = section_src.get(day, set())
+            for index, item in enumerate(section.get("trip_items", [])):
+                subject = item.get("photo_subject") or item["title"]["en"]
+                taken = sum(1 for p in plan.placements
+                            if p.slot == "trip" and p.position == day
+                            and p.trip_index == index)
+                ranked = sorted(
+                    ((score(subject, p.subject), p) for p in pool),
+                    key=lambda pair: -pair[0])
+                for value, placement in ranked:
+                    if taken >= per_item or value < floor:
+                        break
+                    if exact_only and placement.subject != subject:
+                        continue
+                    # 第二遍(词面匹配)只许用**当天那张 section 图**。
+                    #
+                    # score() 比的是词面重叠,跨天一放开就会出事:WBWUX6 实测
+                    # 「惠山古镇」拿到了一张**南浔古镇**的照片(共用 ancient/town),
+                    # 而南浔在湖州、惠山在无锡,是两个古镇;「抵达无锡」这张纯交通卡
+                    # 则拿到了长广溪湿地的图(共用 wuxi)。两张都是按 3.4 特意留空的卡。
+                    #
+                    # 注意**不能只判 position**:carousel 的 position 是轮播序号,
+                    # 不是天号,`position == day` 在它身上是个巧合(carousel#1 撞上
+                    # 第 1 天),上面那两张错图正是这么进来的。所以这里判 slot。
+                    #
+                    # 留下 section 这一支是 6.05 原本的意思:当天的 section 图按定义
+                    # 就是那天的照片,同一天内复用不会把地方搞错。extra 不在这里,
+                    # 它们是照着卡的 photo_subject 写的,第一遍就该精确命中。
+                    if not exact_only and not (placement.slot == "section"
+                                               and placement.position == day):
+                        continue
+                    key = ident(placement.src_path)
+                    if key in blocked:
+                        continue
+                    if used.get(key, 0) >= max_reuse:
+                        continue
+                    used[key] = used.get(key, 0) + 1
+                    plan.placements.append(Placement(
+                        slot="trip", position=day, trip_index=index,
+                        origin=placement.origin, subject=placement.subject,
+                        source_ref=placement.source_ref,
+                        src_path=placement.src_path,
+                        credit=placement.credit, license=placement.license,
+                        note=f"reused from {placement.slot}#{placement.position}"))
+                    taken += 1
+
+    claim(exact_only=True)
+    claim(exact_only=False)
     return plan
 
 

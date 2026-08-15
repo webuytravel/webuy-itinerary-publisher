@@ -1,0 +1,106 @@
+{
+  "type_code": "WBWUX6",
+  "travel_days": 6,
+  "_source": "read back from Skybear wt_travel id=418 on 2026-08-15; no brochure PDF, itinerary text is production's. photo_subject is the only editorial field added here.",
+  "product_name": {
+    "en": "6D5N Wuxi Jiangnan Water Town Escape",
+    "zh": "6天5晚 · 无锡江南水乡诗意之旅"
+  },
+  "highlights": [],
+  "sections": [
+    {
+      "day": 1,
+      "name": {"en": "DAY 1", "zh": "第一天"},
+      "title": {"en": "Singapore to Wuxi", "zh": "新加坡 - 无锡"},
+      "location": {"en": "Wuxi", "zh": "无锡"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {"title": {"en": "Arrival in Wuxi", "zh": "抵达无锡"}, "description": {"en": "", "zh": ""}},
+        {"title": {"en": "Xue Family Garden", "zh": "薛家花园"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Former Residence of Xue Fucheng Wuxi 薛福成故居"},
+        {"title": {"en": "Nianhua Bay Zen Town (Taihu Lake)", "zh": "太湖拈花湾禅意小镇"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Nianhua Bay Wuxi 拈花湾"}
+      ]
+    },
+    {
+      "day": 2,
+      "name": {"en": "DAY 2", "zh": "第二天"},
+      "title": {"en": "Wuxi to Dragon Dream Park", "zh": "无锡 - 龙之梦乐园"},
+      "location": {"en": "Wuxi / Dragon Dream Park", "zh": "无锡 / 龙之梦乐园"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {"title": {"en": "Changguangxi Wetland Park", "zh": "长广溪湿地公园"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Changguangxi Wetland Park Wuxi 长广溪湿地公园"},
+        {"title": {"en": "Huishan Ancient Town", "zh": "惠山古镇"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Huishan Ancient Town Wuxi 惠山古镇"},
+        {"title": {"en": "Dragon Dream Park and Taihu Ancient Town", "zh": "龙之梦乐园 + 太湖古镇"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Taihu Ancient Town Huzhou 太湖古镇"}
+      ]
+    },
+    {
+      "day": 3,
+      "name": {"en": "DAY 3", "zh": "第三天"},
+      "title": {"en": "Nanxun to Hangzhou", "zh": "南浔 - 杭州"},
+      "location": {"en": "Nanxun / Hangzhou", "zh": "南浔 / 杭州"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {"title": {"en": "Nanxun Ancient Town", "zh": "南浔古镇"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Nanxun Ancient Town 南浔古镇"},
+        {"title": {"en": "West Lake (UNESCO World Heritage Site)", "zh": "西湖"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "West Lake Hangzhou 西湖"},
+        {"title": {"en": "Hefang Street", "zh": "河坊街"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Hefang Street Hangzhou 河坊街"}
+      ]
+    },
+    {
+      "day": 4,
+      "name": {"en": "DAY 4", "zh": "第四天"},
+      "title": {"en": "Hangzhou to Shanghai", "zh": "杭州 - 上海"},
+      "location": {"en": "Hangzhou / Shanghai", "zh": "杭州 / 上海"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {"title": {"en": "Hanfu Experience, Longjing Tea Picking and Lacquer Fan DIY", "zh": "汉服体验 + 龙井茶采摘 + 漆扇DIY"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Longjing tea plantation Hangzhou 龙井茶园"},
+        {"title": {"en": "City God Temple Commercial Area", "zh": "城隍庙商圈"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "City God Temple Shanghai 上海城隍庙"},
+        {"title": {"en": "The Bund Night View", "zh": "外滩夜景"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "The Bund Shanghai 外滩"}
+      ]
+    },
+    {
+      "day": 5,
+      "name": {"en": "DAY 5", "zh": "第五天"},
+      "title": {"en": "Shanghai to Suzhou", "zh": "上海 - 苏州"},
+      "location": {"en": "Shanghai / Suzhou", "zh": "上海 / 苏州"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {"title": {"en": "Lujiazui Skywalk", "zh": "陆家嘴空中环形走廊"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Lujiazui Shanghai 陆家嘴"},
+        {"title": {"en": "1192 Old Shanghai Street", "zh": "1192弄老上海风情街"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Shikumen old Shanghai street 石库门老街"},
+        {"title": {"en": "Nanjing Road Pedestrian Street", "zh": "南京路步行街"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Nanjing Road Pedestrian Street Shanghai 南京路步行街"},
+        {"title": {"en": "Tianzifang", "zh": "田子坊"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Tianzifang Shanghai 田子坊"},
+        {"title": {"en": "Wukang Road", "zh": "武康路"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Wukang Mansion Shanghai 武康大楼"},
+        {"title": {"en": "Shantang Street (Night View)", "zh": "七里山塘街"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Shantang Street Suzhou 山塘街"}
+      ]
+    },
+    {
+      "day": 6,
+      "name": {"en": "DAY 6", "zh": "第六天"},
+      "title": {"en": "Suzhou to Wuxi to Singapore", "zh": "苏州 - 无锡 - 新加坡"},
+      "location": {"en": "Suzhou / Wuxi", "zh": "苏州 / 无锡"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {"title": {"en": "Xiangmen City Wall Park", "zh": "相门城墙文化园"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Xiangmen City Wall Suzhou 相门城墙"},
+        {"title": {"en": "Pingjiang Road Historical Street", "zh": "平江路历史街区"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Pingjiang Road Suzhou 平江路"},
+        {"title": {"en": "Departure", "zh": "送往机场"}, "description": {"en": "", "zh": ""}}
+      ]
+    }
+  ]
+}

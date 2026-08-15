@@ -1,0 +1,132 @@
+{
+  "type_code": "WBYNG",
+  "travel_days": 8,
+  "_source": "read back from Skybear wt_travel id=420 on 2026-08-15; no brochure PDF, itinerary text is production's. photo_subject is the only editorial field added here.",
+  "product_name": {
+    "en": "8D7N Secret Nujiang Grand Canyon",
+    "zh": "8天7晚 秘境怒江大峡谷"
+  },
+  "highlights": [],
+  "sections": [
+    {
+      "day": 1,
+      "name": {"en": "DAY 1", "zh": "第一天"},
+      "title": {"en": "Singapore > Kunming > Mangshi", "zh": "新加坡 / 昆明 / 芒市"},
+      "location": {"en": "Mangshi", "zh": "芒市"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {"title": {"en": "Fly to Kunming and Mangshi", "zh": "飞往昆明及芒市"}, "description": {"en": "", "zh": ""}}
+      ]
+    },
+    {
+      "day": 2,
+      "name": {"en": "DAY 2", "zh": "第二天"},
+      "title": {"en": "Mangshi > Liuku", "zh": "芒市 / 六库"},
+      "location": {"en": "Mangshi", "zh": "芒市"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {"title": {"en": "Menghuan Grand Golden Pagoda", "zh": "勐焕大金塔"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Menghuan Golden Pagoda Mangshi 勐焕大金塔"},
+        {"title": {"en": "Menghuan Silver Pagoda", "zh": "勐焕银塔"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Menghuan Silver Pagoda Mangshi 勐焕银塔"},
+        {"title": {"en": "Nujiang Grand Canyon", "zh": "怒江大峡谷"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Nujiang Grand Canyon 怒江大峡谷"},
+        {"title": {"en": "Lisu Four-Part A Cappella Performance", "zh": "傈僳族四声部无伴奏合唱"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Lisu people traditional costume 傈僳族"},
+        {"title": {"en": "Riverside Cultural Promenade", "zh": "江边文化走廊"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Nu River Liuku riverside 六库怒江"}
+      ]
+    },
+    {
+      "day": 3,
+      "name": {"en": "DAY 3", "zh": "第三天"},
+      "title": {"en": "Liuku > Zhiziluo > Fugong", "zh": "六库 / 知子罗 / 福贡"},
+      "location": {"en": "Fugong", "zh": "福贡"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {"title": {"en": "Denggeng Bathhouse Festival Site", "zh": "登埂澡堂会"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Nujiang hot spring riverside 怒江温泉"},
+        {"title": {"en": "Tiger Leap Observation Deck", "zh": "老虎跳观景台"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Nu River gorge rapids 怒江老虎跳"},
+        {"title": {"en": "Flying-in Stone", "zh": "飞来石"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Nujiang Feilaishi boulder 飞来石"},
+        {"title": {"en": "Zhiziluo and Crown Mountain", "zh": "知子罗与皇冠山"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Zhiziluo abandoned town Nujiang 知子罗"},
+        {"title": {"en": "Laomudeng Village and Lisu Church", "zh": "老姆登村与傈僳族教堂"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Laomudeng Church Nujiang 老姆登教堂"}
+      ]
+    },
+    {
+      "day": 4,
+      "name": {"en": "DAY 4", "zh": "第四天"},
+      "title": {"en": "Fugong > Bingzhongluo", "zh": "福贡 / 丙中洛"},
+      "location": {"en": "Bingzhongluo", "zh": "丙中洛"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {"title": {"en": "Stone Moon Peak and Shimen Grand Pass", "zh": "石月亮与石门雄关"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Shiyueliang Stone Moon Nujiang 石月亮"},
+        {"title": {"en": "First Bend of the Nu River", "zh": "怒江第一湾"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "First Bend Nu River Bingzhongluo 怒江第一湾"},
+        {"title": {"en": "Qiunatong Isolated Village", "zh": "秋那桶村"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Qiunatong village Bingzhongluo 秋那桶"},
+        {"title": {"en": "Puhua Temple", "zh": "普化寺"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Puhua Temple Bingzhongluo 普化寺"}
+      ]
+    },
+    {
+      "day": 5,
+      "name": {"en": "DAY 5", "zh": "第五天"},
+      "title": {"en": "Bingzhongluo > Deqin > Feilai Temple", "zh": "丙中洛 / 德钦 / 飞来寺"},
+      "location": {"en": "Deqin", "zh": "德钦"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {"title": {"en": "Degong Highway 99.5", "zh": "99.5德贡公路"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Yunnan mountain highway switchback 盘山公路"},
+        {"title": {"en": "Feilai Temple", "zh": "飞来寺"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Feilai Temple Deqin 飞来寺"},
+        {"title": {"en": "Dongzhulin Monastery", "zh": "东竹林寺"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Dongzhulin Monastery Shangri-La 东竹林寺"}
+      ]
+    },
+    {
+      "day": 6,
+      "name": {"en": "DAY 6", "zh": "第六天"},
+      "title": {"en": "Deqin > Feilai Temple > Shangri-La", "zh": "德钦 / 飞来寺 / 香格里拉"},
+      "location": {"en": "Deqin", "zh": "德钦"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {"title": {"en": "Feilai Temple Observation Deck", "zh": "飞来寺观景台"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Feilai Temple viewing platform Meili 飞来寺观景台"},
+        {"title": {"en": "Golden Dawn over Meili Snow Mountain", "zh": "梅里雪山日照金山"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Meili Snow Mountain Kawagarbo sunrise 梅里雪山"},
+        {"title": {"en": "Jinsha River Moon Bay and Baima Snow Mountain Pass", "zh": "金沙江月亮湾与白马雪山垭口"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Jinsha River Moon Bay 金沙江月亮湾"}
+      ]
+    },
+    {
+      "day": 7,
+      "name": {"en": "DAY 7", "zh": "第七天"},
+      "title": {"en": "Shangri-La > Kunming", "zh": "香格里拉 / 昆明"},
+      "location": {"en": "Shangri-La", "zh": "香格里拉"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {"title": {"en": "Songzanlin Monastery", "zh": "松赞林寺"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Songzanlin Monastery Shangri-La 松赞林寺"},
+        {"title": {"en": "Dukezong Ancient City", "zh": "独克宗古城"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Dukezong Ancient Town Shangri-La 独克宗古城"},
+        {"title": {"en": "Guishan Temple and Giant Prayer Wheel", "zh": "龟山大佛寺与巨型转经筒"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Guishan Park giant prayer wheel Shangri-La 龟山转经筒"}
+      ]
+    },
+    {
+      "day": 8,
+      "name": {"en": "DAY 8", "zh": "第八天"},
+      "title": {"en": "Kunming > Singapore", "zh": "昆明 / 新加坡"},
+      "location": {"en": "Kunming", "zh": "昆明"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {"title": {"en": "Return Flight to Singapore", "zh": "搭乘航班返回新加坡"}, "description": {"en": "", "zh": ""}}
+      ]
+    }
+  ]
+}

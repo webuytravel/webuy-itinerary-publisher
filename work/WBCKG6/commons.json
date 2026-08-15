@@ -1,0 +1,959 @@
+{
+  "d01_fly_from_singapore_to_chongqing": {
+    "subject": "Fly from Singapore to Chongqing",
+    "query": "Fly from Singapore to",
+    "query_full": "Fly from Singapore to Chongqing",
+    "shrunk": true,
+    "day": 1,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Fly_past_formation%2CSingapore_%2838105707901%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Fly past formation,Singapore (38105707901).jpg",
+        "path": "work/WBCKG6/cand_commons/d01_fly_from_singapore_to_chongqing_1.jpg",
+        "license": "CC BY-SA 2.0",
+        "credit": "Alec Wilson from Khon Kaen, Thailand",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Ospreys_fly_to_Singapore_140206-M-CE123-001.jpg/3840px-Ospreys_fly_to_Singapore_140206-M-CE123-001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Ospreys fly to Singapore 140206-M-CE123-001.jpg",
+        "path": "work/WBCKG6/cand_commons/d01_fly_from_singapore_to_chongqing_2.jpg",
+        "license": "Public domain",
+        "credit": "Capt. Caleb Eames",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Ospreys_fly_to_Singapore_140206-M-CE123-003.jpg/3840px-Ospreys_fly_to_Singapore_140206-M-CE123-003.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Ospreys fly to Singapore 140206-M-CE123-003.jpg",
+        "path": "work/WBCKG6/cand_commons/d01_fly_from_singapore_to_chongqing_3.jpg",
+        "license": "Public domain",
+        "credit": "Capt. Caleb Eames",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/64/Plane_starting_to_fly_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Plane starting to fly (Unsplash).jpg",
+        "path": "work/WBCKG6/cand_commons/d01_fly_from_singapore_to_chongqing_4.jpg",
+        "license": "CC0",
+        "credit": "Goh Rhy Yan gryshoots",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Singapore_Airlines_Airbus_A380_fly-by_%2820016831728%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Singapore Airlines Airbus A380 fly-by (20016831728).jpg",
+        "path": "work/WBCKG6/cand_commons/d01_fly_from_singapore_to_chongqing_5.jpg",
+        "license": "CC BY-SA 2.0",
+        "credit": "Nicolas Lannuzel from Singapore, Singapore",
+        "lat": 1.2863007666666666,
+        "lon": 103.87007903333334,
+        "in_region": false
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Singapore_Airlines_Airbus_A380_fly-by_%2820018266869%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Singapore Airlines Airbus A380 fly-by (20018266869).jpg",
+        "path": "work/WBCKG6/cand_commons/d01_fly_from_singapore_to_chongqing_6.jpg",
+        "license": "CC BY-SA 2.0",
+        "credit": "Nicolas Lannuzel from Singapore, Singapore",
+        "lat": 1.2863007666666666,
+        "lon": 103.87007903333334,
+        "in_region": false
+      }
+    ]
+  },
+  "d02_kuixinglou_chongqing": {
+    "subject": "Kuixinglou Chongqing 奎星楼",
+    "query": "Kuixinglou Chongqing",
+    "query_full": "Kuixinglou Chongqing",
+    "shrunk": false,
+    "day": 2,
+    "candidates": []
+  },
+  "d02_qiansimen_bridge_chongqing": {
+    "subject": "Qiansimen Bridge Chongqing 千厮门大桥",
+    "query": "Qiansimen Bridge Chongqing",
+    "query_full": "Qiansimen Bridge Chongqing",
+    "shrunk": false,
+    "day": 2,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Chongqing%2C_January_25%2C_2024_%289%29_%28Qiansimen_Bridge%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Chongqing, January 25, 2024 (9) (Qiansimen Bridge).jpg",
+        "path": "work/WBCKG6/cand_commons/d02_qiansimen_bridge_chongqing_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "メイド理世",
+        "lat": 29.5623,
+        "lon": 106.5737,
+        "in_region": true
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/67/Chongqing_Nightscape.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Chongqing Nightscape.jpg",
+        "path": "work/WBCKG6/cand_commons/d02_qiansimen_bridge_chongqing_2.jpg",
+        "license": "CC BY 2.0",
+        "credit": "Jay Huang",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Lifebuoys_and_Qiansimen_Bridge_%2812_May_2025%29.jpg/3840px-Lifebuoys_and_Qiansimen_Bridge_%2812_May_2025%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Lifebuoys and Qiansimen Bridge (12 May 2025).jpg",
+        "path": "work/WBCKG6/cand_commons/d02_qiansimen_bridge_chongqing_3.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "王桁霽",
+        "lat": 29.570452777777778,
+        "lon": 106.57681944444444,
+        "in_region": true
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Qiansimen_Bridge.jpg/3840px-Qiansimen_Bridge.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Qiansimen Bridge.jpg",
+        "path": "work/WBCKG6/cand_commons/d02_qiansimen_bridge_chongqing_4.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "HoweyYuan",
+        "lat": 29.56558,
+        "lon": 106.57679499999999,
+        "in_region": true
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Qiansimen_Bridge_%2818084953558%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Qiansimen Bridge (18084953558).jpg",
+        "path": "work/WBCKG6/cand_commons/d02_qiansimen_bridge_chongqing_5.jpg",
+        "license": "CC BY-SA 2.0",
+        "credit": "Bill Thompson from Cambridge, United Kingdom",
+        "lat": 29.565916666666666,
+        "lon": 106.5753111111111,
+        "in_region": true
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Twin_River_Bridges_in_Chongqing_%28Dongshuimen_segment%29.jpg/3840px-Twin_River_Bridges_in_Chongqing_%28Dongshuimen_segment%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Twin River Bridges in Chongqing (Dongshuimen segment).jpg",
+        "path": "work/WBCKG6/cand_commons/d02_qiansimen_bridge_chongqing_6.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Federico Mazzini",
+        "lat": 29.565149307222224,
+        "lon": 106.57556915277777,
+        "in_region": true
+      }
+    ]
+  },
+  "d02_daijiaxiang_chongqing_cliff_walk": {
+    "subject": "Daijiaxiang Chongqing cliff walk 戴家巷",
+    "query": "Daijiaxiang Chongqing cliff walk",
+    "query_full": "Daijiaxiang Chongqing cliff walk",
+    "shrunk": false,
+    "day": 2,
+    "candidates": []
+  },
+  "d02_jiefangbei_chongqing": {
+    "subject": "Jiefangbei Chongqing 解放碑",
+    "query": "Jiefangbei Chongqing",
+    "query_full": "Jiefangbei Chongqing",
+    "shrunk": false,
+    "day": 2,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Chongqing_Jiefangbei_CBD.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Chongqing Jiefangbei CBD.jpg",
+        "path": "work/WBCKG6/cand_commons/d02_jiefangbei_chongqing_1.jpg",
+        "license": "CC BY-SA 2.5",
+        "credit": "Baycrest",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Jiefangbei_CBD_20240721.jpg/3840px-Jiefangbei_CBD_20240721.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Jiefangbei CBD 20240721.jpg",
+        "path": "work/WBCKG6/cand_commons/d02_jiefangbei_chongqing_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "HoweyYuan",
+        "lat": 29.559401,
+        "lon": 106.57289,
+        "in_region": true
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Jiefangbei_CBD_31323-Chongqing_%2845436205655%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Jiefangbei CBD 31323-Chongqing (45436205655).jpg",
+        "path": "work/WBCKG6/cand_commons/d02_jiefangbei_chongqing_3.jpg",
+        "license": "CC BY 2.0",
+        "credit": "xiquinhosilva",
+        "lat": 29.561445638333332,
+        "lon": 106.574937695,
+        "in_region": true
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/42/Jiefangbei_CBD_31337-Chongqing_%2846348709501%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Jiefangbei CBD 31337-Chongqing (46348709501).jpg",
+        "path": "work/WBCKG6/cand_commons/d02_jiefangbei_chongqing_4.jpg",
+        "license": "CC BY 2.0",
+        "credit": "xiquinhosilva",
+        "lat": 29.559327221666667,
+        "lon": 106.57457827833333,
+        "in_region": true
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Jiefangbei_CBD_31548-Chongqing_%2845436210295%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Jiefangbei CBD 31548-Chongqing (45436210295).jpg",
+        "path": "work/WBCKG6/cand_commons/d02_jiefangbei_chongqing_5.jpg",
+        "license": "CC BY 2.0",
+        "credit": "xiquinhosilva",
+        "lat": 29.560383333333334,
+        "lon": 106.57258,
+        "in_region": true
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Jiefangbei_square_in_Chongqing_in_1988.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Jiefangbei square in Chongqing in 1988.jpg",
+        "path": "work/WBCKG6/cand_commons/d02_jiefangbei_chongqing_6.jpg",
+        "license": "CC0",
+        "credit": "Zapata1000",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d02_chongqing_street_food_snacks": {
+    "subject": "Chongqing street food snacks 重庆小吃",
+    "query": "Chongqing street food snacks",
+    "query_full": "Chongqing street food snacks",
+    "shrunk": false,
+    "day": 2,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/HK_YMT_%E4%BD%90%E6%95%A6_Jordan_%E5%8D%97%E4%BA%AC%E8%A1%97_Nanking_Street_shop_%E8%94%A1%E8%A8%98_%E9%87%8D%E6%85%B6%E5%B0%8F%E9%A3%9F_Chongqing_Snack_Food_November_2022_Px3_01.jpg/3840px-HK_YMT_%E4%BD%90%E6%95%A6_Jordan_%E5%8D%97%E4%BA%AC%E8%A1%97_Nanking_Street_shop_%E8%94%A1%E8%A8%98_%E9%87%8D%E6%85%B6%E5%B0%8F%E9%A3%9F_Chongqing_Snack_Food_November_2022_Px3_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "HK YMT 佐敦 Jordan 南京街 Nanking Street shop 蔡記 重慶小食 Chongqing Snack Food November 2022 Px3 01.jpg",
+        "path": "work/WBCKG6/cand_commons/d02_chongqing_street_food_snacks_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "ORLAMHOMNGA Feniam",
+        "lat": 22.305958,
+        "lon": 114.17049097222223,
+        "in_region": false
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/HK_YMT_%E4%BD%90%E6%95%A6_Jordan_%E5%8D%97%E4%BA%AC%E8%A1%97_Nanking_Street_shop_%E8%94%A1%E8%A8%98_%E9%87%8D%E6%85%B6%E5%B0%8F%E9%A3%9F_Chongqing_Snack_Food_November_2022_Px3_02.jpg/3840px-HK_YMT_%E4%BD%90%E6%95%A6_Jordan_%E5%8D%97%E4%BA%AC%E8%A1%97_Nanking_Street_shop_%E8%94%A1%E8%A8%98_%E9%87%8D%E6%85%B6%E5%B0%8F%E9%A3%9F_Chongqing_Snack_Food_November_2022_Px3_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "HK YMT 佐敦 Jordan 南京街 Nanking Street shop 蔡記 重慶小食 Chongqing Snack Food November 2022 Px3 02.jpg",
+        "path": "work/WBCKG6/cand_commons/d02_chongqing_street_food_snacks_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "ORLAMHOMNGA Feniam",
+        "lat": 22.305958,
+        "lon": 114.17049097222223,
+        "in_region": false
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/HK_YMT_%E4%BD%90%E6%95%A6_Jordan_%E5%8D%97%E4%BA%AC%E8%A1%97_Nanking_Street_shop_%E8%94%A1%E8%A8%98_%E9%87%8D%E6%85%B6%E5%B0%8F%E9%A3%9F_Chongqing_Snack_Food_November_2022_Px3_03.jpg/3840px-HK_YMT_%E4%BD%90%E6%95%A6_Jordan_%E5%8D%97%E4%BA%AC%E8%A1%97_Nanking_Street_shop_%E8%94%A1%E8%A8%98_%E9%87%8D%E6%85%B6%E5%B0%8F%E9%A3%9F_Chongqing_Snack_Food_November_2022_Px3_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "HK YMT 佐敦 Jordan 南京街 Nanking Street shop 蔡記 重慶小食 Chongqing Snack Food November 2022 Px3 03.jpg",
+        "path": "work/WBCKG6/cand_commons/d02_chongqing_street_food_snacks_3.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "ORLAMHOMNGA Feniam",
+        "lat": 22.306122972222223,
+        "lon": 114.17083997222223,
+        "in_region": false
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/HK_YMT_%E4%BD%90%E6%95%A6_Jordan_%E5%8D%97%E4%BA%AC%E8%A1%97_Nanking_Street_shop_%E8%94%A1%E8%A8%98_%E9%87%8D%E6%85%B6%E5%B0%8F%E9%A3%9F_Chongqing_Snack_Food_November_2022_Px3_04.jpg/3840px-HK_YMT_%E4%BD%90%E6%95%A6_Jordan_%E5%8D%97%E4%BA%AC%E8%A1%97_Nanking_Street_shop_%E8%94%A1%E8%A8%98_%E9%87%8D%E6%85%B6%E5%B0%8F%E9%A3%9F_Chongqing_Snack_Food_November_2022_Px3_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "HK YMT 佐敦 Jordan 南京街 Nanking Street shop 蔡記 重慶小食 Chongqing Snack Food November 2022 Px3 04.jpg",
+        "path": "work/WBCKG6/cand_commons/d02_chongqing_street_food_snacks_4.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "ORLAMHOMNGA Feniam",
+        "lat": 22.306125,
+        "lon": 114.170844,
+        "in_region": false
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/HK_YMT_%E4%BD%90%E6%95%A6_Jordan_%E5%8D%97%E4%BA%AC%E8%A1%97_Nanking_Street_shop_%E8%94%A1%E8%A8%98_%E9%87%8D%E6%85%B6%E5%B0%8F%E9%A3%9F_Chongqing_Snack_Food_November_2022_Px3_05.jpg/3840px-HK_YMT_%E4%BD%90%E6%95%A6_Jordan_%E5%8D%97%E4%BA%AC%E8%A1%97_Nanking_Street_shop_%E8%94%A1%E8%A8%98_%E9%87%8D%E6%85%B6%E5%B0%8F%E9%A3%9F_Chongqing_Snack_Food_November_2022_Px3_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "HK YMT 佐敦 Jordan 南京街 Nanking Street shop 蔡記 重慶小食 Chongqing Snack Food November 2022 Px3 05.jpg",
+        "path": "work/WBCKG6/cand_commons/d02_chongqing_street_food_snacks_5.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "ORLAMHOMNGA Feniam",
+        "lat": 22.306121972222222,
+        "lon": 114.17084697222222,
+        "in_region": false
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/HK_YMT_%E4%BD%90%E6%95%A6_Jordan_%E5%8D%97%E4%BA%AC%E8%A1%97_Nanking_Street_shop_%E8%94%A1%E8%A8%98_%E9%87%8D%E6%85%B6%E5%B0%8F%E9%A3%9F_Chongqing_Snack_Food_November_2022_Px3_06.jpg/1920px-HK_YMT_%E4%BD%90%E6%95%A6_Jordan_%E5%8D%97%E4%BA%AC%E8%A1%97_Nanking_Street_shop_%E8%94%A1%E8%A8%98_%E9%87%8D%E6%85%B6%E5%B0%8F%E9%A3%9F_Chongqing_Snack_Food_November_2022_Px3_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "HK YMT 佐敦 Jordan 南京街 Nanking Street shop 蔡記 重慶小食 Chongqing Snack Food November 2022 Px3 06.jpg",
+        "path": "work/WBCKG6/cand_commons/d02_chongqing_street_food_snacks_6.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "ORLAMHOMNGA Feniam",
+        "lat": 22.306124,
+        "lon": 114.170805,
+        "in_region": false
+      }
+    ]
+  },
+  "d02_shibati_chongqing": {
+    "subject": "Shibati Chongqing 十八梯",
+    "query": "Shibati Chongqing",
+    "query_full": "Shibati Chongqing",
+    "shrunk": false,
+    "day": 2,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/45/SapbaatTai.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "SapbaatTai.jpg",
+        "path": "work/WBCKG6/cand_commons/d02_shibati_chongqing_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "广州阿沾",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/14/Shibati_Gujing_Square_-_Guanyinyan_%E5%8D%81%E5%85%AB%E6%A2%AF%E5%8F%A4%E4%BA%95%E5%B9%BF%E5%9C%BA%E7%9C%8B%E5%90%91%E8%A7%82%E9%9F%B3%E5%B2%A9.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Shibati Gujing Square - Guanyinyan 十八梯古井广场看向观音岩.jpg",
+        "path": "work/WBCKG6/cand_commons/d02_shibati_chongqing_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Daredemodaisuki 114514",
+        "lat": 29.554872512777777,
+        "lon": 106.56941223138888,
+        "in_region": true
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Shibati_%E5%8D%81%E5%85%AB%E6%A2%AF_2022.1.1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Shibati 十八梯 2022.1.1.jpg",
+        "path": "work/WBCKG6/cand_commons/d02_shibati_chongqing_3.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Daredemodaisuki 114514",
+        "lat": 29.555463790833333,
+        "lon": 106.56980895972222,
+        "in_region": true
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/%E5%8D%81%E5%85%AB%E6%A2%AF.jpg/1920px-%E5%8D%81%E5%85%AB%E6%A2%AF.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "十八梯.jpg",
+        "path": "work/WBCKG6/cand_commons/d02_shibati_chongqing_4.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "重庆轨交18",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/%E5%8E%9F%E5%8D%81%E5%85%AB%E6%A2%AF%E5%B8%83%E5%B1%80%E5%9B%BE.jpg/3840px-%E5%8E%9F%E5%8D%81%E5%85%AB%E6%A2%AF%E5%B8%83%E5%B1%80%E5%9B%BE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "原十八梯布局图.jpg",
+        "path": "work/WBCKG6/cand_commons/d02_shibati_chongqing_5.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Daredemodaisuki 114514",
+        "lat": 29.55527777777778,
+        "lon": 106.56916666666666,
+        "in_region": true
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/55/%E9%87%8D%E5%BA%86%E8%BE%83%E5%9C%BA%E5%8F%A3%E7%9A%84%E8%91%97%E5%90%8D%E5%BB%BA%E7%AD%91%EF%BC%88%E7%AC%A6%E5%90%88%E7%8E%AF%E4%BF%9D%E7%90%86%E5%BF%B5%EF%BC%892009.03.21_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "重庆较场口的著名建筑（符合环保理念）2009.03.21 - panoramio.jpg",
+        "path": "work/WBCKG6/cand_commons/d02_shibati_chongqing_6.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "杨志强Zhiqiang",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d02_hongyadong_chongqing": {
+    "subject": "Hongyadong Chongqing 洪崖洞",
+    "query": "Hongyadong Chongqing",
+    "query_full": "Hongyadong Chongqing",
+    "shrunk": false,
+    "day": 2,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/80870_at_Hongyadong_%2820180217163425%29.jpg/3840px-80870_at_Hongyadong_%2820180217163425%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "80870 at Hongyadong (20180217163425).jpg",
+        "path": "work/WBCKG6/cand_commons/d02_hongyadong_chongqing_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "N509FZ",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/98/81149_at_Hongyadong_%2820180217163713%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "81149 at Hongyadong (20180217163713).jpg",
+        "path": "work/WBCKG6/cand_commons/d02_hongyadong_chongqing_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "N509FZ",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/81149_at_Hongyadong_%2820180217163715%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "81149 at Hongyadong (20180217163715).jpg",
+        "path": "work/WBCKG6/cand_commons/d02_hongyadong_chongqing_3.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "N509FZ",
+        "lat": 29.565119444444445,
+        "lon": 106.57705555555555,
+        "in_region": true
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/86/Hongya_Cave_20180520.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Hongya Cave 20180520.jpg",
+        "path": "work/WBCKG6/cand_commons/d02_hongyadong_chongqing_4.jpg",
+        "license": "CC BY 2.0",
+        "credit": "xiquinhosilva",
+        "lat": 29.564896666666666,
+        "lon": 106.5739,
+        "in_region": true
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Hongyadong_night_lights_Chongqing.jpg/3840px-Hongyadong_night_lights_Chongqing.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Hongyadong night lights Chongqing.jpg",
+        "path": "work/WBCKG6/cand_commons/d02_hongyadong_chongqing_5.jpg",
+        "license": "CC BY 4.0",
+        "credit": "Lianguanlun",
+        "lat": 29.566713888888888,
+        "lon": 106.57569722222222,
+        "in_region": true
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/The_Hongyadong_stilted_house_in_Chongqqing_city.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "The Hongyadong stilted house in Chongqqing city.jpg",
+        "path": "work/WBCKG6/cand_commons/d02_hongyadong_chongqing_6.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Chen Hualin",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d03_jinfo_mountain_nanchuan_karst": {
+    "subject": "Jinfo Mountain Nanchuan karst 金佛山",
+    "query": "Jinfo Mountain Nanchuan karst",
+    "query_full": "Jinfo Mountain Nanchuan karst",
+    "shrunk": false,
+    "day": 3,
+    "candidates": []
+  },
+  "d04_ciqikou_ancient_town_chongqing": {
+    "subject": "Ciqikou Ancient Town Chongqing 磁器口古镇",
+    "query": "Ciqikou Ancient Town Chongqing",
+    "query_full": "Ciqikou Ancient Town Chongqing",
+    "shrunk": false,
+    "day": 4,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/028_Sichuan-160811_28_%2829868006911%29.jpg/1280px-028_Sichuan-160811_28_%2829868006911%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "028 Sichuan-160811 28 (29868006911).jpg",
+        "path": "work/WBCKG6/cand_commons/d04_ciqikou_ancient_town_chongqing_1.jpg",
+        "license": "CC BY 2.0",
+        "credit": "Franco Pecchio from Milano, Italy",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d04_chaotianmen_chongqing": {
+    "subject": "Chaotianmen Chongqing 朝天门",
+    "query": "Chaotianmen Chongqing",
+    "query_full": "Chaotianmen Chongqing",
+    "shrunk": false,
+    "day": 4,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Chaotianmen_Bridge%2C_Nan%27an_District_of_Chongqing.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Chaotianmen Bridge, Nan'an District of Chongqing.jpg",
+        "path": "work/WBCKG6/cand_commons/d04_chaotianmen_chongqing_1.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Juukeihc at English Wikipedia",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Chaotianmen_Bridge.jpg/3840px-Chaotianmen_Bridge.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Chaotianmen Bridge.jpg",
+        "path": "work/WBCKG6/cand_commons/d04_chaotianmen_chongqing_2.jpg",
+        "license": "CC BY-SA 2.0",
+        "credit": "Thomas Bächinger",
+        "lat": 29.586451666666665,
+        "lon": 106.57133166666667,
+        "in_region": true
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Chaotianmen_Yangtze_River_Bridge.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Chaotianmen Yangtze River Bridge.JPG",
+        "path": "work/WBCKG6/cand_commons/d04_chaotianmen_chongqing_3.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Glabb",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Chaotianmen_nightview_20240721.jpg/3840px-Chaotianmen_nightview_20240721.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Chaotianmen nightview 20240721.jpg",
+        "path": "work/WBCKG6/cand_commons/d04_chaotianmen_chongqing_4.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "HoweyYuan",
+        "lat": 29.560285,
+        "lon": 106.57854897222222,
+        "in_region": true
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/66/Chongqing_-_Chaotianmen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Chongqing - Chaotianmen.jpg",
+        "path": "work/WBCKG6/cand_commons/d04_chaotianmen_chongqing_5.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Ecelan",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/de/%E9%87%8D%E6%85%B6_%E6%9C%9D%E5%A4%A9%E9%96%80_Chaotianmen_in_Chongqing.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "重慶 朝天門 Chaotianmen in Chongqing.jpg",
+        "path": "work/WBCKG6/cand_commons/d04_chaotianmen_chongqing_6.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "LowensteinYang",
+        "lat": 29.570627777777776,
+        "lon": 106.58440277777777,
+        "in_region": true
+      }
+    ]
+  },
+  "d04_chinese_wholesale_market_stalls": {
+    "subject": "Chinese wholesale market stalls 批发市场",
+    "query": "Chinese wholesale market",
+    "query_full": "Chinese wholesale market stalls",
+    "shrunk": true,
+    "day": 4,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Cheung_Sha_Wan_Wholesale_Vegetable_Market%2C_Hong_Kong.jpg/3840px-Cheung_Sha_Wan_Wholesale_Vegetable_Market%2C_Hong_Kong.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Cheung Sha Wan Wholesale Vegetable Market, Hong Kong.jpg",
+        "path": "work/WBCKG6/cand_commons/d04_chinese_wholesale_market_stalls_1.jpg",
+        "license": "CC0",
+        "credit": "Msh.spike",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Guangzhou_Wholesale_Market_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Guangzhou Wholesale Market 2.jpg",
+        "path": "work/WBCKG6/cand_commons/d04_chinese_wholesale_market_stalls_2.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Chinatravelsavvy",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Guangzhou_Wholesale_Market_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Guangzhou Wholesale Market 3.jpg",
+        "path": "work/WBCKG6/cand_commons/d04_chinese_wholesale_market_stalls_3.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Chinatravelsavvy",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Jianshui_-_Wholesale_market_-_P1360888.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Jianshui - Wholesale market - P1360888.JPG",
+        "path": "work/WBCKG6/cand_commons/d04_chinese_wholesale_market_stalls_4.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "User:Vmenkov",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/The_Wuhan_Huanan_Seafood_Wholesale_Market_in_2025.jpg/3840px-The_Wuhan_Huanan_Seafood_Wholesale_Market_in_2025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "The Wuhan Huanan Seafood Wholesale Market in 2025.jpg",
+        "path": "work/WBCKG6/cand_commons/d04_chinese_wholesale_market_stalls_5.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Ozidnam",
+        "lat": 30.620475,
+        "lon": 114.257203,
+        "in_region": false
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Xinfadi_Wholesale_Market_%2820180806151840%29.jpg/3840px-Xinfadi_Wholesale_Market_%2820180806151840%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Xinfadi Wholesale Market (20180806151840).jpg",
+        "path": "work/WBCKG6/cand_commons/d04_chinese_wholesale_market_stalls_6.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "N509FZ",
+        "lat": 39.81963833333334,
+        "lon": 116.33848833333333,
+        "in_region": false
+      }
+    ]
+  },
+  "d04_liziba_monorail_through_building_c": {
+    "subject": "Liziba monorail through building Chongqing 李子坝轻轨穿楼",
+    "query": "Liziba monorail",
+    "query_full": "Liziba monorail through building Chongqing",
+    "shrunk": true,
+    "day": 4,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Model_of_Liziba_Station_at_MetroTrans_2019_%2820190726142641%29.jpg/3840px-Model_of_Liziba_Station_at_MetroTrans_2019_%2820190726142641%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Model of Liziba Station at MetroTrans 2019 (20190726142641).jpg",
+        "path": "work/WBCKG6/cand_commons/d04_liziba_monorail_through_building_c_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "N509FZ",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d04_eling_second_factory_chongqing": {
+    "subject": "Eling Second Factory Chongqing 鹅岭二厂",
+    "query": "Eling Second",
+    "query_full": "Eling Second Factory Chongqing",
+    "shrunk": true,
+    "day": 4,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Elings_kyrka_-_KMB_-_16000200153888.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Elings kyrka - KMB - 16000200153888.jpg",
+        "path": "work/WBCKG6/cand_commons/d04_eling_second_factory_chongqing_1.jpg",
+        "license": "Public domain",
+        "credit": "{{{artist}}}",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/32/Elings_kyrka_-_KMB_-_16000200153893.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Elings kyrka - KMB - 16000200153893.jpg",
+        "path": "work/WBCKG6/cand_commons/d04_eling_second_factory_chongqing_2.jpg",
+        "license": "Public domain",
+        "credit": "{{{artist}}}",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/03/Elings_kyrka_-_KMB_-_16000200153895.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Elings kyrka - KMB - 16000200153895.jpg",
+        "path": "work/WBCKG6/cand_commons/d04_eling_second_factory_chongqing_3.jpg",
+        "license": "Public domain",
+        "credit": "{{{artist}}}",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/88/Southampton%2C_from_Eling_-_DPLA_-_00c5a6accdf4aef6ef8995fbcedb1175.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Southampton, from Eling - DPLA - 00c5a6accdf4aef6ef8995fbcedb1175.jpg",
+        "path": "work/WBCKG6/cand_commons/d04_eling_second_factory_chongqing_4.jpg",
+        "license": "Public domain",
+        "credit": "Bone, Muirhead, Sir, 1876-1953",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/84/Southampton%2C_from_Eling_-_DPLA_-_11d9082ed02ce7bad8aa76be1d2d5605.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Southampton, from Eling - DPLA - 11d9082ed02ce7bad8aa76be1d2d5605.jpg",
+        "path": "work/WBCKG6/cand_commons/d04_eling_second_factory_chongqing_5.jpg",
+        "license": "Public domain",
+        "credit": "Bone, Muirhead, Sir, 1876-1953",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Trapdoors_at_Eling_Mill.jpg/3840px-Trapdoors_at_Eling_Mill.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Trapdoors at Eling Mill.jpg",
+        "path": "work/WBCKG6/cand_commons/d04_eling_second_factory_chongqing_6.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Richard Avery",
+        "lat": 50.9111239,
+        "lon": -1.4820661000000002,
+        "in_region": false
+      }
+    ]
+  },
+  "d04_guanyinqiao_chongqing": {
+    "subject": "Guanyinqiao Chongqing 观音桥步行街",
+    "query": "Guanyinqiao Chongqing",
+    "query_full": "Guanyinqiao Chongqing",
+    "shrunk": false,
+    "day": 4,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/11/Chongqing%2C_January_22%2C_2024_%2822%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Chongqing, January 22, 2024 (22).jpg",
+        "path": "work/WBCKG6/cand_commons/d04_guanyinqiao_chongqing_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "メイド理世",
+        "lat": 29.581877777777777,
+        "lon": 106.53010555555555,
+        "in_region": true
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Chongqing_Rail_Transit_-_Guanyinqiao.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Chongqing Rail Transit - Guanyinqiao.JPG",
+        "path": "work/WBCKG6/cand_commons/d04_guanyinqiao_chongqing_2.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Azylber",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Exit_4%2C_Guanyinqiao_Station%2C_Chongqing_Rail_Transit_20260623.jpg/3840px-Exit_4%2C_Guanyinqiao_Station%2C_Chongqing_Rail_Transit_20260623.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Exit 4, Guanyinqiao Station, Chongqing Rail Transit 20260623.jpg",
+        "path": "work/WBCKG6/cand_commons/d04_guanyinqiao_chongqing_3.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Tim Wu",
+        "lat": 29.576911111666668,
+        "lon": 106.52882222166667,
+        "in_region": true
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Game_Genshin_Impact%27s_advertisements_in_Guanyinqiao_Sta.%2C_a_Chongqing_Railway_Transit_interchange%28Line3_and_Line9%29_station_in_Chongqing%2C_P.R._China.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Game Genshin Impact's advertisements in Guanyinqiao Sta., a Chongqing Railway Transit interchange(Line3 and Line9) station in Chongqing, P.R. China.jpg",
+        "path": "work/WBCKG6/cand_commons/d04_guanyinqiao_chongqing_4.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Daredemodaisuki 114514",
+        "lat": 29.57549285861111,
+        "lon": 106.52912139888889,
+        "in_region": true
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/%E8%A7%82%E9%9F%B3%E6%A1%A55.jpg/3840px-%E8%A7%82%E9%9F%B3%E6%A1%A55.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "观音桥5.jpg",
+        "path": "work/WBCKG6/cand_commons/d04_guanyinqiao_chongqing_5.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Fxqf",
+        "lat": 29.57777777777778,
+        "lon": 106.52805555555555,
+        "in_region": true
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/%E8%A7%82%E9%9F%B3%E6%A1%A5%E8%A1%97%E5%8A%9E.jpg/3840px-%E8%A7%82%E9%9F%B3%E6%A1%A5%E8%A1%97%E5%8A%9E.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "观音桥街办.jpg",
+        "path": "work/WBCKG6/cand_commons/d04_guanyinqiao_chongqing_6.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "重庆轨交18",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d05_chongqing_hotpot": {
+    "subject": "Chongqing hotpot 重庆火锅",
+    "query": "Chongqing hotpot",
+    "query_full": "Chongqing hotpot",
+    "shrunk": false,
+    "day": 5,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/3x3_hot_pot_in_Chongqing_%2820180217161707%29.jpg/3840px-3x3_hot_pot_in_Chongqing_%2820180217161707%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "3x3 hot pot in Chongqing (20180217161707).jpg",
+        "path": "work/WBCKG6/cand_commons/d05_chongqing_hotpot_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "N509FZ",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/11/Chongqing_hotpot.1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Chongqing hotpot.1.jpg",
+        "path": "work/WBCKG6/cand_commons/d05_chongqing_hotpot_2.jpg",
+        "license": "Public domain",
+        "credit": "Hawyih",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/63/Chongqing_hotpot_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Chongqing hotpot 2.jpg",
+        "path": "work/WBCKG6/cand_commons/d05_chongqing_hotpot_3.jpg",
+        "license": "Public domain",
+        "credit": "Hawyih",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Concentric_hot_pot_in_Chongqing_%2820180217165607%29.jpg/3840px-Concentric_hot_pot_in_Chongqing_%2820180217165607%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Concentric hot pot in Chongqing (20180217165607).jpg",
+        "path": "work/WBCKG6/cand_commons/d05_chongqing_hotpot_4.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "N509FZ",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/41/Homemade_Hotpot.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Homemade Hotpot.jpg",
+        "path": "work/WBCKG6/cand_commons/d05_chongqing_hotpot_5.jpg",
+        "license": "CC BY-SA 2.0",
+        "credit": "Jonathan Lin from Singapore, xinjiapore",
+        "lat": 1.3719444444444444,
+        "lon": 103.87333333333332,
+        "in_region": false
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Yuanyang_Chongqing_Hotpot_Box_Hill.jpg/3840px-Yuanyang_Chongqing_Hotpot_Box_Hill.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Yuanyang Chongqing Hotpot Box Hill.jpg",
+        "path": "work/WBCKG6/cand_commons/d05_chongqing_hotpot_6.jpg",
+        "license": "CC0",
+        "credit": "Akira CA",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  }
+}
