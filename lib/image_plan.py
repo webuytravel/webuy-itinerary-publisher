@@ -345,32 +345,50 @@ def assign_trip_photos(plan: ImagePlan, sections: list[dict],
         if p.slot == "section":
             section_src.setdefault(p.position, set()).add(ident(p.src_path))
 
-    for section in sections:
-        day = section["day"]
-        blocked = section_src.get(day, set())
-        for index, item in enumerate(section.get("trip_items", [])):
-            subject = item.get("photo_subject") or item["title"]["en"]
-            ranked = sorted(
-                ((score(subject, p.subject), p) for p in pool),
-                key=lambda pair: -pair[0])
-            taken = 0
-            for value, placement in ranked:
-                if taken >= per_item or value < floor:
-                    break
-                key = ident(placement.src_path)
-                if key in blocked:
-                    continue
-                if used.get(key, 0) >= max_reuse:
-                    continue
-                used[key] = used.get(key, 0) + 1
-                plan.placements.append(Placement(
-                    slot="trip", position=day, trip_index=index,
-                    origin=placement.origin, subject=placement.subject,
-                    source_ref=placement.source_ref,
-                    src_path=placement.src_path,
-                    credit=placement.credit, license=placement.license,
-                    note=f"reused from {placement.slot}#{placement.position}"))
-                taken += 1
+    # 两遍,不是一遍。score() 比的是词面重叠,而**相邻景点的名字经常重叠**:
+    # 「Guangji Gate Chaozhou 广济楼」和「Guangji Bridge Chaozhou 湘子桥」共用
+    # guangji/chaozhou,「Chaoshan street food dumpling」和「Chaoshan night food
+    # street」共用 chaoshan/food/street。一遍扫下来,排在前面的那张卡会**把后面
+    # 那张卡自己的图吃掉**——WB9XMN 实测:广济桥那张照片挂到了广济楼的卡上,
+    # 而广济桥自己的卡是空的。页面上就是「广济桥」标题下没有图,「广济楼城门」
+    # 标题下是一座桥,和传错槽的后果一模一样,只是发生在匹配这一步。
+    #
+    # 所以先让每张卡认领 subject **完全相同**的那些(第一遍),剩下的再按词面
+    # 分数补(第二遍)。第二遍保留原来的行为,只是不会再从别人碗里拿。
+    def claim(exact_only: bool) -> None:
+        for section in sections:
+            day = section["day"]
+            blocked = section_src.get(day, set())
+            for index, item in enumerate(section.get("trip_items", [])):
+                subject = item.get("photo_subject") or item["title"]["en"]
+                taken = sum(1 for p in plan.placements
+                            if p.slot == "trip" and p.position == day
+                            and p.trip_index == index)
+                ranked = sorted(
+                    ((score(subject, p.subject), p) for p in pool),
+                    key=lambda pair: -pair[0])
+                for value, placement in ranked:
+                    if taken >= per_item or value < floor:
+                        break
+                    if exact_only and placement.subject != subject:
+                        continue
+                    key = ident(placement.src_path)
+                    if key in blocked:
+                        continue
+                    if used.get(key, 0) >= max_reuse:
+                        continue
+                    used[key] = used.get(key, 0) + 1
+                    plan.placements.append(Placement(
+                        slot="trip", position=day, trip_index=index,
+                        origin=placement.origin, subject=placement.subject,
+                        source_ref=placement.source_ref,
+                        src_path=placement.src_path,
+                        credit=placement.credit, license=placement.license,
+                        note=f"reused from {placement.slot}#{placement.position}"))
+                    taken += 1
+
+    claim(exact_only=True)
+    claim(exact_only=False)
     return plan
 
 
