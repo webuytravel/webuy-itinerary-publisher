@@ -1,0 +1,744 @@
+{
+  "d01_hong_kong_zhuhai_macau_bridge": {
+    "subject": "Hong Kong Zhuhai Macau Bridge 港珠澳大桥",
+    "query": "Hong Kong Zhuhai Macau Bridge",
+    "query_full": "Hong Kong Zhuhai Macau Bridge",
+    "shrunk": false,
+    "day": 1,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/HongKong-Macau_Bridge_S2_2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "HongKong-Macau Bridge S2 2022.jpg",
+        "path": "work/WBMZ7/cand_commons/d01_hong_kong_zhuhai_macau_bridge_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Nrg800",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Hong_Kong%E2%80%93Zhuhai%E2%80%93Macau_Bridge_01.jpg/3840px-Hong_Kong%E2%80%93Zhuhai%E2%80%93Macau_Bridge_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Hong Kong–Zhuhai–Macau Bridge 01.jpg",
+        "path": "work/WBMZ7/cand_commons/d01_hong_kong_zhuhai_macau_bridge_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Pauloleong2002",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Hong_Kong%E2%80%93Zhuhai%E2%80%93Macau_Bridge_02.jpg/3840px-Hong_Kong%E2%80%93Zhuhai%E2%80%93Macau_Bridge_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Hong Kong–Zhuhai–Macau Bridge 02.jpg",
+        "path": "work/WBMZ7/cand_commons/d01_hong_kong_zhuhai_macau_bridge_3.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Pauloleong2002",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Hong_Kong%E2%80%93Zhuhai%E2%80%93Macau_Bridge_steel_at_NMC.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Hong Kong–Zhuhai–Macau Bridge steel at NMC.jpg",
+        "path": "work/WBMZ7/cand_commons/d01_hong_kong_zhuhai_macau_bridge_4.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Shujianyang",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/View_of_the_Hong_Kong-Zhuhai-Macau_Bridge_Zhuhai_Port_from_Zhuhai_Qingl%C3%BC_South_Road_20250130.jpg/3840px-View_of_the_Hong_Kong-Zhuhai-Macau_Bridge_Zhuhai_Port_from_Zhuhai_Qingl%C3%BC_South_Road_20250130.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "View of the Hong Kong-Zhuhai-Macau Bridge Zhuhai Port from Zhuhai Qinglü South Road 20250130.jpg",
+        "path": "work/WBMZ7/cand_commons/d01_hong_kong_zhuhai_macau_bridge_5.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "JULIANISME",
+        "lat": 22.23468888888889,
+        "lon": 113.56586388888888,
+        "in_region": true
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/West_section_of_Hong_Kong-Zhuhai-Macau_Bridge_%2820180902174105%29.jpg/3840px-West_section_of_Hong_Kong-Zhuhai-Macau_Bridge_%2820180902174105%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "West section of Hong Kong-Zhuhai-Macau Bridge (20180902174105).jpg",
+        "path": "work/WBMZ7/cand_commons/d01_hong_kong_zhuhai_macau_bridge_6.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "N509FZ",
+        "lat": 22.178843333333333,
+        "lon": 113.58017,
+        "in_region": true
+      }
+    ]
+  },
+  "d02_nangang_yao_village_liannan": {
+    "subject": "Nangang Yao Village Liannan 千年瑶寨",
+    "query": "Nangang Yao",
+    "query_full": "Nangang Yao Village Liannan",
+    "shrunk": true,
+    "day": 2,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Harbinblue.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Harbinblue.jpg",
+        "path": "work/WBMZ7/cand_commons/d02_nangang_yao_village_liannan_1.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Inauguration_tablet_of_Taipei_MRT_Taipei_Main_Station_20101115.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Inauguration tablet of Taipei MRT Taipei Main Station 20101115.jpg",
+        "path": "work/WBMZ7/cand_commons/d02_nangang_yao_village_liannan_2.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Solomon203",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Inauguration_tablet_of_Taipei_MRT_Zhongxiao_Fuxing_Station_20171028.jpg/1920px-Inauguration_tablet_of_Taipei_MRT_Zhongxiao_Fuxing_Station_20171028.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Inauguration tablet of Taipei MRT Zhongxiao Fuxing Station 20171028.jpg",
+        "path": "work/WBMZ7/cand_commons/d02_nangang_yao_village_liannan_3.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Solomon203",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d02_lianzhou_underground_river": {
+    "subject": "Lianzhou Underground River 连州地下河",
+    "query": "Lianzhou Underground River",
+    "query_full": "Lianzhou Underground River",
+    "shrunk": false,
+    "day": 2,
+    "candidates": []
+  },
+  "d03_mangshan_five_finger_peak_yizhang": {
+    "subject": "Mangshan Five Finger Peak Yizhang 莽山五指峰",
+    "query": "Mangshan Five Finger Peak Yizhang",
+    "query_full": "Mangshan Five Finger Peak Yizhang",
+    "shrunk": false,
+    "day": 3,
+    "candidates": []
+  },
+  "d04_dongjiang_lake_zixing": {
+    "subject": "Dongjiang Lake Zixing 东江湖",
+    "query": "Dongjiang Lake Zixing",
+    "query_full": "Dongjiang Lake Zixing",
+    "shrunk": false,
+    "day": 4,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Dongjiang_Lake%2C_Hunan%2C_China1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Dongjiang Lake, Hunan, China1.jpg",
+        "path": "work/WBMZ7/cand_commons/d04_dongjiang_lake_zixing_1.jpg",
+        "license": "CC BY 2.5",
+        "credit": "伊口",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Dongjiang_Lake%2C_Hunan%2C_China23.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Dongjiang Lake, Hunan, China23.jpg",
+        "path": "work/WBMZ7/cand_commons/d04_dongjiang_lake_zixing_2.jpg",
+        "license": "CC BY 2.5",
+        "credit": "杰·影",
+        "lat": 25.90238611111111,
+        "lon": 113.27953333333333,
+        "in_region": true
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Dongjiang_Lake%2C_Hunan%2C_China24.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Dongjiang Lake, Hunan, China24.jpg",
+        "path": "work/WBMZ7/cand_commons/d04_dongjiang_lake_zixing_3.jpg",
+        "license": "CC BY 2.5",
+        "credit": "杰·影",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Dongjiang_Lake%2C_Hunan%2C_China7.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Dongjiang Lake, Hunan, China7.jpg",
+        "path": "work/WBMZ7/cand_commons/d04_dongjiang_lake_zixing_4.jpg",
+        "license": "CC BY 2.5",
+        "credit": "杰·影",
+        "lat": 25.867730555555557,
+        "lon": 113.35925277777777,
+        "in_region": true
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/af/Dongjiang_Lake%2C_Hunan%2C_China8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Dongjiang Lake, Hunan, China8.jpg",
+        "path": "work/WBMZ7/cand_commons/d04_dongjiang_lake_zixing_5.jpg",
+        "license": "CC BY 2.5",
+        "credit": "杰·影",
+        "lat": 25.873644444444444,
+        "lon": 113.35099722222222,
+        "in_region": true
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/84/Dongjiang_Lake%2C_Hunan%2C_China9.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Dongjiang Lake, Hunan, China9.jpg",
+        "path": "work/WBMZ7/cand_commons/d04_dongjiang_lake_zixing_6.jpg",
+        "license": "CC BY 2.5",
+        "credit": "杰·影",
+        "lat": 25.871591666666667,
+        "lon": 113.35006666666666,
+        "in_region": true
+      }
+    ]
+  },
+  "d04_longjing_grand_canyon_waterfall_zi": {
+    "subject": "Longjing Grand Canyon waterfall Zixing 龙景峡谷",
+    "query": "Longjing Grand Canyon waterfall Zixing",
+    "query_full": "Longjing Grand Canyon waterfall Zixing",
+    "shrunk": false,
+    "day": 4,
+    "candidates": []
+  },
+  "d04_suxian_mountain_chenzhou": {
+    "subject": "Suxian Mountain Chenzhou 苏仙岭",
+    "query": "Suxian Mountain Chenzhou",
+    "query_full": "Suxian Mountain Chenzhou",
+    "shrunk": false,
+    "day": 4,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/%E9%A3%9E%E5%A4%A9%E5%B1%B1_-_Feitian_Mountain_-_2014.12_-_panoramio.jpg/3840px-%E9%A3%9E%E5%A4%A9%E5%B1%B1_-_Feitian_Mountain_-_2014.12_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "飞天山 - Feitian Mountain - 2014.12 - panoramio.jpg",
+        "path": "work/WBMZ7/cand_commons/d04_suxian_mountain_chenzhou_1.jpg",
+        "license": "CC BY 3.0",
+        "credit": "rheins",
+        "lat": 25.91616111111111,
+        "lon": 113.12392777777777,
+        "in_region": true
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/%E9%A3%9E%E5%A4%A9%E5%B1%B1_-_Feitian_Mountain_-_2014.12_-_panoramio_%281%29.jpg/3840px-%E9%A3%9E%E5%A4%A9%E5%B1%B1_-_Feitian_Mountain_-_2014.12_-_panoramio_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "飞天山 - Feitian Mountain - 2014.12 - panoramio (1).jpg",
+        "path": "work/WBMZ7/cand_commons/d04_suxian_mountain_chenzhou_2.jpg",
+        "license": "CC BY 3.0",
+        "credit": "rheins",
+        "lat": 25.912969444444443,
+        "lon": 113.12045555555555,
+        "in_region": true
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/%E9%A3%9E%E5%A4%A9%E5%B1%B1%E8%8D%89%E5%8E%9F_-_Feitian_Mountain_Meadow_-_2014.12_-_panoramio.jpg/3840px-%E9%A3%9E%E5%A4%A9%E5%B1%B1%E8%8D%89%E5%8E%9F_-_Feitian_Mountain_Meadow_-_2014.12_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "飞天山草原 - Feitian Mountain Meadow - 2014.12 - panoramio.jpg",
+        "path": "work/WBMZ7/cand_commons/d04_suxian_mountain_chenzhou_3.jpg",
+        "license": "CC BY 3.0",
+        "credit": "rheins",
+        "lat": 25.915074999999998,
+        "lon": 113.12079999999999,
+        "in_region": true
+      }
+    ]
+  },
+  "d05_yangtianhu_grassland_chenzhou": {
+    "subject": "Yangtianhu Grassland Chenzhou 仰天湖大草原",
+    "query": "Yangtianhu Grassland Chenzhou",
+    "query_full": "Yangtianhu Grassland Chenzhou",
+    "shrunk": false,
+    "day": 5,
+    "candidates": []
+  },
+  "d05_hunan_silver_museum_chenzhou": {
+    "subject": "Hunan Silver Museum Chenzhou 湖南白银博物馆",
+    "query": "Hunan Silver Museum",
+    "query_full": "Hunan Silver Museum Chenzhou",
+    "shrunk": true,
+    "day": 5,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/62/Bixie_%28chimera%29%2C_attributed_to_Chu_culture%2C_Hunan_or_Hubei_province%2C_China%2C_Western_Han_dynasty%2C_2nd-1st_century_BC%2C_cast_iron_with_silver_inlay_-_Portland_Art_Museum_-_Portland%2C_Oregon_-_DSC08552.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Bixie (chimera), attributed to Chu culture, Hunan or Hubei province, China, Western Han dynasty, 2nd-1st century BC, cast iron with silver inlay - Portland Art Museum - Portland, Oregon - DSC08552.jpg",
+        "path": "work/WBMZ7/cand_commons/d05_hunan_silver_museum_chenzhou_1.jpg",
+        "license": "Public domain",
+        "credit": "Daderot",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Bixie_%28chimera%29%2C_detail%2C_attributed_to_Chu_culture%2C_Hunan_or_Hubei_province%2C_China%2C_Western_Han_dynasty%2C_2nd-1st_century_BC%2C_cast_iron_with_silver_inlay_-_Portland_Art_Museum_-_Portland%2C_Oregon_-_DSC08555.jpg/3840px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Bixie (chimera), detail, attributed to Chu culture, Hunan or Hubei province, China, Western Han dynasty, 2nd-1st century BC, cast iron with silver inlay - Portland Art Museum - Portland, Oregon - DSC08555.jpg",
+        "path": "work/WBMZ7/cand_commons/d05_hunan_silver_museum_chenzhou_2.jpg",
+        "license": "Public domain",
+        "credit": "Daderot",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/60/Teapots%2C_silver_bowls_and_silver_jars%2C_Song_dynasty%2C_Hunan_Museum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Teapots, silver bowls and silver jars, Song dynasty, Hunan Museum.jpg",
+        "path": "work/WBMZ7/cand_commons/d05_hunan_silver_museum_chenzhou_3.jpg",
+        "license": "CC0",
+        "credit": "Huangdan2060",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d05_yuhou_street_chenzhou": {
+    "subject": "Yuhou Street Chenzhou 裕后街",
+    "query": "Yuhou Street Chenzhou",
+    "query_full": "Yuhou Street Chenzhou",
+    "shrunk": false,
+    "day": 5,
+    "candidates": []
+  },
+  "d06_haixinsha_asian_games_park_guangzh": {
+    "subject": "Haixinsha Asian Games Park Guangzhou 海心沙",
+    "query": "Haixinsha Asian Games Park Guangzhou",
+    "query_full": "Haixinsha Asian Games Park Guangzhou",
+    "shrunk": false,
+    "day": 6,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/74/An_Exit_for_Haixinsha_Station_in_Haixinsha_Asian_Games_Park.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "An Exit for Haixinsha Station in Haixinsha Asian Games Park.jpg",
+        "path": "work/WBMZ7/cand_commons/d06_haixinsha_asian_games_park_guangzh_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "CRCHF",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Haixinsha_20260122-01.jpg/3840px-Haixinsha_20260122-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Haixinsha 20260122-01.jpg",
+        "path": "work/WBMZ7/cand_commons/d06_haixinsha_asian_games_park_guangzh_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "中少",
+        "lat": 23.114909,
+        "lon": 113.316191,
+        "in_region": true
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Haixinsha_20260122-02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Haixinsha 20260122-02.jpg",
+        "path": "work/WBMZ7/cand_commons/d06_haixinsha_asian_games_park_guangzh_3.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "中少",
+        "lat": 23.114909,
+        "lon": 113.316191,
+        "in_region": true
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Haixinsha_20260122-03.jpg/3840px-Haixinsha_20260122-03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Haixinsha 20260122-03.jpg",
+        "path": "work/WBMZ7/cand_commons/d06_haixinsha_asian_games_park_guangzh_4.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "中少",
+        "lat": 23.114359,
+        "lon": 113.316417,
+        "in_region": true
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Haixinsha_Asian_Games_Park_20230201-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Haixinsha Asian Games Park 20230201-01.jpg",
+        "path": "work/WBMZ7/cand_commons/d06_haixinsha_asian_games_park_guangzh_5.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "中少",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Haixinsha_Asian_Games_Park_20230201-02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Haixinsha Asian Games Park 20230201-02.jpg",
+        "path": "work/WBMZ7/cand_commons/d06_haixinsha_asian_games_park_guangzh_6.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "中少",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d06_canton_tower": {
+    "subject": "Canton Tower 广州塔",
+    "query": "Canton Tower",
+    "query_full": "Canton Tower",
+    "shrunk": false,
+    "day": 6,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Bank_of_Guangzhou_Tower_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Bank of Guangzhou Tower 1.jpg",
+        "path": "work/WBMZ7/cand_commons/d06_canton_tower_1.jpg",
+        "license": "CC0",
+        "credit": "Mx. Granger",
+        "lat": 23.124103972222223,
+        "lon": 113.318027,
+        "in_region": true
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Canton_Tower_20220626_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Canton Tower 20220626 (cropped).jpg",
+        "path": "work/WBMZ7/cand_commons/d06_canton_tower_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Tim Wu",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Canton_Tower_20220626_%28cropped_2%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Canton Tower 20220626 (cropped 2).jpg",
+        "path": "work/WBMZ7/cand_commons/d06_canton_tower_3.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Tim Wu",
+        "lat": 23.0982063,
+        "lon": 113.31894591666666,
+        "in_region": true
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Canton_Tower_20241027.jpg/3840px-Canton_Tower_20241027.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Canton Tower 20241027.jpg",
+        "path": "work/WBMZ7/cand_commons/d06_canton_tower_4.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Tim Wu",
+        "lat": 23.099914221666666,
+        "lon": 113.31902597166666,
+        "in_region": true
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Canton_Tower_at_night_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Canton Tower at night 01.jpg",
+        "path": "work/WBMZ7/cand_commons/d06_canton_tower_5.jpg",
+        "license": "CC0",
+        "credit": "Shujianyang",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/79/Canton_tower_in_asian_games_opening_ceremony.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Canton tower in asian games opening ceremony.jpg",
+        "path": "work/WBMZ7/cand_commons/d06_canton_tower_6.jpg",
+        "license": "CC BY-SA 2.0",
+        "credit": "Colin Zhu from Guangzhou, China",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d06_dafo_temple_guangzhou": {
+    "subject": "Dafo Temple Guangzhou 广州大佛寺",
+    "query": "Dafo Temple Guangzhou",
+    "query_full": "Dafo Temple Guangzhou",
+    "shrunk": false,
+    "day": 6,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Dafo_Temple%2C_Guangzhou%2C_picture6.jpg/3840px-Dafo_Temple%2C_Guangzhou%2C_picture6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Dafo Temple, Guangzhou, picture6.jpg",
+        "path": "work/WBMZ7/cand_commons/d06_dafo_temple_guangzhou_1.jpg",
+        "license": "CC0",
+        "credit": "Huangdan2060",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Shanmen%2C_Guangzhou_Dafo_Temple.jpg/3840px-Shanmen%2C_Guangzhou_Dafo_Temple.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Shanmen, Guangzhou Dafo Temple.jpg",
+        "path": "work/WBMZ7/cand_commons/d06_dafo_temple_guangzhou_2.jpg",
+        "license": "CC0",
+        "credit": "Huangdan2060",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/The_eastern_Dh%E1%B9%9Btar%C4%81%E1%B9%A3%E1%B9%ADra%2C_Guangzhou_Dafo_Temple.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "The eastern Dhṛtarāṣṭra, Guangzhou Dafo Temple.jpg",
+        "path": "work/WBMZ7/cand_commons/d06_dafo_temple_guangzhou_3.jpg",
+        "license": "CC0",
+        "credit": "Huangdan2060",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/07/The_northern_Vai%C5%9Brava%E1%B9%87a%2C_Guangzhou_Dafo_Temple.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "The northern Vaiśravaṇa, Guangzhou Dafo Temple.jpg",
+        "path": "work/WBMZ7/cand_commons/d06_dafo_temple_guangzhou_4.jpg",
+        "license": "CC0",
+        "credit": "Huangdan2060",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/The_southern_Vir%C5%AB%E1%B8%8Dhaka%2C_Guangzhou_Dafo_Temple.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "The southern Virūḍhaka, Guangzhou Dafo Temple.jpg",
+        "path": "work/WBMZ7/cand_commons/d06_dafo_temple_guangzhou_5.jpg",
+        "license": "CC0",
+        "credit": "Huangdan2060",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/56/The_western_Vir%C5%ABp%C4%81k%E1%B9%A3a%2C_Guangzhou_Dafo_Temple.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "The western Virūpākṣa, Guangzhou Dafo Temple.jpg",
+        "path": "work/WBMZ7/cand_commons/d06_dafo_temple_guangzhou_6.jpg",
+        "license": "CC0",
+        "credit": "Huangdan2060",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d06_beijing_road_pedestrian_street_gua": {
+    "subject": "Beijing Road Pedestrian Street Guangzhou 北京路步行街",
+    "query": "Beijing Road Pedestrian Street Guangzhou",
+    "query_full": "Beijing Road Pedestrian Street Guangzhou",
+    "shrunk": false,
+    "day": 6,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/20250222_Street_scene_of_Beijing_Road_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "20250222 Street scene of Beijing Road 03.jpg",
+        "path": "work/WBMZ7/cand_commons/d06_beijing_road_pedestrian_street_gua_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Windmemories",
+        "lat": 23.12560277777778,
+        "lon": 113.263625,
+        "in_region": true
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Beijing_Lu_Pedestrian_Area_2019.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Beijing Lu Pedestrian Area 2019.jpg",
+        "path": "work/WBMZ7/cand_commons/d06_beijing_road_pedestrian_street_gua_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Wpcpey",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Beijing_Lu_Pedestrian_Street.JPG/1920px-Beijing_Lu_Pedestrian_Street.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Beijing Lu Pedestrian Street.JPG",
+        "path": "work/WBMZ7/cand_commons/d06_beijing_road_pedestrian_street_gua_3.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Lai.jack",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Guangzhou_Yuexiu_Beijing_Lu_2023-05-30_09.55.43.jpg/3840px-Guangzhou_Yuexiu_Beijing_Lu_2023-05-30_09.55.43.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Guangzhou Yuexiu Beijing Lu 2023-05-30 09.55.43.jpg",
+        "path": "work/WBMZ7/cand_commons/d06_beijing_road_pedestrian_street_gua_4.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "古海岸遗址",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Guangzhou_Yuexiu_Beijing_Lu_2023-05-30_10.00.26.jpg/3840px-Guangzhou_Yuexiu_Beijing_Lu_2023-05-30_10.00.26.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Guangzhou Yuexiu Beijing Lu 2023-05-30 10.00.26.jpg",
+        "path": "work/WBMZ7/cand_commons/d06_beijing_road_pedestrian_street_gua_5.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "古海岸遗址",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Guangzhou_Yuexiu_Beijing_Lu_2023-05-30_10.05.04.jpg/3840px-Guangzhou_Yuexiu_Beijing_Lu_2023-05-30_10.05.04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Guangzhou Yuexiu Beijing Lu 2023-05-30 10.05.04.jpg",
+        "path": "work/WBMZ7/cand_commons/d06_beijing_road_pedestrian_street_gua_6.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "古海岸遗址",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d07_zhuhai_fisher_girl_seafront": {
+    "subject": "Zhuhai Fisher Girl seafront 珠海渔女",
+    "query": "Zhuhai Fisher Girl",
+    "query_full": "Zhuhai Fisher Girl seafront",
+    "shrunk": true,
+    "day": 7,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/64/Fisher_Girl_Statue.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Fisher Girl Statue.jpg",
+        "path": "work/WBMZ7/cand_commons/d07_zhuhai_fisher_girl_seafront_1.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "9old9",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Zhuhai_Fisher_Girl_statue_1.jpg/3840px-Zhuhai_Fisher_Girl_statue_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Zhuhai Fisher Girl statue 1.jpg",
+        "path": "work/WBMZ7/cand_commons/d07_zhuhai_fisher_girl_seafront_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "钉钉",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Zhuhai_Fisher_Girl_statue_2.jpg/3840px-Zhuhai_Fisher_Girl_statue_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Zhuhai Fisher Girl statue 2.jpg",
+        "path": "work/WBMZ7/cand_commons/d07_zhuhai_fisher_girl_seafront_3.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "钉钉",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Zhuhai_Fisher_Girl_statue_3.jpg/3840px-Zhuhai_Fisher_Girl_statue_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Zhuhai Fisher Girl statue 3.jpg",
+        "path": "work/WBMZ7/cand_commons/d07_zhuhai_fisher_girl_seafront_4.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "钉钉",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Zhuhai_Fisher_Girl_statue_dllu.jpg/3840px-Zhuhai_Fisher_Girl_statue_dllu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Zhuhai Fisher Girl statue dllu.jpg",
+        "path": "work/WBMZ7/cand_commons/d07_zhuhai_fisher_girl_seafront_5.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Dllu",
+        "lat": 22.26500165,
+        "lon": 113.58325498333333,
+        "in_region": true
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Zhuhai_Fishing_Girl_Night_View.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Zhuhai Fishing Girl Night View.jpg",
+        "path": "work/WBMZ7/cand_commons/d07_zhuhai_fisher_girl_seafront_6.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Iswzo",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  }
+}

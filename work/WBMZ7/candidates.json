@@ -1,0 +1,737 @@
+{
+  "d01_hong_kong_zhuhai_macau_bridge": {
+    "subject": "Hong Kong Zhuhai Macau Bridge 港珠澳大桥",
+    "region": "Guangdong China",
+    "day": 1,
+    "candidates": [
+      {
+        "n": 1,
+        "source": "pexels",
+        "title": "Scenic aerial view of the Hong Kong-Zhuhai-Macau Bridge spanning over tranquil w",
+        "url": "https://images.pexels.com/photos/32871281/pexels-photo-32871281.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d01_hong_kong_zhuhai_macau_bridge_1.jpg"
+      },
+      {
+        "n": 2,
+        "source": "pexels",
+        "title": "Tranquil scene of Shenzhen Bay Bridge against a serene sunset backdrop over calm",
+        "url": "https://images.pexels.com/photos/17989747/pexels-photo-17989747.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d01_hong_kong_zhuhai_macau_bridge_2.jpg"
+      },
+      {
+        "n": 3,
+        "source": "pexels",
+        "title": "Serene view of Hong Kong's skyline and bridge at twilight, showcasing stunning c",
+        "url": "https://images.pexels.com/photos/36953434/pexels-photo-36953434.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d01_hong_kong_zhuhai_macau_bridge_3.jpg"
+      },
+      {
+        "n": 4,
+        "source": "pexels",
+        "title": "A scenic view of Shenzhen Bay Bridge at sunset, showcasing modern architecture a",
+        "url": "https://images.pexels.com/photos/17954340/pexels-photo-17954340.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d01_hong_kong_zhuhai_macau_bridge_4.jpg"
+      },
+      {
+        "n": 5,
+        "source": "pexels",
+        "title": "A contemporary bridge stretching over water with a city skyline in the distance.",
+        "url": "https://images.pexels.com/photos/30119261/pexels-photo-30119261.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d01_hong_kong_zhuhai_macau_bridge_5.jpg"
+      },
+      {
+        "n": 6,
+        "source": "pexels",
+        "title": "Panoramic view of the Shenzhen Bay Bridge connecting Hong Kong and Shenzhen at s",
+        "url": "https://images.pexels.com/photos/17989749/pexels-photo-17989749.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d01_hong_kong_zhuhai_macau_bridge_6.jpg"
+      }
+    ]
+  },
+  "d02_nangang_yao_village_liannan": {
+    "subject": "Nangang Yao Village Liannan 千年瑶寨",
+    "region": "Guangdong China",
+    "day": 2,
+    "candidates": [
+      {
+        "n": 1,
+        "source": "pexels",
+        "title": "Discover the picturesque view of traditional rooftops framed by an open window i",
+        "url": "https://images.pexels.com/photos/17098031/pexels-photo-17098031.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d02_nangang_yao_village_liannan_1.jpg"
+      },
+      {
+        "n": 2,
+        "source": "pexels",
+        "title": "Scenic view of green terraced fields and small village in Qingyuan, China. A tra",
+        "url": "https://images.pexels.com/photos/13656449/pexels-photo-13656449.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d02_nangang_yao_village_liannan_2.jpg"
+      },
+      {
+        "n": 3,
+        "source": "pexels",
+        "title": "A woman skillfully crafts clay pots in a traditional Guangdong pottery workshop.",
+        "url": "https://images.pexels.com/photos/37582040/pexels-photo-37582040.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d02_nangang_yao_village_liannan_3.jpg"
+      },
+      {
+        "n": 4,
+        "source": "pexels",
+        "title": "Elderly men skillfully weave wicker baskets in a traditional setting in Foshan, ",
+        "url": "https://images.pexels.com/photos/37582047/pexels-photo-37582047.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d02_nangang_yao_village_liannan_4.jpg"
+      },
+      {
+        "n": 5,
+        "source": "pexels",
+        "title": "Charming rustic village surrounded by lush greenery in Ha Giang, Vietnam.",
+        "url": "https://images.pexels.com/photos/34522664/pexels-photo-34522664.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d02_nangang_yao_village_liannan_5.jpg"
+      },
+      {
+        "n": 6,
+        "source": "pexels",
+        "title": "Lively view of a street market in Guangzhou, China displaying traditional goods ",
+        "url": "https://images.pexels.com/photos/35272164/pexels-photo-35272164.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d02_nangang_yao_village_liannan_6.jpg"
+      }
+    ]
+  },
+  "d02_lianzhou_underground_river": {
+    "subject": "Lianzhou Underground River 连州地下河",
+    "region": "Guangdong China",
+    "day": 2,
+    "candidates": [
+      {
+        "n": 1,
+        "source": "pexels",
+        "title": "Charming canal view in Guangzhou with historic architecture and lush greenery.",
+        "url": "https://images.pexels.com/photos/35272125/pexels-photo-35272125.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d02_lianzhou_underground_river_1.jpg"
+      },
+      {
+        "n": 2,
+        "source": "pexels",
+        "title": "Beautiful traditional pavilion and intricately carved columns in a lush Guangzho",
+        "url": "https://images.pexels.com/photos/36063983/pexels-photo-36063983.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d02_lianzhou_underground_river_2.jpg"
+      },
+      {
+        "n": 3,
+        "source": "pexels",
+        "title": "Explore a serene urban canal in Guangzhou, highlighting residential life and arc",
+        "url": "https://images.pexels.com/photos/35272133/pexels-photo-35272133.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d02_lianzhou_underground_river_3.jpg"
+      },
+      {
+        "n": 4,
+        "source": "pexels",
+        "title": "Lush greenery and calm river scene in Guangzhou park, perfect for nature enthusi",
+        "url": "https://images.pexels.com/photos/36064129/pexels-photo-36064129.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d02_lianzhou_underground_river_4.jpg"
+      },
+      {
+        "n": 5,
+        "source": "pexels",
+        "title": "Ancient stone building with red window frames and visible air conditioning units",
+        "url": "https://images.pexels.com/photos/32292046/pexels-photo-32292046.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d02_lianzhou_underground_river_5.jpg"
+      },
+      {
+        "n": 6,
+        "source": "pexels",
+        "title": "Scenic view of historic architecture and serene river in Guangzhou, China.",
+        "url": "https://images.pexels.com/photos/35272137/pexels-photo-35272137.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d02_lianzhou_underground_river_6.jpg"
+      }
+    ]
+  },
+  "d03_mangshan_five_finger_peak_yizhang": {
+    "subject": "Mangshan Five Finger Peak Yizhang 莽山五指峰",
+    "region": "Guangdong China",
+    "day": 3,
+    "candidates": [
+      {
+        "n": 1,
+        "source": "pexels",
+        "title": "Aerial view of Guilin showcasing Solitary Beauty Peak with stunning karst mounta",
+        "url": "https://images.pexels.com/photos/19966097/pexels-photo-19966097.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d03_mangshan_five_finger_peak_yizhang_1.jpg"
+      },
+      {
+        "n": 2,
+        "source": "pexels",
+        "title": "Serene view of misty mountain ranges with lush vegetation and dense fog.",
+        "url": "https://images.pexels.com/photos/34711755/pexels-photo-34711755.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d03_mangshan_five_finger_peak_yizhang_2.jpg"
+      },
+      {
+        "n": 3,
+        "source": "pexels",
+        "title": "A striking view of towering rock formations amidst lush greenery and distant mou",
+        "url": "https://images.pexels.com/photos/36621306/pexels-photo-36621306.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d03_mangshan_five_finger_peak_yizhang_3.jpg"
+      },
+      {
+        "n": 4,
+        "source": "pexels",
+        "title": "Stunning view of the Huangshan mountain peaks surrounded by lush greenery in Anh",
+        "url": "https://images.pexels.com/photos/34753693/pexels-photo-34753693.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d03_mangshan_five_finger_peak_yizhang_4.jpg"
+      },
+      {
+        "n": 5,
+        "source": "pexels",
+        "title": "Close-up of ancient rock with inscriptions surrounded by lush greenery.",
+        "url": "https://images.pexels.com/photos/38880895/pexels-photo-38880895.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d03_mangshan_five_finger_peak_yizhang_5.jpg"
+      },
+      {
+        "n": 6,
+        "source": "pexels",
+        "title": "A stunning view of a rocky mountain peak under a clear blue sky, surrounded by l",
+        "url": "https://images.pexels.com/photos/17358826/pexels-photo-17358826.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d03_mangshan_five_finger_peak_yizhang_6.jpg"
+      }
+    ]
+  },
+  "d04_dongjiang_lake_zixing": {
+    "subject": "Dongjiang Lake Zixing 东江湖",
+    "region": "Guangdong China",
+    "day": 4,
+    "candidates": [
+      {
+        "n": 1,
+        "source": "pexels",
+        "title": "Peaceful park scene by a river with lush greenery and people enjoying a walk.",
+        "url": "https://images.pexels.com/photos/36064128/pexels-photo-36064128.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d04_dongjiang_lake_zixing_1.jpg"
+      },
+      {
+        "n": 2,
+        "source": "pexels",
+        "title": "Serene view of historic boats and structures on West Lake in Hangzhou, China, wi",
+        "url": "https://images.pexels.com/photos/34432214/pexels-photo-34432214.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d04_dongjiang_lake_zixing_2.jpg"
+      },
+      {
+        "n": 3,
+        "source": "pexels",
+        "title": "Tranquil lake scene surrounded by lush green hills under a vibrant sky, capturin",
+        "url": "https://images.pexels.com/photos/21968636/pexels-photo-21968636.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d04_dongjiang_lake_zixing_3.jpg"
+      },
+      {
+        "n": 4,
+        "source": "pexels",
+        "title": "A breathtaking aerial perspective of a pagoda perched on a rocky mountaintop in ",
+        "url": "https://images.pexels.com/photos/21823126/pexels-photo-21823126.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d04_dongjiang_lake_zixing_4.jpg"
+      },
+      {
+        "n": 5,
+        "source": "pexels",
+        "title": "Drone shot over lush forests and serene lake in Jiangxi, China at sunset.",
+        "url": "https://images.pexels.com/photos/21968630/pexels-photo-21968630.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d04_dongjiang_lake_zixing_5.jpg"
+      },
+      {
+        "n": 6,
+        "source": "pexels",
+        "title": "Elegant white building with clock tower reflecting on a tranquil lake in Guangzh",
+        "url": "https://images.pexels.com/photos/20305297/pexels-photo-20305297.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d04_dongjiang_lake_zixing_6.jpg"
+      }
+    ]
+  },
+  "d04_longjing_grand_canyon_waterfall_zi": {
+    "subject": "Longjing Grand Canyon waterfall Zixing 龙景峡谷",
+    "region": "Guangdong China",
+    "day": 4,
+    "candidates": [
+      {
+        "n": 1,
+        "source": "pexels",
+        "title": "The breathtaking view of Tiger Leaping Gorge, a famous canyon in Yunnan, China, ",
+        "url": "https://images.pexels.com/photos/36875562/pexels-photo-36875562.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d04_longjing_grand_canyon_waterfall_zi_1.jpg"
+      },
+      {
+        "n": 2,
+        "source": "pexels",
+        "title": "A stunning aerial view of a waterfall cascading down rocky cliffs surrounded by ",
+        "url": "https://images.pexels.com/photos/37519011/pexels-photo-37519011.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d04_longjing_grand_canyon_waterfall_zi_2.jpg"
+      },
+      {
+        "n": 3,
+        "source": "pexels",
+        "title": "A tranquil waterfall cascades into a clear blue pool surrounded by rocky formati",
+        "url": "https://images.pexels.com/photos/15386162/pexels-photo-15386162.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d04_longjing_grand_canyon_waterfall_zi_3.jpg"
+      },
+      {
+        "n": 4,
+        "source": "pexels",
+        "title": "A lone man stands in awe before a grand waterfall surrounded by lush greenery in",
+        "url": "https://images.pexels.com/photos/21621511/pexels-photo-21621511.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d04_longjing_grand_canyon_waterfall_zi_4.jpg"
+      },
+      {
+        "n": 5,
+        "source": "pexels",
+        "title": "Stunning view of a waterfall cascading down a rocky canyon, surrounded by lush g",
+        "url": "https://images.pexels.com/photos/18081094/pexels-photo-18081094.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d04_longjing_grand_canyon_waterfall_zi_5.jpg"
+      },
+      {
+        "n": 6,
+        "source": "pexels",
+        "title": "A picturesque waterfall surrounded by lush greenery and rock formations under a ",
+        "url": "https://images.pexels.com/photos/2415434/pexels-photo-2415434.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d04_longjing_grand_canyon_waterfall_zi_6.jpg"
+      }
+    ]
+  },
+  "d04_suxian_mountain_chenzhou": {
+    "subject": "Suxian Mountain Chenzhou 苏仙岭",
+    "region": "Guangdong China",
+    "day": 4,
+    "candidates": [
+      {
+        "n": 1,
+        "source": "pexels",
+        "title": "A beautiful aerial view of a city with high-rise buildings and mountains in the ",
+        "url": "https://images.pexels.com/photos/38945959/pexels-photo-38945959.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d04_suxian_mountain_chenzhou_1.jpg"
+      },
+      {
+        "n": 2,
+        "source": "pexels",
+        "title": "The main entrance of Baiyun Mountain in Guangzhou, Guangdong Province, China.",
+        "url": "https://images.pexels.com/photos/36064131/pexels-photo-36064131.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d04_suxian_mountain_chenzhou_2.jpg"
+      },
+      {
+        "n": 3,
+        "source": "pexels",
+        "title": "A view of the Guanyin statue at Mount Xiqiao in Nanhai District, Foshan, China.",
+        "url": "https://images.pexels.com/photos/19900074/pexels-photo-19900074.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d04_suxian_mountain_chenzhou_3.jpg"
+      },
+      {
+        "n": 4,
+        "source": "pexels",
+        "title": "Aerial view of Wind Valley Golf Club surrounded by lush green mountains and vill",
+        "url": "https://images.pexels.com/photos/23490676/pexels-photo-23490676.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d04_suxian_mountain_chenzhou_4.jpg"
+      },
+      {
+        "n": 5,
+        "source": "pexels",
+        "title": "Beautiful traditional pavilion and intricately carved columns in a lush Guangzho",
+        "url": "https://images.pexels.com/photos/36063983/pexels-photo-36063983.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d04_suxian_mountain_chenzhou_5.jpg"
+      },
+      {
+        "n": 6,
+        "source": "pexels",
+        "title": "Dense fog envelops a lush forest canopy in Shenzhen, creating a mystical and ser",
+        "url": "https://images.pexels.com/photos/37284307/pexels-photo-37284307.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d04_suxian_mountain_chenzhou_6.jpg"
+      }
+    ]
+  },
+  "d05_yangtianhu_grassland_chenzhou": {
+    "subject": "Yangtianhu Grassland Chenzhou 仰天湖大草原",
+    "region": "Guangdong China",
+    "day": 5,
+    "candidates": [
+      {
+        "n": 1,
+        "source": "pexels",
+        "title": "A woman stands in a field of wind turbines in Inner Mongolia, China, capturing t",
+        "url": "https://images.pexels.com/photos/20445455/pexels-photo-20445455.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d05_yangtianhu_grassland_chenzhou_1.jpg"
+      },
+      {
+        "n": 2,
+        "source": "pexels",
+        "title": "Expansive landscape with wind turbines in Inner Mongolia, China, promoting renew",
+        "url": "https://images.pexels.com/photos/20445467/pexels-photo-20445467.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d05_yangtianhu_grassland_chenzhou_2.jpg"
+      },
+      {
+        "n": 3,
+        "source": "pexels",
+        "title": "Stylish depiction of individuals at a wind farm in Inner Mongolia, China.",
+        "url": "https://images.pexels.com/photos/20445450/pexels-photo-20445450.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d05_yangtianhu_grassland_chenzhou_3.jpg"
+      },
+      {
+        "n": 4,
+        "source": "pexels",
+        "title": "Beautiful close-up of a brown horse under sunlight in a rural outdoor setting. C",
+        "url": "https://images.pexels.com/photos/10899491/pexels-photo-10899491.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d05_yangtianhu_grassland_chenzhou_4.jpg"
+      },
+      {
+        "n": 5,
+        "source": "pexels",
+        "title": "Scenic landscape of lush hills with a winding pathway under a bright sky, perfec",
+        "url": "https://images.pexels.com/photos/37804519/pexels-photo-37804519.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d05_yangtianhu_grassland_chenzhou_5.jpg"
+      },
+      {
+        "n": 6,
+        "source": "pexels",
+        "title": "Explore a picturesque rural landscape with rolling green hills and a winding pat",
+        "url": "https://images.pexels.com/photos/27823876/pexels-photo-27823876.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d05_yangtianhu_grassland_chenzhou_6.jpg"
+      }
+    ]
+  },
+  "d05_hunan_silver_museum_chenzhou": {
+    "subject": "Hunan Silver Museum Chenzhou 湖南白银博物馆",
+    "region": "Guangdong China",
+    "day": 5,
+    "candidates": [
+      {
+        "n": 1,
+        "source": "pexels",
+        "title": "Stone entrance sign and garden at Liwan Museum, Guangzhou, captured during the d",
+        "url": "https://images.pexels.com/photos/35272134/pexels-photo-35272134.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d05_hunan_silver_museum_chenzhou_1.jpg"
+      },
+      {
+        "n": 2,
+        "source": "pexels",
+        "title": "Beautiful temple garden in 佛山市, Guangdong Province, China. Sunlit path surrounde",
+        "url": "https://images.pexels.com/photos/35216090/pexels-photo-35216090.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d05_hunan_silver_museum_chenzhou_2.jpg"
+      },
+      {
+        "n": 3,
+        "source": "pexels",
+        "title": "Elegant vintage silver cups with intricate designs showcased in a Belarusian mus",
+        "url": "https://images.pexels.com/photos/14644999/pexels-photo-14644999.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d05_hunan_silver_museum_chenzhou_3.jpg"
+      },
+      {
+        "n": 4,
+        "source": "pexels",
+        "title": "A traditional Chinese building set in lush greenery at Meiling Palace, Nanjing, ",
+        "url": "https://images.pexels.com/photos/33996086/pexels-photo-33996086.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d05_hunan_silver_museum_chenzhou_4.jpg"
+      },
+      {
+        "n": 5,
+        "source": "pexels",
+        "title": "A vintage-style office room in Meiling Palace, Nanjing, featuring classic wooden",
+        "url": "https://images.pexels.com/photos/33996090/pexels-photo-33996090.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d05_hunan_silver_museum_chenzhou_5.jpg"
+      },
+      {
+        "n": 6,
+        "source": "pexels",
+        "title": "A bustling street scene near Nanjing Library with taxis and a towering skyscrape",
+        "url": "https://images.pexels.com/photos/37278718/pexels-photo-37278718.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d05_hunan_silver_museum_chenzhou_6.jpg"
+      }
+    ]
+  },
+  "d05_yuhou_street_chenzhou": {
+    "subject": "Yuhou Street Chenzhou 裕后街",
+    "region": "Guangdong China",
+    "day": 5,
+    "candidates": [
+      {
+        "n": 1,
+        "source": "pexels",
+        "title": "Urban street scene in Zhuhai, China with Chinese flags and pedestrians.",
+        "url": "https://images.pexels.com/photos/28732019/pexels-photo-28732019.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d05_yuhou_street_chenzhou_1.jpg"
+      },
+      {
+        "n": 2,
+        "source": "pexels",
+        "title": "Vibrant street market stalls with various fish balls on display in Jieyang, Guan",
+        "url": "https://images.pexels.com/photos/38500379/pexels-photo-38500379.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d05_yuhou_street_chenzhou_2.jpg"
+      },
+      {
+        "n": 3,
+        "source": "pexels",
+        "title": "Lively view of a street market in Guangzhou, China displaying traditional goods ",
+        "url": "https://images.pexels.com/photos/35272164/pexels-photo-35272164.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d05_yuhou_street_chenzhou_3.jpg"
+      },
+      {
+        "n": 4,
+        "source": "pexels",
+        "title": "Charming street in Guangzhou showcasing traditional architecture and a scenic ca",
+        "url": "https://images.pexels.com/photos/35272124/pexels-photo-35272124.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d05_yuhou_street_chenzhou_4.jpg"
+      },
+      {
+        "n": 5,
+        "source": "pexels",
+        "title": "A cozy barbershop with bicycles outside in a bustling street of Guangzhou, China",
+        "url": "https://images.pexels.com/photos/7623316/pexels-photo-7623316.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d05_yuhou_street_chenzhou_5.jpg"
+      },
+      {
+        "n": 6,
+        "source": "pexels",
+        "title": "Colorful variety of street food in Jieyang, China, showcasing local culinary del",
+        "url": "https://images.pexels.com/photos/38500377/pexels-photo-38500377.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d05_yuhou_street_chenzhou_6.jpg"
+      }
+    ]
+  },
+  "d06_haixinsha_asian_games_park_guangzh": {
+    "subject": "Haixinsha Asian Games Park Guangzhou 海心沙",
+    "region": "Guangdong China",
+    "day": 6,
+    "candidates": [
+      {
+        "n": 1,
+        "source": "pexels",
+        "title": "Scenic view of Chinese pagoda and modern buildings by Haizhu Lake in Guangzhou.",
+        "url": "https://images.pexels.com/photos/20710668/pexels-photo-20710668.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d06_haixinsha_asian_games_park_guangzh_1.jpg"
+      },
+      {
+        "n": 2,
+        "source": "pexels",
+        "title": "Canton Tower framed by a circular opening against a clear blue sky.",
+        "url": "https://images.pexels.com/photos/30316448/pexels-photo-30316448.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d06_haixinsha_asian_games_park_guangzh_2.jpg"
+      },
+      {
+        "n": 3,
+        "source": "pexels",
+        "title": "Entrance archway to Baomo Garden, a notable tourist attraction in Guangzhou, Chi",
+        "url": "https://images.pexels.com/photos/5798226/pexels-photo-5798226.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d06_haixinsha_asian_games_park_guangzh_3.jpg"
+      },
+      {
+        "n": 4,
+        "source": "pexels",
+        "title": "A vibrant view of Guangzhou's illuminated skyline reflecting over the Pearl Rive",
+        "url": "https://images.pexels.com/photos/14230237/pexels-photo-14230237.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d06_haixinsha_asian_games_park_guangzh_4.jpg"
+      },
+      {
+        "n": 5,
+        "source": "pexels",
+        "title": "Aerial view of Guangzhou cityscape with towering skyscrapers and urban landscape",
+        "url": "https://images.pexels.com/photos/16776661/pexels-photo-16776661.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d06_haixinsha_asian_games_park_guangzh_5.jpg"
+      },
+      {
+        "n": 6,
+        "source": "pexels",
+        "title": "Tranquil park scene in Guangzhou featuring lush greenery, a stone bridge, and se",
+        "url": "https://images.pexels.com/photos/35272139/pexels-photo-35272139.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d06_haixinsha_asian_games_park_guangzh_6.jpg"
+      }
+    ]
+  },
+  "d06_canton_tower": {
+    "subject": "Canton Tower 广州塔",
+    "region": "Guangdong China",
+    "day": 6,
+    "candidates": [
+      {
+        "n": 1,
+        "source": "pexels",
+        "title": "A stunning aerial view of Guangzhou's cityscape and skyscrapers under a blue sky",
+        "url": "https://images.pexels.com/photos/6743444/pexels-photo-6743444.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d06_canton_tower_1.jpg"
+      },
+      {
+        "n": 2,
+        "source": "pexels",
+        "title": "Canton Tower framed by a circular opening against a clear blue sky.",
+        "url": "https://images.pexels.com/photos/30316448/pexels-photo-30316448.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d06_canton_tower_2.jpg"
+      },
+      {
+        "n": 3,
+        "source": "pexels",
+        "title": "View of Guangzhou Tower surrounded by modern architecture under clear blue skies",
+        "url": "https://images.pexels.com/photos/30304299/pexels-photo-30304299.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d06_canton_tower_3.jpg"
+      },
+      {
+        "n": 4,
+        "source": "pexels",
+        "title": "Vibrant night view of the illuminated Canton Tower in Guangzhou against a dark s",
+        "url": "https://images.pexels.com/photos/1616126/pexels-photo-1616126.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d06_canton_tower_4.jpg"
+      },
+      {
+        "n": 5,
+        "source": "pexels",
+        "title": "A striking view of the Canton Tower framed by architecture against a clear blue ",
+        "url": "https://images.pexels.com/photos/30304293/pexels-photo-30304293.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d06_canton_tower_5.jpg"
+      },
+      {
+        "n": 6,
+        "source": "pexels",
+        "title": "Canton Tower's unique design set against a vibrant blue sky, offering a stunning",
+        "url": "https://images.pexels.com/photos/30304296/pexels-photo-30304296.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d06_canton_tower_6.jpg"
+      }
+    ]
+  },
+  "d06_dafo_temple_guangzhou": {
+    "subject": "Dafo Temple Guangzhou 广州大佛寺",
+    "region": "Guangdong China",
+    "day": 6,
+    "candidates": [
+      {
+        "n": 1,
+        "source": "pexels",
+        "title": "Beautiful traditional pavilion and intricately carved columns in a lush Guangzho",
+        "url": "https://images.pexels.com/photos/36063983/pexels-photo-36063983.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d06_dafo_temple_guangzhou_1.jpg"
+      },
+      {
+        "n": 2,
+        "source": "pexels",
+        "title": "Beautiful temple garden in 佛山市, Guangdong Province, China. Sunlit path surrounde",
+        "url": "https://images.pexels.com/photos/35216090/pexels-photo-35216090.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d06_dafo_temple_guangzhou_2.jpg"
+      },
+      {
+        "n": 3,
+        "source": "pexels",
+        "title": "Stunning view of traditional Buddhist temple architecture in Guangzhou, China.",
+        "url": "https://images.pexels.com/photos/19794964/pexels-photo-19794964.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d06_dafo_temple_guangzhou_3.jpg"
+      },
+      {
+        "n": 4,
+        "source": "pexels",
+        "title": "A tranquil scene at Guangxiao Temple with visitors exploring the historic site.",
+        "url": "https://images.pexels.com/photos/19794966/pexels-photo-19794966.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d06_dafo_temple_guangzhou_4.jpg"
+      },
+      {
+        "n": 5,
+        "source": "pexels",
+        "title": "Explore the Yuanxuan Taoist Temple with its beautiful red and green traditional ",
+        "url": "https://images.pexels.com/photos/15837203/pexels-photo-15837203.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d06_dafo_temple_guangzhou_5.jpg"
+      },
+      {
+        "n": 6,
+        "source": "pexels",
+        "title": "A beautiful traditional Chinese temple with intricate wooden carvings under a cl",
+        "url": "https://images.pexels.com/photos/35272163/pexels-photo-35272163.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d06_dafo_temple_guangzhou_6.jpg"
+      }
+    ]
+  },
+  "d06_beijing_road_pedestrian_street_gua": {
+    "subject": "Beijing Road Pedestrian Street Guangzhou 北京路步行街",
+    "region": "Guangdong China",
+    "day": 6,
+    "candidates": [
+      {
+        "n": 1,
+        "source": "pexels",
+        "title": "Street intersection in Taipei City with historic buildings and pedestrians, summ",
+        "url": "https://images.pexels.com/photos/37929150/pexels-photo-37929150.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d06_beijing_road_pedestrian_street_gua_1.jpg"
+      },
+      {
+        "n": 2,
+        "source": "pexels",
+        "title": "A candid street scene in Beijing featuring an elderly man sitting on a bench ami",
+        "url": "https://images.pexels.com/photos/3603452/pexels-photo-3603452.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d06_beijing_road_pedestrian_street_gua_2.jpg"
+      },
+      {
+        "n": 3,
+        "source": "pexels",
+        "title": "A bustling night scene in a lively Beijing alleyway with street vendors and colo",
+        "url": "https://images.pexels.com/photos/3603448/pexels-photo-3603448.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d06_beijing_road_pedestrian_street_gua_3.jpg"
+      },
+      {
+        "n": 4,
+        "source": "pexels",
+        "title": "A candid street scene in Beijing, capturing diverse interactions outside a shop.",
+        "url": "https://images.pexels.com/photos/3603454/pexels-photo-3603454.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d06_beijing_road_pedestrian_street_gua_4.jpg"
+      },
+      {
+        "n": 5,
+        "source": "pexels",
+        "title": "Black and white photo of a person walking alone on a city footbridge in Hong Kon",
+        "url": "https://images.pexels.com/photos/38783728/pexels-photo-38783728.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d06_beijing_road_pedestrian_street_gua_5.jpg"
+      },
+      {
+        "n": 6,
+        "source": "pexels",
+        "title": "Motorcyclists ride through the bustling streets of Guangzhou, China, amidst urba",
+        "url": "https://images.pexels.com/photos/21628895/pexels-photo-21628895.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d06_beijing_road_pedestrian_street_gua_6.jpg"
+      }
+    ]
+  },
+  "d07_zhuhai_fisher_girl_seafront": {
+    "subject": "Zhuhai Fisher Girl seafront 珠海渔女",
+    "region": "Guangdong China",
+    "day": 7,
+    "candidates": [
+      {
+        "n": 1,
+        "source": "pexels",
+        "title": "A man maintaining fishing boats in Shantou, showcasing traditional craftsmanship",
+        "url": "https://images.pexels.com/photos/37582038/pexels-photo-37582038.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d07_zhuhai_fisher_girl_seafront_1.jpg"
+      },
+      {
+        "n": 2,
+        "source": "pexels",
+        "title": "A serene silhouette of a person fishing by the ocean at sunset in Qinhuangdao, C",
+        "url": "https://images.pexels.com/photos/7494169/pexels-photo-7494169.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d07_zhuhai_fisher_girl_seafront_2.jpg"
+      },
+      {
+        "n": 3,
+        "source": "pexels",
+        "title": "A serene view of a boat on the sea in Shenzhen, with distant mountains.",
+        "url": "https://images.pexels.com/photos/31671014/pexels-photo-31671014.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d07_zhuhai_fisher_girl_seafront_3.jpg"
+      },
+      {
+        "n": 4,
+        "source": "pexels",
+        "title": "Man carefully restoring an antique Buddha statue indoors, focusing on details.",
+        "url": "https://images.pexels.com/photos/2527524/pexels-photo-2527524.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d07_zhuhai_fisher_girl_seafront_4.jpg"
+      },
+      {
+        "n": 5,
+        "source": "pexels",
+        "title": "Bronze statue depicting a traditional fisherwoman near a wooden boat outdoors.",
+        "url": "https://images.pexels.com/photos/38596226/pexels-photo-38596226.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d07_zhuhai_fisher_girl_seafront_5.jpg"
+      },
+      {
+        "n": 6,
+        "source": "pexels",
+        "title": "A woman enjoys a peaceful walk along Guangdong's beach at sunset, China.",
+        "url": "https://images.pexels.com/photos/37735689/pexels-photo-37735689.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "path": "work/WBMZ7/cand/d07_zhuhai_fisher_girl_seafront_6.jpg"
+      }
+    ]
+  }
+}
