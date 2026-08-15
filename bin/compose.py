@@ -547,6 +547,24 @@ OVERRIDES = {
         "d06": [("stock", ("d06_kuanzhai_alley_chengdu", 1), "成都夜市串串摊 s0.686")],
         "d07": [("stock", ("d07_jinli_ancient_street_chengdu", 5), "成都老茶馆内景 s0.761")],
     },
+    # WBCKG6 魔幻重庆。D3(金佛山)和 D6(送机)没有天头图:金佛山 Commons 整块 0,
+    # stock 给的是**桂林**喀斯特,按 3.4 留空等人点头。
+    "WBCKG6": {
+        "d01": [("stock", ("d01_fly_from_singapore_to_chongqing", 2), "重庆夜景(图注写明重庆)s0.682")],
+        "d02": [("commons", ("d02_hongyadong_chongqing", 4), "洪崖洞与千厮门大桥,白天 s0.283")],
+        "d04": [("stock", ("d04_chaotianmen_chongqing", 1), "红色拱桥与两江夜景 s0.330")],
+        "d05": [("commons", ("d05_chongqing_hotpot", 4), "同心锅 s0.495")],
+    },
+    # WBLCKG 重庆+恩施。D4(恩施)和 D8(送机)没有天头图:梭布垭石林 Commons 唯一
+    # 一张是**恩施大峡谷**(另一个景区),土家女儿城整块 0 而 stock 给的是洪崖洞。
+    "WBLCKG": {
+        "d01": [("stock", ("d01_fly_from_singapore_to_chongqing", 2), "重庆夜景(图注写明重庆)s0.682")],
+        "d02": [("commons", ("d02_yunyang_longgang_scenic_area", 1), "龙缸国家地质公园 s0.196")],
+        "d03": [("commons", ("d03_baidicheng_fengjie", 6), "白帝城博物馆 s0.300")],
+        "d05": [("stock", ("d05_tenglong_cave_lichuan", 2), "溶洞钟乳石灯光 s0.488")],
+        "d06": [("stock", ("d06_danzishi_old_street_chongqing", 2), "歌乐山与磁器口(图注写明重庆)s0.430")],
+        "d07": [("stock", ("d07_jiefangbei_chongqing", 5), "重庆夜景天际线 s0.659")],
+    },
     "WBCHET": {
         "d02": [("stock", ("d02_ordos_grassland", 5), "蒙古包群实拍"),
                 ("stock", ("d02_ordos_grassland", 1), "草原孤包")],
@@ -1331,6 +1349,76 @@ TRIP_PICKS = {
         # D7 锦里:Commons 整块只有这一张,但够亮。
         ("commons", ("d07_jinli_ancient_street_chengdu", 1), "锦里夜巷 s0.608"),
     ],
+    # WBCKG6 魔幻重庆。11/17 卡。重庆本身好拍,废掉的四张都是**同名异物**或整块 0:
+    #   奎星楼   Commons 0;这是解放碑旁的一条小街,stock 只给通用重庆天际线
+    #   戴家巷   Commons 0;stock 六张全是**张家界**峰林(「cliff walk」撞词)
+    #   金佛山   Commons 0;stock 三张是**桂林**喀斯特(karst 撞词)
+    #   鹅岭二厂 Commons 是黑白室内老照片和一张港口蚀刻版画
+    # 「重庆小食」那一块 Commons 六张全部 GPS-OUT,而且判得对——它们是
+    # **香港佐敦南京街的「蔡記重慶小食」**,一家港式小店。
+    # 「观音桥」是最有意思的一条:它是解放碑对岸的商圈,**不是桥**,而 stock
+    # 六张全是重庆的跨江大桥。Commons 那张地铁站出入口的「观音桥」招牌反而是对的。
+    "WBCKG6": [
+        ("commons", ("d02_hongyadong_chongqing", 5), "洪崖洞夜灯 s0.580"),
+        ("stock", ("d02_hongyadong_chongqing", 6), "洪崖洞金色夜景 s0.451"),
+        ("commons", ("d02_qiansimen_bridge_chongqing", 4), "千厮门大桥 s0.473"),
+        ("commons", ("d02_qiansimen_bridge_chongqing", 3), "救生圈与大桥 s0.428"),
+        ("commons", ("d02_jiefangbei_chongqing", 5), "解放碑与人流 s0.198"),
+        ("commons", ("d02_jiefangbei_chongqing", 1), "解放碑商圈 s0.197"),
+        ("commons", ("d02_shibati_chongqing", 6), "较场口吊脚楼 s0.232"),
+        ("commons", ("d02_shibati_chongqing", 2), "十八梯古井广场 s0.208"),
+        # 八一路美食街:留下的两张是食物特写,画面里没有可辨识地点。
+        ("stock", ("d02_chongqing_street_food_snacks", 2), "小面一碗 s0.775"),
+        ("stock", ("d02_chongqing_street_food_snacks", 6), "炉边现做 s0.858"),
+        ("commons", ("d04_ciqikou_ancient_town_chongqing", 1), "磁器口石阶夜色 s0.854"),
+        ("stock", ("d04_ciqikou_ancient_town_chongqing", 2), "古镇灯笼街 s0.384"),
+        ("commons", ("d04_chaotianmen_chongqing", 4), "两江交汇夜航拍 s0.468"),
+        ("commons", ("d04_chaotianmen_chongqing", 5), "朝天门老城门 s0.202"),
+        # 朝天门批发市场:市场货摊特写,不指向具体地点。
+        ("stock", ("d04_chinese_wholesale_market_stalls", 1), "货摊彩色商品 s0.583"),
+        ("stock", ("d04_chinese_wholesale_market_stalls", 3), "干货批发袋装 s0.372"),
+        ("stock", ("d04_liziba_monorail_through_building_c", 1), "轻轨高架 s0.271"),
+        ("stock", ("d04_liziba_monorail_through_building_c", 3), "列车穿楼而出 s0.184"),
+        ("commons", ("d04_guanyinqiao_chongqing", 2), "观音桥站出入口招牌 s0.429"),
+        ("commons", ("d04_guanyinqiao_chongqing", 1), "观音桥商圈街景 s0.209"),
+        ("commons", ("d05_chongqing_hotpot", 3), "红汤翻滚 s0.751"),
+        ("commons", ("d05_chongqing_hotpot", 2), "九宫格火锅 s0.612"),
+    ],
+    # WBLCKG 重庆+恩施。12/22 卡。恩施/利川那一段几乎全废,而且**三峡之巅那一块
+    # 是这一整轮最离谱的一条**:Commons 六张全是
+    # **Ruth Gorge, Denali National Park, ALASKA** —— 阿拉斯加的冰川峡谷。
+    # 张飞庙同样是同名异地:C1 是**成都武侯祠**的张飞塑像,C2C3 是**阆中**张飞庙,
+    # 而这条线去的是**云阳**张飞庙,第三座。梭布垭石林唯一一张 Commons 是
+    # **恩施大峡谷**(另一个景区);土家女儿城、狮子关、弹子石、山城步道整块 0,
+    # stock 一律拿洪崖洞和重庆天际线来顶。
+    "WBLCKG": [
+        ("commons", ("d02_yunyang_longgang_scenic_area", 4), "龙缸地质公园崖壁 s0.240"),
+        ("commons", ("d02_yunyang_longgang_scenic_area", 2), "龙缸峡谷 s0.216"),
+        ("commons", ("d03_baidicheng_fengjie", 4), "白帝城 s0.310"),
+        ("commons", ("d03_baidicheng_fengjie", 1), "白帝城与长江大桥 s0.298"),
+        ("commons", ("d03_qutang_gorge_kuimen_yangtze", 3), "瞿塘峡夔门 s0.328"),
+        ("commons", ("d05_tenglong_cave_lichuan", 1), "腾龙洞 s0.471"),
+        ("commons", ("d06_huangjueping_graffiti_street_chong", 1), "黄桷坪涂鸦街 s0.569"),
+        # 交通茶馆:Commons 两张是茶馆内景,但标题只写 "Slow Life in A Tea House",
+        # 没写是哪一家 —— 交付时点名。stock 分最高的那张是古玩店不是茶馆。
+        ("commons", ("d06_jiaotong_teahouse_chongqing", 1), "老茶馆内景 s0.260"),
+        ("commons", ("d06_shibati_chongqing", 6), "较场口吊脚楼 s0.232"),
+        ("commons", ("d06_shibati_chongqing", 2), "十八梯古井广场 s0.208"),
+        ("commons", ("d07_hongyadong_chongqing", 5), "洪崖洞夜灯 s0.580"),
+        ("stock", ("d07_hongyadong_chongqing", 6), "洪崖洞金色夜景 s0.451"),
+        ("commons", ("d07_jiefangbei_chongqing", 5), "解放碑与人流 s0.198"),
+        ("commons", ("d07_jiefangbei_chongqing", 1), "解放碑商圈 s0.197"),
+        # 李子坝:Commons 唯一一张是 2019 轨道交通展上的**站台模型**,不是实景。
+        ("stock", ("d07_liziba_monorail_through_building_c", 1), "二号线佛图关段 s0.271"),
+        ("stock", ("d07_liziba_monorail_through_building_c", 3), "列车穿楼而出 s0.184"),
+        # 熊猫馆:Commons 两张(重庆动物园)都在闸门下。熊猫这个题材只在四川重庆,
+        # 通用熊猫特写不构成地点主张,所以让美学分做主。
+        ("stock", ("d07_giant_panda_chongqing_zoo", 3), "树上的熊猫 s0.463"),
+        ("stock", ("d07_giant_panda_chongqing_zoo", 5), "枝头小憩 s0.358"),
+        # 川剧变脸:C5C6 是「2022 大臺南國際旅展」的演出,已排除。
+        ("commons", ("d07_sichuan_opera_face_changing_bianli", 1), "变脸脸谱 s0.553"),
+        ("commons", ("d07_sichuan_opera_face_changing_bianli", 2), "变脸身段 s0.439"),
+    ],
 }
 
 PRODUCTS = {
@@ -1382,7 +1470,7 @@ if __name__ == "__main__":
         itin = json.loads((WORK / code / "itinerary.json").read_text("utf-8"))
         assign_trip_photos(plan, itin["sections"], score, MATCH_FLOOR,
                            extra=trip_pool(code, TRIP_PICKS.get(code, [])))
-        materialise(plan, WORK / code / "out")
+        stale = materialise(plan, WORK / code / "out")
         plan.to_json(WORK / code / "plan.json")
         name = json.loads((WORK / code / "itinerary.json").read_text("utf-8"))
         render(plan, WORK / code / f"{code}_review.html",
@@ -1399,5 +1487,11 @@ if __name__ == "__main__":
         if bare:
             print(f"    NO SECTION PHOTO: day(s) {', '.join(map(str, bare))} "
                   f"— 逐条见下方 GAP,每一条都要人决定")
+        # 上一轮生成、这一轮已经不在 plan 里的图。点名,不只报数:留下来的
+        # 那几张恰恰是被判定为错图删掉的,而按文件名通配去取上传清单看不出
+        # 区别(DESIGN 6.12)。
+        if stale:
+            print(f"    CLEANED out/: {len(stale)} 个文件不在本次 plan 中,已删除 "
+                  f"— {', '.join(stale)}")
         for g in plan.gaps:
             print(f"    GAP day {g.position}: {', '.join(g.subjects)[:70]}")
