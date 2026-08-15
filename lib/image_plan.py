@@ -318,8 +318,19 @@ def assign_trip_photos(plan: ImagePlan, sections: list[dict],
     hand-picked as `OVERRIDES` — they never enter the plan on their own,
     only through a card that matches them.
     """
-    pool = [p for p in plan.placements if p.slot in ("section", "carousel")]
-    pool += list(extra or ())
+    # `extra` 排在前面,不是后面。下面的排序按分数,而**同一个块里的候选分数
+    # 完全相同**(score 比的是块的 subject,不是具体那张图),Python 的排序又是
+    # 稳定的——所以池子的顺序就是同分时的胜负。原来 section 在前,结果是:
+    # 某一天的 section 图会被**别的天**的卡抢走,而这张卡明明有一条专门为它
+    # 挑的 extra。WBYNG 上一次跑出来三处:D2 怒江大峡谷那张卡吃掉了 D3 和 D4
+    # 的天头图,D6 飞来寺观景台吃掉了 D5 的天头图(于是观景台卡上是一座白塔,
+    # 而我为它挑的梅里全景根本没进去)。
+    #
+    # 两个后果都要修。一是页面上同一张照片出现两次(6.06 业务同事提的正是
+    # 「重复」);二是**手挑的条目被静默顶掉**,而摘要里看不出来——6.9 记的
+    # 静默降级就是这一类。extra 的定义本来就是「为景点卡挑的」,同分时它该赢。
+    pool = list(extra or ())
+    pool += [p for p in plan.placements if p.slot in ("section", "carousel")]
     used: dict[str, int] = {}
 
     # 按**内容**去重,不按路径。08-14 第一次修完之后 WBCHET 第 6 天的卡 2 和卡 3
