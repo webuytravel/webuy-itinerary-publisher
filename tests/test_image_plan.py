@@ -210,10 +210,28 @@ def test_credit_and_licence_survive_onto_the_card():
 
 def test_trip_photos_get_their_own_filenames_per_card(tmp_path):
     # position alone stops being unique once a day has several cards.
-    plan = _plan(_section(_photo(tmp_path / "sec.png"), position=4, subject="S"))
-    extra = [_pick(str(_photo(tmp_path / "a.png")), "X", day=4),
-             _pick(str(_photo(tmp_path / "b.png")), "Y", day=4)]
+    # Distinct seeds on purpose: with the same seed the two files are
+    # byte-identical and the content-hash dedupe correctly collapses them,
+    # which is a different test (below).
+    plan = _plan(_section(_photo(tmp_path / "sec.png", seed=1), position=4, subject="S"))
+    extra = [_pick(str(_photo(tmp_path / "a.png", seed=2)), "X", day=4),
+             _pick(str(_photo(tmp_path / "b.png", seed=3)), "Y", day=4)]
     assign_trip_photos(plan, _sections((4, ["X", "Y"])), _exact, 0.5, extra=extra)
     materialise(plan, tmp_path / "out")
     names = sorted(Path(p.out_path).name for p in plan.of("trip"))
     assert names == ["trip_04_00_0.jpg", "trip_04_01_0.jpg"]
+
+
+def test_two_filenames_holding_one_photo_count_as_one(tmp_path):
+    # WBCHET D6 shipped the same Yungang photo on cards 2 and 3: the Commons
+    # blocks `d06_yungang_grottoes_datong` and `..._buddha_statues` both
+    # downloaded it, under different filenames. Path-based dedupe saw two
+    # files; the page showed one picture twice.
+    same = _photo(tmp_path / "one.png", seed=7)
+    copy = tmp_path / "two.png"
+    copy.write_bytes(Path(same).read_bytes())
+    plan = _plan(_section(_photo(tmp_path / "sec.png", seed=9), position=6, subject="S"))
+    extra = [_pick(str(same), "Yungang", day=6), _pick(str(copy), "Yungang", day=6)]
+    assign_trip_photos(plan, _sections((6, ["Yungang", "Yungang"])),
+                       _exact, 0.5, extra=extra)
+    assert len(plan.of("trip")) == 1

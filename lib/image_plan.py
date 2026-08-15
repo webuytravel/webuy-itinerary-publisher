@@ -22,6 +22,7 @@ exception is the hero — carousel position 0 — which is described below.
 
 from __future__ import annotations
 
+import hashlib
 import json
 from dataclasses import asdict, dataclass, field
 from pathlib import Path
@@ -255,6 +256,25 @@ def build(
     return plan
 
 
+_CONTENT_CACHE: dict[str, str] = {}
+
+
+def _content_key(path: str) -> str:
+    """sha1 of the bytes, so two filenames holding one photo collapse.
+
+    Falls back to the path when the file cannot be read — a missing source
+    is `materialise`'s problem to shout about, not this function's.
+    """
+    if path in _CONTENT_CACHE:
+        return _CONTENT_CACHE[path]
+    try:
+        key = hashlib.sha1(Path(path).read_bytes()).hexdigest()
+    except Exception:                                      # noqa: BLE001
+        key = path
+    _CONTENT_CACHE[path] = key
+    return key
+
+
 def assign_trip_photos(plan: ImagePlan, sections: list[dict],
                        score, floor: float, per_item: int = 2,
                        max_reuse: int = 1,
@@ -302,11 +322,17 @@ def assign_trip_photos(plan: ImagePlan, sections: list[dict],
     pool += list(extra or ())
     used: dict[str, int] = {}
 
+    # 按**内容**去重,不按路径。08-14 第一次修完之后 WBCHET 第 6 天的卡 2 和卡 3
+    # 仍然是同一张图:Commons 的 `d06_yungang_grottoes_datong` 和
+    # `d06_yungang_grottoes_buddha_statues` 两个块下载到了同一张照片,
+    # 存成了两个文件名。按 src_path 去重看不出来,按 sha1 一眼就看出来。
+    ident = _content_key
+
     # 当天 section 用掉的源文件,那天的卡一律不许再用。
     section_src: dict[int, set[str]] = {}
     for p in plan.placements:
         if p.slot == "section":
-            section_src.setdefault(p.position, set()).add(p.src_path)
+            section_src.setdefault(p.position, set()).add(ident(p.src_path))
 
     for section in sections:
         day = section["day"]
@@ -320,11 +346,12 @@ def assign_trip_photos(plan: ImagePlan, sections: list[dict],
             for value, placement in ranked:
                 if taken >= per_item or value < floor:
                     break
-                if placement.src_path in blocked:
+                key = ident(placement.src_path)
+                if key in blocked:
                     continue
-                if used.get(placement.src_path, 0) >= max_reuse:
+                if used.get(key, 0) >= max_reuse:
                     continue
-                used[placement.src_path] = used.get(placement.src_path, 0) + 1
+                used[key] = used.get(key, 0) + 1
                 plan.placements.append(Placement(
                     slot="trip", position=day, trip_index=index,
                     origin=placement.origin, subject=placement.subject,
