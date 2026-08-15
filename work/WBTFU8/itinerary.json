@@ -1,0 +1,109 @@
+{
+  "type_code": "WBTFU8",
+  "travel_days": 8,
+  "_source": "read back from Skybear wt_travel id=416 on 2026-08-15; no brochure PDF, itinerary text is production's. photo_subject is the only editorial field added here. D3 card 1 says '(shuttle included)' — the word `shuttle` is deliberately kept OUT of photo_subject: on WBCHET it collided with the Space Shuttle Discovery and returned six NASA photos (DESIGN 6.7).",
+  "product_name": {
+    "en": "8D7N Chengdu Cultural and Leisure Experience",
+    "zh": "成都深度体验之旅"
+  },
+  "highlights": [],
+  "sections": [
+    {
+      "day": 1,
+      "name": {"en": "DAY 1", "zh": "第一天"},
+      "title": {"en": "Singapore to Chengdu", "zh": "新加坡 - 成都"},
+      "location": {"en": "Chengdu", "zh": "成都"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {"title": {"en": "Arrival in Chengdu", "zh": "抵达成都"}, "description": {"en": "", "zh": ""}}
+      ]
+    },
+    {
+      "day": 2,
+      "name": {"en": "DAY 2", "zh": "第二天"},
+      "title": {"en": "Chengdu - Mianyang - Jiuzhaigou", "zh": "成都 - 绵阳 - 九寨沟"},
+      "location": {"en": "Jiuzhaigou", "zh": "九寨沟"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {"title": {"en": "Shengshui Temple (Mianyang)", "zh": "绵阳圣水寺"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Shengshui Temple Mianyang 圣水寺"},
+        {"title": {"en": "Scenic Drive to Jiuzhaigou", "zh": "前往九寨沟"}, "description": {"en": "", "zh": ""}}
+      ]
+    },
+    {
+      "day": 3,
+      "name": {"en": "DAY 3", "zh": "第三天"},
+      "title": {"en": "Jiuzhaigou Day Tour", "zh": "九寨沟一日游"},
+      "location": {"en": "Jiuzhaigou", "zh": "九寨沟"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {"title": {"en": "Jiuzhaigou Scenic Area (shuttle included)", "zh": "九寨沟风景区（含观光车）"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Jiuzhaigou Valley 九寨沟"},
+        {"title": {"en": "Five Flower Lake, Nuorilang Waterfall and Long Lake", "zh": "五彩池 · 诺日朗瀑布 · 长海"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Nuorilang Waterfall Jiuzhaigou 诺日朗瀑布"}
+      ]
+    },
+    {
+      "day": 4,
+      "name": {"en": "DAY 4", "zh": "第四天"},
+      "title": {"en": "Jiuzhaigou - Dujiangyan", "zh": "九寨沟 - 都江堰"},
+      "location": {"en": "Dujiangyan", "zh": "都江堰"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {"title": {"en": "Diexi Haizi", "zh": "叠溪海子"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Diexi Haizi Maoxian 叠溪海子"},
+        {"title": {"en": "Songpan Ancient Town (outer visit) and a Tibetan Village", "zh": "松潘古城（外观）与传统藏寨"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Songpan Ancient Town 松潘古城"},
+        {"title": {"en": "Blue Bridge Night View", "zh": "蓝桥夜景"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Nanqiao Bridge Dujiangyan night 都江堰南桥"}
+      ]
+    },
+    {
+      "day": 5,
+      "name": {"en": "DAY 5", "zh": "第五天"},
+      "title": {"en": "Dujiangyan - Chengdu", "zh": "都江堰 - 成都"},
+      "location": {"en": "Chengdu", "zh": "成都"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {"title": {"en": "Panda Park (shuttle included)", "zh": "熊猫乐园（含观光车）"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "giant panda Dujiangyan base 大熊猫"},
+        {"title": {"en": "Zhongshuge Bookstore and Yangtianwo Panda Square", "zh": "钟书阁与仰天窝熊猫自拍广场"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Zhongshuge bookstore Chengdu 钟书阁"},
+        {"title": {"en": "Guanxian Ancient Town", "zh": "灌县古城"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Guanxian Ancient City Dujiangyan 灌县古城"}
+      ]
+    },
+    {
+      "day": 6,
+      "name": {"en": "DAY 6", "zh": "第六天"},
+      "title": {"en": "Chengdu Free and Easy", "zh": "成都自由活动"},
+      "location": {"en": "Chengdu", "zh": "成都"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {"title": {"en": "Free Day at Leisure", "zh": "全天自由活动"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Kuanzhai Alley Chengdu 宽窄巷子"}
+      ]
+    },
+    {
+      "day": 7,
+      "name": {"en": "DAY 7", "zh": "第七天"},
+      "title": {"en": "Chengdu Free and Easy", "zh": "成都自由活动"},
+      "location": {"en": "Chengdu", "zh": "成都"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {"title": {"en": "Another Free Day", "zh": "自由活动"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Jinli Ancient Street Chengdu 锦里"}
+      ]
+    },
+    {
+      "day": 8,
+      "name": {"en": "DAY 8", "zh": "第八天"},
+      "title": {"en": "Chengdu to Singapore", "zh": "成都 - 新加坡"},
+      "location": {"en": "Chengdu", "zh": "成都"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {"title": {"en": "Departure from Chengdu", "zh": "离开成都"}, "description": {"en": "", "zh": ""}}
+      ]
+    }
+  ]
+}

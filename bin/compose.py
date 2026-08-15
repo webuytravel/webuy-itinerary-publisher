@@ -491,6 +491,16 @@ OVERRIDES = {
         "d06": [("stock", ("d06_meili_snow_mountain_kawagarbo_sunr", 4), "梅里日照金山 s0.273")],
         "d07": [("stock", ("d07_dukezong_ancient_town_shangri_la", 1), "香格里拉全景 s0.286")],
     },
+    # WBWUX6 江南水乡。这条线和粤东正好相反:主体全是被拍烂了的名胜(西湖、
+    # 外滩、南京路、南浔、平江路),Commons 覆盖 18/19,而且大量带 GPS。
+    "WBWUX6": {
+        "d01": [("stock", ("d01_nianhua_bay_wuxi", 1), "无锡湖畔秋色(图注写明无锡)s0.343")],
+        "d02": [("commons", ("d02_changguangxi_wetland_park_wuxi", 3), "长广溪廊桥 s0.252")],
+        "d03": [("commons", ("d03_nanxun_ancient_town", 5), "南浔水岸全景 gpsOK s0.279")],
+        "d04": [("commons", ("d04_the_bund_shanghai", 6), "外滩万国建筑与车流 s0.291")],
+        "d05": [("commons", ("d05_nanjing_road_pedestrian_street_sha", 3), "南京路霓虹 gpsOK s0.522")],
+        "d06": [("commons", ("d06_pingjiang_road_suzhou", 4), "平江路门楼 s0.252")],
+    },
     "WBCHET": {
         "d02": [("stock", ("d02_ordos_grassland", 5), "蒙古包群实拍"),
                 ("stock", ("d02_ordos_grassland", 1), "草原孤包")],
@@ -1037,6 +1047,63 @@ TRIP_PICKS = {
         ("stock", ("d07_guishan_park_giant_prayer_wheel_sh", 1), "巨型转经筒暮色 s0.860"),
         ("stock", ("d07_guishan_park_giant_prayer_wheel_sh", 2), "藏式殿宇与经幡 s0.263"),
     ],
+    # WBWUX6 江南水乡。这是到目前为止图源最好的一条线:15/21 张卡有图,而且
+    # 几乎全部来自 Commons 且带 GPS。留空的三张各有各的原因,不是同一类:
+    #   惠山古镇 —— 六张全是真的,但 0.075–0.197 全在闸门附近以下,唯一够线的
+    #     C4 是**地铁站站台**;stock 那几张金光灿灿的夜景水乡一张都没写是哪里。
+    #   太湖古镇 —— Commons 退化成了太湖/苏州泛图(其中 C1 是一张**吴语方言
+    #     分布图**),stock 六张图注全写 Suzhou,而这张卡是湖州长兴的现代度假镇。
+    #   1192弄 / 相门城墙 —— 前者是室内仿老上海街,后者 Commons 整块 0。
+    # 另外两处按图注排除的:河坊街 stock#2#6 图注自己写着 Nanjing;
+    # 拈花湾 stock#4 画面里的匾额是**鼋头渚**,无锡另一个景点。
+    "WBWUX6": [
+        # D1 拈花湾:六张全部带 GPS。C1 是夜间蓝调灯光,整个产品最亮的一张。
+        ("commons", ("d01_nianhua_bay_wuxi", 1), "拈花湾夜景蓝调 gpsOK s0.655"),
+        ("commons", ("d01_nianhua_bay_wuxi", 6), "紫花田与小镇 gpsOK s0.275"),
+        # D1 薛家花园:六张真的里只有这张够线,其余 0.070–0.156。
+        ("commons", ("d01_former_residence_of_xue_fucheng_wu", 4), "故居厅堂陈设 gpsOK s0.232"),
+        # D2 长广溪
+        ("commons", ("d02_changguangxi_wetland_park_wuxi", 1), "湿地木栈道 gpsOK s0.384"),
+        ("commons", ("d02_changguangxi_wetland_park_wuxi", 6), "芦苇与水塘 s0.270"),
+        # D3 南浔:六张全部带 GPS。C6 是拱桥灯光在水面合成整圆。
+        ("commons", ("d03_nanxun_ancient_town", 6), "拱桥灯影成圆 gpsOK s0.591"),
+        ("commons", ("d03_nanxun_ancient_town", 2), "夜色石桥与河房 gpsOK s0.322"),
+        # D3 西湖:stock#1 图注写的是集贤亭,西湖实景。
+        ("stock", ("d03_west_lake_hangzhou", 1), "集贤亭夜景 s0.444"),
+        ("commons", ("d03_west_lake_hangzhou", 1), "湖上游船 s0.295"),
+        # D3 河坊街
+        ("commons", ("d03_hefang_street_hangzhou", 6), "木构商铺立面 gpsOK s0.399"),
+        ("commons", ("d03_hefang_street_hangzhou", 5), "街景与店招 gpsOK s0.321"),
+        # D4 城隍庙:金身神像那两张是整个产品饱和度最高的。
+        ("commons", ("d04_city_god_temple_shanghai", 4), "大殿金身神像 gpsOK s0.859"),
+        ("commons", ("d04_city_god_temple_shanghai", 1), "彩塑神像与供器 gpsOK s0.702"),
+        # D4 龙井:卡的正文是采茶,所以留了一张采茶人。
+        ("commons", ("d04_longjing_tea_plantation_hangzhou", 2), "茶垄与红墙 s0.422"),
+        ("commons", ("d04_longjing_tea_plantation_hangzhou", 4), "采茶人与茶篓 s0.387"),
+        # D4 外滩
+        ("commons", ("d04_the_bund_shanghai", 4), "外滩万国建筑夜景 s0.502"),
+        ("commons", ("d04_the_bund_shanghai", 1), "外滩与江面航拍夜景 s0.487"),
+        # D5 陆家嘴:卡名写的是空中环形走廊,stock 里有一张疑似环形天桥但没写
+        # 是哪儿,没敢用;这两张是 Commons 标着 Lujiazui 的实景。
+        ("commons", ("d05_lujiazui_shanghai", 5), "陆家嘴天际线 gpsOK s0.288"),
+        ("commons", ("d05_lujiazui_shanghai", 3), "浦东三件套 s0.261"),
+        # D5 南京路:六张全部带 GPS,而且整块都在 0.40 以上。
+        ("commons", ("d05_nanjing_road_pedestrian_street_sha", 4), "南京路人潮霓虹 gpsOK s0.650"),
+        ("commons", ("d05_nanjing_road_pedestrian_street_sha", 5), "环形骑楼夜色 gpsOK s0.612"),
+        # D5 田子坊
+        ("commons", ("d05_tianzifang_shanghai", 4), "弄堂店面绿窗 gpsOK s0.408"),
+        ("commons", ("d05_tianzifang_shanghai", 3), "弄堂转角 gpsOK s0.401"),
+        # D5 武康路:stock#3 是车流光轨,形制一眼认得出是武康大楼。
+        ("stock", ("d05_wukang_mansion_shanghai", 3), "武康大楼车流光轨 s0.552"),
+        ("commons", ("d05_wukang_mansion_shanghai", 3), "武康大楼街角 s0.353"),
+        # D5 山塘街:卡名带「夜景」,但 stock 那几张漂亮的夜景水巷没有一张
+        # 写明是山塘,所以还是用 Commons 标着 Shantang 的白天实景。
+        ("commons", ("d05_shantang_street_suzhou", 5), "山塘市集摊档 s0.316"),
+        ("commons", ("d05_shantang_street_suzhou", 1), "山塘河与河房 gpsOK s0.238"),
+        # D6 平江路
+        ("commons", ("d06_pingjiang_road_suzhou", 2), "平江河与石拱桥 gpsOK s0.457"),
+        ("commons", ("d06_pingjiang_road_suzhou", 1), "桥上俯看平江河 gpsOK s0.286"),
+    ],
 }
 
 PRODUCTS = {
@@ -1060,6 +1127,14 @@ PRODUCTS = {
     # 产品可采,①② 依旧是空的。
     "WB9XMN": ("CHN", []),
     "WBYNG": ("CHN", []),
+    "WBWUX6": ("CHN", []),
+    "WBYNB": ("CHN", []),
+    "WBPCSX": ("CHN", []),
+    "WBMZ7": ("CHN", []),
+    "WBTFU8": ("CHN", []),
+    # 这两本是册子进来的新产品(Skybear 上还没有 wt_travel),不是从生产读回的。
+    "WBLCKG": ("CHN", []),
+    "WBCKG6": ("CHN", []),
 }
 
 if __name__ == "__main__":

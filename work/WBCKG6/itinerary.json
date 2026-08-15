@@ -1,0 +1,98 @@
+{
+  "type_code": "WBCKG6",
+  "travel_days": 6,
+  "_source": "from brochure PDF `WBCKG6 - 6D5N MAGICAL CHONGQING HIGHLIGHTS TOUR.pdf` (2026-08-15). The PDF has no text layer — pages were rendered and read visually. NEW product: no wt_travel exists yet, this has to be created rather than edited.",
+  "product_name": {
+    "en": "6D5N Magical Chongqing Highlights Tour",
+    "zh": "6天5晚 魔幻重庆精华之旅"
+  },
+  "highlights": [],
+  "sections": [
+    {
+      "day": 1,
+      "name": {"en": "DAY 1", "zh": "第一天"},
+      "title": {"en": "Singapore to Chongqing", "zh": "新加坡 - 重庆"},
+      "location": {"en": "Chongqing", "zh": "重庆"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {"title": {"en": "Fly from Singapore to Chongqing", "zh": "由新加坡乘搭航班飞往重庆"}, "description": {"en": "", "zh": ""}}
+      ]
+    },
+    {
+      "day": 2,
+      "name": {"en": "DAY 2", "zh": "第二天"},
+      "title": {"en": "Chongqing City", "zh": "重庆市区"},
+      "location": {"en": "Chongqing", "zh": "重庆"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {"title": {"en": "Kuixing Tower", "zh": "奎星楼"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Kuixinglou Chongqing 奎星楼"},
+        {"title": {"en": "Qiansimen Bridge", "zh": "千厮门大桥"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Qiansimen Bridge Chongqing 千厮门大桥"},
+        {"title": {"en": "Daijia Alley", "zh": "戴家巷"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Daijiaxiang Chongqing cliff walk 戴家巷"},
+        {"title": {"en": "Jiefangbei Pedestrian Street", "zh": "解放碑步行街"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Jiefangbei Chongqing 解放碑"},
+        {"title": {"en": "Bayi Road Food Street", "zh": "八一路美食街"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Chongqing street food snacks 重庆小吃"},
+        {"title": {"en": "Shibati Traditional Scenic Area", "zh": "十八梯传统风貌区"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Shibati Chongqing 十八梯"},
+        {"title": {"en": "Hongyadong Night View", "zh": "洪崖洞夜景"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Hongyadong Chongqing 洪崖洞"}
+      ]
+    },
+    {
+      "day": 3,
+      "name": {"en": "DAY 3", "zh": "第三天"},
+      "title": {"en": "Chongqing - Nanchuan Jinfo Mountain - Chongqing", "zh": "重庆 - 南川金佛山 - 重庆"},
+      "location": {"en": "Jinfo Mountain", "zh": "金佛山"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {"title": {"en": "Jinfo Mountain Scenic Area (including cable car and shuttle bus)", "zh": "金佛山风景区（含索道+环保车）"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Jinfo Mountain Nanchuan karst 金佛山"}
+      ]
+    },
+    {
+      "day": 4,
+      "name": {"en": "DAY 4", "zh": "第四天"},
+      "title": {"en": "Chongqing City", "zh": "重庆市区"},
+      "location": {"en": "Chongqing", "zh": "重庆"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {"title": {"en": "Ciqikou Ancient Town", "zh": "磁器口古镇"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Ciqikou Ancient Town Chongqing 磁器口古镇"},
+        {"title": {"en": "Chaotianmen Square", "zh": "朝天门广场"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Chaotianmen Chongqing 朝天门"},
+        {"title": {"en": "Chaotianmen Wholesale Market", "zh": "朝天门批发市场"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Chinese wholesale market stalls 批发市场"},
+        {"title": {"en": "Liziba Viewing Platform (Enhanced Viewpoint)", "zh": "李子坝观景平台（升级视角）"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Liziba monorail through building Chongqing 李子坝轻轨穿楼"},
+        {"title": {"en": "E'ling No.2 Factory Creative Park", "zh": "鹅岭二厂文创园"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Eling Second Factory Chongqing 鹅岭二厂"},
+        {"title": {"en": "Guanyinqiao Pedestrian Street", "zh": "观音桥步行街"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Guanyinqiao Chongqing 观音桥步行街"}
+      ]
+    },
+    {
+      "day": 5,
+      "name": {"en": "DAY 5", "zh": "第五天"},
+      "title": {"en": "Chongqing Free and Easy", "zh": "重庆自由活动"},
+      "location": {"en": "Chongqing", "zh": "重庆"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {"title": {"en": "Free and Easy", "zh": "自由活动"}, "description": {"en": "", "zh": ""},
+         "photo_subject": "Chongqing hotpot 重庆火锅"}
+      ]
+    },
+    {
+      "day": 6,
+      "name": {"en": "DAY 6", "zh": "第六天"},
+      "title": {"en": "Chongqing to Singapore", "zh": "重庆 - 新加坡"},
+      "location": {"en": "Chongqing", "zh": "重庆"},
+      "description": {"en": "", "zh": ""},
+      "trip_items": [
+        {"title": {"en": "Transfer to airport for departure", "zh": "送机返回"}, "description": {"en": "", "zh": ""}}
+      ]
+    }
+  ]
+}

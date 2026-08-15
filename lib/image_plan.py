@@ -372,6 +372,23 @@ def assign_trip_photos(plan: ImagePlan, sections: list[dict],
                         break
                     if exact_only and placement.subject != subject:
                         continue
+                    # 第二遍(词面匹配)只许用**当天那张 section 图**。
+                    #
+                    # score() 比的是词面重叠,跨天一放开就会出事:WBWUX6 实测
+                    # 「惠山古镇」拿到了一张**南浔古镇**的照片(共用 ancient/town),
+                    # 而南浔在湖州、惠山在无锡,是两个古镇;「抵达无锡」这张纯交通卡
+                    # 则拿到了长广溪湿地的图(共用 wuxi)。两张都是按 3.4 特意留空的卡。
+                    #
+                    # 注意**不能只判 position**:carousel 的 position 是轮播序号,
+                    # 不是天号,`position == day` 在它身上是个巧合(carousel#1 撞上
+                    # 第 1 天),上面那两张错图正是这么进来的。所以这里判 slot。
+                    #
+                    # 留下 section 这一支是 6.05 原本的意思:当天的 section 图按定义
+                    # 就是那天的照片,同一天内复用不会把地方搞错。extra 不在这里,
+                    # 它们是照着卡的 photo_subject 写的,第一遍就该精确命中。
+                    if not exact_only and not (placement.slot == "section"
+                                               and placement.position == day):
+                        continue
                     key = ident(placement.src_path)
                     if key in blocked:
                         continue
