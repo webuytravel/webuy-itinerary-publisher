@@ -62,6 +62,47 @@ _STAY = re.compile(r"\b(check[- ]?in|hotel|resort|overnight)\b", re.I)
 # The meal-count and hotel-grade lines are dropped because the reference page
 # does not carry them — meals already appear on every day of the itinerary.
 HOUSE_HIGHLIGHTS = {
+    # 2026-08-15 两本新册子。这两个是这一批里**唯一需要新建**的产品(Skybear 上
+    # 还没有 wt_travel),所以也是唯一需要 HOUSE_HIGHLIGHTS 的——其余产品的
+    # highlight 早就在生产上,EDIT 模式不动它。
+    #
+    # 册子上 WBCKG6 列了 8 条、WBLCKG 列了 5 组共 22 个景点,表单只有 6 格
+    # (第 5 步第 4 条:6 是版式不是限制)。按线上 tours/115 的版式重排成
+    # 4 条头部景点/体验 + 1 条用 `·` 压缩的次级景点 + 1 条餐食风味。
+    "WBCKG6": [
+        ("Hongyadong Night View — the stilt-house night scene that inspired "
+         "“Spirited Away”",
+         "洪崖洞夜景 —— 千与千寻同款吊脚楼，灯火璀璨"),
+        ("Liziba Monorail Through a Building, from the upgraded viewing platform",
+         "李子坝轻轨穿楼奇观，升级观景平台"),
+        ("Jinfo Mountain Scenic Area, UNESCO karst and alpine forest "
+         "(cable car and in-park shuttle included)",
+         "南川金佛山风景区，世界自然遗产喀斯特与高山森林（含索道+环保车）"),
+        ("Ciqikou Ancient Town, a thousand-year-old town at the heart of "
+         "Ba-Yu culture",
+         "磁器口古镇，千年古镇·巴渝文化代表"),
+        ("Jiefangbei · Qiansimen Bridge · Chaotianmen Confluence · Shibati · "
+         "Daijia Alley · E’ling No.2 Factory",
+         "解放碑 · 千厮门大桥 · 朝天门两江交汇 · 十八梯 · 戴家巷 · 鹅岭二厂"),
+        ("Authentic Mountain-City Hotpot · Chongqing street flavours",
+         "地道山城火锅 · 重庆小吃风味"),
+    ],
+    "WBLCKG": [
+        ("Yunyang Longgang Scenic Area and the Cloud Corridor Glass Skywalk",
+         "云阳龙缸景区与云端廊桥"),
+        ("Baidi City · Qutang Gorge · Kuimen Gate · Three Gorges Summit",
+         "白帝城 · 瞿塘峡 · 夔门 · 三峡之巅"),
+        ("Suobuya Stone Forest and Tujia Daughter City in Enshi",
+         "恩施梭布垭石林与土家女儿城"),
+        ("Shiziguan Water Highway and Tenglong Cave, a spectacular karst cave",
+         "狮子关水上公路与腾龙洞奇幻喀斯特溶洞"),
+        ("Chongqing city: Hongyadong Night View · Liziba Light Rail · "
+         "Jiefangbei · Zoo Panda House · Sichuan Opera Face-Changing",
+         "重庆市区：洪崖洞夜景 · 李子坝轻轨穿楼 · 解放碑 · 动物园熊猫馆 · 川剧变脸"),
+        ("Yunyang Cuisine · Tujia Cuisine · Guzi Chicken · "
+         "Bowl-Smashing Wine Banquet · Chongqing Hot Pot",
+         "云阳风味 · 土家风味 · 簋子鸡风味 · 摔碗酒宴 · 重庆火锅"),
+    ],
     "WBCKWE": [
         ("Mount Fanjing, a UNESCO World Heritage site",
          "梵净山，世界自然遗产"),
