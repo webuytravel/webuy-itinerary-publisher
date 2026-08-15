@@ -1,0 +1,1162 @@
+{
+  "d01_fly_to_kunming_and_mangshi": {
+    "subject": "Fly to Kunming and Mangshi",
+    "query": "Fly to Kunming and",
+    "query_full": "Fly to Kunming and Mangshi",
+    "shrunk": true,
+    "day": 1,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Airbus_A320-214_B-6757_in_NKG%2C_Dec_2_2024.jpg/3840px-Airbus_A320-214_B-6757_in_NKG%2C_Dec_2_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Airbus A320-214 B-6757 in NKG, Dec 2 2024.jpg",
+        "path": "work/WBYNG/cand_commons/d01_fly_to_kunming_and_mangshi_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "A Chinese ID",
+        "lat": 31.729755555555553,
+        "lon": 118.8673861111111,
+        "in_region": false
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8f/B-1991_at_CGO_20190405.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "B-1991 at CGO 20190405.jpg",
+        "path": "work/WBYNG/cand_commons/d01_fly_to_kunming_and_mangshi_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Windmemories",
+        "lat": 34.524975,
+        "lon": 113.85063888888888,
+        "in_region": false
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/B-32D3%40PEK_%2820230901150814%29.jpg/3840px-B-32D3%40PEK_%2820230901150814%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "B-32D3@PEK (20230901150814).jpg",
+        "path": "work/WBYNG/cand_commons/d01_fly_to_kunming_and_mangshi_3.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "N509FZ",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/B-32D3%40PEK_%2820230901150821%29.jpg/3840px-B-32D3%40PEK_%2820230901150821%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "B-32D3@PEK (20230901150821).jpg",
+        "path": "work/WBYNG/cand_commons/d01_fly_to_kunming_and_mangshi_4.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "N509FZ",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Boeing_737-7LY_%28B-7872%29_on_KY8322_%28XIY-TCZ%29_%40_XIY_20240312.jpg/3840px-Boeing_737-7LY_%28B-7872%29_on_KY8322_%28XIY-TCZ%29_%40_XIY_20240312.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Boeing 737-7LY (B-7872) on KY8322 (XIY-TCZ) @ XIY 20240312.jpg",
+        "path": "work/WBYNG/cand_commons/d01_fly_to_kunming_and_mangshi_5.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "P. K. Koo",
+        "lat": 34.43010833333333,
+        "lon": 108.74579722222222,
+        "in_region": false
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/ca/The_Summer_Palace_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "The Summer Palace - panoramio.jpg",
+        "path": "work/WBYNG/cand_commons/d01_fly_to_kunming_and_mangshi_6.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "fly_savage",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d02_menghuan_golden_pagoda_mangshi": {
+    "subject": "Menghuan Golden Pagoda Mangshi 勐焕大金塔",
+    "query": "Menghuan Golden Pagoda Mangshi",
+    "query_full": "Menghuan Golden Pagoda Mangshi",
+    "shrunk": false,
+    "day": 2,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/-_panoramio_%282469%29.jpg/3840px--_panoramio_%282469%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "- panoramio (2469).jpg",
+        "path": "work/WBYNG/cand_commons/d02_menghuan_golden_pagoda_mangshi_1.jpg",
+        "license": "CC BY 3.0",
+        "credit": "pzhui",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d02_menghuan_silver_pagoda_mangshi": {
+    "subject": "Menghuan Silver Pagoda Mangshi 勐焕银塔",
+    "query": "Menghuan Silver Pagoda Mangshi",
+    "query_full": "Menghuan Silver Pagoda Mangshi",
+    "shrunk": false,
+    "day": 2,
+    "candidates": []
+  },
+  "d02_nujiang_grand_canyon": {
+    "subject": "Nujiang Grand Canyon 怒江大峡谷",
+    "query": "Nujiang Grand Canyon",
+    "query_full": "Nujiang Grand Canyon",
+    "shrunk": false,
+    "day": 2,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/The_Grand_Canyon_of_the_Nujiang_River%2C_Yunnan%2C_China_-_2019_May.jpg/3840px-The_Grand_Canyon_of_the_Nujiang_River%2C_Yunnan%2C_China_-_2019_May.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "The Grand Canyon of the Nujiang River, Yunnan, China - 2019 May.jpg",
+        "path": "work/WBYNG/cand_commons/d02_nujiang_grand_canyon_1.jpg",
+        "license": "CC BY 4.0",
+        "credit": "Chentaocui",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/%E8%B4%A1%E5%B1%B1%E5%8E%BF%E5%9F%8E%E5%A4%A9%E9%99%85%E7%BA%BF_-_%E8%88%AA%E6%8B%8D_-_2024-06-02_20.jpg/3840px-%E8%B4%A1%E5%B1%B1%E5%8E%BF%E5%9F%8E%E5%A4%A9%E9%99%85%E7%BA%BF_-_%E8%88%AA%E6%8B%8D_-_2024-06-02_20.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "贡山县城天际线 - 航拍 - 2024-06-02 20.jpg",
+        "path": "work/WBYNG/cand_commons/d02_nujiang_grand_canyon_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "瑞丽江的河水",
+        "lat": 27.749651749999998,
+        "lon": 98.66814283333333,
+        "in_region": true
+      }
+    ]
+  },
+  "d02_lisu_people_traditional_costume": {
+    "subject": "Lisu people traditional costume 傈僳族",
+    "query": "Lisu people traditional costume",
+    "query_full": "Lisu people traditional costume",
+    "shrunk": false,
+    "day": 2,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Lisu_girls_showing_their_traditional_costumes_Tha_Ton_Thailand_20Nov2005.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Lisu girls showing their traditional costumes Tha Ton Thailand 20Nov2005.jpg",
+        "path": "work/WBYNG/cand_commons/d02_lisu_people_traditional_costume_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Everhard van Eimeren",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d02_nu_river_liuku_riverside": {
+    "subject": "Nu River Liuku riverside 六库怒江",
+    "query": "Nu River",
+    "query_full": "Nu River Liuku riverside",
+    "shrunk": true,
+    "day": 2,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Myanmar_script_of_Salween_River_Bridge_at_Takownat.jpg/1920px-Myanmar_script_of_Salween_River_Bridge_at_Takownat.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Myanmar script of Salween River Bridge at Takownat.jpg",
+        "path": "work/WBYNG/cand_commons/d02_nu_river_liuku_riverside_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Saosukham",
+        "lat": 22.51835833333333,
+        "lon": 98.6183861111111,
+        "in_region": false
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/04/Salween_River%2C_The_Rope_Station_%285710965271%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Salween River, The Rope Station (5710965271).jpg",
+        "path": "work/WBYNG/cand_commons/d02_nu_river_liuku_riverside_2.jpg",
+        "license": "No restrictions",
+        "credit": "Museum of Photographic Arts Collections",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Salween_River_Bridge_for_foot_traffic_only.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Salween River Bridge for foot traffic only.jpg",
+        "path": "work/WBYNG/cand_commons/d02_nu_river_liuku_riverside_3.jpg",
+        "license": "Public domain",
+        "credit": "US Signal Corps",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/15/Salween_discharge.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Salween discharge.jpg",
+        "path": "work/WBYNG/cand_commons/d02_nu_river_liuku_riverside_4.jpg",
+        "license": "CC0",
+        "credit": "River.discharge",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Salween_watershed.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Salween watershed.png",
+        "path": "work/WBYNG/cand_commons/d02_nu_river_liuku_riverside_5.jpg",
+        "license": "CC BY-SA 2.5",
+        "credit": "No machine-readable author provided. Kmusser assumed (based on copyright claims)",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Thanlwin_River_or_Salween_River.jpg/3840px-Thanlwin_River_or_Salween_River.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Thanlwin River or Salween River.jpg",
+        "path": "work/WBYNG/cand_commons/d02_nu_river_liuku_riverside_6.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Saosukham",
+        "lat": 22.518786111111112,
+        "lon": 98.61908055555556,
+        "in_region": false
+      }
+    ]
+  },
+  "d03_nujiang_hot_spring_riverside": {
+    "subject": "Nujiang hot spring riverside 怒江温泉",
+    "query": "Nujiang hot spring",
+    "query_full": "Nujiang hot spring riverside",
+    "shrunk": true,
+    "day": 3,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Denggeng_Zaotang_banner.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Denggeng Zaotang banner.jpg",
+        "path": "work/WBYNG/cand_commons/d03_nujiang_hot_spring_riverside_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "归零者",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d03_nu_river_gorge_rapids": {
+    "subject": "Nu River gorge rapids 怒江老虎跳",
+    "query": "Nu River gorge",
+    "query_full": "Nu River gorge rapids",
+    "shrunk": true,
+    "day": 3,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Aerial_view_of_the_outlet_of_the_Verdon_gorge.jpg/3840px-Aerial_view_of_the_outlet_of_the_Verdon_gorge.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Aerial view of the outlet of the Verdon gorge.jpg",
+        "path": "work/WBYNG/cand_commons/d03_nu_river_gorge_rapids_1.jpg",
+        "license": "CC BY 4.0",
+        "credit": "Olivier Cleynen",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Basses_Gorges_du_Verdon.jpg/3840px-Basses_Gorges_du_Verdon.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Basses Gorges du Verdon.jpg",
+        "path": "work/WBYNG/cand_commons/d03_nu_river_gorge_rapids_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Ogidya",
+        "lat": 43.69410194444444,
+        "lon": 6.030912777777778,
+        "in_region": false
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Cascade_Columbia_River.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Cascade Columbia River.jpg",
+        "path": "work/WBYNG/cand_commons/d03_nu_river_gorge_rapids_3.jpg",
+        "license": "Public domain",
+        "credit": "James W. Alden",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Columbia_River_Gorge%2C_Oregon.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Columbia River Gorge, Oregon.jpg",
+        "path": "work/WBYNG/cand_commons/d03_nu_river_gorge_rapids_4.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Original uploader was Kkmd at en.wikipedia",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Verdon_Gorge_1.jpg/3840px-Verdon_Gorge_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Verdon Gorge 1.jpg",
+        "path": "work/WBYNG/cand_commons/d03_nu_river_gorge_rapids_5.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "kallerna",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/98/Verdon_Trescaire.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Verdon Trescaire.jpg",
+        "path": "work/WBYNG/cand_commons/d03_nu_river_gorge_rapids_6.jpg",
+        "license": "CC BY 2.5",
+        "credit": "Benh LIEU SONG",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d03_nujiang_feilaishi_boulder": {
+    "subject": "Nujiang Feilaishi boulder 飞来石",
+    "query": "Nujiang Feilaishi boulder",
+    "query_full": "Nujiang Feilaishi boulder",
+    "shrunk": false,
+    "day": 3,
+    "candidates": []
+  },
+  "d03_zhiziluo_abandoned_town_nujiang": {
+    "subject": "Zhiziluo abandoned town Nujiang 知子罗",
+    "query": "Zhiziluo abandoned",
+    "query_full": "Zhiziluo abandoned town Nujiang",
+    "shrunk": true,
+    "day": 3,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/%E7%9F%A5%E5%AD%90%E7%BD%97_-_%E8%88%AA%E6%8B%8D_-_2024-06-01_03.jpg/3840px-%E7%9F%A5%E5%AD%90%E7%BD%97_-_%E8%88%AA%E6%8B%8D_-_2024-06-01_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "知子罗 - 航拍 - 2024-06-01 03.jpg",
+        "path": "work/WBYNG/cand_commons/d03_zhiziluo_abandoned_town_nujiang_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "瑞丽江的河水",
+        "lat": 26.540793445,
+        "lon": 98.916089695,
+        "in_region": true
+      }
+    ]
+  },
+  "d03_laomudeng_church_nujiang": {
+    "subject": "Laomudeng Church Nujiang 老姆登教堂",
+    "query": "Laomudeng Church",
+    "query_full": "Laomudeng Church Nujiang",
+    "shrunk": true,
+    "day": 3,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/%E8%80%81%E5%A7%86%E7%99%BB%E6%95%99%E5%A0%82_-_2024-06-01_02.jpg/3840px-%E8%80%81%E5%A7%86%E7%99%BB%E6%95%99%E5%A0%82_-_2024-06-01_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "老姆登教堂 - 2024-06-01 02.jpg",
+        "path": "work/WBYNG/cand_commons/d03_laomudeng_church_nujiang_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "瑞丽江的河水",
+        "lat": 26.557791666666667,
+        "lon": 98.9145888888889,
+        "in_region": true
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/%E8%80%81%E5%A7%86%E7%99%BB%E6%95%99%E5%A0%82_-_%E4%BE%A7%E9%9D%A2_-_2024-06-01_01.jpg/3840px-%E8%80%81%E5%A7%86%E7%99%BB%E6%95%99%E5%A0%82_-_%E4%BE%A7%E9%9D%A2_-_2024-06-01_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "老姆登教堂 - 侧面 - 2024-06-01 01.jpg",
+        "path": "work/WBYNG/cand_commons/d03_laomudeng_church_nujiang_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "瑞丽江的河水",
+        "lat": 26.557883333333333,
+        "lon": 98.91442777777779,
+        "in_region": true
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/%E8%80%81%E5%A7%86%E7%99%BB%E6%95%99%E5%A0%82_-_%E4%BE%A7%E9%9D%A2_-_2024-06-01_02.jpg/3840px-%E8%80%81%E5%A7%86%E7%99%BB%E6%95%99%E5%A0%82_-_%E4%BE%A7%E9%9D%A2_-_2024-06-01_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "老姆登教堂 - 侧面 - 2024-06-01 02.jpg",
+        "path": "work/WBYNG/cand_commons/d03_laomudeng_church_nujiang_3.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "瑞丽江的河水",
+        "lat": 26.557925,
+        "lon": 98.91461111111111,
+        "in_region": true
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/%E8%80%81%E5%A7%86%E7%99%BB%E6%95%99%E5%A0%82_-_%E5%86%85%E9%83%A8_-_2024-06-01.jpg/3840px-%E8%80%81%E5%A7%86%E7%99%BB%E6%95%99%E5%A0%82_-_%E5%86%85%E9%83%A8_-_2024-06-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "老姆登教堂 - 内部 - 2024-06-01.jpg",
+        "path": "work/WBYNG/cand_commons/d03_laomudeng_church_nujiang_4.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "瑞丽江的河水",
+        "lat": 26.557872222222223,
+        "lon": 98.91447500000001,
+        "in_region": true
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/%E8%80%81%E5%A7%86%E7%99%BB%E6%95%99%E5%A0%82_-_%E6%96%87%E4%BF%9D%E8%AF%B4%E6%98%8E_-_2024-06-01.jpg/3840px-%E8%80%81%E5%A7%86%E7%99%BB%E6%95%99%E5%A0%82_-_%E6%96%87%E4%BF%9D%E8%AF%B4%E6%98%8E_-_2024-06-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "老姆登教堂 - 文保说明 - 2024-06-01.jpg",
+        "path": "work/WBYNG/cand_commons/d03_laomudeng_church_nujiang_5.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "瑞丽江的河水",
+        "lat": 26.557872222222223,
+        "lon": 98.91449722222222,
+        "in_region": true
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/%E8%80%81%E5%A7%86%E7%99%BB%E6%95%99%E5%A0%82_-_%E9%99%A2%E9%97%A8_-_2024-06-01.jpg/3840px-%E8%80%81%E5%A7%86%E7%99%BB%E6%95%99%E5%A0%82_-_%E9%99%A2%E9%97%A8_-_2024-06-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "老姆登教堂 - 院门 - 2024-06-01.jpg",
+        "path": "work/WBYNG/cand_commons/d03_laomudeng_church_nujiang_6.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "瑞丽江的河水",
+        "lat": 26.557394444444444,
+        "lon": 98.91463333333334,
+        "in_region": true
+      }
+    ]
+  },
+  "d04_shiyueliang_stone_moon_nujiang": {
+    "subject": "Shiyueliang Stone Moon Nujiang 石月亮",
+    "query": "Shiyueliang Stone Moon Nujiang",
+    "query_full": "Shiyueliang Stone Moon Nujiang",
+    "shrunk": false,
+    "day": 4,
+    "candidates": []
+  },
+  "d04_first_bend_nu_river_bingzhongluo": {
+    "subject": "First Bend Nu River Bingzhongluo 怒江第一湾",
+    "query": "First Bend Nu River",
+    "query_full": "First Bend Nu River Bingzhongluo",
+    "shrunk": true,
+    "day": 4,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/1.the_first_bend_of_Nu_river.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "1.the first bend of Nu river.jpg",
+        "path": "work/WBYNG/cand_commons/d04_first_bend_nu_river_bingzhongluo_1.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Claire liy E-mail:360614801@qq.com Tel:0886-3511036 claire",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Handy_manual_of_useful_information_and_world%27s_atlas%2C_for_mechanics%2C_merchants%2C_editors%2C_lawyers_and_all_classes_of_workers_in_every_department_of_human_effort%3B_also_a_compilation_of_facts_for_ready_%2814761772634%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Handy manual of useful information and world's atlas, for mechanics, merchants, editors, lawyers and all classes of workers in every department of human effort; also a compilation of facts for ready (14761772634).jpg",
+        "path": "work/WBYNG/cand_commons/d04_first_bend_nu_river_bingzhongluo_2.jpg",
+        "license": "No restrictions",
+        "credit": "Conklin, George W., comp",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d04_qiunatong_village_bingzhongluo": {
+    "subject": "Qiunatong village Bingzhongluo 秋那桶",
+    "query": "Qiunatong village Bingzhongluo",
+    "query_full": "Qiunatong village Bingzhongluo",
+    "shrunk": false,
+    "day": 4,
+    "candidates": []
+  },
+  "d04_puhua_temple_bingzhongluo": {
+    "subject": "Puhua Temple Bingzhongluo 普化寺",
+    "query": "Puhua Temple",
+    "query_full": "Puhua Temple Bingzhongluo",
+    "shrunk": true,
+    "day": 4,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Puhua_Temple_in_Mount_Wutai%2C_picture1.jpg/3840px-Puhua_Temple_in_Mount_Wutai%2C_picture1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Puhua Temple in Mount Wutai, picture1.jpg",
+        "path": "work/WBYNG/cand_commons/d04_puhua_temple_bingzhongluo_1.jpg",
+        "license": "CC0",
+        "credit": "Huangdan2060",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Puhua_Temple_in_Mount_Wutai%2C_picture2.jpg/3840px-Puhua_Temple_in_Mount_Wutai%2C_picture2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Puhua Temple in Mount Wutai, picture2.jpg",
+        "path": "work/WBYNG/cand_commons/d04_puhua_temple_bingzhongluo_2.jpg",
+        "license": "CC0",
+        "credit": "Huangdan2060",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Tanghe_puhua_temple_summer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Tanghe puhua temple summer.jpg",
+        "path": "work/WBYNG/cand_commons/d04_puhua_temple_bingzhongluo_3.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Ulyssisdi",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/52/Wutai_2009_444.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Wutai 2009 444.jpg",
+        "path": "work/WBYNG/cand_commons/d04_puhua_temple_bingzhongluo_4.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "G41rn8",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Wutai_2009_454.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Wutai 2009 454.jpg",
+        "path": "work/WBYNG/cand_commons/d04_puhua_temple_bingzhongluo_5.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "G41rn8",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Wutai_2009_456.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Wutai 2009 456.jpg",
+        "path": "work/WBYNG/cand_commons/d04_puhua_temple_bingzhongluo_6.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "G41rn8",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d05_yunnan_mountain_highway_switchback": {
+    "subject": "Yunnan mountain highway switchback 盘山公路",
+    "query": "Yunnan mountain highway",
+    "query_full": "Yunnan mountain highway switchback",
+    "shrunk": true,
+    "day": 5,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/20130529%E8%99%8E%E8%B7%B3%E5%B3%A1%E8%87%B3%E4%B8%AD%E7%94%B8G214%E6%96%B0%E8%B7%AF%E6%AE%B5%E5%9D%A1%E9%A1%B6%E5%B1%B1%E5%BC%AF%E8%B7%AF%E4%B8%8A_-_panoramio.jpg/3840px-20130529%E8%99%8E%E8%B7%B3%E5%B3%A1%E8%87%B3%E4%B8%AD%E7%94%B8G214%E6%96%B0%E8%B7%AF%E6%AE%B5%E5%9D%A1%E9%A1%B6%E5%B1%B1%E5%BC%AF%E8%B7%AF%E4%B8%8A_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "20130529虎跳峡至中甸G214新路段坡顶山弯路上 - panoramio.jpg",
+        "path": "work/WBYNG/cand_commons/d05_yunnan_mountain_highway_switchback_1.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "fish4fish",
+        "lat": 27.374333333333333,
+        "lon": 99.89316666666667,
+        "in_region": true
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/20130529%E8%99%8E%E8%B7%B3%E5%B3%A1%E8%87%B3%E4%B8%AD%E7%94%B8G214%E6%96%B0%E8%B7%AF%E6%AE%B5%E9%81%93%E8%BE%B9%E9%AB%98%E5%B4%96%E6%8E%92%E6%B0%B4%E5%B0%8F%E7%80%91%E5%B8%83_-_panoramio.jpg/3840px-20130529%E8%99%8E%E8%B7%B3%E5%B3%A1%E8%87%B3%E4%B8%AD%E7%94%B8G214%E6%96%B0%E8%B7%AF%E6%AE%B5%E9%81%93%E8%BE%B9%E9%AB%98%E5%B4%96%E6%8E%92%E6%B0%B4%E5%B0%8F%E7%80%91%E5%B8%83_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "20130529虎跳峡至中甸G214新路段道边高崖排水小瀑布 - panoramio.jpg",
+        "path": "work/WBYNG/cand_commons/d05_yunnan_mountain_highway_switchback_2.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "fish4fish",
+        "lat": 27.36616666666667,
+        "lon": 99.9405,
+        "in_region": true
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Men_Laden_With_Tea%2C_Sichuan_Sheng%2C_China_1908_Ernest_H._Wilson_RESTORED.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Men Laden With Tea, Sichuan Sheng, China 1908 Ernest H. Wilson RESTORED.jpg",
+        "path": "work/WBYNG/cand_commons/d05_yunnan_mountain_highway_switchback_3.jpg",
+        "license": "CC BY 2.0",
+        "credit": "ralph repo",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Red_River_valley_between_Manhao_and_Lianhuatan_-_P1380196.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Red River valley between Manhao and Lianhuatan - P1380196.JPG",
+        "path": "work/WBYNG/cand_commons/d05_yunnan_mountain_highway_switchback_4.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "User:Vmenkov",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/98/Red_River_valley_between_Manhao_and_Lianhuatan_-_P1380197.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Red River valley between Manhao and Lianhuatan - P1380197.JPG",
+        "path": "work/WBYNG/cand_commons/d05_yunnan_mountain_highway_switchback_5.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "User:Vmenkov",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Red_River_valley_between_Manhao_and_Lianhuatan_-_P1380199.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Red River valley between Manhao and Lianhuatan - P1380199.JPG",
+        "path": "work/WBYNG/cand_commons/d05_yunnan_mountain_highway_switchback_6.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "User:Vmenkov",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d05_feilai_temple_deqin": {
+    "subject": "Feilai Temple Deqin 飞来寺",
+    "query": "Feilai Temple Deqin",
+    "query_full": "Feilai Temple Deqin",
+    "shrunk": false,
+    "day": 5,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/db/%E4%BA%91%E5%8D%97%E6%A2%85%E9%87%8C%E7%99%BD%E5%A1%94.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "云南梅里白塔.jpg",
+        "path": "work/WBYNG/cand_commons/d05_feilai_temple_deqin_1.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Wanglaw",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/74/%E4%BA%91%E5%8D%97%E7%99%BD%E5%A1%94.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "云南白塔.jpg",
+        "path": "work/WBYNG/cand_commons/d05_feilai_temple_deqin_2.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Smwy09",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/%E5%BE%B7%E9%92%A6%E5%8E%BF%E9%A3%9E%E6%9D%A5%E5%AF%BA1.jpg/3840px-%E5%BE%B7%E9%92%A6%E5%8E%BF%E9%A3%9E%E6%9D%A5%E5%AF%BA1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "德钦县飞来寺1.jpg",
+        "path": "work/WBYNG/cand_commons/d05_feilai_temple_deqin_3.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "CaiDie",
+        "lat": 28.447902777777777,
+        "lon": 98.881575,
+        "in_region": true
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/%E5%BE%B7%E9%92%A6%E5%8E%BF%E9%A3%9E%E6%9D%A5%E5%AF%BA2.jpg/3840px-%E5%BE%B7%E9%92%A6%E5%8E%BF%E9%A3%9E%E6%9D%A5%E5%AF%BA2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "德钦县飞来寺2.jpg",
+        "path": "work/WBYNG/cand_commons/d05_feilai_temple_deqin_4.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "CaiDie",
+        "lat": 28.447972222222223,
+        "lon": 98.88160277777777,
+        "in_region": true
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/%E9%A3%9E%E6%9D%A5%E5%AF%BA_-_%E5%86%85%E9%83%A8_-_2025-05-10_03.jpg/3840px-%E9%A3%9E%E6%9D%A5%E5%AF%BA_-_%E5%86%85%E9%83%A8_-_2025-05-10_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "飞来寺 - 内部 - 2025-05-10 03.jpg",
+        "path": "work/WBYNG/cand_commons/d05_feilai_temple_deqin_5.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "瑞丽江的河水",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/%E9%A3%9E%E6%9D%A5%E5%AF%BA%E8%BF%8E%E5%AE%BE%E5%AE%A2-%E7%88%B5%E5%A3%AB%E9%BC%93%E6%89%8B_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "飞来寺迎宾客-爵士鼓手 - panoramio.jpg",
+        "path": "work/WBYNG/cand_commons/d05_feilai_temple_deqin_6.jpg",
+        "license": "CC BY 3.0",
+        "credit": "爵士鼓手",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d05_dongzhulin_monastery_shangri_la": {
+    "subject": "Dongzhulin Monastery Shangri-La 东竹林寺",
+    "query": "Dongzhulin Monastery",
+    "query_full": "Dongzhulin Monastery Shangri-La",
+    "shrunk": true,
+    "day": 5,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/0247_Dongzhulin_Monastery.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "0247 Dongzhulin Monastery.JPG",
+        "path": "work/WBYNG/cand_commons/d05_dongzhulin_monastery_shangri_la_1.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Kogo",
+        "lat": 28.26531722999886,
+        "lon": 99.23216297000423,
+        "in_region": true
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/0252_Dongzhulin_Monastery.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "0252 Dongzhulin Monastery.JPG",
+        "path": "work/WBYNG/cand_commons/d05_dongzhulin_monastery_shangri_la_2.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Kogo",
+        "lat": 28.265084980004705,
+        "lon": 99.23216435999687,
+        "in_region": true
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Dongzhulin_Gompa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Dongzhulin Gompa.jpg",
+        "path": "work/WBYNG/cand_commons/d05_dongzhulin_monastery_shangri_la_3.jpg",
+        "license": "CC BY 2.0",
+        "credit": "reurinkjan",
+        "lat": 28.265,
+        "lon": 99.232,
+        "in_region": true
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/73/%E4%B8%9C%E7%AB%B9%E6%9E%972.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "东竹林2.jpg",
+        "path": "work/WBYNG/cand_commons/d05_dongzhulin_monastery_shangri_la_4.jpg",
+        "license": "CC BY-SA 2.0",
+        "credit": "Eric Feng",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/%E4%B8%9C%E7%AB%B9%E6%9E%97%E5%AF%BA_-_%E8%BE%A9%E7%BB%8F%E9%99%A2_-_2025-05-09_03.jpg/3840px-%E4%B8%9C%E7%AB%B9%E6%9E%97%E5%AF%BA_-_%E8%BE%A9%E7%BB%8F%E9%99%A2_-_2025-05-09_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "东竹林寺 - 辩经院 - 2025-05-09 03.jpg",
+        "path": "work/WBYNG/cand_commons/d05_dongzhulin_monastery_shangri_la_5.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "瑞丽江的河水",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/%E4%B8%9C%E7%AB%B9%E6%9E%97%E5%AF%BA_-_%E9%BC%93_-_2025-05-09.jpg/3840px-%E4%B8%9C%E7%AB%B9%E6%9E%97%E5%AF%BA_-_%E9%BC%93_-_2025-05-09.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "东竹林寺 - 鼓 - 2025-05-09.jpg",
+        "path": "work/WBYNG/cand_commons/d05_dongzhulin_monastery_shangri_la_6.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "瑞丽江的河水",
+        "lat": 28.26493,
+        "lon": 99.232185,
+        "in_region": true
+      }
+    ]
+  },
+  "d06_feilai_temple_viewing_platform_mei": {
+    "subject": "Feilai Temple viewing platform Meili 飞来寺观景台",
+    "query": "Feilai Temple viewing platform Meili",
+    "query_full": "Feilai Temple viewing platform Meili",
+    "shrunk": false,
+    "day": 6,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/%E5%8D%A1%E7%93%A6%E6%A0%BC%E5%8D%9A%E5%B3%B0_-_2025-05-10_IMG_3511.jpg/3840px-%E5%8D%A1%E7%93%A6%E6%A0%BC%E5%8D%9A%E5%B3%B0_-_2025-05-10_IMG_3511.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "卡瓦格博峰 - 2025-05-10 IMG 3511.jpg",
+        "path": "work/WBYNG/cand_commons/d06_feilai_temple_viewing_platform_mei_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "瑞丽江的河水",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/%E6%A2%85%E9%87%8C%E9%9B%AA%E5%B1%B1%E5%85%A8%E6%99%AF_-_2025-05-10_02.jpg/3840px-%E6%A2%85%E9%87%8C%E9%9B%AA%E5%B1%B1%E5%85%A8%E6%99%AF_-_2025-05-10_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "梅里雪山全景 - 2025-05-10 02.jpg",
+        "path": "work/WBYNG/cand_commons/d06_feilai_temple_viewing_platform_mei_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "瑞丽江的河水",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d06_meili_snow_mountain_kawagarbo_sunr": {
+    "subject": "Meili Snow Mountain Kawagarbo sunrise 梅里雪山",
+    "query": "Meili Snow Mountain Kawagarbo sunrise",
+    "query_full": "Meili Snow Mountain Kawagarbo sunrise",
+    "shrunk": false,
+    "day": 6,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/%E5%8D%A1%E7%93%A6%E6%A0%BC%E5%8D%9A%E5%B3%B0_-_2025-05-10_IMG_3511.jpg/3840px-%E5%8D%A1%E7%93%A6%E6%A0%BC%E5%8D%9A%E5%B3%B0_-_2025-05-10_IMG_3511.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "卡瓦格博峰 - 2025-05-10 IMG 3511.jpg",
+        "path": "work/WBYNG/cand_commons/d06_meili_snow_mountain_kawagarbo_sunr_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "瑞丽江的河水",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/%E6%A2%85%E9%87%8C%E9%9B%AA%E5%B1%B1%E5%85%A8%E6%99%AF_-_2025-05-10_02.jpg/3840px-%E6%A2%85%E9%87%8C%E9%9B%AA%E5%B1%B1%E5%85%A8%E6%99%AF_-_2025-05-10_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "梅里雪山全景 - 2025-05-10 02.jpg",
+        "path": "work/WBYNG/cand_commons/d06_meili_snow_mountain_kawagarbo_sunr_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "瑞丽江的河水",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d06_jinsha_river_moon_bay": {
+    "subject": "Jinsha River Moon Bay 金沙江月亮湾",
+    "query": "Jinsha River Moon",
+    "query_full": "Jinsha River Moon Bay",
+    "shrunk": true,
+    "day": 6,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/%E4%BA%91%E5%8D%97%EF%BC%8C%E6%9C%88%E4%BA%AE%E6%B9%BE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "云南，月亮湾.jpg",
+        "path": "work/WBYNG/cand_commons/d06_jinsha_river_moon_bay_1.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Smwy09",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d07_songzanlin_monastery_shangri_la": {
+    "subject": "Songzanlin Monastery Shangri-La 松赞林寺",
+    "query": "Songzanlin Monastery Shangri-La",
+    "query_full": "Songzanlin Monastery Shangri-La",
+    "shrunk": false,
+    "day": 7,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Religious_ceremony_at_Songzanlin_Monastery%2C_Shangri-La_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Religious ceremony at Songzanlin Monastery, Shangri-La - panoramio.jpg",
+        "path": "work/WBYNG/cand_commons/d07_songzanlin_monastery_shangri_la_1.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Colin W",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Songzanlin_Monastery%2C_Shangri-La%2C_China_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Songzanlin Monastery, Shangri-La, China - panoramio.jpg",
+        "path": "work/WBYNG/cand_commons/d07_songzanlin_monastery_shangri_la_2.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Colin W",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/58/Songzanlin_Monastery%2C_Shangri-La_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Songzanlin Monastery, Shangri-La - panoramio.jpg",
+        "path": "work/WBYNG/cand_commons/d07_songzanlin_monastery_shangri_la_3.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Colin W",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/08/Songzanlin_Monastery%2C_Shangri-La_-_panoramio_-_Colin_W.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Songzanlin Monastery, Shangri-La - panoramio - Colin W.jpg",
+        "path": "work/WBYNG/cand_commons/d07_songzanlin_monastery_shangri_la_4.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Colin W",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Songzanlin_Monastery%2C_Shangri-La_-_panoramio_-_Colin_W_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Songzanlin Monastery, Shangri-La - panoramio - Colin W (4).jpg",
+        "path": "work/WBYNG/cand_commons/d07_songzanlin_monastery_shangri_la_5.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Colin W",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Stupa_near_Songzanlin_Monastery%2C_Shangri-La_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Stupa near Songzanlin Monastery, Shangri-La - panoramio.jpg",
+        "path": "work/WBYNG/cand_commons/d07_songzanlin_monastery_shangri_la_6.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Colin W",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d07_dukezong_ancient_town_shangri_la": {
+    "subject": "Dukezong Ancient Town Shangri-La 独克宗古城",
+    "query": "Dukezong Ancient Town Shangri-La",
+    "query_full": "Dukezong Ancient Town Shangri-La",
+    "shrunk": false,
+    "day": 7,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/20260225_Skyline_of_Dukezong_Ancient_Town_Shangri-La_01.jpg/3840px-20260225_Skyline_of_Dukezong_Ancient_Town_Shangri-La_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "20260225 Skyline of Dukezong Ancient Town Shangri-La 01.jpg",
+        "path": "work/WBYNG/cand_commons/d07_dukezong_ancient_town_shangri_la_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "祝鱼贵",
+        "lat": 27.814985,
+        "lon": 99.70533,
+        "in_region": true
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/20260225_Skyline_of_Dukezong_Ancient_Town_Shangri-La_02.jpg/3840px-20260225_Skyline_of_Dukezong_Ancient_Town_Shangri-La_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "20260225 Skyline of Dukezong Ancient Town Shangri-La 02.jpg",
+        "path": "work/WBYNG/cand_commons/d07_dukezong_ancient_town_shangri_la_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "祝鱼贵",
+        "lat": 27.814991,
+        "lon": 99.70535600000001,
+        "in_region": true
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/20260225_Skyline_of_Dukezong_Ancient_Town_Shangri-La_03.jpg/3840px-20260225_Skyline_of_Dukezong_Ancient_Town_Shangri-La_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "20260225 Skyline of Dukezong Ancient Town Shangri-La 03.jpg",
+        "path": "work/WBYNG/cand_commons/d07_dukezong_ancient_town_shangri_la_3.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "祝鱼贵",
+        "lat": 27.814991,
+        "lon": 99.70535600000001,
+        "in_region": true
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/20260225_Skyline_of_Dukezong_Ancient_Town_Shangri-La_04.jpg/3840px-20260225_Skyline_of_Dukezong_Ancient_Town_Shangri-La_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "20260225 Skyline of Dukezong Ancient Town Shangri-La 04.jpg",
+        "path": "work/WBYNG/cand_commons/d07_dukezong_ancient_town_shangri_la_4.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "祝鱼贵",
+        "lat": 27.814858333333333,
+        "lon": 99.7053138888889,
+        "in_region": true
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/20260225_Skyline_of_Dukezong_Ancient_Town_Shangri-La_06.jpg/3840px-20260225_Skyline_of_Dukezong_Ancient_Town_Shangri-La_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "20260225 Skyline of Dukezong Ancient Town Shangri-La 06.jpg",
+        "path": "work/WBYNG/cand_commons/d07_dukezong_ancient_town_shangri_la_5.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "祝鱼贵",
+        "lat": 27.814908333333335,
+        "lon": 99.70529166666667,
+        "in_region": true
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/20260225_Skyline_of_Dukezong_Ancient_Town_Shangri-La_11.jpg/3840px-20260225_Skyline_of_Dukezong_Ancient_Town_Shangri-La_11.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "20260225 Skyline of Dukezong Ancient Town Shangri-La 11.jpg",
+        "path": "work/WBYNG/cand_commons/d07_dukezong_ancient_town_shangri_la_6.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "祝鱼贵",
+        "lat": 27.814172222222222,
+        "lon": 99.70523055555556,
+        "in_region": true
+      }
+    ]
+  },
+  "d07_guishan_park_giant_prayer_wheel_sh": {
+    "subject": "Guishan Park giant prayer wheel Shangri-La 龟山转经筒",
+    "query": "Guishan Park",
+    "query_full": "Guishan Park giant prayer wheel Shangri-La",
+    "shrunk": true,
+    "day": 7,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Big_turtle_at_Guishan_Zhongzhen_Park.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Big turtle at Guishan Zhongzhen Park.jpg",
+        "path": "work/WBYNG/cand_commons/d07_guishan_park_giant_prayer_wheel_sh_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Foxy1219",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/23/Guishan_Dahu_Memorial_Park_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Guishan Dahu Memorial Park 01.jpg",
+        "path": "work/WBYNG/cand_commons/d07_guishan_park_giant_prayer_wheel_sh_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Foxy1219",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Guishan_Dahu_Memorial_Park_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Guishan Dahu Memorial Park 02.jpg",
+        "path": "work/WBYNG/cand_commons/d07_guishan_park_giant_prayer_wheel_sh_3.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Foxy1219",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Guishan_Industrial_Park%2C_Taouan_City%2C_Taiwan_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Guishan Industrial Park, Taouan City, Taiwan - panoramio.jpg",
+        "path": "work/WBYNG/cand_commons/d07_guishan_park_giant_prayer_wheel_sh_4.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "MNRNSD",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Guishan_Zhongzhen_Park.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Guishan Zhongzhen Park.jpg",
+        "path": "work/WBYNG/cand_commons/d07_guishan_park_giant_prayer_wheel_sh_5.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Foxy1219",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/M41A3_Walker_Bulldog_at_the_Guishan_First_Riverside_Park%2C_Taiwan._03-03-2026_%2855228368634%29.jpg/3840px-M41A3_Walker_Bulldog_at_the_Guishan_First_Riverside_Park%2C_Taiwan._03-03-2026_%2855228368634%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "M41A3 Walker Bulldog at the Guishan First Riverside Park, Taiwan. 03-03-2026 (55228368634).jpg",
+        "path": "work/WBYNG/cand_commons/d07_guishan_park_giant_prayer_wheel_sh_6.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Alan Wilson from Peterborough, Cambs, UK",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  }
+}
