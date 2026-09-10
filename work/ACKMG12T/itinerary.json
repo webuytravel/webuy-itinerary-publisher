@@ -1,0 +1,539 @@
+{
+  "type_code": "ACKMG12T",
+  "travel_days": 12,
+  "_source": "from brochure PDFs `ACKMG12T - 12D Splendid Tianfu Express · Whispers of the Mountains · Southwest China Journey` (English + Chinese), read 2026-09-10. Day 6 and Day 9 each offer a Route A / Route B choice; both options are kept as separate trip items because the guest picks on the day. Day 5 carries the brochure's non-high-altitude substitution (Lijiang Ancient Town) as a second trip item.",
+  "product_name": {
+    "en": "12D Splendid Tianfu Express · Whispers of the Mountains · Southwest China Journey",
+    "zh": "12天 锦绣天府号 · 山野密语 · 西南锦绣宋韵归心之旅"
+  },
+  "highlights": [],
+  "sections": [
+    {
+      "day": 1,
+      "name": {
+        "en": "DAY 1",
+        "zh": "第一天"
+      },
+      "title": {
+        "en": "Singapore - Chengdu",
+        "zh": "新加坡 - 成都"
+      },
+      "location": {
+        "en": "Chengdu",
+        "zh": "成都"
+      },
+      "description": {
+        "en": "Assemble at Singapore Changi Airport and fly to Chengdu, the “Land of Abundance”, where the Panda Train · Tianfu Express journey begins. On arrival, a private transfer takes you to your hotel to check in and rest; the evening is free to wander Chengdu at leisure.",
+        "zh": "于新加坡樟宜机场集合，乘坐国际航班飞往“天府之国”——成都，正式开启锦绣天府号之旅。抵达后专车接机，送往酒店办理入住休息，晚上可自由漫步成都街头，感受天府夜色。"
+      },
+      "trip_items": [
+        {
+          "title": {
+            "en": "Fly from Singapore to Chengdu · private airport transfer",
+            "zh": "由新加坡乘搭航班飞往成都 · 专车接机"
+          },
+          "description": {
+            "en": "",
+            "zh": ""
+          },
+          "photo_subject": "Chengdu city skyline Sichuan 成都"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "name": {
+        "en": "DAY 2",
+        "zh": "第二天"
+      },
+      "title": {
+        "en": "Chengdu",
+        "zh": "成都"
+      },
+      "location": {
+        "en": "Chengdu",
+        "zh": "成都"
+      },
+      "description": {
+        "en": "Full day at leisure. In the evening, transfer to board the Panda Express Train · Splendid Tianfu.",
+        "zh": "全天自由行，晚间送往登乘熊猫专列·锦绣天府号列车。"
+      },
+      "trip_items": [
+        {
+          "title": {
+            "en": "Board the Panda Train · Tianfu Express",
+            "zh": "登乘熊猫专列·锦绣天府号列车"
+          },
+          "description": {
+            "en": "",
+            "zh": ""
+          },
+          "photo_subject": "Chengdu railway station train 成都火车站"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "name": {
+        "en": "DAY 3",
+        "zh": "第三天"
+      },
+      "title": {
+        "en": "Chengdu - Xichang",
+        "zh": "成都 - 西昌"
+      },
+      "location": {
+        "en": "Xichang",
+        "zh": "西昌"
+      },
+      "description": {
+        "en": "Board the Panda Train · Tianfu Express and begin a journey woven in the spirit of Song, savouring refined moments on board as the train sets out towards Xichang.",
+        "zh": "登乘熊猫专列·锦绣天府号列车，开启丝路文化之旅，在列车上品味雅致时光。"
+      },
+      "trip_items": [
+        {
+          "title": {
+            "en": "Welcome Ceremony on board",
+            "zh": "【欢迎仪式】"
+          },
+          "description": {
+            "en": "",
+            "zh": ""
+          },
+          "photo_subject": "Xichang Sichuan 西昌"
+        },
+        {
+          "title": {
+            "en": "Cultural Salon",
+            "zh": "【文化沙龙】"
+          },
+          "description": {
+            "en": "",
+            "zh": ""
+          },
+          "photo_subject": "Chinese Song dynasty cultural salon tea ceremony"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "name": {
+        "en": "DAY 4",
+        "zh": "第四天"
+      },
+      "title": {
+        "en": "Xichang - Lijiang",
+        "zh": "西昌 - 丽江"
+      },
+      "location": {
+        "en": "Xichang",
+        "zh": "西昌"
+      },
+      "description": {
+        "en": "Morning: Begin at Qionghai Lake, a luminous expanse of blue on the edge of Xichang. Follow the quiet wetland shores at an unhurried pace before pausing for lunch. Afternoon: Enter Jianchang Ancient City, where weathered walls and venerable trees hold the layered character of Sichuan and Yunnan in quiet dialogue. Evening: A fisherman's banquet brings the flavours of the lake to the table, before the journey continues aboard Panda Train · Tianfu Express towards Lijiang.",
+        "zh": "【上午】漫游【邛海】，邂逅西昌一汪澄澈碧水，信步湿地浅岸，沉醉此间。【下午】探访【建昌古城】，斑驳古墙与苍劲古树相依，沉浸感受川滇相融的古朴风华。【晚餐】享用【特色渔家宴】之后，返回熊猫专列·锦绣天府号前往丽江。"
+      },
+      "trip_items": [
+        {
+          "title": {
+            "en": "Qionghai Lake",
+            "zh": "【邛海】"
+          },
+          "description": {
+            "en": "",
+            "zh": ""
+          },
+          "photo_subject": "Qionghai Lake Xichang 邛海"
+        },
+        {
+          "title": {
+            "en": "Jianchang Ancient City",
+            "zh": "【建昌古城】"
+          },
+          "description": {
+            "en": "",
+            "zh": ""
+          },
+          "photo_subject": "Jianchang Ancient City Xichang 建昌古城"
+        },
+        {
+          "title": {
+            "en": "Traditional Fisherman's Banquet",
+            "zh": "【特色渔家宴】"
+          },
+          "description": {
+            "en": "",
+            "zh": ""
+          },
+          "photo_subject": "Chinese lakeside fisherman banquet freshwater fish feast"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "name": {
+        "en": "DAY 5",
+        "zh": "第五天"
+      },
+      "title": {
+        "en": "Lijiang - Shangri-La",
+        "zh": "丽江 - 香格里拉"
+      },
+      "location": {
+        "en": "Shangri-La",
+        "zh": "香格里拉"
+      },
+      "description": {
+        "en": "After lunch, arrive at Lijiang Station and continue by private coach towards Shangri-La, approximately two and a half hours away.",
+        "zh": "午餐后列车停靠丽江站，从丽江乘车前往香格里拉（车程约2.5小时）。"
+      },
+      "trip_items": [
+        {
+          "title": {
+            "en": "Shangri-La",
+            "zh": "【香格里拉】"
+          },
+          "description": {
+            "en": "",
+            "zh": ""
+          },
+          "photo_subject": "Shangri-La Diqing Yunnan 香格里拉"
+        },
+        {
+          "title": {
+            "en": "Non-high-altitude alternative: Lijiang Ancient Town",
+            "zh": "非高原版调整为：丽江古城"
+          },
+          "description": {
+            "en": "",
+            "zh": ""
+          },
+          "photo_subject": "Lijiang Ancient Town Yunnan 丽江古城"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "name": {
+        "en": "DAY 6",
+        "zh": "第六天"
+      },
+      "title": {
+        "en": "Shangri-La",
+        "zh": "香格里拉"
+      },
+      "location": {
+        "en": "Shangri-La",
+        "zh": "香格里拉"
+      },
+      "description": {
+        "en": "In Shangri-La, the day may be shaped in two distinct ways, with a choice of Route A or Route B in both morning and afternoon. Morning — Route A: Journey into Pudacuo National Park, where clear lakes mirror snow-bright peaks. Route B: Discover Ganden Sumtseling Monastery, the “Little Potala Palace” of northwest Yunnan. Afternoon — Route A: In Dukezong Ancient Town, stand beneath the great prayer wheel and join a Guozhuang circle dance. Route B: At a Thangka academy, take brush to canvas and enter the stillness of an art sustained by faith. (A gradual ascent by steps at elevation — guests sensitive to altitude are encouraged to take care.)",
+        "zh": "香格里拉行程上午和下午均分为A、B两条路线，二选一。【上午】A线：奔赴【普达措国家公园】，澄澈湖泽映照皑皑雪山；B线：探访“小布达拉宫”【噶丹·松赞林寺】。【下午】A线：在【独克宗古城】邂逅世界最大转经筒；B线：走进【唐卡画院】亲手描摹一幅唐卡。（寺院参观需爬行阶梯，可能引起高原反应，须谨慎选择）"
+      },
+      "trip_items": [
+        {
+          "title": {
+            "en": "Route A · Morning: Pudacuo National Park",
+            "zh": "A线【普达措国家公园】"
+          },
+          "description": {
+            "en": "",
+            "zh": ""
+          },
+          "photo_subject": "Pudacuo National Park Shangri-La Yunnan 普达措"
+        },
+        {
+          "title": {
+            "en": "Route B · Morning: Ganden Sumtseling Monastery",
+            "zh": "B线【噶丹·松赞林寺】"
+          },
+          "description": {
+            "en": "",
+            "zh": ""
+          },
+          "photo_subject": "Ganden Sumtseling Monastery Shangri-La 松赞林寺"
+        },
+        {
+          "title": {
+            "en": "Route A · Afternoon: Dukezong Ancient Town",
+            "zh": "A线【独克宗古城】"
+          },
+          "description": {
+            "en": "",
+            "zh": ""
+          },
+          "photo_subject": "Dukezong Ancient Town prayer wheel Shangri-La 独克宗古城"
+        },
+        {
+          "title": {
+            "en": "Route B · Afternoon: Thangka Painting Academy",
+            "zh": "B线【唐卡画院】"
+          },
+          "description": {
+            "en": "",
+            "zh": ""
+          },
+          "photo_subject": "Thangka painting Tibetan Buddhist art academy"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "name": {
+        "en": "DAY 7",
+        "zh": "第七天"
+      },
+      "title": {
+        "en": "Shangri-La - Lijiang - Baoshan",
+        "zh": "香格里拉 - 丽江 - 保山"
+      },
+      "location": {
+        "en": "Tiger Leaping Gorge",
+        "zh": "虎跳峡"
+      },
+      "description": {
+        "en": "After breakfast, travel to Tiger Leaping Gorge, where the river gathers force between sheer mountain walls. Venture deeper on a six-kilometre walk, or take the shuttle to the viewpoint for a more leisurely encounter. Afternoon: Return to Lijiang and rejoin Panda Train · Tianfu Express for the onward journey to Baoshan. Hiking note: approximately 6 km · 2–3 hours · elevation gain 100–200 m.",
+        "zh": "早餐后前往【虎跳峡】，激流撞击嶙峋巨石，山河气势磅礴。可选择6公里徒步深入峡谷，或乘中转车直达观景台悠然赏景。【下午】抵达丽江后乘熊猫专列·锦绣天府号前往【保山】。（徒步约6公里，时长2-3小时，海拔上升100-200米）"
+      },
+      "trip_items": [
+        {
+          "title": {
+            "en": "Tiger Leaping Gorge",
+            "zh": "【虎跳峡】"
+          },
+          "description": {
+            "en": "",
+            "zh": ""
+          },
+          "photo_subject": "Tiger Leaping Gorge Jinsha River Yunnan 虎跳峡"
+        },
+        {
+          "title": {
+            "en": "Baoshan",
+            "zh": "【保山】"
+          },
+          "description": {
+            "en": "",
+            "zh": ""
+          },
+          "photo_subject": "Baoshan Yunnan 保山"
+        }
+      ]
+    },
+    {
+      "day": 8,
+      "name": {
+        "en": "DAY 8",
+        "zh": "第八天"
+      },
+      "title": {
+        "en": "Baoshan - Tengchong",
+        "zh": "保山 - 腾冲"
+      },
+      "location": {
+        "en": "Tengchong",
+        "zh": "腾冲"
+      },
+      "description": {
+        "en": "Arrive in Baoshan by train, then continue by road to Tengchong, approximately three hours away, for lunch. Afternoon: Wander through the Dadi Tea Estate as aircraft pass low above the fields; in a glass tea room set among the hills, allow the gathering dusk to slow the pace of the day. Later, the Old Schoolhouse recalls the campus years of the 1960s. Over a caravan-inspired dinner, the memories of western Yunnan meet the present moment.",
+        "zh": "列车抵达保山，乘车前往腾冲（车程约3小时）享用午餐。【下午】在【大地茶海】漫行，静待飞机低掠茶田，静坐山间玻璃茶室，让心绪在暮色里缓缓归于安宁。随后踏入【老学堂】，回望六十年代校园岁月，一席马帮佳肴，属于滇西的过往记忆与此刻重叠。"
+      },
+      "trip_items": [
+        {
+          "title": {
+            "en": "Dadi Tea Estate",
+            "zh": "【大地茶海】"
+          },
+          "description": {
+            "en": "",
+            "zh": ""
+          },
+          "photo_subject": "Tengchong Dadi tea plantation Yunnan 大地茶海"
+        },
+        {
+          "title": {
+            "en": "The Old Schoolhouse",
+            "zh": "【老学堂】"
+          },
+          "description": {
+            "en": "",
+            "zh": ""
+          },
+          "photo_subject": "Tengchong old schoolhouse 1960s campus 老学堂"
+        }
+      ]
+    },
+    {
+      "day": 9,
+      "name": {
+        "en": "DAY 9",
+        "zh": "第九天"
+      },
+      "title": {
+        "en": "Tengchong",
+        "zh": "腾冲"
+      },
+      "location": {
+        "en": "Tengchong",
+        "zh": "腾冲"
+      },
+      "description": {
+        "en": "Today's itinerary offers two routes, A and B — choose one. Route A: Head to Rehai Hot Spring Park, where mist and steam swirl through the valley; pick up a string of hot-spring eggs, gently poached by natural geothermal heat. Route B: Hike the Gaoligong Mountains and discover the natural vitality of this hidden wilderness, stopping at a forest Mountain Kitchen for a jungle BBQ (approx. 3 km · around 2 hours · elevation gain 100–300 m). Afternoon (both routes): At Hemu Camellia Village, savour a feast of pure camellia oil cuisine passed down over 800 years.",
+        "zh": "今日行程分为A、B两条路线，二选一。A线【上午】赴【热海公园】，山谷间云雾氤氲缭绕，取一串温泉蛋，借天然地热焖煮。B线【上午】徒步【高黎贡山】，正午落脚隐匿林间的【山野厨房】，一场丛林BBQ（徒步约3公里，约2小时，海拔上升100-300米）。【下午】两线均在【和睦茶花村】，品味传承八百年纯正山茶油宴。"
+      },
+      "trip_items": [
+        {
+          "title": {
+            "en": "Route A: Rehai Hot Spring Park",
+            "zh": "A线【热海公园】"
+          },
+          "description": {
+            "en": "",
+            "zh": ""
+          },
+          "photo_subject": "Rehai Hot Spring Park Tengchong geothermal 热海公园"
+        },
+        {
+          "title": {
+            "en": "Route B: Gaoligong Mountains hike · Forest Mountain Kitchen",
+            "zh": "B线【高黎贡山】·【山野厨房】"
+          },
+          "description": {
+            "en": "",
+            "zh": ""
+          },
+          "photo_subject": "Gaoligong Mountain nature reserve Yunnan 高黎贡山"
+        },
+        {
+          "title": {
+            "en": "Hemu Camellia Village · camellia-oil banquet",
+            "zh": "【和睦茶花村】·茶油宴"
+          },
+          "description": {
+            "en": "",
+            "zh": ""
+          },
+          "photo_subject": "Hemu Camellia Village Tengchong 和睦茶花村"
+        }
+      ]
+    },
+    {
+      "day": 10,
+      "name": {
+        "en": "DAY 10",
+        "zh": "第十天"
+      },
+      "title": {
+        "en": "Tengchong - Baoshan",
+        "zh": "腾冲 - 保山"
+      },
+      "location": {
+        "en": "Tengchong",
+        "zh": "腾冲"
+      },
+      "description": {
+        "en": "Morning: In Jietou Village, an ancient Silk Road basin beneath the Gaoligong Mountains, discover a 600-year-old papermaking tradition and create a sheet of botanical paper by hand. Afternoon: Wander through Qiluo Ancient Town, a Tea Horse Road village shaped across six centuries, and taste caravan tea. After dinner, travel by road to Baoshan, approximately three hours away, and board Panda Train · Tianfu Express for the return journey.",
+        "zh": "【上午】在【界头村】，驻足高黎贡山下的千年丝路边关盆地，邂逅传承六百年的非遗古法造纸技艺，制作独属于自己的温润花草纸。【下午】漫步【绮罗古镇】，探访六百年茶马古村，慢啜【马帮茶】。晚餐后车赴保山（车程约3小时），乘坐熊猫专列·锦绣天府号返程。"
+      },
+      "trip_items": [
+        {
+          "title": {
+            "en": "Jietou Village · heritage handmade papermaking",
+            "zh": "【界头村】·古法造纸"
+          },
+          "description": {
+            "en": "",
+            "zh": ""
+          },
+          "photo_subject": "Jietou village Tengchong handmade paper 界头村"
+        },
+        {
+          "title": {
+            "en": "Qiluo Ancient Town",
+            "zh": "【绮罗古镇】"
+          },
+          "description": {
+            "en": "",
+            "zh": ""
+          },
+          "photo_subject": "Qiluo Ancient Town Tengchong 绮罗古镇"
+        },
+        {
+          "title": {
+            "en": "Caravan Tea",
+            "zh": "【马帮茶】"
+          },
+          "description": {
+            "en": "",
+            "zh": ""
+          },
+          "photo_subject": "Tea Horse Road caravan tea Yunnan 马帮茶"
+        }
+      ]
+    },
+    {
+      "day": 11,
+      "name": {
+        "en": "DAY 11",
+        "zh": "第十一天"
+      },
+      "title": {
+        "en": "Arrival in Chengdu",
+        "zh": "抵达成都"
+      },
+      "location": {
+        "en": "Chengdu",
+        "zh": "成都"
+      },
+      "description": {
+        "en": "The journey draws to a close with memories of Yi warmth, snow peaks touched by gold and the gentle stillness of hot-spring country. May the landscapes linger — and lead us to meet again.",
+        "zh": "此程，邂逅浓郁彝族烟火，仰望雪山鎏金金顶，沉醉温润温泉田园，美景与您次第相逢，在自然处方之中治愈自我，盼来日再相逢。"
+      },
+      "trip_items": [
+        {
+          "title": {
+            "en": "Closing programme on board · Yi culture",
+            "zh": "【返程·收官】列车活动·彝族风情"
+          },
+          "description": {
+            "en": "",
+            "zh": ""
+          },
+          "photo_subject": "Yi ethnic culture Liangshan Sichuan 彝族"
+        }
+      ]
+    },
+    {
+      "day": 12,
+      "name": {
+        "en": "DAY 12",
+        "zh": "第十二天"
+      },
+      "title": {
+        "en": "Chengdu - Singapore",
+        "zh": "成都 - 新加坡"
+      },
+      "location": {
+        "en": "Chengdu",
+        "zh": "成都"
+      },
+      "description": {
+        "en": "Wake at leisure and enjoy breakfast at the hotel. According to your flight time, a private transfer takes you to Chengdu airport for your flight home to Singapore. Carry the whispers of the wilderness and the spirit of Song with you — until we meet again.",
+        "zh": "睡到自然醒，享用酒店早餐，收拾行囊。根据航班时间，专车送往成都机场，搭乘航班返回新加坡。携一路山野密语与锦绣宋韵回家，盼与您来日再相逢。"
+      },
+      "trip_items": [
+        {
+          "title": {
+            "en": "Private airport transfer · fly home to Singapore",
+            "zh": "专车送机 · 搭乘航班返回新加坡"
+          },
+          "description": {
+            "en": "",
+            "zh": ""
+          },
+          "photo_subject": "Chengdu Tianfu International Airport 成都天府国际机场"
+        }
+      ]
+    }
+  ]
+}
