@@ -467,6 +467,22 @@ def run(code: str, work: Path = WORK) -> tuple[ImagePlan, list]:
     return plan, removed
 
 
+def route_map_notice(plan: ImagePlan) -> str | None:
+    """摘要行里 `route=0` 的那一行字,没有路线图时返回,有就返回 None.
+
+    `route=0` 和 `route=1` 夹在 sections / carousel / thumb / gaps 一串数字
+    中间,读起来没有区别——路线图缺了不会让流程停下来,只会让产品页少一张图,
+    而 `wt_travel.routeMapUrl` 要么留空,要么沿用上一次写进去的值——一页
+    《Special Terms and Conditions》就是这样当成路线图挂上去而没人发现的。
+    按 DESIGN 6.9 的标准,这种失败必须自己响,所以和 `NO SECTION PHOTO` 一样
+    单独占一行、带 `NO ROUTE MAP` 抬头,不指望人去数那串数字。
+    """
+    if plan.of("route_map"):
+        return None
+    return ("    NO ROUTE MAP: 册子里没有认出路线图 — routeMapUrl 会留空或"
+            "沿用旧值,需要人决定:补一张示意图,还是确认这个产品不用")
+
+
 if __name__ == "__main__":
     # 只跑指定的产品。默认全跑会把已经审过的三个产品的 plan.json 连同
     # 它们的图一起重新生成,那是不必要的网络往返,也会让已签字的配图漂移。
@@ -505,6 +521,9 @@ if __name__ == "__main__":
         if bare:
             print(f"    NO SECTION PHOTO: day(s) {', '.join(map(str, bare))} "
                   f"— 逐条见下方 GAP,每一条都要人决定")
+        route_line = route_map_notice(plan)
+        if route_line:
+            print(route_line)
         # 上一轮生成、这一轮已经不在 plan 里的图。点名,不只报数:留下来的
         # 那几张恰恰是被判定为错图删掉的,而按文件名通配去取上传清单看不出
         # 区别(DESIGN 6.12)。
