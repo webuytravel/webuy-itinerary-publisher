@@ -1,0 +1,161 @@
+{
+  "code": "WBCKWE",
+  "region": "CHN",
+  "notes": {
+    "commons_region_box": [
+      "贵州 + 重庆"
+    ]
+  },
+  "catalogue_tours": [
+    "tours/115-9d8n-discover-the-natural-wonders-of-guizhou",
+    "tours/108-8d7n-chongqing-wulong-dazu-world-cultural-heritage"
+  ],
+  "commons_region_box": [
+    24,
+    31,
+    103,
+    111
+  ],
+  "highlights": [
+    {
+      "en": "Mount Fanjing, a UNESCO World Heritage site",
+      "zh": "梵净山，世界自然遗产"
+    },
+    {
+      "en": "Huangguoshu Waterfall, Asia’s largest waterfall",
+      "zh": "黄果树大瀑布，亚洲最大瀑布"
+    },
+    {
+      "en": "Explore geological wonders at Maling River Canyon, Wanfenglin and Wanfeng Lake",
+      "zh": "探访马岭河大峡谷、万峰林、万峰湖地质奇观"
+    },
+    {
+      "en": "Complimentary Miao costume experience at Xijiang Qianhu Miao Village",
+      "zh": "西江千户苗寨，赠送苗服换装体验"
+    },
+    {
+      "en": "Highland Flavors · Qian (Guizhou) Cuisine · Canyon Flavors · Buyi Ethnic Flavors",
+      "zh": "高原风味 · 黔菜风味 · 峡谷风味 · 布依风味"
+    },
+    {
+      "en": "Wild Mushroom Cuisine · Sour Soup Flavors · Miao Long-Table Banquet",
+      "zh": "菌子风味 · 酸汤风味 · 长桌宴"
+    }
+  ],
+  "section_overrides": {
+    "d01": [
+      {
+        "source": "stock",
+        "block": "d01_chongqing",
+        "n": 2,
+        "note": "重庆夜景"
+      }
+    ],
+    "d06": [
+      {
+        "source": "stock",
+        "block": "d06_kala_miao",
+        "n": 5,
+        "note": "苗族传统服饰"
+      }
+    ]
+  },
+  "trip_picks": [
+    {
+      "source": "commons",
+      "block": "d07_mount_fanjing",
+      "n": 6,
+      "note": "云海之上的金顶 s0.43",
+      "why": "D7 梵净山:**整个 red_cloud_golden_summit 块弃用**——六张全是雾里的 灰石桥和题刻,饱和 0.06–0.12,是全部候选里最差的一组。同一座山的 mount_fanjing #6 是云海之上的金顶,s0.43,画面强一个量级。"
+    },
+    {
+      "source": "commons",
+      "block": "d07_mount_fanjing",
+      "n": 1,
+      "note": "雾中山脊上的红衣人 s0.25"
+    },
+    {
+      "source": "commons",
+      "block": "d06_xijiang_qianhu_miao_village",
+      "n": 2,
+      "note": "满山吊脚楼与梯田 s0.23",
+      "why": "D6 西江千户苗寨"
+    },
+    {
+      "source": "commons",
+      "block": "d06_xijiang_qianhu_miao_village",
+      "n": 6,
+      "note": "木楼与梯田 s0.26"
+    },
+    {
+      "source": "commons",
+      "block": "d06_xijiang_qianhu_miao_village",
+      "n": 4,
+      "note": "溪上吊脚楼 s0.19"
+    },
+    {
+      "source": "commons",
+      "block": "d02_jiaxiu_pavilion",
+      "n": 2,
+      "note": "临水楼阁与绿树 s0.22",
+      "why": "D2 甲秀楼:整组都在 0.19–0.22,挑主体最完整的三张"
+    },
+    {
+      "source": "commons",
+      "block": "d02_jiaxiu_pavilion",
+      "n": 1,
+      "note": "楼与拱桥、河 s0.22"
+    },
+    {
+      "source": "commons",
+      "block": "d02_jiaxiu_pavilion",
+      "n": 4,
+      "note": "石桥与楼 s0.20"
+    },
+    {
+      "source": "commons",
+      "block": "d03_huangguoshu_waterfall",
+      "n": 2,
+      "note": "林隙中的瀑布,绿 s0.27",
+      "why": "D3 黄果树:#3 分最高(1.08)但是夜间彩灯秀,粉紫色和册子调性不符"
+    },
+    {
+      "source": "commons",
+      "block": "d03_huangguoshu_waterfall",
+      "n": 5,
+      "note": "瀑布与碧潭 s0.27"
+    },
+    {
+      "source": "commons",
+      "block": "d03_huangguoshu_waterfall",
+      "n": 4,
+      "note": "瀑布全景 s0.23"
+    },
+    {
+      "source": "commons",
+      "block": "d03_doupotang_waterfall",
+      "n": 1,
+      "note": "宽帘瀑布 s0.21",
+      "why": "D3 陡坡塘:换掉 #5 #6(s0.10–0.12)"
+    },
+    {
+      "source": "commons",
+      "block": "d03_doupotang_waterfall",
+      "n": 3,
+      "note": "蓝天下的宽帘瀑布 s0.22"
+    },
+    {
+      "source": "commons",
+      "block": "d03_doupotang_waterfall",
+      "n": 4,
+      "note": "瀑布与游客 s0.20"
+    },
+    {
+      "source": "commons",
+      "block": "d04_wanfenglin_ten_thousand_peak_fores",
+      "n": 1,
+      "note": "峰丛与金黄坝子 s0.19",
+      "why": "D4 万峰林:#2 雾中版 s0.13 不达标,只留 #1"
+    }
+  ]
+}

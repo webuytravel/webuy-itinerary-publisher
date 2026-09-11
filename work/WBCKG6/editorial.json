@@ -1,0 +1,237 @@
+{
+  "code": "WBCKG6",
+  "region": "CHN",
+  "notes": {
+    "commons_region_box": [
+      "重庆"
+    ],
+    "highlights": [
+      "2026-08-15 两本新册子。这两个是这一批里**唯一需要新建**的产品(Skybear 上",
+      "还没有 wt_travel),所以也是唯一需要 HOUSE_HIGHLIGHTS 的——其余产品的",
+      "highlight 早就在生产上,EDIT 模式不动它。",
+      "",
+      "册子上 WBCKG6 列了 8 条、WBLCKG 列了 5 组共 22 个景点,表单只有 6 格",
+      "(第 5 步第 4 条:6 是版式不是限制)。按线上 tours/115 的版式重排成",
+      "4 条头部景点/体验 + 1 条用 `·` 压缩的次级景点 + 1 条餐食风味。"
+    ],
+    "section_overrides": [
+      "WBCKG6 魔幻重庆。D3(金佛山)和 D6(送机)没有天头图:金佛山 Commons 整块 0,",
+      "stock 给的是**桂林**喀斯特,按 3.4 留空等人点头。"
+    ],
+    "trip_picks": [
+      "WBCKG6 魔幻重庆。11/17 卡。重庆本身好拍,废掉的四张都是**同名异物**或整块 0:",
+      "奎星楼   Commons 0;这是解放碑旁的一条小街,stock 只给通用重庆天际线",
+      "戴家巷   Commons 0;stock 六张全是**张家界**峰林(「cliff walk」撞词)",
+      "金佛山   Commons 0;stock 三张是**桂林**喀斯特(karst 撞词)",
+      "鹅岭二厂 Commons 是黑白室内老照片和一张港口蚀刻版画",
+      "「重庆小食」那一块 Commons 六张全部 GPS-OUT,而且判得对——它们是",
+      "**香港佐敦南京街的「蔡記重慶小食」**,一家港式小店。",
+      "「观音桥」是最有意思的一条:它是解放碑对岸的商圈,**不是桥**,而 stock",
+      "六张全是重庆的跨江大桥。Commons 那张地铁站出入口的「观音桥」招牌反而是对的。"
+    ]
+  },
+  "catalogue_tours": [],
+  "commons_region_box": [
+    28,
+    32,
+    105,
+    110
+  ],
+  "stock_region": "Chongqing China",
+  "highlights": [
+    {
+      "en": "Hongyadong Night View — the stilt-house night scene that inspired “Spirited Away”",
+      "zh": "洪崖洞夜景 —— 千与千寻同款吊脚楼，灯火璀璨"
+    },
+    {
+      "en": "Liziba Monorail Through a Building, from the upgraded viewing platform",
+      "zh": "李子坝轻轨穿楼奇观，升级观景平台"
+    },
+    {
+      "en": "Jinfo Mountain Scenic Area, UNESCO karst and alpine forest (cable car and in-park shuttle included)",
+      "zh": "南川金佛山风景区，世界自然遗产喀斯特与高山森林（含索道+环保车）"
+    },
+    {
+      "en": "Ciqikou Ancient Town, a thousand-year-old town at the heart of Ba-Yu culture",
+      "zh": "磁器口古镇，千年古镇·巴渝文化代表"
+    },
+    {
+      "en": "Jiefangbei · Qiansimen Bridge · Chaotianmen Confluence · Shibati · Daijia Alley · E’ling No.2 Factory",
+      "zh": "解放碑 · 千厮门大桥 · 朝天门两江交汇 · 十八梯 · 戴家巷 · 鹅岭二厂"
+    },
+    {
+      "en": "Authentic Mountain-City Hotpot · Chongqing street flavours",
+      "zh": "地道山城火锅 · 重庆小吃风味"
+    }
+  ],
+  "section_overrides": {
+    "d01": [
+      {
+        "source": "stock",
+        "block": "d01_fly_from_singapore_to_chongqing",
+        "n": 2,
+        "note": "重庆夜景(图注写明重庆)s0.682"
+      }
+    ],
+    "d02": [
+      {
+        "source": "commons",
+        "block": "d02_hongyadong_chongqing",
+        "n": 4,
+        "note": "洪崖洞与千厮门大桥,白天 s0.283"
+      }
+    ],
+    "d04": [
+      {
+        "source": "stock",
+        "block": "d04_chaotianmen_chongqing",
+        "n": 1,
+        "note": "红色拱桥与两江夜景 s0.330"
+      }
+    ],
+    "d05": [
+      {
+        "source": "commons",
+        "block": "d05_chongqing_hotpot",
+        "n": 4,
+        "note": "同心锅 s0.495"
+      }
+    ]
+  },
+  "trip_picks": [
+    {
+      "source": "commons",
+      "block": "d02_hongyadong_chongqing",
+      "n": 5,
+      "note": "洪崖洞夜灯 s0.580"
+    },
+    {
+      "source": "stock",
+      "block": "d02_hongyadong_chongqing",
+      "n": 6,
+      "note": "洪崖洞金色夜景 s0.451"
+    },
+    {
+      "source": "commons",
+      "block": "d02_qiansimen_bridge_chongqing",
+      "n": 4,
+      "note": "千厮门大桥 s0.473"
+    },
+    {
+      "source": "commons",
+      "block": "d02_qiansimen_bridge_chongqing",
+      "n": 3,
+      "note": "救生圈与大桥 s0.428"
+    },
+    {
+      "source": "commons",
+      "block": "d02_jiefangbei_chongqing",
+      "n": 5,
+      "note": "解放碑与人流 s0.198"
+    },
+    {
+      "source": "commons",
+      "block": "d02_jiefangbei_chongqing",
+      "n": 1,
+      "note": "解放碑商圈 s0.197"
+    },
+    {
+      "source": "commons",
+      "block": "d02_shibati_chongqing",
+      "n": 6,
+      "note": "较场口吊脚楼 s0.232"
+    },
+    {
+      "source": "commons",
+      "block": "d02_shibati_chongqing",
+      "n": 2,
+      "note": "十八梯古井广场 s0.208"
+    },
+    {
+      "source": "stock",
+      "block": "d02_chongqing_street_food_snacks",
+      "n": 2,
+      "note": "小面一碗 s0.775",
+      "why": "八一路美食街:留下的两张是食物特写,画面里没有可辨识地点。"
+    },
+    {
+      "source": "stock",
+      "block": "d02_chongqing_street_food_snacks",
+      "n": 6,
+      "note": "炉边现做 s0.858"
+    },
+    {
+      "source": "commons",
+      "block": "d04_ciqikou_ancient_town_chongqing",
+      "n": 1,
+      "note": "磁器口石阶夜色 s0.854"
+    },
+    {
+      "source": "stock",
+      "block": "d04_ciqikou_ancient_town_chongqing",
+      "n": 2,
+      "note": "古镇灯笼街 s0.384"
+    },
+    {
+      "source": "commons",
+      "block": "d04_chaotianmen_chongqing",
+      "n": 4,
+      "note": "两江交汇夜航拍 s0.468"
+    },
+    {
+      "source": "commons",
+      "block": "d04_chaotianmen_chongqing",
+      "n": 5,
+      "note": "朝天门老城门 s0.202"
+    },
+    {
+      "source": "stock",
+      "block": "d04_chinese_wholesale_market_stalls",
+      "n": 1,
+      "note": "货摊彩色商品 s0.583",
+      "why": "朝天门批发市场:市场货摊特写,不指向具体地点。"
+    },
+    {
+      "source": "stock",
+      "block": "d04_chinese_wholesale_market_stalls",
+      "n": 3,
+      "note": "干货批发袋装 s0.372"
+    },
+    {
+      "source": "stock",
+      "block": "d04_liziba_monorail_through_building_c",
+      "n": 1,
+      "note": "轻轨高架 s0.271"
+    },
+    {
+      "source": "stock",
+      "block": "d04_liziba_monorail_through_building_c",
+      "n": 3,
+      "note": "列车穿楼而出 s0.184"
+    },
+    {
+      "source": "commons",
+      "block": "d04_guanyinqiao_chongqing",
+      "n": 2,
+      "note": "观音桥站出入口招牌 s0.429"
+    },
+    {
+      "source": "commons",
+      "block": "d04_guanyinqiao_chongqing",
+      "n": 1,
+      "note": "观音桥商圈街景 s0.209"
+    },
+    {
+      "source": "commons",
+      "block": "d05_chongqing_hotpot",
+      "n": 3,
+      "note": "红汤翻滚 s0.751"
+    },
+    {
+      "source": "commons",
+      "block": "d05_chongqing_hotpot",
+      "n": 2,
+      "note": "九宫格火锅 s0.612"
+    }
+  ]
+}

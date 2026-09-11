@@ -40,7 +40,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from lib import mcp_photos
+from lib import editorial, mcp_photos
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from fetch_commons import block_name          # same block keys as ③
@@ -50,31 +50,20 @@ WORK = Path("work")
 
 # Region words handed to the stock search. Unlike ③ these *help* — see the
 # module docstring. Keep them to province + country: naming the county
-# narrows a loosely-ranked index for no gain.
-STOCK_REGION = {
-    "WBLJG9": "Yunnan China",
-    "WBYNG": "Yunnan China",
-    "WBYNB": "Yunnan China",
-    # 这条线一半在福建(泉州/漳州/厦门)、一半在广东潮汕(潮州/揭阳/汕头)。
-    # 写成单省会把另一半带偏——「潮州古城 Fujian China」排出来的是福建的东西。
-    # stock 是松散排序不是 AND,多写一个省名不会把结果打空。
-    "WBXMNM": "Fujian Guangdong China",
-    "WBPCSX": "Hunan China",
-    "WBWUX6": "Jiangsu China",
-    "WBMZ7": "Guangdong China",
-    "WBTFU8": "Sichuan China",
-    "WB9XMN": "Guangdong China",
-    "WBLCKG": "Chongqing China",
-    "WBCKG6": "Chongqing China",
-    # 和 WBXMNM 同一个理由:专列一半在四川(成都/西昌)、一半在云南
-    # (丽江/香格里拉/保山/腾冲)。只写一个省会把另一半带偏。
-    "ACKMG12T": "Sichuan Yunnan China",
-}
+# narrows a loosely-ranked index for no gain. 每个产品用哪个地区词在
+# `work/<CODE>/editorial.json` 的 `stock_region`(issue #4),没写就退回
+# "China" —— 和以前 `STOCK_REGION.get(code, "China")` 一样。
+DEFAULT_REGION = "China"
+
+
+def region_for(code: str) -> str:
+    return (editorial.load_if_present(code, WORK) or {}).get(
+        "stock_region", DEFAULT_REGION)
 
 
 def fetch(code: str, per_subject: int = 6) -> dict:
     itinerary = json.loads((WORK / code / "itinerary.json").read_text("utf-8"))
-    region = STOCK_REGION.get(code, "China")
+    region = region_for(code)
     dest_dir = WORK / code / "cand"
     out: dict[str, dict] = {}
     session = mcp_photos._session()
@@ -128,7 +117,7 @@ def main(argv: list[str]) -> int:
         print(__doc__)
         return 2
     for code in argv[1:]:
-        print(f"== {code}  (region={STOCK_REGION.get(code, 'China')!r})")
+        print(f"== {code}  (region={region_for(code)!r})")
         blocks = fetch(code)
         path = WORK / code / "candidates.json"
         path.write_text(json.dumps(blocks, indent=2, ensure_ascii=False))

@@ -1,0 +1,406 @@
+{
+  "code": "ACKMG12T",
+  "region": "CHN",
+  "notes": {
+    "catalogue_tours": [
+      "2026-09-11 的专列册子。①这一级是空的(两本册子没有一张过得了 section",
+      "下限,见 work/pdf_subjects.json 的 _ACKMG12T_note),但②这一级少见地",
+      "有货:tours/4 就是同区域在售的滇西北团,虎跳峡、独克宗、松赞林寺、",
+      "丽江古城四个景点直接命中;tours/3 是川线,只指望它兜成都那两天。"
+    ],
+    "commons_region_box": [
+      "2026-09-11。这条是专列线,一路从成都(30.6, 104.1)南下西昌(27.9, 102.3)、",
+      "丽江(26.9, 100.2)、香格里拉(27.8, 99.7),再折到保山(25.1, 99.2)和",
+      "腾冲(25.0, 98.5)。跨两省而且东西横跨 5 个经度,所以框比单省的那几条宽 —",
+      "它要分开的仍然只是「这条行程上」和「另一个大洲」。",
+      "川西南 + 滇西北 + 滇西"
+    ],
+    "stock_region": [
+      "和 WBXMNM 同一个理由:专列一半在四川(成都/西昌)、一半在云南",
+      "(丽江/香格里拉/保山/腾冲)。只写一个省会把另一半带偏。"
+    ],
+    "section_overrides": [
+      "ACKMG12T 熊猫专列。**每一天都写在这里**,因为 token 自动匹配在这条线上",
+      "错得离谱:tours/4 是大理/丽江/香格里拉团,它的图注里「Ancient Town」「Lake」",
+      "到处都是,于是纳帕海(香格里拉)被配到第 4 天的邛海(西昌,相距 700km)、",
+      "大理古城被配到第 10 天的腾冲、而 tours/3 的「毛县古羌城」也被塞进第 4 天。",
+      "有 override 的那天会整天跳过自动匹配(见 compose() 的 `if key in overrides`),",
+      "所以逐天写清是把那些错配挤掉的办法。",
+      "",
+      "D12 不在下面:送机日,没有落地活动,属于 3.0 里「纯回程」那一类。",
+      "**留空是要人点头的**,所以它会作为 GAP 出现在摘要里。"
+    ],
+    "trip_picks": [
+      "ACKMG12T。丽江古城、独克宗、松赞林寺、虎跳峡四张卡由 tours/4 的图库图",
+      "自动匹配拿到(图注出自 Skybear CMS,可信),下面补的是图库覆盖不到的。",
+      "",
+      "两块**整块作废**,宁可让卡空着:",
+      "高黎贡山  stock 六张全是**玉龙雪山/蓝月谷**(丽江,相距 400km)——",
+      "雪山配绿松石钙华池,而高黎贡是亚热带森林山脉,形态完全不同;",
+      "Commons 唯一一张是一份红色奖状文书。这是 6.7 那类「主体对、",
+      "地点错」里最容易蒙混过关的一种,因为图本身很漂亮。",
+      "建昌古城  Commons 整块 0;stock 六张没有一张能确认是西昌那一座,",
+      "下面那张只作候选并在 note 里写明未核实。"
+    ],
+    "carousel": [
+      "ACKMG12T。②图库(tours/4 的滇西北团)和④stock 混排,而且**刻意和当日",
+      "配图错开**:跨槽去重按内容哈希走,同一张图放两处会被删掉一处,而线上",
+      "在售产品的轮播图和日程图本来就不重样。"
+    ]
+  },
+  "catalogue_tours": [
+    "tours/4-8d7n-yunan-dali-lijiang-shangri-la",
+    "tours/3-8d7n-jiuzhaigou-leshan-m-emei-huanglong"
+  ],
+  "commons_region_box": [
+    24,
+    32,
+    97,
+    106
+  ],
+  "stock_region": "Sichuan Yunnan China",
+  "highlights": [
+    {
+      "en": "Panda Train · Tianfu Express — a Song-spirited rail journey across Sichuan and Yunnan, in 2+1 land first-class",
+      "zh": "熊猫专列·锦绣天府号 —— 宋韵雅致的川滇旅列，2+1 陆地头等舱"
+    },
+    {
+      "en": "Tiger Leaping Gorge, where the Jinsha River gathers force between sheer mountain walls",
+      "zh": "虎跳峡，金沙江激流穿行嶙峋峡谷，山河气势磅礴"
+    },
+    {
+      "en": "Shangri-La by choice: Pudacuo National Park, or Ganden Sumtseling — the “Little Potala Palace” of northwest Yunnan",
+      "zh": "香格里拉二选一：普达措国家公园，或“小布达拉宫”噶丹·松赞林寺"
+    },
+    {
+      "en": "Tengchong by choice: the steaming valley of Rehai Hot Spring Park, or a hike into the Gaoligong Mountains",
+      "zh": "腾冲二选一：云雾氤氲的热海公园，或高黎贡山秘境徒步"
+    },
+    {
+      "en": "Qionghai Lake · Jianchang Ancient City · Dukezong Ancient Town · Dadi Tea Estate · Jietou Village · Qiluo Ancient Town",
+      "zh": "邛海 · 建昌古城 · 独克宗古城 · 大地茶海 · 界头村 · 绮罗古镇"
+    },
+    {
+      "en": "Traditional fisherman's banquet · an 800-year camellia-oil feast at Hemu · caravan tea on the Tea Horse Road",
+      "zh": "特色渔家宴 · 和睦茶花村八百年茶油宴 · 茶马古道马帮茶"
+    }
+  ],
+  "meals": {
+    "1": {
+      "en": "-",
+      "zh": "-"
+    },
+    "2": {
+      "en": "Breakfast / Dinner",
+      "zh": "早餐 / 晚餐"
+    },
+    "3": {
+      "en": "Breakfast / Dinner",
+      "zh": "早餐 / 晚餐"
+    },
+    "4": {
+      "en": "Breakfast / Lunch / Dinner",
+      "zh": "早餐 / 午餐 / 晚餐"
+    },
+    "5": {
+      "en": "Breakfast / Lunch / Dinner",
+      "zh": "早餐 / 午餐 / 晚餐"
+    },
+    "6": {
+      "en": "Breakfast / Lunch / Dinner",
+      "zh": "早餐 / 午餐 / 晚餐"
+    },
+    "7": {
+      "en": "Breakfast / Lunch / Dinner",
+      "zh": "早餐 / 午餐 / 晚餐"
+    },
+    "8": {
+      "en": "Breakfast / Lunch / Dinner",
+      "zh": "早餐 / 午餐 / 晚餐"
+    },
+    "9": {
+      "en": "Breakfast / Lunch / Dinner",
+      "zh": "早餐 / 午餐 / 晚餐"
+    },
+    "10": {
+      "en": "Breakfast / Lunch / Dinner",
+      "zh": "早餐 / 午餐 / 晚餐"
+    },
+    "11": {
+      "en": "Breakfast / Lunch",
+      "zh": "早餐 / 午餐"
+    },
+    "12": {
+      "en": "Breakfast",
+      "zh": "早餐"
+    }
+  },
+  "trip_types": {
+    "1:0": "TRANSPORT",
+    "2:0": "TRANSPORT",
+    "3:0": "OTHERS",
+    "3:1": "OTHERS",
+    "4:2": "FOOD",
+    "10:2": "FOOD",
+    "11:0": "OTHERS",
+    "12:0": "TRANSPORT"
+  },
+  "section_overrides": {
+    "d01": [
+      {
+        "source": "stock",
+        "block": "d01_chengdu_city_skyline_sichuan",
+        "n": 4,
+        "note": "安顺廊桥夜景 —— 抵达当晚「自由漫步成都街头」 s0.332"
+      }
+    ],
+    "d02": [
+      {
+        "source": "cat",
+        "image_id": "DcVKlVLe",
+        "note": "都江堰熊猫谷,真熊猫啃竹 —— 产品名里的那只熊猫",
+        "why": "第 2 天册子写的是「全天自由行,晚间登乘列车」。这一级有两条路: 拿一张火车照,或者拿一张成都自由行的照片。选了后者——12 张候选里 没有一张是熊猫专列(它是包租列车),拿别的列车顶上去等于对产品失真。  先选的是图注写着「Kuanzhai Alley」的 CB0PTNcn,裁完才看出来那是 **商场里的熊猫玩偶陈列**,不是宽窄巷子。图库图注比册子图注可信, 但不等于可以不看图——这一张就是反例。改用真熊猫:成都自由行那天 本来就看熊猫,而且这是「熊猫专列」,产品名里的那只熊猫总得出现一次。 第 2 天册子写的是「全天自由行,晚间登乘列车」。这一级有两条路: 拿一张火车照,或者拿一张成都自由行的照片。选了后者——12 张候选里 没有一张是熊猫专列(它是包租列车),拿别的列车顶上去等于对产品失真。  先选的是图注写着「Kuanzhai Alley」的 CB0PTNcn,裁完才看出来那是 **商场里的熊猫玩偶陈列**,不是宽窄巷子。图库图注比册子图注可信, 但不等于可以不看图——这一张就是反例。改用真熊猫:成都自由行那天 本来就看熊猫,而且这是「熊猫专列」,产品名里的那只熊猫总得出现一次。"
+      }
+    ],
+    "d03": [
+      {
+        "source": "stock",
+        "block": "d03_chinese_song_dynasty_cultural_salo",
+        "n": 1,
+        "note": "茶席与茶艺师 —— 列车上的文化沙龙 s0.443"
+      }
+    ],
+    "d04": [
+      {
+        "source": "commons",
+        "block": "d04_qionghai_lake_xichang",
+        "n": 6,
+        "note": "邛海水榭与远山 s0.304"
+      }
+    ],
+    "d05": [
+      {
+        "source": "cat",
+        "image_id": "XGtIjYmP",
+        "note": "纳帕海(香格里拉),图库授权图"
+      }
+    ],
+    "d06": [
+      {
+        "source": "commons",
+        "block": "d06_pudacuo_national_park_shangri_la_y",
+        "n": 2,
+        "note": "林岭倒映静湖 s0.329 —— 不选 #3,那张里有一对婚纱情侣",
+        "why": "转经筒那张(stock#1, s0.860)是整批里最好的一张,让给了轮播首图; 当天头改用普达措,正好是 A 线上午的那一段。 #3 饱和度更高(0.536),但画面正中站着一对婚纱情侣,裁成天头像婚纱照 不像国家公园。#2 是纯景。 转经筒那张(stock#1, s0.860)是整批里最好的一张,让给了轮播首图; 当天头改用普达措,正好是 A 线上午的那一段。 #3 饱和度更高(0.536),但画面正中站着一对婚纱情侣,裁成天头像婚纱照 不像国家公园。#2 是纯景。"
+      }
+    ],
+    "d07": [
+      {
+        "source": "cat",
+        "image_id": "AZUggaw2",
+        "note": "虎跳峡松绿激流与观景石,图库授权图",
+        "why": "jhz0thu4 的图注是「Tiger Leaping Gorge」,但画面是景区入口那尊**石虎 雕塑**,不是峡谷。同一个产品下的 AZUggaw2 才是真的峡谷激流。 jhz0thu4 的图注是「Tiger Leaping Gorge」,但画面是景区入口那尊**石虎 雕塑**,不是峡谷。同一个产品下的 AZUggaw2 才是真的峡谷激流。"
+      }
+    ],
+    "d08": [
+      {
+        "source": "stock",
+        "block": "d08_tengchong_dadi_tea_plantation_yunn",
+        "n": 3,
+        "note": "大地茶海茶垄航拍 s0.627"
+      }
+    ],
+    "d09": [
+      {
+        "source": "stock",
+        "block": "d09_rehai_hot_spring_park_tengchong_ge",
+        "n": 1,
+        "note": "林间热泉蒸汽 s0.260"
+      }
+    ],
+    "d10": [
+      {
+        "source": "stock",
+        "block": "d10_jietou_village_tengchong_handmade_",
+        "n": 2,
+        "note": "古法纸张晾晒场 —— 界头最有辨识度的一景 s0.228"
+      }
+    ],
+    "d11": [
+      {
+        "source": "stock",
+        "block": "d11_yi_ethnic_culture_liangshan_sichua",
+        "n": 1,
+        "note": "彝族歌舞,红黑百褶裙 s0.431 —— 不选 #6,那张疑似台湾原住民祭典",
+        "why": "#6 那张盛装人像的背景横幅是繁体字、头饰形制也不像凉山彝族,更像台湾 原住民祭典 —— 「主体对、地点错」的又一例,只是这次错在族群上。 改用 #1(轮播原来用的那张),轮播另补一张。 #6 那张盛装人像的背景横幅是繁体字、头饰形制也不像凉山彝族,更像台湾 原住民祭典 —— 「主体对、地点错」的又一例,只是这次错在族群上。 改用 #1(轮播原来用的那张),轮播另补一张。"
+      }
+    ]
+  },
+  "trip_picks": [
+    {
+      "source": "stock",
+      "block": "d03_chinese_song_dynasty_cultural_salo",
+      "n": 3,
+      "note": "宋式青花茶器,红漆案 s0.518"
+    },
+    {
+      "source": "stock",
+      "block": "d03_chinese_song_dynasty_cultural_salo",
+      "n": 2,
+      "note": "暖调茶室与红灯笼 s0.761"
+    },
+    {
+      "source": "commons",
+      "block": "d04_qionghai_lake_xichang",
+      "n": 5,
+      "note": "邛海湿地木栈道 —— 册子写「信步湿地浅岸」 s0.265"
+    },
+    {
+      "source": "stock",
+      "block": "d04_jianchang_ancient_city_xichang",
+      "n": 6,
+      "note": "古城瓦顶暮色 —— **未核实是否即建昌古城**,只是滇川风格相符 s0.370"
+    },
+    {
+      "source": "stock",
+      "block": "d04_chinese_lakeside_fisherman_banquet",
+      "n": 3,
+      "note": "渔人撒网 s0.602"
+    },
+    {
+      "source": "stock",
+      "block": "d05_shangri_la_diqing_yunnan",
+      "n": 5,
+      "note": "经幡塔与草原湖泊 s0.369",
+      "why": "丽江古城这一块 Commons 有三张是**一列蓝色动车**(撞了「丽江站」), 所以两张都从 stock 里取。"
+    },
+    {
+      "source": "stock",
+      "block": "d05_lijiang_ancient_town_yunnan",
+      "n": 5,
+      "note": "丽江瓦顶与玉龙雪山 s0.557"
+    },
+    {
+      "source": "commons",
+      "block": "d06_ganden_sumtseling_monastery_shangr",
+      "n": 4,
+      "note": "红桥上的僧人与松赞林寺 s0.327"
+    },
+    {
+      "source": "commons",
+      "block": "d06_thangka_painting_tibetan_buddhist_",
+      "n": 1,
+      "note": "唐卡画作 s0.749"
+    },
+    {
+      "source": "stock",
+      "block": "d07_tiger_leaping_gorge_jinsha_river_y",
+      "n": 2,
+      "note": "虎跳石与松绿激流 s0.283"
+    },
+    {
+      "source": "stock",
+      "block": "d07_tiger_leaping_gorge_jinsha_river_y",
+      "n": 3,
+      "note": "峡谷栈道与浊浪 —— 册子写的那条 6 公里徒步 s0.303"
+    },
+    {
+      "source": "stock",
+      "block": "d07_baoshan_yunnan",
+      "n": 6,
+      "note": "滇西金色梯田村落 —— **通用乡野,非保山特定地标** s0.591",
+      "why": "保山这一块有个同名陷阱:Commons 里画面最好的两张(C2/C3 悬崖上的石头 村落)是**丽江的宝山石头城**,不是行程经过的保山市,两地相距 200km。 下面这张是通用滇西乡野,不指向任何特定地标,所以不会指错。"
+    },
+    {
+      "source": "commons",
+      "block": "d08_tengchong_old_schoolhouse_1960s_ca",
+      "n": 6,
+      "note": "腾冲石构老校舍 gpsOK s0.348 —— stock 那批里有一张是**湖南大学**"
+    },
+    {
+      "source": "stock",
+      "block": "d08_tengchong_dadi_tea_plantation_yunn",
+      "n": 4,
+      "note": "茶山梯垄 s0.438"
+    },
+    {
+      "source": "commons",
+      "block": "d09_rehai_hot_spring_park_tengchong_ge",
+      "n": 6,
+      "note": "热海大滚锅,画面里有石刻题名 s0.181 —— 暗,但它确实是那一口"
+    },
+    {
+      "source": "stock",
+      "block": "d09_hemu_camellia_village_tengchong",
+      "n": 5,
+      "note": "村落与池塘航拍 s0.494"
+    },
+    {
+      "source": "stock",
+      "block": "d10_jietou_village_tengchong_handmade_",
+      "n": 5,
+      "note": "木槽前舀纸浆 s0.387"
+    },
+    {
+      "source": "stock",
+      "block": "d10_qiluo_ancient_town_tengchong",
+      "n": 6,
+      "note": "滇西古镇木构街巷 —— **未核实是否即绮罗** s0.269"
+    },
+    {
+      "source": "commons",
+      "block": "d10_tea_horse_road_caravan_tea_yunnan",
+      "n": 6,
+      "note": "茶马古道马帮堂,红幡马纹 s0.406"
+    }
+  ],
+  "carousel": [
+    {
+      "source": "stock",
+      "block": "d06_dukezong_ancient_town_prayer_wheel",
+      "n": 1,
+      "note": "独克宗金色转经筒,蓝调时分 s0.860 —— 册子明写「世界最大转经筒」,而且是整批候选里唯一一张高饱和又确实是那个地方的"
+    },
+    {
+      "source": "cat",
+      "image_id": "YAJzGm1f",
+      "note": "虎跳峡另一机位 —— 第 7 天当日用的是 jhz0thu4"
+    },
+    {
+      "source": "cat",
+      "image_id": "5PQrPDOX",
+      "note": "噶丹·松赞林寺金顶全景,图库授权图",
+      "why": "nbsywg5q 图注也是松赞林寺,但画面是山门那块中英藏三语**招牌特写**, 轮播位放招牌太小气。5PQrPDOX 是寺群全景。"
+    },
+    {
+      "source": "stock",
+      "block": "d08_tengchong_dadi_tea_plantation_yunn",
+      "n": 5,
+      "note": "大地茶海茶垄与小径 s0.589"
+    },
+    {
+      "source": "stock",
+      "block": "d01_chengdu_city_skyline_sichuan",
+      "n": 1,
+      "note": "成都夜景天际线 s0.558 —— 行程起点"
+    },
+    {
+      "source": "cat",
+      "image_id": "o23PlYiK",
+      "note": "纳帕海另一机位 —— 第 5 天当日用的是 XGtIjYmP"
+    },
+    {
+      "source": "stock",
+      "block": "d03_chinese_song_dynasty_cultural_salo",
+      "n": 2,
+      "note": "暖调茶室与红灯笼 s0.761 —— 列车上的宋韵文化沙龙",
+      "why": "彝族那张让给了第 11 天当日(#6 疑似台湾原住民,只能用 #1)。这一格 改放列车上的宋韵茶室 —— 产品卖的就是这条专列本身,轮播里一格都没有 说不过去。"
+    },
+    {
+      "source": "stock",
+      "block": "d10_jietou_village_tengchong_handmade_",
+      "n": 4,
+      "note": "古法造纸抄纸帘 s0.330"
+    }
+  ]
+}

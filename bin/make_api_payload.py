@@ -25,88 +25,40 @@ import json
 import sys
 from pathlib import Path
 
-# Trip Type, read off the live edit form's el-select on 2026-09-11.
-# Same numbers the backend stores in itemType.
-TRANSPORT, ACCOMMODATION, ATTRACTION, OTHERS, FOOD, LOCAL_TRANSPORT, GUIDE = (
-    1, 2, 3, 4, 5, 6, 7)
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-# The form offers exactly six highlight rows and has no "add row" control.
-# Six is the house layout, not a limit (UPLOAD_RUNBOOK 第 5 步第 4 条): four
-# headline sights/experiences, one `·`-compressed secondary line, one on food.
-HOUSE_HIGHLIGHTS = {
-    "ACKMG12T": [
-        ("Panda Train · Tianfu Express — a Song-spirited rail journey across "
-         "Sichuan and Yunnan, in 2+1 land first-class",
-         "熊猫专列·锦绣天府号 —— 宋韵雅致的川滇旅列，2+1 陆地头等舱"),
-        ("Tiger Leaping Gorge, where the Jinsha River gathers force between "
-         "sheer mountain walls",
-         "虎跳峡，金沙江激流穿行嶙峋峡谷，山河气势磅礴"),
-        ("Shangri-La by choice: Pudacuo National Park, or Ganden Sumtseling — "
-         "the “Little Potala Palace” of northwest Yunnan",
-         "香格里拉二选一：普达措国家公园，或“小布达拉宫”噶丹·松赞林寺"),
-        ("Tengchong by choice: the steaming valley of Rehai Hot Spring Park, "
-         "or a hike into the Gaoligong Mountains",
-         "腾冲二选一：云雾氤氲的热海公园，或高黎贡山秘境徒步"),
-        ("Qionghai Lake · Jianchang Ancient City · Dukezong Ancient Town · "
-         "Dadi Tea Estate · Jietou Village · Qiluo Ancient Town",
-         "邛海 · 建昌古城 · 独克宗古城 · 大地茶海 · 界头村 · 绮罗古镇"),
-        ("Traditional fisherman's banquet · an 800-year camellia-oil feast at "
-         "Hemu · caravan tea on the Tea Horse Road",
-         "特色渔家宴 · 和睦茶花村八百年茶油宴 · 茶马古道马帮茶"),
-    ],
-}
+from lib import editorial
+from lib.editorial import ITEM_TYPES
 
-# Meals actually provided each day, read off the brochure's per-day footer.
-# 424's convention is a plain slash-joined list of the meals included, with "-"
-# on a day that includes none — not a description of what was eaten.
-MEALS = {
-    "ACKMG12T": {
-        1:  ("-", "-"),
-        2:  ("Breakfast / Dinner", "早餐 / 晚餐"),
-        3:  ("Breakfast / Dinner", "早餐 / 晚餐"),
-        4:  ("Breakfast / Lunch / Dinner", "早餐 / 午餐 / 晚餐"),
-        5:  ("Breakfast / Lunch / Dinner", "早餐 / 午餐 / 晚餐"),
-        6:  ("Breakfast / Lunch / Dinner", "早餐 / 午餐 / 晚餐"),
-        7:  ("Breakfast / Lunch / Dinner", "早餐 / 午餐 / 晚餐"),
-        8:  ("Breakfast / Lunch / Dinner", "早餐 / 午餐 / 晚餐"),
-        9:  ("Breakfast / Lunch / Dinner", "早餐 / 午餐 / 晚餐"),
-        10: ("Breakfast / Lunch / Dinner", "早餐 / 午餐 / 晚餐"),
-        11: ("Breakfast / Lunch", "早餐 / 午餐"),
-        12: ("Breakfast", "早餐"),
-    },
-}
+# Trip Type, read off the live edit form's el-select on 2026-09-11. Same numbers
+# the backend stores in itemType; the names are what `editorial.json` writes.
+ATTRACTION = ITEM_TYPES["ATTRACTION"]
 
-# Trip Type per item, keyed (day, sortNum within the day).
-# Anything not listed is an Attraction, which is what 16 of 424's 17 items are.
-TRIP_TYPES = {
-    "ACKMG12T": {
-        (1, 0): TRANSPORT,      # fly SIN -> CTU, private transfer
-        (2, 0): TRANSPORT,      # board the train
-        (3, 0): OTHERS,         # welcome ceremony, on board
-        (3, 1): OTHERS,         # cultural salon, on board
-        (4, 2): FOOD,           # fisherman's banquet
-        (10, 2): FOOD,          # caravan tea
-        (11, 0): OTHERS,        # closing programme on board
-        (12, 0): TRANSPORT,     # private transfer, fly home
-    },
-}
+# 这个文件里三张 per-product 的表(六条 highlights、逐日餐食、逐条 Trip Type)
+# 都搬到了 `work/<CODE>/editorial.json`(issue #4):
+#   highlights  六行房子版式,不是表单限制(UPLOAD_RUNBOOK 第 5 步第 4 条):
+#               四条头部景点/体验 + 一条 `·` 压缩的次级景点 + 一条餐食。
+#   meals       册子逐日页脚抄下来的。424 的写法是把当天含的餐用 / 连起来,
+#               一餐都不含的写 "-",不是描述吃了什么。
+#   trip_types  键是「天:当天第几条」,没列出来的一律 Attraction —— 424 的
+#               17 条里有 16 条就是 Attraction。
 
 
-def build(code: str, itinerary: dict, defaults: dict) -> dict:
-    if code not in HOUSE_HIGHLIGHTS:
-        raise SystemExit(
-            f"{code}: no HOUSE_HIGHLIGHTS entry. The form has six highlight "
-            f"rows and they are an editorial decision — write them before "
-            f"uploading, don't let the brochure's 15-22 bullets through raw.")
-    meals = MEALS[code]
-    types = TRIP_TYPES.get(code, {})
+def build(code: str, itinerary: dict, defaults: dict, doc: dict) -> dict:
+    highlight_rows = editorial.highlights(code, doc)
+    meals = doc.get("meals") or {}
+    if not meals:
+        raise SystemExit(f"{code}: editorial.json 里没有 meals —— "
+                         f"逐日餐食是从册子页脚抄的,上传前要先写")
+    types = {tuple(int(x) for x in key.split(":")): ITEM_TYPES[name]
+             for key, name in (doc.get("trip_types") or {}).items()}
 
     sections = []
     for s in itinerary["sections"]:
         day = s["day"]
-        if day not in meals:
-            raise SystemExit(f"{code}: no MEALS entry for day {day}")
-        meal_en, meal_zh = meals[day]
+        if str(day) not in meals:
+            raise SystemExit(f"{code}: editorial.json meals 里没有第 {day} 天")
+        meal_en, meal_zh = meals[str(day)]["en"], meals[str(day)]["zh"]
         items = []
         for n, it in enumerate(s["trip_items"]):
             items.append({
@@ -136,7 +88,7 @@ def build(code: str, itinerary: dict, defaults: dict) -> dict:
 
     highlights = [
         {"highlights": en, "highlightsCn": zh, "sortNum": n}
-        for n, (en, zh) in enumerate(HOUSE_HIGHLIGHTS[code])
+        for n, (en, zh) in enumerate(highlight_rows)
     ]
 
     # Departures. `editTravel` wants **`tourIdList`** — a flat list of ids —
@@ -209,7 +161,8 @@ def main() -> None:
     raw = json.loads(args.defaults.read_text())
     defaults = raw.get("data", raw)
 
-    payload = build(args.code, itinerary, defaults)
+    payload = build(args.code, itinerary, defaults,
+                    editorial.load(args.code, args.work))
 
     out = base / "api_payload.json"
     out.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n")

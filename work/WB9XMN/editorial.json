@@ -1,0 +1,258 @@
+{
+  "code": "WB9XMN",
+  "region": "CHN",
+  "notes": {
+    "catalogue_tours": [
+      "2026-08-15 第二批。粤东和滇西北在 webuytravel.sg 上同样没有同区域在售",
+      "产品可采,①② 依旧是空的。"
+    ],
+    "commons_region_box": [
+      "粤东:潮汕 / 梅州 / 河源"
+    ],
+    "section_overrides": [
+      "WB9XMN 粤东。d05 不在下面——饶平/梅州那一天两个景点(龙湖古寨、道韵楼)",
+      "四级图源全废,连一张能当天头的真图都没有,所以它会作为 GAP 出现在摘要里",
+      "等人点头,而不是由我拿别处的土楼顶上去(3.4)。"
+    ],
+    "trip_picks": [
+      "WB9XMN 粤东(潮汕/梅州/河源)。35 张卡里只有 15 张拿得到图,而这不是",
+      "挑得不够狠——粤东和 WBXMNM 的 D3 是同一条长尾:Commons 有 8 个主体整块",
+      "返回 0(祠堂、古寨、围龙屋、道韵楼、客家博物馆、甲第巷、陈慈黉故居、",
+      "骑楼街),stock 在这一带的失败模式是 6.7 记的那一类,而且这一轮又添了",
+      "三条新的,都是分数漂亮、地方不对:",
+      "广济桥 stock#3 图注写「iconic Guangji Bridge」,画面是绿水里的养殖架;",
+      "广济楼 stock#3 s0.451 是**福州**府城隍庙(匾额看得清清楚楚);",
+      "潮州古城 stock#6 s0.418 图注自己写着 in Beijing。",
+      "另有一整类「真的但灰」:小公园唯一真图 s0.100(和 413 同一张)、",
+      "潮州老城古民居 6 张 0.088–0.148、牌坊街 Commons 6 张 0.055–0.175。",
+      "按 3.4 全部留空,逐条见交付说明。"
+    ]
+  },
+  "catalogue_tours": [],
+  "commons_region_box": [
+    22,
+    26,
+    113,
+    118
+  ],
+  "stock_region": "Guangdong China",
+  "section_overrides": {
+    "d01": [
+      {
+        "source": "stock",
+        "block": "d01_huacheng_square_guangzhou",
+        "n": 2,
+        "note": "珠江夜景天际线 s0.646"
+      }
+    ],
+    "d02": [
+      {
+        "source": "commons",
+        "block": "d02_jieyang_confucian_temple",
+        "n": 4,
+        "note": "揭阳学宫庭院 s0.258"
+      }
+    ],
+    "d03": [
+      {
+        "source": "commons",
+        "block": "d03_nan_ao_island_coast",
+        "n": 5,
+        "note": "南澳九溪澳天后宫 gpsOK s0.251",
+        "why": "南澳岛当天唯一带 GPS 且在闸门以上的真图。自然之门那张卡拿不到图, 但这一张确实是南澳岛,当天头用它不算失真。 南澳岛当天唯一带 GPS 且在闸门以上的真图。自然之门那张卡拿不到图, 但这一张确实是南澳岛,当天头用它不算失真。"
+      }
+    ],
+    "d04": [
+      {
+        "source": "stock",
+        "block": "d04_chaozhou_paifang_street_archways",
+        "n": 1,
+        "note": "潮州牌坊 s0.256",
+        "why": "潮州这一天所有真图都在闸门以下(老城古民居 6 张 0.088–0.148、 牌坊街 Commons 6 张 0.055–0.175)。唯一闸门以上又确属潮州的是这张 stock 牌坊,所以它进 section 而不是进牌坊街那张卡——见交付说明。 潮州这一天所有真图都在闸门以下(老城古民居 6 张 0.088–0.148、 牌坊街 Commons 6 张 0.055–0.175)。唯一闸门以上又确属潮州的是这张 stock 牌坊,所以它进 section 而不是进牌坊街那张卡——见交付说明。"
+      }
+    ],
+    "d06": [
+      {
+        "source": "commons",
+        "block": "d06_yannanfei_tea_plantation_meizhou",
+        "n": 5,
+        "note": "雁南飞茶垄 s0.310"
+      }
+    ],
+    "d07": [
+      {
+        "source": "commons",
+        "block": "d07_wanlu_lake_heyuan",
+        "n": 2,
+        "note": "万绿湖林间远眺 s0.315"
+      }
+    ]
+  },
+  "trip_picks": [
+    {
+      "source": "commons",
+      "block": "d01_huacheng_square_guangzhou",
+      "n": 3,
+      "note": "广场与歌剧院 gpsOK s0.389",
+      "why": "D1 花城广场:两张都带 GPS。stock 那组分最高的 #2 s0.646 是珠江夜景 天际线,不是广场本身,所以它去了 section。"
+    },
+    {
+      "source": "commons",
+      "block": "d01_huacheng_square_guangzhou",
+      "n": 2,
+      "note": "广场绿地与塔群 gpsOK s0.313"
+    },
+    {
+      "source": "stock",
+      "block": "d01_canton_tower",
+      "n": 2,
+      "note": "圆形取景框中的广州塔 s0.543",
+      "why": "D1 广州塔:Commons #1 标题写着 Bank of Guangzhou Tower,画面里是两栋 玻璃写字楼,根本没有广州塔——分 s0.401 排在前面,已排除。"
+    },
+    {
+      "source": "commons",
+      "block": "d01_canton_tower",
+      "n": 4,
+      "note": "广州塔与城市天际线 gpsOK s0.383"
+    },
+    {
+      "source": "commons",
+      "block": "d01_yongqingfang_guangzhou",
+      "n": 3,
+      "note": "永庆大街 gpsOK s0.284",
+      "why": "D1 永庆坊"
+    },
+    {
+      "source": "commons",
+      "block": "d01_yongqingfang_guangzhou",
+      "n": 4,
+      "note": "永庆坊街景 s0.234"
+    },
+    {
+      "source": "commons",
+      "block": "d01_bruce_lee_ancestral_home_foshan",
+      "n": 3,
+      "note": "祖居展陈空间 s0.321",
+      "why": "D1 李小龙祖居:行程把它写成佛山,但祖居实际在广州荔湾永庆坊, Commons 六张的标题和 GPS 都指向那里,和行程顺序(紧接永庆坊)也对得上。 stock 那六张是佛山祖庙、佛山中山公园,主体就不对。"
+    },
+    {
+      "source": "commons",
+      "block": "d01_bruce_lee_ancestral_home_foshan",
+      "n": 4,
+      "note": "祖居厅堂 s0.255"
+    },
+    {
+      "source": "stock",
+      "block": "d02_blacksmith_forge_workshop",
+      "n": 5,
+      "note": "锻打火星,无可辨识地点 s0.586",
+      "why": "D2 打铁街:Commons 六张分别在芬兰、阿拉斯加、爱尔兰、威斯康星, 没有一张在中国。留下的这两张是打铁本身的特写,画面里没有可辨识的 地点,属于「示意工艺」而不是「宣称地点」。"
+    },
+    {
+      "source": "stock",
+      "block": "d02_blacksmith_forge_workshop",
+      "n": 6,
+      "note": "烧红的铁与锤 s0.346"
+    },
+    {
+      "source": "stock",
+      "block": "d02_chaoshan_street_food_dumpling",
+      "n": 1,
+      "note": "蒸笼粿品 s0.662",
+      "why": "D2 无米粿:Commons 六张是澄海的虾干标本(带 GPS 但主体是干货不是粿)。"
+    },
+    {
+      "source": "commons",
+      "block": "d02_jieyang_confucian_temple",
+      "n": 3,
+      "note": "学宫朱扉与斗拱 gpsOK s0.476",
+      "why": "D2 揭阳古城(学宫):六张全部带 GPS,是这个产品里最干净的一块。"
+    },
+    {
+      "source": "commons",
+      "block": "d02_jieyang_confucian_temple",
+      "n": 2,
+      "note": "学宫红墙 gpsOK s0.272"
+    },
+    {
+      "source": "stock",
+      "block": "d02_chaoshan_night_food_street",
+      "n": 5,
+      "note": "揭阳街头小吃摊 s0.536",
+      "why": "D2 龙眼南路美食街:这两张图注写的是揭阳,不是汕头。当天行程正好 惠州→揭阳→汕头,同属潮汕,所以留着——但它不是那条街,交付说明里点名。 同块 stock#4 s0.521 那张调色很好看的巷子,图注自己写着北京,已排除。"
+    },
+    {
+      "source": "stock",
+      "block": "d02_chaoshan_night_food_street",
+      "n": 6,
+      "note": "揭阳夜市炉火 s0.369"
+    },
+    {
+      "source": "commons",
+      "block": "d03_nan_ao_bridge_shantou",
+      "n": 3,
+      "note": "南澳大桥夜景,桥名可辨 s0.509",
+      "why": "D3 南澳大桥:桥塔上「南澳大桥」四个字在图里认得出来。stock 六张分别 是海口世纪大桥、重庆、大连,全是别处的桥。"
+    },
+    {
+      "source": "commons",
+      "block": "d03_changshanwei_lighthouse_nan_ao",
+      "n": 2,
+      "note": "灯塔与南澳大桥,蓝天 s0.435",
+      "why": "D3 长山尾灯塔:标题带「南澳島長山尾燈塔」,背景就是南澳大桥。"
+    },
+    {
+      "source": "stock",
+      "block": "d03_oyster_raft_aquaculture_sea",
+      "n": 6,
+      "note": "渔排航拍与作业船 s0.346",
+      "why": "D3 鱼排出海:Commons 是美国国家档案馆和加拿大的蚝场。留下的两张 画面里只有海和渔排,不指向任何地点,配「出海体验」这张活动卡成立。"
+    },
+    {
+      "source": "stock",
+      "block": "d03_oyster_raft_aquaculture_sea",
+      "n": 4,
+      "note": "海上渔排群 s0.271"
+    },
+    {
+      "source": "commons",
+      "block": "d04_guangji_bridge_chaozhou",
+      "n": 3,
+      "note": "广济桥浮桥红船 s0.363",
+      "why": "D4 广济桥:浮桥段的红船,是这座桥最认得出来的一段。"
+    },
+    {
+      "source": "commons",
+      "block": "d04_guangji_gate_chaozhou",
+      "n": 6,
+      "note": "广济门城楼 s0.207",
+      "why": "D4 广济楼:带 GPS 的三张都在闸门以下,这张 0.207 是唯一够线的真图。"
+    },
+    {
+      "source": "commons",
+      "block": "d06_yannanfei_tea_plantation_meizhou",
+      "n": 3,
+      "note": "茶田花径与场部 s0.369",
+      "why": "D6 雁南飞:六张文件名就是 Yannanfei Tea Garden,全部够线。stock 那几张 更艳的是杭州龙井和南京,已排除。整块偏雾,分数比肉眼观感乐观。"
+    },
+    {
+      "source": "commons",
+      "block": "d06_yannanfei_tea_plantation_meizhou",
+      "n": 2,
+      "note": "茶垄与林 s0.327"
+    },
+    {
+      "source": "commons",
+      "block": "d07_wanlu_lake_heyuan",
+      "n": 4,
+      "note": "万绿湖正午,湖心岛与沙洲 s0.433",
+      "why": "D7 万绿湖:#5 文件名写新丰江水库,那正是万绿湖的本名。"
+    },
+    {
+      "source": "commons",
+      "block": "d07_wanlu_lake_heyuan",
+      "n": 1,
+      "note": "东源码头 s0.328"
+    }
+  ]
+}

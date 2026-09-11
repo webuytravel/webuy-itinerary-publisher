@@ -16,6 +16,10 @@ Planner 丢一份行程 **PDF 或 Word** 进来 → 行程结构和配图自动�
 >
 > **要知道为什么** → **[docs/DESIGN.md](docs/DESIGN.md)**,每条结论怎么验出来的。
 > 尤其第 4 节的生产表单雷区和第 6 节的上传实录。
+>
+> **一个产品的编辑决策写在哪** → **[docs/EDITORIAL_JSON.md](docs/EDITORIAL_JSON.md)**。
+> 六条 highlights、哪天用哪张图、八张轮播,全在 `work/<CODE>/editorial.json`,
+> `bin/` 下没有任何 per-product 的数据。
 
 ## 为什么是新仓库
 
@@ -52,7 +56,7 @@ pip install -r requirements.txt
 python3 -m pytest tests/ -q
 ```
 
-预期 `46 passed, 5 skipped`。
+预期 `82 passed, 5 skipped`。
 
 **任何密钥都不进仓库,而且主流程也不需要密钥**——Skybear 后台靠使用者自己浏览器
 的登录态,找图走服务端已配好 key 的 `webuy-itinerary-mcp`。`.env` 只服务

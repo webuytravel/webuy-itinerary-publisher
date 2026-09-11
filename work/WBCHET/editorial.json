@@ -1,0 +1,254 @@
+{
+  "code": "WBCHET",
+  "region": "CHN",
+  "notes": {
+    "commons_region_box": [
+      "山西 + 内蒙中西部"
+    ],
+    "trip_picks": [
+      "景点卡专用的选片。和 OVERRIDES 一样是编辑决策,区别只在于它落到",
+      "Trip Photos 而不是 Section Photos(分开的理由见 docs/DESIGN.md 1.1:",
+      "线上三个已发布的内蒙产品 Section Photos 全是 0,图全挂在景点卡上)。",
+      "",
+      "2026-08-14 第二轮重挑。第一轮只有准确性一根轴,结果五个产品的饱和度",
+      "无一达到自家图库的水准(0.235–0.319 对 0.421),业务同事看生产页面",
+      "提了「色彩不要灰暗」。现在按两轴挑,和印刷册子那边一致",
+      "(docs/DESIGN.md 6.06)。每条后面的 s0.xx 是实测饱和度,房子标准是 0.421、",
+      "闸门(第 10 百分位)是 0.181。",
+      "",
+      "**美学分不是唯一标准。** 三处明显的反例,都按主体价值压过了分数:",
+      "广州塔那组分最高的 #1(1.08)画面里根本不是广州塔;",
+      "火焰山分最高的是山下骆驼(1.09),山体本身只有 0.92,但山体才是主角;",
+      "黄果树分最高的 #3(1.08)是夜间彩灯秀,和册子调性不符。"
+    ]
+  },
+  "catalogue_tours": [],
+  "commons_region_box": [
+    36,
+    44,
+    105,
+    116
+  ],
+  "highlights": [
+    {
+      "en": "Yungang Grottoes, a UNESCO World Heritage site, and Datong Ancient City",
+      "zh": "云冈石窟（世界文化遗产）与大同古城"
+    },
+    {
+      "en": "The Hanging Temple of Hunyuan and the Yingxian Wooden Pagoda",
+      "zh": "浑源悬空寺与应县木塔"
+    },
+    {
+      "en": "Ordos Grassland welcome ceremony, Mongolian costume experience, bonfire party and a luxury yurt upgrade",
+      "zh": "鄂尔多斯草原迎宾仪式、蒙古族服饰换装、草原篝火晚会、豪华蒙古包升级"
+    },
+    {
+      "en": "Xiangshawan desert cableway · Ulan Hada Volcano Geopark · Ningwu Wannian Ice Cave and Hanging Village",
+      "zh": "响沙湾沙漠索道 · 乌兰哈达火山地质公园 · 宁武万年冰洞与悬空村"
+    },
+    {
+      "en": "Hand-Grabbed Mutton · Mutton Hot Pot · Roast Duck · Mongolian Cuisine",
+      "zh": "手把肉 · 涮羊肉 · 烤鸭 · 蒙古风味"
+    },
+    {
+      "en": "Ningwu · Hunyuan · Datong and Yimeng regional specialities",
+      "zh": "宁武风味 · 浑源风味 · 大同美食 · 伊盟风味"
+    }
+  ],
+  "section_overrides": {
+    "d02": [
+      {
+        "source": "stock",
+        "block": "d02_ordos_grassland",
+        "n": 5,
+        "note": "蒙古包群实拍"
+      },
+      {
+        "source": "stock",
+        "block": "d02_ordos_grassland",
+        "n": 1,
+        "note": "草原孤包"
+      }
+    ],
+    "d03": [
+      {
+        "source": "stock",
+        "block": "d03_xiangshawan",
+        "n": 1,
+        "note": "沙丘驼队"
+      },
+      {
+        "source": "stock",
+        "block": "d03_xiangshawan",
+        "n": 2,
+        "note": "沙脊光影"
+      }
+    ],
+    "d04": [
+      {
+        "source": "stock",
+        "block": "d04_hanging_village",
+        "n": 1,
+        "note": "悬空村(芦芽山)——当日另一真实景点;万年冰洞无合规实拍",
+        "why": "万年冰洞:stock 只有西伯利亚冰川冰洞。改用当天另一处真实景点。 万年冰洞:stock 只有西伯利亚冰川冰洞。改用当天另一处真实景点。"
+      }
+    ],
+    "d05": [
+      {
+        "source": "stock",
+        "block": "d05_yingxian",
+        "n": 5,
+        "note": "应县木塔,看图确认",
+        "why": "应县木塔:前 4 个候选是大雁塔和西安城墙,第 5 个才是真的。 应县木塔:前 4 个候选是大雁塔和西安城墙,第 5 个才是真的。"
+      },
+      {
+        "source": "stock",
+        "block": "d05_xinzhou",
+        "n": 4,
+        "note": "山西古城街景"
+      }
+    ],
+    "d06": [
+      {
+        "source": "stock",
+        "block": "d06_yungang",
+        "n": 1,
+        "note": "云冈石窟大佛"
+      },
+      {
+        "source": "stock",
+        "block": "d05_datong_city",
+        "n": 6,
+        "note": "大同九龙壁"
+      }
+    ],
+    "d07": [
+      {
+        "source": "commons",
+        "block": "d07_ulan_hada_volcano_geopark",
+        "n": 1,
+        "note": "乌兰哈达火山口航拍,带 GPS",
+        "why": "乌兰哈达火山:stock 只有埃特纳和尼加拉瓜,所以 08-13 那轮只能拿当天 落脚城市顶上。08-14 Commons 给出三张带 GPS 且落在内蒙范围内的火山口 航拍,这个替代不再必要——火山排前面,大召寺留作第二张。 它写在产品 highlights 第 4 条,拿城市照顶替是失真的。 乌兰哈达火山:stock 只有埃特纳和尼加拉瓜,所以 08-13 那轮只能拿当天 落脚城市顶上。08-14 Commons 给出三张带 GPS 且落在内蒙范围内的火山口 航拍,这个替代不再必要——火山排前面,大召寺留作第二张。 它写在产品 highlights 第 4 条,拿城市照顶替是失真的。"
+      },
+      {
+        "source": "stock",
+        "block": "d07_region_hohhot",
+        "n": 1,
+        "note": "呼和浩特大召寺——当日落脚城市"
+      }
+    ],
+    "d08": [
+      {
+        "source": "stock",
+        "block": "d08_kangbashi",
+        "n": 1,
+        "note": "康巴什城市广场;#2#3 系蒙古国已排除",
+        "why": "康巴什:候选 #2#3 标题写 Mongolian Government Palace,实为蒙古国乌兰巴托,已排除。 康巴什:候选 #2#3 标题写 Mongolian Government Palace,实为蒙古国乌兰巴托,已排除。"
+      }
+    ]
+  },
+  "trip_picks": [
+    {
+      "source": "commons",
+      "block": "d06_hanging_temple_hunyuan",
+      "n": 1,
+      "note": "崖壁全景,绿 s0.26",
+      "why": "D6 悬空寺:换掉原来的 #3/#5/#6(s0.11–0.16,灰崖壁和题刻)"
+    },
+    {
+      "source": "commons",
+      "block": "d06_hanging_temple_hunyuan",
+      "n": 2,
+      "note": "栈道游客,能看清悬空结构 s0.20"
+    },
+    {
+      "source": "commons",
+      "block": "d06_hanging_temple_hunyuan",
+      "n": 4,
+      "note": "红墙门楼 s0.23"
+    },
+    {
+      "source": "commons",
+      "block": "d05_datong_ancient_city",
+      "n": 5,
+      "note": "城墙与拱门,蓝天 s0.31",
+      "why": "D5 大同古城:#2 疑似不是大同(像应县木塔)、#3 是节庆花灯,都没选"
+    },
+    {
+      "source": "commons",
+      "block": "d05_datong_ancient_city",
+      "n": 1,
+      "note": "城楼正面,蓝天 s0.29"
+    },
+    {
+      "source": "commons",
+      "block": "d05_datong_ancient_city",
+      "n": 6,
+      "note": "寺院院落红灯笼 s0.28"
+    },
+    {
+      "source": "commons",
+      "block": "d05_yingxian_wooden_pagoda",
+      "n": 1,
+      "note": "木塔全景,蓝天 s0.33",
+      "why": "D5 应县木塔:#6 是展柜里的模型不是实景,#4 是屋顶垂直航拍"
+    },
+    {
+      "source": "commons",
+      "block": "d05_yingxian_wooden_pagoda",
+      "n": 5,
+      "note": "牌楼取景,塔在其后 s0.36"
+    },
+    {
+      "source": "commons",
+      "block": "d05_yingxian_wooden_pagoda",
+      "n": 2,
+      "note": "斗拱细部,红木 s0.60"
+    },
+    {
+      "source": "commons",
+      "block": "d07_ulan_hada_volcano_geopark",
+      "n": 3,
+      "note": "地质公园游客区 s0.27",
+      "why": "D7 乌兰哈达火山:#2 火山口深色岩 s0.14 不达标,换成地质公园游客区"
+    },
+    {
+      "source": "commons",
+      "block": "d03_xiangshawan_desert",
+      "n": 2,
+      "note": "骑骆驼队列,金沙 s0.37",
+      "why": "D3 响沙湾:去掉 #5(沙漠泳池,灰天 s0.12)"
+    },
+    {
+      "source": "commons",
+      "block": "d03_xiangshawan_desert",
+      "n": 1,
+      "note": "沙漠越野车 s0.34"
+    },
+    {
+      "source": "commons",
+      "block": "d03_xiangshawan_desert",
+      "n": 4,
+      "note": "沙丘中白色穹顶度假区 s0.26"
+    },
+    {
+      "source": "commons",
+      "block": "d06_yungang_grottoes_datong",
+      "n": 3,
+      "note": "露天大坐佛 s0.26",
+      "why": "D6 云冈:#5 #4 是黑白老明信片。两个云冈块只各留一张,免得一天全是石窟"
+    },
+    {
+      "source": "commons",
+      "block": "d06_yungang_grottoes_datong",
+      "n": 1,
+      "note": "彩绘佛龛 s0.29"
+    },
+    {
+      "source": "commons",
+      "block": "d06_yungang_grottoes_buddha_statues",
+      "n": 2,
+      "note": "崖壁大坐佛 s0.28"
+    }
+  ]
+}

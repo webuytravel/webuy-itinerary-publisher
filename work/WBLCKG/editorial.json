@@ -1,0 +1,235 @@
+{
+  "code": "WBLCKG",
+  "region": "CHN",
+  "notes": {
+    "catalogue_tours": [
+      "这两本是册子进来的新产品(Skybear 上还没有 wt_travel),不是从生产读回的。"
+    ],
+    "commons_region_box": [
+      "重庆 + 恩施"
+    ],
+    "section_overrides": [
+      "WBLCKG 重庆+恩施。D4(恩施)和 D8(送机)没有天头图:梭布垭石林 Commons 唯一",
+      "一张是**恩施大峡谷**(另一个景区),土家女儿城整块 0 而 stock 给的是洪崖洞。"
+    ],
+    "trip_picks": [
+      "WBLCKG 重庆+恩施。12/22 卡。恩施/利川那一段几乎全废,而且**三峡之巅那一块",
+      "是这一整轮最离谱的一条**:Commons 六张全是",
+      "**Ruth Gorge, Denali National Park, ALASKA** —— 阿拉斯加的冰川峡谷。",
+      "张飞庙同样是同名异地:C1 是**成都武侯祠**的张飞塑像,C2C3 是**阆中**张飞庙,",
+      "而这条线去的是**云阳**张飞庙,第三座。梭布垭石林唯一一张 Commons 是",
+      "**恩施大峡谷**(另一个景区);土家女儿城、狮子关、弹子石、山城步道整块 0,",
+      "stock 一律拿洪崖洞和重庆天际线来顶。"
+    ]
+  },
+  "catalogue_tours": [],
+  "commons_region_box": [
+    28,
+    32,
+    106,
+    111
+  ],
+  "stock_region": "Chongqing China",
+  "highlights": [
+    {
+      "en": "Yunyang Longgang Scenic Area and the Cloud Corridor Glass Skywalk",
+      "zh": "云阳龙缸景区与云端廊桥"
+    },
+    {
+      "en": "Baidi City · Qutang Gorge · Kuimen Gate · Three Gorges Summit",
+      "zh": "白帝城 · 瞿塘峡 · 夔门 · 三峡之巅"
+    },
+    {
+      "en": "Suobuya Stone Forest and Tujia Daughter City in Enshi",
+      "zh": "恩施梭布垭石林与土家女儿城"
+    },
+    {
+      "en": "Shiziguan Water Highway and Tenglong Cave, a spectacular karst cave",
+      "zh": "狮子关水上公路与腾龙洞奇幻喀斯特溶洞"
+    },
+    {
+      "en": "Chongqing city: Hongyadong Night View · Liziba Light Rail · Jiefangbei · Zoo Panda House · Sichuan Opera Face-Changing",
+      "zh": "重庆市区：洪崖洞夜景 · 李子坝轻轨穿楼 · 解放碑 · 动物园熊猫馆 · 川剧变脸"
+    },
+    {
+      "en": "Yunyang Cuisine · Tujia Cuisine · Guzi Chicken · Bowl-Smashing Wine Banquet · Chongqing Hot Pot",
+      "zh": "云阳风味 · 土家风味 · 簋子鸡风味 · 摔碗酒宴 · 重庆火锅"
+    }
+  ],
+  "section_overrides": {
+    "d01": [
+      {
+        "source": "stock",
+        "block": "d01_fly_from_singapore_to_chongqing",
+        "n": 2,
+        "note": "重庆夜景(图注写明重庆)s0.682"
+      }
+    ],
+    "d02": [
+      {
+        "source": "commons",
+        "block": "d02_yunyang_longgang_scenic_area",
+        "n": 1,
+        "note": "龙缸国家地质公园 s0.196"
+      }
+    ],
+    "d03": [
+      {
+        "source": "commons",
+        "block": "d03_baidicheng_fengjie",
+        "n": 6,
+        "note": "白帝城博物馆 s0.300"
+      }
+    ],
+    "d05": [
+      {
+        "source": "stock",
+        "block": "d05_tenglong_cave_lichuan",
+        "n": 2,
+        "note": "溶洞钟乳石灯光 s0.488"
+      }
+    ],
+    "d06": [
+      {
+        "source": "stock",
+        "block": "d06_danzishi_old_street_chongqing",
+        "n": 2,
+        "note": "歌乐山与磁器口(图注写明重庆)s0.430"
+      }
+    ],
+    "d07": [
+      {
+        "source": "stock",
+        "block": "d07_jiefangbei_chongqing",
+        "n": 5,
+        "note": "重庆夜景天际线 s0.659"
+      }
+    ]
+  },
+  "trip_picks": [
+    {
+      "source": "commons",
+      "block": "d02_yunyang_longgang_scenic_area",
+      "n": 4,
+      "note": "龙缸地质公园崖壁 s0.240"
+    },
+    {
+      "source": "commons",
+      "block": "d02_yunyang_longgang_scenic_area",
+      "n": 2,
+      "note": "龙缸峡谷 s0.216"
+    },
+    {
+      "source": "commons",
+      "block": "d03_baidicheng_fengjie",
+      "n": 4,
+      "note": "白帝城 s0.310"
+    },
+    {
+      "source": "commons",
+      "block": "d03_baidicheng_fengjie",
+      "n": 1,
+      "note": "白帝城与长江大桥 s0.298"
+    },
+    {
+      "source": "commons",
+      "block": "d03_qutang_gorge_kuimen_yangtze",
+      "n": 3,
+      "note": "瞿塘峡夔门 s0.328"
+    },
+    {
+      "source": "commons",
+      "block": "d05_tenglong_cave_lichuan",
+      "n": 1,
+      "note": "腾龙洞 s0.471"
+    },
+    {
+      "source": "commons",
+      "block": "d06_huangjueping_graffiti_street_chong",
+      "n": 1,
+      "note": "黄桷坪涂鸦街 s0.569"
+    },
+    {
+      "source": "commons",
+      "block": "d06_jiaotong_teahouse_chongqing",
+      "n": 1,
+      "note": "老茶馆内景 s0.260",
+      "why": "交通茶馆:Commons 两张是茶馆内景,但标题只写 \"Slow Life in A Tea House\", 没写是哪一家 —— 交付时点名。stock 分最高的那张是古玩店不是茶馆。"
+    },
+    {
+      "source": "commons",
+      "block": "d06_shibati_chongqing",
+      "n": 6,
+      "note": "较场口吊脚楼 s0.232"
+    },
+    {
+      "source": "commons",
+      "block": "d06_shibati_chongqing",
+      "n": 2,
+      "note": "十八梯古井广场 s0.208"
+    },
+    {
+      "source": "commons",
+      "block": "d07_hongyadong_chongqing",
+      "n": 5,
+      "note": "洪崖洞夜灯 s0.580"
+    },
+    {
+      "source": "stock",
+      "block": "d07_hongyadong_chongqing",
+      "n": 6,
+      "note": "洪崖洞金色夜景 s0.451"
+    },
+    {
+      "source": "commons",
+      "block": "d07_jiefangbei_chongqing",
+      "n": 5,
+      "note": "解放碑与人流 s0.198"
+    },
+    {
+      "source": "commons",
+      "block": "d07_jiefangbei_chongqing",
+      "n": 1,
+      "note": "解放碑商圈 s0.197"
+    },
+    {
+      "source": "stock",
+      "block": "d07_liziba_monorail_through_building_c",
+      "n": 1,
+      "note": "二号线佛图关段 s0.271",
+      "why": "李子坝:Commons 唯一一张是 2019 轨道交通展上的**站台模型**,不是实景。"
+    },
+    {
+      "source": "stock",
+      "block": "d07_liziba_monorail_through_building_c",
+      "n": 3,
+      "note": "列车穿楼而出 s0.184"
+    },
+    {
+      "source": "stock",
+      "block": "d07_giant_panda_chongqing_zoo",
+      "n": 3,
+      "note": "树上的熊猫 s0.463",
+      "why": "熊猫馆:Commons 两张(重庆动物园)都在闸门下。熊猫这个题材只在四川重庆, 通用熊猫特写不构成地点主张,所以让美学分做主。"
+    },
+    {
+      "source": "stock",
+      "block": "d07_giant_panda_chongqing_zoo",
+      "n": 5,
+      "note": "枝头小憩 s0.358"
+    },
+    {
+      "source": "commons",
+      "block": "d07_sichuan_opera_face_changing_bianli",
+      "n": 1,
+      "note": "变脸脸谱 s0.553",
+      "why": "川剧变脸:C5C6 是「2022 大臺南國際旅展」的演出,已排除。"
+    },
+    {
+      "source": "commons",
+      "block": "d07_sichuan_opera_face_changing_bianli",
+      "n": 2,
+      "note": "变脸身段 s0.439"
+    }
+  ]
+}

@@ -103,7 +103,7 @@ await api('/wb_tourt/travelMgmt/queryListPage',
 3. `lib/catalogue_source.py` 从 `webuytravel.sg` 同区域在售产品取图(已授权、同风格、
    尺寸对)
 4. `lib/mcp_photos.py` 的 `fetch_photo` 补缺口 → `candidates.json`,**看缩略图逐张确认**
-   后写进 `bin/compose.py` 的 `OVERRIDES`
+   后写进 `work/<CODE>/editorial.json` 的 `section_overrides`
 
 然后:
 
@@ -126,7 +126,7 @@ checkout they exist only after the fetch steps have run.
 ```
 
 **这不是故障,是提醒你还没跑取图步骤。** `work/**/raw/`、`cand/`、`cat/`、`out*/`
-全部在 `.gitignore` 里,克隆下来是空的;`OVERRIDES` 里写的是仓库相对路径,但
+全部在 `.gitignore` 里,克隆下来是空的;`editorial.json` 里写的是仓库相对路径,但
 **相对路径不等于文件存在**。先跑抽图和取图,再跑 compose。
 **这里是人工闸门:`python3 bin/review_page.py WBINC9` 出的页要有人看过并同意,
 才往下走。**
@@ -196,8 +196,8 @@ python3 bin/make_payload.py WBINC9 --assets-root .   # 合成注入用的 payloa
 - **`resharpen` 不改选片**,只是把 Pexels `?w=940` / Unsplash `&w=1080` 的预览图换成
   同一张照片的原图。WBCHET 全部 18 张因此从上采样 1.7–2.3× 变成下采样 0.2–0.9×。
 - **`mobile_crops` 从原始源图重裁**,不是拿 4:3 成品再切一刀。
-- `make_payload` 里的 `HOUSE_HIGHLIGHTS` 是编辑决策(6 条版式,见第 5 步),
-  新产品要**先补上这一项**,否则会 KeyError。
+- `work/<CODE>/editorial.json` 的 `highlights` 是编辑决策(6 条版式,见第 5 步),
+  新产品要**先补上这一项**,否则 `make_payload` 会退出。
 
 ### 4.1 轮播要 1080px 以上的源图,册子图进不去
 
@@ -206,17 +206,18 @@ python3 bin/make_payload.py WBINC9 --assets-root .   # 合成注入用的 payloa
 `resharpen` 只能改写 Pexels/Unsplash 那种把尺寸写在 query 里的 URL。
 
 所以规则是:**册子图只放当天的 section 槽(尺寸够),轮播另外挑高分辨率的源。**
-`bin/compose.py` 的 `CAROUSEL` 就是干这个的——按位置显式列出 8 张:
+`work/<CODE>/editorial.json` 的 `carousel` 就是干这个的——按位置显式列出 8 张:
 
-```python
-CAROUSEL = {
-    "WBINC9": [("hero_yellow_river", 4, "理由"), ...],          # stock 块 + 序号
-    "WBSZX1": [("cat:Jmz4i0ph", 0, "理由"), ...],               # cat: 前缀取图库图
-}
+```jsonc
+"carousel": [
+  {"source": "stock", "block": "hero_yellow_river", "n": 4, "note": "理由"},
+  {"source": "cat", "image_id": "Jmz4i0ph", "note": "理由"}
+]
 ```
 
-给它的每一张都要先看过。没有 `CAROUSEL` 条目时走老路(图库剩图,没有图库就复用
-当日配图),那条路是**不看分辨率**的。
+给它的每一张都要先看过。**不写 `carousel` 这个字段**时走老路(图库剩图,没有
+图库就复用当日配图),那条路是**不看分辨率**的 —— 注意写成 `[]` 不是同一件事,
+那是「这个产品的轮播明确留空」。
 
 ### 4.2 图库图不是都能用,要在源头挑
 
@@ -277,7 +278,8 @@ vm.handleOptionSelect(vm.options.find(o => /^WBINC9\b/.test(o.label)));
 
 **4) Highlight 填 6 条。** 表单只有 6 组输入且没有加行控件——**6 是版式不是限制**,
 线上 `tours/115` 也正好 6 条:4 条头部景点/体验 + 2 条用 `·` 压缩的餐食风味。
-行程文件里的 15–22 条要按这个版式重排,写进 `HOUSE_HIGHLIGHTS`。
+行程文件里的 15–22 条要按这个版式重排,写进 `work/<CODE>/editorial.json` 的
+`highlights`(取舍理由写在同一条的 `why` 里,或 `notes.highlights`)。
 
 **5) 建 section 和 trip item:同步连点。**
 点一次 `Add Section` 就重渲染整个行程区,开销随已有 section 数增长。写成
@@ -538,12 +540,20 @@ Cover Video Asset、Flight Info 非必填,当前流程留空。Tour Fare 表显�
 
 按顺序,少一样就会在后面某一步炸:
 
-| 文件 | 加什么 | 不加会怎样 |
+**`bin/` 下什么都不用改。** 除了行程文件和两张全局表,一个新产品要加的东西
+全在 `work/<CODE>/editorial.json` 一个文件里,格式见
+[docs/EDITORIAL_JSON.md](EDITORIAL_JSON.md)。
+
+| 文件 / 字段 | 加什么 | 不加会怎样 |
 |---|---|---|
 | `work/<CODE>/itinerary.json` | 双语行程(key 是 `zh`) | — |
 | `work/pdf_subjects.json` | 该册子每张图的 ref / subject / verdict | 册子图全部不参与配图 |
-| `bin/compose.py` `PRODUCTS` | `"<CODE>": ("CHN", [同区域在售产品 slug])` | KeyError |
-| `bin/compose.py` `OVERRIDES` | 自动匹配配不出或配错的天 | 那些天留 gap 或配错图 |
-| `bin/compose.py` `CAROUSEL` | 8 张高分辨率轮播(可选但强烈建议) | 轮播可能全是册子小图,竖版发虚 |
-| `bin/make_payload.py` `HOUSE_HIGHLIGHTS` | 6 条 | **KeyError** |
+| `editorial.json` `code` / `region` / `catalogue_tours` | `"CHN"` + 同区域在售产品 slug(没有就 `[]`) | 这个产品根本不在 compose 的清单里 |
+| `editorial.json` `commons_region_box` | `[lat_min, lat_max, lon_min, lon_max]`,**抓 Commons 之前写** | 那一轮不做 GPS 范围检查(DESIGN 3.2) |
+| `editorial.json` `stock_region` | 省 + 国家,**抓 stock 之前写** | 退回 `"China"`,搜出来的东西可能在另一个省 |
+| `editorial.json` `section_overrides` | 自动匹配配不出或配错的天 | 那些天留 gap 或配错图 |
+| `editorial.json` `trip_picks` | 景点卡专用选片 | 景点卡只能吃自动匹配剩下的 |
+| `editorial.json` `carousel` | 8 张高分辨率轮播(可选但强烈建议) | 轮播可能全是册子小图,竖版发虚 |
+| `editorial.json` `highlights` | 6 条 | `make_payload` / `make_api_payload` **退出** |
+| `editorial.json` `meals` / `trip_types` | 走接口那条路才要 | `make_api_payload` **退出**(`meals`) |
 | `work/catalogue.json` | 新采的同区域产品图(记得剔横幅图和 <1080px 的) | 图库这一级为空 |
