@@ -361,6 +361,65 @@ Section Photos = S，第 k 张卡(0 基)= S + 29×(k+1)
 
 ---
 
+## 5.5 不走表单:直接打 `editTravel`(2026-09-11 起推荐)
+
+第 5 步那一整套是**对着 DOM 打**,依赖 `lib/selectors.yaml` 和线上 bundle 对得上。
+2026-09 Skybear 重新部署之后复查:**后端没动**——`VUE_APP_BASE_API` 仍是
+`https://apimini.webuy.ren/wb_tourt`,408 那批用过的路由全部还在(无 token 时回
+`4003 Illegal Token` 而不是 404)。会随重新构建漂的只有前端。所以新产品走接口:
+
+```bash
+python3 bin/make_api_payload.py ACKMG12T --defaults work/ACKMG12T/defaults.json
+python3 bin/api_upload.py ACKMG12T --headers /path/outside/repo/sb_headers.json --dry-run
+python3 bin/api_upload.py ACKMG12T --headers /path/outside/repo/sb_headers.json
+```
+
+`--defaults` 是 `travelMgmt/queryDefaultDataByTourTypeId?tourTypeId=<id>` 的响应存成
+文件(预填里 `tourTypeId`/`paxType`/`region` 都是 null,要从 `tour/queryTourListPage`
+补上)。`--headers` 是从**已登录的后台标签页**借来的请求头,用 `lib/skybear_api.js`
+抓——**不要放进仓库**,那是一个活的 session token。这条链路全程没有密码。
+
+用到的路由(都是从线上 bundle 里读出来的,不是猜的):
+
+| 路由 | 干什么 |
+|---|---|
+| `tour/queryTourListPage` | 查团期。**没有团期就建不了**,见下面第 3 条 |
+| `travelMgmt/queryListPage` | 查该 type_code 下有没有 wt_travel(分页字段叫 `list`) |
+| `travelMgmt/queryDefaultDataByTourTypeId` | 预填,同时就是 payload 模板 |
+| `ttPackage/uploadImage` | 传图,**不再需要浏览器扩展的 file_upload** |
+| `travelMgmt/editTravel` | 建/改。**不带 id 就是新建** |
+| `travelMgmt/selectVoById?travelId=` | 回读 |
+
+### 五个把第一次尝试打回来的坑
+
+1. **传图的表单字段叫 `photoInput`,不是 `file`。** 同一个 bundle 里另外六个上传器
+   用的都是 `file`,照着写会拿到一个**没有任何信息的 HTTP 500**。返回的 URL 在
+   `data.documentUrl`。
+2. **团期字段叫 `tourIdList`,是一个扁平的 id 数组**,不是预填回来的那个富对象
+   `tourList`。写错了会回 `500 tourId Cannot be empty` —— 这句话读起来像「没有团期」,
+   第一次因此去翻 wt_tour 有没有开,其实四条团期就在 payload 里,只是键名不对。
+   表单自己的提交函数才是权威:
+   `i.tourIdList = (tourList||[]).filter(t => t.checked).map(t => t.tourId)`
+3. **`travelMgmt/editTravel` 无团期时 500 `tourId Cannot be empty`** —— wt_travel 不能
+   先于 wt_tour 存在。这条仍然成立,只是 2. 会伪装成它。
+4. **预填回来的字段比要提交的多。** `region`、`paxType`、`sellingPrice`、`priceList`、
+   `validPeriod` 这些是表单读、但**从不回传**的展示数据(它们属于 wt_tour / tour type)。
+   照单奉还没好处。`minPassager`/`startingPrice`/`tag1..6` 只在 paxType 为 2 或 8 时才带。
+5. **`id` 要传空字符串 `""`,不是 `null`。**
+
+### 回读的分页字段叫 `list`
+
+`queryListPage` 的信封是 `{pageNo,pageSize,total,pages,lastPage,list}`。猜成 `records`
+会得到一个**静默的空回读**——而那恰好是唯一真正需要确认打印出来的时刻。
+
+### 重跑是安全的,但传图不是幂等的
+
+同一个文件传两次会在 OSS 上生成两个对象。`bin/api_upload.py` 因此把
+`<文件路径>:<字节数>` → URL 存进 `work/<CODE>/uploaded.json`:`editTravel` 失败后重跑
+不会再传一遍,重新 compose 过的那几张才会重传。
+
+---
+
 ## 6. 保存后必须回读
 
 回列表页确认 `Status = Unpublished`,记下 Product Id。然后**重新打开编辑页**核对:

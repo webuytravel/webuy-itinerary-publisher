@@ -66,6 +66,9 @@ STOCK_REGION = {
     "WB9XMN": "Guangdong China",
     "WBLCKG": "Chongqing China",
     "WBCKG6": "Chongqing China",
+    # 和 WBXMNM 同一个理由:专列一半在四川(成都/西昌)、一半在云南
+    # (丽江/香格里拉/保山/腾冲)。只写一个省会把另一半带偏。
+    "ACKMG12T": "Sichuan Yunnan China",
 }
 
 

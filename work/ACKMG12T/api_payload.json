@@ -1,0 +1,490 @@
+{
+  "id": "",
+  "tourTypeId": "1362",
+  "productName": "12D Splendid Tianfu Express · Whispers of the Mountains · Southwest China Journey",
+  "productNameCn": "12天 锦绣天府号 · 山野密语 · 西南锦绣宋韵归心之旅",
+  "travelStatus": 0,
+  "flightInfo": "",
+  "highlightsList": [
+    {
+      "highlights": "Panda Train · Tianfu Express — a Song-spirited rail journey across Sichuan and Yunnan, in 2+1 land first-class",
+      "highlightsCn": "熊猫专列·锦绣天府号 —— 宋韵雅致的川滇旅列，2+1 陆地头等舱",
+      "sortNum": 0
+    },
+    {
+      "highlights": "Tiger Leaping Gorge, where the Jinsha River gathers force between sheer mountain walls",
+      "highlightsCn": "虎跳峡，金沙江激流穿行嶙峋峡谷，山河气势磅礴",
+      "sortNum": 1
+    },
+    {
+      "highlights": "Shangri-La by choice: Pudacuo National Park, or Ganden Sumtseling — the “Little Potala Palace” of northwest Yunnan",
+      "highlightsCn": "香格里拉二选一：普达措国家公园，或“小布达拉宫”噶丹·松赞林寺",
+      "sortNum": 2
+    },
+    {
+      "highlights": "Tengchong by choice: the steaming valley of Rehai Hot Spring Park, or a hike into the Gaoligong Mountains",
+      "highlightsCn": "腾冲二选一：云雾氤氲的热海公园，或高黎贡山秘境徒步",
+      "sortNum": 3
+    },
+    {
+      "highlights": "Qionghai Lake · Jianchang Ancient City · Dukezong Ancient Town · Dadi Tea Estate · Jietou Village · Qiluo Ancient Town",
+      "highlightsCn": "邛海 · 建昌古城 · 独克宗古城 · 大地茶海 · 界头村 · 绮罗古镇",
+      "sortNum": 4
+    },
+    {
+      "highlights": "Traditional fisherman's banquet · an 800-year camellia-oil feast at Hemu · caravan tea on the Tea Horse Road",
+      "highlightsCn": "特色渔家宴 · 和睦茶花村八百年茶油宴 · 茶马古道马帮茶",
+      "sortNum": 5
+    }
+  ],
+  "sectionList": [
+    {
+      "id": null,
+      "sectionName": "DAY 1",
+      "sectionNameCn": "第一天",
+      "sectionTitle": "Singapore - Chengdu",
+      "sectionTitleCn": "新加坡 - 成都",
+      "sectionLocation": "Chengdu",
+      "sectionLocationCn": "成都",
+      "sectionDescription": "-",
+      "sectionDescriptionCn": "-",
+      "sortNum": 0,
+      "imageList": [],
+      "itemList": [
+        {
+          "id": null,
+          "itemTitle": "Fly from Singapore to Chengdu · private airport transfer",
+          "itemTitleCn": "由新加坡乘搭航班飞往成都 · 专车接机",
+          "itemDescription": "",
+          "itemDescriptionCn": "",
+          "itemType": 1,
+          "sortNum": 0,
+          "imageList": []
+        }
+      ]
+    },
+    {
+      "id": null,
+      "sectionName": "DAY 2",
+      "sectionNameCn": "第二天",
+      "sectionTitle": "Chengdu",
+      "sectionTitleCn": "成都",
+      "sectionLocation": "Chengdu",
+      "sectionLocationCn": "成都",
+      "sectionDescription": "Breakfast / Dinner",
+      "sectionDescriptionCn": "早餐 / 晚餐",
+      "sortNum": 1,
+      "imageList": [],
+      "itemList": [
+        {
+          "id": null,
+          "itemTitle": "Board the Panda Train · Tianfu Express",
+          "itemTitleCn": "登乘熊猫专列·锦绣天府号列车",
+          "itemDescription": "",
+          "itemDescriptionCn": "",
+          "itemType": 1,
+          "sortNum": 0,
+          "imageList": []
+        }
+      ]
+    },
+    {
+      "id": null,
+      "sectionName": "DAY 3",
+      "sectionNameCn": "第三天",
+      "sectionTitle": "Chengdu - Xichang",
+      "sectionTitleCn": "成都 - 西昌",
+      "sectionLocation": "Xichang",
+      "sectionLocationCn": "西昌",
+      "sectionDescription": "Breakfast / Dinner",
+      "sectionDescriptionCn": "早餐 / 晚餐",
+      "sortNum": 2,
+      "imageList": [],
+      "itemList": [
+        {
+          "id": null,
+          "itemTitle": "Welcome Ceremony on board",
+          "itemTitleCn": "【欢迎仪式】",
+          "itemDescription": "",
+          "itemDescriptionCn": "",
+          "itemType": 4,
+          "sortNum": 0,
+          "imageList": []
+        },
+        {
+          "id": null,
+          "itemTitle": "Cultural Salon",
+          "itemTitleCn": "【文化沙龙】",
+          "itemDescription": "",
+          "itemDescriptionCn": "",
+          "itemType": 4,
+          "sortNum": 1,
+          "imageList": []
+        }
+      ]
+    },
+    {
+      "id": null,
+      "sectionName": "DAY 4",
+      "sectionNameCn": "第四天",
+      "sectionTitle": "Xichang - Lijiang",
+      "sectionTitleCn": "西昌 - 丽江",
+      "sectionLocation": "Xichang",
+      "sectionLocationCn": "西昌",
+      "sectionDescription": "Breakfast / Lunch / Dinner",
+      "sectionDescriptionCn": "早餐 / 午餐 / 晚餐",
+      "sortNum": 3,
+      "imageList": [],
+      "itemList": [
+        {
+          "id": null,
+          "itemTitle": "Qionghai Lake",
+          "itemTitleCn": "【邛海】",
+          "itemDescription": "",
+          "itemDescriptionCn": "",
+          "itemType": 3,
+          "sortNum": 0,
+          "imageList": []
+        },
+        {
+          "id": null,
+          "itemTitle": "Jianchang Ancient City",
+          "itemTitleCn": "【建昌古城】",
+          "itemDescription": "",
+          "itemDescriptionCn": "",
+          "itemType": 3,
+          "sortNum": 1,
+          "imageList": []
+        },
+        {
+          "id": null,
+          "itemTitle": "Traditional Fisherman's Banquet",
+          "itemTitleCn": "【特色渔家宴】",
+          "itemDescription": "",
+          "itemDescriptionCn": "",
+          "itemType": 5,
+          "sortNum": 2,
+          "imageList": []
+        }
+      ]
+    },
+    {
+      "id": null,
+      "sectionName": "DAY 5",
+      "sectionNameCn": "第五天",
+      "sectionTitle": "Lijiang - Shangri-La",
+      "sectionTitleCn": "丽江 - 香格里拉",
+      "sectionLocation": "Shangri-La",
+      "sectionLocationCn": "香格里拉",
+      "sectionDescription": "Breakfast / Lunch / Dinner",
+      "sectionDescriptionCn": "早餐 / 午餐 / 晚餐",
+      "sortNum": 4,
+      "imageList": [],
+      "itemList": [
+        {
+          "id": null,
+          "itemTitle": "Shangri-La",
+          "itemTitleCn": "【香格里拉】",
+          "itemDescription": "",
+          "itemDescriptionCn": "",
+          "itemType": 3,
+          "sortNum": 0,
+          "imageList": []
+        },
+        {
+          "id": null,
+          "itemTitle": "Non-high-altitude alternative: Lijiang Ancient Town",
+          "itemTitleCn": "非高原版调整为：丽江古城",
+          "itemDescription": "",
+          "itemDescriptionCn": "",
+          "itemType": 3,
+          "sortNum": 1,
+          "imageList": []
+        }
+      ]
+    },
+    {
+      "id": null,
+      "sectionName": "DAY 6",
+      "sectionNameCn": "第六天",
+      "sectionTitle": "Shangri-La",
+      "sectionTitleCn": "香格里拉",
+      "sectionLocation": "Shangri-La",
+      "sectionLocationCn": "香格里拉",
+      "sectionDescription": "Breakfast / Lunch / Dinner",
+      "sectionDescriptionCn": "早餐 / 午餐 / 晚餐",
+      "sortNum": 5,
+      "imageList": [],
+      "itemList": [
+        {
+          "id": null,
+          "itemTitle": "Route A · Morning: Pudacuo National Park",
+          "itemTitleCn": "A线【普达措国家公园】",
+          "itemDescription": "",
+          "itemDescriptionCn": "",
+          "itemType": 3,
+          "sortNum": 0,
+          "imageList": []
+        },
+        {
+          "id": null,
+          "itemTitle": "Route B · Morning: Ganden Sumtseling Monastery",
+          "itemTitleCn": "B线【噶丹·松赞林寺】",
+          "itemDescription": "",
+          "itemDescriptionCn": "",
+          "itemType": 3,
+          "sortNum": 1,
+          "imageList": []
+        },
+        {
+          "id": null,
+          "itemTitle": "Route A · Afternoon: Dukezong Ancient Town",
+          "itemTitleCn": "A线【独克宗古城】",
+          "itemDescription": "",
+          "itemDescriptionCn": "",
+          "itemType": 3,
+          "sortNum": 2,
+          "imageList": []
+        },
+        {
+          "id": null,
+          "itemTitle": "Route B · Afternoon: Thangka Painting Academy",
+          "itemTitleCn": "B线【唐卡画院】",
+          "itemDescription": "",
+          "itemDescriptionCn": "",
+          "itemType": 3,
+          "sortNum": 3,
+          "imageList": []
+        }
+      ]
+    },
+    {
+      "id": null,
+      "sectionName": "DAY 7",
+      "sectionNameCn": "第七天",
+      "sectionTitle": "Shangri-La - Lijiang - Baoshan",
+      "sectionTitleCn": "香格里拉 - 丽江 - 保山",
+      "sectionLocation": "Tiger Leaping Gorge",
+      "sectionLocationCn": "虎跳峡",
+      "sectionDescription": "Breakfast / Lunch / Dinner",
+      "sectionDescriptionCn": "早餐 / 午餐 / 晚餐",
+      "sortNum": 6,
+      "imageList": [],
+      "itemList": [
+        {
+          "id": null,
+          "itemTitle": "Tiger Leaping Gorge",
+          "itemTitleCn": "【虎跳峡】",
+          "itemDescription": "",
+          "itemDescriptionCn": "",
+          "itemType": 3,
+          "sortNum": 0,
+          "imageList": []
+        },
+        {
+          "id": null,
+          "itemTitle": "Baoshan",
+          "itemTitleCn": "【保山】",
+          "itemDescription": "",
+          "itemDescriptionCn": "",
+          "itemType": 3,
+          "sortNum": 1,
+          "imageList": []
+        }
+      ]
+    },
+    {
+      "id": null,
+      "sectionName": "DAY 8",
+      "sectionNameCn": "第八天",
+      "sectionTitle": "Baoshan - Tengchong",
+      "sectionTitleCn": "保山 - 腾冲",
+      "sectionLocation": "Tengchong",
+      "sectionLocationCn": "腾冲",
+      "sectionDescription": "Breakfast / Lunch / Dinner",
+      "sectionDescriptionCn": "早餐 / 午餐 / 晚餐",
+      "sortNum": 7,
+      "imageList": [],
+      "itemList": [
+        {
+          "id": null,
+          "itemTitle": "Dadi Tea Estate",
+          "itemTitleCn": "【大地茶海】",
+          "itemDescription": "",
+          "itemDescriptionCn": "",
+          "itemType": 3,
+          "sortNum": 0,
+          "imageList": []
+        },
+        {
+          "id": null,
+          "itemTitle": "The Old Schoolhouse",
+          "itemTitleCn": "【老学堂】",
+          "itemDescription": "",
+          "itemDescriptionCn": "",
+          "itemType": 3,
+          "sortNum": 1,
+          "imageList": []
+        }
+      ]
+    },
+    {
+      "id": null,
+      "sectionName": "DAY 9",
+      "sectionNameCn": "第九天",
+      "sectionTitle": "Tengchong",
+      "sectionTitleCn": "腾冲",
+      "sectionLocation": "Tengchong",
+      "sectionLocationCn": "腾冲",
+      "sectionDescription": "Breakfast / Lunch / Dinner",
+      "sectionDescriptionCn": "早餐 / 午餐 / 晚餐",
+      "sortNum": 8,
+      "imageList": [],
+      "itemList": [
+        {
+          "id": null,
+          "itemTitle": "Route A: Rehai Hot Spring Park",
+          "itemTitleCn": "A线【热海公园】",
+          "itemDescription": "",
+          "itemDescriptionCn": "",
+          "itemType": 3,
+          "sortNum": 0,
+          "imageList": []
+        },
+        {
+          "id": null,
+          "itemTitle": "Route B: Gaoligong Mountains hike · Forest Mountain Kitchen",
+          "itemTitleCn": "B线【高黎贡山】·【山野厨房】",
+          "itemDescription": "",
+          "itemDescriptionCn": "",
+          "itemType": 3,
+          "sortNum": 1,
+          "imageList": []
+        },
+        {
+          "id": null,
+          "itemTitle": "Hemu Camellia Village · camellia-oil banquet",
+          "itemTitleCn": "【和睦茶花村】·茶油宴",
+          "itemDescription": "",
+          "itemDescriptionCn": "",
+          "itemType": 3,
+          "sortNum": 2,
+          "imageList": []
+        }
+      ]
+    },
+    {
+      "id": null,
+      "sectionName": "DAY 10",
+      "sectionNameCn": "第十天",
+      "sectionTitle": "Tengchong - Baoshan",
+      "sectionTitleCn": "腾冲 - 保山",
+      "sectionLocation": "Tengchong",
+      "sectionLocationCn": "腾冲",
+      "sectionDescription": "Breakfast / Lunch / Dinner",
+      "sectionDescriptionCn": "早餐 / 午餐 / 晚餐",
+      "sortNum": 9,
+      "imageList": [],
+      "itemList": [
+        {
+          "id": null,
+          "itemTitle": "Jietou Village · heritage handmade papermaking",
+          "itemTitleCn": "【界头村】·古法造纸",
+          "itemDescription": "",
+          "itemDescriptionCn": "",
+          "itemType": 3,
+          "sortNum": 0,
+          "imageList": []
+        },
+        {
+          "id": null,
+          "itemTitle": "Qiluo Ancient Town",
+          "itemTitleCn": "【绮罗古镇】",
+          "itemDescription": "",
+          "itemDescriptionCn": "",
+          "itemType": 3,
+          "sortNum": 1,
+          "imageList": []
+        },
+        {
+          "id": null,
+          "itemTitle": "Caravan Tea",
+          "itemTitleCn": "【马帮茶】",
+          "itemDescription": "",
+          "itemDescriptionCn": "",
+          "itemType": 5,
+          "sortNum": 2,
+          "imageList": []
+        }
+      ]
+    },
+    {
+      "id": null,
+      "sectionName": "DAY 11",
+      "sectionNameCn": "第十一天",
+      "sectionTitle": "Arrival in Chengdu",
+      "sectionTitleCn": "抵达成都",
+      "sectionLocation": "Chengdu",
+      "sectionLocationCn": "成都",
+      "sectionDescription": "Breakfast / Lunch",
+      "sectionDescriptionCn": "早餐 / 午餐",
+      "sortNum": 10,
+      "imageList": [],
+      "itemList": [
+        {
+          "id": null,
+          "itemTitle": "Closing programme on board · Yi culture",
+          "itemTitleCn": "【返程·收官】列车活动·彝族风情",
+          "itemDescription": "",
+          "itemDescriptionCn": "",
+          "itemType": 4,
+          "sortNum": 0,
+          "imageList": []
+        }
+      ]
+    },
+    {
+      "id": null,
+      "sectionName": "DAY 12",
+      "sectionNameCn": "第十二天",
+      "sectionTitle": "Chengdu - Singapore",
+      "sectionTitleCn": "成都 - 新加坡",
+      "sectionLocation": "Chengdu",
+      "sectionLocationCn": "成都",
+      "sectionDescription": "Breakfast",
+      "sectionDescriptionCn": "早餐",
+      "sortNum": 11,
+      "imageList": [],
+      "itemList": [
+        {
+          "id": null,
+          "itemTitle": "Private airport transfer · fly home to Singapore",
+          "itemTitleCn": "专车送机 · 搭乘航班返回新加坡",
+          "itemDescription": "",
+          "itemDescriptionCn": "",
+          "itemType": 1,
+          "sortNum": 0,
+          "imageList": []
+        }
+      ]
+    }
+  ],
+  "thumbneilList": [],
+  "desktopImageList": [],
+  "mobileImageList": [],
+  "routeMapUrl": "",
+  "videoUrl": "",
+  "videoCoverUrl": "",
+  "tourIdList": [
+    "15234",
+    "15235",
+    "15236",
+    "15237"
+  ],
+  "packageInclusive": "",
+  "packageRemarks": "",
+  "importantNote": "",
+  "packageInclusiveCn": "",
+  "packageRemarksCn": "",
+  "importantNoteCn": ""
+}

@@ -1,0 +1,144 @@
+{
+  "_captured": "travelMgmt/queryDefaultDataByTourTypeId?tourTypeId=1362 on 2026-09-11, enriched with the tour-type facts from tour/queryTourListPage (the prefill returns them null).",
+  "data": {
+    "id": null,
+    "tourTypeId": "1362",
+    "tourTypeCode": "ACKMG12T",
+    "tourTypeName": "12D11N TIANFU EXPRESS - SOUTHWEST CHINA WOVEN IN THE SPIRIT OF SONG",
+    "paxType": 1,
+    "productName": null,
+    "productNameCn": null,
+    "videoUrl": null,
+    "videoCoverUrl": null,
+    "flightInfo": null,
+    "travelStatus": null,
+    "region": "CHN",
+    "sellingPrice": null,
+    "highlightsList": [],
+    "mobileImageList": null,
+    "desktopImageList": null,
+    "thumbneilList": null,
+    "sectionList": null,
+    "priceList": [
+      {
+        "priceId": 2,
+        "priceName": "Adult Fare per pax[Twin Share]",
+        "priceName2": "成人价一位[双人间]"
+      }
+    ],
+    "tourList": [
+      {
+        "id": null,
+        "tourId": "15234",
+        "ifshow": 0,
+        "tourCode": "11ACKMG12T03/26SQ",
+        "tourName": "12D11N TIANFU EXPRESS - SOUTHWEST CHINA WOVEN IN THE SPIRIT OF SONG",
+        "departureTime": "2026-11-03 00:00:00",
+        "departureTimeFormat": "03/11/2026",
+        "inventoryNum": 16,
+        "salesNum": 0,
+        "qty": 16,
+        "priceList": [
+          {
+            "tourId": "15234",
+            "priceNameEn": "Adult Fare per pax[Twin Share]",
+            "priceNameZh": "成人价一位[双人间]",
+            "sellingPrice": 8800,
+            "costPrice": 0,
+            "airportTax": 0,
+            "qty": 16,
+            "sortNum": 1
+          }
+        ]
+      },
+      {
+        "id": null,
+        "tourId": "15235",
+        "ifshow": 0,
+        "tourCode": "11ACKMG12T22/26SQ",
+        "tourName": "12D11N TIANFU EXPRESS - SOUTHWEST CHINA WOVEN IN THE SPIRIT OF SONG",
+        "departureTime": "2026-11-22 00:00:00",
+        "departureTimeFormat": "22/11/2026",
+        "inventoryNum": 16,
+        "salesNum": 0,
+        "qty": 16,
+        "priceList": [
+          {
+            "tourId": "15235",
+            "priceNameEn": "Adult Fare per pax[Twin Share]",
+            "priceNameZh": "成人价一位[双人间]",
+            "sellingPrice": 8800,
+            "costPrice": 0,
+            "airportTax": 0,
+            "qty": 16,
+            "sortNum": 1
+          }
+        ]
+      },
+      {
+        "id": null,
+        "tourId": "15236",
+        "ifshow": 0,
+        "tourCode": "01ACKMG12T04/27SQ",
+        "tourName": "12D11N TIANFU EXPRESS - SOUTHWEST CHINA WOVEN IN THE SPIRIT OF SONG",
+        "departureTime": "2027-01-04 00:00:00",
+        "departureTimeFormat": "04/01/2027",
+        "inventoryNum": 16,
+        "salesNum": 0,
+        "qty": 16,
+        "priceList": [
+          {
+            "tourId": "15236",
+            "priceNameEn": "Adult Fare per pax[Twin Share]",
+            "priceNameZh": "成人价一位[双人间]",
+            "sellingPrice": 8800,
+            "costPrice": 0,
+            "airportTax": 0,
+            "qty": 16,
+            "sortNum": 1
+          }
+        ]
+      },
+      {
+        "id": null,
+        "tourId": "15237",
+        "ifshow": 0,
+        "tourCode": "01ACKMG12T14/27SQ",
+        "tourName": "12D11N TIANFU EXPRESS - SOUTHWEST CHINA WOVEN IN THE SPIRIT OF SONG",
+        "departureTime": "2027-01-14 00:00:00",
+        "departureTimeFormat": "14/01/2027",
+        "inventoryNum": 16,
+        "salesNum": 0,
+        "qty": 16,
+        "priceList": [
+          {
+            "tourId": "15237",
+            "priceNameEn": "Adult Fare per pax[Twin Share]",
+            "priceNameZh": "成人价一位[双人间]",
+            "sellingPrice": 9200,
+            "costPrice": 0,
+            "airportTax": 0,
+            "qty": 16,
+            "sortNum": 1
+          }
+        ]
+      }
+    ],
+    "validPeriod": null,
+    "minPassager": null,
+    "tag1": null,
+    "tag2": null,
+    "tag3": null,
+    "tag4": null,
+    "tag5": null,
+    "tag6": null,
+    "packageInclusive": null,
+    "packageRemarks": null,
+    "importantNote": null,
+    "packageInclusiveCn": null,
+    "packageRemarksCn": null,
+    "importantNoteCn": null,
+    "startingPrice": null,
+    "routeMapUrl": null
+  }
+}

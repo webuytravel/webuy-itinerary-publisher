@@ -549,6 +549,52 @@ OVERRIDES = {
     },
     # WBCKG6 魔幻重庆。D3(金佛山)和 D6(送机)没有天头图:金佛山 Commons 整块 0,
     # stock 给的是**桂林**喀斯特,按 3.4 留空等人点头。
+    # ACKMG12T 熊猫专列。**每一天都写在这里**,因为 token 自动匹配在这条线上
+    # 错得离谱:tours/4 是大理/丽江/香格里拉团,它的图注里「Ancient Town」「Lake」
+    # 到处都是,于是纳帕海(香格里拉)被配到第 4 天的邛海(西昌,相距 700km)、
+    # 大理古城被配到第 10 天的腾冲、而 tours/3 的「毛县古羌城」也被塞进第 4 天。
+    # 有 override 的那天会整天跳过自动匹配(见 compose() 的 `if key in overrides`),
+    # 所以逐天写清是把那些错配挤掉的办法。
+    #
+    # D12 不在下面:送机日,没有落地活动,属于 3.0 里「纯回程」那一类。
+    # **留空是要人点头的**,所以它会作为 GAP 出现在摘要里。
+    "ACKMG12T": {
+        "d01": [("stock", ("d01_chengdu_city_skyline_sichuan", 4),
+                 "安顺廊桥夜景 —— 抵达当晚「自由漫步成都街头」 s0.332")],
+        # 第 2 天册子写的是「全天自由行,晚间登乘列车」。这一级有两条路:
+        # 拿一张火车照,或者拿一张成都自由行的照片。选了后者——12 张候选里
+        # 没有一张是熊猫专列(它是包租列车),拿别的列车顶上去等于对产品失真。
+        #
+        # 先选的是图注写着「Kuanzhai Alley」的 CB0PTNcn,裁完才看出来那是
+        # **商场里的熊猫玩偶陈列**,不是宽窄巷子。图库图注比册子图注可信,
+        # 但不等于可以不看图——这一张就是反例。改用真熊猫:成都自由行那天
+        # 本来就看熊猫,而且这是「熊猫专列」,产品名里的那只熊猫总得出现一次。
+        "d02": [("cat", "DcVKlVLe", "都江堰熊猫谷,真熊猫啃竹 —— 产品名里的那只熊猫")],
+        "d03": [("stock", ("d03_chinese_song_dynasty_cultural_salo", 1),
+                 "茶席与茶艺师 —— 列车上的文化沙龙 s0.443")],
+        "d04": [("commons", ("d04_qionghai_lake_xichang", 6), "邛海水榭与远山 s0.304")],
+        "d05": [("cat", "XGtIjYmP", "纳帕海(香格里拉),图库授权图")],
+        # 转经筒那张(stock#1, s0.860)是整批里最好的一张,让给了轮播首图;
+        # 当天头改用普达措,正好是 A 线上午的那一段。
+        # #3 饱和度更高(0.536),但画面正中站着一对婚纱情侣,裁成天头像婚纱照
+        # 不像国家公园。#2 是纯景。
+        "d06": [("commons", ("d06_pudacuo_national_park_shangri_la_y", 2),
+                 "林岭倒映静湖 s0.329 —— 不选 #3,那张里有一对婚纱情侣")],
+        # jhz0thu4 的图注是「Tiger Leaping Gorge」,但画面是景区入口那尊**石虎
+        # 雕塑**,不是峡谷。同一个产品下的 AZUggaw2 才是真的峡谷激流。
+        "d07": [("cat", "AZUggaw2", "虎跳峡松绿激流与观景石,图库授权图")],
+        "d08": [("stock", ("d08_tengchong_dadi_tea_plantation_yunn", 3),
+                 "大地茶海茶垄航拍 s0.627")],
+        "d09": [("stock", ("d09_rehai_hot_spring_park_tengchong_ge", 1),
+                 "林间热泉蒸汽 s0.260")],
+        "d10": [("stock", ("d10_jietou_village_tengchong_handmade_", 2),
+                 "古法纸张晾晒场 —— 界头最有辨识度的一景 s0.228")],
+        # #6 那张盛装人像的背景横幅是繁体字、头饰形制也不像凉山彝族,更像台湾
+        # 原住民祭典 —— 「主体对、地点错」的又一例,只是这次错在族群上。
+        # 改用 #1(轮播原来用的那张),轮播另补一张。
+        "d11": [("stock", ("d11_yi_ethnic_culture_liangshan_sichua", 1),
+                 "彝族歌舞,红黑百褶裙 s0.431 —— 不选 #6,那张疑似台湾原住民祭典")],
+    },
     "WBCKG6": {
         "d01": [("stock", ("d01_fly_from_singapore_to_chongqing", 2), "重庆夜景(图注写明重庆)s0.682")],
         "d02": [("commons", ("d02_hongyadong_chongqing", 4), "洪崖洞与千厮门大桥,白天 s0.283")],
@@ -678,6 +724,27 @@ CAROUSEL = {
         ("cat:LltbVaVY", 0, "沙湾古镇"),
         ("d01_shenzhen_skyline", 5, "深圳夜景另一机位,与第 1 天当日配图不同张"),
         ("cat:8ben3nQr", 0, "顺峰山大牌坊"),
+    ],
+    # ACKMG12T。②图库(tours/4 的滇西北团)和④stock 混排,而且**刻意和当日
+    # 配图错开**:跨槽去重按内容哈希走,同一张图放两处会被删掉一处,而线上
+    # 在售产品的轮播图和日程图本来就不重样。
+    "ACKMG12T": [
+        ("d06_dukezong_ancient_town_prayer_wheel", 1,
+         "独克宗金色转经筒,蓝调时分 s0.860 —— 册子明写「世界最大转经筒」,"
+         "而且是整批候选里唯一一张高饱和又确实是那个地方的"),
+        ("cat:YAJzGm1f", 0, "虎跳峡另一机位 —— 第 7 天当日用的是 jhz0thu4"),
+        # nbsywg5q 图注也是松赞林寺,但画面是山门那块中英藏三语**招牌特写**,
+        # 轮播位放招牌太小气。5PQrPDOX 是寺群全景。
+        ("cat:5PQrPDOX", 0, "噶丹·松赞林寺金顶全景,图库授权图"),
+        ("d08_tengchong_dadi_tea_plantation_yunn", 5, "大地茶海茶垄与小径 s0.589"),
+        ("d01_chengdu_city_skyline_sichuan", 1, "成都夜景天际线 s0.558 —— 行程起点"),
+        ("cat:o23PlYiK", 0, "纳帕海另一机位 —— 第 5 天当日用的是 XGtIjYmP"),
+        # 彝族那张让给了第 11 天当日(#6 疑似台湾原住民,只能用 #1)。这一格
+        # 改放列车上的宋韵茶室 —— 产品卖的就是这条专列本身,轮播里一格都没有
+        # 说不过去。
+        ("d03_chinese_song_dynasty_cultural_salo", 2,
+         "暖调茶室与红灯笼 s0.761 —— 列车上的宋韵文化沙龙"),
+        ("d10_jietou_village_tengchong_handmade_", 4, "古法造纸抄纸帘 s0.330"),
     ],
     "WBINC9": [
         ("hero_yellow_river", 4, "黄河嵌入式曲流航拍——产品名的主题,与册子封面同一意象"),
@@ -1358,6 +1425,48 @@ TRIP_PICKS = {
     # **香港佐敦南京街的「蔡記重慶小食」**,一家港式小店。
     # 「观音桥」是最有意思的一条:它是解放碑对岸的商圈,**不是桥**,而 stock
     # 六张全是重庆的跨江大桥。Commons 那张地铁站出入口的「观音桥」招牌反而是对的。
+    # ACKMG12T。丽江古城、独克宗、松赞林寺、虎跳峡四张卡由 tours/4 的图库图
+    # 自动匹配拿到(图注出自 Skybear CMS,可信),下面补的是图库覆盖不到的。
+    #
+    # 两块**整块作废**,宁可让卡空着:
+    #   高黎贡山  stock 六张全是**玉龙雪山/蓝月谷**(丽江,相距 400km)——
+    #             雪山配绿松石钙华池,而高黎贡是亚热带森林山脉,形态完全不同;
+    #             Commons 唯一一张是一份红色奖状文书。这是 6.7 那类「主体对、
+    #             地点错」里最容易蒙混过关的一种,因为图本身很漂亮。
+    #   建昌古城  Commons 整块 0;stock 六张没有一张能确认是西昌那一座,
+    #             下面那张只作候选并在 note 里写明未核实。
+    "ACKMG12T": [
+        ("stock", ("d03_chinese_song_dynasty_cultural_salo", 3), "宋式青花茶器,红漆案 s0.518"),
+        ("stock", ("d03_chinese_song_dynasty_cultural_salo", 2), "暖调茶室与红灯笼 s0.761"),
+        ("commons", ("d04_qionghai_lake_xichang", 5), "邛海湿地木栈道 —— 册子写「信步湿地浅岸」 s0.265"),
+        ("stock", ("d04_jianchang_ancient_city_xichang", 6),
+         "古城瓦顶暮色 —— **未核实是否即建昌古城**,只是滇川风格相符 s0.370"),
+        ("stock", ("d04_chinese_lakeside_fisherman_banquet", 3), "渔人撒网 s0.602"),
+        # 丽江古城这一块 Commons 有三张是**一列蓝色动车**(撞了「丽江站」),
+        # 所以两张都从 stock 里取。
+        ("stock", ("d05_shangri_la_diqing_yunnan", 5), "经幡塔与草原湖泊 s0.369"),
+        ("stock", ("d05_lijiang_ancient_town_yunnan", 5), "丽江瓦顶与玉龙雪山 s0.557"),
+        ("commons", ("d06_ganden_sumtseling_monastery_shangr", 4), "红桥上的僧人与松赞林寺 s0.327"),
+        ("commons", ("d06_thangka_painting_tibetan_buddhist_", 1), "唐卡画作 s0.749"),
+        ("stock", ("d07_tiger_leaping_gorge_jinsha_river_y", 2), "虎跳石与松绿激流 s0.283"),
+        ("stock", ("d07_tiger_leaping_gorge_jinsha_river_y", 3),
+         "峡谷栈道与浊浪 —— 册子写的那条 6 公里徒步 s0.303"),
+        # 保山这一块有个同名陷阱:Commons 里画面最好的两张(C2/C3 悬崖上的石头
+        # 村落)是**丽江的宝山石头城**,不是行程经过的保山市,两地相距 200km。
+        # 下面这张是通用滇西乡野,不指向任何特定地标,所以不会指错。
+        ("stock", ("d07_baoshan_yunnan", 6),
+         "滇西金色梯田村落 —— **通用乡野,非保山特定地标** s0.591"),
+        ("commons", ("d08_tengchong_old_schoolhouse_1960s_ca", 6),
+         "腾冲石构老校舍 gpsOK s0.348 —— stock 那批里有一张是**湖南大学**"),
+        ("stock", ("d08_tengchong_dadi_tea_plantation_yunn", 4), "茶山梯垄 s0.438"),
+        ("commons", ("d09_rehai_hot_spring_park_tengchong_ge", 6),
+         "热海大滚锅,画面里有石刻题名 s0.181 —— 暗,但它确实是那一口"),
+        ("stock", ("d09_hemu_camellia_village_tengchong", 5), "村落与池塘航拍 s0.494"),
+        ("stock", ("d10_jietou_village_tengchong_handmade_", 5), "木槽前舀纸浆 s0.387"),
+        ("stock", ("d10_qiluo_ancient_town_tengchong", 6),
+         "滇西古镇木构街巷 —— **未核实是否即绮罗** s0.269"),
+        ("commons", ("d10_tea_horse_road_caravan_tea_yunnan", 6), "茶马古道马帮堂,红幡马纹 s0.406"),
+    ],
     "WBCKG6": [
         ("commons", ("d02_hongyadong_chongqing", 5), "洪崖洞夜灯 s0.580"),
         ("stock", ("d02_hongyadong_chongqing", 6), "洪崖洞金色夜景 s0.451"),
@@ -1450,6 +1559,14 @@ PRODUCTS = {
     # 这两本是册子进来的新产品(Skybear 上还没有 wt_travel),不是从生产读回的。
     "WBLCKG": ("CHN", []),
     "WBCKG6": ("CHN", []),
+    # 2026-09-11 的专列册子。①这一级是空的(两本册子没有一张过得了 section
+    # 下限,见 work/pdf_subjects.json 的 _ACKMG12T_note),但②这一级少见地
+    # 有货:tours/4 就是同区域在售的滇西北团,虎跳峡、独克宗、松赞林寺、
+    # 丽江古城四个景点直接命中;tours/3 是川线,只指望它兜成都那两天。
+    "ACKMG12T": ("CHN", [
+        "tours/4-8d7n-yunan-dali-lijiang-shangri-la",
+        "tours/3-8d7n-jiuzhaigou-leshan-m-emei-huanglong",
+    ]),
 }
 
 if __name__ == "__main__":
@@ -1470,7 +1587,17 @@ if __name__ == "__main__":
         itin = json.loads((WORK / code / "itinerary.json").read_text("utf-8"))
         assign_trip_photos(plan, itin["sections"], score, MATCH_FLOOR,
                            extra=trip_pool(code, TRIP_PICKS.get(code, [])))
-        stale = materialise(plan, WORK / code / "out")
+        # 上一轮的产物,在这一轮覆盖它们之前先记下来。`materialise` 返回的是
+        # plan 本身(见 lib/image_plan.py 的签名),不是清理清单——把它的返回值
+        # 当清单用,下面的 len()/join() 必炸,而且炸在 GAP 那一圈之前,正好把
+        # 人工闸门要看的那几行吞掉。清理是这里的事,就在这里做。
+        out_dir = WORK / code / "out"
+        before = {p.name for p in out_dir.glob("*")} if out_dir.exists() else set()
+        materialise(plan, out_dir)
+        kept = {Path(p.out_path).name for p in plan.placements if p.out_path}
+        stale = sorted(before - kept)
+        for name_ in stale:
+            (out_dir / name_).unlink()
         plan.to_json(WORK / code / "plan.json")
         name = json.loads((WORK / code / "itinerary.json").read_text("utf-8"))
         render(plan, WORK / code / f"{code}_review.html",

@@ -1,0 +1,1414 @@
+{
+  "d01_chengdu_city_skyline_sichuan": {
+    "subject": "Chengdu city skyline Sichuan 成都",
+    "query": "Chengdu city skyline",
+    "query_full": "Chengdu city skyline Sichuan",
+    "shrunk": true,
+    "day": 1,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Curve_%28132692461%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Curve (132692461).jpeg",
+        "path": "work/ACKMG12T/cand_commons/d01_chengdu_city_skyline_sichuan_1.jpg",
+        "license": "CC BY 3.0",
+        "credit": "正良 蔡",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d02_chengdu_railway_station_train": {
+    "subject": "Chengdu railway station train 成都火车站",
+    "query": "Chengdu railway station train",
+    "query_full": "Chengdu railway station train",
+    "shrunk": false,
+    "day": 2,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/CR200J_in_Chengdu_East_Railway_Station.jpg/3840px-CR200J_in_Chengdu_East_Railway_Station.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "CR200J in Chengdu East Railway Station.jpg",
+        "path": "work/ACKMG12T/cand_commons/d02_chengdu_railway_station_train_1.jpg",
+        "license": "CC0",
+        "credit": "ChasingAir",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Chengdu_Railway_Station_%28China%29_%2829153889962%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Chengdu Railway Station (China) (29153889962).jpg",
+        "path": "work/ACKMG12T/cand_commons/d02_chengdu_railway_station_train_2.jpg",
+        "license": "CC BY 2.0",
+        "credit": "Sasha India",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 3,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Chengdu_Railway_Station_Platform_7.jpg/3840px-Chengdu_Railway_Station_Platform_7.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Chengdu Railway Station Platform 7.jpg",
+        "path": "work/ACKMG12T/cand_commons/d02_chengdu_railway_station_train_3.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Dingli35",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/35/Chengdu_Railway_Station_Soft_Seat_Waiting_Area_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Chengdu Railway Station Soft Seat Waiting Area 2.JPG",
+        "path": "work/ACKMG12T/cand_commons/d02_chengdu_railway_station_train_4.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Livewireshock",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 5,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Chengdu_Tram_Line_2_Train_at_Chengduxi_Railway_Station_%28Oct_2025%29.jpg/3840px-Chengdu_Tram_Line_2_Train_at_Chengduxi_Railway_Station_%28Oct_2025%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Chengdu Tram Line 2 Train at Chengduxi Railway Station (Oct 2025).jpg",
+        "path": "work/ACKMG12T/cand_commons/d02_chengdu_railway_station_train_5.jpg",
+        "license": "CC BY 4.0",
+        "credit": "珠城铁路迷",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/94/China_Railways_22_passenger_coach_in_Chengdu_Railway_Station%2C_1999.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "China Railways 22 passenger coach in Chengdu Railway Station, 1999.jpg",
+        "path": "work/ACKMG12T/cand_commons/d02_chengdu_railway_station_train_6.jpg",
+        "license": "CC BY 2.0",
+        "credit": "Corto Maltese 1999",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d03_xichang_sichuan": {
+    "subject": "Xichang Sichuan 西昌",
+    "query": "Xichang Sichuan",
+    "query_full": "Xichang Sichuan",
+    "shrunk": false,
+    "day": 3,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/201908_Runway_of_Xichang_Airport_from_Chengdu-Kunming_Railway.jpg/3840px-201908_Runway_of_Xichang_Airport_from_Chengdu-Kunming_Railway.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "201908 Runway of Xichang Airport from Chengdu-Kunming Railway.jpg",
+        "path": "work/ACKMG12T/cand_commons/d03_xichang_sichuan_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "MNXANL",
+        "lat": 27.99910277777778,
+        "lon": 102.19085555555556,
+        "in_region": true
+      },
+      {
+        "n": 2,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/202309_Front_Square_of_Xichangxi_Station.jpg/3840px-202309_Front_Square_of_Xichangxi_Station.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "202309 Front Square of Xichangxi Station.jpg",
+        "path": "work/ACKMG12T/cand_commons/d03_xichang_sichuan_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "MNXANL",
+        "lat": 27.871644444444446,
+        "lon": 102.15910277777779,
+        "in_region": true
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Buddist_Temple_In_Xichang_Sichuan_%2820467551%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Buddist Temple In Xichang Sichuan (20467551).jpeg",
+        "path": "work/ACKMG12T/cand_commons/d03_xichang_sichuan_3.jpg",
+        "license": "CC BY 3.0",
+        "credit": "Zhichao Zhang",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/08/Xichang_Lu_Shan_Mountain.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Xichang Lu Shan Mountain.JPG",
+        "path": "work/ACKMG12T/cand_commons/d03_xichang_sichuan_4.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Pkkj",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Xichang_Shi_in_Liangshan_Yi_Autonomous_Prefecture_in_Sichuan_Province.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Xichang Shi in Liangshan Yi Autonomous Prefecture in Sichuan Province.png",
+        "path": "work/ACKMG12T/cand_commons/d03_xichang_sichuan_5.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "https://ii.wikipedia.org/wiki/%E7%94%A8%E6%88%B7:Shibo77",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 6,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Xichang_Yi_People_Museum.JPG/1920px-Xichang_Yi_People_Museum.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Xichang Yi People Museum.JPG",
+        "path": "work/ACKMG12T/cand_commons/d03_xichang_sichuan_6.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Pkkj",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d03_chinese_song_dynasty_cultural_salo": {
+    "subject": "Chinese Song dynasty cultural salon tea ceremony",
+    "query": "Chinese Song dynasty cultural",
+    "query_full": "Chinese Song dynasty cultural salon tea ceremony",
+    "shrunk": true,
+    "day": 3,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/07/20240815_Stele_of_the_Construction_of_Huisheng_Palace_in_Song_Dynasty_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "20240815 Stele of the Construction of Huisheng Palace in Song Dynasty 01.jpg",
+        "path": "work/ACKMG12T/cand_commons/d03_chinese_song_dynasty_cultural_salo_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Windmemories",
+        "lat": 34.71155277777778,
+        "lon": 112.89918611111112,
+        "in_region": false
+      },
+      {
+        "n": 2,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Six_Song_Dynasty_Mausoleums_area_%282%29.jpg/3840px-Six_Song_Dynasty_Mausoleums_area_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Six Song Dynasty Mausoleums area (2).jpg",
+        "path": "work/ACKMG12T/cand_commons/d03_chinese_song_dynasty_cultural_salo_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Huanokinhejo",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 3,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Six_Song_Dynasty_Mausoleums_area_%283%29.jpg/3840px-Six_Song_Dynasty_Mausoleums_area_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Six Song Dynasty Mausoleums area (3).jpg",
+        "path": "work/ACKMG12T/cand_commons/d03_chinese_song_dynasty_cultural_salo_3.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Huanokinhejo",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 4,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Six_Song_Dynasty_Mausoleums_area_%284%29.jpg/3840px-Six_Song_Dynasty_Mausoleums_area_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Six Song Dynasty Mausoleums area (4).jpg",
+        "path": "work/ACKMG12T/cand_commons/d03_chinese_song_dynasty_cultural_salo_4.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Huanokinhejo",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 5,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Song_Dynasty_Seals_%2817080856446%29.jpg/3840px-Song_Dynasty_Seals_%2817080856446%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Song Dynasty Seals (17080856446).jpg",
+        "path": "work/ACKMG12T/cand_commons/d03_chinese_song_dynasty_cultural_salo_5.jpg",
+        "license": "CC0",
+        "credit": "Gary Todd from Xinzheng, China",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Song_Dynasty_Wall_Brick_%2817106185491%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Song Dynasty Wall Brick (17106185491).jpg",
+        "path": "work/ACKMG12T/cand_commons/d03_chinese_song_dynasty_cultural_salo_6.jpg",
+        "license": "CC0",
+        "credit": "Gary Todd from Xinzheng, China",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d04_qionghai_lake_xichang": {
+    "subject": "Qionghai Lake Xichang 邛海",
+    "query": "Qionghai Lake Xichang",
+    "query_full": "Qionghai Lake Xichang",
+    "shrunk": false,
+    "day": 4,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/00_Xichang_Qionghai_Lake.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "00 Xichang Qionghai Lake.jpg",
+        "path": "work/ACKMG12T/cand_commons/d04_qionghai_lake_xichang_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Kontrola",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Buddist_Temple_In_Xichang_Sichuan_%2820467551%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Buddist Temple In Xichang Sichuan (20467551).jpeg",
+        "path": "work/ACKMG12T/cand_commons/d04_qionghai_lake_xichang_2.jpg",
+        "license": "CC BY 3.0",
+        "credit": "Zhichao Zhang",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Xichang_Qionghai.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Xichang Qionghai.JPG",
+        "path": "work/ACKMG12T/cand_commons/d04_qionghai_lake_xichang_3.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Pkkj",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/%E8%A5%BF%E6%98%8C%E9%82%9B%E6%B5%B7%E9%A3%8E%E5%85%89Xichang_Qionghai_Lake_scenery_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "西昌邛海风光Xichang Qionghai Lake scenery - panoramio.jpg",
+        "path": "work/ACKMG12T/cand_commons/d04_qionghai_lake_xichang_4.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "杨志强Zhiqiang",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/5d/%E8%A5%BF%E6%98%8C%E9%82%9B%E6%B5%B7%E9%A3%8E%E5%85%89Xichang_Qionghai_Lake_scenery_-_panoramio_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "西昌邛海风光Xichang Qionghai Lake scenery - panoramio (1).jpg",
+        "path": "work/ACKMG12T/cand_commons/d04_qionghai_lake_xichang_5.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "杨志强Zhiqiang",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/%E8%A5%BF%E6%98%8C%E9%82%9B%E6%B5%B7%E9%A3%8E%E5%85%89Xichang_Qionghai_Lake_scenery_-_panoramio_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "西昌邛海风光Xichang Qionghai Lake scenery - panoramio (2).jpg",
+        "path": "work/ACKMG12T/cand_commons/d04_qionghai_lake_xichang_6.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "杨志强Zhiqiang",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d04_jianchang_ancient_city_xichang": {
+    "subject": "Jianchang Ancient City Xichang 建昌古城",
+    "query": "Jianchang Ancient City Xichang",
+    "query_full": "Jianchang Ancient City Xichang",
+    "shrunk": false,
+    "day": 4,
+    "candidates": []
+  },
+  "d04_chinese_lakeside_fisherman_banquet": {
+    "subject": "Chinese lakeside fisherman banquet freshwater fish feast",
+    "query": "Chinese lakeside",
+    "query_full": "Chinese lakeside fisherman banquet freshwater fish feast",
+    "shrunk": true,
+    "day": 4,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Fuzhou_Lakeside_International_School_01.jpg/3840px-Fuzhou_Lakeside_International_School_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Fuzhou Lakeside International School 01.jpg",
+        "path": "work/ACKMG12T/cand_commons/d04_chinese_lakeside_fisherman_banquet_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Davidzdh",
+        "lat": 26.093091944444442,
+        "lon": 119.27809905555556,
+        "in_region": false
+      },
+      {
+        "n": 2,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Fuzhou_Lakeside_International_School_Panorama.jpg/1280px-Fuzhou_Lakeside_International_School_Panorama.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Fuzhou Lakeside International School Panorama.jpg",
+        "path": "work/ACKMG12T/cand_commons/d04_chinese_lakeside_fisherman_banquet_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Davidzdh",
+        "lat": 26.093055555555555,
+        "lon": 119.27805555555555,
+        "in_region": false
+      },
+      {
+        "n": 3,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Lakeside_Great_Wall_1.jpg/3840px-Lakeside_Great_Wall_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Lakeside Great Wall 1.jpg",
+        "path": "work/ACKMG12T/cand_commons/d04_chinese_lakeside_fisherman_banquet_3.jpg",
+        "license": "CC0",
+        "credit": "H2v5o68z",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 4,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Lakeside_Great_Wall_4.jpg/3840px-Lakeside_Great_Wall_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Lakeside Great Wall 4.jpg",
+        "path": "work/ACKMG12T/cand_commons/d04_chinese_lakeside_fisherman_banquet_4.jpg",
+        "license": "CC0",
+        "credit": "H2v5o68z",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 5,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Lakeside_Great_Wall_7.jpg/3840px-Lakeside_Great_Wall_7.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Lakeside Great Wall 7.jpg",
+        "path": "work/ACKMG12T/cand_commons/d04_chinese_lakeside_fisherman_banquet_5.jpg",
+        "license": "CC0",
+        "credit": "H2v5o68z",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 6,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Lakeside_Great_Wall_8.jpg/1920px-Lakeside_Great_Wall_8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Lakeside Great Wall 8.jpg",
+        "path": "work/ACKMG12T/cand_commons/d04_chinese_lakeside_fisherman_banquet_6.jpg",
+        "license": "CC0",
+        "credit": "H2v5o68z",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d05_shangri_la_diqing_yunnan": {
+    "subject": "Shangri-La Diqing Yunnan 香格里拉",
+    "query": "Shangri-La Diqing Yunnan",
+    "query_full": "Shangri-La Diqing Yunnan",
+    "shrunk": false,
+    "day": 5,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/20260224_Shangri-La_Railway_Station_01.jpg/3840px-20260224_Shangri-La_Railway_Station_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "20260224 Shangri-La Railway Station 01.jpg",
+        "path": "work/ACKMG12T/cand_commons/d05_shangri_la_diqing_yunnan_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "祝鱼贵",
+        "lat": 27.812855,
+        "lon": 99.68828400000001,
+        "in_region": true
+      },
+      {
+        "n": 2,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/20260224_Shangri-La_Railway_Station_02.jpg/3840px-20260224_Shangri-La_Railway_Station_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "20260224 Shangri-La Railway Station 02.jpg",
+        "path": "work/ACKMG12T/cand_commons/d05_shangri_la_diqing_yunnan_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "祝鱼贵",
+        "lat": 27.812866,
+        "lon": 99.68732700000001,
+        "in_region": true
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Diqing%2C_Yunnan%2C_China.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Diqing, Yunnan, China.jpg",
+        "path": "work/ACKMG12T/cand_commons/d05_shangri_la_diqing_yunnan_3.jpg",
+        "license": "CC BY 2.5",
+        "credit": "Asteiner (Ariel Steiner)",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 4,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Shangri-la_Railway_Station_%2820230929174655%29.jpg/3840px-Shangri-la_Railway_Station_%2820230929174655%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Shangri-la Railway Station (20230929174655).jpg",
+        "path": "work/ACKMG12T/cand_commons/d05_shangri_la_diqing_yunnan_4.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "N509FZ",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 5,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Shangri-la_airport_%28DIG%29%2C_Yunnan%2C_China.JPG/3840px-Shangri-la_airport_%28DIG%29%2C_Yunnan%2C_China.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Shangri-la airport (DIG), Yunnan, China.JPG",
+        "path": "work/ACKMG12T/cand_commons/d05_shangri_la_diqing_yunnan_5.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Azylber",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/38/View_from_Shangri-La_City%2C_Diqing_Tibetan_Autonomous_Prefecture%2C_Yunnan%2C_China.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "View from Shangri-La City, Diqing Tibetan Autonomous Prefecture, Yunnan, China.jpg",
+        "path": "work/ACKMG12T/cand_commons/d05_shangri_la_diqing_yunnan_6.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "Luke Chantrell",
+        "lat": 27.836766666666666,
+        "lon": 99.66197222222223,
+        "in_region": true
+      }
+    ]
+  },
+  "d05_lijiang_ancient_town_yunnan": {
+    "subject": "Lijiang Ancient Town Yunnan 丽江古城",
+    "query": "Lijiang Ancient Town Yunnan",
+    "query_full": "Lijiang Ancient Town Yunnan",
+    "shrunk": false,
+    "day": 5,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/97/Ambassador_Burns%27_visit_to_Lijiang%2C_Yunnan_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Ambassador Burns' visit to Lijiang, Yunnan 02.jpg",
+        "path": "work/ACKMG12T/cand_commons/d05_lijiang_ancient_town_yunnan_1.jpg",
+        "license": "Public domain",
+        "credit": "Ambassador Nicholas Burns",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 2,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Lijiang_Tramways_105_approaching_Baisha_Ancient_Town_%2820230929152414%29.jpg/3840px-Lijiang_Tramways_105_approaching_Baisha_Ancient_Town_%2820230929152414%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Lijiang Tramways 105 approaching Baisha Ancient Town (20230929152414).jpg",
+        "path": "work/ACKMG12T/cand_commons/d05_lijiang_ancient_town_yunnan_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "N509FZ",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 3,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Lijiang_Tramways_105_approaching_Baisha_Ancient_Town_%2820230929152415%29.jpg/3840px-Lijiang_Tramways_105_approaching_Baisha_Ancient_Town_%2820230929152415%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Lijiang Tramways 105 approaching Baisha Ancient Town (20230929152415).jpg",
+        "path": "work/ACKMG12T/cand_commons/d05_lijiang_ancient_town_yunnan_3.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "N509FZ",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 4,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Lijiang_Tramways_105_approaching_Baisha_Ancient_Town_%2820230929152416%29.jpg/3840px-Lijiang_Tramways_105_approaching_Baisha_Ancient_Town_%2820230929152416%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Lijiang Tramways 105 approaching Baisha Ancient Town (20230929152416).jpg",
+        "path": "work/ACKMG12T/cand_commons/d05_lijiang_ancient_town_yunnan_4.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "N509FZ",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 5,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Shaxi%2C_Yunnan%2C_China.jpg/3840px-Shaxi%2C_Yunnan%2C_China.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Shaxi, Yunnan, China.jpg",
+        "path": "work/ACKMG12T/cand_commons/d05_lijiang_ancient_town_yunnan_5.jpg",
+        "license": "CC BY-SA 2.0",
+        "credit": "Matthieu Lelievre",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/de/The_view_on_the_mountain_of_Mu_Fu%2C_Lijiang%2C_Yunnan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "The view on the mountain of Mu Fu, Lijiang, Yunnan.jpg",
+        "path": "work/ACKMG12T/cand_commons/d05_lijiang_ancient_town_yunnan_6.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "HappyNikita",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d06_pudacuo_national_park_shangri_la_y": {
+    "subject": "Pudacuo National Park Shangri-La Yunnan 普达措",
+    "query": "Pudacuo National Park Shangri-La Yunnan",
+    "query_full": "Pudacuo National Park Shangri-La Yunnan",
+    "shrunk": false,
+    "day": 6,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Potatso_%28Pudacuo%29_National_Park%2C_Diqing_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Potatso (Pudacuo) National Park, Diqing - panoramio.jpg",
+        "path": "work/ACKMG12T/cand_commons/d06_pudacuo_national_park_shangri_la_y_1.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Colin W",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 2,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Pudacuo_National_Park_lake%2C_August_2018.jpg/3840px-Pudacuo_National_Park_lake%2C_August_2018.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Pudacuo National Park lake, August 2018.jpg",
+        "path": "work/ACKMG12T/cand_commons/d06_pudacuo_national_park_shangri_la_y_2.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Jason Zhang",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 3,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Pudacuo_National_Park_with_couple_in_foreground.jpg/3840px-Pudacuo_National_Park_with_couple_in_foreground.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Pudacuo National Park with couple in foreground.jpg",
+        "path": "work/ACKMG12T/cand_commons/d06_pudacuo_national_park_shangri_la_y_3.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Jason Zhang",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d06_ganden_sumtseling_monastery_shangr": {
+    "subject": "Ganden Sumtseling Monastery Shangri-La 松赞林寺",
+    "query": "Ganden Sumtseling Monastery Shangri-La",
+    "query_full": "Ganden Sumtseling Monastery Shangri-La",
+    "shrunk": false,
+    "day": 6,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/61/Ganden_Sumtseling_Monastery_%28121112473%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Ganden Sumtseling Monastery (121112473).jpeg",
+        "path": "work/ACKMG12T/cand_commons/d06_ganden_sumtseling_monastery_shangr_1.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Luca Casartelli",
+        "lat": 27.863436666666665,
+        "lon": 99.70463833333334,
+        "in_region": true
+      },
+      {
+        "n": 2,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Ganden_Sumtseling_Monastery_%E6%9D%BE%E8%B5%9E%E6%9E%97%E5%AF%BA%2C_Yunnan%2C_2009_%2851990868798%29.jpg/3840px-Ganden_Sumtseling_Monastery_%E6%9D%BE%E8%B5%9E%E6%9E%97%E5%AF%BA%2C_Yunnan%2C_2009_%2851990868798%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Ganden Sumtseling Monastery 松赞林寺, Yunnan, 2009 (51990868798).jpg",
+        "path": "work/ACKMG12T/cand_commons/d06_ganden_sumtseling_monastery_shangr_2.jpg",
+        "license": "CC BY-SA 2.0",
+        "credit": "JL Cogburn",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Monk_At_Ganden_Sumtseling_Monastery_%28121112467%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Monk At Ganden Sumtseling Monastery (121112467).jpeg",
+        "path": "work/ACKMG12T/cand_commons/d06_ganden_sumtseling_monastery_shangr_3.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Luca Casartelli",
+        "lat": 27.863436666666665,
+        "lon": 99.70463833333334,
+        "in_region": true
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Monks_At_Ganden_Sumtseling_Monastery_%28121112471%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Monks At Ganden Sumtseling Monastery (121112471).jpeg",
+        "path": "work/ACKMG12T/cand_commons/d06_ganden_sumtseling_monastery_shangr_4.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "Luca Casartelli",
+        "lat": 27.863436666666665,
+        "lon": 99.70463833333334,
+        "in_region": true
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Zhongdian%2C_Jietang_Songlin_monastery_or_Ganden_Sumtseling_monastery_%286169743395%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Zhongdian, Jietang Songlin monastery or Ganden Sumtseling monastery (6169743395).jpg",
+        "path": "work/ACKMG12T/cand_commons/d06_ganden_sumtseling_monastery_shangr_5.jpg",
+        "license": "CC BY 2.0",
+        "credit": "Arian Zwegers from Brussels, Belgium",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 6,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/%E6%9D%BE%E8%B5%9E%E6%9E%97%E5%AF%BA_-_%E5%85%A8%E6%99%AF_-_2025-05-07_09_%28cropped%29.jpg/3840px-%E6%9D%BE%E8%B5%9E%E6%9E%97%E5%AF%BA_-_%E5%85%A8%E6%99%AF_-_2025-05-07_09_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "松赞林寺 - 全景 - 2025-05-07 09 (cropped).jpg",
+        "path": "work/ACKMG12T/cand_commons/d06_ganden_sumtseling_monastery_shangr_6.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "瑞丽江的河水",
+        "lat": 27.85766,
+        "lon": 99.70585666666666,
+        "in_region": true
+      }
+    ]
+  },
+  "d06_dukezong_ancient_town_prayer_wheel": {
+    "subject": "Dukezong Ancient Town prayer wheel Shangri-La 独克宗古城",
+    "query": "Dukezong Ancient Town",
+    "query_full": "Dukezong Ancient Town prayer wheel Shangri-La",
+    "shrunk": true,
+    "day": 6,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/20260225_Skyline_of_Dukezong_Ancient_Town_Shangri-La_01.jpg/3840px-20260225_Skyline_of_Dukezong_Ancient_Town_Shangri-La_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "20260225 Skyline of Dukezong Ancient Town Shangri-La 01.jpg",
+        "path": "work/ACKMG12T/cand_commons/d06_dukezong_ancient_town_prayer_wheel_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "祝鱼贵",
+        "lat": 27.814985,
+        "lon": 99.70533,
+        "in_region": true
+      },
+      {
+        "n": 2,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/20260225_Skyline_of_Dukezong_Ancient_Town_Shangri-La_02.jpg/3840px-20260225_Skyline_of_Dukezong_Ancient_Town_Shangri-La_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "20260225 Skyline of Dukezong Ancient Town Shangri-La 02.jpg",
+        "path": "work/ACKMG12T/cand_commons/d06_dukezong_ancient_town_prayer_wheel_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "祝鱼贵",
+        "lat": 27.814991,
+        "lon": 99.70535600000001,
+        "in_region": true
+      },
+      {
+        "n": 3,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/20260225_Skyline_of_Dukezong_Ancient_Town_Shangri-La_03.jpg/3840px-20260225_Skyline_of_Dukezong_Ancient_Town_Shangri-La_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "20260225 Skyline of Dukezong Ancient Town Shangri-La 03.jpg",
+        "path": "work/ACKMG12T/cand_commons/d06_dukezong_ancient_town_prayer_wheel_3.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "祝鱼贵",
+        "lat": 27.814991,
+        "lon": 99.70535600000001,
+        "in_region": true
+      },
+      {
+        "n": 4,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/20260225_Skyline_of_Dukezong_Ancient_Town_Shangri-La_06.jpg/3840px-20260225_Skyline_of_Dukezong_Ancient_Town_Shangri-La_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "20260225 Skyline of Dukezong Ancient Town Shangri-La 06.jpg",
+        "path": "work/ACKMG12T/cand_commons/d06_dukezong_ancient_town_prayer_wheel_4.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "祝鱼贵",
+        "lat": 27.814908333333335,
+        "lon": 99.70529166666667,
+        "in_region": true
+      },
+      {
+        "n": 5,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/20260225_Skyline_of_Dukezong_Ancient_Town_Shangri-La_09.jpg/3840px-20260225_Skyline_of_Dukezong_Ancient_Town_Shangri-La_09.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "20260225 Skyline of Dukezong Ancient Town Shangri-La 09.jpg",
+        "path": "work/ACKMG12T/cand_commons/d06_dukezong_ancient_town_prayer_wheel_5.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "祝鱼贵",
+        "lat": 27.814230555555557,
+        "lon": 99.70542777777779,
+        "in_region": true
+      },
+      {
+        "n": 6,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/20260225_Skyline_of_Dukezong_Ancient_Town_Shangri-La_13.jpg/3840px-20260225_Skyline_of_Dukezong_Ancient_Town_Shangri-La_13.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "20260225 Skyline of Dukezong Ancient Town Shangri-La 13.jpg",
+        "path": "work/ACKMG12T/cand_commons/d06_dukezong_ancient_town_prayer_wheel_6.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "祝鱼贵",
+        "lat": 27.81410277777778,
+        "lon": 99.70551944444445,
+        "in_region": true
+      }
+    ]
+  },
+  "d06_thangka_painting_tibetan_buddhist_": {
+    "subject": "Thangka painting Tibetan Buddhist art academy",
+    "query": "Thangka painting Tibetan Buddhist art academy",
+    "query_full": "Thangka painting Tibetan Buddhist art academy",
+    "shrunk": false,
+    "day": 6,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/%27The_Dhyani_Buddha_Akshobhya%27%2C_Tibetan_thangka%2C_late_13th_century%2C_Honolulu_Academy_of_Arts.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "'The Dhyani Buddha Akshobhya', Tibetan thangka, late 13th century, Honolulu Academy of Arts.jpg",
+        "path": "work/ACKMG12T/cand_commons/d06_thangka_painting_tibetan_buddhist__1.jpg",
+        "license": "Public domain",
+        "credit": "Unknown authorUnknown author",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/22/Akshobhya_detail%2C_%27The_Dhyani_Buddha_Akshobhya%27%2C_Tibetan_thangka%2C_late_13th_century%2C_Honolulu_Academy_of_Arts_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Akshobhya detail, 'The Dhyani Buddha Akshobhya', Tibetan thangka, late 13th century, Honolulu Academy of Arts (cropped).jpg",
+        "path": "work/ACKMG12T/cand_commons/d06_thangka_painting_tibetan_buddhist__2.jpg",
+        "license": "Public domain",
+        "credit": "Unknown authorUnknown author",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/48/Center_detail%2C_%27The_Dhyani_Buddha_Akshobhya%27%2C_Tibetan_thangka%2C_late_13th_century%2C_Honolulu_Academy_of_Arts_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Center detail, 'The Dhyani Buddha Akshobhya', Tibetan thangka, late 13th century, Honolulu Academy of Arts (cropped).jpg",
+        "path": "work/ACKMG12T/cand_commons/d06_thangka_painting_tibetan_buddhist__3.jpg",
+        "license": "Public domain",
+        "credit": "Unknown authorUnknown author",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/The_Qianlong_Emperor_in_Buddhist_Dress.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "The Qianlong Emperor in Buddhist Dress.jpg",
+        "path": "work/ACKMG12T/cand_commons/d06_thangka_painting_tibetan_buddhist__4.jpg",
+        "license": "Public domain",
+        "credit": "Unknown authorUnknown author",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d07_tiger_leaping_gorge_jinsha_river_y": {
+    "subject": "Tiger Leaping Gorge Jinsha River Yunnan 虎跳峡",
+    "query": "Tiger Leaping Gorge Jinsha River Yunnan",
+    "query_full": "Tiger Leaping Gorge Jinsha River Yunnan",
+    "shrunk": false,
+    "day": 7,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Countryside_along_Tiger_Leaping_Gorge_trail_22.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Countryside along Tiger Leaping Gorge trail 22.JPG",
+        "path": "work/ACKMG12T/cand_commons/d07_tiger_leaping_gorge_jinsha_river_y_1.jpg",
+        "license": "CC BY 3.0",
+        "credit": "BrokenSphere",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Tiger_Leaping_Gorge_%2848372621992%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Tiger Leaping Gorge (48372621992).jpg",
+        "path": "work/ACKMG12T/cand_commons/d07_tiger_leaping_gorge_jinsha_river_y_2.jpg",
+        "license": "CC BY 2.0",
+        "credit": "David Stanley from Nanaimo, Canada",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 3,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Yunnan_China_Jinsha-Jang-Bridge-at-Tiger-Leaping-Gorge-01.jpg/3840px-Yunnan_China_Jinsha-Jang-Bridge-at-Tiger-Leaping-Gorge-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Yunnan China Jinsha-Jang-Bridge-at-Tiger-Leaping-Gorge-01.jpg",
+        "path": "work/ACKMG12T/cand_commons/d07_tiger_leaping_gorge_jinsha_river_y_3.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "CEphoto, Uwe Aranas",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Yunnan_China_Jinsha-Jang-Bridge-at-Tiger-Leaping-Gorge-02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Yunnan China Jinsha-Jang-Bridge-at-Tiger-Leaping-Gorge-02.jpg",
+        "path": "work/ACKMG12T/cand_commons/d07_tiger_leaping_gorge_jinsha_river_y_4.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "CEphoto, Uwe Aranas",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 5,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Yunnan_China_Jinsha-Jang-Bridge-at-Tiger-Leaping-Gorge-03.jpg/3840px-Yunnan_China_Jinsha-Jang-Bridge-at-Tiger-Leaping-Gorge-03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Yunnan China Jinsha-Jang-Bridge-at-Tiger-Leaping-Gorge-03.jpg",
+        "path": "work/ACKMG12T/cand_commons/d07_tiger_leaping_gorge_jinsha_river_y_5.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "CEphoto, Uwe Aranas",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Yunnan_China_Tiger-Leaping-Gorge-12.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Yunnan China Tiger-Leaping-Gorge-12.jpg",
+        "path": "work/ACKMG12T/cand_commons/d07_tiger_leaping_gorge_jinsha_river_y_6.jpg",
+        "license": "CC BY-SA 3.0",
+        "credit": "CEphoto, Uwe Aranas",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d07_baoshan_yunnan": {
+    "subject": "Baoshan Yunnan 保山",
+    "query": "Baoshan Yunnan",
+    "query_full": "Baoshan Yunnan",
+    "shrunk": false,
+    "day": 7,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Baoshan%2C_Yunnan_%2850798273278%29.jpg/3840px-Baoshan%2C_Yunnan_%2850798273278%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Baoshan, Yunnan (50798273278).jpg",
+        "path": "work/ACKMG12T/cand_commons/d07_baoshan_yunnan_1.jpg",
+        "license": "CC BY-SA 2.0",
+        "credit": "Rod Waddington from Kergunyah, Australia",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/83/Baoshan_Stone_Village_-_46574616904.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Baoshan Stone Village - 46574616904.jpg",
+        "path": "work/ACKMG12T/cand_commons/d07_baoshan_yunnan_2.jpg",
+        "license": "CC BY-SA 2.0",
+        "credit": "Rod Waddington",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 3,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Baoshan_Village_-_47035769881.jpg/3840px-Baoshan_Village_-_47035769881.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Baoshan Village - 47035769881.jpg",
+        "path": "work/ACKMG12T/cand_commons/d07_baoshan_yunnan_3.jpg",
+        "license": "CC BY-SA 2.0",
+        "credit": "Rod Waddington",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Baoshan_Village_Gate.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Baoshan Village Gate.jpg",
+        "path": "work/ACKMG12T/cand_commons/d07_baoshan_yunnan_4.jpg",
+        "license": "CC BY-SA 2.0",
+        "credit": "Rod Waddington",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 5,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Daily_Game_in_Baoshan%2C_Yunnan%2C_China.jpg/3840px-Daily_Game_in_Baoshan%2C_Yunnan%2C_China.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Daily Game in Baoshan, Yunnan, China.jpg",
+        "path": "work/ACKMG12T/cand_commons/d07_baoshan_yunnan_5.jpg",
+        "license": "CC BY-SA 2.0",
+        "credit": "Rod Waddington",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/16/Location_of_Baoshan_Prefecture_within_Yunnan_%28China%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Location of Baoshan Prefecture within Yunnan (China).png",
+        "path": "work/ACKMG12T/cand_commons/d07_baoshan_yunnan_6.jpg",
+        "license": "CC BY 3.0",
+        "credit": "Croquant",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d08_tengchong_dadi_tea_plantation_yunn": {
+    "subject": "Tengchong Dadi tea plantation Yunnan 大地茶海",
+    "query": "Tengchong Dadi tea plantation Yunnan",
+    "query_full": "Tengchong Dadi tea plantation Yunnan",
+    "shrunk": false,
+    "day": 8,
+    "candidates": []
+  },
+  "d08_tengchong_old_schoolhouse_1960s_ca": {
+    "subject": "Tengchong old schoolhouse 1960s campus 老学堂",
+    "query": "Tengchong old",
+    "query_full": "Tengchong old schoolhouse 1960s campus",
+    "shrunk": true,
+    "day": 8,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Old_British_Consulate_in_Tengchong_01.jpg/3840px-Old_British_Consulate_in_Tengchong_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Old British Consulate in Tengchong 01.jpg",
+        "path": "work/ACKMG12T/cand_commons/d08_tengchong_old_schoolhouse_1960s_ca_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "STW932",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 2,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Old_British_Consulate_in_Tengchong_02.jpg/3840px-Old_British_Consulate_in_Tengchong_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Old British Consulate in Tengchong 02.jpg",
+        "path": "work/ACKMG12T/cand_commons/d08_tengchong_old_schoolhouse_1960s_ca_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "STW932",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Old_British_Consulate_in_Tengchong_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Old British Consulate in Tengchong 03.jpg",
+        "path": "work/ACKMG12T/cand_commons/d08_tengchong_old_schoolhouse_1960s_ca_3.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "STW932",
+        "lat": 25.033821105833336,
+        "lon": 98.49402618388889,
+        "in_region": true
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Old_British_Consulate_in_Tengchong_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Old British Consulate in Tengchong 04.jpg",
+        "path": "work/ACKMG12T/cand_commons/d08_tengchong_old_schoolhouse_1960s_ca_4.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "STW932",
+        "lat": 25.034189224166667,
+        "lon": 98.49377441388889,
+        "in_region": true
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/90/Old_British_Consulate_in_Tengchong_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Old British Consulate in Tengchong 05.jpg",
+        "path": "work/ACKMG12T/cand_commons/d08_tengchong_old_schoolhouse_1960s_ca_5.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "STW932",
+        "lat": 25.03393554666667,
+        "lon": 98.49362182611111,
+        "in_region": true
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Old_British_Consulate_in_Tengchong_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Old British Consulate in Tengchong 06.jpg",
+        "path": "work/ACKMG12T/cand_commons/d08_tengchong_old_schoolhouse_1960s_ca_6.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "STW932",
+        "lat": 25.03602981555556,
+        "lon": 98.4921875,
+        "in_region": true
+      }
+    ]
+  },
+  "d09_rehai_hot_spring_park_tengchong_ge": {
+    "subject": "Rehai Hot Spring Park Tengchong geothermal 热海公园",
+    "query": "Rehai Hot Spring Park Tengchong geothermal",
+    "query_full": "Rehai Hot Spring Park Tengchong geothermal",
+    "shrunk": false,
+    "day": 9,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Rehai_23.jpg/3840px-Rehai_23.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Rehai 23.jpg",
+        "path": "work/ACKMG12T/cand_commons/d09_rehai_hot_spring_park_tengchong_ge_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "STW932",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Rehai_24.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Rehai 24.jpg",
+        "path": "work/ACKMG12T/cand_commons/d09_rehai_hot_spring_park_tengchong_ge_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "STW932",
+        "lat": 24.95099830611111,
+        "lon": 98.43604278555556,
+        "in_region": true
+      },
+      {
+        "n": 3,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Rehai_25.jpg/3840px-Rehai_25.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Rehai 25.jpg",
+        "path": "work/ACKMG12T/cand_commons/d09_rehai_hot_spring_park_tengchong_ge_3.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "STW932",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 4,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Rehai_26.jpg/3840px-Rehai_26.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Rehai 26.jpg",
+        "path": "work/ACKMG12T/cand_commons/d09_rehai_hot_spring_park_tengchong_ge_4.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "STW932",
+        "lat": 24.950960159166666,
+        "lon": 98.43611907944445,
+        "in_region": true
+      },
+      {
+        "n": 5,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Rehai_27.jpg/3840px-Rehai_27.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Rehai 27.jpg",
+        "path": "work/ACKMG12T/cand_commons/d09_rehai_hot_spring_park_tengchong_ge_5.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "STW932",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 6,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Rehai_28.jpg/3840px-Rehai_28.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Rehai 28.jpg",
+        "path": "work/ACKMG12T/cand_commons/d09_rehai_hot_spring_park_tengchong_ge_6.jpg",
+        "license": "CC BY-SA 4.0",
+        "credit": "STW932",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d09_gaoligong_mountain_nature_reserve_": {
+    "subject": "Gaoligong Mountain nature reserve Yunnan 高黎贡山",
+    "query": "Gaoligong Mountain nature",
+    "query_full": "Gaoligong Mountain nature reserve Yunnan",
+    "shrunk": true,
+    "day": 9,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Xi_Jinping%27s_instruction_on_Dulongjiang_Gaoligong_Mountains_Tunnel_at_MCPC_%2820220911164320%29.jpg/3840px-Xi_Jinping%27s_instruction_on_Dulongjiang_Gaoligong_Mountains_Tunnel_at_MCPC_%2820220911164320%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Xi Jinping's instruction on Dulongjiang Gaoligong Mountains Tunnel at MCPC (20220911164320).jpg",
+        "path": "work/ACKMG12T/cand_commons/d09_gaoligong_mountain_nature_reserve__1.jpg",
+        "license": "Public domain",
+        "credit": "N509FZ",
+        "lat": 40.00272777777778,
+        "lon": 116.39272222222223,
+        "in_region": false
+      }
+    ]
+  },
+  "d09_hemu_camellia_village_tengchong": {
+    "subject": "Hemu Camellia Village Tengchong 和睦茶花村",
+    "query": "Hemu Camellia",
+    "query_full": "Hemu Camellia Village Tengchong",
+    "shrunk": true,
+    "day": 9,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/New_Zealand_Suffragette.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "New Zealand Suffragette.jpg",
+        "path": "work/ACKMG12T/cand_commons/d09_hemu_camellia_village_tengchong_1.jpg",
+        "license": "Public domain",
+        "credit": "Charles Hemus (died 1925)",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  },
+  "d10_jietou_village_tengchong_handmade_": {
+    "subject": "Jietou village Tengchong handmade paper 界头村",
+    "query": "Jietou village Tengchong handmade paper",
+    "query_full": "Jietou village Tengchong handmade paper",
+    "shrunk": false,
+    "day": 10,
+    "candidates": []
+  },
+  "d10_qiluo_ancient_town_tengchong": {
+    "subject": "Qiluo Ancient Town Tengchong 绮罗古镇",
+    "query": "Qiluo Ancient Town Tengchong",
+    "query_full": "Qiluo Ancient Town Tengchong",
+    "shrunk": false,
+    "day": 10,
+    "candidates": []
+  },
+  "d10_tea_horse_road_caravan_tea_yunnan": {
+    "subject": "Tea Horse Road caravan tea Yunnan 马帮茶",
+    "query": "Tea Horse Road caravan tea Yunnan",
+    "query_full": "Tea Horse Road caravan tea Yunnan",
+    "shrunk": false,
+    "day": 10,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Tea-Horse_Ancient_Road_-_55510335442.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Tea-Horse Ancient Road - 55510335442.jpg",
+        "path": "work/ACKMG12T/cand_commons/d10_tea_horse_road_caravan_tea_yunnan_1.jpg",
+        "license": "CC BY 4.0",
+        "credit": "xiquinhosilva",
+        "lat": 22.840836666666668,
+        "lon": 100.99769333333333,
+        "in_region": false
+      },
+      {
+        "n": 2,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/43/Tea-Horse_Ancient_Road_-_55511346266.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Tea-Horse Ancient Road - 55511346266.jpg",
+        "path": "work/ACKMG12T/cand_commons/d10_tea_horse_road_caravan_tea_yunnan_2.jpg",
+        "license": "CC BY 4.0",
+        "credit": "xiquinhosilva",
+        "lat": 22.83435,
+        "lon": 101.00075333333334,
+        "in_region": false
+      },
+      {
+        "n": 3,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/44/Tea-Horse_Ancient_Road_-_55511452063.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Tea-Horse Ancient Road - 55511452063.jpg",
+        "path": "work/ACKMG12T/cand_commons/d10_tea_horse_road_caravan_tea_yunnan_3.jpg",
+        "license": "CC BY 4.0",
+        "credit": "xiquinhosilva",
+        "lat": 22.841063333333334,
+        "lon": 100.99749,
+        "in_region": false
+      },
+      {
+        "n": 4,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Tea-Horse_Ancient_Road_-_55511718495.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Tea-Horse Ancient Road - 55511718495.jpg",
+        "path": "work/ACKMG12T/cand_commons/d10_tea_horse_road_caravan_tea_yunnan_4.jpg",
+        "license": "CC BY 4.0",
+        "credit": "xiquinhosilva",
+        "lat": 22.830358333333333,
+        "lon": 100.99215333333333,
+        "in_region": false
+      },
+      {
+        "n": 5,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/18/Tea-Horse_Ancient_Road_-_55511719425.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Tea-Horse Ancient Road - 55511719425.jpg",
+        "path": "work/ACKMG12T/cand_commons/d10_tea_horse_road_caravan_tea_yunnan_5.jpg",
+        "license": "CC BY 4.0",
+        "credit": "xiquinhosilva",
+        "lat": 22.832856666666668,
+        "lon": 101.00203333333333,
+        "in_region": false
+      },
+      {
+        "n": 6,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Tea-Horse_Ancient_Road_-_55511720595.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "commons",
+        "title": "Tea-Horse Ancient Road - 55511720595.jpg",
+        "path": "work/ACKMG12T/cand_commons/d10_tea_horse_road_caravan_tea_yunnan_6.jpg",
+        "license": "CC BY 4.0",
+        "credit": "xiquinhosilva",
+        "lat": 22.840303333333335,
+        "lon": 100.99676333333333,
+        "in_region": false
+      }
+    ]
+  },
+  "d11_yi_ethnic_culture_liangshan_sichua": {
+    "subject": "Yi ethnic culture Liangshan Sichuan 彝族",
+    "query": "Yi ethnic culture",
+    "query_full": "Yi ethnic culture Liangshan Sichuan",
+    "shrunk": true,
+    "day": 11,
+    "candidates": [
+      {
+        "n": 1,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Yi_People_Culture_%289958395854%29.jpg/3840px-Yi_People_Culture_%289958395854%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Yi People Culture (9958395854).jpg",
+        "path": "work/ACKMG12T/cand_commons/d11_yi_ethnic_culture_liangshan_sichua_1.jpg",
+        "license": "CC0",
+        "credit": "Gary Todd from Xinzheng, China",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 2,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Yi_People_Culture_%289958474725%29.jpg/3840px-Yi_People_Culture_%289958474725%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Yi People Culture (9958474725).jpg",
+        "path": "work/ACKMG12T/cand_commons/d11_yi_ethnic_culture_liangshan_sichua_2.jpg",
+        "license": "CC0",
+        "credit": "Gary Todd from Xinzheng, China",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 3,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Yi_People_Culture_%289958485306%29.jpg/3840px-Yi_People_Culture_%289958485306%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Yi People Culture (9958485306).jpg",
+        "path": "work/ACKMG12T/cand_commons/d11_yi_ethnic_culture_liangshan_sichua_3.jpg",
+        "license": "CC0",
+        "credit": "Gary Todd from Xinzheng, China",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 4,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Yi_People_Culture_%289958492753%29.jpg/3840px-Yi_People_Culture_%289958492753%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Yi People Culture (9958492753).jpg",
+        "path": "work/ACKMG12T/cand_commons/d11_yi_ethnic_culture_liangshan_sichua_4.jpg",
+        "license": "CC0",
+        "credit": "Gary Todd from Xinzheng, China",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 5,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Yi_People_Culture_%289958497556%29.jpg/3840px-Yi_People_Culture_%289958497556%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Yi People Culture (9958497556).jpg",
+        "path": "work/ACKMG12T/cand_commons/d11_yi_ethnic_culture_liangshan_sichua_5.jpg",
+        "license": "CC0",
+        "credit": "Gary Todd from Xinzheng, China",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      },
+      {
+        "n": 6,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Yi_People_Culture_%289958503424%29.jpg/3840px-Yi_People_Culture_%289958503424%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "commons",
+        "title": "Yi People Culture (9958503424).jpg",
+        "path": "work/ACKMG12T/cand_commons/d11_yi_ethnic_culture_liangshan_sichua_6.jpg",
+        "license": "CC0",
+        "credit": "Gary Todd from Xinzheng, China",
+        "lat": null,
+        "lon": null,
+        "in_region": null
+      }
+    ]
+  }
+}
