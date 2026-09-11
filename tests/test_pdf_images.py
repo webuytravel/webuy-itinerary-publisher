@@ -1,8 +1,17 @@
+import io
+
+import fitz
 import numpy as np
 from PIL import Image
 
 from lib.image_spec import CAROUSEL, SECTION
-from lib.pdf_images import PdfImage, _gate, _looks_like_route_map
+from lib.pdf_images import (
+    PdfImage,
+    _gate,
+    _looks_like_route_map,
+    _looks_like_text_page,
+    extract,
+)
 
 
 def _img(width: int, height: int, **kw) -> PdfImage:
@@ -68,6 +77,67 @@ def test_route_map_classifier_separates_diagrams_from_photos():
     photo = Image.fromarray(
         rng.integers(0, 255, (700, 900, 3), dtype=np.uint8), "RGB")
     assert not _looks_like_route_map(photo)
+
+
+def _text_slab(height: int = 854, width: int = 978, pitch: int = 26) -> Image.Image:
+    """A rasterised page of body copy, to the numbers that decide it.
+
+    Modelled on ACKMG12T page 7: 4px word bars of dark blue on a flat pale
+    blue ground, one line every 26px. Reproducing the statistics matters,
+    not the glyphs — the fixture lands at ink share 0.11, saturation 0.13
+    and flat share 0.58 against 0.10 / 0.09 / 0.55 for the real raster.
+    """
+    page = np.full((height, width, 3), (219, 230, 238), dtype=np.uint8)
+    rng = np.random.default_rng(3)
+    for top in range(40, height - 30, pitch):
+        x = 55
+        while x < width - 60:
+            word = int(rng.integers(28, 95))
+            page[top:top + 4, x:min(x + word, width - 55)] = (24, 62, 104)
+            x += word + 12
+    return Image.fromarray(page)
+
+
+def test_a_rasterised_text_page_is_not_mistaken_for_a_route_map():
+    # ACKMG12T ships its "Special Terms and Conditions" pages as single
+    # rasters with no picture on them. Colour statistics read them as
+    # diagrams, so page 7 was classified route_map — and compose.py takes
+    # the first route_map for wt_travel.routeMapUrl, so a page of
+    # cancellation terms would have shipped as the product's route map.
+    slab = _text_slab()
+    assert _looks_like_text_page(slab)
+    assert _looks_like_route_map(slab)  # why the colour terms can't decide it
+
+    # The schematic it sits next to has no baseline pitch to find, so the
+    # new gate must leave the genuine route map alone.
+    diagram = Image.new("RGB", (900, 700), (255, 255, 255))
+    diagram.paste(Image.new("RGB", (520, 420), (214, 226, 245)), (190, 140))
+    assert not _looks_like_text_page(diagram)
+    assert _looks_like_route_map(diagram)
+
+
+def test_a_text_page_is_gated_out_before_either_classifier_votes(tmp_path):
+    # The gate runs inside `extract`, so the slab reaches no slot at all —
+    # not the route-map slot, and not the carousel either. 978x854 clears
+    # every geometric gate and crops to a hero-grade 4:3 window, so a fix
+    # that only taught the route-map classifier would move the terms page
+    # from one wrong slot to another.
+    slab = _text_slab()
+    assert _gate(*slab.size) == ""
+
+    buf = io.BytesIO()
+    slab.save(buf, "PNG")
+    doc = fitz.open()
+    page = doc.new_page(width=595, height=842)
+    page.insert_image(fitz.Rect(40, 120, 550, 565), stream=buf.getvalue())
+    pdf = tmp_path / "terms.pdf"
+    doc.save(pdf)
+    doc.close()
+
+    found = extract(pdf, tmp_path / "raw")
+    assert found.route_maps == []
+    assert found.usable == []
+    assert [i.rejected for i in found.rejected] == ["text page: 978x854 slab of body copy"]
 
 
 def test_a_muted_photo_is_not_mistaken_for_a_diagram():
