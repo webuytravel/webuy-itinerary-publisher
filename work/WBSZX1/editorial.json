@@ -1,0 +1,285 @@
+{
+  "code": "WBSZX1",
+  "region": "CHN",
+  "notes": {
+    "catalogue_tours": [
+      "相反的例子:tours/118 是同区域同主题的在售粤味美食团,14 张带 CMS 图注的",
+      "授权图正好覆盖顺峰山、欢乐海岸、黄飞鸿纪念馆、岭南新天地、广东千古情、",
+      "黄腾峡、沙湾古镇 —— ②这一级在有兄弟产品时的实际覆盖度。"
+    ],
+    "commons_region_box": [
+      "广东"
+    ],
+    "highlights": [
+      "WBSZX1 册子原始 18 条:1 条餐数、10 条菜式/餐厅、1 条酒店钻级、6 条按城市",
+      "分组的景点。这是一个美食团,所以两条餐食行要吃下全部 10 条,而不是像其他",
+      "产品那样只压缩风味名;番禺四海一家和南海渔村·天空一号是餐厅不是菜式,但",
+      "在粤港澳客群里本身就是卖点,予以保留。",
+      "落掉的:餐数、4 钻酒店(参考页版式不带),以及深圳湾人才公园、顺峰山大牌坊、",
+      "欢乐海岸、陈皮村、咀香园/罗西尼博物馆、深中通道 —— 都在逐日行程里出现。"
+    ],
+    "section_overrides": [
+      "WBSZX1 的图源结构和 WBINC9 相反:②图库(tours/118 同区域同主题在售产品)",
+      "覆盖了顺峰山、欢乐海岸、黄飞鸿纪念馆、黄腾峡、沙湾古镇,册子自带图覆盖了",
+      "深圳湾、赤坎古镇、日月贝、千古情演出。缺口只剩首尾两个交通日和几个",
+      "城市地标。"
+    ],
+    "carousel": [
+      "②图库图和③stock 混排:图库这一级优先,但它只覆盖 4 个景点,而且轮播",
+      "(尤其 1080x1440 的竖版)需要 1080px 以上的源图,册子那批 700–1000px",
+      "的图放进来会明显发虚,所以册子图只留在当日 section。"
+    ]
+  },
+  "catalogue_tours": [
+    "tours/118-7d6n-canton-gourmet-tour-2-0"
+  ],
+  "commons_region_box": [
+    21,
+    26,
+    110,
+    116
+  ],
+  "highlights": [
+    {
+      "en": "Eight cities in one journey: Shenzhen · Shunde · Foshan · Qingyuan · Guangzhou · Jiangmen · Zhongshan · Zhuhai",
+      "zh": "一程八城:深圳 · 顺德 · 佛山 · 清远 · 广州 · 江门 · 中山 · 珠海"
+    },
+    {
+      "en": "Guangzhou — Canton Tower, Huacheng Square, Shawan Ancient Town and a luxury Pearl River night cruise",
+      "zh": "广州 — 广州塔、花城广场、沙湾古镇与豪华珠江夜游"
+    },
+    {
+      "en": "Foshan Ancestral Temple · Wong Fei-hung Memorial Hall · Lingnan Tiandi · Romance of Guangdong live show · Huangtengxia Glass Bridge",
+      "zh": "佛山祖庙 · 黄飞鸿纪念馆 · 岭南新天地 · 广东千古情 · 黄腾峡玻璃桥"
+    },
+    {
+      "en": "Chikan Ancient Town and 33 Market Street in Jiangmen · Zhuhai's Lovers' Road, Fisher Girl Statue and Sun and Moon Shell Theatre with the Shijingshan cable car",
+      "zh": "江门赤坎古镇与三十三墟街 · 珠海情侣路、渔女像、日月贝大剧院与石景山缆车"
+    },
+    {
+      "en": "Shunde Fish Feast · Qingyuan Chicken Feast · Xinhui Roast Goose · Buddha Jumps Over the Wall",
+      "zh": "顺德鱼宴 · 清远鸡宴 · 新会烧鹅 · 佛跳墙宴"
+    },
+    {
+      "en": "Cantonese Dim Sum Banquet · Steamed Seafood · Kaiping Eel Rice · Panyu Sihaiyijia · Nanhai Fishing Village Sky One",
+      "zh": "广府点心宴 · 蒸汽海鲜 · 开平黄鳝饭 · 番禺四海一家 · 南海渔村·天空一号"
+    }
+  ],
+  "section_overrides": {
+    "d01": [
+      {
+        "source": "stock",
+        "block": "d01_shenzhen_skyline",
+        "n": 2,
+        "note": "深圳湾夜景天际线,平安金融中心形态可辨",
+        "why": "抵达日,册子只写接机入住。用深圳夜景天际线(平安金融中心可辨)。 抵达日,册子只写接机入住。用深圳夜景天际线(平安金融中心可辨)。"
+      }
+    ],
+    "d03": [
+      {
+        "source": "cat",
+        "image_id": "7vb1txIk",
+        "note": "黄飞鸿纪念馆(位于佛山祖庙内),CMS 图注,已授权",
+        "why": "自动匹配会挑走册子那张千古情演出图(991x369,裁到 section 要放大 2.44×),把 1800px 的黄腾峡挤掉。这里点名换成两张图库原图。 岭南新天地和广东千古情在 CMS 里只有 ~380x510,已从 catalogue.json 剔除。 自动匹配会挑走册子那张千古情演出图(991x369,裁到 section 要放大 2.44×),把 1800px 的黄腾峡挤掉。这里点名换成两张图库原图。 岭南新天地和广东千古情在 CMS 里只有 ~380x510,已从 catalogue.json 剔除。"
+      },
+      {
+        "source": "cat",
+        "image_id": "TM550Omr",
+        "note": "黄腾峡天门玻璃桥,1800px 原图"
+      }
+    ],
+    "d04": [
+      {
+        "source": "cat",
+        "image_id": "wfUiCnbg",
+        "note": "沙湾古镇,CMS 图注,已授权"
+      },
+      {
+        "source": "stock",
+        "block": "d04_pearl_river",
+        "n": 3,
+        "note": "珠江夜游观光船实拍——当日必需自费项目"
+      }
+    ],
+    "d06": [
+      {
+        "source": "stock",
+        "block": "d06_zhuhai_fisher",
+        "n": 1,
+        "note": "珠海渔女像与情侣路海滨"
+      },
+      {
+        "source": "cat",
+        "image_id": "HTlwuVEv",
+        "note": "欢乐海岸"
+      }
+    ],
+    "d07": [
+      {
+        "source": "stock",
+        "block": "d07_shenzhong_link",
+        "n": 1,
+        "note": "珠三角跨海大桥晨景;是否深中通道本体未确认",
+        "why": "深中通道 6 张候选都是珠三角跨海大桥,但没有一张能确认就是深中通道 (港珠澳大桥形态相近)。地域与类型都对,主体只写到「跨海大桥」。 深中通道 6 张候选都是珠三角跨海大桥,但没有一张能确认就是深中通道 (港珠澳大桥形态相近)。地域与类型都对,主体只写到「跨海大桥」。"
+      }
+    ]
+  },
+  "trip_picks": [
+    {
+      "source": "commons",
+      "block": "d06_zhuhai_fisher_girl_statue_lovers_r",
+      "n": 2,
+      "note": "海中礁石上的渔女与城市,蓝天 s0.53",
+      "why": "D6 珠海渔女:换掉 #5(雾中 s0.13)和 #1(隔山雾 s0.19)"
+    },
+    {
+      "source": "commons",
+      "block": "d06_zhuhai_fisher_girl_statue_lovers_r",
+      "n": 3,
+      "note": "观景平台与渔女 s0.41"
+    },
+    {
+      "source": "commons",
+      "block": "d06_zhuhai_fisher_girl_statue_lovers_r",
+      "n": 4,
+      "note": "「珠海渔女」题名石 s0.38"
+    },
+    {
+      "source": "commons",
+      "block": "d03_foshan_ancestral_temple",
+      "n": 1,
+      "note": "庙宇屋脊与棕榈,蓝天 s0.43",
+      "why": "D3 佛山祖庙:换掉 #6(带 GPS 但 s0.11,灰)"
+    },
+    {
+      "source": "commons",
+      "block": "d03_foshan_ancestral_temple",
+      "n": 5,
+      "note": "红墙与金字牌匾 s0.37"
+    },
+    {
+      "source": "commons",
+      "block": "d03_foshan_ancestral_temple",
+      "n": 4,
+      "note": "石狮与庙门 s0.26"
+    },
+    {
+      "source": "commons",
+      "block": "d04_canton_tower_guangzhou",
+      "n": 3,
+      "note": "塔与城市、珠江,蓝天 s0.38",
+      "why": "D4 广州塔:#1 分最高(1.08)但画面里不是广州塔,主体错,不选"
+    },
+    {
+      "source": "commons",
+      "block": "d04_canton_tower_guangzhou",
+      "n": 4,
+      "note": "夜间彩光塔与江 s0.34"
+    },
+    {
+      "source": "commons",
+      "block": "d04_canton_tower_guangzhou",
+      "n": 5,
+      "note": "粉光夜景 s0.26"
+    },
+    {
+      "source": "commons",
+      "block": "d04_pearl_river_night_cruise_guangzhou",
+      "n": 2,
+      "note": "游船与斜拉桥夜景 s0.75",
+      "why": "D4 珠江夜游(册子上的必需自费项目):#2 是全部候选里最亮的一张"
+    },
+    {
+      "source": "commons",
+      "block": "d04_pearl_river_night_cruise_guangzhou",
+      "n": 3,
+      "note": "蓝光游船,带 GPS s0.32"
+    },
+    {
+      "source": "commons",
+      "block": "d04_huacheng_square_guangzhou_cbd_skyl",
+      "n": 3,
+      "note": "CBD 塔楼,蓝天 s0.39",
+      "why": "D4 花城广场:换掉 #4(题名石但 s0.06)和 #5"
+    },
+    {
+      "source": "commons",
+      "block": "d04_huacheng_square_guangzhou_cbd_skyl",
+      "n": 1,
+      "note": "东塔西塔,蓝天 s0.20"
+    },
+    {
+      "source": "commons",
+      "block": "d04_huacheng_square_guangzhou_cbd_skyl",
+      "n": 2,
+      "note": "现代建筑与绿地 s0.31"
+    },
+    {
+      "source": "commons",
+      "block": "d02_shunfeng_mountain_archway_shunde_f",
+      "n": 1,
+      "note": "夜间灯光牌坊 s0.38",
+      "why": "D2 顺峰山牌坊"
+    },
+    {
+      "source": "commons",
+      "block": "d02_shunfeng_mountain_archway_shunde_f",
+      "n": 2,
+      "note": "牌坊与园景 s0.26"
+    },
+    {
+      "source": "commons",
+      "block": "d05_chikan_ancient_town_arcade_archite",
+      "n": 2,
+      "note": "河涌与骑楼群 s0.21",
+      "why": "D5 赤坎古镇"
+    }
+  ],
+  "carousel": [
+    {
+      "source": "stock",
+      "block": "d04_canton_tower",
+      "n": 3,
+      "note": "广州珠江新城夜景天际线——行程里最大的城市"
+    },
+    {
+      "source": "cat",
+      "image_id": "Jmz4i0ph",
+      "note": "顺德欢乐海岸,1916px 原图"
+    },
+    {
+      "source": "stock",
+      "block": "food_dim_sum",
+      "n": 3,
+      "note": "广府点心宴——这是美食团,餐食是卖点不是附注"
+    },
+    {
+      "source": "cat",
+      "image_id": "LEiTP6tQ",
+      "note": "黄腾峡天门玻璃桥"
+    },
+    {
+      "source": "stock",
+      "block": "food_dim_sum",
+      "n": 5,
+      "note": "蒸笼点心;八条美食 highlights 撑起两张轮播不算多",
+      "why": "这两张刻意与当日配图错开:渔女像和深圳天际线各自已经用在第 6、第 1 天, 跨槽去重会把轮播里的那张删掉(线上产品的轮播图和日程图本来就不重样)。"
+    },
+    {
+      "source": "cat",
+      "image_id": "LltbVaVY",
+      "note": "沙湾古镇"
+    },
+    {
+      "source": "stock",
+      "block": "d01_shenzhen_skyline",
+      "n": 5,
+      "note": "深圳夜景另一机位,与第 1 天当日配图不同张"
+    },
+    {
+      "source": "cat",
+      "image_id": "8ben3nQr",
+      "note": "顺峰山大牌坊"
+    }
+  ]
+}

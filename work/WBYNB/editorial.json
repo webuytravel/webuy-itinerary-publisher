@@ -1,0 +1,209 @@
+{
+  "code": "WBYNB",
+  "region": "CHN",
+  "notes": {
+    "commons_region_box": [
+      "腾冲"
+    ],
+    "section_overrides": [
+      "WBYNB 腾冲。这是这一批里最薄的一个:德宏/腾冲属于长尾,Commons 有 6 个",
+      "主体整块返回 0,还有 4 个只返回 1 张。D3 全天只有两张真图,所以「北海湿地」",
+      "那张(0.320,日落芦苇)拿去当天头图,把大金塔留给卡——一天里有两个主体",
+      "而只有两张图时,天头 + 一张卡比两张卡更划算(线上产品的天头图更显眼)。"
+    ],
+    "trip_picks": [
+      "WBYNB 腾冲。10/21 张卡有图 —— 这一批里最薄的一个,而且不是挑得不够狠:",
+      "德宏/腾冲和粤东一样是长尾,Commons 6 个主体整块 0、4 个只有 1 张。",
+      "stock 在这条线上的失败模式格外集中,**全是同名异地或同类异地**:",
+      "",
+      "姐告国门   六张里三张是**喀喇昆仑山口(红其拉甫,中巴边境)**,雪山口岸",
+      "独树成林   Commons 退化成「One Tree Forest」→ 雪地树林、青蛙;",
+      "stock 的大榕树分别在**尼泊尔博卡拉**和**秘鲁 Rioja**",
+      "畹町中缅友谊桥  stock 是建水双龙桥、丽江黑龙潭",
+      "和顺古镇   stock#5#6 图注自己写着 **Lijiang**",
+      "滇西抗战纪念馆  stock 是大理三塔和昆明金殿",
+      "云峰山     stock 是大理三塔、玉龙雪山、元阳梯田",
+      "莫里瀑布   stock 是白水台/蓝月谷(丽江)和九寨沟式钙华",
+      "咖啡庄园   Commons#2 是一张 **Habana(古巴)咖啡种植园**的老明信片",
+      "",
+      "「斗南花市」那一块三张 Commons 被 GPS 判成 in_region=False,但那是",
+      "**REGION_BOX 的边界问题不是图的问题**:WBYNB 的框是 (23,27,97,101),",
+      "昆明在 102.7,框外。而这条线第 7 天正是保山→昆明,斗南就在昆明。",
+      "图上「斗南花卉电子交易中心」的招牌清清楚楚,是对的。"
+    ]
+  },
+  "catalogue_tours": [],
+  "commons_region_box": [
+    23,
+    27,
+    97,
+    101
+  ],
+  "stock_region": "Yunnan China",
+  "section_overrides": {
+    "d01": [
+      {
+        "source": "stock",
+        "block": "d01_singapore_to_kunming_to_mangshi",
+        "n": 2,
+        "note": "昆明牌坊与城景(图注写明昆明)s0.417"
+      }
+    ],
+    "d02": [
+      {
+        "source": "commons",
+        "block": "d02_dai_tropical_garden_ruili",
+        "n": 1,
+        "note": "热带园林景观 s0.344"
+      }
+    ],
+    "d03": [
+      {
+        "source": "commons",
+        "block": "d03_beihai_wetland_tengchong",
+        "n": 1,
+        "note": "北海湿地日落 s0.320"
+      }
+    ],
+    "d04": [
+      {
+        "source": "commons",
+        "block": "d04_heshun_ancient_town_tengchong",
+        "n": 1,
+        "note": "和顺古镇屋顶全景 s0.266"
+      }
+    ],
+    "d05": [
+      {
+        "source": "stock",
+        "block": "d05_jiangdong_ginkgo_village_tengchong",
+        "n": 2,
+        "note": "金黄银杏覆檐 s0.545"
+      }
+    ],
+    "d06": [
+      {
+        "source": "commons",
+        "block": "d06_coffee_plantation_baoshan_yunnan",
+        "n": 3,
+        "note": "咖啡地与远山 s0.331"
+      }
+    ],
+    "d07": [
+      {
+        "source": "stock",
+        "block": "d07_dounan_flower_market_kunming",
+        "n": 1,
+        "note": "花墙与「昆明」字样 s0.444"
+      }
+    ]
+  },
+  "trip_picks": [
+    {
+      "source": "commons",
+      "block": "d02_moli_waterfall_ruili",
+      "n": 1,
+      "note": "林中瀑布 s0.246",
+      "why": "D2 莫里瀑布:整块唯一一张真的。"
+    },
+    {
+      "source": "commons",
+      "block": "d02_dai_tropical_garden_ruili",
+      "n": 2,
+      "note": "鸡蛋花枝 s0.400",
+      "why": "D2 勐巴拉西珍奇园:这两张是热带花木特写,画面里没有可辨识的地点, 属于「示意园中植物」而不是宣称地点(和打铁街那两张同一个道理)。 stock 里分数最高的两张是**台北**的天鹅绿雕和**印尼山口洋**,已排除。"
+    },
+    {
+      "source": "commons",
+      "block": "d02_dai_tropical_garden_ruili",
+      "n": 3,
+      "note": "棕榈叶冠 s0.348"
+    },
+    {
+      "source": "commons",
+      "block": "d03_menghuan_golden_pagoda_mangshi",
+      "n": 1,
+      "note": "大金塔与金孔雀 s0.295",
+      "why": "D3 勐焕大金塔:傣式金塔配金孔雀,德宏的形制。"
+    },
+    {
+      "source": "commons",
+      "block": "d04_rehai_hot_spring_tengchong",
+      "n": 1,
+      "note": "钙华丘与蒸汽 s0.263",
+      "why": "D4 热海"
+    },
+    {
+      "source": "commons",
+      "block": "d04_rehai_hot_spring_tengchong",
+      "n": 4,
+      "note": "热泉出露口 s0.186"
+    },
+    {
+      "source": "commons",
+      "block": "d04_heshun_ancient_town_tengchong",
+      "n": 2,
+      "note": "和顺石牌坊 s0.216",
+      "why": "D4 和顺古镇:C1 已用作天头图,卡上用牌坊。"
+    },
+    {
+      "source": "commons",
+      "block": "d05_tengchong_volcano_park",
+      "n": 5,
+      "note": "火山口航拍 s0.385",
+      "why": "D5 火山公园:六张都是腾冲那种覆着植被的休眠火山锥。"
+    },
+    {
+      "source": "commons",
+      "block": "d05_tengchong_volcano_park",
+      "n": 6,
+      "note": "草甸与火山锥 s0.325"
+    },
+    {
+      "source": "stock",
+      "block": "d05_jiangdong_ginkgo_village_tengchong",
+      "n": 6,
+      "note": "银杏金叶满树 s0.739",
+      "why": "D5 银杏村:Commons 整块 0。这两张是银杏黄叶覆在村舍瓦顶上,和 「银杏村」这张卡的主体完全对得上,但图注没写在哪 —— 交付时点名。"
+    },
+    {
+      "source": "stock",
+      "block": "d05_jiangdong_ginkgo_village_tengchong",
+      "n": 1,
+      "note": "黄叶与村舍瓦顶 s0.533"
+    },
+    {
+      "source": "commons",
+      "block": "d06_longjiang_bridge_tengchong",
+      "n": 3,
+      "note": "桥塔与主缆 s0.358",
+      "why": "D6 龙江大桥:Commons 是绿山间的悬索桥实拍;stock 六张全是**重庆**的桥。"
+    },
+    {
+      "source": "commons",
+      "block": "d06_longjiang_bridge_tengchong",
+      "n": 1,
+      "note": "峡谷上的悬索桥 s0.285"
+    },
+    {
+      "source": "commons",
+      "block": "d06_coffee_plantation_baoshan_yunnan",
+      "n": 1,
+      "note": "红土坡咖啡地 s0.382",
+      "why": "D6 咖啡庄园:只留这一张——红土坡上的咖啡地,没有可辨识地点。 同块 C5 是巴西式采收机、C2 是古巴老明信片,都排除了。"
+    },
+    {
+      "source": "commons",
+      "block": "d07_dounan_flower_market_kunming",
+      "n": 2,
+      "note": "斗南花卉交易中心门面 s0.246",
+      "why": "D7 斗南花市:招牌和交易大厅都认得出。"
+    },
+    {
+      "source": "commons",
+      "block": "d07_dounan_flower_market_kunming",
+      "n": 3,
+      "note": "交易大厅花车 s0.238"
+    }
+  ]
+}

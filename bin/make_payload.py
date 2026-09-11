@@ -23,7 +23,12 @@ from __future__ import annotations
 import argparse
 import json
 import re
+import sys
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
+from lib import editorial
 
 SLOTS = ("carousel", "carousel_mobile", "thumbnail", "route_map", "section",
          "trip")
@@ -56,148 +61,14 @@ _STAY = re.compile(r"\b(check[- ]?in|hotel|resort|overnight)\b", re.I)
 #
 # The itineraries carry 15–22 highlights, one per city plus one per dish, which
 # is the right shape for a brochure and the wrong shape for this block. Folding
-# them is an editorial call, so it lives here in full rather than being derived:
-# the per-dish lines collapse into the two cuisine rows losing nothing, and the
-# per-city lines are ranked by draw, so what falls off the end is the weakest.
-# The meal-count and hotel-grade lines are dropped because the reference page
-# does not carry them — meals already appear on every day of the itinerary.
-HOUSE_HIGHLIGHTS = {
-    # 2026-08-15 两本新册子。这两个是这一批里**唯一需要新建**的产品(Skybear 上
-    # 还没有 wt_travel),所以也是唯一需要 HOUSE_HIGHLIGHTS 的——其余产品的
-    # highlight 早就在生产上,EDIT 模式不动它。
-    #
-    # 册子上 WBCKG6 列了 8 条、WBLCKG 列了 5 组共 22 个景点,表单只有 6 格
-    # (第 5 步第 4 条:6 是版式不是限制)。按线上 tours/115 的版式重排成
-    # 4 条头部景点/体验 + 1 条用 `·` 压缩的次级景点 + 1 条餐食风味。
-    "WBCKG6": [
-        ("Hongyadong Night View — the stilt-house night scene that inspired "
-         "“Spirited Away”",
-         "洪崖洞夜景 —— 千与千寻同款吊脚楼，灯火璀璨"),
-        ("Liziba Monorail Through a Building, from the upgraded viewing platform",
-         "李子坝轻轨穿楼奇观，升级观景平台"),
-        ("Jinfo Mountain Scenic Area, UNESCO karst and alpine forest "
-         "(cable car and in-park shuttle included)",
-         "南川金佛山风景区，世界自然遗产喀斯特与高山森林（含索道+环保车）"),
-        ("Ciqikou Ancient Town, a thousand-year-old town at the heart of "
-         "Ba-Yu culture",
-         "磁器口古镇，千年古镇·巴渝文化代表"),
-        ("Jiefangbei · Qiansimen Bridge · Chaotianmen Confluence · Shibati · "
-         "Daijia Alley · E’ling No.2 Factory",
-         "解放碑 · 千厮门大桥 · 朝天门两江交汇 · 十八梯 · 戴家巷 · 鹅岭二厂"),
-        ("Authentic Mountain-City Hotpot · Chongqing street flavours",
-         "地道山城火锅 · 重庆小吃风味"),
-    ],
-    "WBLCKG": [
-        ("Yunyang Longgang Scenic Area and the Cloud Corridor Glass Skywalk",
-         "云阳龙缸景区与云端廊桥"),
-        ("Baidi City · Qutang Gorge · Kuimen Gate · Three Gorges Summit",
-         "白帝城 · 瞿塘峡 · 夔门 · 三峡之巅"),
-        ("Suobuya Stone Forest and Tujia Daughter City in Enshi",
-         "恩施梭布垭石林与土家女儿城"),
-        ("Shiziguan Water Highway and Tenglong Cave, a spectacular karst cave",
-         "狮子关水上公路与腾龙洞奇幻喀斯特溶洞"),
-        ("Chongqing city: Hongyadong Night View · Liziba Light Rail · "
-         "Jiefangbei · Zoo Panda House · Sichuan Opera Face-Changing",
-         "重庆市区：洪崖洞夜景 · 李子坝轻轨穿楼 · 解放碑 · 动物园熊猫馆 · 川剧变脸"),
-        ("Yunyang Cuisine · Tujia Cuisine · Guzi Chicken · "
-         "Bowl-Smashing Wine Banquet · Chongqing Hot Pot",
-         "云阳风味 · 土家风味 · 簋子鸡风味 · 摔碗酒宴 · 重庆火锅"),
-    ],
-    "WBCKWE": [
-        ("Mount Fanjing, a UNESCO World Heritage site",
-         "梵净山，世界自然遗产"),
-        ("Huangguoshu Waterfall, Asia’s largest waterfall",
-         "黄果树大瀑布，亚洲最大瀑布"),
-        ("Explore geological wonders at Maling River Canyon, Wanfenglin and Wanfeng Lake",
-         "探访马岭河大峡谷、万峰林、万峰湖地质奇观"),
-        ("Complimentary Miao costume experience at Xijiang Qianhu Miao Village",
-         "西江千户苗寨，赠送苗服换装体验"),
-        ("Highland Flavors · Qian (Guizhou) Cuisine · Canyon Flavors · Buyi Ethnic Flavors",
-         "高原风味 · 黔菜风味 · 峡谷风味 · 布依风味"),
-        ("Wild Mushroom Cuisine · Sour Soup Flavors · Miao Long-Table Banquet",
-         "菌子风味 · 酸汤风味 · 长桌宴"),
-    ],
-    "WBCURC": [
-        ("Kanas Lake, Kanas Three Bays and Hemu Village — pristine alpine lakes and forests",
-         "喀纳斯湖、喀纳斯三湾与禾木村 — 高山湖泊与原始森林"),
-        ("Duku Highway scenic drive along the Tianshan mountain road",
-         "独库公路景观之旅，穿越天山公路风光"),
-        ("Nalati Sky Grassland with a Kazakh grassland bonfire party",
-         "那拉提空中草原，草原篝火晚会与哈萨克草原文化"),
-        ("Sayram Lake · Keketuohai · Urho Ghost City · Flaming Mountains and the Karez wells of Turpan",
-         "赛里木湖 · 可可托海 · 乌尔禾魔鬼城 · 火焰山与吐鲁番坎儿井"),
-        ("Xinjiang Big Plate Chicken · Hand-Pulled Rice · Nang Pit-Roasted Meat · Lamb Skewers",
-         "大盘鸡风味 · 新疆手抓饭 · 馕坑肉 · 新疆羊肉串风味"),
-        ("Whole Roasted Lamb Feast · Xinjiang Song-and-Dance Banquet · Xinjiang Mini Hot Pot",
-         "烤全羊风味宴 · 新疆歌舞宴 · 新疆小火锅风味"),
-    ],
-    # WBSZX1 册子原始 18 条:1 条餐数、10 条菜式/餐厅、1 条酒店钻级、6 条按城市
-    # 分组的景点。这是一个美食团,所以两条餐食行要吃下全部 10 条,而不是像其他
-    # 产品那样只压缩风味名;番禺四海一家和南海渔村·天空一号是餐厅不是菜式,但
-    # 在粤港澳客群里本身就是卖点,予以保留。
-    # 落掉的:餐数、4 钻酒店(参考页版式不带),以及深圳湾人才公园、顺峰山大牌坊、
-    # 欢乐海岸、陈皮村、咀香园/罗西尼博物馆、深中通道 —— 都在逐日行程里出现。
-    "WBSZX1": [
-        ("Eight cities in one journey: Shenzhen · Shunde · Foshan · Qingyuan · "
-         "Guangzhou · Jiangmen · Zhongshan · Zhuhai",
-         "一程八城:深圳 · 顺德 · 佛山 · 清远 · 广州 · 江门 · 中山 · 珠海"),
-        ("Guangzhou — Canton Tower, Huacheng Square, Shawan Ancient Town and a "
-         "luxury Pearl River night cruise",
-         "广州 — 广州塔、花城广场、沙湾古镇与豪华珠江夜游"),
-        ("Foshan Ancestral Temple · Wong Fei-hung Memorial Hall · Lingnan Tiandi · "
-         "Romance of Guangdong live show · Huangtengxia Glass Bridge",
-         "佛山祖庙 · 黄飞鸿纪念馆 · 岭南新天地 · 广东千古情 · 黄腾峡玻璃桥"),
-        ("Chikan Ancient Town and 33 Market Street in Jiangmen · Zhuhai's Lovers' "
-         "Road, Fisher Girl Statue and Sun and Moon Shell Theatre with the "
-         "Shijingshan cable car",
-         "江门赤坎古镇与三十三墟街 · 珠海情侣路、渔女像、日月贝大剧院与石景山缆车"),
-        ("Shunde Fish Feast · Qingyuan Chicken Feast · Xinhui Roast Goose · "
-         "Buddha Jumps Over the Wall",
-         "顺德鱼宴 · 清远鸡宴 · 新会烧鹅 · 佛跳墙宴"),
-        ("Cantonese Dim Sum Banquet · Steamed Seafood · Kaiping Eel Rice · "
-         "Panyu Sihaiyijia · Nanhai Fishing Village Sky One",
-         "广府点心宴 · 蒸汽海鲜 · 开平黄鳝饭 · 番禺四海一家 · 南海渔村·天空一号"),
-    ],
-    # WBINC9 册子原始 17 条:1 条餐数、8 条菜式、1 条酒店钻级、7 条按城市分组的
-    # 景点。折叠后落掉的是宁夏博物馆、览山公园、木活字印刷、青铜峡游船 —— 都在
-    # 逐日行程里出现,不占头部版位;餐数和钻级按参考页版式一律不进 highlights。
-    "WBINC9": [
-        ("Shapotou Scenic Area, where the Yellow River meets the Tengger Desert, "
-         "with a night at a desert stargazing camp",
-         "沙坡头景区,黄河与腾格里沙漠交汇;入住沙漠观星营地"),
-        ("Three-Lake Off-Road Crossing in the Alxa desert — Wulan Lake, Camel Lake "
-         "and Guitar Lake, with a complimentary Wulan Lake aerial video",
-         "阿拉善三湖越野穿越 — 乌兰湖、骆驼湖、吉他湖,赠送乌兰湖航拍视频"),
-        ("Yellow River Stone Forest and the Twenty-Two-Bend scenic route, "
-         "a filming location for The Myth",
-         "黄河石林与二十二道弯,电影《神话》取景地"),
-        ("Western Xia Imperial Tombs · 108 Pagodas · Helan Mountain Rock Art · "
-         "Zhenbeipu Western Film Studio · Shuidonggou Underground Troop Caves · "
-         "Helan Mountain winery tasting",
-         "西夏陵 · 一百零八塔 · 贺兰山岩画 · 镇北堡西部影城 · 水洞沟藏兵洞 · 贺兰山酒庄品酒"),
-        ("Hand-Grabbed Mutton · Roasted Squab · Desert Barbecue · "
-         "Mutton Hotpot, one individual pot per person",
-         "手抓羊肉风味 · 烤乳鸽风味 · 沙漠烧烤 · 涮羊肉风味(每人一小锅)"),
-        ("Haozi Noodle · Zhongwei Local Mixed-Snack · Bobo Pork · Cantonese Cuisine",
-         "蒿子面风味 · 中卫烩小吃风味 · 饽饽肉风味 · 粤菜风味"),
-    ],
-    "WBCHET": [
-        ("Yungang Grottoes, a UNESCO World Heritage site, and Datong Ancient City",
-         "云冈石窟（世界文化遗产）与大同古城"),
-        ("The Hanging Temple of Hunyuan and the Yingxian Wooden Pagoda",
-         "浑源悬空寺与应县木塔"),
-        ("Ordos Grassland welcome ceremony, Mongolian costume experience, bonfire party "
-         "and a luxury yurt upgrade",
-         "鄂尔多斯草原迎宾仪式、蒙古族服饰换装、草原篝火晚会、豪华蒙古包升级"),
-        ("Xiangshawan desert cableway · Ulan Hada Volcano Geopark · Ningwu Wannian Ice Cave "
-         "and Hanging Village",
-         "响沙湾沙漠索道 · 乌兰哈达火山地质公园 · 宁武万年冰洞与悬空村"),
-        ("Hand-Grabbed Mutton · Mutton Hot Pot · Roast Duck · Mongolian Cuisine",
-         "手把肉 · 涮羊肉 · 烤鸭 · 蒙古风味"),
-        ("Ningwu · Hunyuan · Datong and Yimeng regional specialities",
-         "宁武风味 · 浑源风味 · 大同美食 · 伊盟风味"),
-    ],
-}
+# them is an editorial call: the per-dish lines collapse into the two cuisine
+# rows losing nothing, and the per-city lines are ranked by draw, so what falls
+# off the end is the weakest. The meal-count and hotel-grade lines are dropped
+# because the reference page does not carry them — meals already appear on every
+# day of the itinerary.
+#
+# 成品六条连同取舍理由在 `work/<CODE>/editorial.json` 的 `highlights` 里
+# (issue #4;`notes.highlights` 记着册子原来列了几条、落掉的是哪几条)。
 
 
 def trip_type(title: str) -> str:
@@ -219,6 +90,7 @@ def build(code: str, work: Path, assets_root: Path) -> dict:
     base = work / code
     itinerary = json.loads((base / "itinerary.json").read_text("utf-8"))
     plan = json.loads((base / "plan.json").read_text("utf-8"))
+    doc = editorial.load(code, work)
 
     images: dict[str, list[dict]] = {slot: [] for slot in SLOTS}
     missing = []
@@ -270,7 +142,8 @@ def build(code: str, work: Path, assets_root: Path) -> dict:
         "type_code": itinerary["type_code"],
         "travel_days": itinerary.get("travel_days"),
         "product_name": itinerary["product_name"],
-        "highlights": [{"en": en, "zh": zh} for en, zh in HOUSE_HIGHLIGHTS[code]],
+        "highlights": [{"en": en, "zh": zh}
+                       for en, zh in editorial.highlights(code, doc)],
         "highlights_source": itinerary["highlights"],
         "sections": itinerary["sections"],
         "images": images,

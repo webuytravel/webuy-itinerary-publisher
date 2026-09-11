@@ -1,0 +1,251 @@
+{
+  "code": "WBCURC",
+  "region": "CHN",
+  "notes": {
+    "commons_region_box": [
+      "北疆"
+    ]
+  },
+  "catalogue_tours": [
+    "tours/112-10d9n-travel-with-marcus-chin-altay-wonders"
+  ],
+  "commons_region_box": [
+    40,
+    49,
+    78,
+    96
+  ],
+  "highlights": [
+    {
+      "en": "Kanas Lake, Kanas Three Bays and Hemu Village — pristine alpine lakes and forests",
+      "zh": "喀纳斯湖、喀纳斯三湾与禾木村 — 高山湖泊与原始森林"
+    },
+    {
+      "en": "Duku Highway scenic drive along the Tianshan mountain road",
+      "zh": "独库公路景观之旅，穿越天山公路风光"
+    },
+    {
+      "en": "Nalati Sky Grassland with a Kazakh grassland bonfire party",
+      "zh": "那拉提空中草原，草原篝火晚会与哈萨克草原文化"
+    },
+    {
+      "en": "Sayram Lake · Keketuohai · Urho Ghost City · Flaming Mountains and the Karez wells of Turpan",
+      "zh": "赛里木湖 · 可可托海 · 乌尔禾魔鬼城 · 火焰山与吐鲁番坎儿井"
+    },
+    {
+      "en": "Xinjiang Big Plate Chicken · Hand-Pulled Rice · Nang Pit-Roasted Meat · Lamb Skewers",
+      "zh": "大盘鸡风味 · 新疆手抓饭 · 馕坑肉 · 新疆羊肉串风味"
+    },
+    {
+      "en": "Whole Roasted Lamb Feast · Xinjiang Song-and-Dance Banquet · Xinjiang Mini Hot Pot",
+      "zh": "烤全羊风味宴 · 新疆歌舞宴 · 新疆小火锅风味"
+    }
+  ],
+  "section_overrides": {
+    "d03": [
+      {
+        "source": "file",
+        "path": "work/WBCURC/cand/d03_keketuohai_canyon.jpg",
+        "note": "可可托海额尔齐斯大峡谷",
+        "why": "Path is repo-relative like every other source. It used to point into an agent session's scratchpad, which survives only until that scratchpad is cleaned — after which this re-runs \"successfully\" and silently drops day 3's photo, because a missing `src_path` only ever becomes a note on the placement. Path is repo-relative like every other source. It used to point into an agent session's scratchpad, which survives only until that scratchpad is cleaned — after which this re-runs \"successfully\" and silently drops day 3's photo, because a missing `src_path` only ever becomes a note on the placement."
+      }
+    ],
+    "d10": [
+      {
+        "source": "stock",
+        "block": "d07_kokdala",
+        "n": 3,
+        "note": "新疆区域实拍——坎儿井无合规实拍",
+        "why": "坎儿井:stock 全是泛化农业灌溉,无一是坎儿井。按区域规则改用新疆区域图。 (08-14 复查:Commons 搜 Karez Well 返回的是美军在阿富汗的照片,更糟, 所以这条区域替代继续保留。) 坎儿井:stock 全是泛化农业灌溉,无一是坎儿井。按区域规则改用新疆区域图。 (08-14 复查:Commons 搜 Karez Well 返回的是美军在阿富汗的照片,更糟, 所以这条区域替代继续保留。)"
+      }
+    ],
+    "d01": [
+      {
+        "source": "commons",
+        "block": "d12_free_time_in_urumqi",
+        "n": 1,
+        "note": "入夜城市灯光——抵达当晚",
+        "why": "D1 抵达乌鲁木齐。行程原文只有「飞 + 接机 + 入住」,没有游览活动, 但用户 08-14 定的范围里包含它。入夜城市灯光配傍晚抵达是贴的。 D1 抵达乌鲁木齐。行程原文只有「飞 + 接机 + 入住」,没有游览活动, 但用户 08-14 定的范围里包含它。入夜城市灯光配傍晚抵达是贴的。"
+      }
+    ],
+    "d12": [
+      {
+        "source": "commons",
+        "block": "d12_free_time_in_urumqi",
+        "n": 6,
+        "note": "乌鲁木齐城区与天山雪线",
+        "why": "D12 乌鲁木齐自由活动。08-13 这天是静默留空的(DESIGN 6.11),而它有 整个白天的自由活动,不是纯回程日——线上参考产品 tours/112 只有最后 一天是空的。城市背后的天山雪线是乌鲁木齐最好认的特征。 D12 乌鲁木齐自由活动。08-13 这天是静默留空的(DESIGN 6.11),而它有 整个白天的自由活动,不是纯回程日——线上参考产品 tours/112 只有最后 一天是空的。城市背后的天山雪线是乌鲁木齐最好认的特征。"
+      }
+    ]
+  },
+  "trip_picks": [
+    {
+      "source": "commons",
+      "block": "d07_guozigou_bridge",
+      "n": 5,
+      "note": "桥 + 绿山谷 + 蓝天 s0.38",
+      "why": "D7 果子沟大桥:换掉 #1/#2(s0.14–0.15,阴天灰)"
+    },
+    {
+      "source": "commons",
+      "block": "d07_guozigou_bridge",
+      "n": 3,
+      "note": "山谷中的桥,远景 s0.36"
+    },
+    {
+      "source": "commons",
+      "block": "d07_guozigou_bridge",
+      "n": 4,
+      "note": "桥塔入云 s0.28"
+    },
+    {
+      "source": "commons",
+      "block": "d07_sayram_lake",
+      "n": 6,
+      "note": "蓝湖绿草雪山 s0.56",
+      "why": "D7 赛里木湖"
+    },
+    {
+      "source": "commons",
+      "block": "d07_sayram_lake",
+      "n": 3,
+      "note": "湖面草岸雪山 s0.33"
+    },
+    {
+      "source": "commons",
+      "block": "d07_sayram_lake",
+      "n": 1,
+      "note": "湖畔航标 s0.33"
+    },
+    {
+      "source": "commons",
+      "block": "d04_kanas_lake",
+      "n": 4,
+      "note": "河石与松绿水色 s0.34",
+      "why": "D4 喀纳斯:去掉 #1(晨雾骑手 s0.24 但整体闷)"
+    },
+    {
+      "source": "commons",
+      "block": "d04_kanas_lake",
+      "n": 6,
+      "note": "松绿色河湾 s0.28"
+    },
+    {
+      "source": "commons",
+      "block": "d04_kanas_lake",
+      "n": 5,
+      "note": "湖面针叶林雪山 s0.22"
+    },
+    {
+      "source": "commons",
+      "block": "d05_hemu_village",
+      "n": 6,
+      "note": "河谷木屋航拍,蓝天 s0.39",
+      "why": "D5 禾木村:#5 是城市公交车"
+    },
+    {
+      "source": "commons",
+      "block": "d05_hemu_village",
+      "n": 4,
+      "note": "雪季河谷全景 s0.35"
+    },
+    {
+      "source": "commons",
+      "block": "d05_hemu_village",
+      "n": 3,
+      "note": "秋色河滩木屋 s0.24"
+    },
+    {
+      "source": "commons",
+      "block": "d05_colourful_beach_burqin",
+      "n": 1,
+      "note": "赭色风蚀滩与河 s0.28",
+      "why": "D5 五彩滩:整块只有这一张"
+    },
+    {
+      "source": "commons",
+      "block": "d09_duku_highway",
+      "n": 3,
+      "note": "盘山公路穿林谷,蓝天 s0.25",
+      "why": "D9 独库公路:#1 #2 是城镇街口和白杨路,#6 #5 主体是路牌"
+    },
+    {
+      "source": "commons",
+      "block": "d09_duku_highway",
+      "n": 4,
+      "note": "陡峭山谷中的公路 s0.21"
+    },
+    {
+      "source": "commons",
+      "block": "d09_tianshan_mountains",
+      "n": 1,
+      "note": "冰川谷与雪峰 s0.33",
+      "why": "D9 天山:换掉 #2(金色日照雪峰,分 0.49 太暗)"
+    },
+    {
+      "source": "commons",
+      "block": "d09_tianshan_mountains",
+      "n": 6,
+      "note": "雪山群 s0.25"
+    },
+    {
+      "source": "commons",
+      "block": "d11_flaming_mountains_turpan",
+      "n": 5,
+      "note": "赭红色风蚀山脊——主角 s0.41",
+      "why": "D11 火焰山:#5 分最低(0.92)但它是山体本身,主体压过分数"
+    },
+    {
+      "source": "commons",
+      "block": "d11_flaming_mountains_turpan",
+      "n": 3,
+      "note": "卧驼 s0.38"
+    },
+    {
+      "source": "commons",
+      "block": "d11_flaming_mountains_turpan",
+      "n": 2,
+      "note": "卧驼(红鞍) s0.40"
+    },
+    {
+      "source": "commons",
+      "block": "d11_xinjiang_naan_making",
+      "n": 2,
+      "note": "馕坑里贴馕的手 s0.27",
+      "why": "D11 打馕"
+    },
+    {
+      "source": "commons",
+      "block": "d12_free_time_in_urumqi",
+      "n": 1,
+      "note": "入夜城市灯光 s0.40",
+      "why": "D12 乌鲁木齐:#1 入夜城市灯光(D1 的 section 也用它,见 OVERRIDES)"
+    },
+    {
+      "source": "commons",
+      "block": "d07_ili_lavender_museum",
+      "n": 5,
+      "note": "薰衣草田带白云,带 GPS s0.33",
+      "why": "D7 薰衣草:#5 带 GPS 可验证,#3 无坐标但形态明确且极饱和"
+    },
+    {
+      "source": "commons",
+      "block": "d07_ili_lavender_museum",
+      "n": 3,
+      "note": "紫色薰衣草田 s0.87"
+    },
+    {
+      "source": "commons",
+      "block": "d08_xinjiang_grassland_bonfire_party",
+      "n": 2,
+      "note": "草原曲流河(区域图) s0.54",
+      "why": "D8 草原(区域级,不是篝火活动本身):换掉 #4(牧人驱牛 s0.28,阴天)"
+    },
+    {
+      "source": "commons",
+      "block": "d08_xinjiang_grassland_bonfire_party",
+      "n": 5,
+      "note": "绿丘草原(区域图) s0.54"
+    }
+  ]
+}

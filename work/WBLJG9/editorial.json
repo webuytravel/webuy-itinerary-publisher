@@ -1,0 +1,347 @@
+{
+  "code": "WBLJG9",
+  "region": "CHN",
+  "notes": {
+    "catalogue_tours": [
+      "2026-08-15 起这一批:产品已在 Skybear 上、行程文本从生产读回,没有册子,",
+      "webuytravel.sg 上也没有同区域在售的云南产品可采,所以 ①② 两级都是空的,",
+      "全部靠 ③Commons + ④stock。"
+    ],
+    "commons_region_box": [
+      "2026-08-15 这一批。同样只用来把「这条行程上」和「另一个大洲」分开,",
+      "所以宁可宽:云南三条线共用一个省级框,漏掉一张放错省的图,代价远小于",
+      "因为框太紧把对的图判成 in_region=False。",
+      "滇西北:大理 / 丽江 / 泸沽湖"
+    ],
+    "section_overrides": [
+      "WBLJG9 的 section 层。每天一张,而且刻意避开当天景点卡用掉的那几张——",
+      "assign_trip_photos 会硬性禁止当天的卡复用 section 的源文件(DESIGN 6.05),",
+      "所以这里选的每一张都是那一块里没有进 TRIP_PICKS 的。",
+      "D1 不在下面:那天只有一张「夜间航班前往丽江」的交通卡,没有落地活动,",
+      "属于 3.0 里「纯回程/纯飞行」那一类。**留空是要人点头的,不是我替它决定的**,",
+      "所以它会作为 GAP 出现在摘要里。D9 抵达新加坡同理。"
+    ],
+    "trip_picks": [
+      "2026-08-15 WBLJG9(id 419,云南)。245 张候选(③107 + ④138)逐块看过。",
+      "这是第一个「行程文本来自生产、不是册子」的产品,也是第一个 ④ 和 ③ 一起",
+      "参与景点卡的产品——6.06 之后 stock 才被放进这一层,理由见 trip_pool。",
+      "",
+      "三处按主体价值压过美学分的:",
+      "lijiang_old_town S3(s0.456,全块最高)是香格里拉松赞林寺,**弃**;",
+      "baisha_town C4/C5/C6(三张)是丽江的蓝色动车组,查询词退化撞的,**弃**;",
+      "jade_dragon C3(s0.414)画面是印象丽江的红色剧场,不是雪山,**弃**。",
+      "一处相反、美学分和主体刚好一致:impression_lijiang C2(s0.612)是全块",
+      "唯一真的演出场地,同时也是最饱和的一张。"
+    ]
+  },
+  "catalogue_tours": [],
+  "commons_region_box": [
+    24,
+    29,
+    98,
+    103
+  ],
+  "stock_region": "Yunnan China",
+  "section_overrides": {
+    "d02": [
+      {
+        "source": "stock",
+        "block": "d02_dali_ancient_city",
+        "n": 4,
+        "note": "大理城楼夜景,金光 s0.864"
+      }
+    ],
+    "d03": [
+      {
+        "source": "stock",
+        "block": "d03_bai_tie_dye_textile",
+        "n": 4,
+        "note": "扎染纹样特写,青碧 s0.528"
+      }
+    ],
+    "d04": [
+      {
+        "source": "stock",
+        "block": "d04_lige_peninsula_lugu_lake",
+        "n": 3,
+        "note": "枯树与木栈桥 s0.406"
+      }
+    ],
+    "d05": [
+      {
+        "source": "stock",
+        "block": "d05_lugu_lake_sunrise",
+        "n": 6,
+        "note": "湖面日出 s0.441"
+      }
+    ],
+    "d06": [
+      {
+        "source": "stock",
+        "block": "d06_blue_moon_valley_lijiang",
+        "n": 1,
+        "note": "秋林与松绿水 s0.387"
+      }
+    ],
+    "d07": [
+      {
+        "source": "stock",
+        "block": "d07_yuhu_village_lijiang",
+        "n": 2,
+        "note": "白墙纳西院落,蓝天 s0.293"
+      }
+    ],
+    "d08": [
+      {
+        "source": "stock",
+        "block": "d08_black_dragon_pool_lijiang",
+        "n": 6,
+        "note": "黑龙潭桥与雪山 s0.373"
+      }
+    ]
+  },
+  "trip_picks": [
+    {
+      "source": "commons",
+      "block": "d02_shuanglang_town",
+      "n": 5,
+      "note": "洱海边古镇航拍,秋色+湖蓝 s0.393",
+      "why": "D2 双廊古镇"
+    },
+    {
+      "source": "commons",
+      "block": "d02_shuanglang_town",
+      "n": 1,
+      "note": "湖上玻璃观景台 s0.376"
+    },
+    {
+      "source": "stock",
+      "block": "d02_dali_ancient_city",
+      "n": 3,
+      "note": "城门牌坊街景,蓝天 s0.407",
+      "why": "D2 大理古城(洋人街另算)"
+    },
+    {
+      "source": "commons",
+      "block": "d02_dali_ancient_city",
+      "n": 5,
+      "note": "南城楼与人流 s0.269"
+    },
+    {
+      "source": "commons",
+      "block": "d02_dali_old_town_street",
+      "n": 3,
+      "note": "夜市霓虹招牌 s0.522",
+      "why": "D2 洋人街:夜市霓虹正是这条街的样子,而且是全块最饱和的"
+    },
+    {
+      "source": "commons",
+      "block": "d02_dali_old_town_street",
+      "n": 4,
+      "note": "夜街店铺 s0.429"
+    },
+    {
+      "source": "stock",
+      "block": "d02_erhai_lake_dali",
+      "n": 6,
+      "note": "洱海石桥与绿岸,全块唯一达标的构图 s0.444",
+      "why": "D2 理想邦 → 洱海。整块 12 张里 8 张低于闸门,是这个产品最灰的一块。"
+    },
+    {
+      "source": "commons",
+      "block": "d03_erhai_lake_sunrise",
+      "n": 2,
+      "note": "深蓝洱海与积云 s0.484",
+      "why": "D3 洱海日出(龙龛码头)"
+    },
+    {
+      "source": "commons",
+      "block": "d03_xizhou_town_dali",
+      "n": 1,
+      "note": "稻田与白族民居 s0.547",
+      "why": "D3 喜洲古镇:金色稻田配白族民居,喜洲的标志画面"
+    },
+    {
+      "source": "stock",
+      "block": "d03_xizhou_town_dali",
+      "n": 2,
+      "note": "白墙民居院落,蓝天 s0.293"
+    },
+    {
+      "source": "stock",
+      "block": "d03_bai_people_traditional_costume",
+      "n": 5,
+      "note": "街头打跳,盛装群舞 s0.327",
+      "why": "D3 金花打跳 / 白族服饰"
+    },
+    {
+      "source": "commons",
+      "block": "d03_bai_people_traditional_costume",
+      "n": 1,
+      "note": "白族妇女表演 s0.367"
+    },
+    {
+      "source": "stock",
+      "block": "d03_bai_tie_dye_textile",
+      "n": 6,
+      "note": "手浸靛蓝染缸,过程 s0.498",
+      "why": "D3 扎染:这一块是全产品最好的,过程 + 成品都有"
+    },
+    {
+      "source": "stock",
+      "block": "d03_bai_tie_dye_textile",
+      "n": 3,
+      "note": "橙墙前展开扎染布 s0.431"
+    },
+    {
+      "source": "commons",
+      "block": "d04_lugu_lake",
+      "n": 3,
+      "note": "绿丘环抱的湖湾 s0.461",
+      "why": "D4 泸沽湖"
+    },
+    {
+      "source": "stock",
+      "block": "d04_lige_peninsula_lugu_lake",
+      "n": 1,
+      "note": "蓝湖与半岛全景 s0.542",
+      "why": "D4 里格半岛 / 情人滩"
+    },
+    {
+      "source": "commons",
+      "block": "d04_lige_peninsula_lugu_lake",
+      "n": 3,
+      "note": "里格半岛俯瞰,岛形清楚 s0.296"
+    },
+    {
+      "source": "commons",
+      "block": "d04_mosuo_people",
+      "n": 6,
+      "note": "木楞房前两位盛装妇女,族属可辨 s0.561",
+      "why": "D4 摩梭篝火:没有一张真的篝火晚会。C2/C4 分更高(0.605/0.741)但族属 存疑(看着更像彝族/藏族),按「宁可不用也不错标民族」取 C6。"
+    },
+    {
+      "source": "stock",
+      "block": "d05_lugu_lake_sunrise",
+      "n": 5,
+      "note": "金色日出与船影 s0.449",
+      "why": "D5 泸沽湖日出。这里要**三张**,不是因为要挂三张,是因为 D4 也是泸沽湖: token 匹配分不出「Lugu Lake」和「Lugu Lake sunrise」(两者都是 1.00), 而 D4 先被处理、max_reuse=1,所以 D4 的卡会先把日出这张吃掉,D5 那张 名字就叫「Lugu Lake Sunrise」的卡反而空着。多备两张,让 D4 吃饱之后 D5 还有得挑。"
+    },
+    {
+      "source": "stock",
+      "block": "d05_lugu_lake_sunrise",
+      "n": 2,
+      "note": "晨雾中的日出湖面 s0.283"
+    },
+    {
+      "source": "stock",
+      "block": "d05_lugu_lake_sunrise",
+      "n": 1,
+      "note": "朝霞映雪峰与村舍 s0.261"
+    },
+    {
+      "source": "stock",
+      "block": "d05_liwubi_island_lugu_lake",
+      "n": 4,
+      "note": "摩梭人划猪槽船 s0.472",
+      "why": "D5 猪槽船与里务比岛:橙色猪槽船就是这张卡的正主"
+    },
+    {
+      "source": "commons",
+      "block": "d05_liwubi_island_lugu_lake",
+      "n": 1,
+      "note": "湖中岛屿与蓝湖 s0.446"
+    },
+    {
+      "source": "stock",
+      "block": "d06_jade_dragon_snow_mountain",
+      "n": 5,
+      "note": "石桥前雪峰,蓝天明信片 s0.458",
+      "why": "D6 玉龙雪山"
+    },
+    {
+      "source": "stock",
+      "block": "d06_jade_dragon_snow_mountain",
+      "n": 4,
+      "note": "雪峰特写 s0.412"
+    },
+    {
+      "source": "stock",
+      "block": "d06_jade_dragon_snow_mountain",
+      "n": 2,
+      "note": "木栈道通向雪山 s0.375"
+    },
+    {
+      "source": "stock",
+      "block": "d06_blue_moon_valley_lijiang",
+      "n": 6,
+      "note": "松绿水与秋林 s0.520",
+      "why": "D6 蓝月谷 / 白水河"
+    },
+    {
+      "source": "stock",
+      "block": "d06_blue_moon_valley_lijiang",
+      "n": 2,
+      "note": "白水河阶梯状水台 s0.275"
+    },
+    {
+      "source": "commons",
+      "block": "d06_impression_lijiang_show",
+      "n": 2,
+      "note": "红色梯形剧场与雪山 s0.612",
+      "why": "D6 印象丽江:全块唯一真的演出场地"
+    },
+    {
+      "source": "commons",
+      "block": "d07_yuhu_village_lijiang",
+      "n": 1,
+      "note": "石砌院落与草地 s0.310",
+      "why": "D7 玉湖村:C1 是唯一真的玉湖村(石头房),stock 六张全是别处"
+    },
+    {
+      "source": "commons",
+      "block": "d07_baisha_town_lijiang",
+      "n": 3,
+      "note": "集市与纳西妇女盛装 s0.353",
+      "why": "D7 白沙古镇"
+    },
+    {
+      "source": "commons",
+      "block": "d07_baisha_town_lijiang",
+      "n": 1,
+      "note": "夯土墙巷道 s0.307"
+    },
+    {
+      "source": "stock",
+      "block": "d08_black_dragon_pool_lijiang",
+      "n": 4,
+      "note": "得月楼与玉龙雪山,标志构图 s0.379",
+      "why": "D8 黑龙潭"
+    },
+    {
+      "source": "commons",
+      "block": "d08_black_dragon_pool_lijiang",
+      "n": 6,
+      "note": "五孔桥与雪山 s0.394"
+    },
+    {
+      "source": "commons",
+      "block": "d08_lijiang_old_town",
+      "n": 4,
+      "note": "木构商铺石板街 s0.449",
+      "why": "D8 丽江古城与四方街"
+    },
+    {
+      "source": "commons",
+      "block": "d08_lijiang_old_town",
+      "n": 1,
+      "note": "古城夜景 s0.448"
+    },
+    {
+      "source": "commons",
+      "block": "d08_lijiang_old_town",
+      "n": 5,
+      "note": "大水车,古城入口标志 s0.261"
+    }
+  ]
+}

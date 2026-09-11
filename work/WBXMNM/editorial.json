@@ -1,0 +1,304 @@
+{
+  "code": "WBXMNM",
+  "region": "CHN",
+  "notes": {
+    "commons_region_box": [
+      "闽南"
+    ],
+    "stock_region": [
+      "这条线一半在福建(泉州/漳州/厦门)、一半在广东潮汕(潮州/揭阳/汕头)。",
+      "写成单省会把另一半带偏——「潮州古城 Fujian China」排出来的是福建的东西。",
+      "stock 是松散排序不是 AND,多写一个省名不会把结果打空。"
+    ],
+    "section_overrides": [
+      "WBXMNM 的 section 层,同样每天一张、且避开当天卡用掉的。"
+    ],
+    "trip_picks": [
+      "2026-08-15 WBXMNM(id 413,闽南 + 潮汕)。233 张候选(③89 + ④144)逐块看过。",
+      "",
+      "**这个产品和云南不是一个量级,原因是潮汕属于长尾。** D3(揭阳/汕头)那五块",
+      "里,stock 返回的是西安城墙(进贤门那块 6 张里 4 张)、皖南宏村(小公园和棉湖",
+      "两块)、北京颐和园和台北中正纪念堂(揭阳学宫那块);Commons 有真货但基本在",
+      "闸门以下。潮州牌坊街 6 张 Commons **全部**低于 0.181。",
+      "",
+      "因此有 6 张卡是**故意空着**的,不是漏了:",
+      "D1 洛伽寺 / 侨批馆 —— 只有「某座闽南庙」「某栋殖民风建筑」,认不出是它;",
+      "D3 棉湖古镇 —— 能用的全是皖南;",
+      "D3 小公园 —— 唯一真的那张(C1)只有 s0.100,而闸门以上的全是宏村;",
+      "D5 乳胶商场 —— 购物点,不是景点;退化搜 'Free Trade Zone' 还搜回了一张",
+      "尼日利亚 Lekki 自贸区的地图(GPS 已标出不在行程范围);",
+      "D5 毓园 —— 林巧稚纪念园,Commons 0 张,stock 全是鼓浪屿泛拍。",
+      "按 3.4:卖这条线路配别处的照片,问题不是侵权是广告不实。宁可空。"
+    ]
+  },
+  "catalogue_tours": [],
+  "commons_region_box": [
+    23,
+    27,
+    116,
+    120
+  ],
+  "stock_region": "Fujian Guangdong China",
+  "section_overrides": {
+    "d01": [
+      {
+        "source": "commons",
+        "block": "d01_xunpu_village_quanzhou",
+        "n": 1,
+        "note": "宫庙前红妆院落 s0.467"
+      }
+    ],
+    "d02": [
+      {
+        "source": "stock",
+        "block": "d02_chaozhou_ancient_city",
+        "n": 2,
+        "note": "潮汕庙宇飞檐,蓝天 s0.410"
+      }
+    ],
+    "d03": [
+      {
+        "source": "commons",
+        "block": "d03_jieyang_confucian_temple",
+        "n": 5,
+        "note": "学宫大殿与庭院 s0.242"
+      }
+    ],
+    "d04": [
+      {
+        "source": "commons",
+        "block": "d04_fujian_tulou_earthen_building",
+        "n": 1,
+        "note": "油菜花前的土楼 s0.590"
+      }
+    ],
+    "d05": [
+      {
+        "source": "stock",
+        "block": "d05_gulangyu_island_xiamen",
+        "n": 4,
+        "note": "红瓦屋顶与海 s0.303"
+      }
+    ],
+    "d06": [
+      {
+        "source": "stock",
+        "block": "d06_nanputuo_temple_xiamen",
+        "n": 1,
+        "note": "南普陀塔院 s0.297"
+      }
+    ]
+  },
+  "trip_picks": [
+    {
+      "source": "commons",
+      "block": "d01_xunpu_village_quanzhou",
+      "n": 4,
+      "note": "盛装簪花妇女在宫庙前 s0.368",
+      "why": "D1 蟳埔村簪花 —— 这一块是全产品最好的,蚵壳厝和簪花都是独有的"
+    },
+    {
+      "source": "commons",
+      "block": "d01_xunpu_village_quanzhou",
+      "n": 3,
+      "note": "蚵壳厝墙面,蟳埔独有 s0.338"
+    },
+    {
+      "source": "stock",
+      "block": "d01_quanzhou_west_street_kaiyuan_templ",
+      "n": 3,
+      "note": "开元寺东西塔近景,蓝天 s0.375",
+      "why": "D1 西街与开元寺"
+    },
+    {
+      "source": "commons",
+      "block": "d01_quanzhou_west_street_kaiyuan_templ",
+      "n": 5,
+      "note": "双塔越过红瓦屋顶 s0.324"
+    },
+    {
+      "source": "stock",
+      "block": "d02_chaozhou_ancient_city",
+      "n": 6,
+      "note": "金red描金屋脊,潮汕庙宇 s0.418",
+      "why": "D2 潮州古城:没有一张标准「古城全景」,用潮汕嵌瓷屋脊代表"
+    },
+    {
+      "source": "stock",
+      "block": "d02_chaozhou_ancient_city",
+      "n": 4,
+      "note": "嵌瓷屋脊人物,潮汕工艺 s0.309"
+    },
+    {
+      "source": "stock",
+      "block": "d02_chaozhou_paifang_street_archways",
+      "n": 1,
+      "note": "牌坊与红灯笼,蓝天 s0.256",
+      "why": "D2 牌坊街:Commons 六张全部低于闸门,只能用 stock 这一张"
+    },
+    {
+      "source": "commons",
+      "block": "d02_guangji_gate_chaozhou",
+      "n": 6,
+      "note": "城楼与城墙,暮色 s0.207",
+      "why": "D2 广济楼"
+    },
+    {
+      "source": "commons",
+      "block": "d02_guangji_gate_chaozhou",
+      "n": 4,
+      "note": "城楼正面,蓝天 s0.197"
+    },
+    {
+      "source": "stock",
+      "block": "d02_chaozhou_night_performance",
+      "n": 2,
+      "note": "潮剧武生扮相 s0.662",
+      "why": "D2 入梦潮州:两张潮剧扮相,是全产品最饱和的一组"
+    },
+    {
+      "source": "stock",
+      "block": "d02_chaozhou_night_performance",
+      "n": 6,
+      "note": "潮剧青衣扮相 s0.438"
+    },
+    {
+      "source": "commons",
+      "block": "d02_guangji_bridge_chaozhou",
+      "n": 2,
+      "note": "桥上亭阁与彩旗 s0.484",
+      "why": "D2 湘子桥"
+    },
+    {
+      "source": "commons",
+      "block": "d02_guangji_bridge_chaozhou",
+      "n": 3,
+      "note": "十八梭船连成的浮桥段 s0.363"
+    },
+    {
+      "source": "commons",
+      "block": "d03_jieyang_confucian_temple",
+      "n": 3,
+      "note": "大成门朱漆门扇 s0.476",
+      "why": "D3 揭阳学宫"
+    },
+    {
+      "source": "commons",
+      "block": "d03_jieyang_confucian_temple",
+      "n": 2,
+      "note": "太和元气红照壁 s0.272"
+    },
+    {
+      "source": "stock",
+      "block": "d03_shantou_qilou_arcade_street",
+      "n": 5,
+      "note": "骑楼商行街景,城市未核实 s0.309",
+      "why": "D3 中山骑楼街。**标注:骑楼是粤东到广府共有的形制,这张核不到具体城市。** 按 6.8 的规矩,这类替代必须写出来,而且不重复使用。"
+    },
+    {
+      "source": "commons",
+      "block": "d03_jinxian_gate_jieyang",
+      "n": 1,
+      "note": "进贤门城楼与绿化 s0.218",
+      "why": "D3 进贤门:Commons C1 是唯一真的进贤门(stock 六张里四张是西安城墙)"
+    },
+    {
+      "source": "stock",
+      "block": "d04_fujian_tulou_earthen_building",
+      "n": 4,
+      "note": "土楼檐口与红灯笼,蓝天 s0.412",
+      "why": "D4 土楼。**标注:行程写的是饶平道韵楼(八角形),这两张是通用福建土楼。**"
+    },
+    {
+      "source": "stock",
+      "block": "d04_fujian_tulou_earthen_building",
+      "n": 5,
+      "note": "圆楼外观与入口 s0.196"
+    },
+    {
+      "source": "stock",
+      "block": "d04_zhangzhou_ancient_city",
+      "n": 5,
+      "note": "古城屋顶与塔 s0.337",
+      "why": "D4 漳州古城"
+    },
+    {
+      "source": "stock",
+      "block": "d04_zhangzhou_ancient_city",
+      "n": 2,
+      "note": "院落盆景与老树 s0.395"
+    },
+    {
+      "source": "commons",
+      "block": "d04_zhangzhou_confucian_temple",
+      "n": 5,
+      "note": "大成殿梁架斗拱 s0.445",
+      "why": "D4 漳州文庙"
+    },
+    {
+      "source": "commons",
+      "block": "d04_zhangzhou_confucian_temple",
+      "n": 1,
+      "note": "大成殿与月台 s0.200"
+    },
+    {
+      "source": "commons",
+      "block": "d05_gulangyu_island_xiamen",
+      "n": 1,
+      "note": "环岛夜景 s0.461",
+      "why": "D5 鼓浪屿"
+    },
+    {
+      "source": "stock",
+      "block": "d05_gulangyu_island_xiamen",
+      "n": 3,
+      "note": "轮渡码头与岛景 s0.319"
+    },
+    {
+      "source": "commons",
+      "block": "d05_gulangyu_colonial_architecture",
+      "n": 2,
+      "note": "山坡老别墅群 s0.319",
+      "why": "D5 万国建筑"
+    },
+    {
+      "source": "commons",
+      "block": "d05_gulangyu_colonial_architecture",
+      "n": 1,
+      "note": "红瓦屋顶密集俯瞰 s0.316"
+    },
+    {
+      "source": "commons",
+      "block": "d05_gulangyu_longtou_road_beach",
+      "n": 4,
+      "note": "龙头路人流商铺 s0.252",
+      "why": "D5 龙头路:Commons 是唯一拍到真商业街的,stock 全是航拍泛景"
+    },
+    {
+      "source": "commons",
+      "block": "d06_nanputuo_temple_xiamen",
+      "n": 4,
+      "note": "大悲殿匾额与彩绘 s0.509",
+      "why": "D6 南普陀寺"
+    },
+    {
+      "source": "commons",
+      "block": "d06_nanputuo_temple_xiamen",
+      "n": 1,
+      "note": "天王殿正面与香客 s0.310"
+    },
+    {
+      "source": "stock",
+      "block": "d06_shapowei_xiamen_harbour",
+      "n": 5,
+      "note": "日落渔船与海面 s0.364",
+      "why": "D6 沙坡尾"
+    },
+    {
+      "source": "commons",
+      "block": "d06_shapowei_xiamen_harbour",
+      "n": 1,
+      "note": "避风坞彩色渔船 s0.311"
+    }
+  ]
+}

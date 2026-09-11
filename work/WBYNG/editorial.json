@@ -1,0 +1,226 @@
+{
+  "code": "WBYNG",
+  "region": "CHN",
+  "notes": {
+    "commons_region_box": [
+      "怒江 + 德钦梅里 + 香格里拉,东端还要够到昆明(102.7)转机那一天"
+    ],
+    "section_overrides": [
+      "WBYNG 怒江。d08 不在下面:纯回程航班,和 WBLJG9 的 D9 同一类,留空要人点头。",
+      "d02–d04 三天都在怒江大峡谷里走,section 用的是同一个 block 里三张不同的",
+      "河谷航拍(#5/#2/#3),卡上用的是另外两张(#6/#4),按 sha1 互不相同。"
+    ],
+    "trip_picks": [
+      "WBYNG 怒江+梅里+香格里拉。25 张卡里 13 张有图。这个产品的失败模式和",
+      "粤东不一样:不是「没有」,是**同名异地**,而且四条都是分数最高的那张:",
+      "普化寺 Commons 六张全在**山西五台山**(#2 s0.556);",
+      "老虎跳 Commons 六张在**法国 Verdon 峡谷**和**俄勒冈 Columbia 峡谷**;",
+      "龟山转经筒 Commons 六张全在**台湾桃园龟山**(其中一张是 M41 坦克);",
+      "江边文化走廊 Commons 是**缅甸萨尔温江**(怒江出境后的名字),",
+      "还混进了一张流量柱状图和一张流域地图。",
+      "傈僳族那一块唯一的 Commons 是**泰国 Tha Ton** 的傈僳族少女,人对国别不对。"
+    ]
+  },
+  "catalogue_tours": [],
+  "commons_region_box": [
+    23,
+    30,
+    97,
+    104
+  ],
+  "stock_region": "Yunnan China",
+  "section_overrides": {
+    "d01": [
+      {
+        "source": "stock",
+        "block": "d01_fly_to_kunming_and_mangshi",
+        "n": 1,
+        "note": "昆明暮色城市与水面 s0.386"
+      }
+    ],
+    "d02": [
+      {
+        "source": "stock",
+        "block": "d02_nujiang_grand_canyon",
+        "n": 5,
+        "note": "怒江河谷群山 s0.340"
+      }
+    ],
+    "d03": [
+      {
+        "source": "stock",
+        "block": "d02_nujiang_grand_canyon",
+        "n": 2,
+        "note": "怒江河谷云雾航拍 s0.256"
+      }
+    ],
+    "d04": [
+      {
+        "source": "stock",
+        "block": "d02_nujiang_grand_canyon",
+        "n": 3,
+        "note": "怒江河谷俯瞰 s0.307"
+      }
+    ],
+    "d05": [
+      {
+        "source": "commons",
+        "block": "d05_dongzhulin_monastery_shangri_la",
+        "n": 2,
+        "note": "东竹林寺 gpsOK s0.268",
+        "why": "天头图特意换成东竹林寺这一块。原来用的是 d05_feilai_temple_deqin#1 (云南梅里白塔),而 D6 的「飞来寺观景台」那张卡的 photo_subject 里 同样有「飞来寺」,于是那张白塔被 D6 的卡又用了一次——同一张照片在 页面上出现两处。东竹林寺这一块 D6 没有任何一张卡会去匹配。 天头图特意换成东竹林寺这一块。原来用的是 d05_feilai_temple_deqin#1 (云南梅里白塔),而 D6 的「飞来寺观景台」那张卡的 photo_subject 里 同样有「飞来寺」,于是那张白塔被 D6 的卡又用了一次——同一张照片在 页面上出现两处。东竹林寺这一块 D6 没有任何一张卡会去匹配。"
+      }
+    ],
+    "d06": [
+      {
+        "source": "stock",
+        "block": "d06_meili_snow_mountain_kawagarbo_sunr",
+        "n": 4,
+        "note": "梅里日照金山 s0.273"
+      }
+    ],
+    "d07": [
+      {
+        "source": "stock",
+        "block": "d07_dukezong_ancient_town_shangri_la",
+        "n": 1,
+        "note": "香格里拉全景 s0.286"
+      }
+    ]
+  },
+  "trip_picks": [
+    {
+      "source": "commons",
+      "block": "d02_menghuan_golden_pagoda_mangshi",
+      "n": 1,
+      "note": "大金塔与金孔雀 s0.295",
+      "why": "D2 勐焕大金塔:金孔雀 + 傣式金塔,德宏的形制,和芒市这座对得上。 同块 stock#4 s0.860 是香格里拉的转经筒,已让它回到 D7 该去的卡上。"
+    },
+    {
+      "source": "stock",
+      "block": "d02_nujiang_grand_canyon",
+      "n": 6,
+      "note": "峡谷村落与云上雪山 s0.581",
+      "why": "D2 怒江大峡谷:这一块 stock 六张里五张图注直接写 Nujiang Valley, 是整个产品最可靠的一组。#1 是虎跳峡(金沙江,不是怒江),已排除。"
+    },
+    {
+      "source": "stock",
+      "block": "d02_nujiang_grand_canyon",
+      "n": 4,
+      "note": "怒江河谷航拍 s0.406"
+    },
+    {
+      "source": "commons",
+      "block": "d03_nujiang_hot_spring_riverside",
+      "n": 1,
+      "note": "登埂澡堂江边浴池 s0.272",
+      "why": "D3 登埂澡堂会:江边的石砌浴池和木桩,就是澡堂会那片河滩。"
+    },
+    {
+      "source": "commons",
+      "block": "d03_zhiziluo_abandoned_town_nujiang",
+      "n": 1,
+      "note": "知子罗航拍 gpsOK s0.264",
+      "why": "D3 知子罗:带 GPS 的航拍,2024 年拍的。"
+    },
+    {
+      "source": "commons",
+      "block": "d03_laomudeng_church_nujiang",
+      "n": 4,
+      "note": "教堂内部 gpsOK s0.270",
+      "why": "D3 老姆登教堂:六张全部带 GPS。stock#1 是德钦茨中教堂,另一座,已排除。"
+    },
+    {
+      "source": "commons",
+      "block": "d03_laomudeng_church_nujiang",
+      "n": 2,
+      "note": "教堂侧面 gpsOK s0.234"
+    },
+    {
+      "source": "commons",
+      "block": "d04_first_bend_nu_river_bingzhongluo",
+      "n": 1,
+      "note": "怒江第一湾 s0.247",
+      "why": "D4 怒江第一湾:马蹄形河湾,一眼认得出。同块 #2 s0.596 是一张 **肯塔基与田纳西州地图**的书页扫描,分数比真图高。"
+    },
+    {
+      "source": "commons",
+      "block": "d05_feilai_temple_deqin",
+      "n": 5,
+      "note": "飞来寺内部 s0.672",
+      "why": "D5 飞来寺:#5#6 都是寺内实拍且够亮,#3 带 GPS。"
+    },
+    {
+      "source": "commons",
+      "block": "d05_feilai_temple_deqin",
+      "n": 6,
+      "note": "飞来寺迎宾 s0.568"
+    },
+    {
+      "source": "commons",
+      "block": "d05_dongzhulin_monastery_shangri_la",
+      "n": 6,
+      "note": "东竹林寺法鼓 gpsOK s0.646",
+      "why": "D5 东竹林寺:四张带 GPS,法鼓那张 0.646 是整个产品最亮的 Commons。"
+    },
+    {
+      "source": "commons",
+      "block": "d05_dongzhulin_monastery_shangri_la",
+      "n": 3,
+      "note": "东竹林寺全景 gpsOK s0.412"
+    },
+    {
+      "source": "commons",
+      "block": "d06_feilai_temple_viewing_platform_mei",
+      "n": 2,
+      "note": "梅里雪山全景 s0.523",
+      "why": "D6 飞来寺观景台:观景台看出去就是这条梅里全景。"
+    },
+    {
+      "source": "commons",
+      "block": "d06_meili_snow_mountain_kawagarbo_sunr",
+      "n": 1,
+      "note": "卡瓦格博峰 s0.556",
+      "why": "D6 日照金山:Commons 是白天的卡瓦格博峰,stock#1 才是金顶那一刻。 两张都实拍梅里,一张给形一张给「日照金山」这四个字。"
+    },
+    {
+      "source": "stock",
+      "block": "d06_meili_snow_mountain_kawagarbo_sunr",
+      "n": 1,
+      "note": "梅里日照金山 s0.276"
+    },
+    {
+      "source": "commons",
+      "block": "d07_songzanlin_monastery_shangri_la",
+      "n": 3,
+      "note": "松赞林寺全景 s0.515",
+      "why": "D7 松赞林寺:六张 panoramio 全是真的,挑最亮的两张。"
+    },
+    {
+      "source": "commons",
+      "block": "d07_songzanlin_monastery_shangri_la",
+      "n": 4,
+      "note": "松赞林寺经堂 s0.514"
+    },
+    {
+      "source": "commons",
+      "block": "d07_dukezong_ancient_town_shangri_la",
+      "n": 4,
+      "note": "古城天际线 gpsOK s0.222",
+      "why": "D7 独克宗古城:六张都带 GPS,但五张在闸门以下,只有这张够线。"
+    },
+    {
+      "source": "stock",
+      "block": "d07_guishan_park_giant_prayer_wheel_sh",
+      "n": 1,
+      "note": "巨型转经筒暮色 s0.860",
+      "why": "D7 龟山转经筒:Commons 整块是台湾桃园,stock 这两张图注写明香格里拉。"
+    },
+    {
+      "source": "stock",
+      "block": "d07_guishan_park_giant_prayer_wheel_sh",
+      "n": 2,
+      "note": "藏式殿宇与经幡 s0.263"
+    }
+  ]
+}

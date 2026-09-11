@@ -16,8 +16,22 @@ sources is the whole point, and it is not arbitrary:
 
 Matching is on tokens shared between a day's `photo_subject` and a source
 image's label, which works because both name the same landmark in the same
-two languages. `OVERRIDES` exists for the cases where that is not enough and
-a human (or a multimodal pass) has already made the call.
+two languages. The per-day overrides exist for the cases where that is not
+enough and a human (or a multimodal pass) has already made the call.
+
+**这个文件里没有任何 per-product 的编辑决策。** 哪天用哪张图、轮播八格放什么、
+景点卡从哪一级取,全部在 `work/<CODE>/editorial.json` 里,由 `lib/editorial.py`
+读取和校验(issue #4)。这里只剩「怎么选」,不剩「选了什么」——所以跑一本新册子
+不再需要改这个文件。哪些产品存在,也由「谁有 editorial.json」决定。
+
+Days the token matcher cannot resolve are each decided by looking, and the
+reason is written next to the pick in that product's `editorial.json`. The
+standing rule, set by the Planner on 2026-08-12: where no photograph of the
+landmark exists that is actually of that place, show a compliant picture of
+the day's own city or region rather than a lookalike from somewhere else.
+Stock had real ice caves (Siberia) and real volcanoes (Etna, Nicaragua) for
+WBCHET days 4 and 7 — right subject, wrong continent, and a page selling this
+trip cannot carry them. Stock is never auto-picked.
 """
 
 from __future__ import annotations
@@ -29,6 +43,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
+from lib import editorial
 from lib.catalogue_source import CatalogueImage, fetch as fetch_catalogue
 from lib.image_plan import (ImagePlan, Placement, assign_trip_photos, dedupe,
                             materialise, section_gap)
@@ -122,7 +137,7 @@ def pull_catalogue(code: str, rows: list[dict]) -> None:
 
 
 def trip_pool(code: str, picks: list[tuple]) -> list[Placement]:
-    """Resolve `TRIP_PICKS` into a pool `assign_trip_photos` can draw from.
+    """Resolve a product's `trip_picks` into a pool `assign_trip_photos` draws from.
 
     These never enter the plan by themselves — a landmark card has to match
     them first. Raising on a missing block is the same rule as everywhere
@@ -146,13 +161,15 @@ def trip_pool(code: str, picks: list[tuple]) -> list[Placement]:
             table, fallback_credit = data["stock"], "stock"
             hint = f"先跑 `python3 bin/fetch_stock.py {code}`"
         else:
-            raise SystemExit(f"{code}: TRIP_PICKS 只支持 commons / stock,收到 {kind!r}")
+            raise SystemExit(
+                f"{code} trip_picks: 景点卡只支持 commons / stock,收到 {kind!r}")
         block, n = ref
         blk = table.get(block)
         row = next((c for c in (blk or {}).get("candidates", []) if c["n"] == n), None)
         if row is None:
             raise SystemExit(
-                f"{code}: TRIP_PICKS 指向 {kind}:{block}#{n},没找到 —— {hint}")
+                f"{code} trip_picks: 指向 {kind} {block}#{n},"
+                f"没找到 —— {hint}")
         out.append(Placement(
             slot="trip", position=blk["day"], origin="web",
             subject=blk["subject"], source_ref=row["url"], src_path=row["path"],
@@ -165,6 +182,11 @@ def trip_pool(code: str, picks: list[tuple]) -> list[Placement]:
 
 def compose(code: str, region: str, tours: list[str], overrides: dict) -> ImagePlan:
     data = load(code)
+    # 日期键打错了要炸。下面的循环只走行程里真有的天,所以一个 `d40`(本意
+    # 是 `d04`)既进不了 plan 也走不到「指向的候选不存在」那道检查 —— 那天会
+    # 悄悄退回自动匹配,而摘要行一切正常。这正是 DESIGN 6.9 / 6.11 那一类。
+    editorial.check_days(code, {"section_overrides": overrides},
+                         {f"d{s['day']:02d}" for s in data["itinerary"]["sections"]})
     cat_rows = catalogue_for(code, tours)
     plan = ImagePlan(type_code=code, region=region)
 
@@ -199,7 +221,8 @@ def compose(code: str, region: str, tours: list[str], overrides: dict) -> ImageP
                 # 静默降级就是这一类,6.11 那批静默留空的天也是这么来的。
                 if row is None:
                     raise SystemExit(
-                        f"{code} {key}: stock {block}#{n} 不在 candidates.json 里 —— "
+                        f"{code} section_overrides.{key}: stock {block}#{n} "
+                        f"不在 candidates.json 里 —— "
                         f"先跑 `python3 bin/fetch_stock.py {code}`")
                 plan.placements.append(Placement(
                     slot="section", position=day, origin="web",
@@ -214,7 +237,8 @@ def compose(code: str, region: str, tours: list[str], overrides: dict) -> ImageP
                 # 放大 2.44×)，把 1800px 的黄腾峡和黄飞鸿纪念馆晾在一边。
                 row = next((r for r in cat_rows if r["image_id"] == ref), None)
                 if row is None:
-                    raise SystemExit(f"{code} {key}: catalogue image {ref} not in catalogue.json")
+                    raise SystemExit(f"{code} section_overrides.{key}: catalogue image "
+                                     f"{ref} not in catalogue.json")
                 used_cat.add(row["image_id"])
                 chosen_cat.append(row)
                 plan.placements.append(Placement(
@@ -227,7 +251,8 @@ def compose(code: str, region: str, tours: list[str], overrides: dict) -> ImageP
                             if c["n"] == n), None)
                 if row is None:
                     raise SystemExit(
-                        f"{code} {key}: commons {block}#{n} 不在 commons.json 里 —— "
+                        f"{code} section_overrides.{key}: commons {block}#{n} "
+                        f"不在 commons.json 里 —— "
                         f"先跑 `python3 bin/fetch_commons.py {code}`")
                 # credit/license 原样带走。DESIGN 3.3 那张图的教训:出处丢了就
                 # 只能靠 EXIF 反推,而 Commons 本来是把作者和许可证给全了的。
@@ -337,7 +362,7 @@ def fill_carousel(plan: ImagePlan, code: str, tours: list[str], target: int = 8,
                 image_id = block[4:]
                 row = next((r for r in cat_rows if r["image_id"] == image_id), None)
                 if row is None:
-                    raise SystemExit(f"{code}: carousel pick {block} not in catalogue.json")
+                    raise SystemExit(f"{code} carousel[{i}]: {block} not in catalogue.json")
                 pull_catalogue(code, [row])
                 plan.placements.append(Placement(
                     slot="carousel", position=i, origin="catalogue",
@@ -347,7 +372,8 @@ def fill_carousel(plan: ImagePlan, code: str, tours: list[str], target: int = 8,
             row = next((c for c in (stock or {}).get(block, {}).get("candidates", [])
                         if c["n"] == n), None)
             if row is None:
-                raise SystemExit(f"{code}: carousel pick {block}#{n} not in candidates.json")
+                raise SystemExit(
+                    f"{code} carousel[{i}]: {block}#{n} not in candidates.json")
             plan.placements.append(Placement(
                 slot="carousel", position=i, origin="web",
                 subject=(stock or {})[block]["subject"],
@@ -418,1117 +444,27 @@ def fill_carousel(plan: ImagePlan, code: str, tours: list[str], target: int = 8,
             src_path=hero.src_path, credit=hero.credit, license=hero.license))
 
 
-# Days the token matcher cannot resolve, each already decided by looking.
-# WBCHET day 4 and day 7 follow the rule the Planner set on 2026-08-12: where
-# no photograph of the landmark exists that is actually of that place, show a
-# compliant picture of the day's city or region instead of a lookalike from
-# somewhere else. Stock returned real ice caves (Siberia) and real volcanoes
-# (Etna, Nicaragua) — right subject, wrong continent, and a page selling this
-# trip cannot carry them.
-# Every entry here is a picture a multimodal pass looked at and approved,
-# with the reason it beat the alternatives. Stock is never auto-picked.
-#
-# WBCHET days 4 and 7 follow the rule the Planner set on 2026-08-12: where no
-# photograph of the landmark exists that is actually of that place, show a
-# compliant picture of the day's own city or region rather than a lookalike
-# from somewhere else. Stock had real ice caves (Siberia) and real volcanoes
-# (Etna, Nicaragua) — right subject, wrong continent. A page selling this trip
-# cannot carry them.
-OVERRIDES = {
-    # WBLJG9 的 section 层。每天一张,而且刻意避开当天景点卡用掉的那几张——
-    # assign_trip_photos 会硬性禁止当天的卡复用 section 的源文件(DESIGN 6.05),
-    # 所以这里选的每一张都是那一块里没有进 TRIP_PICKS 的。
-    # D1 不在下面:那天只有一张「夜间航班前往丽江」的交通卡,没有落地活动,
-    # 属于 3.0 里「纯回程/纯飞行」那一类。**留空是要人点头的,不是我替它决定的**,
-    # 所以它会作为 GAP 出现在摘要里。D9 抵达新加坡同理。
-    "WBLJG9": {
-        "d02": [("stock", ("d02_dali_ancient_city", 4), "大理城楼夜景,金光 s0.864")],
-        "d03": [("stock", ("d03_bai_tie_dye_textile", 4), "扎染纹样特写,青碧 s0.528")],
-        "d04": [("stock", ("d04_lige_peninsula_lugu_lake", 3), "枯树与木栈桥 s0.406")],
-        "d05": [("stock", ("d05_lugu_lake_sunrise", 6), "湖面日出 s0.441")],
-        "d06": [("stock", ("d06_blue_moon_valley_lijiang", 1), "秋林与松绿水 s0.387")],
-        "d07": [("stock", ("d07_yuhu_village_lijiang", 2), "白墙纳西院落,蓝天 s0.293")],
-        "d08": [("stock", ("d08_black_dragon_pool_lijiang", 6), "黑龙潭桥与雪山 s0.373")],
-    },
-    # WBXMNM 的 section 层,同样每天一张、且避开当天卡用掉的。
-    "WBXMNM": {
-        "d01": [("commons", ("d01_xunpu_village_quanzhou", 1), "宫庙前红妆院落 s0.467")],
-        "d02": [("stock", ("d02_chaozhou_ancient_city", 2), "潮汕庙宇飞檐,蓝天 s0.410")],
-        "d03": [("commons", ("d03_jieyang_confucian_temple", 5), "学宫大殿与庭院 s0.242")],
-        "d04": [("commons", ("d04_fujian_tulou_earthen_building", 1), "油菜花前的土楼 s0.590")],
-        "d05": [("stock", ("d05_gulangyu_island_xiamen", 4), "红瓦屋顶与海 s0.303")],
-        "d06": [("stock", ("d06_nanputuo_temple_xiamen", 1), "南普陀塔院 s0.297")],
-    },
-    # WB9XMN 粤东。d05 不在下面——饶平/梅州那一天两个景点(龙湖古寨、道韵楼)
-    # 四级图源全废,连一张能当天头的真图都没有,所以它会作为 GAP 出现在摘要里
-    # 等人点头,而不是由我拿别处的土楼顶上去(3.4)。
-    "WB9XMN": {
-        "d01": [("stock", ("d01_huacheng_square_guangzhou", 2), "珠江夜景天际线 s0.646")],
-        "d02": [("commons", ("d02_jieyang_confucian_temple", 4), "揭阳学宫庭院 s0.258")],
-        # 南澳岛当天唯一带 GPS 且在闸门以上的真图。自然之门那张卡拿不到图,
-        # 但这一张确实是南澳岛,当天头用它不算失真。
-        "d03": [("commons", ("d03_nan_ao_island_coast", 5), "南澳九溪澳天后宫 gpsOK s0.251")],
-        # 潮州这一天所有真图都在闸门以下(老城古民居 6 张 0.088–0.148、
-        # 牌坊街 Commons 6 张 0.055–0.175)。唯一闸门以上又确属潮州的是这张
-        # stock 牌坊,所以它进 section 而不是进牌坊街那张卡——见交付说明。
-        "d04": [("stock", ("d04_chaozhou_paifang_street_archways", 1), "潮州牌坊 s0.256")],
-        "d06": [("commons", ("d06_yannanfei_tea_plantation_meizhou", 5), "雁南飞茶垄 s0.310")],
-        "d07": [("commons", ("d07_wanlu_lake_heyuan", 2), "万绿湖林间远眺 s0.315")],
-    },
-    # WBYNG 怒江。d08 不在下面:纯回程航班,和 WBLJG9 的 D9 同一类,留空要人点头。
-    # d02–d04 三天都在怒江大峡谷里走,section 用的是同一个 block 里三张不同的
-    # 河谷航拍(#5/#2/#3),卡上用的是另外两张(#6/#4),按 sha1 互不相同。
-    "WBYNG": {
-        "d01": [("stock", ("d01_fly_to_kunming_and_mangshi", 1), "昆明暮色城市与水面 s0.386")],
-        "d02": [("stock", ("d02_nujiang_grand_canyon", 5), "怒江河谷群山 s0.340")],
-        "d03": [("stock", ("d02_nujiang_grand_canyon", 2), "怒江河谷云雾航拍 s0.256")],
-        "d04": [("stock", ("d02_nujiang_grand_canyon", 3), "怒江河谷俯瞰 s0.307")],
-        # 天头图特意换成东竹林寺这一块。原来用的是 d05_feilai_temple_deqin#1
-        # (云南梅里白塔),而 D6 的「飞来寺观景台」那张卡的 photo_subject 里
-        # 同样有「飞来寺」,于是那张白塔被 D6 的卡又用了一次——同一张照片在
-        # 页面上出现两处。东竹林寺这一块 D6 没有任何一张卡会去匹配。
-        "d05": [("commons", ("d05_dongzhulin_monastery_shangri_la", 2), "东竹林寺 gpsOK s0.268")],
-        "d06": [("stock", ("d06_meili_snow_mountain_kawagarbo_sunr", 4), "梅里日照金山 s0.273")],
-        "d07": [("stock", ("d07_dukezong_ancient_town_shangri_la", 1), "香格里拉全景 s0.286")],
-    },
-    # WBWUX6 江南水乡。这条线和粤东正好相反:主体全是被拍烂了的名胜(西湖、
-    # 外滩、南京路、南浔、平江路),Commons 覆盖 18/19,而且大量带 GPS。
-    "WBWUX6": {
-        "d01": [("stock", ("d01_nianhua_bay_wuxi", 1), "无锡湖畔秋色(图注写明无锡)s0.343")],
-        "d02": [("commons", ("d02_changguangxi_wetland_park_wuxi", 3), "长广溪廊桥 s0.252")],
-        "d03": [("commons", ("d03_nanxun_ancient_town", 5), "南浔水岸全景 gpsOK s0.279")],
-        "d04": [("commons", ("d04_the_bund_shanghai", 6), "外滩万国建筑与车流 s0.291")],
-        "d05": [("commons", ("d05_nanjing_road_pedestrian_street_sha", 3), "南京路霓虹 gpsOK s0.522")],
-        "d06": [("commons", ("d06_pingjiang_road_suzhou", 4), "平江路门楼 s0.252")],
-    },
-    # WBPCSX 张家界 + 凤凰。D1 抵达日没有自己的块,用天门山顶上——天门山就在
-    # 张家界市区边上,和「抵达张家界」是同一个地方。D3 四个主体全废(见 TRIP_PICKS),
-    # 但那天是从凤凰出发的,所以天头图用一张写明 Fenghuang 的。D8 纯回程。
-    "WBPCSX": {
-        "d01": [("commons", ("d04_tianmen_mountain_zhangjiajie", 1), "天门山俯瞰市区 gpsOK s0.313")],
-        "d02": [("commons", ("d02_fenghuang_ancient_town", 5), "沱江吊脚楼群 s0.362")],
-        "d03": [("stock", ("d03_chadong_border_town_huayuan", 3), "凤凰虹桥与河岸(当天从凤凰出发)s0.388")],
-        "d04": [("commons", ("d04_tianmen_mountain_zhangjiajie", 5), "天门山盘山公路 gpsOK s0.245")],
-        "d05": [("commons", ("d05_zhangjiajie_national_forest_park", 3), "石英砂岩峰林 gpsOK s0.397")],
-        "d06": [("commons", ("d06_zhangjiajie_grand_canyon_glass_bri", 6), "玻璃桥横跨峡谷 s0.290")],
-        "d07": [("commons", ("d07_yellow_dragon_cave_zhangjiajie", 1), "黄龙洞石笋灯光 s0.502")],
-    },
-    # WBYNB 腾冲。这是这一批里最薄的一个:德宏/腾冲属于长尾,Commons 有 6 个
-    # 主体整块返回 0,还有 4 个只返回 1 张。D3 全天只有两张真图,所以「北海湿地」
-    # 那张(0.320,日落芦苇)拿去当天头图,把大金塔留给卡——一天里有两个主体
-    # 而只有两张图时,天头 + 一张卡比两张卡更划算(线上产品的天头图更显眼)。
-    "WBYNB": {
-        "d01": [("stock", ("d01_singapore_to_kunming_to_mangshi", 2), "昆明牌坊与城景(图注写明昆明)s0.417")],
-        "d02": [("commons", ("d02_dai_tropical_garden_ruili", 1), "热带园林景观 s0.344")],
-        "d03": [("commons", ("d03_beihai_wetland_tengchong", 1), "北海湿地日落 s0.320")],
-        "d04": [("commons", ("d04_heshun_ancient_town_tengchong", 1), "和顺古镇屋顶全景 s0.266")],
-        "d05": [("stock", ("d05_jiangdong_ginkgo_village_tengchong", 2), "金黄银杏覆檐 s0.545")],
-        "d06": [("commons", ("d06_coffee_plantation_baoshan_yunnan", 3), "咖啡地与远山 s0.331")],
-        "d07": [("stock", ("d07_dounan_flower_market_kunming", 1), "花墙与「昆明」字样 s0.444")],
-    },
-    # WBMZ7 澳门/珠海/广州/连州/郴州。D3 和 D5 没有天头图:那两天的主体
-    # (莽山五指峰、仰天湖大草原、湖南白银博物馆、裕后街)四级图源全废,
-    # 见 TRIP_PICKS。两天都作为 GAP 留着等人点头,没有拿桂林/黄山顶上去。
-    "WBMZ7": {
-        "d01": [("stock", ("d01_hong_kong_zhuhai_macau_bridge", 1), "港珠澳大桥航拍 s0.307")],
-        "d02": [("stock", ("d02_nangang_yao_village_liannan", 3), "广东传统制陶 s0.326")],
-        "d04": [("commons", ("d04_dongjiang_lake_zixing", 2), "东江湖水岸 gpsOK s0.281")],
-        "d06": [("commons", ("d06_canton_tower", 2), "广州塔与珠江新城天际线 s0.229")],
-        "d07": [("commons", ("d07_zhuhai_fisher_girl_seafront", 4), "珠海渔女像 s0.381")],
-    },
-    # WBTFU8 成都 / 九寨沟。D1 抵达日没有自己的块,用宽窄巷子那一块的成都夜景
-    # 顶上——当天正是飞抵成都。D8 纯回程。
-    "WBTFU8": {
-        "d01": [("stock", ("d06_kuanzhai_alley_chengdu", 3), "成都夜市红灯笼(当天抵达成都)s0.574")],
-        "d02": [("commons", ("d02_shengshui_temple_mianyang", 6), "绵阳圣水寺院落 gpsOK s0.361")],
-        "d03": [("commons", ("d03_jiuzhaigou_valley", 6), "九寨沟海子 s0.358")],
-        "d04": [("commons", ("d04_nanqiao_bridge_dujiangyan_night", 2), "都江堰景区 gpsOK s0.302")],
-        "d05": [("commons", ("d05_giant_panda_dujiangyan_base", 2), "都江堰基地大熊猫 s0.257")],
-        "d06": [("stock", ("d06_kuanzhai_alley_chengdu", 1), "成都夜市串串摊 s0.686")],
-        "d07": [("stock", ("d07_jinli_ancient_street_chengdu", 5), "成都老茶馆内景 s0.761")],
-    },
-    # WBCKG6 魔幻重庆。D3(金佛山)和 D6(送机)没有天头图:金佛山 Commons 整块 0,
-    # stock 给的是**桂林**喀斯特,按 3.4 留空等人点头。
-    # ACKMG12T 熊猫专列。**每一天都写在这里**,因为 token 自动匹配在这条线上
-    # 错得离谱:tours/4 是大理/丽江/香格里拉团,它的图注里「Ancient Town」「Lake」
-    # 到处都是,于是纳帕海(香格里拉)被配到第 4 天的邛海(西昌,相距 700km)、
-    # 大理古城被配到第 10 天的腾冲、而 tours/3 的「毛县古羌城」也被塞进第 4 天。
-    # 有 override 的那天会整天跳过自动匹配(见 compose() 的 `if key in overrides`),
-    # 所以逐天写清是把那些错配挤掉的办法。
-    #
-    # D12 不在下面:送机日,没有落地活动,属于 3.0 里「纯回程」那一类。
-    # **留空是要人点头的**,所以它会作为 GAP 出现在摘要里。
-    "ACKMG12T": {
-        "d01": [("stock", ("d01_chengdu_city_skyline_sichuan", 4),
-                 "安顺廊桥夜景 —— 抵达当晚「自由漫步成都街头」 s0.332")],
-        # 第 2 天册子写的是「全天自由行,晚间登乘列车」。这一级有两条路:
-        # 拿一张火车照,或者拿一张成都自由行的照片。选了后者——12 张候选里
-        # 没有一张是熊猫专列(它是包租列车),拿别的列车顶上去等于对产品失真。
-        #
-        # 先选的是图注写着「Kuanzhai Alley」的 CB0PTNcn,裁完才看出来那是
-        # **商场里的熊猫玩偶陈列**,不是宽窄巷子。图库图注比册子图注可信,
-        # 但不等于可以不看图——这一张就是反例。改用真熊猫:成都自由行那天
-        # 本来就看熊猫,而且这是「熊猫专列」,产品名里的那只熊猫总得出现一次。
-        "d02": [("cat", "DcVKlVLe", "都江堰熊猫谷,真熊猫啃竹 —— 产品名里的那只熊猫")],
-        "d03": [("stock", ("d03_chinese_song_dynasty_cultural_salo", 1),
-                 "茶席与茶艺师 —— 列车上的文化沙龙 s0.443")],
-        "d04": [("commons", ("d04_qionghai_lake_xichang", 6), "邛海水榭与远山 s0.304")],
-        "d05": [("cat", "XGtIjYmP", "纳帕海(香格里拉),图库授权图")],
-        # 转经筒那张(stock#1, s0.860)是整批里最好的一张,让给了轮播首图;
-        # 当天头改用普达措,正好是 A 线上午的那一段。
-        # #3 饱和度更高(0.536),但画面正中站着一对婚纱情侣,裁成天头像婚纱照
-        # 不像国家公园。#2 是纯景。
-        "d06": [("commons", ("d06_pudacuo_national_park_shangri_la_y", 2),
-                 "林岭倒映静湖 s0.329 —— 不选 #3,那张里有一对婚纱情侣")],
-        # jhz0thu4 的图注是「Tiger Leaping Gorge」,但画面是景区入口那尊**石虎
-        # 雕塑**,不是峡谷。同一个产品下的 AZUggaw2 才是真的峡谷激流。
-        "d07": [("cat", "AZUggaw2", "虎跳峡松绿激流与观景石,图库授权图")],
-        "d08": [("stock", ("d08_tengchong_dadi_tea_plantation_yunn", 3),
-                 "大地茶海茶垄航拍 s0.627")],
-        "d09": [("stock", ("d09_rehai_hot_spring_park_tengchong_ge", 1),
-                 "林间热泉蒸汽 s0.260")],
-        "d10": [("stock", ("d10_jietou_village_tengchong_handmade_", 2),
-                 "古法纸张晾晒场 —— 界头最有辨识度的一景 s0.228")],
-        # #6 那张盛装人像的背景横幅是繁体字、头饰形制也不像凉山彝族,更像台湾
-        # 原住民祭典 —— 「主体对、地点错」的又一例,只是这次错在族群上。
-        # 改用 #1(轮播原来用的那张),轮播另补一张。
-        "d11": [("stock", ("d11_yi_ethnic_culture_liangshan_sichua", 1),
-                 "彝族歌舞,红黑百褶裙 s0.431 —— 不选 #6,那张疑似台湾原住民祭典")],
-    },
-    "WBCKG6": {
-        "d01": [("stock", ("d01_fly_from_singapore_to_chongqing", 2), "重庆夜景(图注写明重庆)s0.682")],
-        "d02": [("commons", ("d02_hongyadong_chongqing", 4), "洪崖洞与千厮门大桥,白天 s0.283")],
-        "d04": [("stock", ("d04_chaotianmen_chongqing", 1), "红色拱桥与两江夜景 s0.330")],
-        "d05": [("commons", ("d05_chongqing_hotpot", 4), "同心锅 s0.495")],
-    },
-    # WBLCKG 重庆+恩施。D4(恩施)和 D8(送机)没有天头图:梭布垭石林 Commons 唯一
-    # 一张是**恩施大峡谷**(另一个景区),土家女儿城整块 0 而 stock 给的是洪崖洞。
-    "WBLCKG": {
-        "d01": [("stock", ("d01_fly_from_singapore_to_chongqing", 2), "重庆夜景(图注写明重庆)s0.682")],
-        "d02": [("commons", ("d02_yunyang_longgang_scenic_area", 1), "龙缸国家地质公园 s0.196")],
-        "d03": [("commons", ("d03_baidicheng_fengjie", 6), "白帝城博物馆 s0.300")],
-        "d05": [("stock", ("d05_tenglong_cave_lichuan", 2), "溶洞钟乳石灯光 s0.488")],
-        "d06": [("stock", ("d06_danzishi_old_street_chongqing", 2), "歌乐山与磁器口(图注写明重庆)s0.430")],
-        "d07": [("stock", ("d07_jiefangbei_chongqing", 5), "重庆夜景天际线 s0.659")],
-    },
-    "WBCHET": {
-        "d02": [("stock", ("d02_ordos_grassland", 5), "蒙古包群实拍"),
-                ("stock", ("d02_ordos_grassland", 1), "草原孤包")],
-        "d03": [("stock", ("d03_xiangshawan", 1), "沙丘驼队"),
-                ("stock", ("d03_xiangshawan", 2), "沙脊光影")],
-        # 万年冰洞:stock 只有西伯利亚冰川冰洞。改用当天另一处真实景点。
-        "d04": [("stock", ("d04_hanging_village", 1),
-                 "悬空村(芦芽山)——当日另一真实景点;万年冰洞无合规实拍")],
-        # 应县木塔:前 4 个候选是大雁塔和西安城墙,第 5 个才是真的。
-        "d05": [("stock", ("d05_yingxian", 5), "应县木塔,看图确认"),
-                ("stock", ("d05_xinzhou", 4), "山西古城街景")],
-        "d06": [("stock", ("d06_yungang", 1), "云冈石窟大佛"),
-                ("stock", ("d05_datong_city", 6), "大同九龙壁")],
-        # 乌兰哈达火山:stock 只有埃特纳和尼加拉瓜,所以 08-13 那轮只能拿当天
-        # 落脚城市顶上。08-14 Commons 给出三张带 GPS 且落在内蒙范围内的火山口
-        # 航拍,这个替代不再必要——火山排前面,大召寺留作第二张。
-        # 它写在产品 highlights 第 4 条,拿城市照顶替是失真的。
-        "d07": [("commons", ("d07_ulan_hada_volcano_geopark", 1),
-                 "乌兰哈达火山口航拍,带 GPS"),
-                ("stock", ("d07_region_hohhot", 1), "呼和浩特大召寺——当日落脚城市")],
-        # 康巴什:候选 #2#3 标题写 Mongolian Government Palace,实为蒙古国乌兰巴托,已排除。
-        "d08": [("stock", ("d08_kangbashi", 1), "康巴什城市广场;#2#3 系蒙古国已排除")],
-    },
-    "WBCURC": {
-        # Path is repo-relative like every other source. It used to point into
-        # an agent session's scratchpad, which survives only until that
-        # scratchpad is cleaned — after which this re-runs "successfully" and
-        # silently drops day 3's photo, because a missing `src_path` only ever
-        # becomes a note on the placement.
-        "d03": [("file", "work/WBCURC/cand/d03_keketuohai_canyon.jpg",
-                 "可可托海额尔齐斯大峡谷")],
-        # 坎儿井:stock 全是泛化农业灌溉,无一是坎儿井。按区域规则改用新疆区域图。
-        # (08-14 复查:Commons 搜 Karez Well 返回的是美军在阿富汗的照片,更糟,
-        #  所以这条区域替代继续保留。)
-        "d10": [("stock", ("d07_kokdala", 3),
-                 "新疆区域实拍——坎儿井无合规实拍")],
-        # D1 抵达乌鲁木齐。行程原文只有「飞 + 接机 + 入住」,没有游览活动,
-        # 但用户 08-14 定的范围里包含它。入夜城市灯光配傍晚抵达是贴的。
-        "d01": [("commons", ("d12_free_time_in_urumqi", 1),
-                 "入夜城市灯光——抵达当晚")],
-        # D12 乌鲁木齐自由活动。08-13 这天是静默留空的(DESIGN 6.11),而它有
-        # 整个白天的自由活动,不是纯回程日——线上参考产品 tours/112 只有最后
-        # 一天是空的。城市背后的天山雪线是乌鲁木齐最好认的特征。
-        "d12": [("commons", ("d12_free_time_in_urumqi", 6),
-                 "乌鲁木齐城区与天山雪线")],
-    },
-    "WBCKWE": {
-        "d01": [("stock", ("d01_chongqing", 2), "重庆夜景")],
-        "d06": [("stock", ("d06_kala_miao", 5), "苗族传统服饰")],
-    },
-    # WBINC9 是第一个在②图库这一级拿到 0 张的产品:webuytravel.sg 没有宁夏在售
-    # 产品,唯一相邻的内蒙古沙漠产品 tours/75 全站只挂 1 张图。所以除册子自带的
-    # 5 张外全部来自 stock,且逐张看过。
-    # 第 2 天不在这里 —— 宁夏博物馆和览山公园两个主体,stock 12 张里没有一张是
-    # 对的(返回嘉峪关、中国大运河博物馆、丽江黑龙潭),没有可用的替代,所以
-    # 故意留成 gap 让审核页显式报出来,而不是拿一张认不出的中国城市图充数。
-    # WBSZX1 的图源结构和 WBINC9 相反:②图库(tours/118 同区域同主题在售产品)
-    # 覆盖了顺峰山、欢乐海岸、黄飞鸿纪念馆、黄腾峡、沙湾古镇,册子自带图覆盖了
-    # 深圳湾、赤坎古镇、日月贝、千古情演出。缺口只剩首尾两个交通日和几个
-    # 城市地标。
-    "WBSZX1": {
-        # 抵达日,册子只写接机入住。用深圳夜景天际线(平安金融中心可辨)。
-        "d01": [("stock", ("d01_shenzhen_skyline", 2), "深圳湾夜景天际线,平安金融中心形态可辨")],
-        # 自动匹配会挑走册子那张千古情演出图(991x369,裁到 section 要放大
-        # 2.44×),把 1800px 的黄腾峡挤掉。这里点名换成两张图库原图。
-        # 岭南新天地和广东千古情在 CMS 里只有 ~380x510,已从 catalogue.json 剔除。
-        "d03": [("cat", "7vb1txIk", "黄飞鸿纪念馆(位于佛山祖庙内),CMS 图注,已授权"),
-                ("cat", "TM550Omr", "黄腾峡天门玻璃桥,1800px 原图")],
-        "d04": [("cat", "wfUiCnbg", "沙湾古镇,CMS 图注,已授权"),
-                ("stock", ("d04_pearl_river", 3), "珠江夜游观光船实拍——当日必需自费项目")],
-        "d06": [("stock", ("d06_zhuhai_fisher", 1), "珠海渔女像与情侣路海滨"),
-                ("cat", "HTlwuVEv", "欢乐海岸")],
-        # 深中通道 6 张候选都是珠三角跨海大桥,但没有一张能确认就是深中通道
-        # (港珠澳大桥形态相近)。地域与类型都对,主体只写到「跨海大桥」。
-        "d07": [("stock", ("d07_shenzhong_link", 1), "珠三角跨海大桥晨景;是否深中通道本体未确认")],
-    },
-    "WBINC9": {
-        # D2 宁夏博物馆 / 览山公园。08-13 这是 plan.gaps 里唯一一条「有景点却
-        # 一张图都没找到」的记录:stock 两轮 18 张全废(#2 是西安大雁塔,
-        # 6.7 记过)。08-14 Commons 直接给出馆舍外观和中庭,主体确定无误。
-        "d02": [("commons", ("d02_ningxia_museum_yinchuan", 5), "宁夏博物馆馆舍外观"),
-                ("commons", ("d02_ningxia_museum_yinchuan", 6), "馆内中庭")],
-        # D6 一百零八塔。stock 搜「一百零八塔」返回的是大理三塔(6.7),
-        # 所以原来这天靠册子那张 590px 顶着。Commons #1 带 GPS,塔阵水中倒影。
-        # 沙坡头本体无合规实拍(stock 返回张掖丹霞和交河故城)。这两张不冒充
-        # 沙坡头,卖的是当天真实存在的两个体验:沙丘徒步/滑沙,和沙漠营地观星。
-        "d05": [("stock", ("d05_sand_sliding", 1), "沙丘实拍(未标注具体地点);沙坡头景区本体无合规实拍"),
-                ("stock", ("d05_stargazing", 5), "沙漠营地夜间帐篷观星——当日真实体验")],
-        # 贺兰山岩画整块作废:#1 无可辨刻画,#6 是现代红漆题字的景观石。
-        "d07": [("stock", ("d07_zhenbeipu", 5), "西北夯土城堡片场街景,类型与地域相符(具体是否镇北堡待复核)"),
-                ("stock", ("d07_winery", 1), "岩山脚下葡萄园,与贺兰山东麓产区形态相符")],
-        # 驼车整块作废:6 张全是单峰驼 + 南亚服饰(拉贾斯坦/信德),非中国双峰驼。
-        "d08": [("stock", ("d08_shuidonggou", 4), "黄土峡谷内骑乘,地貌与活动均与水洞沟相符")],
-    },
-}
+def run(code: str, work: Path = WORK) -> tuple[ImagePlan, list]:
+    """一个产品从编辑决策走到成片的 plan,不含 materialise。
 
-# 显式指定的轮播,用于册子图太小、又确实有诚实的高分辨率 stock 可用的产品。
-# 每条同样是看过图才写进来的;`hero_*` 这批是专门为轮播补取的大图。
-CAROUSEL = {
-    # ②图库图和③stock 混排:图库这一级优先,但它只覆盖 4 个景点,而且轮播
-    # (尤其 1080x1440 的竖版)需要 1080px 以上的源图,册子那批 700–1000px
-    # 的图放进来会明显发虚,所以册子图只留在当日 section。
-    "WBSZX1": [
-        ("d04_canton_tower", 3, "广州珠江新城夜景天际线——行程里最大的城市"),
-        ("cat:Jmz4i0ph", 0, "顺德欢乐海岸,1916px 原图"),
-        ("food_dim_sum", 3, "广府点心宴——这是美食团,餐食是卖点不是附注"),
-        ("cat:LEiTP6tQ", 0, "黄腾峡天门玻璃桥"),
-        # 这两张刻意与当日配图错开:渔女像和深圳天际线各自已经用在第 6、第 1 天,
-        # 跨槽去重会把轮播里的那张删掉(线上产品的轮播图和日程图本来就不重样)。
-        ("food_dim_sum", 5, "蒸笼点心;八条美食 highlights 撑起两张轮播不算多"),
-        ("cat:LltbVaVY", 0, "沙湾古镇"),
-        ("d01_shenzhen_skyline", 5, "深圳夜景另一机位,与第 1 天当日配图不同张"),
-        ("cat:8ben3nQr", 0, "顺峰山大牌坊"),
-    ],
-    # ACKMG12T。②图库(tours/4 的滇西北团)和④stock 混排,而且**刻意和当日
-    # 配图错开**:跨槽去重按内容哈希走,同一张图放两处会被删掉一处,而线上
-    # 在售产品的轮播图和日程图本来就不重样。
-    "ACKMG12T": [
-        ("d06_dukezong_ancient_town_prayer_wheel", 1,
-         "独克宗金色转经筒,蓝调时分 s0.860 —— 册子明写「世界最大转经筒」,"
-         "而且是整批候选里唯一一张高饱和又确实是那个地方的"),
-        ("cat:YAJzGm1f", 0, "虎跳峡另一机位 —— 第 7 天当日用的是 jhz0thu4"),
-        # nbsywg5q 图注也是松赞林寺,但画面是山门那块中英藏三语**招牌特写**,
-        # 轮播位放招牌太小气。5PQrPDOX 是寺群全景。
-        ("cat:5PQrPDOX", 0, "噶丹·松赞林寺金顶全景,图库授权图"),
-        ("d08_tengchong_dadi_tea_plantation_yunn", 5, "大地茶海茶垄与小径 s0.589"),
-        ("d01_chengdu_city_skyline_sichuan", 1, "成都夜景天际线 s0.558 —— 行程起点"),
-        ("cat:o23PlYiK", 0, "纳帕海另一机位 —— 第 5 天当日用的是 XGtIjYmP"),
-        # 彝族那张让给了第 11 天当日(#6 疑似台湾原住民,只能用 #1)。这一格
-        # 改放列车上的宋韵茶室 —— 产品卖的就是这条专列本身,轮播里一格都没有
-        # 说不过去。
-        ("d03_chinese_song_dynasty_cultural_salo", 2,
-         "暖调茶室与红灯笼 s0.761 —— 列车上的宋韵文化沙龙"),
-        ("d10_jietou_village_tengchong_handmade_", 4, "古法造纸抄纸帘 s0.330"),
-    ],
-    "WBINC9": [
-        ("hero_yellow_river", 4, "黄河嵌入式曲流航拍——产品名的主题,与册子封面同一意象"),
-        ("hero_desert_dunes", 1, "沙丘航拍;行程实际穿越腾格里与阿拉善沙漠"),
-        ("hero_stone_forest", 2, "赭色层理石柱,与册子黄河石林实拍形态一致(具体机位未核实)"),
-        ("d05_stargazing", 5, "沙漠营地夜间观星——第 5 天真实体验"),
-        ("hero_helan", 1, "干旱岩质山脉 + 荒草前景,与贺兰山形态相符"),
-        ("d07_zhenbeipu", 5, "西北夯土城堡片场街景"),
-        ("hero_desert_dunes", 4, "金色沙脊"),
-        ("d08_shuidonggou", 4, "黄土峡谷"),
-    ],
-}
-
-# 景点卡专用的选片。和 OVERRIDES 一样是编辑决策——每一条都是有人看过图才写下的,
-# 区别只在于它落到 Trip Photos 而不是 Section Photos。
-#
-# 为什么要分开:线上三个已发布的内蒙产品 Section Photos 全是 0,图全挂在景点卡上
-# (docs/DESIGN.md 1.1)。一天有五张好图时,要的是一张 section + 四张卡,
-# 不是五张 section。这些条目不会自己进 plan,只有当某张景点卡的主体匹配上才会进。
-#
-# 2026-08-14 WBCHET 这一批:98 张 Commons 候选逐张看过,留 25 张(审核页已签字)。
-# 被整块否决的 12 组里,`d06_shuttle_included_exterior_viewing` 六张全是美国航天
-# 飞机「发现号」——行程原文写的是「含摆渡车」,shuttle 撞词。
-TRIP_PICKS = {
-    # 景点卡专用的选片。和 OVERRIDES 一样是编辑决策,区别只在于它落到
-    # Trip Photos 而不是 Section Photos(分开的理由见 docs/DESIGN.md 1.1:
-    # 线上三个已发布的内蒙产品 Section Photos 全是 0,图全挂在景点卡上)。
-    #
-    # 2026-08-14 第二轮重挑。第一轮只有准确性一根轴,结果五个产品的饱和度
-    # 无一达到自家图库的水准(0.235–0.319 对 0.421),业务同事看生产页面
-    # 提了「色彩不要灰暗」。现在按两轴挑,和印刷册子那边一致
-    # (docs/DESIGN.md 6.06)。每条后面的 s0.xx 是实测饱和度,房子标准是 0.421、
-    # 闸门(第 10 百分位)是 0.181。
-    #
-    # **美学分不是唯一标准。** 三处明显的反例,都按主体价值压过了分数:
-    #   广州塔那组分最高的 #1(1.08)画面里根本不是广州塔;
-    #   火焰山分最高的是山下骆驼(1.09),山体本身只有 0.92,但山体才是主角;
-    #   黄果树分最高的 #3(1.08)是夜间彩灯秀,和册子调性不符。
-    "WBCHET": [
-        # D6 悬空寺:换掉原来的 #3/#5/#6(s0.11–0.16,灰崖壁和题刻)
-        ("commons", ("d06_hanging_temple_hunyuan", 1), "崖壁全景,绿 s0.26"),
-        ("commons", ("d06_hanging_temple_hunyuan", 2), "栈道游客,能看清悬空结构 s0.20"),
-        ("commons", ("d06_hanging_temple_hunyuan", 4), "红墙门楼 s0.23"),
-        # D5 大同古城:#2 疑似不是大同(像应县木塔)、#3 是节庆花灯,都没选
-        ("commons", ("d05_datong_ancient_city", 5), "城墙与拱门,蓝天 s0.31"),
-        ("commons", ("d05_datong_ancient_city", 1), "城楼正面,蓝天 s0.29"),
-        ("commons", ("d05_datong_ancient_city", 6), "寺院院落红灯笼 s0.28"),
-        # D5 应县木塔:#6 是展柜里的模型不是实景,#4 是屋顶垂直航拍
-        ("commons", ("d05_yingxian_wooden_pagoda", 1), "木塔全景,蓝天 s0.33"),
-        ("commons", ("d05_yingxian_wooden_pagoda", 5), "牌楼取景,塔在其后 s0.36"),
-        ("commons", ("d05_yingxian_wooden_pagoda", 2), "斗拱细部,红木 s0.60"),
-        # D7 乌兰哈达火山:#2 火山口深色岩 s0.14 不达标,换成地质公园游客区
-        ("commons", ("d07_ulan_hada_volcano_geopark", 3), "地质公园游客区 s0.27"),
-        # D3 响沙湾:去掉 #5(沙漠泳池,灰天 s0.12)
-        ("commons", ("d03_xiangshawan_desert", 2), "骑骆驼队列,金沙 s0.37"),
-        ("commons", ("d03_xiangshawan_desert", 1), "沙漠越野车 s0.34"),
-        ("commons", ("d03_xiangshawan_desert", 4), "沙丘中白色穹顶度假区 s0.26"),
-        # D6 云冈:#5 #4 是黑白老明信片。两个云冈块只各留一张,免得一天全是石窟
-        ("commons", ("d06_yungang_grottoes_datong", 3), "露天大坐佛 s0.26"),
-        ("commons", ("d06_yungang_grottoes_datong", 1), "彩绘佛龛 s0.29"),
-        ("commons", ("d06_yungang_grottoes_buddha_statues", 2), "崖壁大坐佛 s0.28"),
-    ],
-    "WBCURC": [
-        # D7 果子沟大桥:换掉 #1/#2(s0.14–0.15,阴天灰)
-        ("commons", ("d07_guozigou_bridge", 5), "桥 + 绿山谷 + 蓝天 s0.38"),
-        ("commons", ("d07_guozigou_bridge", 3), "山谷中的桥,远景 s0.36"),
-        ("commons", ("d07_guozigou_bridge", 4), "桥塔入云 s0.28"),
-        # D7 赛里木湖
-        ("commons", ("d07_sayram_lake", 6), "蓝湖绿草雪山 s0.56"),
-        ("commons", ("d07_sayram_lake", 3), "湖面草岸雪山 s0.33"),
-        ("commons", ("d07_sayram_lake", 1), "湖畔航标 s0.33"),
-        # D4 喀纳斯:去掉 #1(晨雾骑手 s0.24 但整体闷)
-        ("commons", ("d04_kanas_lake", 4), "河石与松绿水色 s0.34"),
-        ("commons", ("d04_kanas_lake", 6), "松绿色河湾 s0.28"),
-        ("commons", ("d04_kanas_lake", 5), "湖面针叶林雪山 s0.22"),
-        # D5 禾木村:#5 是城市公交车
-        ("commons", ("d05_hemu_village", 6), "河谷木屋航拍,蓝天 s0.39"),
-        ("commons", ("d05_hemu_village", 4), "雪季河谷全景 s0.35"),
-        ("commons", ("d05_hemu_village", 3), "秋色河滩木屋 s0.24"),
-        # D5 五彩滩:整块只有这一张
-        ("commons", ("d05_colourful_beach_burqin", 1), "赭色风蚀滩与河 s0.28"),
-        # D9 独库公路:#1 #2 是城镇街口和白杨路,#6 #5 主体是路牌
-        ("commons", ("d09_duku_highway", 3), "盘山公路穿林谷,蓝天 s0.25"),
-        ("commons", ("d09_duku_highway", 4), "陡峭山谷中的公路 s0.21"),
-        # D9 天山:换掉 #2(金色日照雪峰,分 0.49 太暗)
-        ("commons", ("d09_tianshan_mountains", 1), "冰川谷与雪峰 s0.33"),
-        ("commons", ("d09_tianshan_mountains", 6), "雪山群 s0.25"),
-        # D11 火焰山:#5 分最低(0.92)但它是山体本身,主体压过分数
-        ("commons", ("d11_flaming_mountains_turpan", 5), "赭红色风蚀山脊——主角 s0.41"),
-        ("commons", ("d11_flaming_mountains_turpan", 3), "卧驼 s0.38"),
-        ("commons", ("d11_flaming_mountains_turpan", 2), "卧驼(红鞍) s0.40"),
-        # D11 打馕
-        ("commons", ("d11_xinjiang_naan_making", 2), "馕坑里贴馕的手 s0.27"),
-        # D12 乌鲁木齐:#1 入夜城市灯光(D1 的 section 也用它,见 OVERRIDES)
-        ("commons", ("d12_free_time_in_urumqi", 1), "入夜城市灯光 s0.40"),
-        # D7 薰衣草:#5 带 GPS 可验证,#3 无坐标但形态明确且极饱和
-        ("commons", ("d07_ili_lavender_museum", 5), "薰衣草田带白云,带 GPS s0.33"),
-        ("commons", ("d07_ili_lavender_museum", 3), "紫色薰衣草田 s0.87"),
-        # D8 草原(区域级,不是篝火活动本身):换掉 #4(牧人驱牛 s0.28,阴天)
-        ("commons", ("d08_xinjiang_grassland_bonfire_party", 2), "草原曲流河(区域图) s0.54"),
-        ("commons", ("d08_xinjiang_grassland_bonfire_party", 5), "绿丘草原(区域图) s0.54"),
-    ],
-    "WBINC9": [
-        # D6 西夏陵:#5 分最高但陵台太远看不清,#1 最灰
-        ("commons", ("d06_western_xia_imperial_tombs_yinchua", 4), "陵区全景,绿草 s0.24"),
-        ("commons", ("d06_western_xia_imperial_tombs_yinchua", 3), "两座陵台与远山 s0.24"),
-        ("commons", ("d06_western_xia_imperial_tombs_yinchua", 2), "陵台正面 s0.22"),
-        # D6 一百零八塔:#6 升为主选(塔阵全景 + 蓝天),#1 倒影最标志但灰
-        ("commons", ("d06_108_pagodas_qingtongxia_hillside_w", 6), "塔阵侧面全景,蓝天 s0.27"),
-        ("commons", ("d06_108_pagodas_qingtongxia_hillside_w", 1), "塔阵与水中倒影 s0.16"),
-        # D2 宁夏博物馆:馆舍外观(s0.17)留给 section,卡用中庭和石雕
-        ("commons", ("d02_ningxia_museum_yinchuan", 6), "中庭 s0.25"),
-        ("commons", ("d02_ningxia_museum_yinchuan", 4), "石雕(馆藏) s0.18"),
-        # D4 黄河石林:#1 是全部候选里最亮的一张
-        ("commons", ("d04_yellow_river_stone_forest_jingtai_", 1), "石林柱群,蓝天 s0.64"),
-        ("commons", ("d04_yellow_river_stone_forest_jingtai_", 2), "峡谷与谷底村落 s0.18"),
-        # D5 沙坡头:整块只有这一张,而且是「沙漠与黄河相接」那个标志性视角
-        ("commons", ("d05_shapotou_scenic_area_zhongwei_dese", 1), "沙丘俯瞰黄河绿洲 s0.23"),
-        # D6 青铜峡
-        ("commons", ("d06_qingtongxia_yellow_river_grand_can", 1), "拦河大坝 s0.23"),
-        ("commons", ("d06_qingtongxia_yellow_river_grand_can", 2), "坝体全景 s0.21"),
-        # D3 阿拉善:#5 分更高但画面抽象,#2 主体最对(沙丘倒映湖面)
-        ("commons", ("d03_alxa_desert_off_road_vehicle_sand_", 2), "沙丘与湖 s0.18"),
-        # D7 贺兰山岩画:全是**展柜里的岩画石板**,不是山体原位。换掉最灰的 #1
-        ("commons", ("d07_helan_mountain_rock_art_petroglyph", 3), "岩画石板(展柜) s0.27"),
-        ("commons", ("d07_helan_mountain_rock_art_petroglyph", 4), "动物岩画(展柜) s0.24"),
-    ],
-    "WBCKWE": [
-        # D7 梵净山:**整个 red_cloud_golden_summit 块弃用**——六张全是雾里的
-        # 灰石桥和题刻,饱和 0.06–0.12,是全部候选里最差的一组。同一座山的
-        # mount_fanjing #6 是云海之上的金顶,s0.43,画面强一个量级。
-        ("commons", ("d07_mount_fanjing", 6), "云海之上的金顶 s0.43"),
-        ("commons", ("d07_mount_fanjing", 1), "雾中山脊上的红衣人 s0.25"),
-        # D6 西江千户苗寨
-        ("commons", ("d06_xijiang_qianhu_miao_village", 2), "满山吊脚楼与梯田 s0.23"),
-        ("commons", ("d06_xijiang_qianhu_miao_village", 6), "木楼与梯田 s0.26"),
-        ("commons", ("d06_xijiang_qianhu_miao_village", 4), "溪上吊脚楼 s0.19"),
-        # D2 甲秀楼:整组都在 0.19–0.22,挑主体最完整的三张
-        ("commons", ("d02_jiaxiu_pavilion", 2), "临水楼阁与绿树 s0.22"),
-        ("commons", ("d02_jiaxiu_pavilion", 1), "楼与拱桥、河 s0.22"),
-        ("commons", ("d02_jiaxiu_pavilion", 4), "石桥与楼 s0.20"),
-        # D3 黄果树:#3 分最高(1.08)但是夜间彩灯秀,粉紫色和册子调性不符
-        ("commons", ("d03_huangguoshu_waterfall", 2), "林隙中的瀑布,绿 s0.27"),
-        ("commons", ("d03_huangguoshu_waterfall", 5), "瀑布与碧潭 s0.27"),
-        ("commons", ("d03_huangguoshu_waterfall", 4), "瀑布全景 s0.23"),
-        # D3 陡坡塘:换掉 #5 #6(s0.10–0.12)
-        ("commons", ("d03_doupotang_waterfall", 1), "宽帘瀑布 s0.21"),
-        ("commons", ("d03_doupotang_waterfall", 3), "蓝天下的宽帘瀑布 s0.22"),
-        ("commons", ("d03_doupotang_waterfall", 4), "瀑布与游客 s0.20"),
-        # D4 万峰林:#2 雾中版 s0.13 不达标,只留 #1
-        ("commons", ("d04_wanfenglin_ten_thousand_peak_fores", 1), "峰丛与金黄坝子 s0.19"),
-    ],
-    "WBSZX1": [
-        # D6 珠海渔女:换掉 #5(雾中 s0.13)和 #1(隔山雾 s0.19)
-        ("commons", ("d06_zhuhai_fisher_girl_statue_lovers_r", 2), "海中礁石上的渔女与城市,蓝天 s0.53"),
-        ("commons", ("d06_zhuhai_fisher_girl_statue_lovers_r", 3), "观景平台与渔女 s0.41"),
-        ("commons", ("d06_zhuhai_fisher_girl_statue_lovers_r", 4), "「珠海渔女」题名石 s0.38"),
-        # D3 佛山祖庙:换掉 #6(带 GPS 但 s0.11,灰)
-        ("commons", ("d03_foshan_ancestral_temple", 1), "庙宇屋脊与棕榈,蓝天 s0.43"),
-        ("commons", ("d03_foshan_ancestral_temple", 5), "红墙与金字牌匾 s0.37"),
-        ("commons", ("d03_foshan_ancestral_temple", 4), "石狮与庙门 s0.26"),
-        # D4 广州塔:#1 分最高(1.08)但画面里不是广州塔,主体错,不选
-        ("commons", ("d04_canton_tower_guangzhou", 3), "塔与城市、珠江,蓝天 s0.38"),
-        ("commons", ("d04_canton_tower_guangzhou", 4), "夜间彩光塔与江 s0.34"),
-        ("commons", ("d04_canton_tower_guangzhou", 5), "粉光夜景 s0.26"),
-        # D4 珠江夜游(册子上的必需自费项目):#2 是全部候选里最亮的一张
-        ("commons", ("d04_pearl_river_night_cruise_guangzhou", 2), "游船与斜拉桥夜景 s0.75"),
-        ("commons", ("d04_pearl_river_night_cruise_guangzhou", 3), "蓝光游船,带 GPS s0.32"),
-        # D4 花城广场:换掉 #4(题名石但 s0.06)和 #5
-        ("commons", ("d04_huacheng_square_guangzhou_cbd_skyl", 3), "CBD 塔楼,蓝天 s0.39"),
-        ("commons", ("d04_huacheng_square_guangzhou_cbd_skyl", 1), "东塔西塔,蓝天 s0.20"),
-        ("commons", ("d04_huacheng_square_guangzhou_cbd_skyl", 2), "现代建筑与绿地 s0.31"),
-        # D2 顺峰山牌坊
-        ("commons", ("d02_shunfeng_mountain_archway_shunde_f", 1), "夜间灯光牌坊 s0.38"),
-        ("commons", ("d02_shunfeng_mountain_archway_shunde_f", 2), "牌坊与园景 s0.26"),
-        # D5 赤坎古镇
-        ("commons", ("d05_chikan_ancient_town_arcade_archite", 2), "河涌与骑楼群 s0.21"),
-        # D7 深中通道:**整块弃用**。六张全是灰海灰天的高速公路,最好的
-        # #1 也只有 s0.15,低于闸门。一张灰色的高速照片不是卖点,宁可这张卡空着。
-    ],
-    # 2026-08-15 WBLJG9(id 419,云南)。245 张候选(③107 + ④138)逐块看过。
-    # 这是第一个「行程文本来自生产、不是册子」的产品,也是第一个 ④ 和 ③ 一起
-    # 参与景点卡的产品——6.06 之后 stock 才被放进这一层,理由见 trip_pool。
-    #
-    # 三处按主体价值压过美学分的:
-    #   lijiang_old_town S3(s0.456,全块最高)是香格里拉松赞林寺,**弃**;
-    #   baisha_town C4/C5/C6(三张)是丽江的蓝色动车组,查询词退化撞的,**弃**;
-    #   jade_dragon C3(s0.414)画面是印象丽江的红色剧场,不是雪山,**弃**。
-    # 一处相反、美学分和主体刚好一致:impression_lijiang C2(s0.612)是全块
-    # 唯一真的演出场地,同时也是最饱和的一张。
-    "WBLJG9": [
-        # D2 双廊古镇
-        ("commons", ("d02_shuanglang_town", 5), "洱海边古镇航拍,秋色+湖蓝 s0.393"),
-        ("commons", ("d02_shuanglang_town", 1), "湖上玻璃观景台 s0.376"),
-        # D2 大理古城(洋人街另算)
-        ("stock", ("d02_dali_ancient_city", 3), "城门牌坊街景,蓝天 s0.407"),
-        ("commons", ("d02_dali_ancient_city", 5), "南城楼与人流 s0.269"),
-        # D2 洋人街:夜市霓虹正是这条街的样子,而且是全块最饱和的
-        ("commons", ("d02_dali_old_town_street", 3), "夜市霓虹招牌 s0.522"),
-        ("commons", ("d02_dali_old_town_street", 4), "夜街店铺 s0.429"),
-        # D2 理想邦 → 洱海。整块 12 张里 8 张低于闸门,是这个产品最灰的一块。
-        ("stock", ("d02_erhai_lake_dali", 6), "洱海石桥与绿岸,全块唯一达标的构图 s0.444"),
-        # D3 洱海日出(龙龛码头)
-        ("commons", ("d03_erhai_lake_sunrise", 2), "深蓝洱海与积云 s0.484"),
-        # D3 喜洲古镇:金色稻田配白族民居,喜洲的标志画面
-        ("commons", ("d03_xizhou_town_dali", 1), "稻田与白族民居 s0.547"),
-        ("stock", ("d03_xizhou_town_dali", 2), "白墙民居院落,蓝天 s0.293"),
-        # D3 金花打跳 / 白族服饰
-        ("stock", ("d03_bai_people_traditional_costume", 5), "街头打跳,盛装群舞 s0.327"),
-        ("commons", ("d03_bai_people_traditional_costume", 1), "白族妇女表演 s0.367"),
-        # D3 扎染:这一块是全产品最好的,过程 + 成品都有
-        ("stock", ("d03_bai_tie_dye_textile", 6), "手浸靛蓝染缸,过程 s0.498"),
-        ("stock", ("d03_bai_tie_dye_textile", 3), "橙墙前展开扎染布 s0.431"),
-        # D4 泸沽湖
-        ("commons", ("d04_lugu_lake", 3), "绿丘环抱的湖湾 s0.461"),
-        # D4 里格半岛 / 情人滩
-        ("stock", ("d04_lige_peninsula_lugu_lake", 1), "蓝湖与半岛全景 s0.542"),
-        ("commons", ("d04_lige_peninsula_lugu_lake", 3), "里格半岛俯瞰,岛形清楚 s0.296"),
-        # D4 摩梭篝火:没有一张真的篝火晚会。C2/C4 分更高(0.605/0.741)但族属
-        # 存疑(看着更像彝族/藏族),按「宁可不用也不错标民族」取 C6。
-        ("commons", ("d04_mosuo_people", 6), "木楞房前两位盛装妇女,族属可辨 s0.561"),
-        # D5 泸沽湖日出。这里要**三张**,不是因为要挂三张,是因为 D4 也是泸沽湖:
-        # token 匹配分不出「Lugu Lake」和「Lugu Lake sunrise」(两者都是 1.00),
-        # 而 D4 先被处理、max_reuse=1,所以 D4 的卡会先把日出这张吃掉,D5 那张
-        # 名字就叫「Lugu Lake Sunrise」的卡反而空着。多备两张,让 D4 吃饱之后
-        # D5 还有得挑。
-        ("stock", ("d05_lugu_lake_sunrise", 5), "金色日出与船影 s0.449"),
-        ("stock", ("d05_lugu_lake_sunrise", 2), "晨雾中的日出湖面 s0.283"),
-        ("stock", ("d05_lugu_lake_sunrise", 1), "朝霞映雪峰与村舍 s0.261"),
-        # D5 猪槽船与里务比岛:橙色猪槽船就是这张卡的正主
-        ("stock", ("d05_liwubi_island_lugu_lake", 4), "摩梭人划猪槽船 s0.472"),
-        ("commons", ("d05_liwubi_island_lugu_lake", 1), "湖中岛屿与蓝湖 s0.446"),
-        # D6 玉龙雪山
-        ("stock", ("d06_jade_dragon_snow_mountain", 5), "石桥前雪峰,蓝天明信片 s0.458"),
-        ("stock", ("d06_jade_dragon_snow_mountain", 4), "雪峰特写 s0.412"),
-        ("stock", ("d06_jade_dragon_snow_mountain", 2), "木栈道通向雪山 s0.375"),
-        # D6 蓝月谷 / 白水河
-        ("stock", ("d06_blue_moon_valley_lijiang", 6), "松绿水与秋林 s0.520"),
-        ("stock", ("d06_blue_moon_valley_lijiang", 2), "白水河阶梯状水台 s0.275"),
-        # D6 印象丽江:全块唯一真的演出场地
-        ("commons", ("d06_impression_lijiang_show", 2), "红色梯形剧场与雪山 s0.612"),
-        # D7 玉湖村:C1 是唯一真的玉湖村(石头房),stock 六张全是别处
-        ("commons", ("d07_yuhu_village_lijiang", 1), "石砌院落与草地 s0.310"),
-        # D7 白沙古镇
-        ("commons", ("d07_baisha_town_lijiang", 3), "集市与纳西妇女盛装 s0.353"),
-        ("commons", ("d07_baisha_town_lijiang", 1), "夯土墙巷道 s0.307"),
-        # D8 黑龙潭
-        ("stock", ("d08_black_dragon_pool_lijiang", 4), "得月楼与玉龙雪山,标志构图 s0.379"),
-        ("commons", ("d08_black_dragon_pool_lijiang", 6), "五孔桥与雪山 s0.394"),
-        # D8 丽江古城与四方街
-        ("commons", ("d08_lijiang_old_town", 4), "木构商铺石板街 s0.449"),
-        ("commons", ("d08_lijiang_old_town", 1), "古城夜景 s0.448"),
-        ("commons", ("d08_lijiang_old_town", 5), "大水车,古城入口标志 s0.261"),
-    ],
-    # 2026-08-15 WBXMNM(id 413,闽南 + 潮汕)。233 张候选(③89 + ④144)逐块看过。
-    #
-    # **这个产品和云南不是一个量级,原因是潮汕属于长尾。** D3(揭阳/汕头)那五块
-    # 里,stock 返回的是西安城墙(进贤门那块 6 张里 4 张)、皖南宏村(小公园和棉湖
-    # 两块)、北京颐和园和台北中正纪念堂(揭阳学宫那块);Commons 有真货但基本在
-    # 闸门以下。潮州牌坊街 6 张 Commons **全部**低于 0.181。
-    #
-    # 因此有 6 张卡是**故意空着**的,不是漏了:
-    #   D1 洛伽寺 / 侨批馆 —— 只有「某座闽南庙」「某栋殖民风建筑」,认不出是它;
-    #   D3 棉湖古镇 —— 能用的全是皖南;
-    #   D3 小公园 —— 唯一真的那张(C1)只有 s0.100,而闸门以上的全是宏村;
-    #   D5 乳胶商场 —— 购物点,不是景点;退化搜 'Free Trade Zone' 还搜回了一张
-    #                  尼日利亚 Lekki 自贸区的地图(GPS 已标出不在行程范围);
-    #   D5 毓园 —— 林巧稚纪念园,Commons 0 张,stock 全是鼓浪屿泛拍。
-    # 按 3.4:卖这条线路配别处的照片,问题不是侵权是广告不实。宁可空。
-    "WBXMNM": [
-        # D1 蟳埔村簪花 —— 这一块是全产品最好的,蚵壳厝和簪花都是独有的
-        ("commons", ("d01_xunpu_village_quanzhou", 4), "盛装簪花妇女在宫庙前 s0.368"),
-        ("commons", ("d01_xunpu_village_quanzhou", 3), "蚵壳厝墙面,蟳埔独有 s0.338"),
-        # D1 西街与开元寺
-        ("stock", ("d01_quanzhou_west_street_kaiyuan_templ", 3), "开元寺东西塔近景,蓝天 s0.375"),
-        ("commons", ("d01_quanzhou_west_street_kaiyuan_templ", 5), "双塔越过红瓦屋顶 s0.324"),
-        # D2 潮州古城:没有一张标准「古城全景」,用潮汕嵌瓷屋脊代表
-        ("stock", ("d02_chaozhou_ancient_city", 6), "金red描金屋脊,潮汕庙宇 s0.418"),
-        ("stock", ("d02_chaozhou_ancient_city", 4), "嵌瓷屋脊人物,潮汕工艺 s0.309"),
-        # D2 牌坊街:Commons 六张全部低于闸门,只能用 stock 这一张
-        ("stock", ("d02_chaozhou_paifang_street_archways", 1), "牌坊与红灯笼,蓝天 s0.256"),
-        # D2 广济楼
-        ("commons", ("d02_guangji_gate_chaozhou", 6), "城楼与城墙,暮色 s0.207"),
-        ("commons", ("d02_guangji_gate_chaozhou", 4), "城楼正面,蓝天 s0.197"),
-        # D2 入梦潮州:两张潮剧扮相,是全产品最饱和的一组
-        ("stock", ("d02_chaozhou_night_performance", 2), "潮剧武生扮相 s0.662"),
-        ("stock", ("d02_chaozhou_night_performance", 6), "潮剧青衣扮相 s0.438"),
-        # D2 湘子桥
-        ("commons", ("d02_guangji_bridge_chaozhou", 2), "桥上亭阁与彩旗 s0.484"),
-        ("commons", ("d02_guangji_bridge_chaozhou", 3), "十八梭船连成的浮桥段 s0.363"),
-        # D3 揭阳学宫
-        ("commons", ("d03_jieyang_confucian_temple", 3), "大成门朱漆门扇 s0.476"),
-        ("commons", ("d03_jieyang_confucian_temple", 2), "太和元气红照壁 s0.272"),
-        # D3 中山骑楼街。**标注:骑楼是粤东到广府共有的形制,这张核不到具体城市。**
-        # 按 6.8 的规矩,这类替代必须写出来,而且不重复使用。
-        ("stock", ("d03_shantou_qilou_arcade_street", 5), "骑楼商行街景,城市未核实 s0.309"),
-        # D3 进贤门:Commons C1 是唯一真的进贤门(stock 六张里四张是西安城墙)
-        ("commons", ("d03_jinxian_gate_jieyang", 1), "进贤门城楼与绿化 s0.218"),
-        # D4 土楼。**标注:行程写的是饶平道韵楼(八角形),这两张是通用福建土楼。**
-        ("stock", ("d04_fujian_tulou_earthen_building", 4), "土楼檐口与红灯笼,蓝天 s0.412"),
-        ("stock", ("d04_fujian_tulou_earthen_building", 5), "圆楼外观与入口 s0.196"),
-        # D4 漳州古城
-        ("stock", ("d04_zhangzhou_ancient_city", 5), "古城屋顶与塔 s0.337"),
-        ("stock", ("d04_zhangzhou_ancient_city", 2), "院落盆景与老树 s0.395"),
-        # D4 漳州文庙
-        ("commons", ("d04_zhangzhou_confucian_temple", 5), "大成殿梁架斗拱 s0.445"),
-        ("commons", ("d04_zhangzhou_confucian_temple", 1), "大成殿与月台 s0.200"),
-        # D5 鼓浪屿
-        ("commons", ("d05_gulangyu_island_xiamen", 1), "环岛夜景 s0.461"),
-        ("stock", ("d05_gulangyu_island_xiamen", 3), "轮渡码头与岛景 s0.319"),
-        # D5 万国建筑
-        ("commons", ("d05_gulangyu_colonial_architecture", 2), "山坡老别墅群 s0.319"),
-        ("commons", ("d05_gulangyu_colonial_architecture", 1), "红瓦屋顶密集俯瞰 s0.316"),
-        # D5 龙头路:Commons 是唯一拍到真商业街的,stock 全是航拍泛景
-        ("commons", ("d05_gulangyu_longtou_road_beach", 4), "龙头路人流商铺 s0.252"),
-        # D6 南普陀寺
-        ("commons", ("d06_nanputuo_temple_xiamen", 4), "大悲殿匾额与彩绘 s0.509"),
-        ("commons", ("d06_nanputuo_temple_xiamen", 1), "天王殿正面与香客 s0.310"),
-        # D6 沙坡尾
-        ("stock", ("d06_shapowei_xiamen_harbour", 5), "日落渔船与海面 s0.364"),
-        ("commons", ("d06_shapowei_xiamen_harbour", 1), "避风坞彩色渔船 s0.311"),
-    ],
-    # WB9XMN 粤东(潮汕/梅州/河源)。35 张卡里只有 15 张拿得到图,而这不是
-    # 挑得不够狠——粤东和 WBXMNM 的 D3 是同一条长尾:Commons 有 8 个主体整块
-    # 返回 0(祠堂、古寨、围龙屋、道韵楼、客家博物馆、甲第巷、陈慈黉故居、
-    # 骑楼街),stock 在这一带的失败模式是 6.7 记的那一类,而且这一轮又添了
-    # 三条新的,都是分数漂亮、地方不对:
-    #   广济桥 stock#3 图注写「iconic Guangji Bridge」,画面是绿水里的养殖架;
-    #   广济楼 stock#3 s0.451 是**福州**府城隍庙(匾额看得清清楚楚);
-    #   潮州古城 stock#6 s0.418 图注自己写着 in Beijing。
-    # 另有一整类「真的但灰」:小公园唯一真图 s0.100(和 413 同一张)、
-    # 潮州老城古民居 6 张 0.088–0.148、牌坊街 Commons 6 张 0.055–0.175。
-    # 按 3.4 全部留空,逐条见交付说明。
-    "WB9XMN": [
-        # D1 花城广场:两张都带 GPS。stock 那组分最高的 #2 s0.646 是珠江夜景
-        # 天际线,不是广场本身,所以它去了 section。
-        ("commons", ("d01_huacheng_square_guangzhou", 3), "广场与歌剧院 gpsOK s0.389"),
-        ("commons", ("d01_huacheng_square_guangzhou", 2), "广场绿地与塔群 gpsOK s0.313"),
-        # D1 广州塔:Commons #1 标题写着 Bank of Guangzhou Tower,画面里是两栋
-        # 玻璃写字楼,根本没有广州塔——分 s0.401 排在前面,已排除。
-        ("stock", ("d01_canton_tower", 2), "圆形取景框中的广州塔 s0.543"),
-        ("commons", ("d01_canton_tower", 4), "广州塔与城市天际线 gpsOK s0.383"),
-        # D1 永庆坊
-        ("commons", ("d01_yongqingfang_guangzhou", 3), "永庆大街 gpsOK s0.284"),
-        ("commons", ("d01_yongqingfang_guangzhou", 4), "永庆坊街景 s0.234"),
-        # D1 李小龙祖居:行程把它写成佛山,但祖居实际在广州荔湾永庆坊,
-        # Commons 六张的标题和 GPS 都指向那里,和行程顺序(紧接永庆坊)也对得上。
-        # stock 那六张是佛山祖庙、佛山中山公园,主体就不对。
-        ("commons", ("d01_bruce_lee_ancestral_home_foshan", 3), "祖居展陈空间 s0.321"),
-        ("commons", ("d01_bruce_lee_ancestral_home_foshan", 4), "祖居厅堂 s0.255"),
-        # D2 打铁街:Commons 六张分别在芬兰、阿拉斯加、爱尔兰、威斯康星,
-        # 没有一张在中国。留下的这两张是打铁本身的特写,画面里没有可辨识的
-        # 地点,属于「示意工艺」而不是「宣称地点」。
-        ("stock", ("d02_blacksmith_forge_workshop", 5), "锻打火星,无可辨识地点 s0.586"),
-        ("stock", ("d02_blacksmith_forge_workshop", 6), "烧红的铁与锤 s0.346"),
-        # D2 无米粿:Commons 六张是澄海的虾干标本(带 GPS 但主体是干货不是粿)。
-        ("stock", ("d02_chaoshan_street_food_dumpling", 1), "蒸笼粿品 s0.662"),
-        # D2 揭阳古城(学宫):六张全部带 GPS,是这个产品里最干净的一块。
-        ("commons", ("d02_jieyang_confucian_temple", 3), "学宫朱扉与斗拱 gpsOK s0.476"),
-        ("commons", ("d02_jieyang_confucian_temple", 2), "学宫红墙 gpsOK s0.272"),
-        # D2 龙眼南路美食街:这两张图注写的是揭阳,不是汕头。当天行程正好
-        # 惠州→揭阳→汕头,同属潮汕,所以留着——但它不是那条街,交付说明里点名。
-        # 同块 stock#4 s0.521 那张调色很好看的巷子,图注自己写着北京,已排除。
-        ("stock", ("d02_chaoshan_night_food_street", 5), "揭阳街头小吃摊 s0.536"),
-        ("stock", ("d02_chaoshan_night_food_street", 6), "揭阳夜市炉火 s0.369"),
-        # D3 南澳大桥:桥塔上「南澳大桥」四个字在图里认得出来。stock 六张分别
-        # 是海口世纪大桥、重庆、大连,全是别处的桥。
-        ("commons", ("d03_nan_ao_bridge_shantou", 3), "南澳大桥夜景,桥名可辨 s0.509"),
-        # D3 长山尾灯塔:标题带「南澳島長山尾燈塔」,背景就是南澳大桥。
-        ("commons", ("d03_changshanwei_lighthouse_nan_ao", 2), "灯塔与南澳大桥,蓝天 s0.435"),
-        # D3 鱼排出海:Commons 是美国国家档案馆和加拿大的蚝场。留下的两张
-        # 画面里只有海和渔排,不指向任何地点,配「出海体验」这张活动卡成立。
-        ("stock", ("d03_oyster_raft_aquaculture_sea", 6), "渔排航拍与作业船 s0.346"),
-        ("stock", ("d03_oyster_raft_aquaculture_sea", 4), "海上渔排群 s0.271"),
-        # D4 广济桥:浮桥段的红船,是这座桥最认得出来的一段。
-        ("commons", ("d04_guangji_bridge_chaozhou", 3), "广济桥浮桥红船 s0.363"),
-        # D4 广济楼:带 GPS 的三张都在闸门以下,这张 0.207 是唯一够线的真图。
-        ("commons", ("d04_guangji_gate_chaozhou", 6), "广济门城楼 s0.207"),
-        # D6 雁南飞:六张文件名就是 Yannanfei Tea Garden,全部够线。stock 那几张
-        # 更艳的是杭州龙井和南京,已排除。整块偏雾,分数比肉眼观感乐观。
-        ("commons", ("d06_yannanfei_tea_plantation_meizhou", 3), "茶田花径与场部 s0.369"),
-        ("commons", ("d06_yannanfei_tea_plantation_meizhou", 2), "茶垄与林 s0.327"),
-        # D7 万绿湖:#5 文件名写新丰江水库,那正是万绿湖的本名。
-        ("commons", ("d07_wanlu_lake_heyuan", 4), "万绿湖正午,湖心岛与沙洲 s0.433"),
-        ("commons", ("d07_wanlu_lake_heyuan", 1), "东源码头 s0.328"),
-    ],
-    # WBYNG 怒江+梅里+香格里拉。25 张卡里 13 张有图。这个产品的失败模式和
-    # 粤东不一样:不是「没有」,是**同名异地**,而且四条都是分数最高的那张:
-    #   普化寺 Commons 六张全在**山西五台山**(#2 s0.556);
-    #   老虎跳 Commons 六张在**法国 Verdon 峡谷**和**俄勒冈 Columbia 峡谷**;
-    #   龟山转经筒 Commons 六张全在**台湾桃园龟山**(其中一张是 M41 坦克);
-    #   江边文化走廊 Commons 是**缅甸萨尔温江**(怒江出境后的名字),
-    #     还混进了一张流量柱状图和一张流域地图。
-    # 傈僳族那一块唯一的 Commons 是**泰国 Tha Ton** 的傈僳族少女,人对国别不对。
-    "WBYNG": [
-        # D2 勐焕大金塔:金孔雀 + 傣式金塔,德宏的形制,和芒市这座对得上。
-        # 同块 stock#4 s0.860 是香格里拉的转经筒,已让它回到 D7 该去的卡上。
-        ("commons", ("d02_menghuan_golden_pagoda_mangshi", 1), "大金塔与金孔雀 s0.295"),
-        # D2 怒江大峡谷:这一块 stock 六张里五张图注直接写 Nujiang Valley,
-        # 是整个产品最可靠的一组。#1 是虎跳峡(金沙江,不是怒江),已排除。
-        ("stock", ("d02_nujiang_grand_canyon", 6), "峡谷村落与云上雪山 s0.581"),
-        ("stock", ("d02_nujiang_grand_canyon", 4), "怒江河谷航拍 s0.406"),
-        # D3 登埂澡堂会:江边的石砌浴池和木桩,就是澡堂会那片河滩。
-        ("commons", ("d03_nujiang_hot_spring_riverside", 1), "登埂澡堂江边浴池 s0.272"),
-        # D3 知子罗:带 GPS 的航拍,2024 年拍的。
-        ("commons", ("d03_zhiziluo_abandoned_town_nujiang", 1), "知子罗航拍 gpsOK s0.264"),
-        # D3 老姆登教堂:六张全部带 GPS。stock#1 是德钦茨中教堂,另一座,已排除。
-        ("commons", ("d03_laomudeng_church_nujiang", 4), "教堂内部 gpsOK s0.270"),
-        ("commons", ("d03_laomudeng_church_nujiang", 2), "教堂侧面 gpsOK s0.234"),
-        # D4 怒江第一湾:马蹄形河湾,一眼认得出。同块 #2 s0.596 是一张
-        # **肯塔基与田纳西州地图**的书页扫描,分数比真图高。
-        ("commons", ("d04_first_bend_nu_river_bingzhongluo", 1), "怒江第一湾 s0.247"),
-        # D5 飞来寺:#5#6 都是寺内实拍且够亮,#3 带 GPS。
-        ("commons", ("d05_feilai_temple_deqin", 5), "飞来寺内部 s0.672"),
-        ("commons", ("d05_feilai_temple_deqin", 6), "飞来寺迎宾 s0.568"),
-        # D5 东竹林寺:四张带 GPS,法鼓那张 0.646 是整个产品最亮的 Commons。
-        ("commons", ("d05_dongzhulin_monastery_shangri_la", 6), "东竹林寺法鼓 gpsOK s0.646"),
-        ("commons", ("d05_dongzhulin_monastery_shangri_la", 3), "东竹林寺全景 gpsOK s0.412"),
-        # D6 飞来寺观景台:观景台看出去就是这条梅里全景。
-        ("commons", ("d06_feilai_temple_viewing_platform_mei", 2), "梅里雪山全景 s0.523"),
-        # D6 日照金山:Commons 是白天的卡瓦格博峰,stock#1 才是金顶那一刻。
-        # 两张都实拍梅里,一张给形一张给「日照金山」这四个字。
-        ("commons", ("d06_meili_snow_mountain_kawagarbo_sunr", 1), "卡瓦格博峰 s0.556"),
-        ("stock", ("d06_meili_snow_mountain_kawagarbo_sunr", 1), "梅里日照金山 s0.276"),
-        # D7 松赞林寺:六张 panoramio 全是真的,挑最亮的两张。
-        ("commons", ("d07_songzanlin_monastery_shangri_la", 3), "松赞林寺全景 s0.515"),
-        ("commons", ("d07_songzanlin_monastery_shangri_la", 4), "松赞林寺经堂 s0.514"),
-        # D7 独克宗古城:六张都带 GPS,但五张在闸门以下,只有这张够线。
-        ("commons", ("d07_dukezong_ancient_town_shangri_la", 4), "古城天际线 gpsOK s0.222"),
-        # D7 龟山转经筒:Commons 整块是台湾桃园,stock 这两张图注写明香格里拉。
-        ("stock", ("d07_guishan_park_giant_prayer_wheel_sh", 1), "巨型转经筒暮色 s0.860"),
-        ("stock", ("d07_guishan_park_giant_prayer_wheel_sh", 2), "藏式殿宇与经幡 s0.263"),
-    ],
-    # WBWUX6 江南水乡。这是到目前为止图源最好的一条线:15/21 张卡有图,而且
-    # 几乎全部来自 Commons 且带 GPS。留空的三张各有各的原因,不是同一类:
-    #   惠山古镇 —— 六张全是真的,但 0.075–0.197 全在闸门附近以下,唯一够线的
-    #     C4 是**地铁站站台**;stock 那几张金光灿灿的夜景水乡一张都没写是哪里。
-    #   太湖古镇 —— Commons 退化成了太湖/苏州泛图(其中 C1 是一张**吴语方言
-    #     分布图**),stock 六张图注全写 Suzhou,而这张卡是湖州长兴的现代度假镇。
-    #   1192弄 / 相门城墙 —— 前者是室内仿老上海街,后者 Commons 整块 0。
-    # 另外两处按图注排除的:河坊街 stock#2#6 图注自己写着 Nanjing;
-    # 拈花湾 stock#4 画面里的匾额是**鼋头渚**,无锡另一个景点。
-    "WBWUX6": [
-        # D1 拈花湾:六张全部带 GPS。C1 是夜间蓝调灯光,整个产品最亮的一张。
-        ("commons", ("d01_nianhua_bay_wuxi", 1), "拈花湾夜景蓝调 gpsOK s0.655"),
-        ("commons", ("d01_nianhua_bay_wuxi", 6), "紫花田与小镇 gpsOK s0.275"),
-        # D1 薛家花园:六张真的里只有这张够线,其余 0.070–0.156。
-        ("commons", ("d01_former_residence_of_xue_fucheng_wu", 4), "故居厅堂陈设 gpsOK s0.232"),
-        # D2 长广溪
-        ("commons", ("d02_changguangxi_wetland_park_wuxi", 1), "湿地木栈道 gpsOK s0.384"),
-        ("commons", ("d02_changguangxi_wetland_park_wuxi", 6), "芦苇与水塘 s0.270"),
-        # D3 南浔:六张全部带 GPS。C6 是拱桥灯光在水面合成整圆。
-        ("commons", ("d03_nanxun_ancient_town", 6), "拱桥灯影成圆 gpsOK s0.591"),
-        ("commons", ("d03_nanxun_ancient_town", 2), "夜色石桥与河房 gpsOK s0.322"),
-        # D3 西湖:stock#1 图注写的是集贤亭,西湖实景。
-        ("stock", ("d03_west_lake_hangzhou", 1), "集贤亭夜景 s0.444"),
-        ("commons", ("d03_west_lake_hangzhou", 1), "湖上游船 s0.295"),
-        # D3 河坊街
-        ("commons", ("d03_hefang_street_hangzhou", 6), "木构商铺立面 gpsOK s0.399"),
-        ("commons", ("d03_hefang_street_hangzhou", 5), "街景与店招 gpsOK s0.321"),
-        # D4 城隍庙:金身神像那两张是整个产品饱和度最高的。
-        ("commons", ("d04_city_god_temple_shanghai", 4), "大殿金身神像 gpsOK s0.859"),
-        ("commons", ("d04_city_god_temple_shanghai", 1), "彩塑神像与供器 gpsOK s0.702"),
-        # D4 龙井:卡的正文是采茶,所以留了一张采茶人。
-        ("commons", ("d04_longjing_tea_plantation_hangzhou", 2), "茶垄与红墙 s0.422"),
-        ("commons", ("d04_longjing_tea_plantation_hangzhou", 4), "采茶人与茶篓 s0.387"),
-        # D4 外滩
-        ("commons", ("d04_the_bund_shanghai", 4), "外滩万国建筑夜景 s0.502"),
-        ("commons", ("d04_the_bund_shanghai", 1), "外滩与江面航拍夜景 s0.487"),
-        # D5 陆家嘴:卡名写的是空中环形走廊,stock 里有一张疑似环形天桥但没写
-        # 是哪儿,没敢用;这两张是 Commons 标着 Lujiazui 的实景。
-        ("commons", ("d05_lujiazui_shanghai", 5), "陆家嘴天际线 gpsOK s0.288"),
-        ("commons", ("d05_lujiazui_shanghai", 3), "浦东三件套 s0.261"),
-        # D5 南京路:六张全部带 GPS,而且整块都在 0.40 以上。
-        ("commons", ("d05_nanjing_road_pedestrian_street_sha", 4), "南京路人潮霓虹 gpsOK s0.650"),
-        ("commons", ("d05_nanjing_road_pedestrian_street_sha", 5), "环形骑楼夜色 gpsOK s0.612"),
-        # D5 田子坊
-        ("commons", ("d05_tianzifang_shanghai", 4), "弄堂店面绿窗 gpsOK s0.408"),
-        ("commons", ("d05_tianzifang_shanghai", 3), "弄堂转角 gpsOK s0.401"),
-        # D5 武康路:stock#3 是车流光轨,形制一眼认得出是武康大楼。
-        ("stock", ("d05_wukang_mansion_shanghai", 3), "武康大楼车流光轨 s0.552"),
-        ("commons", ("d05_wukang_mansion_shanghai", 3), "武康大楼街角 s0.353"),
-        # D5 山塘街:卡名带「夜景」,但 stock 那几张漂亮的夜景水巷没有一张
-        # 写明是山塘,所以还是用 Commons 标着 Shantang 的白天实景。
-        ("commons", ("d05_shantang_street_suzhou", 5), "山塘市集摊档 s0.316"),
-        ("commons", ("d05_shantang_street_suzhou", 1), "山塘河与河房 gpsOK s0.238"),
-        # D6 平江路
-        ("commons", ("d06_pingjiang_road_suzhou", 2), "平江河与石拱桥 gpsOK s0.457"),
-        ("commons", ("d06_pingjiang_road_suzhou", 1), "桥上俯看平江河 gpsOK s0.286"),
-    ],
-    # WBPCSX 张家界 + 凤凰。9/16 张卡有图。核心景点(天门山六张全 gpsOK、
-    # 国家森林公园五张 gpsOK、黄龙洞整块 0.34–0.72)是所有产品里最扎实的一批;
-    # 废掉的集中在两处,而且是这一轮**退化搜索最离谱的两个块**:
-    #
-    #   金鞭溪 Commons 六张:五张 19 世纪版画和一张维多利亚时代肖像,
-    #     第六张 s0.407 图注写着 ROAD THROUGH GOLDEN GATE CANYON,
-    #     **YELLOWSTONE PARK** —— 美国黄石。
-    #   十里画廊 Commons 六张:**地球卫星照**、一张飓风云图、**火卫一 Phobos**、
-    #     一条医院走廊、一张大气层照片,外加一张铅笔速写。
-    #
-    # 「Golden Whip」和「Ten Mile Gallery」这两个词组退化之后就不再指向任何
-    # 中国地名了,这是 3.35 那条「每多一个词就少一批结果」的另一面:词掉光之后
-    # 剩下的是通用英文词,搜出来的东西可以离题到另一个星球。
-    #
-    # D3 整天四个主体(茶峒、翠翠岛、军声画院、七十二奇楼)Commons 全部返回 0,
-    # stock 给的是张家界山景和凤凰河景 —— 都不是那四个地方。七十二奇楼那块
-    # stock#3 图注写的是 **Fortification of Xian**(西安城墙),和 413 抓到的
-    # 是同一张同一类。袁家界 Commons 两张真的都在闸门下(0.165/0.176),
-    # stock 是通用张家界峰林,认不出是袁家界。
-    "WBPCSX": [
-        # D2 凤凰古城
-        ("commons", ("d02_fenghuang_ancient_town", 4), "沱江与吊脚楼 s0.398"),
-        ("commons", ("d02_fenghuang_ancient_town", 3), "江上小舟与塔 s0.370"),
-        # D2 沱江游船:stock#4 图注写明 Phoenix Ancient Town along the Tuo River。
-        ("stock", ("d02_tuojiang_river_fenghuang", 4), "沱江夜色灯火 s0.532"),
-        ("commons", ("d02_tuojiang_river_fenghuang", 2), "沱江游船 s0.370"),
-        # D2 苗族服饰:stock#4#5 图注自己写着 **Guizhou**(西江千户苗寨),
-        # 这张卡是湘西凤凰的苗族,已排除。留下的两张是 Commons 的银饰实拍。
-        ("commons", ("d02_miao_people_silver_costume_hunan", 6), "苗族银冠 s0.303"),
-        ("commons", ("d02_miao_people_silver_costume_hunan", 2), "苗族盛装与银饰 s0.270"),
-        # D4 天门山:六张全部带 GPS。
-        ("commons", ("d04_tianmen_mountain_zhangjiajie", 2), "崖顶栈道俯瞰 gpsOK s0.371"),
-        ("commons", ("d04_tianmen_mountain_zhangjiajie", 3), "天门山峰峦 gpsOK s0.326"),
-        # D4 土司城:Commons 是园内土家歌舞实拍;stock#6 图注写明 Zhangjiajie,
-        # 画面是土家吊脚楼式的廊桥,比舞台照更像「城」。
-        ("commons", ("d04_tujia_tusi_city_zhangjiajie", 1), "土家歌舞表演 s0.337"),
-        ("stock", ("d04_tujia_tusi_city_zhangjiajie", 6), "土家吊脚楼廊桥 s0.312"),
-        # D5 国家森林公园:五张带 GPS,整块都在 0.28 以上。
-        ("commons", ("d05_zhangjiajie_national_forest_park", 6), "峰林全景 gpsOK s0.519"),
-        ("commons", ("d05_zhangjiajie_national_forest_park", 4), "独峰特写 gpsOK s0.489"),
-        # D6 大峡谷玻璃桥
-        ("commons", ("d06_zhangjiajie_grand_canyon_glass_bri", 1), "玻璃桥全景 gpsOK s0.393"),
-        ("commons", ("d06_zhangjiajie_grand_canyon_glass_bri", 3), "桥面与峡谷 s0.357"),
-        # D7 黄龙洞:整块是这个产品最亮的一组。
-        ("commons", ("d07_yellow_dragon_cave_zhangjiajie", 3), "洞厅彩色灯光 s0.723"),
-        ("commons", ("d07_yellow_dragon_cave_zhangjiajie", 4), "石笋林 s0.619"),
-        # D7 水果采摘:Commons 六张全是 s0.000 的黑白老照片(美国果品包装厂)。
-        # 留下的两张是采摘动作特写,画面里没有可辨识的地点,和鱼排那张一个道理。
-        ("stock", ("d07_orchard_fruit_picking_harvest", 2), "果园采摘,背篓与果树 s0.635"),
-        ("stock", ("d07_orchard_fruit_picking_harvest", 1), "果树下的采摘 s0.585"),
-    ],
-    # WBYNB 腾冲。10/21 张卡有图 —— 这一批里最薄的一个,而且不是挑得不够狠:
-    # 德宏/腾冲和粤东一样是长尾,Commons 6 个主体整块 0、4 个只有 1 张。
-    # stock 在这条线上的失败模式格外集中,**全是同名异地或同类异地**:
-    #
-    #   姐告国门   六张里三张是**喀喇昆仑山口(红其拉甫,中巴边境)**,雪山口岸
-    #   独树成林   Commons 退化成「One Tree Forest」→ 雪地树林、青蛙;
-    #              stock 的大榕树分别在**尼泊尔博卡拉**和**秘鲁 Rioja**
-    #   畹町中缅友谊桥  stock 是建水双龙桥、丽江黑龙潭
-    #   和顺古镇   stock#5#6 图注自己写着 **Lijiang**
-    #   滇西抗战纪念馆  stock 是大理三塔和昆明金殿
-    #   云峰山     stock 是大理三塔、玉龙雪山、元阳梯田
-    #   莫里瀑布   stock 是白水台/蓝月谷(丽江)和九寨沟式钙华
-    #   咖啡庄园   Commons#2 是一张 **Habana(古巴)咖啡种植园**的老明信片
-    #
-    # 「斗南花市」那一块三张 Commons 被 GPS 判成 in_region=False,但那是
-    # **REGION_BOX 的边界问题不是图的问题**:WBYNB 的框是 (23,27,97,101),
-    # 昆明在 102.7,框外。而这条线第 7 天正是保山→昆明,斗南就在昆明。
-    # 图上「斗南花卉电子交易中心」的招牌清清楚楚,是对的。
-    "WBYNB": [
-        # D2 莫里瀑布:整块唯一一张真的。
-        ("commons", ("d02_moli_waterfall_ruili", 1), "林中瀑布 s0.246"),
-        # D2 勐巴拉西珍奇园:这两张是热带花木特写,画面里没有可辨识的地点,
-        # 属于「示意园中植物」而不是宣称地点(和打铁街那两张同一个道理)。
-        # stock 里分数最高的两张是**台北**的天鹅绿雕和**印尼山口洋**,已排除。
-        ("commons", ("d02_dai_tropical_garden_ruili", 2), "鸡蛋花枝 s0.400"),
-        ("commons", ("d02_dai_tropical_garden_ruili", 3), "棕榈叶冠 s0.348"),
-        # D3 勐焕大金塔:傣式金塔配金孔雀,德宏的形制。
-        ("commons", ("d03_menghuan_golden_pagoda_mangshi", 1), "大金塔与金孔雀 s0.295"),
-        # D4 热海
-        ("commons", ("d04_rehai_hot_spring_tengchong", 1), "钙华丘与蒸汽 s0.263"),
-        ("commons", ("d04_rehai_hot_spring_tengchong", 4), "热泉出露口 s0.186"),
-        # D4 和顺古镇:C1 已用作天头图,卡上用牌坊。
-        ("commons", ("d04_heshun_ancient_town_tengchong", 2), "和顺石牌坊 s0.216"),
-        # D5 火山公园:六张都是腾冲那种覆着植被的休眠火山锥。
-        ("commons", ("d05_tengchong_volcano_park", 5), "火山口航拍 s0.385"),
-        ("commons", ("d05_tengchong_volcano_park", 6), "草甸与火山锥 s0.325"),
-        # D5 银杏村:Commons 整块 0。这两张是银杏黄叶覆在村舍瓦顶上,和
-        # 「银杏村」这张卡的主体完全对得上,但图注没写在哪 —— 交付时点名。
-        ("stock", ("d05_jiangdong_ginkgo_village_tengchong", 6), "银杏金叶满树 s0.739"),
-        ("stock", ("d05_jiangdong_ginkgo_village_tengchong", 1), "黄叶与村舍瓦顶 s0.533"),
-        # D6 龙江大桥:Commons 是绿山间的悬索桥实拍;stock 六张全是**重庆**的桥。
-        ("commons", ("d06_longjiang_bridge_tengchong", 3), "桥塔与主缆 s0.358"),
-        ("commons", ("d06_longjiang_bridge_tengchong", 1), "峡谷上的悬索桥 s0.285"),
-        # D6 咖啡庄园:只留这一张——红土坡上的咖啡地,没有可辨识地点。
-        # 同块 C5 是巴西式采收机、C2 是古巴老明信片,都排除了。
-        ("commons", ("d06_coffee_plantation_baoshan_yunnan", 1), "红土坡咖啡地 s0.382"),
-        # D7 斗南花市:招牌和交易大厅都认得出。
-        ("commons", ("d07_dounan_flower_market_kunming", 2), "斗南花卉交易中心门面 s0.246"),
-        ("commons", ("d07_dounan_flower_market_kunming", 3), "交易大厅花车 s0.238"),
-    ],
-    # WBMZ7 澳门/珠海/广州/连州/郴州。10/14 张卡有图,但覆盖是两极的:
-    # 珠三角那半边(港珠澳大桥、广州塔、大佛寺、北京路、珠海渔女)很好,
-    # 粤北湘南那半边(连州、郴州)基本全废。
-    #
-    # 这一轮**退化搜索最离谱的一块**在这里:千年瑶寨。「Nangang Yao Village」
-    # 退成 “Nangang”,而 Nangang = **台北南港**,于是 Commons 三张返回的是
-    # **台北捷运南港站和忠孝复兴站的通车纪念牌**,外加一张 Harbinblue.jpg(哈尔滨)。
-    # 其余各块:连州地下河→广州;莽山五指峰→桂林独秀峰和黄山;龙景大峡谷→
-    # 通用瀑布;仰天湖大草原→**内蒙古风电场**;裕后街→珠海/揭阳/广州。
-    #
-    # 苏仙岭那一块要单独说:Commons 三张都带 GPS 且都在郴州,但它们是**飞天山**,
-    # 郴州的另一座山。GPS 过了、地方也对,**主体不对** —— 这是 GPS 闸门唯一
-    # 拦不住的一类,只能靠看图。
-    #
-    # 湖南白银博物馆返回的是**长沙湖南省博物馆**的楚文化辟邪和宋代银器,
-    # 是另一家博物馆,也排除了。
-    "WBMZ7": [
-        # D1 港珠澳大桥
-        ("commons", ("d01_hong_kong_zhuhai_macau_bridge", 6), "大桥西段 gpsOK s0.325"),
-        ("commons", ("d01_hong_kong_zhuhai_macau_bridge", 1), "跨海段桥面 s0.282"),
-        # D2 千年瑶寨:Commons 整块作废(见上)。这张 stock 图注写明 Qingyuan,
-        # 而南岗千年瑶寨正在清远连南,画面是山坡梯田与寨子,对得上。
-        ("stock", ("d02_nangang_yao_village_liannan", 2), "清远梯田与山村 s0.531"),
-        # D4 东江湖:六张都是 Dongjiang Lake Hunan,四张带 GPS。
-        ("commons", ("d04_dongjiang_lake_zixing", 1), "东江湖全景 s0.439"),
-        ("commons", ("d04_dongjiang_lake_zixing", 5), "湖面与岛屿 gpsOK s0.376"),
-        # D6 广州塔:Commons#1 和 WB9XMN 那次一样,标题是 Bank of Guangzhou Tower,
-        # 画面里是两栋玻璃写字楼,分 0.461 排在最前,已排除。
-        ("stock", ("d06_canton_tower", 2), "圆形取景框中的广州塔 s0.543"),
-        ("commons", ("d06_canton_tower", 4), "珠江两岸航拍 s0.383"),
-        # D6 大佛寺
-        ("commons", ("d06_dafo_temple_guangzhou", 4), "金身护法像 s0.284"),
-        ("commons", ("d06_dafo_temple_guangzhou", 1), "大佛寺殿宇 s0.243"),
-        # D6 北京路
-        ("commons", ("d06_beijing_road_pedestrian_street_gua", 6), "骑楼商铺立面 s0.232"),
-        ("commons", ("d06_beijing_road_pedestrian_street_gua", 3), "步行街人流 s0.195"),
-        # D6 海心沙:整块偏弱(六张里四张是导览牌和出入口),这张是唯一
-        # 既在园里又够线的。
-        ("commons", ("d06_haixinsha_asian_games_park_guangzh", 6), "海心沙与广州塔 s0.198"),
-        # D7 珠海渔女:自由活动那天,渔女像是珠海的城市地标。
-        ("commons", ("d07_zhuhai_fisher_girl_seafront", 2), "渔女像与海 s0.532"),
-        ("commons", ("d07_zhuhai_fisher_girl_seafront", 3), "渔女像近景 s0.413"),
-    ],
-    # WBTFU8 成都 / 九寨沟。11/13 张卡有图,是覆盖率最高的一个产品——
-    # 九寨沟、熊猫、宽窄巷子、锦里都是被拍得最多的中国题材,Commons 和 stock
-    # 两边都够用。诺日朗瀑布那一块有三张 GPS 落在范围外,已按 GPS 排除。
-    #
-    # 「蓝桥夜景」(都江堰南桥)是唯一留空的景点卡:Commons 里真正的南桥
-    # 只有一张 s0.172,在闸门下;stock 分最高的三张分别是**成都安顺廊桥**和
-    # **宜宾**的夜桥 —— 都是别处的桥。
-    "WBTFU8": [
-        # D2 圣水寺:六张全部带 GPS(绵阳涪城)。
-        ("commons", ("d02_shengshui_temple_mianyang", 5), "寺院殿宇 gpsOK s0.467"),
-        ("commons", ("d02_shengshui_temple_mianyang", 3), "山门与石阶 gpsOK s0.395"),
-        # D3 九寨沟:Commons 和 stock 两边都写明 Jiuzhaigou。
-        ("commons", ("d03_jiuzhaigou_valley", 1), "五花海 s0.510"),
-        ("stock", ("d03_jiuzhaigou_valley", 4), "松绿海子与林 s0.504"),
-        # D3 诺日朗瀑布:#2#4#6 GPS 落在范围外,已排除。
-        ("commons", ("d03_nuorilang_waterfall_jiuzhaigou", 3), "诺日朗瀑布正面 s0.272"),
-        ("commons", ("d03_nuorilang_waterfall_jiuzhaigou", 1), "瀑布与林 s0.248"),
-        # D4 叠溪海子
-        ("commons", ("d04_diexi_haizi_maoxian", 3), "叠溪海子 s0.207"),
-        ("commons", ("d04_diexi_haizi_maoxian", 2), "海子与山 s0.187"),
-        # D5 大熊猫:题材本身只在四川,通用熊猫特写不构成地点主张,所以这里
-        # 让美学分做主,选了两张最亮的。
-        ("stock", ("d05_giant_panda_dujiangyan_base", 4), "熊猫啃竹 s0.625"),
-        ("stock", ("d05_giant_panda_dujiangyan_base", 1), "草地上的熊猫 s0.540"),
-        # D5 钟书阁:镜面螺旋书墙是这个品牌的标志性内景。图注只写 Chengdu 的
-        # 那张没有,所以这两张严格说只能确认「是钟书阁」,不能确认是成都那家 ——
-        # 同一品牌同一套内装,交付时点名。
-        ("stock", ("d05_zhongshuge_bookstore_chengdu", 2), "镜面螺旋书墙 s0.428"),
-        ("stock", ("d05_zhongshuge_bookstore_chengdu", 1), "环形书架 s0.251"),
-        # D5 灌县古城
-        ("commons", ("d05_guanxian_ancient_city_dujiangyan", 1), "灌县古城门楼 s0.299"),
-        # D6 宽窄巷子:两张带 GPS。
-        ("commons", ("d06_kuanzhai_alley_chengdu", 1), "宽窄巷子文物遗址 gpsOK s0.412"),
-        ("commons", ("d06_kuanzhai_alley_chengdu", 4), "巷内葫芦摊 s0.405"),
-        # D7 锦里:Commons 整块只有这一张,但够亮。
-        ("commons", ("d07_jinli_ancient_street_chengdu", 1), "锦里夜巷 s0.608"),
-    ],
-    # WBCKG6 魔幻重庆。11/17 卡。重庆本身好拍,废掉的四张都是**同名异物**或整块 0:
-    #   奎星楼   Commons 0;这是解放碑旁的一条小街,stock 只给通用重庆天际线
-    #   戴家巷   Commons 0;stock 六张全是**张家界**峰林(「cliff walk」撞词)
-    #   金佛山   Commons 0;stock 三张是**桂林**喀斯特(karst 撞词)
-    #   鹅岭二厂 Commons 是黑白室内老照片和一张港口蚀刻版画
-    # 「重庆小食」那一块 Commons 六张全部 GPS-OUT,而且判得对——它们是
-    # **香港佐敦南京街的「蔡記重慶小食」**,一家港式小店。
-    # 「观音桥」是最有意思的一条:它是解放碑对岸的商圈,**不是桥**,而 stock
-    # 六张全是重庆的跨江大桥。Commons 那张地铁站出入口的「观音桥」招牌反而是对的。
-    # ACKMG12T。丽江古城、独克宗、松赞林寺、虎跳峡四张卡由 tours/4 的图库图
-    # 自动匹配拿到(图注出自 Skybear CMS,可信),下面补的是图库覆盖不到的。
-    #
-    # 两块**整块作废**,宁可让卡空着:
-    #   高黎贡山  stock 六张全是**玉龙雪山/蓝月谷**(丽江,相距 400km)——
-    #             雪山配绿松石钙华池,而高黎贡是亚热带森林山脉,形态完全不同;
-    #             Commons 唯一一张是一份红色奖状文书。这是 6.7 那类「主体对、
-    #             地点错」里最容易蒙混过关的一种,因为图本身很漂亮。
-    #   建昌古城  Commons 整块 0;stock 六张没有一张能确认是西昌那一座,
-    #             下面那张只作候选并在 note 里写明未核实。
-    "ACKMG12T": [
-        ("stock", ("d03_chinese_song_dynasty_cultural_salo", 3), "宋式青花茶器,红漆案 s0.518"),
-        ("stock", ("d03_chinese_song_dynasty_cultural_salo", 2), "暖调茶室与红灯笼 s0.761"),
-        ("commons", ("d04_qionghai_lake_xichang", 5), "邛海湿地木栈道 —— 册子写「信步湿地浅岸」 s0.265"),
-        ("stock", ("d04_jianchang_ancient_city_xichang", 6),
-         "古城瓦顶暮色 —— **未核实是否即建昌古城**,只是滇川风格相符 s0.370"),
-        ("stock", ("d04_chinese_lakeside_fisherman_banquet", 3), "渔人撒网 s0.602"),
-        # 丽江古城这一块 Commons 有三张是**一列蓝色动车**(撞了「丽江站」),
-        # 所以两张都从 stock 里取。
-        ("stock", ("d05_shangri_la_diqing_yunnan", 5), "经幡塔与草原湖泊 s0.369"),
-        ("stock", ("d05_lijiang_ancient_town_yunnan", 5), "丽江瓦顶与玉龙雪山 s0.557"),
-        ("commons", ("d06_ganden_sumtseling_monastery_shangr", 4), "红桥上的僧人与松赞林寺 s0.327"),
-        ("commons", ("d06_thangka_painting_tibetan_buddhist_", 1), "唐卡画作 s0.749"),
-        ("stock", ("d07_tiger_leaping_gorge_jinsha_river_y", 2), "虎跳石与松绿激流 s0.283"),
-        ("stock", ("d07_tiger_leaping_gorge_jinsha_river_y", 3),
-         "峡谷栈道与浊浪 —— 册子写的那条 6 公里徒步 s0.303"),
-        # 保山这一块有个同名陷阱:Commons 里画面最好的两张(C2/C3 悬崖上的石头
-        # 村落)是**丽江的宝山石头城**,不是行程经过的保山市,两地相距 200km。
-        # 下面这张是通用滇西乡野,不指向任何特定地标,所以不会指错。
-        ("stock", ("d07_baoshan_yunnan", 6),
-         "滇西金色梯田村落 —— **通用乡野,非保山特定地标** s0.591"),
-        ("commons", ("d08_tengchong_old_schoolhouse_1960s_ca", 6),
-         "腾冲石构老校舍 gpsOK s0.348 —— stock 那批里有一张是**湖南大学**"),
-        ("stock", ("d08_tengchong_dadi_tea_plantation_yunn", 4), "茶山梯垄 s0.438"),
-        ("commons", ("d09_rehai_hot_spring_park_tengchong_ge", 6),
-         "热海大滚锅,画面里有石刻题名 s0.181 —— 暗,但它确实是那一口"),
-        ("stock", ("d09_hemu_camellia_village_tengchong", 5), "村落与池塘航拍 s0.494"),
-        ("stock", ("d10_jietou_village_tengchong_handmade_", 5), "木槽前舀纸浆 s0.387"),
-        ("stock", ("d10_qiluo_ancient_town_tengchong", 6),
-         "滇西古镇木构街巷 —— **未核实是否即绮罗** s0.269"),
-        ("commons", ("d10_tea_horse_road_caravan_tea_yunnan", 6), "茶马古道马帮堂,红幡马纹 s0.406"),
-    ],
-    "WBCKG6": [
-        ("commons", ("d02_hongyadong_chongqing", 5), "洪崖洞夜灯 s0.580"),
-        ("stock", ("d02_hongyadong_chongqing", 6), "洪崖洞金色夜景 s0.451"),
-        ("commons", ("d02_qiansimen_bridge_chongqing", 4), "千厮门大桥 s0.473"),
-        ("commons", ("d02_qiansimen_bridge_chongqing", 3), "救生圈与大桥 s0.428"),
-        ("commons", ("d02_jiefangbei_chongqing", 5), "解放碑与人流 s0.198"),
-        ("commons", ("d02_jiefangbei_chongqing", 1), "解放碑商圈 s0.197"),
-        ("commons", ("d02_shibati_chongqing", 6), "较场口吊脚楼 s0.232"),
-        ("commons", ("d02_shibati_chongqing", 2), "十八梯古井广场 s0.208"),
-        # 八一路美食街:留下的两张是食物特写,画面里没有可辨识地点。
-        ("stock", ("d02_chongqing_street_food_snacks", 2), "小面一碗 s0.775"),
-        ("stock", ("d02_chongqing_street_food_snacks", 6), "炉边现做 s0.858"),
-        ("commons", ("d04_ciqikou_ancient_town_chongqing", 1), "磁器口石阶夜色 s0.854"),
-        ("stock", ("d04_ciqikou_ancient_town_chongqing", 2), "古镇灯笼街 s0.384"),
-        ("commons", ("d04_chaotianmen_chongqing", 4), "两江交汇夜航拍 s0.468"),
-        ("commons", ("d04_chaotianmen_chongqing", 5), "朝天门老城门 s0.202"),
-        # 朝天门批发市场:市场货摊特写,不指向具体地点。
-        ("stock", ("d04_chinese_wholesale_market_stalls", 1), "货摊彩色商品 s0.583"),
-        ("stock", ("d04_chinese_wholesale_market_stalls", 3), "干货批发袋装 s0.372"),
-        ("stock", ("d04_liziba_monorail_through_building_c", 1), "轻轨高架 s0.271"),
-        ("stock", ("d04_liziba_monorail_through_building_c", 3), "列车穿楼而出 s0.184"),
-        ("commons", ("d04_guanyinqiao_chongqing", 2), "观音桥站出入口招牌 s0.429"),
-        ("commons", ("d04_guanyinqiao_chongqing", 1), "观音桥商圈街景 s0.209"),
-        ("commons", ("d05_chongqing_hotpot", 3), "红汤翻滚 s0.751"),
-        ("commons", ("d05_chongqing_hotpot", 2), "九宫格火锅 s0.612"),
-    ],
-    # WBLCKG 重庆+恩施。12/22 卡。恩施/利川那一段几乎全废,而且**三峡之巅那一块
-    # 是这一整轮最离谱的一条**:Commons 六张全是
-    # **Ruth Gorge, Denali National Park, ALASKA** —— 阿拉斯加的冰川峡谷。
-    # 张飞庙同样是同名异地:C1 是**成都武侯祠**的张飞塑像,C2C3 是**阆中**张飞庙,
-    # 而这条线去的是**云阳**张飞庙,第三座。梭布垭石林唯一一张 Commons 是
-    # **恩施大峡谷**(另一个景区);土家女儿城、狮子关、弹子石、山城步道整块 0,
-    # stock 一律拿洪崖洞和重庆天际线来顶。
-    "WBLCKG": [
-        ("commons", ("d02_yunyang_longgang_scenic_area", 4), "龙缸地质公园崖壁 s0.240"),
-        ("commons", ("d02_yunyang_longgang_scenic_area", 2), "龙缸峡谷 s0.216"),
-        ("commons", ("d03_baidicheng_fengjie", 4), "白帝城 s0.310"),
-        ("commons", ("d03_baidicheng_fengjie", 1), "白帝城与长江大桥 s0.298"),
-        ("commons", ("d03_qutang_gorge_kuimen_yangtze", 3), "瞿塘峡夔门 s0.328"),
-        ("commons", ("d05_tenglong_cave_lichuan", 1), "腾龙洞 s0.471"),
-        ("commons", ("d06_huangjueping_graffiti_street_chong", 1), "黄桷坪涂鸦街 s0.569"),
-        # 交通茶馆:Commons 两张是茶馆内景,但标题只写 "Slow Life in A Tea House",
-        # 没写是哪一家 —— 交付时点名。stock 分最高的那张是古玩店不是茶馆。
-        ("commons", ("d06_jiaotong_teahouse_chongqing", 1), "老茶馆内景 s0.260"),
-        ("commons", ("d06_shibati_chongqing", 6), "较场口吊脚楼 s0.232"),
-        ("commons", ("d06_shibati_chongqing", 2), "十八梯古井广场 s0.208"),
-        ("commons", ("d07_hongyadong_chongqing", 5), "洪崖洞夜灯 s0.580"),
-        ("stock", ("d07_hongyadong_chongqing", 6), "洪崖洞金色夜景 s0.451"),
-        ("commons", ("d07_jiefangbei_chongqing", 5), "解放碑与人流 s0.198"),
-        ("commons", ("d07_jiefangbei_chongqing", 1), "解放碑商圈 s0.197"),
-        # 李子坝:Commons 唯一一张是 2019 轨道交通展上的**站台模型**,不是实景。
-        ("stock", ("d07_liziba_monorail_through_building_c", 1), "二号线佛图关段 s0.271"),
-        ("stock", ("d07_liziba_monorail_through_building_c", 3), "列车穿楼而出 s0.184"),
-        # 熊猫馆:Commons 两张(重庆动物园)都在闸门下。熊猫这个题材只在四川重庆,
-        # 通用熊猫特写不构成地点主张,所以让美学分做主。
-        ("stock", ("d07_giant_panda_chongqing_zoo", 3), "树上的熊猫 s0.463"),
-        ("stock", ("d07_giant_panda_chongqing_zoo", 5), "枝头小憩 s0.358"),
-        # 川剧变脸:C5C6 是「2022 大臺南國際旅展」的演出,已排除。
-        ("commons", ("d07_sichuan_opera_face_changing_bianli", 1), "变脸脸谱 s0.553"),
-        ("commons", ("d07_sichuan_opera_face_changing_bianli", 2), "变脸身段 s0.439"),
-    ],
-}
+    拆出来是为了让 `tools/verify_equivalence.py` 能在**不落地图片**的前提下
+    跑完整条决策链 —— 迁移前后 17 个产品的 plan 逐字节比对靠的就是这个口子
+    (issue #4 Done When 第 1 条)。落地那一步在下面的 `__main__` 里,和以前一样。
+    """
+    doc = editorial.load(code, work)
+    tours = doc["catalogue_tours"]
+    plan = compose(code, doc["region"], tours, editorial.section_overrides(doc))
+    stock = json.loads((work / code / "candidates.json").read_text("utf-8")) \
+        if (work / code / "candidates.json").exists() else {}
+    fill_carousel(plan, code, tours, picks=editorial.carousel(doc), stock=stock)
+    removed = dedupe(plan, cross_slot=bool(tours))
+    # 景点卡这一层。放在 dedupe 之后:它复用的是去重之后真正留下的那些图,
+    # 而不是可能马上被删掉的。也放在 materialise 之前,这样 trip 槽和别的槽
+    # 一起编码,不会出现一半产物的 out/ 目录。
+    itin = json.loads((work / code / "itinerary.json").read_text("utf-8"))
+    assign_trip_photos(plan, itin["sections"], score, MATCH_FLOOR,
+                       extra=trip_pool(code, editorial.trip_picks(doc)))
+    return plan, removed
 
 
 def route_map_notice(plan: ImagePlan) -> str | None:
@@ -1547,63 +483,17 @@ def route_map_notice(plan: ImagePlan) -> str | None:
             "沿用旧值,需要人决定:补一张示意图,还是确认这个产品不用")
 
 
-PRODUCTS = {
-    "WBCKWE": ("CHN", ["tours/115-9d8n-discover-the-natural-wonders-of-guizhou",
-                       "tours/108-8d7n-chongqing-wulong-dazu-world-cultural-heritage"]),
-    "WBCURC": ("CHN", ["tours/112-10d9n-travel-with-marcus-chin-altay-wonders"]),
-    "WBCHET": ("CHN", []),
-    # 宁夏在 webuytravel.sg 上没有同区域在售产品可采(2026-08-13 实查 china-tours
-    # 索引 12 个产品,最近的 tours/75 内蒙古沙漠全站只有 1 张图)。
-    "WBINC9": ("CHN", []),
-    # 相反的例子:tours/118 是同区域同主题的在售粤味美食团,14 张带 CMS 图注的
-    # 授权图正好覆盖顺峰山、欢乐海岸、黄飞鸿纪念馆、岭南新天地、广东千古情、
-    # 黄腾峡、沙湾古镇 —— ②这一级在有兄弟产品时的实际覆盖度。
-    "WBSZX1": ("CHN", ["tours/118-7d6n-canton-gourmet-tour-2-0"]),
-    # 2026-08-15 起这一批:产品已在 Skybear 上、行程文本从生产读回,没有册子,
-    # webuytravel.sg 上也没有同区域在售的云南产品可采,所以 ①② 两级都是空的,
-    # 全部靠 ③Commons + ④stock。
-    "WBLJG9": ("CHN", []),
-    "WBXMNM": ("CHN", []),
-    # 2026-08-15 第二批。粤东和滇西北在 webuytravel.sg 上同样没有同区域在售
-    # 产品可采,①② 依旧是空的。
-    "WB9XMN": ("CHN", []),
-    "WBYNG": ("CHN", []),
-    "WBWUX6": ("CHN", []),
-    "WBYNB": ("CHN", []),
-    "WBPCSX": ("CHN", []),
-    "WBMZ7": ("CHN", []),
-    "WBTFU8": ("CHN", []),
-    # 这两本是册子进来的新产品(Skybear 上还没有 wt_travel),不是从生产读回的。
-    "WBLCKG": ("CHN", []),
-    "WBCKG6": ("CHN", []),
-    # 2026-09-11 的专列册子。①这一级是空的(两本册子没有一张过得了 section
-    # 下限,见 work/pdf_subjects.json 的 _ACKMG12T_note),但②这一级少见地
-    # 有货:tours/4 就是同区域在售的滇西北团,虎跳峡、独克宗、松赞林寺、
-    # 丽江古城四个景点直接命中;tours/3 是川线,只指望它兜成都那两天。
-    "ACKMG12T": ("CHN", [
-        "tours/4-8d7n-yunan-dali-lijiang-shangri-la",
-        "tours/3-8d7n-jiuzhaigou-leshan-m-emei-huanglong",
-    ]),
-}
-
 if __name__ == "__main__":
     # 只跑指定的产品。默认全跑会把已经审过的三个产品的 plan.json 连同
     # 它们的图一起重新生成,那是不必要的网络往返,也会让已签字的配图漂移。
     only = set(sys.argv[1:])
-    for code, (region, tours) in PRODUCTS.items():
+    # 产品清单以前是源码里的 `PRODUCTS`,现在是「谁有 editorial.json 谁就是
+    # 一个产品」。顺序从「写进源码的顺序」变成字典序,产出不受影响:每个产品
+    # 各写各的 work/<CODE>/plan.json,产品之间没有共享状态。
+    for code in editorial.codes(WORK):
         if only and code not in only:
             continue
-        plan = compose(code, region, tours, OVERRIDES.get(code, {}))
-        stock = json.loads((WORK / code / "candidates.json").read_text("utf-8")) \
-            if (WORK / code / "candidates.json").exists() else {}
-        fill_carousel(plan, code, tours, picks=CAROUSEL.get(code), stock=stock)
-        removed = dedupe(plan, cross_slot=bool(tours))
-        # 景点卡这一层。放在 dedupe 之后:它复用的是去重之后真正留下的那些图,
-        # 而不是可能马上被删掉的。也放在 materialise 之前,这样 trip 槽和别的槽
-        # 一起编码,不会出现一半产物的 out/ 目录。
-        itin = json.loads((WORK / code / "itinerary.json").read_text("utf-8"))
-        assign_trip_photos(plan, itin["sections"], score, MATCH_FLOOR,
-                           extra=trip_pool(code, TRIP_PICKS.get(code, [])))
+        plan, removed = run(code)
         # 上一轮的产物,在这一轮覆盖它们之前先记下来。`materialise` 返回的是
         # plan 本身(见 lib/image_plan.py 的签名),不是清理清单——把它的返回值
         # 当清单用,下面的 len()/join() 必炸,而且炸在 GAP 那一圈之前,正好把

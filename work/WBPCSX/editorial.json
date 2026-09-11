@@ -1,0 +1,220 @@
+{
+  "code": "WBPCSX",
+  "region": "CHN",
+  "notes": {
+    "commons_region_box": [
+      "湘西:张家界 / 凤凰"
+    ],
+    "section_overrides": [
+      "WBPCSX 张家界 + 凤凰。D1 抵达日没有自己的块,用天门山顶上——天门山就在",
+      "张家界市区边上,和「抵达张家界」是同一个地方。D3 四个主体全废(见 TRIP_PICKS),",
+      "但那天是从凤凰出发的,所以天头图用一张写明 Fenghuang 的。D8 纯回程。"
+    ],
+    "trip_picks": [
+      "WBPCSX 张家界 + 凤凰。9/16 张卡有图。核心景点(天门山六张全 gpsOK、",
+      "国家森林公园五张 gpsOK、黄龙洞整块 0.34–0.72)是所有产品里最扎实的一批;",
+      "废掉的集中在两处,而且是这一轮**退化搜索最离谱的两个块**:",
+      "",
+      "金鞭溪 Commons 六张:五张 19 世纪版画和一张维多利亚时代肖像,",
+      "第六张 s0.407 图注写着 ROAD THROUGH GOLDEN GATE CANYON,",
+      "**YELLOWSTONE PARK** —— 美国黄石。",
+      "十里画廊 Commons 六张:**地球卫星照**、一张飓风云图、**火卫一 Phobos**、",
+      "一条医院走廊、一张大气层照片,外加一张铅笔速写。",
+      "",
+      "「Golden Whip」和「Ten Mile Gallery」这两个词组退化之后就不再指向任何",
+      "中国地名了,这是 3.35 那条「每多一个词就少一批结果」的另一面:词掉光之后",
+      "剩下的是通用英文词,搜出来的东西可以离题到另一个星球。",
+      "",
+      "D3 整天四个主体(茶峒、翠翠岛、军声画院、七十二奇楼)Commons 全部返回 0,",
+      "stock 给的是张家界山景和凤凰河景 —— 都不是那四个地方。七十二奇楼那块",
+      "stock#3 图注写的是 **Fortification of Xian**(西安城墙),和 413 抓到的",
+      "是同一张同一类。袁家界 Commons 两张真的都在闸门下(0.165/0.176),",
+      "stock 是通用张家界峰林,认不出是袁家界。"
+    ]
+  },
+  "catalogue_tours": [],
+  "commons_region_box": [
+    26,
+    31,
+    108,
+    113
+  ],
+  "stock_region": "Hunan China",
+  "section_overrides": {
+    "d01": [
+      {
+        "source": "commons",
+        "block": "d04_tianmen_mountain_zhangjiajie",
+        "n": 1,
+        "note": "天门山俯瞰市区 gpsOK s0.313"
+      }
+    ],
+    "d02": [
+      {
+        "source": "commons",
+        "block": "d02_fenghuang_ancient_town",
+        "n": 5,
+        "note": "沱江吊脚楼群 s0.362"
+      }
+    ],
+    "d03": [
+      {
+        "source": "stock",
+        "block": "d03_chadong_border_town_huayuan",
+        "n": 3,
+        "note": "凤凰虹桥与河岸(当天从凤凰出发)s0.388"
+      }
+    ],
+    "d04": [
+      {
+        "source": "commons",
+        "block": "d04_tianmen_mountain_zhangjiajie",
+        "n": 5,
+        "note": "天门山盘山公路 gpsOK s0.245"
+      }
+    ],
+    "d05": [
+      {
+        "source": "commons",
+        "block": "d05_zhangjiajie_national_forest_park",
+        "n": 3,
+        "note": "石英砂岩峰林 gpsOK s0.397"
+      }
+    ],
+    "d06": [
+      {
+        "source": "commons",
+        "block": "d06_zhangjiajie_grand_canyon_glass_bri",
+        "n": 6,
+        "note": "玻璃桥横跨峡谷 s0.290"
+      }
+    ],
+    "d07": [
+      {
+        "source": "commons",
+        "block": "d07_yellow_dragon_cave_zhangjiajie",
+        "n": 1,
+        "note": "黄龙洞石笋灯光 s0.502"
+      }
+    ]
+  },
+  "trip_picks": [
+    {
+      "source": "commons",
+      "block": "d02_fenghuang_ancient_town",
+      "n": 4,
+      "note": "沱江与吊脚楼 s0.398",
+      "why": "D2 凤凰古城"
+    },
+    {
+      "source": "commons",
+      "block": "d02_fenghuang_ancient_town",
+      "n": 3,
+      "note": "江上小舟与塔 s0.370"
+    },
+    {
+      "source": "stock",
+      "block": "d02_tuojiang_river_fenghuang",
+      "n": 4,
+      "note": "沱江夜色灯火 s0.532",
+      "why": "D2 沱江游船:stock#4 图注写明 Phoenix Ancient Town along the Tuo River。"
+    },
+    {
+      "source": "commons",
+      "block": "d02_tuojiang_river_fenghuang",
+      "n": 2,
+      "note": "沱江游船 s0.370"
+    },
+    {
+      "source": "commons",
+      "block": "d02_miao_people_silver_costume_hunan",
+      "n": 6,
+      "note": "苗族银冠 s0.303",
+      "why": "D2 苗族服饰:stock#4#5 图注自己写着 **Guizhou**(西江千户苗寨), 这张卡是湘西凤凰的苗族,已排除。留下的两张是 Commons 的银饰实拍。"
+    },
+    {
+      "source": "commons",
+      "block": "d02_miao_people_silver_costume_hunan",
+      "n": 2,
+      "note": "苗族盛装与银饰 s0.270"
+    },
+    {
+      "source": "commons",
+      "block": "d04_tianmen_mountain_zhangjiajie",
+      "n": 2,
+      "note": "崖顶栈道俯瞰 gpsOK s0.371",
+      "why": "D4 天门山:六张全部带 GPS。"
+    },
+    {
+      "source": "commons",
+      "block": "d04_tianmen_mountain_zhangjiajie",
+      "n": 3,
+      "note": "天门山峰峦 gpsOK s0.326"
+    },
+    {
+      "source": "commons",
+      "block": "d04_tujia_tusi_city_zhangjiajie",
+      "n": 1,
+      "note": "土家歌舞表演 s0.337",
+      "why": "D4 土司城:Commons 是园内土家歌舞实拍;stock#6 图注写明 Zhangjiajie, 画面是土家吊脚楼式的廊桥,比舞台照更像「城」。"
+    },
+    {
+      "source": "stock",
+      "block": "d04_tujia_tusi_city_zhangjiajie",
+      "n": 6,
+      "note": "土家吊脚楼廊桥 s0.312"
+    },
+    {
+      "source": "commons",
+      "block": "d05_zhangjiajie_national_forest_park",
+      "n": 6,
+      "note": "峰林全景 gpsOK s0.519",
+      "why": "D5 国家森林公园:五张带 GPS,整块都在 0.28 以上。"
+    },
+    {
+      "source": "commons",
+      "block": "d05_zhangjiajie_national_forest_park",
+      "n": 4,
+      "note": "独峰特写 gpsOK s0.489"
+    },
+    {
+      "source": "commons",
+      "block": "d06_zhangjiajie_grand_canyon_glass_bri",
+      "n": 1,
+      "note": "玻璃桥全景 gpsOK s0.393",
+      "why": "D6 大峡谷玻璃桥"
+    },
+    {
+      "source": "commons",
+      "block": "d06_zhangjiajie_grand_canyon_glass_bri",
+      "n": 3,
+      "note": "桥面与峡谷 s0.357"
+    },
+    {
+      "source": "commons",
+      "block": "d07_yellow_dragon_cave_zhangjiajie",
+      "n": 3,
+      "note": "洞厅彩色灯光 s0.723",
+      "why": "D7 黄龙洞:整块是这个产品最亮的一组。"
+    },
+    {
+      "source": "commons",
+      "block": "d07_yellow_dragon_cave_zhangjiajie",
+      "n": 4,
+      "note": "石笋林 s0.619"
+    },
+    {
+      "source": "stock",
+      "block": "d07_orchard_fruit_picking_harvest",
+      "n": 2,
+      "note": "果园采摘,背篓与果树 s0.635",
+      "why": "D7 水果采摘:Commons 六张全是 s0.000 的黑白老照片(美国果品包装厂)。 留下的两张是采摘动作特写,画面里没有可辨识的地点,和鱼排那张一个道理。"
+    },
+    {
+      "source": "stock",
+      "block": "d07_orchard_fruit_picking_harvest",
+      "n": 1,
+      "note": "果树下的采摘 s0.585"
+    }
+  ]
+}

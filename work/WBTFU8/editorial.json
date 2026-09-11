@@ -1,0 +1,195 @@
+{
+  "code": "WBTFU8",
+  "region": "CHN",
+  "notes": {
+    "commons_region_box": [
+      "成都及川西"
+    ],
+    "section_overrides": [
+      "WBTFU8 成都 / 九寨沟。D1 抵达日没有自己的块,用宽窄巷子那一块的成都夜景",
+      "顶上——当天正是飞抵成都。D8 纯回程。"
+    ],
+    "trip_picks": [
+      "WBTFU8 成都 / 九寨沟。11/13 张卡有图,是覆盖率最高的一个产品——",
+      "九寨沟、熊猫、宽窄巷子、锦里都是被拍得最多的中国题材,Commons 和 stock",
+      "两边都够用。诺日朗瀑布那一块有三张 GPS 落在范围外,已按 GPS 排除。",
+      "",
+      "「蓝桥夜景」(都江堰南桥)是唯一留空的景点卡:Commons 里真正的南桥",
+      "只有一张 s0.172,在闸门下;stock 分最高的三张分别是**成都安顺廊桥**和",
+      "**宜宾**的夜桥 —— 都是别处的桥。"
+    ]
+  },
+  "catalogue_tours": [],
+  "commons_region_box": [
+    28,
+    33,
+    101,
+    106
+  ],
+  "stock_region": "Sichuan China",
+  "section_overrides": {
+    "d01": [
+      {
+        "source": "stock",
+        "block": "d06_kuanzhai_alley_chengdu",
+        "n": 3,
+        "note": "成都夜市红灯笼(当天抵达成都)s0.574"
+      }
+    ],
+    "d02": [
+      {
+        "source": "commons",
+        "block": "d02_shengshui_temple_mianyang",
+        "n": 6,
+        "note": "绵阳圣水寺院落 gpsOK s0.361"
+      }
+    ],
+    "d03": [
+      {
+        "source": "commons",
+        "block": "d03_jiuzhaigou_valley",
+        "n": 6,
+        "note": "九寨沟海子 s0.358"
+      }
+    ],
+    "d04": [
+      {
+        "source": "commons",
+        "block": "d04_nanqiao_bridge_dujiangyan_night",
+        "n": 2,
+        "note": "都江堰景区 gpsOK s0.302"
+      }
+    ],
+    "d05": [
+      {
+        "source": "commons",
+        "block": "d05_giant_panda_dujiangyan_base",
+        "n": 2,
+        "note": "都江堰基地大熊猫 s0.257"
+      }
+    ],
+    "d06": [
+      {
+        "source": "stock",
+        "block": "d06_kuanzhai_alley_chengdu",
+        "n": 1,
+        "note": "成都夜市串串摊 s0.686"
+      }
+    ],
+    "d07": [
+      {
+        "source": "stock",
+        "block": "d07_jinli_ancient_street_chengdu",
+        "n": 5,
+        "note": "成都老茶馆内景 s0.761"
+      }
+    ]
+  },
+  "trip_picks": [
+    {
+      "source": "commons",
+      "block": "d02_shengshui_temple_mianyang",
+      "n": 5,
+      "note": "寺院殿宇 gpsOK s0.467",
+      "why": "D2 圣水寺:六张全部带 GPS(绵阳涪城)。"
+    },
+    {
+      "source": "commons",
+      "block": "d02_shengshui_temple_mianyang",
+      "n": 3,
+      "note": "山门与石阶 gpsOK s0.395"
+    },
+    {
+      "source": "commons",
+      "block": "d03_jiuzhaigou_valley",
+      "n": 1,
+      "note": "五花海 s0.510",
+      "why": "D3 九寨沟:Commons 和 stock 两边都写明 Jiuzhaigou。"
+    },
+    {
+      "source": "stock",
+      "block": "d03_jiuzhaigou_valley",
+      "n": 4,
+      "note": "松绿海子与林 s0.504"
+    },
+    {
+      "source": "commons",
+      "block": "d03_nuorilang_waterfall_jiuzhaigou",
+      "n": 3,
+      "note": "诺日朗瀑布正面 s0.272",
+      "why": "D3 诺日朗瀑布:#2#4#6 GPS 落在范围外,已排除。"
+    },
+    {
+      "source": "commons",
+      "block": "d03_nuorilang_waterfall_jiuzhaigou",
+      "n": 1,
+      "note": "瀑布与林 s0.248"
+    },
+    {
+      "source": "commons",
+      "block": "d04_diexi_haizi_maoxian",
+      "n": 3,
+      "note": "叠溪海子 s0.207",
+      "why": "D4 叠溪海子"
+    },
+    {
+      "source": "commons",
+      "block": "d04_diexi_haizi_maoxian",
+      "n": 2,
+      "note": "海子与山 s0.187"
+    },
+    {
+      "source": "stock",
+      "block": "d05_giant_panda_dujiangyan_base",
+      "n": 4,
+      "note": "熊猫啃竹 s0.625",
+      "why": "D5 大熊猫:题材本身只在四川,通用熊猫特写不构成地点主张,所以这里 让美学分做主,选了两张最亮的。"
+    },
+    {
+      "source": "stock",
+      "block": "d05_giant_panda_dujiangyan_base",
+      "n": 1,
+      "note": "草地上的熊猫 s0.540"
+    },
+    {
+      "source": "stock",
+      "block": "d05_zhongshuge_bookstore_chengdu",
+      "n": 2,
+      "note": "镜面螺旋书墙 s0.428",
+      "why": "D5 钟书阁:镜面螺旋书墙是这个品牌的标志性内景。图注只写 Chengdu 的 那张没有,所以这两张严格说只能确认「是钟书阁」,不能确认是成都那家 —— 同一品牌同一套内装,交付时点名。"
+    },
+    {
+      "source": "stock",
+      "block": "d05_zhongshuge_bookstore_chengdu",
+      "n": 1,
+      "note": "环形书架 s0.251"
+    },
+    {
+      "source": "commons",
+      "block": "d05_guanxian_ancient_city_dujiangyan",
+      "n": 1,
+      "note": "灌县古城门楼 s0.299",
+      "why": "D5 灌县古城"
+    },
+    {
+      "source": "commons",
+      "block": "d06_kuanzhai_alley_chengdu",
+      "n": 1,
+      "note": "宽窄巷子文物遗址 gpsOK s0.412",
+      "why": "D6 宽窄巷子:两张带 GPS。"
+    },
+    {
+      "source": "commons",
+      "block": "d06_kuanzhai_alley_chengdu",
+      "n": 4,
+      "note": "巷内葫芦摊 s0.405"
+    },
+    {
+      "source": "commons",
+      "block": "d07_jinli_ancient_street_chengdu",
+      "n": 1,
+      "note": "锦里夜巷 s0.608",
+      "why": "D7 锦里:Commons 整块只有这一张,但够亮。"
+    }
+  ]
+}

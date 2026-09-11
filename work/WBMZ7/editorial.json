@@ -1,0 +1,176 @@
+{
+  "code": "WBMZ7",
+  "region": "CHN",
+  "notes": {
+    "commons_region_box": [
+      "澳门 / 珠海 / 广州 / 连州"
+    ],
+    "section_overrides": [
+      "WBMZ7 澳门/珠海/广州/连州/郴州。D3 和 D5 没有天头图:那两天的主体",
+      "(莽山五指峰、仰天湖大草原、湖南白银博物馆、裕后街)四级图源全废,",
+      "见 TRIP_PICKS。两天都作为 GAP 留着等人点头,没有拿桂林/黄山顶上去。"
+    ],
+    "trip_picks": [
+      "WBMZ7 澳门/珠海/广州/连州/郴州。10/14 张卡有图,但覆盖是两极的:",
+      "珠三角那半边(港珠澳大桥、广州塔、大佛寺、北京路、珠海渔女)很好,",
+      "粤北湘南那半边(连州、郴州)基本全废。",
+      "",
+      "这一轮**退化搜索最离谱的一块**在这里:千年瑶寨。「Nangang Yao Village」",
+      "退成 “Nangang”,而 Nangang = **台北南港**,于是 Commons 三张返回的是",
+      "**台北捷运南港站和忠孝复兴站的通车纪念牌**,外加一张 Harbinblue.jpg(哈尔滨)。",
+      "其余各块:连州地下河→广州;莽山五指峰→桂林独秀峰和黄山;龙景大峡谷→",
+      "通用瀑布;仰天湖大草原→**内蒙古风电场**;裕后街→珠海/揭阳/广州。",
+      "",
+      "苏仙岭那一块要单独说:Commons 三张都带 GPS 且都在郴州,但它们是**飞天山**,",
+      "郴州的另一座山。GPS 过了、地方也对,**主体不对** —— 这是 GPS 闸门唯一",
+      "拦不住的一类,只能靠看图。",
+      "",
+      "湖南白银博物馆返回的是**长沙湖南省博物馆**的楚文化辟邪和宋代银器,",
+      "是另一家博物馆,也排除了。"
+    ]
+  },
+  "catalogue_tours": [],
+  "commons_region_box": [
+    21,
+    26,
+    110,
+    115
+  ],
+  "stock_region": "Guangdong China",
+  "section_overrides": {
+    "d01": [
+      {
+        "source": "stock",
+        "block": "d01_hong_kong_zhuhai_macau_bridge",
+        "n": 1,
+        "note": "港珠澳大桥航拍 s0.307"
+      }
+    ],
+    "d02": [
+      {
+        "source": "stock",
+        "block": "d02_nangang_yao_village_liannan",
+        "n": 3,
+        "note": "广东传统制陶 s0.326"
+      }
+    ],
+    "d04": [
+      {
+        "source": "commons",
+        "block": "d04_dongjiang_lake_zixing",
+        "n": 2,
+        "note": "东江湖水岸 gpsOK s0.281"
+      }
+    ],
+    "d06": [
+      {
+        "source": "commons",
+        "block": "d06_canton_tower",
+        "n": 2,
+        "note": "广州塔与珠江新城天际线 s0.229"
+      }
+    ],
+    "d07": [
+      {
+        "source": "commons",
+        "block": "d07_zhuhai_fisher_girl_seafront",
+        "n": 4,
+        "note": "珠海渔女像 s0.381"
+      }
+    ]
+  },
+  "trip_picks": [
+    {
+      "source": "commons",
+      "block": "d01_hong_kong_zhuhai_macau_bridge",
+      "n": 6,
+      "note": "大桥西段 gpsOK s0.325",
+      "why": "D1 港珠澳大桥"
+    },
+    {
+      "source": "commons",
+      "block": "d01_hong_kong_zhuhai_macau_bridge",
+      "n": 1,
+      "note": "跨海段桥面 s0.282"
+    },
+    {
+      "source": "stock",
+      "block": "d02_nangang_yao_village_liannan",
+      "n": 2,
+      "note": "清远梯田与山村 s0.531",
+      "why": "D2 千年瑶寨:Commons 整块作废(见上)。这张 stock 图注写明 Qingyuan, 而南岗千年瑶寨正在清远连南,画面是山坡梯田与寨子,对得上。"
+    },
+    {
+      "source": "commons",
+      "block": "d04_dongjiang_lake_zixing",
+      "n": 1,
+      "note": "东江湖全景 s0.439",
+      "why": "D4 东江湖:六张都是 Dongjiang Lake Hunan,四张带 GPS。"
+    },
+    {
+      "source": "commons",
+      "block": "d04_dongjiang_lake_zixing",
+      "n": 5,
+      "note": "湖面与岛屿 gpsOK s0.376"
+    },
+    {
+      "source": "stock",
+      "block": "d06_canton_tower",
+      "n": 2,
+      "note": "圆形取景框中的广州塔 s0.543",
+      "why": "D6 广州塔:Commons#1 和 WB9XMN 那次一样,标题是 Bank of Guangzhou Tower, 画面里是两栋玻璃写字楼,分 0.461 排在最前,已排除。"
+    },
+    {
+      "source": "commons",
+      "block": "d06_canton_tower",
+      "n": 4,
+      "note": "珠江两岸航拍 s0.383"
+    },
+    {
+      "source": "commons",
+      "block": "d06_dafo_temple_guangzhou",
+      "n": 4,
+      "note": "金身护法像 s0.284",
+      "why": "D6 大佛寺"
+    },
+    {
+      "source": "commons",
+      "block": "d06_dafo_temple_guangzhou",
+      "n": 1,
+      "note": "大佛寺殿宇 s0.243"
+    },
+    {
+      "source": "commons",
+      "block": "d06_beijing_road_pedestrian_street_gua",
+      "n": 6,
+      "note": "骑楼商铺立面 s0.232",
+      "why": "D6 北京路"
+    },
+    {
+      "source": "commons",
+      "block": "d06_beijing_road_pedestrian_street_gua",
+      "n": 3,
+      "note": "步行街人流 s0.195"
+    },
+    {
+      "source": "commons",
+      "block": "d06_haixinsha_asian_games_park_guangzh",
+      "n": 6,
+      "note": "海心沙与广州塔 s0.198",
+      "why": "D6 海心沙:整块偏弱(六张里四张是导览牌和出入口),这张是唯一 既在园里又够线的。"
+    },
+    {
+      "source": "commons",
+      "block": "d07_zhuhai_fisher_girl_seafront",
+      "n": 2,
+      "note": "渔女像与海 s0.532",
+      "why": "D7 珠海渔女:自由活动那天,渔女像是珠海的城市地标。"
+    },
+    {
+      "source": "commons",
+      "block": "d07_zhuhai_fisher_girl_seafront",
+      "n": 3,
+      "note": "渔女像近景 s0.413"
+    }
+  ]
+}

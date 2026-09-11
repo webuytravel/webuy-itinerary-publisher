@@ -37,6 +37,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
+from lib import editorial
 from lib.photo_source import _commons, download
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -64,38 +65,14 @@ MIN_WIDTH = 1200  # below this a lightbox render (~535–750px CSS) starts to so
 # this itinerary" from "a different continent". A candidate with no
 # coordinates is left as `None`, never rejected: most Commons files have no
 # GPS and absence of evidence is not evidence.
-REGION_BOX = {
-    "WBCHET": (36, 44, 105, 116),   # 山西 + 内蒙中西部
-    "WBCURC": (40, 49, 78, 96),     # 北疆
-    "WBINC9": (35, 41, 103, 110),   # 宁夏 + 甘肃东 + 内蒙西
-    "WBCKWE": (24, 31, 103, 111),   # 贵州 + 重庆
-    "WBSZX1": (21, 26, 110, 116),   # 广东
-    # 2026-08-15 这一批。同样只用来把「这条行程上」和「另一个大洲」分开,
-    # 所以宁可宽:云南三条线共用一个省级框,漏掉一张放错省的图,代价远小于
-    # 因为框太紧把对的图判成 in_region=False。
-    "WBLJG9": (24, 29, 98, 103),    # 滇西北:大理 / 丽江 / 泸沽湖
-    # 怒江 + 德钦梅里 + 香格里拉,东端还要够到昆明(102.7)转机那一天
-    "WBYNG": (23, 30, 97, 104),
-    "WBYNB": (23, 27, 97, 101),     # 腾冲
-    "WBXMNM": (23, 27, 116, 120),   # 闽南
-    "WBPCSX": (26, 31, 108, 113),   # 湘西:张家界 / 凤凰
-    "WBWUX6": (29, 33, 118, 122),   # 苏南江南水乡
-    "WBMZ7": (21, 26, 110, 115),    # 澳门 / 珠海 / 广州 / 连州
-    "WBTFU8": (28, 33, 101, 106),   # 成都及川西
-    "WB9XMN": (22, 26, 113, 118),   # 粤东:潮汕 / 梅州 / 河源
-    "WBLCKG": (28, 32, 106, 111),   # 重庆 + 恩施
-    "WBCKG6": (28, 32, 105, 110),   # 重庆
-    # 2026-09-11。这条是专列线,一路从成都(30.6, 104.1)南下西昌(27.9, 102.3)、
-    # 丽江(26.9, 100.2)、香格里拉(27.8, 99.7),再折到保山(25.1, 99.2)和
-    # 腾冲(25.0, 98.5)。跨两省而且东西横跨 5 个经度,所以框比单省的那几条宽 —
-    # 它要分开的仍然只是「这条行程上」和「另一个大洲」。
-    "ACKMG12T": (24, 32, 97, 106),  # 川西南 + 滇西北 + 滇西
-}
+# 具体每个产品的框在 `work/<CODE>/editorial.json` 的 `commons_region_box`
+# (issue #4:per-product 的编辑决策不再放在源码里),写成
+# [lat_min, lat_max, lon_min, lon_max],旁边的 `notes.commons_region_box`
+# 记着这个框为什么是这么大。
 
 
-def in_region(code: str, lat, lon):
+def in_region(box, lat, lon):
     """True / False / None — None means the file carries no coordinates."""
-    box = REGION_BOX.get(code)
     if box is None or lat is None or lon is None:
         return None
     lat_min, lat_max, lon_min, lon_max = box
@@ -130,6 +107,14 @@ def fetch(code: str, per_subject: int = 6) -> dict:
     itinerary = json.loads((WORK / code / "itinerary.json").read_text("utf-8"))
     dest_dir = WORK / code / "cand_commons"
     out: dict[str, dict] = {}
+    # 抓候选是**早于**写编辑决策的一步,所以新产品跑到这里时 editorial.json
+    # 本来就还不存在。缺框不是错误状态,但代价要说出来:没有框 = 全管线唯一那道
+    # 「主体对、地方不对」的机械检查这一轮不生效(DESIGN 3.2 / 6.7)。
+    doc = editorial.load_if_present(code, WORK)
+    box = (doc or {}).get("commons_region_box")
+    if box is None:
+        print(f"  !! {code} 没有 commons_region_box —— 这一轮不做 GPS 范围检查。"
+              f"先在 work/{code}/editorial.json 里写一个框会更稳")
 
     for section in itinerary["sections"]:
         day = section["day"]
@@ -175,7 +160,7 @@ def fetch(code: str, per_subject: int = 6) -> dict:
                     "license": cand.license, "credit": cand.credit,
                     "lat": cand.lat, "lon": cand.lon,
                     # 标注,不是删除。没有坐标的一律 None,不能当成「地方不对」。
-                    "in_region": in_region(code, cand.lat, cand.lon),
+                    "in_region": in_region(box, cand.lat, cand.lon),
                 })
             # `query_full` vs `query`:退化过的块要在审核页上显示出来。
             # 退化保证的是「有结果」,不是「结果对」——`Optional Desert Activities
