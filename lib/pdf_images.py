@@ -161,6 +161,60 @@ def _render(doc: fitz.Document, xref: int) -> Image.Image | None:
     return img.convert("RGB")
 
 
+def _looks_like_text_page(img: Image.Image) -> bool:
+    """Is this raster a page of body copy rather than a picture?
+
+    ACKMG12T rasterises both of its "Special Terms and Conditions" pages as
+    single images — dark blue and orange copy on a flat pale-blue ground,
+    no picture anywhere on page 7. Colour statistics cannot tell that from a
+    schematic: page 7 lands at saturation 0.09, flat share 0.55 and 13 busy
+    buckets, i.e. inside every number `_looks_like_route_map` keys on. So it
+    was classified `route_map`, and `bin/compose.py` takes the first one of
+    those for `wt_travel.routeMapUrl` — a page of cancellation terms would
+    have shipped as the product's route map.
+
+    The tell is structural: a slab of type is a comb. Every line of type
+    inks a band of rows, every leading gap leaves one empty, at a pitch that
+    barely varies down the block. Two measures over the horizontal
+    projection of dark pixels, both required:
+
+    - **rhythm** — the largest autocorrelation peak of the row profile at a
+      plausible line pitch. The profile is high-passed first (subtract a
+      moving average wider than one line of type), because otherwise every
+      raster scores 0.6–0.99 on its own top-to-bottom gradient and nothing
+      separates.
+    - **empty rows** — the share of rows carrying essentially no ink.
+
+    Measured over the 75 rasters kept from the ten brochures extracted so
+    far: the two terms pages sit at rhythm 0.63 / 0.82 with 43–48% empty
+    rows; the eight route maps at 0.15–0.35 with 12–21%; no photo passes
+    0.37. The near miss is a lakeside temple shot whose mirrored reflection
+    reaches rhythm 0.37 — it has the comb but only 6% empty rows, which is
+    why the second term is there. Nothing else in the corpus clears 0.28
+    once empty rows are above 30%.
+    """
+    small = img.copy()
+    small.thumbnail((640, 640))  # 220px would smear a line of type into one row
+    gray = np.asarray(small.convert("L"), dtype=np.float32)
+    ink = (gray < np.median(gray) - 40).mean(axis=1)
+
+    if (ink < 0.02).mean() < 0.30:
+        return False
+
+    window = 15  # rows: wider than one line of type here, narrower than a block
+    trend = np.convolve(
+        np.pad(ink, window // 2, mode="edge"), np.ones(window) / window, "valid"
+    )
+    comb = ink - trend
+    if comb.std() == 0:  # a blank raster has no rhythm to find
+        return False
+
+    corr = np.correlate(comb, comb, mode="full")[len(comb) - 1:]
+    corr = corr / corr[0]
+    lo, hi = 5, min(len(comb) // 4, 60)  # the band of plausible line pitches, in rows
+    return hi > lo and corr[lo:hi].max() >= 0.45
+
+
 def _looks_like_route_map(img: Image.Image) -> bool:
     """Is this a schematic route map rather than a photograph?
 
@@ -174,6 +228,10 @@ def _looks_like_route_map(img: Image.Image) -> bool:
     photo, with far fewer distinct colour buckets. Saturation alone
     separates them; the flat-area terms guard against a genuinely muted
     photo (fog, snow) being misread as a diagram.
+
+    **These numbers answer "not a photograph", not "a diagram".** A page of
+    type satisfies all of them; `_looks_like_text_page` is what separates
+    the two, and `extract` runs it first so this function never sees one.
     """
     small = img.copy()
     small.thumbnail((220, 220))
@@ -254,6 +312,10 @@ def extract(pdf: str | Path, out_dir: str | Path) -> PdfImageSet:
                 continue
 
             reason = _gate(width, height)
+            if not reason and _looks_like_text_page(picture):
+                # Neither a picture nor a diagram, so it must be dropped
+                # before either classifier gets a vote on it.
+                reason = f"text page: {width}x{height} slab of body copy"
             img = PdfImage(
                 path=out_dir / f"p{page_no:02d}_{idx}_{width}x{height}.png",
                 page=page_no,
