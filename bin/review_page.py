@@ -158,6 +158,7 @@ def product_block(code: str) -> str:
       <li><b>{counts.get('carousel',0)}</b> 张轮播</li>
       <li><b>{shipped_highlights if shipped_highlights else len(itin['highlights'])}</b> 条 highlights{f'（自册子 {len(itin["highlights"])} 条折叠）' if shipped_highlights else ''}</li>
       <li><b>{counts.get('trip',0)}</b> 张景点卡图 / 覆盖 <b>{cards_filled}</b>/<b>{cards_total}</b> 张卡</li>
+      <li><b>{counts.get('route_map',0)}</b> 张路线图</li>
     </ul>
     <p class="prov">来源分布：""" + " · ".join(
         f"{ORIGIN_LABEL.get(k,(k,''))[0]} {v}" for k, v in sorted(origins.items())) + f"""</p>
@@ -166,6 +167,7 @@ def product_block(code: str) -> str:
        · 低于闸门 <b>{dull_n}</b> 张</p>
     {'<p class="prov soft">⚠ ' + str(len(soft)) + ' 张超过放大上限，见下方标注</p>' if soft else ''}
     {'<p class="prov">无配图日：' + '、'.join(f'D{d}（{titles[d][:34]}）' for d in transit) + ' — 无景点条目的纯中转/抵离日</p>' if transit else ''}
+    {'' if counts.get('route_map') else '<p class="prov soft">⚠ 这个产品没有路线图 — 册子里没有认出行程示意图，wt_travel.routeMapUrl 会留空或沿用旧值（可能是上一次误传的那一页）</p>'}
     {''.join('<p class="prov soft">⚠ D' + str(d) + '（' + titles[d][:34] + '）有景点却没有配图：'
              + ('、'.join(gaps[d]["subjects"])[:150] if gaps.get(d, {}).get("subjects")
                 else '这天的景点条目一个 photo_subject 都没写，四级图源从来没有为它搜过')
@@ -182,6 +184,17 @@ def product_block(code: str) -> str:
                         ("trip", "景点卡配图")]:
         rows = by_slot.get(slot, [])
         if not rows:
+            # 路线图这一槽空着时，原来这里直接 `continue`，整节不渲染——于是
+            # 「这个产品没有路线图」和「这个产品从来不需要路线图」在签字页上
+            # 长得一模一样，而 routeMapUrl 误传成一页《Special Terms and
+            # Conditions》也是这样溜过去的（DESIGN 6.9）。少一张图不会
+            # 让程序停下来，所以它必须自己响。别的槽空着由别的行负责报（日程图
+            # 走 transit/unfilled 两行，轮播和缩略图走上面的 stats），只有路线图
+            # 一直没人报。
+            if slot == "route_map":
+                out.append(f'<h3 class="slot">{label} <span>0</span></h3>'
+                           '<p class="prov soft">⚠ 没有路线图 — 需要你决定：'
+                           '留空、从册子补一张行程示意图、或确认这个产品不用路线图</p>')
             continue
         out.append(f'<h3 class="slot">{label} <span>{len(rows)}</span></h3><div class="grid">')
         for p in sorted(rows, key=lambda r: (r["position"], r.get("trip_index") or 0)):
