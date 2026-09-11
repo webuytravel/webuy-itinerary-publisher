@@ -139,15 +139,17 @@ def build(code: str, itinerary: dict, defaults: dict) -> dict:
         for n, (en, zh) in enumerate(HOUSE_HIGHLIGHTS[code])
     ]
 
-    # Echo the prefill's departures back with ifshow=1. The form ticks them all
-    # on Tour Type selection; the prefill hands them over at 0. Prices come from
-    # the prefill untouched — this tool does not invent a fare.
-    tours = []
-    for t in defaults.get("tourList") or []:
-        t = json.loads(json.dumps(t))
-        t["ifshow"] = 1
-        tours.append(t)
-    if not tours:
+    # Departures. `editTravel` wants **`tourIdList`** — a flat list of ids —
+    # not the rich `tourList` the prefill hands back. Sending the rich list
+    # gets `500 tourId Cannot be empty`, which reads like "there are no
+    # departures" and sent the first attempt looking for missing wt_tour rows;
+    # there were four, in the payload, under the wrong key. The admin's own
+    # submit handler is the authority here:
+    #     i.tourIdList = (tourList||[]).filter(t => t.checked).map(t => t.tourId)
+    # Everything the prefill carries per departure (prices, inventory) is the
+    # wt_tour's own data — the backend reads it from there, so we only name them.
+    tour_ids = [t["tourId"] for t in (defaults.get("tourList") or []) if t.get("tourId")]
+    if not tour_ids:
         raise SystemExit(
             f"{code}: the prefill carries no departures. wt_travel cannot exist "
             f"before wt_tour — editTravel answers 500 'tourId Cannot be empty'. "
@@ -158,38 +160,38 @@ def build(code: str, itinerary: dict, defaults: dict) -> dict:
         if "&" in v:
             raise SystemExit(f"{code}: product name contains '&' — use 'and'.")
 
+    # The field set below mirrors the admin's own submit handler exactly, down
+    # to `id: ""` rather than null. The prefill response carries more keys than
+    # that (region, paxType, sellingPrice, priceList, validPeriod, …) — those
+    # are display data the form reads and never sends back, because they live
+    # on the wt_tour / tour type rows. Echoing them is at best ignored and at
+    # worst confuses the write, so they stay out.
+    #
+    # minPassager / startingPrice / tag1..6 are omitted on purpose: the form
+    # only attaches them when paxType is 2 or 8 (FIT-style products). This one
+    # is paxType 1 (G-Group Tour).
     return {
-        "id": None,
+        "id": "",
         "tourTypeId": defaults.get("tourTypeId") or itinerary.get("tour_type_id"),
-        "tourTypeCode": defaults.get("tourTypeCode") or code,
-        "tourTypeName": defaults.get("tourTypeName"),
-        "paxType": defaults.get("paxType"),
         "productName": name["en"],
         "productNameCn": name["zh"],
         "travelStatus": 0,          # 0 = UnPublished. Going live stays human.
-        "region": defaults.get("region") or "CHN",
-        "sellingPrice": defaults.get("sellingPrice"),
-        "startingPrice": defaults.get("startingPrice") or 0,
-        "minPassager": defaults.get("minPassager") or 0,
-        "validPeriod": defaults.get("validPeriod") or "",
-        "videoUrl": None,
-        "videoCoverUrl": None,
-        "routeMapUrl": None,
-        "flightInfo": defaults.get("flightInfo"),
+        "flightInfo": defaults.get("flightInfo") or "",
         "highlightsList": highlights,
         "sectionList": sections,
-        "thumbneilList": [],
+        "thumbneilList": [],        # plain URL strings, not image objects
         "desktopImageList": [],
         "mobileImageList": [],
-        "priceList": defaults.get("priceList") or [],
-        "tourList": tours,
-        "packageInclusive": defaults.get("packageInclusive"),
-        "packageRemarks": defaults.get("packageRemarks"),
-        "importantNote": defaults.get("importantNote"),
-        "packageInclusiveCn": defaults.get("packageInclusiveCn"),
-        "packageRemarksCn": defaults.get("packageRemarksCn"),
-        "importantNoteCn": defaults.get("importantNoteCn"),
-        **{f"tag{n}": defaults.get(f"tag{n}") for n in range(1, 7)},
+        "routeMapUrl": "",
+        "videoUrl": "",
+        "videoCoverUrl": "",
+        "tourIdList": tour_ids,
+        "packageInclusive": defaults.get("packageInclusive") or "",
+        "packageRemarks": defaults.get("packageRemarks") or "",
+        "importantNote": defaults.get("importantNote") or "",
+        "packageInclusiveCn": defaults.get("packageInclusiveCn") or "",
+        "packageRemarksCn": defaults.get("packageRemarksCn") or "",
+        "importantNoteCn": defaults.get("importantNoteCn") or "",
     }
 
 
@@ -220,7 +222,7 @@ def main() -> None:
           f"{sum(len(s['itemList']) for s in payload['sectionList'])}",
           file=sys.stderr)
     print(f"  highlights   : {len(payload['highlightsList'])}", file=sys.stderr)
-    print(f"  departures   : {len(payload['tourList'])} (ifshow=1)",
+    print(f"  departures   : {len(payload['tourIdList'])} (tourIdList)",
           file=sys.stderr)
     print(f"  images       : none — the image pipeline runs separately and has "
           f"its own sign-off gate", file=sys.stderr)

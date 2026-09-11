@@ -49,7 +49,13 @@
       "sectionDescription": "-",
       "sectionDescriptionCn": "-",
       "sortNum": 0,
-      "imageList": [],
+      "imageList": [
+        {
+          "imageName": "section_01_0",
+          "imageUrl": "https://prod-webuysg.oss.webuy.ren/travel-video/5xkCd60n.jpg",
+          "sortNum": 0
+        }
+      ],
       "itemList": [
         {
           "id": null,
@@ -59,7 +65,13 @@
           "itemDescriptionCn": "",
           "itemType": 1,
           "sortNum": 0,
-          "imageList": []
+          "imageList": [
+            {
+              "imageName": "trip_01_00_0",
+              "imageUrl": "https://prod-webuysg.oss.webuy.ren/travel-video/iK7au86W.jpg",
+              "sortNum": 0
+            }
+          ]
         }
       ]
     },
@@ -74,7 +86,13 @@
       "sectionDescription": "Breakfast / Dinner",
       "sectionDescriptionCn": "早餐 / 晚餐",
       "sortNum": 1,
-      "imageList": [],
+      "imageList": [
+        {
+          "imageName": "section_02_0",
+          "imageUrl": "https://prod-webuysg.oss.webuy.ren/travel-video/uIK70q4b.jpg",
+          "sortNum": 0
+        }
+      ],
       "itemList": [
         {
           "id": null,
@@ -99,7 +117,13 @@
       "sectionDescription": "Breakfast / Dinner",
       "sectionDescriptionCn": "早餐 / 晚餐",
       "sortNum": 2,
-      "imageList": [],
+      "imageList": [
+        {
+          "imageName": "section_03_0",
+          "imageUrl": "https://prod-webuysg.oss.webuy.ren/travel-video/GJtYm3eU.jpg",
+          "sortNum": 0
+        }
+      ],
       "itemList": [
         {
           "id": null,
@@ -119,7 +143,18 @@
           "itemDescriptionCn": "",
           "itemType": 4,
           "sortNum": 1,
-          "imageList": []
+          "imageList": [
+            {
+              "imageName": "trip_03_01_0",
+              "imageUrl": "https://prod-webuysg.oss.webuy.ren/travel-video/ZJFjAdVr.jpg",
+              "sortNum": 0
+            },
+            {
+              "imageName": "trip_03_01_1",
+              "imageUrl": "https://prod-webuysg.oss.webuy.ren/travel-video/D7JRuzco.jpg",
+              "sortNum": 1
+            }
+          ]
         }
       ]
     },
@@ -134,7 +169,13 @@
       "sectionDescription": "Breakfast / Lunch / Dinner",
       "sectionDescriptionCn": "早餐 / 午餐 / 晚餐",
       "sortNum": 3,
-      "imageList": [],
+      "imageList": [
+        {
+          "imageName": "section_04_0",
+          "imageUrl": "https://prod-webuysg.oss.webuy.ren/travel-video/dj49ZG7R.jpg",
+          "sortNum": 0
+        }
+      ],
       "itemList": [
         {
           "id": null,
@@ -144,7 +185,13 @@
           "itemDescriptionCn": "",
           "itemType": 3,
           "sortNum": 0,
-          "imageList": []
+          "imageList": [
+            {
+              "imageName": "trip_04_00_0",
+              "imageUrl": "https://prod-webuysg.oss.webuy.ren/travel-video/awMeI1E8.jpg",
+              "sortNum": 0
+            }
+          ]
         },
         {
           "id": null,
@@ -154,7 +201,13 @@
           "itemDescriptionCn": "",
           "itemType": 3,
           "sortNum": 1,
-          "imageList": []
+          "imageList": [
+            {
+              "imageName": "trip_04_01_0",
+              "imageUrl": "https://prod-webuysg.oss.webuy.ren/travel-video/7XzpVwr3.jpg",
+              "sortNum": 0
+            }
+          ]
         },
         {
           "id": null,
@@ -164,7 +217,13 @@
           "itemDescriptionCn": "",
           "itemType": 5,
           "sortNum": 2,
-          "imageList": []
+          "imageList": [
+            {
+              "imageName": "trip_04_02_0",
+              "imageUrl": "https://prod-webuysg.oss.webuy.ren/travel-video/jShMppvi.jpg",
+              "sortNum": 0
+            }
+          ]
         }
       ]
     },
@@ -179,7 +238,13 @@
       "sectionDescription": "Breakfast / Lunch / Dinner",
       "sectionDescriptionCn": "早餐 / 午餐 / 晚餐",
       "sortNum": 4,
-      "imageList": [],
+      "imageList": [
+        {
+          "imageName": "section_05_0",
+          "imageUrl": "https://prod-webuysg.oss.webuy.ren/travel-video/cewZnSX5.jpg",
+          "sortNum": 0
+        }
+      ],
       "itemList": [
         {
           "id": null,
@@ -189,7 +254,13 @@
           "itemDescriptionCn": "",
           "itemType": 3,
           "sortNum": 0,
-          "imageList": []
+          "imageList": [
+            {
+              "imageName": "trip_05_00_0",
+              "imageUrl": "https://prod-webuysg.oss.webuy.ren/travel-video/MkuGXwdF.jpg",
+              "sortNum": 0
+            }
+          ]
         },
         {
           "id": null,
@@ -199,7 +270,13 @@
           "itemDescriptionCn": "",
           "itemType": 3,
           "sortNum": 1,
-          "imageList": []
+          "imageList": [
+            {
+              "imageName": "trip_05_01_0",
+              "imageUrl": "https://prod-webuysg.oss.webuy.ren/travel-video/FP32MqRr.jpg",
+              "sortNum": 0
+            }
+          ]
         }
       ]
     },
@@ -214,7 +291,13 @@
       "sectionDescription": "Breakfast / Lunch / Dinner",
       "sectionDescriptionCn": "早餐 / 午餐 / 晚餐",
       "sortNum": 5,
-      "imageList": [],
+      "imageList": [
+        {
+          "imageName": "section_06_0",
+          "imageUrl": "https://prod-webuysg.oss.webuy.ren/travel-video/NB0BC9WL.jpg",
+          "sortNum": 0
+        }
+      ],
       "itemList": [
         {
           "id": null,
@@ -234,7 +317,13 @@
           "itemDescriptionCn": "",
           "itemType": 3,
           "sortNum": 1,
-          "imageList": []
+          "imageList": [
+            {
+              "imageName": "trip_06_01_0",
+              "imageUrl": "https://prod-webuysg.oss.webuy.ren/travel-video/ThXEn0cz.jpg",
+              "sortNum": 0
+            }
+          ]
         },
         {
           "id": null,
@@ -244,7 +333,13 @@
           "itemDescriptionCn": "",
           "itemType": 3,
           "sortNum": 2,
-          "imageList": []
+          "imageList": [
+            {
+              "imageName": "trip_06_02_0",
+              "imageUrl": "https://prod-webuysg.oss.webuy.ren/travel-video/QL9GHyso.jpg",
+              "sortNum": 0
+            }
+          ]
         },
         {
           "id": null,
@@ -254,7 +349,13 @@
           "itemDescriptionCn": "",
           "itemType": 3,
           "sortNum": 3,
-          "imageList": []
+          "imageList": [
+            {
+              "imageName": "trip_06_03_0",
+              "imageUrl": "https://prod-webuysg.oss.webuy.ren/travel-video/rlBdH7sZ.jpg",
+              "sortNum": 0
+            }
+          ]
         }
       ]
     },
@@ -269,7 +370,13 @@
       "sectionDescription": "Breakfast / Lunch / Dinner",
       "sectionDescriptionCn": "早餐 / 午餐 / 晚餐",
       "sortNum": 6,
-      "imageList": [],
+      "imageList": [
+        {
+          "imageName": "section_07_0",
+          "imageUrl": "https://prod-webuysg.oss.webuy.ren/travel-video/SUNrzyXi.jpg",
+          "sortNum": 0
+        }
+      ],
       "itemList": [
         {
           "id": null,
@@ -279,7 +386,18 @@
           "itemDescriptionCn": "",
           "itemType": 3,
           "sortNum": 0,
-          "imageList": []
+          "imageList": [
+            {
+              "imageName": "trip_07_00_0",
+              "imageUrl": "https://prod-webuysg.oss.webuy.ren/travel-video/6nKXm5cL.jpg",
+              "sortNum": 0
+            },
+            {
+              "imageName": "trip_07_00_1",
+              "imageUrl": "https://prod-webuysg.oss.webuy.ren/travel-video/BUk8ft4d.jpg",
+              "sortNum": 1
+            }
+          ]
         },
         {
           "id": null,
@@ -289,7 +407,13 @@
           "itemDescriptionCn": "",
           "itemType": 3,
           "sortNum": 1,
-          "imageList": []
+          "imageList": [
+            {
+              "imageName": "trip_07_01_0",
+              "imageUrl": "https://prod-webuysg.oss.webuy.ren/travel-video/9Hn8KDPi.jpg",
+              "sortNum": 0
+            }
+          ]
         }
       ]
     },
@@ -304,7 +428,13 @@
       "sectionDescription": "Breakfast / Lunch / Dinner",
       "sectionDescriptionCn": "早餐 / 午餐 / 晚餐",
       "sortNum": 7,
-      "imageList": [],
+      "imageList": [
+        {
+          "imageName": "section_08_0",
+          "imageUrl": "https://prod-webuysg.oss.webuy.ren/travel-video/fDc8eQUP.jpg",
+          "sortNum": 0
+        }
+      ],
       "itemList": [
         {
           "id": null,
@@ -314,7 +444,18 @@
           "itemDescriptionCn": "",
           "itemType": 3,
           "sortNum": 0,
-          "imageList": []
+          "imageList": [
+            {
+              "imageName": "trip_08_00_0",
+              "imageUrl": "https://prod-webuysg.oss.webuy.ren/travel-video/LGL2RHsI.jpg",
+              "sortNum": 0
+            },
+            {
+              "imageName": "trip_08_00_1",
+              "imageUrl": "https://prod-webuysg.oss.webuy.ren/travel-video/WB9BqXl9.jpg",
+              "sortNum": 1
+            }
+          ]
         },
         {
           "id": null,
@@ -324,7 +465,13 @@
           "itemDescriptionCn": "",
           "itemType": 3,
           "sortNum": 1,
-          "imageList": []
+          "imageList": [
+            {
+              "imageName": "trip_08_01_0",
+              "imageUrl": "https://prod-webuysg.oss.webuy.ren/travel-video/4j9Z1dkn.jpg",
+              "sortNum": 0
+            }
+          ]
         }
       ]
     },
@@ -339,7 +486,13 @@
       "sectionDescription": "Breakfast / Lunch / Dinner",
       "sectionDescriptionCn": "早餐 / 午餐 / 晚餐",
       "sortNum": 8,
-      "imageList": [],
+      "imageList": [
+        {
+          "imageName": "section_09_0",
+          "imageUrl": "https://prod-webuysg.oss.webuy.ren/travel-video/5GLr6ezq.jpg",
+          "sortNum": 0
+        }
+      ],
       "itemList": [
         {
           "id": null,
@@ -349,7 +502,13 @@
           "itemDescriptionCn": "",
           "itemType": 3,
           "sortNum": 0,
-          "imageList": []
+          "imageList": [
+            {
+              "imageName": "trip_09_00_0",
+              "imageUrl": "https://prod-webuysg.oss.webuy.ren/travel-video/9V5bRTJw.jpg",
+              "sortNum": 0
+            }
+          ]
         },
         {
           "id": null,
@@ -369,7 +528,13 @@
           "itemDescriptionCn": "",
           "itemType": 3,
           "sortNum": 2,
-          "imageList": []
+          "imageList": [
+            {
+              "imageName": "trip_09_02_0",
+              "imageUrl": "https://prod-webuysg.oss.webuy.ren/travel-video/4VCqnG4x.jpg",
+              "sortNum": 0
+            }
+          ]
         }
       ]
     },
@@ -384,7 +549,13 @@
       "sectionDescription": "Breakfast / Lunch / Dinner",
       "sectionDescriptionCn": "早餐 / 午餐 / 晚餐",
       "sortNum": 9,
-      "imageList": [],
+      "imageList": [
+        {
+          "imageName": "section_10_0",
+          "imageUrl": "https://prod-webuysg.oss.webuy.ren/travel-video/hTP8WMVH.jpg",
+          "sortNum": 0
+        }
+      ],
       "itemList": [
         {
           "id": null,
@@ -394,7 +565,18 @@
           "itemDescriptionCn": "",
           "itemType": 3,
           "sortNum": 0,
-          "imageList": []
+          "imageList": [
+            {
+              "imageName": "trip_10_00_0",
+              "imageUrl": "https://prod-webuysg.oss.webuy.ren/travel-video/dmwFyZ4E.jpg",
+              "sortNum": 0
+            },
+            {
+              "imageName": "trip_10_00_1",
+              "imageUrl": "https://prod-webuysg.oss.webuy.ren/travel-video/YG53ppLG.jpg",
+              "sortNum": 1
+            }
+          ]
         },
         {
           "id": null,
@@ -404,7 +586,13 @@
           "itemDescriptionCn": "",
           "itemType": 3,
           "sortNum": 1,
-          "imageList": []
+          "imageList": [
+            {
+              "imageName": "trip_10_01_0",
+              "imageUrl": "https://prod-webuysg.oss.webuy.ren/travel-video/4bgzN430.jpg",
+              "sortNum": 0
+            }
+          ]
         },
         {
           "id": null,
@@ -414,7 +602,13 @@
           "itemDescriptionCn": "",
           "itemType": 5,
           "sortNum": 2,
-          "imageList": []
+          "imageList": [
+            {
+              "imageName": "trip_10_02_0",
+              "imageUrl": "https://prod-webuysg.oss.webuy.ren/travel-video/0RsRi5Zk.jpg",
+              "sortNum": 0
+            }
+          ]
         }
       ]
     },
@@ -429,7 +623,13 @@
       "sectionDescription": "Breakfast / Lunch",
       "sectionDescriptionCn": "早餐 / 午餐",
       "sortNum": 10,
-      "imageList": [],
+      "imageList": [
+        {
+          "imageName": "section_11_0",
+          "imageUrl": "https://prod-webuysg.oss.webuy.ren/travel-video/DcfRyXXV.jpg",
+          "sortNum": 0
+        }
+      ],
       "itemList": [
         {
           "id": null,
@@ -469,9 +669,93 @@
       ]
     }
   ],
-  "thumbneilList": [],
-  "desktopImageList": [],
-  "mobileImageList": [],
+  "thumbneilList": [
+    "https://prod-webuysg.oss.webuy.ren/travel-video/Fk52UTLz.jpg"
+  ],
+  "desktopImageList": [
+    {
+      "imageName": "carousel_00_0",
+      "imageUrl": "https://prod-webuysg.oss.webuy.ren/travel-video/Z2Dh4iUp.jpg",
+      "sortNum": 0
+    },
+    {
+      "imageName": "carousel_01_0",
+      "imageUrl": "https://prod-webuysg.oss.webuy.ren/travel-video/GpqJ0pxX.jpg",
+      "sortNum": 1
+    },
+    {
+      "imageName": "carousel_02_0",
+      "imageUrl": "https://prod-webuysg.oss.webuy.ren/travel-video/x2B8dc64.jpg",
+      "sortNum": 2
+    },
+    {
+      "imageName": "carousel_03_0",
+      "imageUrl": "https://prod-webuysg.oss.webuy.ren/travel-video/67bbJYDE.jpg",
+      "sortNum": 3
+    },
+    {
+      "imageName": "carousel_04_0",
+      "imageUrl": "https://prod-webuysg.oss.webuy.ren/travel-video/8Av67fHr.jpg",
+      "sortNum": 4
+    },
+    {
+      "imageName": "carousel_05_0",
+      "imageUrl": "https://prod-webuysg.oss.webuy.ren/travel-video/k2nLj02S.jpg",
+      "sortNum": 5
+    },
+    {
+      "imageName": "carousel_06_0",
+      "imageUrl": "https://prod-webuysg.oss.webuy.ren/travel-video/AtylCXlK.jpg",
+      "sortNum": 6
+    },
+    {
+      "imageName": "carousel_07_0",
+      "imageUrl": "https://prod-webuysg.oss.webuy.ren/travel-video/i44EbV7J.jpg",
+      "sortNum": 7
+    }
+  ],
+  "mobileImageList": [
+    {
+      "imageName": "carousel_00_mobile",
+      "imageUrl": "https://prod-webuysg.oss.webuy.ren/travel-video/iJp70Ypq.jpg",
+      "sortNum": 0
+    },
+    {
+      "imageName": "carousel_01_mobile",
+      "imageUrl": "https://prod-webuysg.oss.webuy.ren/travel-video/CUCjaxop.jpg",
+      "sortNum": 1
+    },
+    {
+      "imageName": "carousel_02_mobile",
+      "imageUrl": "https://prod-webuysg.oss.webuy.ren/travel-video/UQfZwM73.jpg",
+      "sortNum": 2
+    },
+    {
+      "imageName": "carousel_03_mobile",
+      "imageUrl": "https://prod-webuysg.oss.webuy.ren/travel-video/xa8auT1z.jpg",
+      "sortNum": 3
+    },
+    {
+      "imageName": "carousel_04_mobile",
+      "imageUrl": "https://prod-webuysg.oss.webuy.ren/travel-video/ptgSUUY1.jpg",
+      "sortNum": 4
+    },
+    {
+      "imageName": "carousel_05_mobile",
+      "imageUrl": "https://prod-webuysg.oss.webuy.ren/travel-video/iydQkDLa.jpg",
+      "sortNum": 5
+    },
+    {
+      "imageName": "carousel_06_mobile",
+      "imageUrl": "https://prod-webuysg.oss.webuy.ren/travel-video/1JpArDlK.jpg",
+      "sortNum": 6
+    },
+    {
+      "imageName": "carousel_07_mobile",
+      "imageUrl": "https://prod-webuysg.oss.webuy.ren/travel-video/HmYo5WNn.jpg",
+      "sortNum": 7
+    }
+  ],
   "routeMapUrl": "",
   "videoUrl": "",
   "videoCoverUrl": "",
