@@ -1530,6 +1530,23 @@ TRIP_PICKS = {
     ],
 }
 
+
+def route_map_notice(plan: ImagePlan) -> str | None:
+    """摘要行里 `route=0` 的那一行字,没有路线图时返回,有就返回 None.
+
+    `route=0` 和 `route=1` 夹在 sections / carousel / thumb / gaps 一串数字
+    中间,读起来没有区别——路线图缺了不会让流程停下来,只会让产品页少一张图,
+    而 `wt_travel.routeMapUrl` 要么留空,要么沿用上一次写进去的值——一页
+    《Special Terms and Conditions》就是这样当成路线图挂上去而没人发现的。
+    按 DESIGN 6.9 的标准,这种失败必须自己响,所以和 `NO SECTION PHOTO` 一样
+    单独占一行、带 `NO ROUTE MAP` 抬头,不指望人去数那串数字。
+    """
+    if plan.of("route_map"):
+        return None
+    return ("    NO ROUTE MAP: 册子里没有认出路线图 — routeMapUrl 会留空或"
+            "沿用旧值,需要人决定:补一张示意图,还是确认这个产品不用")
+
+
 PRODUCTS = {
     "WBCKWE": ("CHN", ["tours/115-9d8n-discover-the-natural-wonders-of-guizhou",
                        "tours/108-8d7n-chongqing-wulong-dazu-world-cultural-heritage"]),
@@ -1614,6 +1631,9 @@ if __name__ == "__main__":
         if bare:
             print(f"    NO SECTION PHOTO: day(s) {', '.join(map(str, bare))} "
                   f"— 逐条见下方 GAP,每一条都要人决定")
+        route_line = route_map_notice(plan)
+        if route_line:
+            print(route_line)
         # 上一轮生成、这一轮已经不在 plan 里的图。点名,不只报数:留下来的
         # 那几张恰恰是被判定为错图删掉的,而按文件名通配去取上传清单看不出
         # 区别(DESIGN 6.12)。
