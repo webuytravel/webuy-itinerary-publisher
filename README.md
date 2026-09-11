@@ -56,7 +56,7 @@ pip install -r requirements.txt
 python3 -m pytest tests/ -q
 ```
 
-预期 `82 passed, 5 skipped`。
+预期 `95 passed, 5 skipped`。
 
 **任何密钥都不进仓库,而且主流程也不需要密钥**——Skybear 后台靠使用者自己浏览器
 的登录态,找图走服务端已配好 key 的 `webuy-itinerary-mcp`。`.env` 只服务

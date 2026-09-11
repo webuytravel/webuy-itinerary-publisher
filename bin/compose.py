@@ -182,6 +182,11 @@ def trip_pool(code: str, picks: list[tuple]) -> list[Placement]:
 
 def compose(code: str, region: str, tours: list[str], overrides: dict) -> ImagePlan:
     data = load(code)
+    # 日期键打错了要炸。下面的循环只走行程里真有的天,所以一个 `d40`(本意
+    # 是 `d04`)既进不了 plan 也走不到「指向的候选不存在」那道检查 —— 那天会
+    # 悄悄退回自动匹配,而摘要行一切正常。这正是 DESIGN 6.9 / 6.11 那一类。
+    editorial.check_days(code, {"section_overrides": overrides},
+                         {f"d{s['day']:02d}" for s in data["itinerary"]["sections"]})
     cat_rows = catalogue_for(code, tours)
     plan = ImagePlan(type_code=code, region=region)
 

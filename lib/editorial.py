@@ -126,9 +126,13 @@ def validate(code: str, doc: dict) -> None:
     _check_meals(code, doc.get("meals"))
     _check_trip_types(code, doc.get("trip_types"))
 
-    overrides = doc.get("section_overrides") or {}
+    # **不要写成 `doc.get(...) or {}`。** `false` / `0` / `""` / `[]` 会被那个
+    # `or` 折成一个合法的空容器,于是一份类型写错的文件读起来就像「这个产品
+    # 没有人工选片」—— 静默走回自动匹配,正好是 6.9 那类降级。缺字段才等于没写。
+    overrides = doc.get("section_overrides", {})
     if not isinstance(overrides, dict):
-        _fail(code, "section_overrides", "要是一个以 d01 / d02 … 为键的对象")
+        _fail(code, "section_overrides",
+              f"要是一个以 d01 / d02 … 为键的对象,收到 {type(overrides).__name__}")
     for key, picks in overrides.items():
         where = f"section_overrides.{key}"
         if not (isinstance(key, str) and len(key) == 3 and key[0] == "d"
@@ -136,9 +140,27 @@ def validate(code: str, doc: dict) -> None:
             _fail(code, where, "键要写成 d01 / d02 这种两位数的形式")
         _check_picks(code, where, picks, SECTION_SOURCES)
 
-    _check_picks(code, "trip_picks", doc.get("trip_picks") or [], TRIP_SOURCES)
+    _check_picks(code, "trip_picks", doc.get("trip_picks", []), TRIP_SOURCES)
     if "carousel" in doc:
         _check_picks(code, "carousel", doc["carousel"], CAROUSEL_SOURCES)
+
+
+def check_days(code: str, doc: dict, days: set) -> None:
+    """`section_overrides` 的每个日期键都要对得上行程里真有的那一天。
+
+    schema 只管得了 `d99` 这个**形状**对不对,管不了这条行程有没有第 99 天。
+    差这一道的后果是最难看见的一种:9 天的行程上把 `d04` 打成 `d40`,那条人工
+    选片既不会被解析、也不会报错 —— `compose()` 只遍历行程里真有的天,没被走到
+    的 override 连「指向的候选不存在」都轮不到检查。于是第 4 天悄悄退回自动匹配,
+    摘要行一切正常。DESIGN 6.9 / 6.11 就是这一类。
+
+    调用点在 `bin/compose.py`,因为只有那里才知道这本行程有几天。
+    """
+    dangling = sorted(set(doc.get("section_overrides") or {}) - days)
+    if dangling:
+        _fail(code, f"section_overrides.{dangling[0]}",
+              f"行程里没有这一天 —— 多余的日期键 {dangling},"
+              f"这本行程只有 {sorted(days)}")
 
 
 def _check_notes(code: str, notes) -> None:

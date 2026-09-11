@@ -105,6 +105,14 @@ def main() -> int:
     missing = sorted(set(codes) - set(before.PRODUCTS))
     if missing:
         raise SystemExit(f"{missing} 在迁移前的 PRODUCTS 里不存在,无从比对")
+    if not args.codes:
+        # 不给参数时要覆盖**迁移前的全集**。只查一个方向的话,一个漏迁的产品会
+        # 从枚举里整个消失,而这个工具照样打印「N 个产品全同」并且 exit 0 ——
+        # 一个只看退出码的门禁会把「少比了一个」读成通过。
+        dropped = sorted(set(before.PRODUCTS) - set(codes))
+        if dropped:
+            raise SystemExit(
+                f"{dropped} 在迁移前有、迁移后没有 editorial.json —— 漏迁了")
 
     (args.out / "before").mkdir(parents=True, exist_ok=True)
     (args.out / "after").mkdir(parents=True, exist_ok=True)

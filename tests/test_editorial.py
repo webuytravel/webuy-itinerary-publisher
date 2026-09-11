@@ -123,6 +123,31 @@ def test_a_day_key_that_is_not_dNN_is_refused(tmp_path):
     assert "section_overrides.d3" in str(exc.value)
 
 
+@pytest.mark.parametrize("value", [False, 0, "", [], None])
+def test_section_overrides_of_the_wrong_type_is_refused(tmp_path, value):
+    # `doc.get(k) or {}` 会把这几个值折成一个合法的空容器,于是一份类型写错的
+    # 文件读起来就像「这个产品没有人工选片」—— 静默走回自动匹配。缺字段才等于
+    # 没写;写了就必须是对的形状。
+    with pytest.raises(SystemExit) as exc:
+        load(tmp_path, section_overrides=value)
+    assert "section_overrides" in str(exc.value)
+
+
+@pytest.mark.parametrize("value", [False, 0, "", {}, None])
+def test_trip_picks_of_the_wrong_type_is_refused(tmp_path, value):
+    with pytest.raises(SystemExit) as exc:
+        load(tmp_path, trip_picks=value)
+    assert "trip_picks" in str(exc.value)
+
+
+def test_an_absent_optional_field_still_means_absent(tmp_path):
+    # 上面两条收紧的是**写错类型**,不是「必须写」。缺字段照旧等于没有编辑决策。
+    doc = editorial.load("WBTEST", write(tmp_path, {
+        "code": "WBTEST", "region": "CHN", "catalogue_tours": []}))
+    assert editorial.section_overrides(doc) == {}
+    assert editorial.trip_picks(doc) == []
+
+
 def test_highlights_must_be_exactly_six(tmp_path):
     with pytest.raises(SystemExit) as exc:
         load(tmp_path, highlights=[{"en": "a", "zh": "甲"}])
@@ -229,3 +254,27 @@ def test_a_section_override_naming_a_missing_catalogue_image_exits(tmp_path, mon
         compose.compose("WBTEST", "CHN", [], {"d03": [("cat", "nope", "看过")]})
     assert "section_overrides.d03" in str(exc.value)
     assert "nope" in str(exc.value)
+
+
+def test_a_section_override_for_a_day_the_itinerary_does_not_have_exits(tmp_path, monkeypatch):
+    # 形状对、日期不存在。compose 只遍历行程里真有的天,所以 `d40`(本意 `d04`)
+    # 既进不了 plan,也走不到「指向的候选不存在」那道检查 —— 不专门查一遍的话,
+    # 那天会悄悄退回自动匹配而摘要行一切正常。
+    monkeypatch.setattr(compose, "WORK", _fixture(tmp_path, GOOD_BLOCK))
+    with pytest.raises(SystemExit) as exc:
+        compose.compose("WBTEST", "CHN", [],
+                        {"d40": [("commons", ("d03_typo", 9), "看过")]})
+    message = str(exc.value)
+    assert "WBTEST" in message and "section_overrides.d40" in message
+    assert "['d03']" in message                 # 这本行程真有的天
+
+
+def test_a_section_override_keeps_credit_and_license(tmp_path, monkeypatch):
+    # Commons 是唯一给全作者和许可证的图源(DESIGN 3.35)。section 这一支和
+    # trip_pool 那一支是两段各自独立的代码,所以两段都要有测试守着 —— 把这里的
+    # credit/license 两个参数删掉,别的测试一条都不会红。
+    monkeypatch.setattr(compose, "WORK", _fixture(tmp_path, GOOD_BLOCK))
+    plan = compose.compose("WBTEST", "CHN", [],
+                           {"d03": [("commons", ("d03_x", 1), "看过")]})
+    placed = [p for p in plan.placements if p.slot == "section"]
+    assert [(p.credit, p.license) for p in placed] == [("someone", "CC BY-SA 4.0")]
