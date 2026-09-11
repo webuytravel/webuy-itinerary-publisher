@@ -1,0 +1,101 @@
+[
+  {
+    "path": "work/ACKMG12T/raw/en/p01_0_941x1672.png",
+    "page": 1,
+    "index": 0,
+    "width": 941,
+    "height": 1672,
+    "sha1": "857cbb21c9d83ac284126a4e5255d9f999949bd9",
+    "kind": "cover_poster",
+    "caption_hint": "",
+    "rejected": ""
+  },
+  {
+    "path": "work/ACKMG12T/raw/en/p03_0_978x199.png",
+    "page": 3,
+    "index": 0,
+    "width": 978,
+    "height": 199,
+    "sha1": "98328dd4c59880cc0d39d266605e9bc9c85706c5",
+    "kind": "furniture",
+    "caption_hint": "",
+    "rejected": "furniture: 978x199 below 300px min edge"
+  },
+  {
+    "path": "work/ACKMG12T/raw/en/p03_1_55x48.png",
+    "page": 3,
+    "index": 1,
+    "width": 55,
+    "height": 48,
+    "sha1": "c735d2682308cf1162559ad9fd50d7eeec55e943",
+    "kind": "furniture",
+    "caption_hint": "",
+    "rejected": "furniture: 55x48 below 300px min edge"
+  },
+  {
+    "path": "work/ACKMG12T/raw/en/p03_2_68x31.png",
+    "page": 3,
+    "index": 2,
+    "width": 68,
+    "height": 31,
+    "sha1": "69b088f43a8c9f2f0e2d14a0f94eaeeae4708924",
+    "kind": "furniture",
+    "caption_hint": "",
+    "rejected": "furniture: 68x31 below 300px min edge"
+  },
+  {
+    "path": "work/ACKMG12T/raw/en/p03_3_50x27.png",
+    "page": 3,
+    "index": 3,
+    "width": 50,
+    "height": 27,
+    "sha1": "94399e615453aa25f19bf4c4a226cfe2cde76b26",
+    "kind": "furniture",
+    "caption_hint": "",
+    "rejected": "furniture: 50x27 below 300px min edge"
+  },
+  {
+    "path": "work/ACKMG12T/raw/en/p04_4_877x424.png",
+    "page": 4,
+    "index": 4,
+    "width": 877,
+    "height": 424,
+    "sha1": "6a20e16d2d546b054a76ce0bd775cd380d920f37",
+    "kind": "photo",
+    "caption_hint": "Day6 Shangri-La Signature Pudacuo / Ganden Sumtseling · Dukezong Ancient",
+    "rejected": ""
+  },
+  {
+    "path": "work/ACKMG12T/raw/en/p05_4_877x451.png",
+    "page": 5,
+    "index": 4,
+    "width": 877,
+    "height": 451,
+    "sha1": "dd5ab5d43cbc256fa561a52205503c137ae73dd9",
+    "kind": "photo",
+    "caption_hint": "Day8 Baoshan - Tengchong Signature Dadi Tea Estate · Old Schoolhouse",
+    "rejected": ""
+  },
+  {
+    "path": "work/ACKMG12T/raw/en/p07_3_978x854.png",
+    "page": 7,
+    "index": 3,
+    "width": 978,
+    "height": 854,
+    "sha1": "50bb18e6ddb0a3e7d96b77e40c0ddd976cdfcb6c",
+    "kind": "route_map",
+    "caption_hint": "the whispers of the wilderness and the spirit of Song with you — until we meet again. Breakfast: At hotel · Lunch: None ",
+    "rejected": ""
+  },
+  {
+    "path": "work/ACKMG12T/raw/en/p08_0_978x1739.png",
+    "page": 8,
+    "index": 0,
+    "width": 978,
+    "height": 1739,
+    "sha1": "c447bc8d9fdaa744a34c23e5b6064f9787bdcfec",
+    "kind": "cover_poster",
+    "caption_hint": "",
+    "rejected": ""
+  }
+]
