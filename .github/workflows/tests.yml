@@ -1,0 +1,33 @@
+name: tests
+
+# 这个 workflow 刻意不使用任何 secret。
+# docs/SETUP.md 的结论是「跑通主流程需要配置的密钥数量是零」——CI 里一旦出现
+# secret,它看到的环境就和新检出的人不一样了,这条结论也就失去了见证。
+# tests/test_existence_check.py 那 5 个用例因此会跳过(它们要连真的只读库),
+# 期望输出是 `101 passed, 5 skipped`,和 README / SETUP 里写的是同一个数。
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  pytest:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        # 3.9 = 本机 macOS 系统自带的版本,实测在跑的下限;
+        # 3.12 = 新同事装 Python 大概率拿到的版本。两头都要绿。
+        python-version: ["3.9", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - run: python -m pytest tests -q

@@ -1,5 +1,7 @@
 # webuy-itinerary-publisher
 
+[![tests](https://github.com/webuytravel/webuy-itinerary-publisher/actions/workflows/tests.yml/badge.svg)](https://github.com/webuytravel/webuy-itinerary-publisher/actions/workflows/tests.yml)
+
 Planner 丢一份行程 **PDF 或 Word** 进来 → 行程结构和配图自动落到 Skybear 生产后台,
 成为一个内容完整的**草稿**产品。上架那一下永远留给人。
 
@@ -56,7 +58,12 @@ pip install -r requirements.txt
 python3 -m pytest tests/ -q
 ```
 
-预期 `99 passed, 5 skipped`。
+预期 `101 passed, 5 skipped`。那 5 个 skip 来自 `tests/test_existence_check.py`——
+它要连真的只读库,没配 `.env` 就整组跳过,是正常的,不是环境坏了。
+
+同一条命令由 CI 在每次 push / PR 上跑一遍
+([`.github/workflows/tests.yml`](.github/workflows/tests.yml),不使用任何 secret),
+所以这个数字再漂的话,CI 会先红。
 
 **任何密钥都不进仓库,而且主流程也不需要密钥**——Skybear 后台靠使用者自己浏览器
 的登录态,找图走服务端已配好 key 的 `webuy-itinerary-mcp`。`.env` 只服务
