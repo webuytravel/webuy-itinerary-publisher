@@ -65,7 +65,12 @@ certifi / pytest。跑一下测试确认环境正常:
 python3 -m pytest tests -q
 ```
 
-预期 `46 passed, 5 skipped`。
+预期 `101 passed, 5 skipped`。5 个 skip 就是上面那条旁路:
+`tests/test_existence_check.py` 要连真的只读库,没配 `.env` 就跳过。
+**跳过是对的**——它恰好印证了这一页的结论:不配密钥也能跑完。
+
+这个数字和 CI 跑出来的是同一个。`.github/workflows/tests.yml` 不配任何 secret,
+它看到的环境和你新检出之后看到的完全一样;对不上就是真的对不上,不是 CI 有特权。
 
 ---
 
